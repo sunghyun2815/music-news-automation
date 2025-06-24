@@ -1,14 +1,141 @@
-run-music-news
-failed now in 2s
-Search logs
-1s
-Current runner version: '2.325.0'
-Runner Image Provisioner
-Operating System
-Runner Image
-GITHUB_TOKEN Permissions
-Secret source: Actions
-Prepare workflow directory
-Prepare all required actions
-Getting action download info
-Error: This request has been automatically failed because it uses a deprecated version of `actions/upload-artifact: v3`. Learn more: https://github.blog/changelog/2024-04-16-deprecation-notice-v3-of-the-artifact-actions/
+name: Music News Automation
+
+on:
+  schedule:
+    - cron: '0 1 * * *'  # 매일 한국시간 오전 10시 (UTC 오전 1시)
+  workflow_dispatch: # 수동 실행 가능
+
+jobs:
+  run-music-news:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30  # 30분 타임아웃
+    
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
+    
+    - name: Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.11'
+        cache: 'pip'  # pip 캐시 활용으로 속도 향상
+    
+    - name: Verify required files
+      run: |
+        echo "📁 Checking required files..."
+        required_files=("music_news_automation.py" "advanced_news_collector.py" "advanced_classifier.py" "news_delivery_system.py" "requirements.txt")
+        
+        for file in "${required_files[@]}"; do
+          if [ -f "$file" ]; then
+            echo "✅ $file found"
+          else
+            echo "❌ $file missing"
+            exit 1
+          fi
+        done
+        echo "✅ All required files found"
+    
+    - name: Install dependencies
+      run: |
+        echo "📦 Installing Python packages..."
+        python -m pip install --upgrade pip
+        pip install -r requirements.txt
+        echo "✅ Dependencies installed successfully"
+    
+    - name: Test Python imports
+      run: |
+        echo "🔍 Testing Python module imports..."
+        python -c "
+        try:
+            print('Testing advanced_news_collector...')
+            from advanced_news_collector import AdvancedNewsCollector
+            print('✅ advanced_news_collector imported')
+            
+            print('Testing advanced_classifier...')
+            from advanced_classifier import AdvancedClassifier
+            print('✅ advanced_classifier imported')
+            
+            print('Testing news_delivery_system...')
+            from news_delivery_system import NewsDeliverySystem
+            print('✅ news_delivery_system imported')
+            
+            print('Testing music_news_automation...')
+            from music_news_automation import MusicNewsAutomationSystem
+            print('✅ music_news_automation imported')
+            
+            print('🎉 All imports successful!')
+            
+        except Exception as e:
+            print(f'❌ Import error: {e}')
+            exit(1)
+        "
+    
+    - name: Verify environment variables
+      env:
+        SLACK_TOKEN: ${{ secrets.SLACK_TOKEN }}
+        EMAIL_ADDRESS: ${{ secrets.EMAIL_ADDRESS }}
+        EMAIL_PASSWORD: ${{ secrets.EMAIL_PASSWORD }}
+      run: |
+        echo "🔐 Verifying environment variables..."
+        
+        if [ -z "$SLACK_TOKEN" ]; then
+          echo "❌ SLACK_TOKEN not set"
+          echo "💡 Please add SLACK_TOKEN to GitHub Secrets"
+          exit 1
+        else
+          echo "✅ SLACK_TOKEN is set (length: ${#SLACK_TOKEN})"
+        fi
+        
+        if [ -z "$EMAIL_ADDRESS" ]; then
+          echo "❌ EMAIL_ADDRESS not set"
+          echo "💡 Please add EMAIL_ADDRESS to GitHub Secrets"
+          exit 1
+        else
+          echo "✅ EMAIL_ADDRESS is set: $EMAIL_ADDRESS"
+        fi
+        
+        if [ -z "$EMAIL_PASSWORD" ]; then
+          echo "❌ EMAIL_PASSWORD not set"
+          echo "💡 Please add EMAIL_PASSWORD to GitHub Secrets"
+          exit 1
+        else
+          echo "✅ EMAIL_PASSWORD is set (length: ${#EMAIL_PASSWORD})"
+        fi
+        
+        echo "✅ All environment variables verified"
+    
+    - name: Run music news automation
+      env:
+        SLACK_TOKEN: ${{ secrets.SLACK_TOKEN }}
+        EMAIL_ADDRESS: ${{ secrets.EMAIL_ADDRESS }}
+        EMAIL_PASSWORD: ${{ secrets.EMAIL_PASSWORD }}
+      run: |
+        echo "🎵 Starting music news automation system..."
+        echo "📅 Execution time: $(date)"
+        
+        python music_news_automation.py --production
+        
+        echo "✅ Music news automation completed successfully"
+        echo "📅 Completion time: $(date)"
+    
+    - name: Upload logs and artifacts
+      if: always()  # 성공/실패 관계없이 항상 실행
+      uses: actions/upload-artifact@v4
+      with:
+        name: automation-logs-${{ github.run_number }}
+        path: |
+          *.log
+        retention-days: 7
+        if-no-files-found: warn
+    
+    - name: Notify on failure
+      if: failure()
+      run: |
+        echo "❌ Workflow execution failed"
+        echo "📅 Failed at: $(date)"
+        echo "💡 Check the logs above for detailed error information"
+        echo "🔧 Common solutions:"
+        echo "   1. Verify GitHub Secrets are set correctly"
+        echo "   2. Check if all required files are uploaded"
+        echo "   3. Ensure Slack bot has proper permissions"
+        echo "   4. Verify Gmail app password is correct"
