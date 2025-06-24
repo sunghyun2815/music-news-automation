@@ -1,12 +1,12 @@
 #!/usr/bin/env python3
 """
-Advanced Classifier
-카테고리 분류(NEWS/REPORT/INSIGHT/INTERVIEW/COLUMN) 및 태깅(장르/업계/지역) 모듈
+Advanced News Classifier
+카테고리 분류, 태깅, 5W1H 요약 시스템
 """
 
 import re
 import logging
-from typing import Dict, List, Set, Tuple
+from typing import List, Dict, Set
 from collections import Counter
 
 # 로깅 설정
@@ -15,96 +15,92 @@ logger = logging.getLogger(__name__)
 
 class AdvancedClassifier:
     def __init__(self):
-        # 카테고리 분류를 위한 키워드
+        # 카테고리 분류 키워드
         self.category_keywords = {
-            'NEWS': {
-                'keywords': ['breaking', 'announces', 'releases', 'debuts', 'launches', 'drops', 
-                           'premieres', 'reveals', 'confirms', 'signs', 'joins', 'leaves', 
-                           'cancels', 'postpones', 'reschedules', 'dies', 'passes away'],
-                'patterns': [r'\b(just|now|today|yesterday|this week)\b', r'\b(new|latest|upcoming)\b']
-            },
-            'REPORT': {
-                'keywords': ['report', 'analysis', 'study', 'research', 'data', 'statistics', 
-                           'numbers', 'sales', 'charts', 'streaming', 'revenue', 'market',
-                           'industry', 'trends', 'growth', 'decline'],
-                'patterns': [r'\b\d+%\b', r'\bmillion|billion\b', r'\baccording to\b']
-            },
-            'INSIGHT': {
-                'keywords': ['opinion', 'perspective', 'analysis', 'commentary', 'think piece',
-                           'deep dive', 'exploration', 'examination', 'investigation', 'behind',
-                           'why', 'how', 'what makes', 'understanding', 'meaning'],
-                'patterns': [r'\bwhy\s+\w+', r'\bhow\s+\w+', r'\bwhat\s+(makes|is)\b']
-            },
-            'INTERVIEW': {
-                'keywords': ['interview', 'talks', 'speaks', 'discusses', 'conversation', 
-                           'chat', 'q&a', 'asks', 'tells', 'explains', 'shares', 'opens up'],
-                'patterns': [r'\btalks?\s+(about|with)\b', r'\bspeaks?\s+(about|with)\b', 
-                           r'\bin\s+conversation\b', r'\bsits\s+down\s+with\b']
-            },
-            'COLUMN': {
-                'keywords': ['column', 'editorial', 'opinion piece', 'commentary', 'blog',
-                           'thoughts', 'reflections', 'musings', 'take on', 'view on'],
-                'patterns': [r'\bmy\s+(take|view|opinion)\b', r'\bi\s+(think|believe)\b']
-            }
+            'NEWS': [
+                'announced', 'reveals', 'confirms', 'breaking', 'just in', 'reports',
+                'new album', 'new song', 'tour dates', 'concert', 'festival',
+                'collaboration', 'featuring', 'drops', 'releases'
+            ],
+            'REPORT': [
+                'analysis', 'study', 'research', 'data', 'statistics', 'numbers',
+                'market', 'industry', 'trends', 'growth', 'decline', 'revenue',
+                'streaming', 'sales', 'chart', 'billboard'
+            ],
+            'INSIGHT': [
+                'opinion', 'perspective', 'think', 'believe', 'future', 'prediction',
+                'trend', 'evolution', 'change', 'impact', 'influence', 'effect',
+                'why', 'how', 'what this means', 'significance'
+            ],
+            'INTERVIEW': [
+                'interview', 'talks', 'speaks', 'says', 'tells', 'discusses',
+                'conversation', 'chat', 'Q&A', 'exclusive', 'sits down',
+                'opens up', 'reveals in interview'
+            ],
+            'COLUMN': [
+                'column', 'editorial', 'commentary', 'op-ed', 'opinion piece',
+                'personal view', 'my take', 'thoughts on', 'reflection'
+            ]
         }
         
         # 장르 태그
-        self.genre_tags = {
-            'rock', 'pop', 'hip hop', 'rap', 'jazz', 'classical', 'electronic', 'edm',
-            'country', 'folk', 'blues', 'metal', 'punk', 'indie', 'alternative', 'r&b',
-            'soul', 'funk', 'reggae', 'latin', 'world music', 'ambient', 'house',
-            'techno', 'dubstep', 'trap', 'drill', 'afrobeat', 'k-pop', 'j-pop'
-        }
+        self.genre_tags = [
+            'pop', 'rock', 'hip-hop', 'rap', 'r&b', 'country', 'jazz', 'classical',
+            'electronic', 'edm', 'folk', 'indie', 'alternative', 'metal', 'punk',
+            'reggae', 'blues', 'soul', 'funk', 'disco', 'house', 'techno',
+            'k-pop', 'latin', 'world music', 'ambient', 'experimental'
+        ]
         
         # 업계 태그
-        self.industry_tags = {
-            'streaming', 'record label', 'music industry', 'concert', 'festival', 'tour',
-            'venue', 'booking', 'management', 'publishing', 'royalties', 'licensing',
-            'sync', 'playlist', 'radio', 'podcast', 'vinyl', 'cd', 'digital', 'nft',
-            'blockchain', 'ai music', 'music tech', 'startup', 'investment', 'merger',
-            'acquisition', 'ipo', 'revenue', 'sales', 'charts', 'billboard', 'grammy',
-            'award', 'nomination', 'collaboration', 'remix', 'cover', 'sample'
-        }
+        self.industry_tags = [
+            'tour', 'concert', 'festival', 'album', 'single', 'EP', 'record label',
+            'streaming', 'spotify', 'apple music', 'youtube', 'tiktok',
+            'billboard', 'grammy', 'award', 'nomination', 'chart', 'sales',
+            'collaboration', 'featuring', 'remix', 'cover', 'live performance',
+            'music video', 'documentary', 'biopic', 'soundtrack'
+        ]
         
         # 지역 태그
-        self.region_tags = {
-            'us', 'usa', 'america', 'american', 'uk', 'britain', 'british', 'europe',
-            'european', 'asia', 'asian', 'korea', 'korean', 'japan', 'japanese',
-            'china', 'chinese', 'india', 'indian', 'africa', 'african', 'latin america',
-            'south america', 'australia', 'canadian', 'mexico', 'brazilian', 'german',
-            'french', 'italian', 'spanish', 'nordic', 'scandinavian', 'global', 'worldwide'
-        }
+        self.region_tags = [
+            'us', 'usa', 'america', 'american', 'uk', 'british', 'europe', 'european',
+            'korea', 'korean', 'k-pop', 'japan', 'japanese', 'china', 'chinese',
+            'canada', 'canadian', 'australia', 'australian', 'latin', 'latino',
+            'africa', 'african', 'india', 'indian', 'global', 'international'
+        ]
     
-    def classify_category(self, title: str, description: str) -> str:
+    def classify_category(self, news_item: Dict) -> str:
         """뉴스 카테고리 분류"""
-        text = (title + " " + description).lower()
+        title = news_item.get('title', '').lower()
+        description = news_item.get('description', '').lower()
+        content = news_item.get('content', '').lower()
+        
+        text = f"{title} {description} {content}"
         
         category_scores = {}
         
-        for category, criteria in self.category_keywords.items():
+        for category, keywords in self.category_keywords.items():
             score = 0
-            
-            # 키워드 매칭
-            for keyword in criteria['keywords']:
+            for keyword in keywords:
                 if keyword in text:
                     score += 1
-            
-            # 패턴 매칭
-            for pattern in criteria['patterns']:
-                matches = len(re.findall(pattern, text, re.IGNORECASE))
-                score += matches * 0.5
-            
             category_scores[category] = score
         
         # 가장 높은 점수의 카테고리 반환
-        if max(category_scores.values()) > 0:
-            return max(category_scores, key=category_scores.get)
-        else:
-            return 'NEWS'  # 기본값
+        if category_scores:
+            best_category = max(category_scores, key=category_scores.get)
+            if category_scores[best_category] > 0:
+                return best_category
+        
+        # 기본값은 NEWS
+        return 'NEWS'
     
-    def extract_tags(self, title: str, description: str) -> Dict[str, List[str]]:
-        """장르/업계/지역 태그 추출"""
-        text = (title + " " + description).lower()
+    def extract_tags(self, news_item: Dict) -> Dict[str, List[str]]:
+        """태그 추출 (장르, 업계, 지역)"""
+        title = news_item.get('title', '').lower()
+        description = news_item.get('description', '').lower()
+        content = news_item.get('content', '').lower()
+        
+        text = f"{title} {description} {content}"
         
         tags = {
             'genre': [],
@@ -127,211 +123,278 @@ class AdvancedClassifier:
             if region in text:
                 tags['region'].append(region)
         
+        # 중복 제거 및 상위 3개만 유지
+        for tag_type in tags:
+            tags[tag_type] = list(set(tags[tag_type]))[:3]
+        
         return tags
     
-    def generate_5w1h_summary(self, title: str, description: str) -> str:
-        """5W1H 영어 요약 생성"""
-        # 간단한 5W1H 요약 생성 (실제로는 더 정교한 NLP 모델 사용 가능)
+    def generate_5w1h_summary(self, news_item: Dict) -> str:
+        """5W1H 기반 상세 요약 생성 (스토리텔링 방식)"""
+        title = news_item.get('title', '')
+        description = news_item.get('description', '')
+        content = news_item.get('content', '')
         
-        # Who: 주요 인물/아티스트 추출
+        # 전체 텍스트 결합
+        full_text = f"{title}. {description}. {content}"
+        text_lower = full_text.lower()
+        
+        # 주요 인물/아티스트 추출
         who_patterns = [
-            r'\b([A-Z][a-z]+(?:\s+[A-Z][a-z]+)*)\b',  # 대문자로 시작하는 이름
+            r'\b([A-Z][a-z]+(?:\s+[A-Z][a-z]+)*)\s+(?:announced|released|performed|said|revealed|confirmed)',
+            r'\b([A-Z][a-z]+(?:\s+[A-Z][a-z]+)*)\s+(?:will|has|is|was)',
+            r'(?:singer|artist|musician|band|rapper|producer)\s+([A-Z][a-z]+(?:\s+[A-Z][a-z]+)*)',
+            r'\b([A-Z][a-z]+(?:\s+[A-Z][a-z]+)*)\s+(?:tour|album|song|concert)'
         ]
         
-        who_matches = []
+        who_found = set()
         for pattern in who_patterns:
-            matches = re.findall(pattern, title + " " + description)
-            who_matches.extend(matches[:3])  # 최대 3개
+            matches = re.findall(pattern, title + ". " + description)
+            for match in matches[:3]:
+                if len(match.split()) <= 3 and match not in ['The', 'A', 'An', 'This', 'That', 'New', 'Big']:
+                    who_found.add(match)
         
-        # What: 주요 행동/사건
-        what_keywords = ['releases', 'announces', 'performs', 'collaborates', 'signs', 'debuts']
+        # 주요 사건/활동 추출
+        what_keywords = {
+            'tour': ['tour', 'concert', 'show', 'performance', 'live'],
+            'album': ['album', 'record', 'release', 'debut', 'EP'],
+            'collaboration': ['featuring', 'collaboration', 'duet', 'with'],
+            'award': ['award', 'nomination', 'winner', 'grammy', 'billboard'],
+            'announcement': ['announced', 'revealed', 'confirmed', 'statement'],
+            'controversy': ['controversy', 'scandal', 'criticism', 'backlash'],
+            'death': ['died', 'death', 'passed away', 'killed', 'tragic'],
+            'business': ['deal', 'contract', 'signed', 'partnership', 'acquisition'],
+            'new_music': ['new song', 'single', 'track', 'music video']
+        }
+        
         what_found = []
-        text_lower = (title + " " + description).lower()
+        for category, keywords in what_keywords.items():
+            for keyword in keywords:
+                if keyword in text_lower:
+                    what_found.append(category)
+                    break
         
-        for keyword in what_keywords:
-            if keyword in text_lower:
-                what_found.append(keyword)
-        
-        # When: 시간 정보
+        # 시간 정보 추출
         when_patterns = [
-            r'\b(today|yesterday|this week|next week|this month|next month|\d{4})\b',
-            r'\b(january|february|march|april|may|june|july|august|september|october|november|december)\b'
+            r'\b(this\s+(?:week|month|year|summer|fall|winter|spring))\b',
+            r'\b(next\s+(?:week|month|year|summer|fall|winter|spring))\b',
+            r'\b(recently|today|yesterday|soon|upcoming)\b',
+            r'\b(2024|2025)\b'
         ]
         
-        when_matches = []
+        when_found = []
         for pattern in when_patterns:
             matches = re.findall(pattern, text_lower)
-            when_matches.extend(matches[:2])
+            when_found.extend(matches[:2])
         
-        # Where: 장소 정보
+        # 장소 정보 추출
         where_patterns = [
             r'\bin\s+([A-Z][a-z]+(?:\s+[A-Z][a-z]+)*)\b',
-            r'\bat\s+([A-Z][a-z]+(?:\s+[A-Z][a-z]+)*)\b'
+            r'\bat\s+([A-Z][a-z]+(?:\s+[A-Z][a-z]+)*)\b',
+            r'\b(North America|South Korea|United States|UK|Europe|Asia|Australia)\b',
+            r'\b([A-Z][a-z]+)\s+(?:Stadium|Arena|Theater|Hall|Festival)\b'
         ]
         
-        where_matches = []
+        where_found = set()
         for pattern in where_patterns:
-            matches = re.findall(pattern, title + " " + description)
-            where_matches.extend(matches[:2])
+            matches = re.findall(pattern, title + ". " + description, re.IGNORECASE)
+            for match in matches[:3]:
+                if isinstance(match, str) and len(match.split()) <= 3:
+                    where_found.add(match)
         
-        # 요약 생성
+        # 스토리텔링 방식의 요약 생성
         summary_parts = []
         
-        if who_matches:
-            summary_parts.append(f"Who: {', '.join(who_matches[:2])}")
+        # 주인물과 주요 사건 결합
+        if who_found and what_found:
+            main_who = list(who_found)[0]
+            main_what = what_found[0]
+            
+            if main_what == 'tour':
+                summary_parts.append(f"{main_who} announced or is planning a tour")
+            elif main_what == 'album':
+                summary_parts.append(f"{main_who} released or announced a new album")
+            elif main_what == 'new_music':
+                summary_parts.append(f"{main_who} dropped new music")
+            elif main_what == 'collaboration':
+                summary_parts.append(f"{main_who} collaborated with other artists")
+            elif main_what == 'award':
+                summary_parts.append(f"{main_who} received recognition or awards")
+            elif main_what == 'controversy':
+                summary_parts.append(f"{main_who} is involved in a controversial situation")
+            elif main_what == 'death':
+                summary_parts.append(f"Tragic news emerged about {main_who}")
+            elif main_what == 'business':
+                summary_parts.append(f"{main_who} made a significant business announcement")
+            else:
+                summary_parts.append(f"{main_who} made headlines in the music industry")
+        elif who_found:
+            main_who = list(who_found)[0]
+            summary_parts.append(f"{main_who} is featured in music industry news")
+        elif what_found:
+            main_what = what_found[0]
+            summary_parts.append(f"Music industry news about {main_what}")
         
-        if what_found:
-            summary_parts.append(f"What: {', '.join(what_found[:2])}")
+        # 시간 정보 추가
+        if when_found:
+            time_info = when_found[0]
+            if summary_parts:
+                summary_parts.append(f"The event occurred or was announced {time_info}")
+            else:
+                summary_parts.append(f"This music news happened {time_info}")
         
-        if when_matches:
-            summary_parts.append(f"When: {', '.join(when_matches[:2])}")
+        # 장소 정보 추가
+        if where_found:
+            location = list(where_found)[0]
+            summary_parts.append(f"The event is taking place in {location}")
         
-        if where_matches:
-            summary_parts.append(f"Where: {', '.join(where_matches[:2])}")
+        # 추가 컨텍스트
+        context_added = False
+        if 'new song' in text_lower or 'single' in text_lower:
+            summary_parts.append("involving new music releases")
+            context_added = True
         
-        # 기본 요약이 없으면 제목 기반으로 생성
-        if not summary_parts:
-            summary_parts.append(f"Summary: {title[:100]}...")
+        if 'fan' in text_lower or 'audience' in text_lower and not context_added:
+            summary_parts.append("generating significant fan interest")
         
-        return " | ".join(summary_parts)
+        # 최종 요약 문장 생성
+        if summary_parts:
+            # 문장들을 자연스럽게 연결
+            if len(summary_parts) == 1:
+                final_summary = summary_parts[0] + "."
+            elif len(summary_parts) == 2:
+                final_summary = summary_parts[0] + ". " + summary_parts[1] + "."
+            else:
+                final_summary = summary_parts[0] + ". " + summary_parts[1] + ", " + " ".join(summary_parts[2:]) + "."
+            
+            # 첫 글자 대문자로 변경
+            final_summary = final_summary[0].upper() + final_summary[1:] if final_summary else ""
+            
+            # 문장 정리
+            final_summary = re.sub(r'\s+', ' ', final_summary)
+            final_summary = re.sub(r'\.+', '.', final_summary)
+            
+            return final_summary
+        
+        # 기본 요약 (5W1H 정보가 부족한 경우)
+        return f"Music industry news about {title[:100]}{'...' if len(title) > 100 else ''}."
     
     def calculate_importance_score(self, news_item: Dict) -> float:
         """뉴스 중요도 점수 계산"""
         score = 0
         
         # 기본 관련성 점수
-        score += news_item.get('relevance_score', 0) * 0.3
+        title = news_item.get('title', '').lower()
+        description = news_item.get('description', '').lower()
         
-        # 소스 신뢰도
-        source_scores = {
-            'www.billboard.com': 0.9,
-            'pitchfork.com': 0.85,
-            'www.rollingstone.com': 0.9,
-            'www.musicbusinessworldwide.com': 0.8,
-            'variety.com': 0.85,
-            'www.nme.com': 0.75,
-            'consequenceofsound.net': 0.7,
-            'www.stereogum.com': 0.75
+        # 고중요도 키워드
+        high_importance = ['breaking', 'exclusive', 'first', 'major', 'big', 'huge', 'massive']
+        for keyword in high_importance:
+            if keyword in title:
+                score += 0.3
+            elif keyword in description:
+                score += 0.1
+        
+        # 아티스트 인지도 (간접 측정)
+        artist_indicators = ['grammy', 'billboard', 'platinum', 'million', 'chart', 'number one']
+        for indicator in artist_indicators:
+            if indicator in title or indicator in description:
+                score += 0.2
+        
+        # 활동 유형별 점수
+        activity_scores = {
+            'tour': 0.8, 'album': 0.9, 'collaboration': 0.7, 'award': 0.8,
+            'controversy': 0.6, 'death': 1.0, 'business': 0.5
         }
         
-        source_score = source_scores.get(news_item.get('source', ''), 0.5)
-        score += source_score * 0.3
+        for activity, activity_score in activity_scores.items():
+            if activity in title or activity in description:
+                score += activity_score
+                break
         
-        # 태그 다양성 (더 많은 태그 = 더 중요)
-        tags = news_item.get('tags', {})
-        tag_count = sum(len(tag_list) for tag_list in tags.values())
-        tag_score = min(tag_count / 5, 1.0)  # 최대 5개 태그로 정규화
-        score += tag_score * 0.2
+        # 기본 점수 보정
+        score = max(0.1, min(1.0, score))
         
-        # 카테고리별 가중치
-        category_weights = {
-            'NEWS': 1.0,
-            'REPORT': 0.9,
-            'INSIGHT': 0.8,
-            'INTERVIEW': 0.85,
-            'COLUMN': 0.7
-        }
-        
-        category = news_item.get('category', 'NEWS')
-        score += category_weights.get(category, 1.0) * 0.2
-        
-        return min(score, 1.0)  # 최대 1.0으로 제한
-    
-    def process_news_item(self, news_item: Dict) -> Dict:
-        """뉴스 항목 처리 (분류, 태깅, 요약)"""
-        title = news_item.get('title', '')
-        description = news_item.get('description', '')
-        
-        # 카테고리 분류
-        category = self.classify_category(title, description)
-        
-        # 태그 추출
-        tags = self.extract_tags(title, description)
-        
-        # 5W1H 요약 생성
-        summary = self.generate_5w1h_summary(title, description)
-        
-        # 처리된 뉴스 항목 생성
-        processed_item = news_item.copy()
-        processed_item.update({
-            'category': category,
-            'tags': tags,
-            'summary_5w1h': summary
-        })
-        
-        # 중요도 점수 계산
-        processed_item['importance_score'] = self.calculate_importance_score(processed_item)
-        
-        return processed_item
+        return round(score, 2)
     
     def process_news_list(self, news_list: List[Dict]) -> List[Dict]:
-        """뉴스 목록 처리"""
+        """뉴스 리스트 전체 처리"""
         processed_news = []
         
         for news_item in news_list:
             try:
-                processed_item = self.process_news_item(news_item)
+                # 카테고리 분류
+                category = self.classify_category(news_item)
+                
+                # 태그 추출
+                tags = self.extract_tags(news_item)
+                
+                # 5W1H 요약 생성
+                summary = self.generate_5w1h_summary(news_item)
+                
+                # 중요도 점수 계산
+                importance_score = self.calculate_importance_score(news_item)
+                
+                # 결과 추가
+                processed_item = news_item.copy()
+                processed_item.update({
+                    'category': category,
+                    'tags': tags,
+                    'summary': summary,
+                    'importance_score': importance_score
+                })
+                
                 processed_news.append(processed_item)
+                
             except Exception as e:
-                logger.error(f"뉴스 처리 오류: {e}")
+                logger.error(f"뉴스 처리 중 오류: {e}")
                 continue
         
         logger.info(f"{len(processed_news)}개 뉴스 처리 완료")
         return processed_news
     
-    def select_top_news_by_category(self, news_list: List[Dict], per_category: int = 4) -> List[Dict]:
+    def select_top_news_by_category(self, processed_news: List[Dict], per_category: int = 4) -> List[Dict]:
         """카테고리별 상위 뉴스 선별"""
-        # 카테고리별로 그룹화
-        categorized_news = {}
-        for news in news_list:
-            category = news.get('category', 'NEWS')
-            if category not in categorized_news:
-                categorized_news[category] = []
-            categorized_news[category].append(news)
+        category_news = {}
         
-        # 각 카테고리에서 중요도 순으로 정렬하고 상위 선별
+        # 카테고리별로 분류
+        for news in processed_news:
+            category = news.get('category', 'NEWS')
+            if category not in category_news:
+                category_news[category] = []
+            category_news[category].append(news)
+        
+        # 각 카테고리에서 상위 뉴스 선별
         selected_news = []
-        for category, news_items in categorized_news.items():
+        for category, news_list in category_news.items():
             # 중요도 점수로 정렬
-            sorted_news = sorted(news_items, key=lambda x: x.get('importance_score', 0), reverse=True)
+            sorted_news = sorted(news_list, key=lambda x: x.get('importance_score', 0), reverse=True)
             
-            # 상위 N개 선별
+            # 상위 N개 선택
             top_news = sorted_news[:per_category]
             selected_news.extend(top_news)
             
-            logger.info(f"{category} 카테고리: {len(news_items)}개 중 {len(top_news)}개 선별")
+            logger.info(f"{category} 카테고리: {len(news_list)}개 중 {len(top_news)}개 선별")
         
-        # 전체적으로 중요도 순으로 재정렬
-        selected_news.sort(key=lambda x: x.get('importance_score', 0), reverse=True)
-        
-        logger.info(f"총 {len(selected_news)}개 뉴스 선별 완료")
         return selected_news
 
 if __name__ == "__main__":
-    # 테스트용 샘플 뉴스
-    sample_news = [
-        {
-            'title': 'Taylor Swift Announces New Album "Midnight Dreams"',
-            'description': 'Pop superstar Taylor Swift revealed her upcoming album during a surprise livestream, featuring collaborations with indie artists.',
-            'source': 'www.billboard.com',
-            'relevance_score': 0.9
-        },
-        {
-            'title': 'Streaming Revenue Hits Record High in 2024',
-            'description': 'According to new industry data, music streaming platforms generated $15 billion in revenue this year, marking a 12% increase.',
-            'source': 'www.musicbusinessworldwide.com',
-            'relevance_score': 0.8
-        }
-    ]
-    
+    # 테스트 코드
     classifier = AdvancedClassifier()
-    processed_news = classifier.process_news_list(sample_news)
     
-    for news in processed_news:
-        print(f"제목: {news['title']}")
-        print(f"카테고리: {news['category']}")
-        print(f"태그: {news['tags']}")
-        print(f"요약: {news['summary_5w1h']}")
-        print(f"중요도: {news['importance_score']:.2f}")
-        print("-" * 50)
+    test_news = {
+        'title': 'Taylor Swift Announces New Album Release',
+        'description': 'Pop superstar Taylor Swift revealed her upcoming album during a recent interview.',
+        'content': 'The Grammy-winning artist will release her new album this fall.'
+    }
+    
+    category = classifier.classify_category(test_news)
+    tags = classifier.extract_tags(test_news)
+    summary = classifier.generate_5w1h_summary(test_news)
+    score = classifier.calculate_importance_score(test_news)
+    
+    print(f"Category: {category}")
+    print(f"Tags: {tags}")
+    print(f"Summary: {summary}")
+    print(f"Score: {score}")
 
