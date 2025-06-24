@@ -1,0 +1,20 @@
+name: Music News Automation
+on:
+  schedule:
+    - cron: '0 1 * * *'  # 매일 한국시간 오전 10시
+  workflow_dispatch:
+jobs:
+  run-music-news:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v4
+    - uses: actions/setup-python@v4
+      with:
+        python-version: '3.11'
+    - run: |
+        pip install feedparser scikit-learn nltk spacy textdistance slack-sdk requests beautifulsoup4
+    - env:
+        SLACK_TOKEN: ${{ secrets.SLACK_TOKEN }}
+        EMAIL_ADDRESS: ${{ secrets.EMAIL_ADDRESS }}
+        EMAIL_PASSWORD: ${{ secrets.EMAIL_PASSWORD }}
+      run: python music_news_automation.py --production
