@@ -20,7 +20,7 @@ logging.basicConfig(
     level=logging.INFO,
     format='%(asctime)s - %(levelname)s - %(message)s',
     handlers=[
-        logging.FileHandler('/home/ubuntu/music_news_automation.log'),
+        logging.FileHandler('music_news_automation.log'),
         logging.StreamHandler(sys.stdout)
     ]
 )
