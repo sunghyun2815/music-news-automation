@@ -139,3 +139,35 @@ jobs:
         echo "   2. Check if all required files are uploaded"
         echo "   3. Ensure Slack bot has proper permissions"
         echo "   4. Verify Gmail app password is correct"
+
+
+name: Music News Automation
+on:
+  schedule:
+    - cron: '0 1 * * *' # 매일 한국시간 오전 10시
+  workflow_dispatch:
+
+jobs:
+  run-music-news:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v4
+    - uses: actions/setup-python@v4
+      with:
+        python-version: '3.11'
+    - run: |
+        pip install feedparser scikit-learn nltk spacy textdistance slack-sdk requests beautifulsoup4
+    - env:
+        SLACK_TOKEN: ${{ secrets.SLACK_TOKEN }}
+        EMAIL_ADDRESS: ${{ secrets.EMAIL_ADDRESS }}
+        EMAIL_PASSWORD: ${{ secrets.EMAIL_PASSWORD }}
+      run: python music_news_automation.py --production
+    
+    # JSON 파일을 저장소에 커밋
+    - name: Commit JSON file
+      run: |
+        git config --local user.email "action@github.com"
+        git config --local user.name "GitHub Action"
+        git add music_news.json
+        git commit -m "Update music news data - $(date '+%Y-%m-%d %H:%M')" || exit 0
+        git push
