@@ -258,29 +258,3 @@ def main():
 
 if __name__ == "__main__":
     exit_code = main()
-
-
-# music_news_automation.py 마지막에 추가
-def save_to_json(news_data):
-    output = {
-        "updated_at": datetime.now().isoformat(),
-        "date": datetime.now().strftime("%Y-%m-%d"),
-        "total_count": len(news_data),
-        "categories": {
-            "NEWS": [item for item in news_data if item["category"] == "NEWS"],
-            "REPORT": [item for item in news_data if item["category"] == "REPORT"],
-            "INSIGHT": [item for item in news_data if item["category"] == "INSIGHT"],
-            "INTERVIEW": [item for item in news_data if item["category"] == "INTERVIEW"],
-            "COLUMN": [item for item in news_data if item["category"] == "COLUMN"]
-        },
-        "all_news": news_data
-    }
-    
-    # JSON 파일 저장
-    with open('music_news.json', 'w', encoding='utf-8') as f:
-        json.dump(output, f, ensure_ascii=False, indent=2)
-    
-    print("JSON 파일 생성 완료!")
-
-# 메인 함수 끝에 추가
-save_to_json(final_news_list)
