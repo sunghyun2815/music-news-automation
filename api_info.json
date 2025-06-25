@@ -1,0 +1,25 @@
+{
+  "api_info": {
+    "name": "Music News API",
+    "version": "1.0",
+    "description": "Automated music industry news aggregation",
+    "update_schedule": "Daily at 10:00 AM KST",
+    "endpoints": {
+      "latest_news": "https://raw.githubusercontent.com/YOUR-USERNAME/music-news-automation/main/music_news.json",
+      "archive": "https://raw.githubusercontent.com/YOUR-USERNAME/music-news-automation/main/archive/"
+    },
+    "data_structure": {
+      "metadata": "Generation info and statistics",
+      "news": "Categorized news articles",
+      "summary": "Top tags and trends"
+    },
+    "categories": [
+      "NEWS",
+      "REPORT",
+      "INSIGHT",
+      "INTERVIEW",
+      "COLUMN"
+    ],
+    "last_updated": "2025-06-25T07:31:10.303498"
+  }
+}
