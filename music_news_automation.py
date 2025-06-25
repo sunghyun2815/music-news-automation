@@ -99,8 +99,14 @@ class MusicNewsAutomationSystem:
             # 7단계: 뉴스 발송 (기존 Slack/이메일)
             logger.info("7단계: 뉴스 발송 시작")
             delivery_result = self.delivery_system.send_news(final_news)
-            self.metrics['delivery_success_rate'] = delivery_result.get('success_rate', 0)
-            logger.info(f"7단계 완료: 발송 성공률 {self.metrics['delivery_success_rate']:.1f}%")
+            
+            # 발송 성공률 계산
+            success_count = sum(delivery_result.values())
+            total_channels = len(delivery_result)
+            success_rate = (success_count / total_channels * 100) if total_channels > 0 else 0
+            
+            self.metrics['delivery_success_rate'] = success_rate
+            logger.info(f"7단계 완료: 발송 성공률 {success_rate:.1f}%")
             
             # 성공 보고서 생성
             return self._generate_report(success=True, final_news=final_news, json_file=json_file)
