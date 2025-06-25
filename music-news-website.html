@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🎵 Music News Dashboard</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            color: #333;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .header {
+            text-align: center;
+            color: white;
+            margin-bottom: 30px;
+        }
+
+        .header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+
+        .header p {
+            font-size: 1.1rem;
+            opacity: 0.9;
+        }
+
+        .stats {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            margin-bottom: 30px;
+        }
+
+        .stat-card {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .stat-number {
+            font-size: 2rem;
+            font-weight: bold;
+            color: #667eea;
+        }
+
+        .stat-label {
+            color: #666;
+            margin-top: 5px;
+        }
+
+        .categories {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 20px;
+        }
+
+        .category-section {
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+        }
+
+        .category-header {
+            padding: 20px;
+            font-weight: bold;
+            font-size: 1.2rem;
+            border-bottom: 2px solid #f0f0f0;
+        }
+
+        .category-header.news { background: #e3f2fd; color: #1976d2; }
+        .category-header.report { background: #f3e5f5; color: #7b1fa2; }
+        .category-header.insight { background: #e8f5e8; color: #388e3c; }
+        .category-header.interview { background: #fff3e0; color: #f57c00; }
+        .category-header.column { background: #fce4ec; color: #c2185b; }
+
+        .news-item {
+            padding: 20px;
+            border-bottom: 1px solid #f0f0f0;
+            transition: background-color 0.3s;
+        }
+
+        .news-item:hover {
+            background-color: #f8f9fa;
+        }
+
+        .news-item:last-child {
+            border-bottom: none;
+        }
+
+        .news-title {
+            font-weight: bold;
+            margin-bottom: 8px;
+            color: #333;
+        }
+
+        .news-title a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        .news-title a:hover {
+            color: #667eea;
+        }
+
+        .news-summary {
+            color: #666;
+            line-height: 1.5;
+            margin-bottom: 10px;
+        }
+
+        .news-meta {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 0.9rem;
+            color: #888;
+        }
+
+        .news-source {
+            font-weight: 500;
+        }
+
+        .news-score {
+            background: #667eea;
+            color: white;
+            padding: 2px 8px;
+            border-radius: 12px;
+            font-size: 0.8rem;
+        }
+
+        .tags {
+            margin-top: 8px;
+        }
+
+        .tag {
+            display: inline-block;
+            background: #f0f0f0;
+            color: #666;
+            padding: 2px 8px;
+            border-radius: 12px;
+            font-size: 0.8rem;
+            margin-right: 5px;
+            margin-bottom: 3px;
+        }
+
+        .loading {
+            text-align: center;
+            color: white;
+            font-size: 1.2rem;
+            margin: 50px 0;
+        }
+
+        .error {
+            background: #ffebee;
+            color: #c62828;
+            padding: 20px;
+            border-radius: 10px;
+            margin: 20px 0;
+            text-align: center;
+        }
+
+        .last-updated {
+            text-align: center;
+            color: white;
+            margin-top: 30px;
+            opacity: 0.8;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 10px;
+            }
+            
+            .header h1 {
+                font-size: 2rem;
+            }
+            
+            .categories {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🎵 Music News Dashboard</h1>
+            <p>실시간 음악 업계 뉴스 - 매일 오전 10시 업데이트</p>
+        </div>
+
+        <div id="loading" class="loading">
+            📡 뉴스 데이터를 불러오는 중...
+        </div>
+
+        <div id="error" class="error" style="display: none;">
+            ❌ 뉴스 데이터를 불러올 수 없습니다. 잠시 후 다시 시도해주세요.
+        </div>
+
+        <div id="content" style="display: none;">
+            <div id="stats" class="stats"></div>
+            <div id="categories" class="categories"></div>
+            <div id="lastUpdated" class="last-updated"></div>
+        </div>
+    </div>
+
+    <script>
+        // GitHub 저장소 정보 (사용자가 수정해야 함)
+        const GITHUB_USERNAME = 'YOUR-USERNAME';
+        const REPO_NAME = 'music-news-automation';
+        const JSON_URL = `https://raw.githubusercontent.com/${GITHUB_USERNAME}/${REPO_NAME}/main/music_news.json`;
+
+        // 카테고리 한글 이름
+        const CATEGORY_NAMES = {
+            'NEWS': '📰 뉴스',
+            'REPORT': '📊 리포트',
+            'INSIGHT': '💡 인사이트',
+            'INTERVIEW': '🎤 인터뷰',
+            'COLUMN': '✍️ 칼럼'
+        };
+
+        // 카테고리 CSS 클래스
+        const CATEGORY_CLASSES = {
+            'NEWS': 'news',
+            'REPORT': 'report',
+            'INSIGHT': 'insight',
+            'INTERVIEW': 'interview',
+            'COLUMN': 'column'
+        };
+
+        async function loadMusicNews() {
+            try {
+                console.log('뉴스 데이터 로딩 시작...');
+                
+                const response = await fetch(JSON_URL);
+                
+                if (!response.ok) {
+                    throw new Error(`HTTP ${response.status}: ${response.statusText}`);
+                }
+                
+                const data = await response.json();
+                console.log('뉴스 데이터 로딩 완료:', data);
+                
+                displayNews(data);
+                
+            } catch (error) {
+                console.error('뉴스 로딩 실패:', error);
+                showError();
+            }
+        }
+
+        function displayNews(data) {
+            const { metadata, news, summary } = data;
+            
+            // 로딩 숨기기
+            document.getElementById('loading').style.display = 'none';
+            document.getElementById('content').style.display = 'block';
+            
+            // 통계 표시
+            displayStats(metadata, summary);
+            
+            // 카테고리별 뉴스 표시
+            displayCategories(news);
+            
+            // 마지막 업데이트 시간 표시
+            displayLastUpdated(metadata.generated_at);
+        }
+
+        function displayStats(metadata, summary) {
+            const statsContainer = document.getElementById('stats');
+            
+            const stats = [
+                { label: '총 뉴스', value: metadata.total_news },
+                { label: '카테고리', value: Object.keys(metadata.categories).length },
+                { label: '상위 장르', value: summary.top_genres.length },
+                { label: '커버 지역', value: summary.top_regions.length }
+            ];
+            
+            statsContainer.innerHTML = stats.map(stat => `
+                <div class="stat-card">
+                    <div class="stat-number">${stat.value}</div>
+                    <div class="stat-label">${stat.label}</div>
+                </div>
+            `).join('');
+        }
+
+        function displayCategories(news) {
+            const categoriesContainer = document.getElementById('categories');
+            
+            const categoryHTML = Object.entries(news)
+                .filter(([category, articles]) => articles.length > 0)
+                .map(([category, articles]) => `
+                    <div class="category-section">
+                        <div class="category-header ${CATEGORY_CLASSES[category]}">
+                            ${CATEGORY_NAMES[category]} (${articles.length}개)
+                        </div>
+                        ${articles.map(article => createNewsItem(article)).join('')}
+                    </div>
+                `).join('');
+            
+            categoriesContainer.innerHTML = categoryHTML;
+        }
+
+        function createNewsItem(article) {
+            const tags = [
+                ...article.tags.genre.map(tag => `<span class="tag">🎵 ${tag}</span>`),
+                ...article.tags.industry.map(tag => `<span class="tag">🏢 ${tag}</span>`),
+                ...article.tags.region.map(tag => `<span class="tag">🌍 ${tag}</span>`)
+            ].join('');
+
+            return `
+                <div class="news-item">
+                    <div class="news-title">
+                        <a href="${article.url}" target="_blank" rel="noopener noreferrer">
+                            ${article.title}
+                        </a>
+                    </div>
+                    <div class="news-summary">${article.summary}</div>
+                    <div class="news-meta">
+                        <span class="news-source">📍 ${article.source}</span>
+                        <span class="news-score">⭐ ${article.importance_score}</span>
+                    </div>
+                    <div class="tags">${tags}</div>
+                </div>
+            `;
+        }
+
+        function displayLastUpdated(timestamp) {
+            const lastUpdatedContainer = document.getElementById('lastUpdated');
+            const date = new Date(timestamp);
+            const koreanTime = date.toLocaleString('ko-KR', {
+                timeZone: 'Asia/Seoul',
+                year: 'numeric',
+                month: 'long',
+                day: 'numeric',
+                hour: '2-digit',
+                minute: '2-digit'
+            });
+            
+            lastUpdatedContainer.innerHTML = `
+                📅 마지막 업데이트: ${koreanTime}
+            `;
+        }
+
+        function showError() {
+            document.getElementById('loading').style.display = 'none';
+            document.getElementById('error').style.display = 'block';
+        }
+
+        // 페이지 로드 시 뉴스 데이터 로딩
+        document.addEventListener('DOMContentLoaded', loadMusicNews);
+
+        // 5분마다 자동 새로고침
+        setInterval(loadMusicNews, 5 * 60 * 1000);
+    </script>
+</body>
+</html>
+
