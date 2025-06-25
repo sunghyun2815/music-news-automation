@@ -321,6 +321,10 @@ class NewsDeliverySystem:
         
         return results
 
+    def send_news(self, news_list: List[Dict]) -> Dict[str, bool]:
+        """뉴스 발송 (deliver_news의 별칭)"""
+        return self.deliver_news(news_list)
+
 if __name__ == "__main__":
     # 테스트용 샘플 뉴스
     sample_news = [
