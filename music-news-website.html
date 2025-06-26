@@ -152,15 +152,6 @@
             text-decoration: underline;
         }
 
-        /* 중요도 점수 제거를 위해 관련 CSS는 더 이상 사용되지 않음 */
-        /* .news-score {
-            background: #667eea;
-            color: white;
-            padding: 2px 8px;
-            border-radius: 12px;
-            font-size: 0.8rem;
-        } */
-
         .tags {
             margin-top: 8px;
             font-size: 0.9rem;
@@ -326,17 +317,23 @@
         }
 
         function createNewsItem(article) {
-            // 날짜 포맷팅 (YYYY-MM-DD HH:mm:ss -> YYYY-MM-DDTHH:mm:ss 로 변환하여 파싱)
-            const dateString = article.date.replace(' ', 'T');
-            const newsDate = new Date(dateString);
-            const formattedDate = newsDate.toLocaleString('ko-KR', {
-                timeZone: 'Asia/Seoul',
-                year: 'numeric',
-                month: '2-digit',
-                day: '2-digit',
-                hour: '2-digit',
-                minute: '2-digit'
-            });
+            let formattedDate = '날짜 정보 없음'; // 기본값 설정
+
+            if (article.date) {
+                // 날짜 포맷팅 (YYYY-MM-DD HH:mm:ss -> YYYY-MM-DDTHH:mm:ss 로 변환하여 파싱)
+                const dateString = article.date.replace(' ', 'T');
+                const newsDate = new Date(dateString);
+                if (!isNaN(newsDate.getTime())) { // 유효한 날짜인지 확인
+                    formattedDate = newsDate.toLocaleString('ko-KR', {
+                        timeZone: 'Asia/Seoul',
+                        year: 'numeric',
+                        month: '2-digit',
+                        day: '2-digit',
+                        hour: '2-digit',
+                        minute: '2-digit'
+                    });
+                }
+            }
 
             // 태그 포맷팅 (모든 태그를 모아 대문자로, 공백으로 구분)
             const allTags = [];
@@ -363,7 +360,6 @@
                         <span class="news-date">📅 ${formattedDate}</span> | 
                         <a href="${article.url}" target="_blank" rel="noopener noreferrer" class="news-link">🔗 링크</a>
                     </div>
-                    <!-- 중요도 점수 제거됨 -->
                     ${formattedTags ? `<div class="tags">${formattedTags}</div>` : ''}
                 </div>
             `;
