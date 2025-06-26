@@ -65,9 +65,9 @@ jobs:
             from json_generator import MusicNewsJSONGenerator
             print('✅ json_generator imported')
             
-            print('Testing music_news_automation...')
-            from music_news_automation import MusicNewsAutomationSystem
-            print('✅ music_news_automation imported')
+            print('Testing music_news_automation main function...')
+            from music_news_automation import main
+            print('✅ music_news_automation main function imported')
             
             print('🎉 All imports successful!')
             
@@ -78,43 +78,46 @@ jobs:
     
     - name: Verify environment variables
       env:
-        SLACK_TOKEN: ${{ secrets.SLACK_TOKEN }}
-        EMAIL_ADDRESS: ${{ secrets.EMAIL_ADDRESS }}
-        EMAIL_PASSWORD: ${{ secrets.EMAIL_PASSWORD }}
+        SLACK_BOT_TOKEN: ${{ secrets.SLACK_TOKEN }}
+        GMAIL_USER: ${{ secrets.EMAIL_ADDRESS }}
+        GMAIL_APP_PASSWORD: ${{ secrets.EMAIL_PASSWORD }}
+        RECIPIENT_EMAIL: ${{ secrets.EMAIL_ADDRESS }}
       run: |
         echo "🔐 Verifying environment variables..."
         
-        if [ -z "$SLACK_TOKEN" ]; then
-          echo "❌ SLACK_TOKEN not set"
+        if [ -z "$SLACK_BOT_TOKEN" ]; then
+          echo "❌ SLACK_BOT_TOKEN not set"
           echo "💡 Please add SLACK_TOKEN to GitHub Secrets"
           exit 1
         else
-          echo "✅ SLACK_TOKEN is set (length: ${#SLACK_TOKEN})"
+          echo "✅ SLACK_BOT_TOKEN is set (length: ${#SLACK_BOT_TOKEN})"
         fi
         
-        if [ -z "$EMAIL_ADDRESS" ]; then
-          echo "❌ EMAIL_ADDRESS not set"
+        if [ -z "$GMAIL_USER" ]; then
+          echo "❌ GMAIL_USER not set"
           echo "💡 Please add EMAIL_ADDRESS to GitHub Secrets"
           exit 1
         else
-          echo "✅ EMAIL_ADDRESS is set: $EMAIL_ADDRESS"
+          echo "✅ GMAIL_USER is set: $GMAIL_USER"
         fi
         
-        if [ -z "$EMAIL_PASSWORD" ]; then
-          echo "❌ EMAIL_PASSWORD not set"
+        if [ -z "$GMAIL_APP_PASSWORD" ]; then
+          echo "❌ GMAIL_APP_PASSWORD not set"
           echo "💡 Please add EMAIL_PASSWORD to GitHub Secrets"
           exit 1
         else
-          echo "✅ EMAIL_PASSWORD is set (length: ${#EMAIL_PASSWORD})"
+          echo "✅ GMAIL_APP_PASSWORD is set (length: ${#GMAIL_APP_PASSWORD})"
         fi
         
         echo "✅ All environment variables verified"
     
     - name: Run music news automation
       env:
-        SLACK_TOKEN: ${{ secrets.SLACK_TOKEN }}
-        EMAIL_ADDRESS: ${{ secrets.EMAIL_ADDRESS }}
-        EMAIL_PASSWORD: ${{ secrets.EMAIL_PASSWORD }}
+        SLACK_BOT_TOKEN: ${{ secrets.SLACK_TOKEN }}
+        GMAIL_USER: ${{ secrets.EMAIL_ADDRESS }}
+        GMAIL_APP_PASSWORD: ${{ secrets.EMAIL_PASSWORD }}
+        RECIPIENT_EMAIL: ${{ secrets.EMAIL_ADDRESS }}
+        SLACK_CHANNEL_ID: C08RABUFRD0
       run: |
         echo "🎵 Starting music news automation system..."
         echo "📅 Execution time: $(date)"
@@ -145,10 +148,10 @@ jobs:
           exit 1
         fi
         
-        if [ -f "API_README.md" ]; then
-          echo "✅ API_README.md generated"
+        if [ -f "README.md" ]; then
+          echo "✅ README.md generated"
         else
-          echo "❌ API_README.md not found"
+          echo "❌ README.md not found"
           exit 1
         fi
     
@@ -162,7 +165,7 @@ jobs:
         echo "📤 Committing generated files to repository..."
         
         # 변경사항 확인
-        git add music_news.json api_info.json API_README.md archive/
+        git add music_news.json api_info.json README.md archive/
         
         # 변경사항이 있는지 확인
         if git diff --staged --quiet; then
@@ -218,7 +221,7 @@ jobs:
           *.log
           music_news.json
           api_info.json
-          API_README.md
+          README.md
         retention-days: 7
         if-no-files-found: warn
     
@@ -233,4 +236,3 @@ jobs:
         echo "   2. Check if all required files are uploaded"
         echo "   3. Ensure Slack bot has proper permissions"
         echo "   4. Verify Gmail app password is correct"
-
