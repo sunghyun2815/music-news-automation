@@ -416,27 +416,4 @@ if __name__ == "__main__":
             'description': 'Folk-rock band The Lumineers will embark on a North American tour this fall, with tickets going on sale next week.',
             'url': 'https://example.com/lumineers-tour',
             'source': 'consequence.net',
-            'published_date': '2025-06-24 09:00:00'
-        }
-    ]
-    
-    # 분류기 테스트
-    classifier = AdvancedClassifier( )
-    processed = classifier.process_news_list(sample_news)
-    
-    print("=== 처리된 뉴스 결과 ===")
-    for i, news in enumerate(processed, 1):
-        print(f"\n{i}. {news['title']}")
-        print(f"   카테고리: {news['category']}")
-        print(f"   태그: {news['tags']}")
-        print(f"   요약: {news['summary']}") # <--- summary 필드 출력
-        print(f"   중요도: {news['importance_score']:.2f}")
-
-    # 상위 뉴스 선별 테스트
-    selected = classifier.select_top_news_by_category(processed, max_per_category=2)
-    print("\n=== 선별된 상위 뉴스 ===")
-    for i, news in enumerate(selected, 1):
-        print(f"\n{i}. {news['title']}")
-        print(f"   카테고리: {news['category']}")
-        print(f"   요약: {news['summary']}")
-        print(f"   중요도: {news['importance_score']:.2f}")
+            'published_date': '2025-06-24 0
