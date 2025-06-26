@@ -114,8 +114,11 @@ jobs:
     - name: Run music news automation
       env:
         SLACK_BOT_TOKEN: ${{ secrets.SLACK_TOKEN }}
+        SLACK_TOKEN: ${{ secrets.SLACK_TOKEN }}  # NewsDeliverySystem이 찾는 변수명
         GMAIL_USER: ${{ secrets.EMAIL_ADDRESS }}
         GMAIL_APP_PASSWORD: ${{ secrets.EMAIL_PASSWORD }}
+        EMAIL_ADDRESS: ${{ secrets.EMAIL_ADDRESS }}  # NewsDeliverySystem이 찾는 변수명
+        EMAIL_PASSWORD: ${{ secrets.EMAIL_PASSWORD }}  # NewsDeliverySystem이 찾는 변수명
         RECIPIENT_EMAIL: ${{ secrets.EMAIL_ADDRESS }}
         SLACK_CHANNEL_ID: C08RABUFRD0
       run: |
