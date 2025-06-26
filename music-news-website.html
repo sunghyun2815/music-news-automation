@@ -124,7 +124,7 @@
         .news-summary {
             color: #666;
             line-height: 1.5;
-            margin-bottom: 10px;
+            margin-bottom: 10px; /* 요약 아래 여백 */
         }
 
         .news-meta {
@@ -133,6 +133,23 @@
             align-items: center;
             font-size: 0.9rem;
             color: #888;
+            margin-top: 5px; /* 위 여백 추가 */
+        }
+
+        .news-details { /* 날짜와 링크를 위한 새로운 섹션 */
+            font-size: 0.9rem;
+            color: #888;
+            margin-top: 5px;
+            margin-bottom: 5px;
+        }
+
+        .news-details .news-link {
+            color: #667eea; /* 링크 색상 */
+            text-decoration: none;
+        }
+
+        .news-details .news-link:hover {
+            text-decoration: underline;
         }
 
         .news-source {
@@ -149,18 +166,13 @@
 
         .tags {
             margin-top: 8px;
+            font-size: 0.9rem;
+            color: #00BFFF; /* 태그 색상 */
+            font-weight: bold; /* 태그 강조 */
         }
 
-        .tag {
-            display: inline-block;
-            background: #f0f0f0;
-            color: #666;
-            padding: 2px 8px;
-            border-radius: 12px;
-            font-size: 0.8rem;
-            margin-right: 5px;
-            margin-bottom: 3px;
-        }
+        /* .tag 클래스는 더 이상 개별 태그에 사용되지 않으므로 제거하거나 숨김 */
+        /* .tag { display: none; } */
 
         .loading {
             text-align: center;
@@ -224,7 +236,7 @@
 
     <script>
         // GitHub 저장소 정보 (사용자가 수정해야 함)
-        const GITHUB_USERNAME = 'YOUR-USERNAME';
+        const GITHUB_USERNAME = 'YOUR-USERNAME'; // 여기에 실제 GitHub 사용자 이름을 입력하세요!
         const REPO_NAME = 'music-news-automation';
         const JSON_URL = `https://raw.githubusercontent.com/${GITHUB_USERNAME}/${REPO_NAME}/main/music_news.json`;
 
@@ -246,7 +258,7 @@
             'COLUMN': 'column'
         };
 
-        async function loadMusicNews() {
+        async function loadMusicNews( ) {
             try {
                 console.log('뉴스 데이터 로딩 시작...');
                 
@@ -320,11 +332,29 @@
         }
 
         function createNewsItem(article) {
-            const tags = [
-                ...article.tags.genre.map(tag => `<span class="tag">🎵 ${tag}</span>`),
-                ...article.tags.industry.map(tag => `<span class="tag">🏢 ${tag}</span>`),
-                ...article.tags.region.map(tag => `<span class="tag">🌍 ${tag}</span>`)
-            ].join('');
+            // 날짜 포맷팅
+            const newsDate = new Date(article.date);
+            const formattedDate = newsDate.toLocaleString('ko-KR', {
+                timeZone: 'Asia/Seoul',
+                year: 'numeric',
+                month: '2-digit',
+                day: '2-digit',
+                hour: '2-digit',
+                minute: '2-digit'
+            });
+
+            // 태그 포맷팅 (모든 태그를 모아 대문자로, 공백으로 구분)
+            const allTags = [];
+            if (article.tags.genre && article.tags.genre.length > 0) {
+                allTags.push(...article.tags.genre);
+            }
+            if (article.tags.industry && article.tags.industry.length > 0) {
+                allTags.push(...article.tags.industry);
+            }
+            if (article.tags.region && article.tags.region.length > 0) {
+                allTags.push(...article.tags.region);
+            }
+            const formattedTags = allTags.map(tag => tag.toUpperCase()).join(' ');
 
             return `
                 <div class="news-item">
@@ -334,11 +364,15 @@
                         </a>
                     </div>
                     <div class="news-summary">${article.summary}</div>
+                    <div class="news-details">
+                        <span class="news-date">📅 ${formattedDate}</span> | 
+                        <a href="${article.url}" target="_blank" rel="noopener noreferrer" class="news-link">🔗 링크</a>
+                    </div>
                     <div class="news-meta">
                         <span class="news-source">📍 ${article.source}</span>
                         <span class="news-score">⭐ ${article.importance_score}</span>
                     </div>
-                    <div class="tags">${tags}</div>
+                    ${formattedTags ? `<div class="tags">${formattedTags}</div>` : ''}
                 </div>
             `;
         }
@@ -373,4 +407,3 @@
     </script>
 </body>
 </html>
-
