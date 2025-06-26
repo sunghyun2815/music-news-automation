@@ -10,6 +10,17 @@ from typing import List, Dict, Set
 from datetime import datetime
 import json
 
+# NLTK 데이터 다운로드 (필요한 경우 주석 해제 후 실행)
+# import nltk
+# try:
+#     nltk.data.find('corpora/stopwords')
+# except nltk.downloader.DownloadError:
+#     nltk.download('stopwords')
+# try:
+#     nltk.data.find('tokenizers/punkt')
+# except nltk.downloader.DownloadError:
+#     nltk.download('punkt')
+
 # 로깅 설정
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
 logger = logging.getLogger(__name__)
@@ -195,8 +206,8 @@ class AdvancedClassifier:
             
             # Who 추출 (아티스트, 인물명)
             who_patterns = [
-                r'\b([A-Z][a-z]+ [A-Z][a-z]+)\b',  # 이름 패턴
-                r'\b([A-Z][a-z]+)\b(?=\s+(?:announces|releases|says|reveals))',  # 동작 앞의 이름
+                r'\b([A-Z][a-z]+ [A-Z][a-z]+)\b',  # 이름 패턴 (두 단어)
+                r'\b([A-Z][a-z]+)\b(?=\s+(?:announces|releases|says|reveals|signs|drops))',  # 동작 앞의 이름 (한 단어)
             ]
             
             who_matches = []
@@ -210,25 +221,25 @@ class AdvancedClassifier:
             
             # What 추출 (주요 행동/사건)
             what_keywords = {
-                'album release': ['album', 'new album', 'debut album', 'studio album'],
-                'single release': ['single', 'new song', 'track', 'new single'],
-                'tour announcement': ['tour', 'concert', 'live show', 'performance'],
-                'collaboration': ['collaboration', 'featuring', 'duet', 'team up'],
-                'business deal': ['signs', 'deal', 'contract', 'agreement'],
-                'legal issue': ['lawsuit', 'legal', 'court', 'settlement'],
-                'industry news': ['industry', 'market', 'business', 'company']
+                'announced or released a new album': ['album', 'new album', 'debut album', 'studio album'],
+                'announced or released a new single': ['single', 'new song', 'track', 'new single'],
+                'announced or is planning a tour': ['tour', 'concert', 'live show', 'performance'],
+                'entered into a collaboration': ['collaboration', 'featuring', 'duet', 'team up'],
+                'signed a business deal': ['signs', 'deal', 'contract', 'agreement'],
+                'involved in a legal issue': ['lawsuit', 'legal', 'court', 'settlement'],
+                'made significant industry news': ['industry', 'market', 'business', 'company', 'report', 'analysis']
             }
             
-            what_text = "announced or released new content"
+            what_text = "made an announcement"
             for action, keywords in what_keywords.items():
                 if any(keyword in text for keyword in keywords):
-                    what_text = action.replace('_', ' ')
+                    what_text = action
                     break
             
             # When 추출
             when_patterns = [
-                r'\b(today|yesterday|this week|next week|this month|next month)\b',
-                r'\b(2024|2025)\b',
+                r'\b(today|yesterday|this week|next week|this month|next month|recently)\b',
+                r'\b(202[0-9])\b', # 2020년대 연도
                 r'\b(january|february|march|april|may|june|july|august|september|october|november|december)\b'
             ]
             
@@ -243,8 +254,10 @@ class AdvancedClassifier:
             where_keywords = {
                 'USA': ['america', 'us', 'united states', 'new york', 'los angeles', 'nashville'],
                 'UK': ['britain', 'uk', 'london', 'england'],
-                'Korea': ['korea', 'seoul'],
-                'Global': ['worldwide', 'global', 'international']
+                'South Korea': ['korea', 'seoul', 'k-pop'],
+                'Japan': ['japan', 'tokyo'],
+                'Europe': ['europe', 'germany', 'france'],
+                'globally': ['worldwide', 'global', 'international']
             }
             
             where_text = "in the music industry"
@@ -255,28 +268,20 @@ class AdvancedClassifier:
             
             # Why/How 추출 (맥락)
             context_keywords = {
-                'new music': ['new music', 'creative', 'artistic'],
-                'business': ['business', 'commercial', 'financial'],
-                'personal': ['personal', 'family', 'health'],
-                'industry': ['industry', 'market', 'trend']
+                'new music releases': ['new music', 'creative', 'artistic', 'song', 'album', 'single'],
+                'business developments': ['business', 'commercial', 'financial', 'deal', 'investment'],
+                'touring and live events': ['tour', 'concert', 'festival', 'performance'],
+                'industry changes': ['industry', 'market', 'trend', 'innovation', 'technology']
             }
             
             context_text = "related to their music career"
             for context, keywords in context_keywords.items():
                 if any(keyword in text for keyword in keywords):
-                    context_text = f"related to {context} developments"
+                    context_text = f"related to {context}"
                     break
             
             # 완전한 문장으로 조합
-            summary = f"{who_text} {what_text} {when_text}. The development occurred {where_text}, {context_text}. "
-            
-            # 추가 세부사항
-            if 'album' in text:
-                summary += "The album represents a significant milestone in their artistic journey. "
-            elif 'tour' in text:
-                summary += "The tour is expected to reach multiple venues and engage with fans directly. "
-            elif 'collaboration' in text:
-                summary += "This collaboration brings together different musical styles and audiences. "
+            summary = f"{who_text} {what_text} {when_text}. The event occurred {where_text}, {context_text}."
             
             # 문장 정리
             summary = re.sub(r'\s+', ' ', summary).strip()
@@ -285,7 +290,7 @@ class AdvancedClassifier:
             
         except Exception as e:
             logger.error(f"5W1H 요약 생성 오류: {e}")
-            return f"Music industry news about {title.split()[0] if title else 'various artists'} and their recent activities in the music business."
+            return f"Music industry news about {title.split()[0] if title else 'various artists'} and their recent activities."
     
     def calculate_importance_score(self, title: str, description: str, tags: Dict) -> float:
         """중요도 점수 계산"""
@@ -294,18 +299,18 @@ class AdvancedClassifier:
         text = f"{title} {description}".lower()
         
         # 고중요도 키워드
-        high_importance = ['breaking', 'exclusive', 'first', 'major', 'significant', 'historic']
+        high_importance = ['breaking', 'exclusive', 'major', 'significant', 'historic', 'record-breaking']
         score += sum(0.1 for keyword in high_importance if keyword in text)
         
         # 아티스트 인지도 (간접 추정)
-        famous_artists = ['taylor swift', 'drake', 'bts', 'blackpink', 'ariana grande', 'ed sheeran']
+        famous_artists = ['taylor swift', 'drake', 'bts', 'blackpink', 'ariana grande', 'ed sheeran', 'billie eilish', 'the weeknd']
         score += sum(0.2 for artist in famous_artists if artist in text)
         
         # 태그 다양성
         total_tags = len(tags.get('genre', [])) + len(tags.get('industry', [])) + len(tags.get('region', []))
-        score += min(total_tags * 0.1, 0.3)
+        score += min(total_tags * 0.1, 0.3) # 최대 0.3점 추가
         
-        return min(score, 1.0)
+        return min(score, 1.0) # 점수는 1.0을 넘지 않도록
     
     def process_news_list(self, news_list: List[Dict]) -> List[Dict]:
         """뉴스 리스트 처리"""
@@ -334,20 +339,20 @@ class AdvancedClassifier:
                     **news,  # 기존 정보 유지
                     'category': category,
                     'tags': tags,
-                    'summary_5w1h': summary,
+                    'summary': summary, # <--- 여기를 summary로 변경했습니다!
                     'importance_score': importance_score
                 }
                 
                 processed_news.append(processed_item)
                 
             except Exception as e:
-                logger.error(f"뉴스 처리 오류: {e}")
+                logger.error(f"뉴스 처리 오류: {e} - 뉴스: {news.get('title', '제목 없음')}")
                 # 오류 발생 시 기본값으로 처리
                 processed_news.append({
                     **news,
                     'category': 'NEWS',
                     'tags': {'genre': [], 'industry': [], 'region': []},
-                    'summary_5w1h': 'Music industry news requiring further details.',
+                    'summary': '뉴스 처리 중 오류가 발생했습니다. 자세한 내용을 확인해주세요.', # <--- 여기도 summary로 변경
                     'importance_score': 0.5
                 })
         
@@ -389,19 +394,33 @@ if __name__ == "__main__":
             'description': 'Pop superstar Taylor Swift revealed her upcoming album during a surprise announcement, featuring collaborations with indie artists.',
             'link': 'https://example.com/taylor-swift-album',
             'source': 'billboard.com',
-            'published_date': '2025-06-26'
+            'published_date': '2025-06-26 10:00:00' # 날짜 형식 일치
         },
         {
             'title': 'BTS Signs Major Publishing Deal with Universal Music',
             'description': 'The K-pop group BTS has signed a groundbreaking publishing agreement with Universal Music Group, expanding their global reach.',
             'link': 'https://example.com/bts-deal',
             'source': 'variety.com',
-            'published_date': '2025-06-26'
+            'published_date': '2025-06-26 11:30:00' # 날짜 형식 일치
+        },
+        {
+            'title': 'New AI Music Startup Raises $10M in Seed Funding',
+            'description': 'A new AI-powered music creation platform secured significant investment to develop its generative music algorithms.',
+            'link': 'https://example.com/ai-startup',
+            'source': 'techcrunch.com',
+            'published_date': '2025-06-25 15:00:00'
+        },
+        {
+            'title': 'Indie Artist "The Lumineers" Announce Fall Tour Dates',
+            'description': 'Folk-rock band The Lumineers will embark on a North American tour this fall, with tickets going on sale next week.',
+            'link': 'https://example.com/lumineers-tour',
+            'source': 'consequence.net',
+            'published_date': '2025-06-24 09:00:00'
         }
     ]
     
     # 분류기 테스트
-    classifier = AdvancedClassifier()
+    classifier = AdvancedClassifier( )
     processed = classifier.process_news_list(sample_news)
     
     print("=== 처리된 뉴스 결과 ===")
@@ -409,35 +428,14 @@ if __name__ == "__main__":
         print(f"\n{i}. {news['title']}")
         print(f"   카테고리: {news['category']}")
         print(f"   태그: {news['tags']}")
-        print(f"   요약: {news['summary_5w1h']}")
+        print(f"   요약: {news['summary']}") # <--- summary 필드 출력
         print(f"   중요도: {news['importance_score']:.2f}")
 
-
-    
-    def select_top_news_by_category(self, news_list: List[Dict], max_per_category: int = 4) -> List[Dict]:
-        """카테고리별 상위 뉴스 선별"""
-        
-        # 카테고리별로 그룹화
-        categorized_news = {}
-        for news in news_list:
-            category = news.get('category', 'NEWS')
-            if category not in categorized_news:
-                categorized_news[category] = []
-            categorized_news[category].append(news)
-        
-        selected_news = []
-        
-        # 각 카테고리에서 상위 뉴스 선별
-        for category, news_items in categorized_news.items():
-            # 중요도 점수로 정렬
-            sorted_news = sorted(news_items, key=lambda x: x.get('importance_score', 0), reverse=True)
-            
-            # 상위 N개 선택
-            top_news = sorted_news[:max_per_category]
-            selected_news.extend(top_news)
-            
-            logger.info(f"{category} 카테고리: {len(news_items)}개 중 {len(top_news)}개 선별")
-        
-        logger.info(f"총 {len(selected_news)}개 뉴스 선별 완료")
-        return selected_news
-
+    # 상위 뉴스 선별 테스트
+    selected = classifier.select_top_news_by_category(processed, max_per_category=2)
+    print("\n=== 선별된 상위 뉴스 ===")
+    for i, news in enumerate(selected, 1):
+        print(f"\n{i}. {news['title']}")
+        print(f"   카테고리: {news['category']}")
+        print(f"   요약: {news['summary']}")
+        print(f"   중요도: {news['importance_score']:.2f}")
