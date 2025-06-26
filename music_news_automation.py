@@ -79,7 +79,7 @@ class MusicNewsAutomationSystem:
             
             # 4단계: 카테고리별 상위 뉴스 선별
             logger.info("4단계: 카테고리별 상위 뉴스 선별 시작")
-            selected_news = self.classifier.select_top_news_by_category(validated_news, per_category=4)
+            selected_news = self.classifier.select_top_news_by_category(validated_news, max_per_category=4)
             self.metrics['final_news_count'] = len(selected_news)
             logger.info(f"4단계 완료: {len(selected_news)}개 뉴스 선별")
             
