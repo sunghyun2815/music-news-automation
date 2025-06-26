@@ -69,10 +69,10 @@ class MusicNewsJSONGenerator:
                 'source': 'Music News Automation System'
             },
             'news': categorized_news,
-            'summary': {
-                'top_genres': self._get_top_tags(processed_news, 'genre'),
-                'top_regions': self._get_top_tags(processed_news, 'region'),
-                'top_industries': self._get_top_tags(processed_news, 'industry')
+            "summary": { # summary 필드 추가
+                "top_genres": self._get_top_tags(processed_news, 'genre'),
+                "top_industries": self._get_top_tags(processed_news, 'industry'),
+                "top_regions": self._get_top_tags(processed_news, 'region')
             }
         }
         
@@ -131,26 +131,4 @@ class MusicNewsJSONGenerator:
                 },
                 'data_structure': {
                     'metadata': 'Generation info and statistics',
-                    'news': 'Categorized news articles',
-                    'summary': 'Top tags and trends'
-                },
-                'categories': ['NEWS', 'REPORT', 'INSIGHT', 'INTERVIEW', 'COLUMN'],
-                'last_updated': datetime.now( ).isoformat()
-            }
-        }
-        
-        # API 정보 파일 저장
-        with open('api_info.json', 'w', encoding='utf-8') as f:
-            json.dump(api_info, f, ensure_ascii=False, indent=2)
-        
-        return api_info
-    
-    def create_readme_for_api(self) -> str:
-        """API 사용법 README 생성"""
-        readme_content = """# 🎵 Music News API
-
-자동화된 음악 업계 뉴스 API입니다. 매일 오전 10시(한국시간)에 업데이트됩니다.
-
-## 📡 API 엔드포인트
-
-### 최신 뉴스
+                    'news': '
