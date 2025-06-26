@@ -9,6 +9,7 @@ import os
 from datetime import datetime
 from typing import List, Dict
 import logging
+from collections import Counter # Counter 임포트 추가
 
 # 로깅 설정
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
