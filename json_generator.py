@@ -146,8 +146,8 @@ class MusicNewsJSONGenerator:
         return api_info
     
     def create_readme_for_api(self) -> str:
-    """API 사용법 README 생성"""
-    readme_content = """# 🎵 Music News API
+        """API 사용법 README 생성"""
+        readme_content = """# 🎵 Music News API
 
 자동화된 음악 업계 뉴스 API입니다. 매일 오전 10시(한국시간)에 업데이트됩니다.
 
