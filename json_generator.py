@@ -155,3 +155,49 @@ class MusicNewsJSONGenerator:
 ## 📡 API 엔드포인트
 
 ### 최신 뉴스
+
+https://raw.githubusercontent.com/YOUR-USERNAME/music-news-automation/main/music_news.json
+
+### API 정보
+https://raw.githubusercontent.com/YOUR-USERNAME/music-news-automation/main/api_info.json
+
+## 📊 데이터 구조
+
+```json
+{
+  "metadata": {
+    "generated_at": "2025-06-24T10:00:00",
+    "total_news": 14,
+    "categories": {
+      "NEWS": 4,
+      "REPORT": 3,
+      "INSIGHT": 4,
+      "INTERVIEW": 2,
+      "COLUMN": 1
+    }
+  },
+  "news": {
+    "NEWS": [
+      {
+        "id": "unique_id",
+        "title": "뉴스 제목",
+        "summary": "5W1H 기반 요약",
+        "url": "원본 링크",
+        "source": "출처",
+        "published_date": "발행일",
+        "importance_score": 0.87,
+        "tags": {
+          "genre": ["pop", "rock"],
+          "industry": ["tour", "album"],
+          "region": ["us", "korea"]
+        },
+        "category": "NEWS"
+      }
+    ]
+  },
+  "summary": {
+    "top_genres": ["pop", "rock", "hip-hop"],
+    "top_regions": ["us", "korea", "uk"],
+    "top_industries": ["tour", "album", "streaming"]
+  }
+}
