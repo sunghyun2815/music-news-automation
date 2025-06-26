@@ -152,17 +152,14 @@
             text-decoration: underline;
         }
 
-        .news-source {
-            font-weight: 500;
-        }
-
-        .news-score {
+        /* 중요도 점수 제거를 위해 관련 CSS는 더 이상 사용되지 않음 */
+        /* .news-score {
             background: #667eea;
             color: white;
             padding: 2px 8px;
             border-radius: 12px;
             font-size: 0.8rem;
-        }
+        } */
 
         .tags {
             margin-top: 8px;
@@ -170,9 +167,6 @@
             color: #00BFFF; /* 태그 색상 */
             font-weight: bold; /* 태그 강조 */
         }
-
-        /* .tag 클래스는 더 이상 개별 태그에 사용되지 않으므로 제거하거나 숨김 */
-        /* .tag { display: none; } */
 
         .loading {
             text-align: center;
@@ -332,8 +326,9 @@
         }
 
         function createNewsItem(article) {
-            // 날짜 포맷팅
-            const newsDate = new Date(article.date);
+            // 날짜 포맷팅 (YYYY-MM-DD HH:mm:ss -> YYYY-MM-DDTHH:mm:ss 로 변환하여 파싱)
+            const dateString = article.date.replace(' ', 'T');
+            const newsDate = new Date(dateString);
             const formattedDate = newsDate.toLocaleString('ko-KR', {
                 timeZone: 'Asia/Seoul',
                 year: 'numeric',
@@ -368,10 +363,7 @@
                         <span class="news-date">📅 ${formattedDate}</span> | 
                         <a href="${article.url}" target="_blank" rel="noopener noreferrer" class="news-link">🔗 링크</a>
                     </div>
-                    <div class="news-meta">
-                        <span class="news-source">📍 ${article.source}</span>
-                        <span class="news-score">⭐ ${article.importance_score}</span>
-                    </div>
+                    <!-- 중요도 점수 제거됨 -->
                     ${formattedTags ? `<div class="tags">${formattedTags}</div>` : ''}
                 </div>
             `;
