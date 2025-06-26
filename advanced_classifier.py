@@ -169,9 +169,9 @@ class AdvancedClassifier:
         
         return 'NEWS'  # 기본값
     
-    def extract_tags(self, title: str, description: str, link: str) -> Dict[str, List[str]]:
+    def extract_tags(self, title: str, description: str, url: str) -> Dict[str, List[str]]: # link -> url
         """태그 추출 (장르/업계 우선, 없으면 지역)"""
-        text = f"{title} {description} {link}".lower()
+        text = f"{title} {description} {url}".lower() # link -> url
         
         # 장르 태그 추출
         genre_tags = []
@@ -198,7 +198,7 @@ class AdvancedClassifier:
             'region': region_tags
         }
     
-    def generate_5w1h_summary(self, title: str, description: str, link: str) -> str:
+    def generate_5w1h_summary(self, title: str, description: str, url: str) -> str: # link -> url
         """5W1H 기반 상세 요약 생성"""
         try:
             # 기본 정보 추출
@@ -320,16 +320,16 @@ class AdvancedClassifier:
             try:
                 title = news.get('title', '')
                 description = news.get('description', '')
-                link = news.get('link', '')
+                url = news.get('url', '') # <--- news.get('link', '') -> news.get('url', '')
                 
                 # 카테고리 분류
                 category = self.classify_category(title, description)
                 
                 # 태그 추출
-                tags = self.extract_tags(title, description, link)
+                tags = self.extract_tags(title, description, url) # url 전달
                 
                 # 5W1H 요약 생성
-                summary = self.generate_5w1h_summary(title, description, link)
+                summary = self.generate_5w1h_summary(title, description, url) # url 전달
                 
                 # 중요도 점수 계산
                 importance_score = self.calculate_importance_score(title, description, tags)
@@ -339,7 +339,7 @@ class AdvancedClassifier:
                     **news,  # 기존 정보 유지
                     'category': category,
                     'tags': tags,
-                    'summary': summary, # <--- 여기를 summary로 변경했습니다!
+                    'summary': summary, # <--- summary 필드에 요약 저장
                     'importance_score': importance_score
                 }
                 
@@ -352,7 +352,7 @@ class AdvancedClassifier:
                     **news,
                     'category': 'NEWS',
                     'tags': {'genre': [], 'industry': [], 'region': []},
-                    'summary': '뉴스 처리 중 오류가 발생했습니다. 자세한 내용을 확인해주세요.', # <--- 여기도 summary로 변경
+                    'summary': '뉴스 처리 중 오류가 발생했습니다. 자세한 내용을 확인해주세요.',
                     'importance_score': 0.5
                 })
         
@@ -381,7 +381,7 @@ class AdvancedClassifier:
             top_news = sorted_news[:max_per_category]
             selected_news.extend(top_news)
             
-            logger.info(f"{category} 카테고리: {len(news_items)}개 중 {len(top_news)}개 선별")
+            logger.info(f"{category} 카테고리: {len(news_items)}개 중 {len(top_news)}개 선별}")
         
         logger.info(f"총 {len(selected_news)}개 뉴스 선별 완료")
         return selected_news
@@ -392,28 +392,28 @@ if __name__ == "__main__":
         {
             'title': 'Taylor Swift Announces New Album "Midnight Stories"',
             'description': 'Pop superstar Taylor Swift revealed her upcoming album during a surprise announcement, featuring collaborations with indie artists.',
-            'link': 'https://example.com/taylor-swift-album',
+            'url': 'https://example.com/taylor-swift-album', # link -> url
             'source': 'billboard.com',
             'published_date': '2025-06-26 10:00:00' # 날짜 형식 일치
         },
         {
             'title': 'BTS Signs Major Publishing Deal with Universal Music',
             'description': 'The K-pop group BTS has signed a groundbreaking publishing agreement with Universal Music Group, expanding their global reach.',
-            'link': 'https://example.com/bts-deal',
+            'url': 'https://example.com/bts-deal', # link -> url
             'source': 'variety.com',
             'published_date': '2025-06-26 11:30:00' # 날짜 형식 일치
         },
         {
             'title': 'New AI Music Startup Raises $10M in Seed Funding',
             'description': 'A new AI-powered music creation platform secured significant investment to develop its generative music algorithms.',
-            'link': 'https://example.com/ai-startup',
+            'url': 'https://example.com/ai-startup',
             'source': 'techcrunch.com',
             'published_date': '2025-06-25 15:00:00'
         },
         {
             'title': 'Indie Artist "The Lumineers" Announce Fall Tour Dates',
             'description': 'Folk-rock band The Lumineers will embark on a North American tour this fall, with tickets going on sale next week.',
-            'link': 'https://example.com/lumineers-tour',
+            'url': 'https://example.com/lumineers-tour',
             'source': 'consequence.net',
             'published_date': '2025-06-24 09:00:00'
         }
