@@ -68,26 +68,32 @@ def main():
     # 6. 뉴스 발송 (프로덕션 모드에서만)
     if args.production:
         logger.info("6. 프로덕션 모드: 뉴스 발송 시작 (Slack & Email)...")
-        delivery_system = NewsDeliverySystem()
         
-        # Slack 발송
-        slack_token = os.getenv("SLACK_BOT_TOKEN")
-        slack_channel = os.getenv("SLACK_CHANNEL_ID", "C08RABUFRD0")  # 기본 채널 ID
-        if slack_token:
-            delivery_system.send_to_slack(selected_news, slack_token, slack_channel)
-            logger.info("Slack 발송 완료.")
-        else:
-            logger.warning("SLACK_BOT_TOKEN 환경 변수가 설정되지 않아 Slack 발송을 건너뜁니다.")
+        # test_mode=False로 설정하여 실제 발송 모드 활성화
+        delivery_system = NewsDeliverySystem(test_mode=False)
         
-        # 이메일 발송
-        gmail_user = os.getenv("GMAIL_USER")
-        gmail_app_password = os.getenv("GMAIL_APP_PASSWORD")
-        recipient_email = os.getenv("RECIPIENT_EMAIL")
-        if gmail_user and gmail_app_password and recipient_email:
-            delivery_system.send_email(selected_news, gmail_user, gmail_app_password, recipient_email)
-            logger.info("이메일 발송 완료.")
-        else:
-            logger.warning("Gmail 환경 변수(GMAIL_USER, GMAIL_APP_PASSWORD, RECIPIENT_EMAIL)가 설정되지 않아 이메일 발송을 건너뜁니다.")
+        # 통합 발송 (Slack + 이메일 동시)
+        try:
+            results = delivery_system.deliver_news(selected_news)
+            
+            if results['slack_success']:
+                logger.info("✅ Slack 발송 완료")
+            else:
+                logger.warning("❌ Slack 발송 실패")
+            
+            if results['email_success']:
+                logger.info("✅ 이메일 발송 완료")
+            else:
+                logger.warning("❌ 이메일 발송 실패")
+                
+            # 발송 결과 요약
+            success_count = sum(results.values())
+            total_channels = len(results)
+            logger.info(f"📊 발송 결과: {success_count}/{total_channels} 채널 성공")
+            
+        except Exception as e:
+            logger.error(f"❌ 뉴스 발송 중 오류 발생: {e}")
+            
     else:
         logger.info("6. 테스트 모드: 뉴스 발송을 건너뜁니다. '--production' 플래그를 사용하여 발송하세요.")
     
