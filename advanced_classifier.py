@@ -169,9 +169,9 @@ class AdvancedClassifier:
         
         return 'NEWS'  # 기본값
     
-    def extract_tags(self, title: str, description: str, url: str) -> Dict[str, List[str]]: # link -> url
+    def extract_tags(self, title: str, description: str, url: str) -> Dict[str, List[str]]:
         """태그 추출 (장르/업계 우선, 없으면 지역)"""
-        text = f"{title} {description} {url}".lower() # link -> url
+        text = f"{title} {description} {url}".lower()
         
         # 장르 태그 추출
         genre_tags = []
@@ -198,7 +198,7 @@ class AdvancedClassifier:
             'region': region_tags
         }
     
-    def generate_5w1h_summary(self, title: str, description: str, url: str) -> str: # link -> url
+    def generate_5w1h_summary(self, title: str, description: str, url: str) -> str:
         """5W1H 기반 상세 요약 생성"""
         try:
             # 기본 정보 추출
@@ -320,16 +320,16 @@ class AdvancedClassifier:
             try:
                 title = news.get('title', '')
                 description = news.get('description', '')
-                url = news.get('url', '') # <--- news.get('link', '') -> news.get('url', '')
+                url = news.get('url', '')
                 
                 # 카테고리 분류
                 category = self.classify_category(title, description)
                 
                 # 태그 추출
-                tags = self.extract_tags(title, description, url) # url 전달
+                tags = self.extract_tags(title, description, url)
                 
                 # 5W1H 요약 생성
-                summary = self.generate_5w1h_summary(title, description, url) # url 전달
+                summary = self.generate_5w1h_summary(title, description, url)
                 
                 # 중요도 점수 계산
                 importance_score = self.calculate_importance_score(title, description, tags)
@@ -381,8 +381,8 @@ class AdvancedClassifier:
             top_news = sorted_news[:max_per_category]
             selected_news.extend(top_news)
             
-            # 수정된 부분: f-string 닫는 괄호 '}'를 '}}'로 변경
-            logger.info(f"{category} 카테고리: {len(news_items)}개 중 {len(top_news)}개 선별}}")
+            # f-string 대신 .format() 사용
+            logger.info("{} 카테고리: {}개 중 {}개 선별".format(category, len(news_items), len(top_news)))
         
         logger.info(f"총 {len(selected_news)}개 뉴스 선별 완료")
         return selected_news
@@ -393,16 +393,16 @@ if __name__ == "__main__":
         {
             'title': 'Taylor Swift Announces New Album "Midnight Stories"',
             'description': 'Pop superstar Taylor Swift revealed her upcoming album during a surprise announcement, featuring collaborations with indie artists.',
-            'url': 'https://example.com/taylor-swift-album', # link -> url
+            'url': 'https://example.com/taylor-swift-album',
             'source': 'billboard.com',
-            'published_date': '2025-06-26 10:00:00' # 날짜 형식 일치
+            'published_date': '2025-06-26 10:00:00'
         },
         {
             'title': 'BTS Signs Major Publishing Deal with Universal Music',
             'description': 'The K-pop group BTS has signed a groundbreaking publishing agreement with Universal Music Group, expanding their global reach.',
-            'url': 'https://example.com/bts-deal', # link -> url
+            'url': 'https://example.com/bts-deal',
             'source': 'variety.com',
-            'published_date': '2025-06-26 11:30:00' # 날짜 형식 일치
+            'published_date': '2025-06-26 11:30:00'
         },
         {
             'title': 'New AI Music Startup Raises $10M in Seed Funding',
@@ -416,4 +416,16 @@ if __name__ == "__main__":
             'description': 'Folk-rock band The Lumineers will embark on a North American tour this fall, with tickets going on sale next week.',
             'url': 'https://example.com/lumineers-tour',
             'source': 'consequence.net',
-            'published_date': '2025-06-24 0
+            'published_date': '2025-06-24 09:00:00'
+        }
+    ]
+    
+    # 분류기 테스트
+    classifier = AdvancedClassifier( )
+    processed = classifier.process_news_list(sample_news)
+    
+    print("=== 처리된 뉴스 결과 ===")
+    for i, news in enumerate(processed, 1):
+        print(f"\n{i}. {news['title']}")
+        print(f"   카테고리: {news['category']}")
+        print(f"   
