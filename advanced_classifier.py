@@ -381,7 +381,8 @@ class AdvancedClassifier:
             top_news = sorted_news[:max_per_category]
             selected_news.extend(top_news)
             
-            logger.info(f"{category} 카테고리: {len(news_items)}개 중 {len(top_news)}개 선별}")
+            # 수정된 부분: f-string 닫는 괄호 '}'를 '}}'로 변경
+            logger.info(f"{category} 카테고리: {len(news_items)}개 중 {len(top_news)}개 선별}}")
         
         logger.info(f"총 {len(selected_news)}개 뉴스 선별 완료")
         return selected_news
