@@ -51,10 +51,10 @@ class NewsDeliverySystem:
             logger.info("테스트 모드: Slack 연결 건너뜀")
     
     def format_slack_message(self, news_list: List[Dict]) -> str:
-        """Slack 메시지 포맷팅"""
+        """Slack 메시지 포맷팅 (개선된 형식)"""
         
         # 헤더
-        message = f"🎵 *음악 업계 뉴스 브리핑* - {datetime.now().strftime('%Y년 %m월 %d일')}\n\n"
+        message = f"음악 업계 뉴스 브리핑 - {datetime.now().strftime('%Y년 %m월 %d일')}\n"
         
         # 카테고리별로 그룹화
         categorized_news = {}
@@ -66,17 +66,17 @@ class NewsDeliverySystem:
         
         # 카테고리 이모지 매핑
         category_emojis = {
-            'NEWS': '📰',
-            'REPORT': '📊',
-            'INSIGHT': '💡',
-            'INTERVIEW': '🎤',
-            'COLUMN': '✍️'
+            'NEWS': ':newspaper:',
+            'REPORT': ':bar_chart:',
+            'INSIGHT': ':bulb:',
+            'INTERVIEW': ':microphone2:',
+            'COLUMN': ':writing_hand:'
         }
         
         # 카테고리별 뉴스 추가
         for category, news_items in categorized_news.items():
-            emoji = category_emojis.get(category, '📰')
-            message += f"{emoji} *{category}*\n"
+            emoji = category_emojis.get(category, ':newspaper:')
+            message += f"{emoji} {category}\n"
             
             for i, news in enumerate(news_items, 1):
                 title = news.get('title', '')
@@ -84,26 +84,26 @@ class NewsDeliverySystem:
                 source = news.get('source', '')
                 summary = news.get('summary_5w1h', '')
                 tags = news.get('tags', {})
-                importance = news.get('importance_score', 0)
+                published_date = news.get('published_date', '')
                 
-                # 태그 문자열 생성
-                tag_strings = []
-                for tag_type, tag_list in tags.items():
-                    if tag_list:
-                        tag_strings.append(f"{tag_type}: {', '.join(tag_list[:3])}")
+                # 태그 문자열 생성 (장르/업계 우선, 없으면 지역)
+                tag_parts = []
+                if tags.get('genre'):
+                    tag_parts.extend(tags['genre'])
+                if tags.get('industry'):
+                    tag_parts.extend(tags['industry'])
+                if not tag_parts and tags.get('region'):
+                    tag_parts.extend(tags['region'])
                 
-                tag_text = " | ".join(tag_strings) if tag_strings else "태그 없음"
+                tag_text = " ".join(tag_parts) if tag_parts else ""
                 
-                message += f"{i}. *<{link}|{title}>*\n"
-                message += f"   📍 {source} | ⭐ {importance:.2f}\n"
-                message += f"   📝 {summary}\n"
-                message += f"   🏷️ {tag_text}\n\n"
-            
-            message += "\n"
-        
-        # 푸터
-        message += f"📊 총 {len(news_list)}개 뉴스 | 🤖 자동 수집 및 분류\n"
-        message += f"⏰ 생성 시간: {datetime.now().strftime('%H:%M:%S')}"
+                message += f"{i}. {title}\n"
+                if summary:
+                    message += f"{summary}\n"
+                message += f":date: {published_date} | :link: {link}\n"
+                if tag_text:
+                    message += f"{tag_text}\n"
+                message += "\n"
         
         return message
     
