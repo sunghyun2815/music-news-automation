@@ -42,7 +42,7 @@ class MusicNewsJSONGenerator:
                     'id': news.get('id', ''),
                     'title': news.get('title', ''),
                     'summary': news.get('summary', ''), # advanced_classifier.py에서 채워진 summary 사용
-                    'url': news.get('url', ''), # 'link' 대신 'url' 사용
+                    'url': news.get('link', ''), # 'link' 대신 'url' 사용
                     'source': news.get('source', ''),
                     'published_date': news.get('published_date', ''),
                     'importance_score': news.get('importance_score', 0),
