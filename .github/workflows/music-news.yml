@@ -94,42 +94,39 @@ jobs:
       run: |
         echo "🤖 Testing Claude API connection..."
         
-        cat > test_claude_api.py << 'EOF'
-import os
-import sys
-
-try:
-    from ai_summarizer import AISummarizer
-    
-    # API 키 확인
-    api_key = os.environ.get('ANTHROPIC_API_KEY')
-    if not api_key:
-        print('❌ ANTHROPIC_API_KEY not found')
-        sys.exit(1)
-    
-    print(f'✅ API key found (length: {len(api_key)})')
-    
-    # AI 요약기 초기화 테스트
-    summarizer = AISummarizer()
-    print('✅ AI summarizer initialized successfully')
-    
-    # 간단한 테스트 요약
-    test_summary = summarizer.generate_summary(
-        'Test Music News', 
-        'This is a test description for music news.',
-        'https://example.com'
-    )
-    print(f'✅ Test summary generated: {test_summary[:50]}...')
-    print('🎉 Claude API connection successful!')
-    
-except Exception as e:
-    print(f'❌ Claude API test failed: {e}')
-    print('💡 Will fall back to rule-based summaries')
-    # AI 실패 시에도 계속 진행
-EOF
+        python -c "
+        import os
+        import sys
         
-        python test_claude_api.py || echo "⚠️ Claude API test failed, continuing with fallback"
-        rm -f test_claude_api.py
+        try:
+            from ai_summarizer import AISummarizer
+            
+            # API 키 확인
+            api_key = os.environ.get('ANTHROPIC_API_KEY')
+            if not api_key:
+                print('❌ ANTHROPIC_API_KEY not found')
+                sys.exit(1)
+            
+            print(f'✅ API key found (length: {len(api_key)})')
+            
+            # AI 요약기 초기화 테스트
+            summarizer = AISummarizer()
+            print('✅ AI summarizer initialized successfully')
+            
+            # 간단한 테스트 요약
+            test_summary = summarizer.generate_summary(
+                'Test Music News', 
+                'This is a test description for music news.',
+                'https://example.com'
+            )
+            print(f'✅ Test summary generated: {test_summary[:50]}...')
+            print('🎉 Claude API connection successful!')
+            
+        except Exception as e:
+            print(f'❌ Claude API test failed: {e}')
+            print('💡 Will fall back to rule-based summaries')
+            # AI 실패 시에도 계속 진행
+        " || echo "⚠️ Claude API test failed, continuing with fallback"
     
     - name: Verify environment variables
       env:
@@ -209,47 +206,29 @@ EOF
           echo "📊 File size: $(du -h music_news.json | cut -f1)"
           
           # AI 요약 사용 현황 확인
-          cat > check_ai_usage.py << 'EOF'
-import json
-import sys
-
-try:
-    with open('music_news.json', 'r', encoding='utf-8') as f:
-        data = json.load(f)
-    
-    news_items = data.get('news', [])
-    ai_count = sum(1 for item in news_items if item.get('summary_type') == 'ai_generated')
-    rule_count = sum(1 for item in news_items if item.get('summary_type') == 'rule_based')
-    total_count = len(news_items)
-    
-    print(f"AI:{ai_count}")
-    print(f"Rule:{rule_count}")
-    print(f"Total:{total_count}")
-    
-except Exception as e:
-    print(f"AI:0")
-    print(f"Rule:0")
-    print(f"Total:0")
-    print(f"Error:{str(e)}")
-EOF
-
-          # Python 스크립트 실행하고 결과 확인
-          if python check_ai_usage.py > ai_usage_result.txt 2>&1; then
-            # 성공적으로 실행된 경우
-            AI_COUNT=$(grep "AI:" ai_usage_result.txt | cut -d':' -f2 || echo "0")
-            RULE_COUNT=$(grep "Rule:" ai_usage_result.txt | cut -d':' -f2 || echo "0")
-            TOTAL_COUNT=$(grep "Total:" ai_usage_result.txt | cut -d':' -f2 || echo "0")
-            
-            echo "🤖 AI 요약: $AI_COUNT 개"
-            echo "📝 규칙 기반 요약: $RULE_COUNT 개"
-            echo "📊 전체 뉴스: $TOTAL_COUNT 개"
-          else
-            echo "⚠️ AI usage check failed, but continuing..."
-            cat ai_usage_result.txt || echo "No output available"
-          fi
+          AI_STATS=$(python -c "
+          import json
           
-          # 임시 파일 정리
-          rm -f check_ai_usage.py ai_usage_result.txt
+          try:
+              with open('music_news.json', 'r', encoding='utf-8') as f:
+                  data = json.load(f)
+              
+              news_items = data.get('news', [])
+              ai_count = sum(1 for item in news_items if item.get('summary_type') == 'ai_generated')
+              rule_count = sum(1 for item in news_items if item.get('summary_type') == 'rule_based')
+              total_count = len(news_items)
+              
+              print(f'{ai_count},{rule_count},{total_count}')
+              
+          except Exception as e:
+              print('0,0,0')
+          " 2>/dev/null || echo "0,0,0")
+          
+          IFS=',' read -r AI_COUNT RULE_COUNT TOTAL_COUNT <<< "$AI_STATS"
+          
+          echo "🤖 AI 요약: $AI_COUNT 개"
+          echo "📝 규칙 기반 요약: $RULE_COUNT 개"
+          echo "📊 전체 뉴스: $TOTAL_COUNT 개"
           
           echo "📋 JSON Preview:"
           head -20 music_news.json
@@ -294,25 +273,22 @@ EOF
           TIMESTAMP=$(date '+%Y-%m-%d %H:%M:%S UTC')
           
           # AI 사용 현황 확인
-          cat > get_ai_status.py << 'EOF'
-import json
-
-try:
-    with open('music_news.json', 'r', encoding='utf-8') as f:
-        data = json.load(f)
-    
-    news_items = data.get('news', [])
-    ai_count = sum(1 for item in news_items if item.get('summary_type') == 'ai_generated')
-    rule_count = sum(1 for item in news_items if item.get('summary_type') == 'rule_based')
-    
-    print(f"AI:{ai_count}, Rule:{rule_count}")
-    
-except Exception:
-    print("Status check failed")
-EOF
+          AI_STATUS=$(python -c "
+          import json
           
-          AI_STATUS=$(python get_ai_status.py 2>/dev/null || echo "Status unavailable")
-          rm -f get_ai_status.py
+          try:
+              with open('music_news.json', 'r', encoding='utf-8') as f:
+                  data = json.load(f)
+              
+              news_items = data.get('news', [])
+              ai_count = sum(1 for item in news_items if item.get('summary_type') == 'ai_generated')
+              rule_count = sum(1 for item in news_items if item.get('summary_type') == 'rule_based')
+              
+              print(f'AI:{ai_count}, Rule:{rule_count}')
+              
+          except Exception:
+              print('Status check failed')
+          " 2>/dev/null || echo "Status unavailable")
           
           git commit -m "🎵 Update music news data with Claude AI - $TIMESTAMP
 
@@ -346,47 +322,35 @@ EOF
         
         if [ -f "music_news.json" ]; then
           # 통계 정보 수집
-          cat > get_statistics.py << 'EOF'
-import json
-
-try:
-    with open('music_news.json', 'r', encoding='utf-8') as f:
-        data = json.load(f)
-    
-    # 기본 통계
-    total_news = data.get('metadata', {}).get('total_news', 0)
-    news_items = data.get('news', [])
-    
-    # AI 요약 통계
-    ai_count = sum(1 for item in news_items if item.get('summary_type') == 'ai_generated')
-    rule_count = sum(1 for item in news_items if item.get('summary_type') == 'rule_based')
-    total_items = len(news_items)
-    
-    if total_items > 0:
-        ai_percentage = (ai_count / total_items * 100)
-        ai_summary = f"{ai_count}/{total_items} ({ai_percentage:.1f}% AI)"
-    else:
-        ai_summary = "N/A"
-    
-    print(f"TOTAL_NEWS:{total_news}")
-    print(f"AI_SUMMARY:{ai_summary}")
-    
-except Exception as e:
-    print(f"TOTAL_NEWS:0")
-    print(f"AI_SUMMARY:Error")
-EOF
+          STATS=$(python -c "
+          import json
           
-          # 통계 정보 가져오기
-          if python get_statistics.py > stats_result.txt 2>&1; then
-            TOTAL_NEWS=$(grep "TOTAL_NEWS:" stats_result.txt | cut -d':' -f2 || echo "0")
-            AI_SUMMARY=$(grep "AI_SUMMARY:" stats_result.txt | cut -d':' -f2- || echo "N/A")
-          else
-            TOTAL_NEWS="0"
-            AI_SUMMARY="Error"
-          fi
+          try:
+              with open('music_news.json', 'r', encoding='utf-8') as f:
+                  data = json.load(f)
+              
+              # 기본 통계
+              total_news = data.get('metadata', {}).get('total_news', 0)
+              news_items = data.get('news', [])
+              
+              # AI 요약 통계
+              ai_count = sum(1 for item in news_items if item.get('summary_type') == 'ai_generated')
+              rule_count = sum(1 for item in news_items if item.get('summary_type') == 'rule_based')
+              total_items = len(news_items)
+              
+              if total_items > 0:
+                  ai_percentage = (ai_count / total_items * 100)
+                  ai_summary = f'{ai_count}/{total_items} ({ai_percentage:.1f}% AI)'
+              else:
+                  ai_summary = 'N/A'
+              
+              print(f'{total_news},{ai_summary}')
+              
+          except Exception as e:
+              print('0,Error')
+          " 2>/dev/null || echo "0,Error")
           
-          # 임시 파일 정리
-          rm -f get_statistics.py stats_result.txt
+          IFS=',' read -r TOTAL_NEWS AI_SUMMARY <<< "$STATS"
           
           echo "📊 **Statistics:**" >> $GITHUB_STEP_SUMMARY
           echo "- Total News: $TOTAL_NEWS" >> $GITHUB_STEP_SUMMARY
