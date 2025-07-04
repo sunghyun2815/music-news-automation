@@ -1,4 +1,4 @@
-name: Music News Automation with Claude AI
+name: Music News Automation with JSON API
 
 on:
   schedule:
@@ -25,15 +25,7 @@ jobs:
     - name: Verify required files
       run: |
         echo "📁 Checking required files..."
-        required_files=(
-          "music_news_automation.py" 
-          "advanced_news_collector.py" 
-          "advanced_classifier.py" 
-          "ai_summarizer.py"
-          "news_delivery_system.py" 
-          "json_generator.py" 
-          "requirements.txt"
-        )
+        required_files=("music_news_automation.py" "advanced_news_collector.py" "advanced_classifier.py" "news_delivery_system.py" "json_generator.py" "requirements.txt")
         
         for file in "${required_files[@]}"; do
           if [ -f "$file" ]; then
@@ -55,15 +47,11 @@ jobs:
     - name: Test Python imports
       run: |
         echo "🔍 Testing Python module imports..."
-        python -c """
+        python -c "
         try:
             print('Testing advanced_news_collector...')
             from advanced_news_collector import AdvancedNewsCollector
             print('✅ advanced_news_collector imported')
-            
-            print('Testing ai_summarizer...')
-            from ai_summarizer import AISummarizer
-            print('✅ ai_summarizer imported')
             
             print('Testing advanced_classifier...')
             from advanced_classifier import AdvancedClassifier
@@ -86,54 +74,10 @@ jobs:
         except Exception as e:
             print(f'❌ Import error: {e}')
             exit(1)
-        """
-    
-    - name: Test Claude API connection
-      env:
-        ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
-      run: |
-        echo "🤖 Testing Claude API connection..."
-        
-        cat > test_claude_api.py << 'EOF'
-import os
-import sys
-
-try:
-    from ai_summarizer import AISummarizer
-    
-    # API 키 확인
-    api_key = os.environ.get('ANTHROPIC_API_KEY')
-    if not api_key:
-        print('❌ ANTHROPIC_API_KEY not found')
-        sys.exit(1)
-    
-    print(f'✅ API key found (length: {len(api_key)})')
-    
-    # AI 요약기 초기화 테스트
-    summarizer = AISummarizer()
-    print('✅ AI summarizer initialized successfully')
-    
-    # 간단한 테스트 요약
-    test_summary = summarizer.generate_summary(
-        'Test Music News', 
-        'This is a test description for music news.',
-        'https://example.com'
-    )
-    print(f'✅ Test summary generated: {test_summary[:50]}...')
-    print('🎉 Claude API connection successful!')
-    
-except Exception as e:
-    print(f'❌ Claude API test failed: {e}')
-    print('💡 Will fall back to rule-based summaries')
-    # AI 실패 시에도 계속 진행
-EOF
-        
-        python test_claude_api.py || echo "⚠️ Claude API test failed, continuing with fallback"
-        rm -f test_claude_api.py
+        "
     
     - name: Verify environment variables
       env:
-        ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
         SLACK_BOT_TOKEN: ${{ secrets.SLACK_TOKEN }}
         GMAIL_USER: ${{ secrets.EMAIL_ADDRESS }}
         GMAIL_APP_PASSWORD: ${{ secrets.EMAIL_PASSWORD }}
@@ -141,16 +85,6 @@ EOF
       run: |
         echo "🔐 Verifying environment variables..."
         
-        # Claude API 키 확인
-        if [ -z "$ANTHROPIC_API_KEY" ]; then
-          echo "⚠️  ANTHROPIC_API_KEY not set"
-          echo "💡 Please add ANTHROPIC_API_KEY to GitHub Secrets"
-          echo "🔄 Will use rule-based summaries instead"
-        else
-          echo "✅ ANTHROPIC_API_KEY is set (length: ${#ANTHROPIC_API_KEY})"
-        fi
-        
-        # Slack 토큰 확인
         if [ -z "$SLACK_BOT_TOKEN" ]; then
           echo "❌ SLACK_BOT_TOKEN not set"
           echo "💡 Please add SLACK_TOKEN to GitHub Secrets"
@@ -159,7 +93,6 @@ EOF
           echo "✅ SLACK_BOT_TOKEN is set (length: ${#SLACK_BOT_TOKEN})"
         fi
         
-        # Gmail 설정 확인
         if [ -z "$GMAIL_USER" ]; then
           echo "❌ GMAIL_USER not set"
           echo "💡 Please add EMAIL_ADDRESS to GitHub Secrets"
@@ -176,99 +109,53 @@ EOF
           echo "✅ GMAIL_APP_PASSWORD is set (length: ${#GMAIL_APP_PASSWORD})"
         fi
         
-        echo "✅ Environment variables verification completed"
+        echo "✅ All environment variables verified"
     
-    - name: Run music news automation with AI
+    - name: Run music news automation
       env:
-        ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
         SLACK_BOT_TOKEN: ${{ secrets.SLACK_TOKEN }}
-        SLACK_TOKEN: ${{ secrets.SLACK_TOKEN }}
+        SLACK_TOKEN: ${{ secrets.SLACK_TOKEN }}  # NewsDeliverySystem이 찾는 변수명
         GMAIL_USER: ${{ secrets.EMAIL_ADDRESS }}
         GMAIL_APP_PASSWORD: ${{ secrets.EMAIL_PASSWORD }}
-        EMAIL_ADDRESS: ${{ secrets.EMAIL_ADDRESS }}
-        EMAIL_PASSWORD: ${{ secrets.EMAIL_PASSWORD }}
+        EMAIL_ADDRESS: ${{ secrets.EMAIL_ADDRESS }}  # NewsDeliverySystem이 찾는 변수명
+        EMAIL_PASSWORD: ${{ secrets.EMAIL_PASSWORD }}  # NewsDeliverySystem이 찾는 변수명
         RECIPIENT_EMAIL: ${{ secrets.EMAIL_ADDRESS }}
         SLACK_CHANNEL_ID: C08RABUFRD0
       run: |
-        echo "🎵 Starting music news automation with Claude AI..."
+        echo "🎵 Starting music news automation system..."
         echo "📅 Execution time: $(date)"
-        echo "🤖 AI Summary: $([ -n "$ANTHROPIC_API_KEY" ] && echo "Enabled" || echo "Disabled")"
         
-        # 프로덕션 모드로 실행
         python music_news_automation.py --production
         
         echo "✅ Music news automation completed successfully"
         echo "📅 Completion time: $(date)"
     
-    - name: Verify JSON files and check AI usage
+    - name: Verify JSON files generated
       run: |
         echo "📄 Checking generated JSON files..."
         
         if [ -f "music_news.json" ]; then
           echo "✅ music_news.json generated"
           echo "📊 File size: $(du -h music_news.json | cut -f1)"
-          
-          # AI 요약 사용 현황 확인
-          cat > check_ai_usage.py << 'EOF'
-import json
-import sys
-
-try:
-    with open('music_news.json', 'r', encoding='utf-8') as f:
-        data = json.load(f)
-    
-    news_items = data.get('news', [])
-    ai_count = sum(1 for item in news_items if item.get('summary_type') == 'ai_generated')
-    rule_count = sum(1 for item in news_items if item.get('summary_type') == 'rule_based')
-    total_count = len(news_items)
-    
-    print(f"AI:{ai_count}")
-    print(f"Rule:{rule_count}")
-    print(f"Total:{total_count}")
-    
-except Exception as e:
-    print(f"AI:0")
-    print(f"Rule:0")
-    print(f"Total:0")
-    print(f"Error:{str(e)}")
-EOF
-
-          # Python 스크립트 실행하고 결과 확인
-          if python check_ai_usage.py > ai_usage_result.txt 2>&1; then
-            # 성공적으로 실행된 경우
-            AI_COUNT=$(grep "AI:" ai_usage_result.txt | cut -d':' -f2 || echo "0")
-            RULE_COUNT=$(grep "Rule:" ai_usage_result.txt | cut -d':' -f2 || echo "0")
-            TOTAL_COUNT=$(grep "Total:" ai_usage_result.txt | cut -d':' -f2 || echo "0")
-            
-            echo "🤖 AI 요약: $AI_COUNT 개"
-            echo "📝 규칙 기반 요약: $RULE_COUNT 개"
-            echo "📊 전체 뉴스: $TOTAL_COUNT 개"
-          else
-            echo "⚠️ AI usage check failed, but continuing..."
-            cat ai_usage_result.txt || echo "No output available"
-          fi
-          
-          # 임시 파일 정리
-          rm -f check_ai_usage.py ai_usage_result.txt
-          
-          echo "📋 JSON Preview:"
+          echo "📋 Preview:"
           head -20 music_news.json
         else
           echo "❌ music_news.json not found"
           exit 1
         fi
         
-        # 다른 파일들 확인 (실패해도 경고만)
         if [ -f "api_info.json" ]; then
           echo "✅ api_info.json generated"
         else
-          echo "⚠️ api_info.json not found"
+          echo "❌ api_info.json not found"
+          exit 1
         fi
         
         if [ -f "README.md" ]; then
           echo "✅ README.md generated"
         else
-          echo "⚠️ README.md not found"
+          echo "❌ README.md not found"
+          exit 1
         fi
     
     - name: Configure Git
@@ -280,48 +167,22 @@ EOF
       run: |
         echo "📤 Committing generated files to repository..."
         
-        # 변경사항 확인 (archive 폴더가 없어도 오류 없게)
-        git add music_news.json api_info.json README.md
-        if [ -d "archive" ]; then
-          git add archive/
-        fi
+        # 변경사항 확인
+        git add music_news.json api_info.json README.md archive/
         
         # 변경사항이 있는지 확인
         if git diff --staged --quiet; then
           echo "📝 No changes to commit"
         else
-          # 커밋 메시지에 타임스탬프 및 AI 사용 여부 포함
+          # 커밋 메시지에 타임스탬프 포함
           TIMESTAMP=$(date '+%Y-%m-%d %H:%M:%S UTC')
-          
-          # AI 사용 현황 확인
-          cat > get_ai_status.py << 'EOF'
-import json
-
-try:
-    with open('music_news.json', 'r', encoding='utf-8') as f:
-        data = json.load(f)
-    
-    news_items = data.get('news', [])
-    ai_count = sum(1 for item in news_items if item.get('summary_type') == 'ai_generated')
-    rule_count = sum(1 for item in news_items if item.get('summary_type') == 'rule_based')
-    
-    print(f"AI:{ai_count}, Rule:{rule_count}")
-    
-except Exception:
-    print("Status check failed")
-EOF
-          
-          AI_STATUS=$(python get_ai_status.py 2>/dev/null || echo "Status unavailable")
-          rm -f get_ai_status.py
-          
-          git commit -m "🎵 Update music news data with Claude AI - $TIMESTAMP
+          git commit -m "🎵 Update music news data - $TIMESTAMP
 
           - Generated latest music news JSON
-          - Summary generation: $AI_STATUS
           - Updated API information
           - Refreshed documentation
           
-          Auto-generated by GitHub Actions with Claude AI integration"
+          Auto-generated by GitHub Actions"
           
           # 푸시
           git push
@@ -335,7 +196,7 @@ EOF
         echo "📊 Deployment Summary" >> $GITHUB_STEP_SUMMARY
         echo "===================" >> $GITHUB_STEP_SUMMARY
         echo "" >> $GITHUB_STEP_SUMMARY
-        echo "🎵 **Music News API Updated with Claude AI**" >> $GITHUB_STEP_SUMMARY
+        echo "🎵 **Music News API Updated**" >> $GITHUB_STEP_SUMMARY
         echo "" >> $GITHUB_STEP_SUMMARY
         echo "📅 **Generated at:** $(date)" >> $GITHUB_STEP_SUMMARY
         echo "" >> $GITHUB_STEP_SUMMARY
@@ -345,58 +206,12 @@ EOF
         echo "" >> $GITHUB_STEP_SUMMARY
         
         if [ -f "music_news.json" ]; then
-          # 통계 정보 수집
-          cat > get_statistics.py << 'EOF'
-import json
-
-try:
-    with open('music_news.json', 'r', encoding='utf-8') as f:
-        data = json.load(f)
-    
-    # 기본 통계
-    total_news = data.get('metadata', {}).get('total_news', 0)
-    news_items = data.get('news', [])
-    
-    # AI 요약 통계
-    ai_count = sum(1 for item in news_items if item.get('summary_type') == 'ai_generated')
-    rule_count = sum(1 for item in news_items if item.get('summary_type') == 'rule_based')
-    total_items = len(news_items)
-    
-    if total_items > 0:
-        ai_percentage = (ai_count / total_items * 100)
-        ai_summary = f"{ai_count}/{total_items} ({ai_percentage:.1f}% AI)"
-    else:
-        ai_summary = "N/A"
-    
-    print(f"TOTAL_NEWS:{total_news}")
-    print(f"AI_SUMMARY:{ai_summary}")
-    
-except Exception as e:
-    print(f"TOTAL_NEWS:0")
-    print(f"AI_SUMMARY:Error")
-EOF
-          
-          # 통계 정보 가져오기
-          if python get_statistics.py > stats_result.txt 2>&1; then
-            TOTAL_NEWS=$(grep "TOTAL_NEWS:" stats_result.txt | cut -d':' -f2 || echo "0")
-            AI_SUMMARY=$(grep "AI_SUMMARY:" stats_result.txt | cut -d':' -f2- || echo "N/A")
-          else
-            TOTAL_NEWS="0"
-            AI_SUMMARY="Error"
-          fi
-          
-          # 임시 파일 정리
-          rm -f get_statistics.py stats_result.txt
-          
+          NEWS_COUNT=$(python -c "import json; data=json.load(open('music_news.json')); print(data['metadata']['total_news'])")
           echo "📊 **Statistics:**" >> $GITHUB_STEP_SUMMARY
-          echo "- Total News: $TOTAL_NEWS" >> $GITHUB_STEP_SUMMARY
-          echo "- AI Summaries: $AI_SUMMARY" >> $GITHUB_STEP_SUMMARY
+          echo "- Total News: $NEWS_COUNT" >> $GITHUB_STEP_SUMMARY
           echo "- Categories: NEWS, REPORT, INSIGHT, INTERVIEW, COLUMN" >> $GITHUB_STEP_SUMMARY
         fi
         
-        echo "" >> $GITHUB_STEP_SUMMARY
-        echo "🤖 **AI Integration:** Claude-3-Haiku (Top 10 news items)" >> $GITHUB_STEP_SUMMARY
-        echo "📝 **Fallback:** Rule-based 5W1H summaries" >> $GITHUB_STEP_SUMMARY
         echo "" >> $GITHUB_STEP_SUMMARY
         echo "✅ **Status:** Successfully updated" >> $GITHUB_STEP_SUMMARY
     
@@ -421,8 +236,6 @@ EOF
         echo "💡 Check the logs above for detailed error information"
         echo "🔧 Common solutions:"
         echo "   1. Verify GitHub Secrets are set correctly"
-        echo "   2. Check ANTHROPIC_API_KEY is valid and has credits"
-        echo "   3. Ensure all required files are uploaded"
-        echo "   4. Verify Slack bot has proper permissions"
-        echo "   5. Check Gmail app password is correct"
-        echo "   6. AI errors will fallback to rule-based summaries"
+        echo "   2. Check if all required files are uploaded"
+        echo "   3. Ensure Slack bot has proper permissions"
+        echo "   4. Verify Gmail app password is correct"
