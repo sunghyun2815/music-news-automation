@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """
-AI 요약 시스템 (Claude API 연동)
-음악 뉴스에 대한 고품질 5W1H 요약 생성
+AI 요약 시스템 (Claude API 연동) - 영어 자연문 요약
+음악 뉴스에 대한 고품질 영어 요약 생성
 """
 
 import os
@@ -26,32 +26,27 @@ class AISummarizer:
         self.request_count = 0
         self.max_requests_per_minute = 50  # API 레이트 리미트
         
-        # 음악 뉴스 전용 프롬프트 템플릿
+        # 영어 자연문 요약 프롬프트 템플릿
         self.prompt_template = """
-다음 음악 뉴스를 분석하여 5W1H 형식으로 요약해주세요.
+Please summarize the following music industry news in a natural, flowing English sentence or two.
 
-제목: {title}
-내용: {description}
+Title: {title}
+Content: {description}
 URL: {url}
 
-요구사항:
-1. Who: 관련 아티스트, 인물, 회사명
-2. What: 주요 사건/발표 내용
-3. When: 시기 정보
-4. Where: 지역/국가 정보
-5. Why/How: 배경/이유/방법
+Requirements:
+- Write 1-2 natural English sentences (maximum 150 words)
+- Include key information: who, what, when, where (if relevant)
+- Use music industry terminology appropriately
+- Write in a journalistic style, like a news brief
+- Be concise but informative
+- Focus on the most newsworthy aspects
 
-응답 형식:
-- 2-3문장의 간결한 요약
-- 음악 업계 전문 용어 사용
-- 핵심 정보만 포함
-- 한국어로 작성
-
-요약:"""
+Summary:"""
 
     def generate_summary(self, title: str, description: str, url: str = "") -> str:
         """
-        Claude API를 사용하여 뉴스 요약 생성
+        Claude API를 사용하여 영어 자연문 뉴스 요약 생성
         
         Args:
             title: 뉴스 제목
@@ -59,7 +54,7 @@ URL: {url}
             url: 뉴스 URL (선택사항)
             
         Returns:
-            생성된 요약 텍스트
+            생성된 영어 요약 텍스트
         """
         try:
             # 레이트 리미트 체크
@@ -72,7 +67,7 @@ URL: {url}
                 url=url
             )
             
-            logger.info(f"AI 요약 요청: {title[:50]}...")
+            logger.info(f"AI 영어 요약 요청: {title[:50]}...")
             
             # Claude API 호출
             response = self.client.messages.create(
@@ -91,14 +86,14 @@ URL: {url}
             # 요약 후처리
             summary = self._post_process_summary(summary)
             
-            logger.info(f"AI 요약 완료: {len(summary)} 문자")
+            logger.info(f"AI 영어 요약 완료: {len(summary)} 문자")
             self.request_count += 1
             
             return summary
             
         except Exception as e:
             logger.error(f"AI 요약 생성 오류: {e}")
-            # 오류 시 기본 요약 반환
+            # 오류 시 기본 영어 요약 반환
             return self._generate_fallback_summary(title, description)
     
     def batch_summarize(self, news_list: List[Dict], max_items: int = 10) -> List[Dict]:
@@ -112,7 +107,7 @@ URL: {url}
         Returns:
             AI 요약이 추가된 뉴스 리스트
         """
-        logger.info(f"배치 AI 요약 시작: {len(news_list)} 개 중 상위 {max_items}개 처리")
+        logger.info(f"배치 AI 영어 요약 시작: {len(news_list)} 개 중 상위 {max_items}개 처리")
         
         processed_news = []
         
@@ -131,7 +126,7 @@ URL: {url}
                     processed_news.append(news)
                     continue
                 
-                # AI 요약 생성
+                # AI 영어 요약 생성
                 ai_summary = self.generate_summary(
                     title=news.get('title', ''),
                     description=news.get('description', ''),
@@ -158,7 +153,7 @@ URL: {url}
                     'summary_type': 'rule_based'
                 })
         
-        logger.info(f"배치 AI 요약 완료: {min(max_items, len(news_list))}개 처리됨")
+        logger.info(f"배치 AI 영어 요약 완료: {min(max_items, len(news_list))}개 처리됨")
         return processed_news
     
     def _check_rate_limit(self):
@@ -170,30 +165,43 @@ URL: {url}
     
     def _post_process_summary(self, summary: str) -> str:
         """요약 후처리"""
-        # "요약:" 접두사 제거
-        if summary.startswith("요약:"):
-            summary = summary[3:].strip()
+        # "Summary:" 접두사 제거
+        if summary.startswith("Summary:"):
+            summary = summary[8:].strip()
         
         # 불필요한 문자 제거
         summary = summary.replace("**", "").replace("*", "")
         
+        # 따옴표 정리
+        summary = summary.strip('"').strip("'")
+        
         # 길이 제한
-        if len(summary) > 300:
-            summary = summary[:297] + "..."
+        if len(summary) > 200:
+            # 문장 단위로 자르기
+            sentences = summary.split('. ')
+            truncated = sentences[0]
+            for sentence in sentences[1:]:
+                if len(truncated + '. ' + sentence) <= 197:
+                    truncated += '. ' + sentence
+                else:
+                    break
+            summary = truncated + "..."
         
         return summary
     
     def _generate_fallback_summary(self, title: str, description: str) -> str:
-        """오류 시 기본 요약 생성"""
-        # 간단한 규칙 기반 요약
-        if "announces" in title.lower() or "releases" in title.lower():
-            return f"{title.split()[0] if title else '아티스트'}가 새로운 음악 발표를 공개했습니다."
-        elif "tour" in title.lower():
-            return f"{title.split()[0] if title else '아티스트'}의 투어 관련 소식입니다."
-        elif "deal" in title.lower() or "signs" in title.lower():
-            return f"음악 업계 계약 관련 소식입니다."
+        """오류 시 기본 영어 요약 생성"""
+        # 간단한 규칙 기반 영어 요약
+        if any(word in title.lower() for word in ['announces', 'reveals', 'drops']):
+            return f"Music artist announced new content. {title.split()[0] if title else 'Artist'} made a significant announcement in the music industry."
+        elif any(word in title.lower() for word in ['tour', 'concert', 'live']):
+            return f"Live music event announced. {title.split()[0] if title else 'Artist'} revealed upcoming tour or concert plans."
+        elif any(word in title.lower() for word in ['deal', 'signs', 'partnership']):
+            return f"Music industry business development. New partnership or deal announced in the music business sector."
+        elif any(word in title.lower() for word in ['chart', 'number', 'top']):
+            return f"Music chart performance update. {title.split()[0] if title else 'Artist'} achieved notable chart position or milestone."
         else:
-            return f"{title[:50]}... 관련 음악 업계 뉴스입니다."
+            return f"Music industry news update. {title[:50]}..." if len(title) > 50 else title
 
 # 설정 정보
 AI_SUMMARIZER_CONFIG = {
@@ -201,7 +209,9 @@ AI_SUMMARIZER_CONFIG = {
     "max_tokens": 200,
     "temperature": 0.3,
     "max_items_per_batch": 10,
-    "rate_limit_per_minute": 50
+    "rate_limit_per_minute": 50,
+    "language": "English",
+    "style": "Natural journalistic sentences"
 }
 
 def test_ai_summarizer():
@@ -222,7 +232,7 @@ def test_ai_summarizer():
             url=test_news['url']
         )
         
-        print(f"테스트 요약 결과:\n{summary}")
+        print(f"영어 자연문 요약 결과:\n{summary}")
         return True
         
     except Exception as e:
@@ -231,5 +241,5 @@ def test_ai_summarizer():
 
 if __name__ == "__main__":
     # 테스트 실행
-    print("=== AI 요약기 테스트 ===")
+    print("=== AI 영어 요약기 테스트 ===")
     test_ai_summarizer()
