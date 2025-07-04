@@ -55,7 +55,7 @@ jobs:
     - name: Test Python imports
       run: |
         echo "🔍 Testing Python module imports..."
-        python -c """
+        python -c "
         try:
             print('Testing advanced_news_collector...')
             from advanced_news_collector import AdvancedNewsCollector
@@ -86,7 +86,7 @@ jobs:
         except Exception as e:
             print(f'❌ Import error: {e}')
             exit(1)
-        """
+        "
     
     - name: Test Claude API connection
       env:
