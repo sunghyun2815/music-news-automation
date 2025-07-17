@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """
 Advanced Music News Classifier with AI Integration
-음악 뉴스 분류, 태깅, AI 요약 시스템 (Claude API 연동)
+음악 뉴스 분류, 태깅, AI 요약 시스템 (Claude API 연동) - 한글 요약 버전
 """
 import re
 import logging
@@ -43,9 +43,9 @@ class AdvancedClassifier:
                 self.ai_summarizer = None
         else:
             self.ai_summarizer = None
-            logger.info("규칙 기반 요약 사용")
+            logger.info("규칙 기반 한글 요약 사용")
         
-        # 기존 카테고리 분류 키워드들...
+        # 카테고리 분류 키워드들
         self.category_keywords = {
             'NEWS': [
                 'announces', 'releases', 'drops', 'unveils', 'reveals', 'confirms',
@@ -77,7 +77,7 @@ class AdvancedClassifier:
             ]
         }
         
-        # 기존 장르/업계/지역 키워드들... (동일하게 유지)
+        # 장르 키워드들
         self.genre_keywords = {
             'KPOP': [
                 'k-pop', 'kpop', 'korean pop', 'bts', 'blackpink', 'twice', 'stray kids',
@@ -111,6 +111,7 @@ class AdvancedClassifier:
             ]
         }
         
+        # 업계 키워드들
         self.industry_keywords = {
             'LABEL': [
                 'record label', 'music label', 'signs to', 'signed with', 'deal with',
@@ -144,6 +145,7 @@ class AdvancedClassifier:
             ]
         }
         
+        # 지역 키워드들
         self.region_keywords = {
             'USA': ['usa', 'america', 'american', 'us', 'united states', 'new york', 'los angeles', 'nashville', 'atlanta'],
             'UK': ['uk', 'britain', 'british', 'england', 'london', 'manchester', 'liverpool'],
@@ -154,7 +156,7 @@ class AdvancedClassifier:
         }
     
     def classify_category(self, title: str, description: str) -> str:
-        """카테고리 분류 (기존 로직 유지)"""
+        """카테고리 분류"""
         text = f"{title} {description}".lower()
         
         category_scores = {}
@@ -169,7 +171,7 @@ class AdvancedClassifier:
         return 'NEWS'
     
     def extract_tags(self, title: str, description: str, url: str) -> Dict[str, List[str]]:
-        """태그 추출 (기존 로직 유지)"""
+        """태그 추출"""
         text = f"{title} {description} {url}".lower()
         
         genre_tags = []
@@ -214,20 +216,20 @@ class AdvancedClassifier:
                 return ai_summary
             except Exception as e:
                 logger.error(f"AI 요약 생성 실패, 규칙 기반 요약 사용: {e}")
-                return self.generate_5w1h_summary(title, description, url)
+                return self.generate_korean_summary(title, description, url)
         else:
-            # 규칙 기반 요약 (기존 로직)
-            return self.generate_5w1h_summary(title, description, url)
+            # 규칙 기반 한글 요약
+            return self.generate_korean_summary(title, description, url)
     
-    def generate_5w1h_summary(self, title: str, description: str, url: str) -> str:
-        """기존 5W1H 규칙 기반 요약 (백업용)"""
+    def generate_korean_summary(self, title: str, description: str, url: str) -> str:
+        """한글 규칙 기반 요약 생성"""
         try:
             text = f"{title} {description}".lower()
             
-            # Who 추출
+            # Who 추출 (아티스트명 등)
             who_patterns = [
-                r'\b([A-Z][a-z]+ [A-Z][a-z]+)\b',
-                r'\b([A-Z][a-z]+)\b(?=\s+(?:announces|releases|says|reveals|signs|drops))',
+                r'\b([A-Z][a-z]+ [A-Z][a-z]+)\b',  # 두 단어 이름
+                r'\b([A-Z][a-z]+)\b(?=\s+(?:announces|releases|says|reveals|signs|drops))',  # 동작 앞 이름
             ]
             
             who_matches = []
@@ -235,27 +237,32 @@ class AdvancedClassifier:
                 matches = re.findall(pattern, title + " " + description)
                 who_matches.extend(matches)
             
-            who_list = list(set([name for name in who_matches if len(name) > 2]))[:3]
-            who_text = ", ".join(who_list) if who_list else "Music industry figures"
+            who_list = list(set([name for name in who_matches if len(name) > 2]))[:2]
+            who_text = ", ".join(who_list) if who_list else "음악 업계 인사"
             
-            # What 추출
+            # What 추출 (한글로)
             what_keywords = {
-                'announced or released a new album': ['album', 'new album', 'debut album', 'studio album'],
-                'announced or released a new single': ['single', 'new song', 'track', 'new single'],
-                'announced or is planning a tour': ['tour', 'concert', 'live show', 'performance'],
-                'entered into a collaboration': ['collaboration', 'featuring', 'duet', 'team up'],
-                'signed a business deal': ['signs', 'deal', 'contract', 'agreement'],
-                'involved in a legal issue': ['lawsuit', 'legal', 'court', 'settlement'],
-                'made significant industry news': ['industry', 'market', 'business', 'company', 'report', 'analysis']
+                '새 앨범을 발표했습니다': ['album', 'new album', 'debut album', 'studio album'],
+                '새 싱글을 공개했습니다': ['single', 'new song', 'track', 'new single'],
+                '투어를 발표했습니다': ['tour', 'concert', 'live show', 'performance'],
+                '협업을 진행했습니다': ['collaboration', 'featuring', 'duet', 'team up'],
+                '계약을 체결했습니다': ['signs', 'deal', 'contract', 'agreement'],
+                '법적 문제에 연루되었습니다': ['lawsuit', 'legal', 'court', 'settlement'],
+                '업계 뉴스를 전했습니다': ['industry', 'market', 'business', 'company', 'report', 'analysis'],
+                '새로운 소식을 공개했습니다': ['announces', 'reveals', 'unveils', 'shares'],
+                '공연을 취소했습니다': ['cancel', 'cancels', 'cancelled', 'postpone'],
+                '차트 성과를 기록했습니다': ['chart', 'billboard', 'top', 'number one', 'hit'],
+                '논란에 휘말렸습니다': ['controversy', 'scandal', 'dispute', 'accused'],
+                '새 프로젝트에 참여했습니다': ['joins', 'starring', 'features in', 'appears']
             }
             
-            what_text = "made an announcement"
+            what_text = "새로운 소식을 전했습니다"
             for action, keywords in what_keywords.items():
                 if any(keyword in text for keyword in keywords):
                     what_text = action
                     break
             
-            # When 추출
+            # When 추출 (한글로)
             when_patterns = [
                 r'\b(today|yesterday|this week|next week|this month|next month|recently)\b',
                 r'\b(202[0-9])\b',
@@ -267,50 +274,75 @@ class AdvancedClassifier:
                 matches = re.findall(pattern, text)
                 when_matches.extend(matches)
             
-            when_text = when_matches[0] if when_matches else "recently"
-            
-            # Where 추출
-            where_keywords = {
-                'USA': ['america', 'us', 'united states', 'new york', 'los angeles', 'nashville'],
-                'UK': ['britain', 'uk', 'london', 'england'],
-                'South Korea': ['korea', 'seoul', 'k-pop'],
-                'Japan': ['japan', 'tokyo'],
-                'Europe': ['europe', 'germany', 'france'],
-                'globally': ['worldwide', 'global', 'international']
+            # 시간 표현 한글화
+            when_translation = {
+                'today': '오늘',
+                'yesterday': '어제',
+                'this week': '이번 주',
+                'next week': '다음 주',
+                'this month': '이번 달',
+                'next month': '다음 달',
+                'recently': '최근'
             }
             
-            where_text = "in the music industry"
+            when_text = "최근"
+            if when_matches:
+                when_word = when_matches[0].lower()
+                when_text = when_translation.get(when_word, "최근")
+            
+            # Where 추출 (한글로)
+            where_keywords = {
+                '미국 음악 업계에서': ['america', 'us', 'united states', 'new york', 'los angeles', 'nashville'],
+                '영국 음악계에서': ['britain', 'uk', 'london', 'england'],
+                '한국 음악계에서': ['korea', 'seoul', 'k-pop', 'kpop'],
+                '일본 음악 업계에서': ['japan', 'tokyo'],
+                '유럽 음악계에서': ['europe', 'germany', 'france'],
+                '글로벌 음악 업계에서': ['worldwide', 'global', 'international']
+            }
+            
+            where_text = ""
             for location, keywords in where_keywords.items():
                 if any(keyword in text for keyword in keywords):
-                    where_text = f"in {location}"
+                    where_text = f" {location}"
                     break
             
-            # Why/How 추출
-            context_keywords = {
-                'new music releases': ['new music', 'creative', 'artistic', 'song', 'album', 'single'],
-                'business developments': ['business', 'commercial', 'financial', 'deal', 'investment'],
-                'touring and live events': ['tour', 'concert', 'festival', 'performance'],
-                'industry changes': ['industry', 'market', 'trend', 'innovation', 'technology']
-            }
+            # 추가 맥락 정보
+            context_info = ""
+            if any(word in text for word in ['streaming', 'spotify', 'apple music']):
+                context_info = " 스트리밍 플랫폼과 관련하여"
+            elif any(word in text for word in ['chart', 'billboard', 'top']):
+                context_info = " 차트 성과와 관련하여"
+            elif any(word in text for word in ['festival', 'concert', 'tour']):
+                context_info = " 라이브 공연과 관련하여"
+            elif any(word in text for word in ['collaboration', 'featuring']):
+                context_info = " 아티스트 간 협업으로"
             
-            context_text = "related to their music career"
-            for context, keywords in context_keywords.items():
-                if any(keyword in text for keyword in keywords):
-                    context_text = f"related to {context}"
-                    break
+            # 자연스러운 한글 문장 조합
+            if context_info:
+                summary = f"{who_text}가 {when_text}{where_text}{context_info} {what_text}"
+            else:
+                summary = f"{who_text}가 {when_text}{where_text} {what_text}"
             
-            # 완전한 문장으로 조합
-            summary = f"{who_text} {what_text} {when_text}. The event occurred {where_text}, {context_text}."
+            # 문장 정리 및 길이 제한
             summary = re.sub(r'\s+', ' ', summary).strip()
+            if len(summary) > 150:
+                summary = summary[:147] + "..."
             
             return summary
             
         except Exception as e:
-            logger.error(f"5W1H 요약 생성 오류: {e}")
-            return f"Music industry news about {title.split()[0] if title else 'various artists'} and their recent activities."
+            logger.error(f"한글 요약 생성 오류: {e}")
+            # 최종 백업 요약
+            artist_name = title.split()[0] if title else "아티스트"
+            return f"{artist_name}가 최근 음악 업계에서 새로운 소식을 전했습니다."
+    
+    def generate_5w1h_summary(self, title: str, description: str, url: str) -> str:
+        """기존 영어 5W1H 규칙 기반 요약 (하위 호환용)"""
+        # 한글 요약으로 대체
+        return self.generate_korean_summary(title, description, url)
     
     def calculate_importance_score(self, title: str, description: str, tags: Dict) -> float:
-        """중요도 점수 계산 (기존 로직 유지)"""
+        """중요도 점수 계산"""
         score = 0.5
         
         text = f"{title} {description}".lower()
@@ -371,16 +403,16 @@ class AdvancedClassifier:
                 # AI 배치 요약 (상위 10개만)
                 processed_news = self.ai_summarizer.batch_summarize(processed_news, max_items=10)
                 
-                # AI 요약이 없는 항목들에 대해 규칙 기반 요약 적용
+                # AI 요약이 없는 항목들에 대해 한글 규칙 기반 요약 적용
                 for news in processed_news:
                     if 'ai_summary' not in news:
-                        # 규칙 기반 요약 생성
-                        rule_summary = self.generate_5w1h_summary(
+                        # 한글 규칙 기반 요약 생성
+                        korean_summary = self.generate_korean_summary(
                             news.get('title', ''), 
                             news.get('description', ''), 
                             news.get('url', '')
                         )
-                        news['summary'] = rule_summary
+                        news['summary'] = korean_summary
                         news['summary_type'] = 'rule_based'
                     else:
                         # AI 요약을 summary 필드에 복사
@@ -388,19 +420,19 @@ class AdvancedClassifier:
                         
             except Exception as e:
                 logger.error(f"AI 배치 요약 오류: {e}")
-                # 오류 시 모든 뉴스에 규칙 기반 요약 적용
+                # 오류 시 모든 뉴스에 한글 규칙 기반 요약 적용
                 for news in processed_news:
                     if 'summary' not in news:
-                        news['summary'] = self.generate_5w1h_summary(
+                        news['summary'] = self.generate_korean_summary(
                             news.get('title', ''), 
                             news.get('description', ''), 
                             news.get('url', '')
                         )
                         news['summary_type'] = 'rule_based'
         else:
-            # AI 요약 미사용 시 규칙 기반 요약만 적용
+            # AI 요약 미사용 시 한글 규칙 기반 요약만 적용
             for news in processed_news:
-                news['summary'] = self.generate_5w1h_summary(
+                news['summary'] = self.generate_korean_summary(
                     news.get('title', ''), 
                     news.get('description', ''), 
                     news.get('url', '')
@@ -411,7 +443,7 @@ class AdvancedClassifier:
         return processed_news
     
     def select_top_news_by_category(self, news_list: List[Dict], max_per_category: int = 4) -> List[Dict]:
-        """카테고리별 상위 뉴스 선별 (기존 로직 유지)"""
+        """카테고리별 상위 뉴스 선별"""
         
         # 카테고리별로 그룹화
         categorized_news = {}
@@ -471,14 +503,14 @@ if __name__ == "__main__":
     ]
     
     # 분류기 테스트
-    print("=== AI 연동 분류기 테스트 ===")
+    print("=== 한글 AI 연동 분류기 테스트 ===")
     
     # AI 요약 사용 테스트
-    print("\n1. AI 요약 사용 테스트")
+    print("\n1. AI + 한글 규칙 기반 요약 테스트")
     classifier_with_ai = AdvancedClassifier(use_ai_summary=True)
     processed_with_ai = classifier_with_ai.process_news_list(sample_news)
     
-    print("AI 요약 결과:")
+    print("혼합 요약 결과:")
     for i, news in enumerate(processed_with_ai, 1):
         print(f"\n{i}. {news['title']}")
         print(f"   카테고리: {news['category']}")
@@ -487,12 +519,12 @@ if __name__ == "__main__":
         print(f"   요약 타입: {news.get('summary_type', 'unknown')}")
         print(f"   중요도: {news['importance_score']:.2f}")
     
-    # 규칙 기반 요약만 사용 테스트
-    print("\n2. 규칙 기반 요약 테스트")
+    # 한글 규칙 기반 요약만 사용 테스트
+    print("\n2. 한글 규칙 기반 요약만 테스트")
     classifier_rule_only = AdvancedClassifier(use_ai_summary=False)
     processed_rule_only = classifier_rule_only.process_news_list(sample_news)
     
-    print("규칙 기반 요약 결과:")
+    print("한글 규칙 기반 요약 결과:")
     for i, news in enumerate(processed_rule_only, 1):
         print(f"\n{i}. {news['title']}")
         print(f"   요약: {news['summary']}")
