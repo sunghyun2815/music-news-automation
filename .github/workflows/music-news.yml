@@ -3,7 +3,7 @@ name: Music News Automation with Claude AI
 #on:
 #  schedule:
 #    - cron: '0 1 * * *'  # 매일 한국시간 오전 10시 (UTC 오전 1시)
-  workflow_dispatch: # 수동 실행 가능
+workflow_dispatch: # 수동 실행 가능
 
 jobs:
   run-music-news:
