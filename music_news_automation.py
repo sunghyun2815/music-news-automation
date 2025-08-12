@@ -24,7 +24,7 @@ def main():
     # 명령행 인수 파싱
     parser = argparse.ArgumentParser(description="음악 뉴스 자동화 시스템 (중요도/트렌딩순 30개 선별)")
     parser.add_argument('--production', action='store_true', help='실제 발송 모드 (Slack, Email)')
-    parser.add_argument('--count', type=int, default=30, help='선별할 뉴스 개수 (기본값: 30)')
+    parser.add_argument('--count', type=int, default=20, help='선별할 뉴스 개수 (기본값: 20)')
     parser.add_argument('--mode', choices=['importance', 'trending'], default='trending', 
                        help='선별 모드: importance(중요도순) 또는 trending(트렌딩순, 기본값)')
     parser.add_argument('--ai-summary', action='store_true', help='AI 요약 사용 (OpenAI API 필요)')
