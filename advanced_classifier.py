@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Fixed Advanced Music News Classifier
+Fixed Advanced Music News Classifier - FIXED VERSION
 문제점들이 해결된 음악 뉴스 분류 시스템
 """
 
@@ -64,6 +64,53 @@ class AdvancedClassifier:
             ]
         }
         
+        # 정확한 아티스트명 매핑 (소문자 -> 정확한 표기)
+        self.known_artists = {
+            'taylor swift': 'Taylor Swift',
+            'ariana grande': 'Ariana Grande', 
+            'billie eilish': 'Billie Eilish',
+            'dua lipa': 'Dua Lipa',
+            'olivia rodrigo': 'Olivia Rodrigo',
+            'drake': 'Drake',
+            'travis scott': 'Travis Scott',
+            'kid cudi': 'Kid Cudi',
+            'kendrick lamar': 'Kendrick Lamar',
+            'bts': 'BTS',
+            'blackpink': 'BLACKPINK',
+            'twice': 'TWICE',
+            'stray kids': 'Stray Kids',
+            'newjeans': 'NewJeans',
+            'ive': 'IVE',
+            'aespa': 'aespa',
+            'metallica': 'Metallica',
+            'my chemical romance': 'My Chemical Romance',
+            'mayday parade': 'Mayday Parade',
+            'mother love bone': 'Mother Love Bone',
+            'kaytranada': 'Kaytranada',
+            'ethel cain': 'Ethel Cain',
+            'wet leg': 'Wet Leg',
+            'chappell roan': 'Chappell Roan',
+            'doechii': 'Doechii',
+            'remble': 'Remble',
+            'naeem': 'Naeem',
+            'chance the rapper': 'Chance the Rapper',
+            'casey dienel': 'Casey Dienel',
+            'sombr': 'Sombr',
+            'bobby whitlock': 'Bobby Whitlock',
+            'charli xcx': 'Charli XCX',
+            'yung lean': 'Yung Lean',
+            'spank rock': 'Spank Rock',
+            'florence welch': 'Florence Welch',
+            'deftones': 'Deftones',
+            'dijon': 'Dijon',
+            'open mike eagle': 'Open Mike Eagle',
+            'snail mail': 'Snail Mail',
+            'wolf alice': 'Wolf Alice',
+            'travis kelce': 'Travis Kelce',
+            'ozzy osbourne': 'Ozzy Osbourne',
+            'robert trujillo': 'Robert Trujillo'
+        }
+        
         # 수정된 장르 키워드 (더 정확한 분류)
         self.genre_keywords = {
             'K-POP': [
@@ -74,15 +121,15 @@ class AdvancedClassifier:
             ],
             'POP': [
                 'taylor swift', 'ariana grande', 'dua lipa', 'billie eilish', 'olivia rodrigo',
-                'sabrina carpenter', 'chappell roan', 'pop music', 'mainstream pop'
+                'sabrina carpenter', 'chappell roan', 'pop music', 'mainstream pop', 'charli xcx'
             ],
             'HIP-HOP': [
                 'drake', 'kendrick lamar', 'travis scott', 'kid cudi', 'cardi b', 'migos',
-                'doechii', 'remble', 'hip-hop', 'rap', 'rapper'
+                'doechii', 'remble', 'hip-hop', 'rap', 'rapper', 'chance the rapper'
             ],
             'ROCK': [
                 'metallica', 'my chemical romance', 'mother love bone', 'mayday parade',
-                'rock', 'metal', 'punk', 'alternative', 'indie rock'
+                'rock', 'metal', 'punk', 'alternative', 'indie rock', 'deftones', 'wet leg'
             ],
             'R&B': ['r&b', 'rnb', 'soul', 'neo-soul', 'the weeknd', 'sza', 'frank ocean'],
             'ELECTRONIC': ['kaytranada', 'electronic', 'edm', 'house', 'techno', 'dubstep']
@@ -120,43 +167,76 @@ class AdvancedClassifier:
             return max(scores, key=scores.get)
         return 'NEWS'
     
+    def extract_artists_from_text(self, text: str) -> List[str]:
+        """개선된 아티스트명 추출"""
+        text_lower = text.lower()
+        found_artists = []
+        
+        # 1. 알려진 아티스트명 직접 매칭 (우선순위)
+        for artist_key, artist_name in self.known_artists.items():
+            if artist_key in text_lower:
+                found_artists.append(artist_name)
+        
+        # 2. 중복 제거 및 길이순 정렬 (긴 이름 우선)
+        found_artists = list(set(found_artists))
+        found_artists.sort(key=len, reverse=True)
+        
+        # 3. 알려진 아티스트가 없으면 패턴 기반 추출
+        if not found_artists:
+            patterns = [
+                r'\b([A-Z][a-z]+ [A-Z][a-z]+)\b',  # 두 단어 조합
+                r'\b([A-Z]{2,})\b',  # 대문자만 (예: BTS, IVE)
+            ]
+            
+            for pattern in patterns:
+                matches = re.findall(pattern, text)
+                for match in matches:
+                    # 필터링: 일반적인 단어들 제외
+                    exclude_words = [
+                        'Music Video', 'New Album', 'Live From', 'Very Imminent', 
+                        'Is Ready', 'New Heights', 'Special Guest', 'Album The',
+                        'Takes Over', 'You Should', 'Could This', 'Did Dijon',
+                        'Open Mike', 'Snail Mail', 'Think Something'
+                    ]
+                    
+                    if (len(match) > 2 and 
+                        match not in exclude_words and
+                        not any(word in match.lower() for word in ['new', 'first', 'live', 'from', 'very', 'is', 'the'])):
+                        found_artists.append(match)
+        
+        return found_artists[:2]  # 최대 2개만 반환
+    
     def extract_tags(self, title: str, description: str, url: str = "") -> Dict:
         """수정된 태그 추출 (더 정확한 장르 분류)"""
         text = f"{title} {description}".lower()
         
-        # 장르 태그 (우선순위 적용)
+        # 장르 태그 (정확한 아티스트 기반 우선)
         genre_tags = []
         
-        # 특정 아티스트 기반 장르 분류 (가장 우선)
-        artist_genre_map = {
-            'taylor swift': 'POP',
-            'ariana grande': 'POP', 
-            'billie eilish': 'POP',
-            'drake': 'HIP-HOP',
-            'travis scott': 'HIP-HOP',
-            'metallica': 'ROCK',
-            'my chemical romance': 'ROCK',
-            'bts': 'K-POP',
-            'blackpink': 'K-POP',
-            'newjeans': 'K-POP',
-            'kaytranada': 'ELECTRONIC'
-        }
+        # 아티스트 기반 장르 분류
+        artists = self.extract_artists_from_text(f"{title} {description}")
         
-        # 아티스트 기반 우선 분류
-        for artist, genre in artist_genre_map.items():
-            if artist in text:
-                genre_tags.append(genre)
-                break
+        for artist in artists:
+            artist_lower = artist.lower()
+            
+            # 직접 매핑
+            if artist_lower in ['taylor swift', 'ariana grande', 'billie eilish', 'dua lipa', 'olivia rodrigo', 'charli xcx']:
+                genre_tags.append('POP')
+            elif artist_lower in ['drake', 'travis scott', 'kendrick lamar', 'kid cudi', 'chance the rapper', 'remble', 'doechii']:
+                genre_tags.append('HIP-HOP')
+            elif artist_lower in ['bts', 'blackpink', 'twice', 'stray kids', 'newjeans', 'ive', 'aespa']:
+                genre_tags.append('K-POP')
+            elif artist_lower in ['metallica', 'my chemical romance', 'mayday parade', 'deftones', 'wet leg']:
+                genre_tags.append('ROCK')
+            elif artist_lower in ['kaytranada']:
+                genre_tags.append('ELECTRONIC')
         
-        # 아티스트 매치가 없으면 키워드 기반 분류
+        # 아티스트 매칭이 없으면 키워드 기반
         if not genre_tags:
             for genre, keywords in self.genre_keywords.items():
-                if genre == 'K-POP':
-                    if any(kw in text for kw in ['k-pop', 'kpop', 'korean pop', 'hallyu', '케이팝']):
-                        genre_tags.append(genre)
-                else:
-                    if any(keyword.lower() in text for keyword in keywords):
-                        genre_tags.append(genre)
+                if any(keyword.lower() in text for keyword in keywords):
+                    genre_tags.append(genre)
+                    break  # 첫 번째 매치만 사용
         
         # 산업 태그
         industry_tags = []
@@ -166,10 +246,14 @@ class AdvancedClassifier:
         
         # 지역 태그
         region_tags = []
+        
+        # K-POP이면 자동으로 KOREA 추가
+        if 'K-POP' in genre_tags:
+            region_tags.append('KOREA')
+        
+        # 다른 지역 키워드 체크
         for region, keywords in self.region_keywords.items():
-            if region == 'KOREA' and 'K-POP' in genre_tags:
-                region_tags.append(region)
-            elif any(keyword.lower() in text for keyword in keywords):
+            if region != 'KOREA' and any(keyword.lower() in text for keyword in keywords):
                 region_tags.append(region)
         
         return {
@@ -178,80 +262,65 @@ class AdvancedClassifier:
             'region': list(set(region_tags))[:2]
         }
     
-    def extract_artists_from_text(self, text: str) -> List[str]:
-        """개선된 아티스트명 추출"""
-        artists = []
-        
-        # 알려진 아티스트명 직접 매칭
-        known_artists = [
-            'Taylor Swift', 'Ariana Grande', 'Billie Eilish', 'Dua Lipa', 'Olivia Rodrigo',
-            'Drake', 'Travis Scott', 'Kid Cudi', 'Kendrick Lamar',
-            'BTS', 'BLACKPINK', 'TWICE', 'Stray Kids', 'NewJeans', 'IVE', 'aespa',
-            'Metallica', 'My Chemical Romance', 'Mayday Parade', 'Mother Love Bone',
-            'Kaytranada', 'Ethel Cain', 'Wet Leg', 'Chappell Roan', 'Doechii'
-        ]
-        
-        text_lower = text.lower()
-        for artist in known_artists:
-            if artist.lower() in text_lower:
-                artists.append(artist)
-        
-        # 패턴 기반 추출 (보조)
-        if not artists:
-            patterns = [
-                r'\b([A-Z][a-z]+ [A-Z][a-z]+)\b',
-                r'\b([A-Z]{2,})\b',
-            ]
-            
-            for pattern in patterns:
-                matches = re.findall(pattern, text)
-                for match in matches:
-                    # 필터링
-                    exclude_words = ['Music', 'Video', 'News', 'Album', 'Song', 'Tour', 'Concert', 
-                                   'Live From', 'Very Imminent', 'Is Ready', 'New Album']
-                    if (len(match) > 2 and 
-                        match not in exclude_words and
-                        not match.startswith('The ') and
-                        not any(word in match.lower() for word in ['new', 'first', 'live', 'from'])):
-                        artists.append(match)
-        
-        return artists[:3]
-    
     def generate_korean_summary(self, title: str, description: str, url: str = "") -> str:
         """개선된 한국어 요약 생성"""
         try:
-            # 아티스트명 정확히 추출
+            # 정확한 아티스트명 추출
             artists = self.extract_artists_from_text(f"{title} {description}")
             who = artists[0] if artists else "음악 아티스트"
             
             # 제목과 내용 분석
             text = f"{title} {description}".lower()
             
-            # 구체적인 행동 패턴 분석
-            if 'podcast' in text and 'appear' in text:
+            # 특별한 경우들 먼저 처리
+            
+            # 1. 부고 관련
+            if any(word in text for word in ['dies', 'death', 'funeral', 'obituary', '부고']):
+                return f"음악계 인사의 부고 관련 소식이 전해졌습니다."
+            
+            # 2. 팟캐스트 출연
+            if 'podcast' in text and any(word in text for word in ['appear', 'guest', 'teases']):
                 return f"{who}가 최근 팟캐스트 출연을 발표했습니다."
-            elif 'countdown' in text or 'teas' in text:
+            
+            # 3. 카운트다운/티징
+            if any(word in text for word in ['countdown', 'teases', 'tease', 'mysterious']):
                 return f"{who}가 새로운 프로젝트를 예고하며 팬들의 관심을 모으고 있습니다."
-            elif 'tour' in text and ('announce' in text or 'expand' in text):
-                return f"{who}가 새로운 투어 계획을 발표했습니다."
-            elif 'album' in text and 'announce' in text:
+            
+            # 4. 앨범 발표
+            if any(word in text for word in ['album', 'ep']) and any(word in text for word in ['announces', 'announce', 'debut']):
+                # 앨범 제목 추출 시도
                 album_title = self.extract_album_title_improved(title, description)
                 if album_title:
                     return f"{who}가 새 앨범 '{album_title}'을 발표했습니다."
                 else:
                     return f"{who}가 새 앨범 발매 소식을 전했습니다."
-            elif 'chart' in text or '#1' in text or 'number' in text:
+            
+            # 5. 투어 관련
+            if any(word in text for word in ['tour', 'concert']) and any(word in text for word in ['announces', 'expand', 'adds']):
+                return f"{who}가 새로운 투어 계획을 발표했습니다."
+            
+            # 6. 차트 성과
+            if any(word in text for word in ['chart', '#1', 'number one', 'top']):
                 return f"{who}가 음악 차트에서 좋은 성과를 거두었습니다."
-            elif 'cover' in text and 'live' in text:
-                return f"{who}가 라이브 공연에서 커버곡을 선보였습니다."
-            elif 'lawsuit' in text or 'sue' in text:
+            
+            # 7. 새 곡/싱글 공개
+            if any(word in text for word in ['shares', 'releases', 'drops']) and any(word in text for word in ['song', 'single', 'track']):
+                return f"{who}가 새로운 곡을 공개했습니다."
+            
+            # 8. 라이브 공연/커버
+            if any(word in text for word in ['live', 'cover', 'perform']):
+                return f"{who}가 라이브 공연에서 특별한 무대를 선보였습니다."
+            
+            # 9. 법적 분쟁
+            if any(word in text for word in ['lawsuit', 'sue', 'court', 'legal']):
                 return f"음악 업계에서 법적 분쟁 관련 소식이 전해졌습니다."
-            elif 'funeral' in text or 'death' in text:
-                return f"음악계 인사의 부고 관련 소식이 전해졌습니다."
-            elif 'reissue' in text or 'vinyl' in text:
-                return f"{who}의 음반이 재발매될 예정입니다."
-            else:
-                return f"{who}가 최근 음악 활동 관련 소식을 전했습니다."
+            
+            # 10. 비디오/뮤직비디오
+            if any(word in text for word in ['video', 'watch', 'visual']):
+                return f"{who}가 새로운 비디오 콘텐츠를 공개했습니다."
+            
+            # 11. 기본 케이스
+            return f"{who}가 최근 음악 활동 관련 소식을 전했습니다."
             
         except Exception as e:
             logger.error(f"한국어 요약 생성 오류: {e}")
@@ -266,16 +335,16 @@ class AdvancedClassifier:
             r"'([^']+)'",
             r'"([^"]+)"', 
             r"'([^']+)'",
-            r'""([^"]+)""'
+            r'"([^"]+)"'
         ]
         
         for pattern in quote_patterns:
             matches = re.findall(pattern, text)
             for match in matches:
                 # 앨범 제목 같은 것들 필터링
-                if (5 <= len(match) <= 50 and 
-                    not match.lower() in ['new heights', 'ts12', 'very beautiful'] and
-                    not any(word in match.lower() for word in ['very', 'new', 'first', 'live'])):
+                if (3 <= len(match) <= 50 and 
+                    not match.lower() in ['new heights', 'ts12', 'very beautiful', 'the life of a showgirl'] and
+                    not any(word in match.lower() for word in ['very', 'new', 'first', 'live', 'from'])):
                     return match
         
         return None
@@ -336,16 +405,26 @@ class AdvancedClassifier:
     
     def calculate_artist_influence_dynamic(self, text: str) -> float:
         """아티스트 영향력 계산"""
-        major_artists = ['taylor swift', 'bts', 'blackpink', 'drake', 'billie eilish', 'metallica']
-        
-        if any(artist in text for artist in major_artists):
+        # 메가 스타들
+        mega_stars = ['taylor swift', 'bts', 'blackpink', 'drake', 'billie eilish']
+        if any(artist in text for artist in mega_stars):
             return 1.0
-        elif any(pattern in text for pattern in ['grammy', 'billboard', 'platinum']):
+        
+        # 주요 아티스트들
+        major_artists = ['ariana grande', 'dua lipa', 'travis scott', 'kendrick lamar', 'metallica']
+        if any(artist in text for artist in major_artists):
+            return 0.9
+        
+        # 기타 유명 아티스트들
+        known_artists = list(self.known_artists.keys())
+        if any(artist in text for artist in known_artists):
+            return 0.7
+        
+        # 업계 키워드
+        if any(pattern in text for pattern in ['grammy', 'billboard', 'platinum', 'chart']):
             return 0.8
-        elif any(genre in text for genre in ['k-pop', 'pop', 'hip-hop', 'rock']):
-            return 0.6
-        else:
-            return 0.4
+        
+        return 0.5
     
     def process_news_list(self, news_list: List[Dict]) -> List[Dict]:
         """뉴스 리스트 처리"""
@@ -396,8 +475,8 @@ class AdvancedClassifier:
         logger.info(f"{len(processed_news)}개 뉴스 처리 완료")
         return processed_news
     
-    def select_top_news_by_importance(self, news_list: List[Dict], max_total: int = 30) -> List[Dict]:
-        """중요도 순으로 상위 뉴스 선별"""
+    def select_top_news_by_importance(self, news_list: List[Dict], max_total: int = 20) -> List[Dict]:
+        """중요도 순으로 상위 뉴스 선별 - 개수 줄임"""
         logger.info(f"중요도 기반 뉴스 선별: 전체 {len(news_list)}개 중 상위 {max_total}개 선별")
         
         sorted_news = sorted(news_list, key=lambda x: x.get('importance_score', 0), reverse=True)
@@ -415,8 +494,8 @@ class AdvancedClassifier:
         
         return selected_news
     
-    def select_trending_news(self, news_list: List[Dict], max_total: int = 30) -> List[Dict]:
-        """트렌딩 뉴스 선별"""
+    def select_trending_news(self, news_list: List[Dict], max_total: int = 20) -> List[Dict]:
+        """트렌딩 뉴스 선별 - 개수 줄임"""
         logger.info(f"트렌딩 뉴스 선별: 전체 {len(news_list)}개 중 상위 {max_total}개 선별")
         
         # 간단한 트렌딩 점수 (중요도 기반)
@@ -438,15 +517,33 @@ if __name__ == "__main__":
             'description': 'Pop superstar Taylor Swift has announced her upcoming album.',
             'url': 'https://example.com/test',
             'source': 'billboard.com'
+        },
+        {
+            'title': 'Remble Drops New Album Juco',
+            'description': 'Hip-hop artist Remble has released his latest album.',
+            'url': 'https://example.com/test2',
+            'source': 'pitchfork.com'
+        },
+        {
+            'title': 'Bobby Whitlock, Derek & the Dominos Co-Founder, Dies at 77',
+            'description': 'The legendary musician has passed away.',
+            'url': 'https://example.com/test3',
+            'source': 'rollingstone.com'
         }
     ]
     
     classifier = AdvancedClassifier()
     processed = classifier.process_news_list(sample_news)
     
+    print("=== 테스트 결과 ===")
     for news in processed:
         print(f"제목: {news['title']}")
-        print(f"아티스트: {classifier.extract_artists_from_text(news['title'])}")
+        
+        # 아티스트 추출 테스트
+        artists = classifier.extract_artists_from_text(news['title'])
+        print(f"추출된 아티스트: {artists}")
+        
         print(f"장르: {news['tags']['genre']}")
         print(f"요약: {news['summary']}")
+        print(f"중요도: {news['importance_score']:.3f}")
         print("---")
