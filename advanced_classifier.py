@@ -426,6 +426,49 @@ class AdvancedClassifier:
         
         return 0.5
     
+    def process_news_list_simplified(self, news_list: List[Dict]) -> List[Dict]:
+        """뉴스 리스트 처리 - 단순화된 버전 (중요도 점수 제외)"""
+        processed_news = []
+        
+        for news in news_list:
+            try:
+                title = news.get('title', '')
+                description = news.get('description', '')
+                url = news.get('url', news.get('link', ''))
+                
+                # 카테고리 분류
+                category = self.classify_category(title, description)
+                
+                # 태그 추출
+                tags = self.extract_tags(title, description, url)
+                
+                # 요약 생성
+                summary = self.generate_korean_summary(title, description, url)
+                
+                # 최종 처리된 뉴스 항목 (중요도 점수 없음)
+                processed_item = {
+                    **news,
+                    'category': category,
+                    'tags': tags,
+                    'summary': summary,
+                    'summary_type': 'rule_based'
+                }
+                
+                processed_news.append(processed_item)
+                
+            except Exception as e:
+                logger.error(f"뉴스 처리 오류: {e}")
+                processed_news.append({
+                    **news,
+                    'category': 'NEWS',
+                    'tags': {'genre': [], 'industry': [], 'region': []},
+                    'summary': f"음악 업계 소식: {news.get('title', '')[:50]}...",
+                    'summary_type': 'fallback'
+                })
+        
+        logger.info(f"{len(processed_news)}개 뉴스 처리 완료 (단순화된 버전)")
+        return processed_news
+    
     def process_news_list(self, news_list: List[Dict]) -> List[Dict]:
         """뉴스 리스트 처리"""
         processed_news = []
