@@ -42,7 +42,7 @@ class AdvancedNewsCollector:
         }
         
         # 중복 제거 설정
-        self.duplicate_threshold = 0.85  # 85% 유사도 기준
+        self.duplicate_threshold = 0.85
         self.collected_news = []
         
         # 중복 검사용 캐시
@@ -51,7 +51,7 @@ class AdvancedNewsCollector:
         self.content_hashes = set()
     
     def normalize_url(self, url: str) -> str:
-        """URL 정규화 (쿼리 파라미터 제거, 프로토콜 통일)"""
+        """URL 정규화"""
         try:
             parsed = urlparse(url.lower())
             
@@ -80,7 +80,7 @@ class AdvancedNewsCollector:
             return url.lower()
     
     def normalize_title(self, title: str) -> str:
-        """제목 정규화 (특수문자, 공백 정리)"""
+        """제목 정규화"""
         # 소문자 변환
         normalized = title.lower().strip()
         
@@ -90,7 +90,7 @@ class AdvancedNewsCollector:
         # 연속된 공백을 하나로
         normalized = re.sub(r'\s+', ' ', normalized)
         
-        # 일반적인 접두사/접미사 제거
+        # 일반적인 접두사 제거
         prefixes_to_remove = ['exclusive', 'breaking', 'watch', 'listen', 'new']
         for prefix in prefixes_to_remove:
             if normalized.startswith(prefix + ' '):
@@ -104,18 +104,18 @@ class AdvancedNewsCollector:
         norm_title = self.normalize_title(title)
         norm_desc = re.sub(r'[^\w\s]', '', description.lower())
         
-        # 핵심 단어만 추출 (짧은 단어 제외)
+        # 핵심 단어만 추출
         words = []
         for text in [norm_title, norm_desc]:
             text_words = [w for w in text.split() if len(w) > 3]
-            words.extend(text_words[:10])  # 각각에서 최대 10개 단어
+            words.extend(text_words[:10])
         
         # 해시 생성
         content = ' '.join(sorted(set(words)))
         return hashlib.md5(content.encode()).hexdigest()
     
     def calculate_title_similarity(self, title1: str, title2: str) -> float:
-        """제목 유사도 계산 (Jaccard 유사도 기반)"""
+        """제목 유사도 계산"""
         norm1 = set(self.normalize_title(title1).split())
         norm2 = set(self.normalize_title(title2).split())
         
@@ -128,21 +128,21 @@ class AdvancedNewsCollector:
         return intersection / union if union > 0 else 0.0
     
     def extract_key_entities(self, title: str, description: str) -> Set[str]:
-        """핵심 엔티티 추출 (아티스트명, 앨범명 등)"""
+        """핵심 엔티티 추출"""
         entities = set()
         text = f"{title} {description}"
         
-        # 따옴표 안의 텍스트 (앨범명, 곡명)
-        quote_patterns = [r'"([^"]+)"', r"'([^']+)'", r"'([^']+)'", r""([^"]+)""]
+        # 따옴표 안의 텍스트
+        quote_patterns = [r'"([^"]+)"', r"'([^']+)'"]
         for pattern in quote_patterns:
             matches = re.findall(pattern, text)
             entities.update(match.lower() for match in matches if len(match) > 2)
         
-        # 대문자로 시작하는 단어들 (아티스트명)
+        # 대문자로 시작하는 단어들
         artist_pattern = r'\b([A-Z][a-z]+(?:\s+[A-Z][a-z]+)*)\b'
         matches = re.findall(artist_pattern, text)
         
-        # 알려진 아티스트/밴드명 필터링
+        # 알려진 아티스트명 필터링
         known_artists = {
             'taylor swift', 'billie eilish', 'ariana grande', 'drake', 'metallica',
             'bts', 'blackpink', 'twice', 'stray kids', 'newjeans', 'ive',
@@ -160,7 +160,7 @@ class AdvancedNewsCollector:
     def is_duplicate_advanced(self, news1: Dict, news2: Dict) -> bool:
         """강화된 중복 검사"""
         
-        # 1. URL 기반 검사 (가장 확실한 방법)
+        # 1. URL 기반 검사
         url1 = self.normalize_url(news1.get('link', ''))
         url2 = self.normalize_url(news2.get('link', ''))
         
@@ -176,7 +176,7 @@ class AdvancedNewsCollector:
         
         # 제목이 90% 이상 유사하면 중복
         if title_similarity >= 0.9:
-            logger.debug(f"제목 유사도 중복: {title_similarity:.2f} - '{title1[:30]}...' vs '{title2[:30]}...'")
+            logger.debug(f"제목 유사도 중복: {title_similarity:.2f}")
             return True
         
         # 3. 내용 해시 기반 검사
@@ -187,8 +187,8 @@ class AdvancedNewsCollector:
             logger.debug(f"내용 해시 중복: {hash1}")
             return True
         
-        # 4. 엔티티 기반 검사 (높은 유사도 + 엔티티 일치)
-        if title_similarity >= 0.7:  # 70% 이상 유사한 경우만
+        # 4. 엔티티 기반 검사
+        if title_similarity >= 0.7:
             entities1 = self.extract_key_entities(title1, news1.get('description', ''))
             entities2 = self.extract_key_entities(title2, news2.get('description', ''))
             
@@ -198,12 +198,10 @@ class AdvancedNewsCollector:
                 
                 if entity_union > 0:
                     entity_similarity = entity_overlap / entity_union
-                    
-                    # 제목 유사도 + 엔티티 유사도가 높으면 중복
                     combined_similarity = (title_similarity * 0.6) + (entity_similarity * 0.4)
                     
                     if combined_similarity >= 0.8:
-                        logger.debug(f"엔티티 기반 중복: 제목={title_similarity:.2f}, 엔티티={entity_similarity:.2f}")
+                        logger.debug(f"엔티티 기반 중복 발견")
                         return True
         
         # 5. 같은 소스에서 같은 시간대의 유사한 뉴스
@@ -216,14 +214,12 @@ class AdvancedNewsCollector:
             
             if time1 and time2:
                 try:
-                    # 시간 차이 계산
                     dt1 = datetime.strptime(time1, '%Y-%m-%d %H:%M:%S')
                     dt2 = datetime.strptime(time2, '%Y-%m-%d %H:%M:%S')
                     time_diff = abs((dt1 - dt2).total_seconds())
                     
-                    # 같은 소스에서 1시간 이내의 유사한 뉴스는 중복
                     if time_diff <= 3600:  # 1시간
-                        logger.debug(f"시간+소스 기반 중복: {source1}, 시간차={time_diff/60:.1f}분")
+                        logger.debug(f"시간+소스 기반 중복")
                         return True
                         
                 except ValueError:
@@ -237,8 +233,6 @@ class AdvancedNewsCollector:
         
         unique_news = []
         removed_count = 0
-        
-        # URL 캐시 초기화
         url_cache = set()
         
         for news in news_list:
@@ -249,7 +243,7 @@ class AdvancedNewsCollector:
             if normalized_url in url_cache:
                 is_duplicate = True
                 removed_count += 1
-                logger.debug(f"URL 캐시 중복 제거: {normalized_url}")
+                logger.debug(f"URL 캐시 중복 제거")
             else:
                 url_cache.add(normalized_url)
                 
@@ -265,7 +259,7 @@ class AdvancedNewsCollector:
                         if should_replace:
                             unique_news.remove(existing_news)
                             unique_news.append(news)
-                            logger.debug(f"더 나은 뉴스로 교체: {news.get('title', '')[:30]}...")
+                            logger.debug(f"더 나은 뉴스로 교체")
                         
                         break
             
@@ -279,8 +273,6 @@ class AdvancedNewsCollector:
         if removed_count > 0:
             removal_rate = (removed_count / len(news_list)) * 100
             logger.info(f"중복 제거율: {removal_rate:.1f}%")
-            
-            # 주요 중복 패턴 분석
             self.analyze_duplicate_patterns(news_list, unique_news)
         
         return unique_news
@@ -308,14 +300,14 @@ class AdvancedNewsCollector:
         elif new_priority < existing_priority:
             return False
         
-        # 2. 내용 길이 비교 (더 자세한 것 선택)
+        # 2. 내용 길이 비교
         existing_content_length = len(existing.get('description', ''))
         new_content_length = len(new.get('description', ''))
         
-        if new_content_length > existing_content_length * 1.2:  # 20% 이상 길면
+        if new_content_length > existing_content_length * 1.2:
             return True
         
-        # 3. 발행 시간 비교 (더 최신 것 선택)
+        # 3. 발행 시간 비교
         try:
             existing_time = datetime.strptime(existing.get('published_date', ''), '%Y-%m-%d %H:%M:%S')
             new_time = datetime.strptime(new.get('published_date', ''), '%Y-%m-%d %H:%M:%S')
@@ -328,14 +320,11 @@ class AdvancedNewsCollector:
         return False
     
     def analyze_duplicate_patterns(self, original_list: List[Dict], unique_list: List[Dict]):
-        """중복 패턴 분석 및 로깅"""
-        removed_count = len(original_list) - len(unique_list)
-        
+        """중복 패턴 분석"""
         # 제목별 중복 통계
         title_counts = {}
         for news in original_list:
             normalized_title = self.normalize_title(news.get('title', ''))
-            # 제목의 첫 5단어로 그룹화
             title_key = ' '.join(normalized_title.split()[:5])
             title_counts[title_key] = title_counts.get(title_key, 0) + 1
         
@@ -353,7 +342,6 @@ class AdvancedNewsCollector:
         try:
             logger.info(f"RSS 피드 수집 중: {url}")
             
-            # User-Agent 설정
             headers = {
                 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36'
             }
@@ -367,7 +355,7 @@ class AdvancedNewsCollector:
             # 최근 7일 이내 뉴스만 수집
             cutoff_time = datetime.now() - timedelta(days=7)
             
-            for entry in feed.entries[:20]:  # 최대 20개 항목
+            for entry in feed.entries[:20]:
                 try:
                     # 발행 시간 확인
                     pub_time = None
@@ -394,7 +382,7 @@ class AdvancedNewsCollector:
                     
                     # 음악 관련성 검사
                     relevance = self.calculate_music_relevance(title, description)
-                    if relevance < 0.2:  # 20% 미만은 제외
+                    if relevance < 0.2:
                         continue
                     
                     # 고유 ID 생성
@@ -405,7 +393,7 @@ class AdvancedNewsCollector:
                         'title': title,
                         'description': description,
                         'link': link,
-                        'url': link,  # 호환성
+                        'url': link,
                         'source': urlparse(url).netloc,
                         'published': entry.get('published', ''),
                         'published_date': pub_time.strftime('%Y-%m-%d %H:%M:%S') if pub_time else datetime.now().strftime('%Y-%m-%d %H:%M:%S'),
@@ -432,12 +420,10 @@ class AdvancedNewsCollector:
         """음악 관련성 점수 계산"""
         text = (title + " " + description).lower()
         
-        # 음악 키워드 매칭
         keyword_matches = sum(1 for keyword in self.music_keywords if keyword in text)
         keyword_score = min(keyword_matches / 5, 1.0)
         
-        # 도메인 기반 점수
-        domain_score = 0.8  # RSS 피드가 이미 음악 관련
+        domain_score = 0.8
         
         return (keyword_score * 0.6) + (domain_score * 0.4)
     
@@ -452,7 +438,6 @@ class AdvancedNewsCollector:
                 all_news.extend(news_items)
                 successful_feeds += 1
             
-            # 요청 간격 조절
             time.sleep(1)
         
         success_rate = (successful_feeds / len(self.rss_feeds)) * 100
