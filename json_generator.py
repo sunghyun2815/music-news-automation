@@ -23,65 +23,65 @@ class MusicNewsJSONGenerator:
    def generate_json_data(self, processed_news: List[Dict]) -> Dict:
     """뉴스 데이터를 JSON 형태로 변환 - Priority 0/1 시스템"""
     
-    # 카테고리별로 분류
-    categorized_news = {
-        'NEWS': [],
-        'REPORT': [],
-        'INSIGHT': [],
-        'INTERVIEW': [],
-        'COLUMN': []
-    }
-    
-    for news in processed_news:
-        category = news.get('category', 'NEWS')
-        if category in categorized_news:
-            
-            # 웹사이트용 데이터 구조
-            web_news_item = {
-                'id': news.get('id', ''),
-                'title': news.get('title', ''),
-                'summary': news.get('summary', ''),
-                'url': news.get('link', ''),
-                'source': news.get('source', ''),
-                'published_date': news.get('published_date', ''),
-                'priority': 0,  # 모든 뉴스 기본값 0
-                'tags': {
-                    'genre': news.get('tags', {}).get('genre', []),
-                    'industry': news.get('tags', {}).get('industry', []),
-                    'region': news.get('tags', {}).get('region', [])
-                },
-                'category': category
-            }
-            
-            categorized_news[category].append(web_news_item)
-    
-    # 메타데이터 추가
-    json_data = {
-        'metadata': {
-            'generated_at': datetime.now().isoformat(),
-            'total_news': len(processed_news),
-            'categories': {
-                category: len(news_list) 
-                for category, news_list in categorized_news.items()
-            },
-            'version': '1.0',
-            'source': 'Music News Automation System',
-            'curation_info': {
-                'system': 'priority_0_1',
-                'default_priority': 0,
-                'selected_priority': 1,
-                'instructions': 'Change priority from 0 to 1 for featured news'
-            }
-        },
-        'news': categorized_news,
-        'summary': {
-            'top_genres': self._get_top_tags(processed_news, 'genre'),
-            'top_industries': self._get_top_tags(processed_news, 'industry'),
-            'top_regions': self._get_top_tags(processed_news, 'region')
+        # 카테고리별로 분류
+        categorized_news = {
+            'NEWS': [],
+            'REPORT': [],
+            'INSIGHT': [],
+            'INTERVIEW': [],
+            'COLUMN': []
         }
-    }
     
-    return json_data
+        for news in processed_news:
+            category = news.get('category', 'NEWS')
+            if category in categorized_news:
+            
+                # 웹사이트용 데이터 구조
+                web_news_item = {
+                    'id': news.get('id', ''),
+                    'title': news.get('title', ''),
+                    'summary': news.get('summary', ''),
+                    'url': news.get('link', ''),
+                    'source': news.get('source', ''),
+                    'published_date': news.get('published_date', ''),
+                    'priority': 0,  # 모든 뉴스 기본값 0
+                    'tags': {
+                        'genre': news.get('tags', {}).get('genre', []),
+                        'industry': news.get('tags', {}).get('industry', []),
+                        'region': news.get('tags', {}).get('region', [])
+                    },
+                    'category': category
+                }
+                
+                categorized_news[category].append(web_news_item)
+    
+        # 메타데이터 추가
+        json_data = {
+            'metadata': {
+                'generated_at': datetime.now().isoformat(),
+                'total_news': len(processed_news),
+                'categories': {
+                    category: len(news_list) 
+                    for category, news_list in categorized_news.items()
+                },
+                'version': '1.0',
+                'source': 'Music News Automation System',
+                'curation_info': {
+                    'system': 'priority_0_1',
+                    'default_priority': 0,
+                    'selected_priority': 1,
+                    'instructions': 'Change priority from 0 to 1 for featured news'
+                }
+            },
+            'news': categorized_news,
+            'summary': {
+                'top_genres': self._get_top_tags(processed_news, 'genre'),
+                'top_industries': self._get_top_tags(processed_news, 'industry'),
+                'top_regions': self._get_top_tags(processed_news, 'region')
+            }
+        }
+    
+        return json_data
     
     def _get_top_tags(self, news_list: List[Dict], tag_type: str) -> List[str]:
         """상위 태그 추출"""
