@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """
-Music News Automation System
-음악 산업 뉴스를 자동으로 수집, 분류, 요약하고 중요도/트렌딩순으로 30개 선별 후 Slack 및 이메일로 발송합니다.
+Simplified Music News Automation System
+중복 제거 + 최신순 정렬로 단순화된 음악 뉴스 자동화 시스템
 """
 import os
 import argparse
@@ -20,21 +20,18 @@ from news_delivery_system import NewsDeliverySystem
 from json_generator import MusicNewsJSONGenerator
 
 def main():
-    """메인 실행 함수"""
+    """메인 실행 함수 - 단순화된 버전"""
     # 명령행 인수 파싱
-    parser = argparse.ArgumentParser(description="음악 뉴스 자동화 시스템 (중요도/트렌딩순 30개 선별)")
+    parser = argparse.ArgumentParser(description="단순화된 음악 뉴스 자동화 시스템 (중복제거 + 최신순)")
     parser.add_argument('--production', action='store_true', help='실제 발송 모드 (Slack, Email)')
-    parser.add_argument('--count', type=int, default=20, help='선별할 뉴스 개수 (기본값: 20)')
-    parser.add_argument('--mode', choices=['importance', 'trending'], default='trending', 
-                       help='선별 모드: importance(중요도순) 또는 trending(트렌딩순, 기본값)')
+    parser.add_argument('--count', type=int, default=50, help='가져올 뉴스 개수 (기본값: 50)')
     parser.add_argument('--ai-summary', action='store_true', help='AI 요약 사용 (OpenAI API 필요)')
     parser.add_argument('--claude', action='store_true', help='Claude 요약 사용')
     args = parser.parse_args()
     
-    logger.info("🎵 === 음악 뉴스 자동화 시스템 시작 ===")
-    logger.info(f"선별 모드: {args.mode.upper()}")
-    logger.info(f"선별 개수: {args.count}개")
-    logger.info(f"AI 요약: {'사용' if args.ai_summary else '미사용'}")
+    logger.info("🎵 === 단순화된 음악 뉴스 자동화 시스템 시작 ===")
+    logger.info(f"목표 뉴스 개수: {args.count}개")
+    logger.info(f"AI 요약: {'사용' if args.ai_summary or args.claude else '미사용'}")
     logger.info(f"발송 모드: {'프로덕션' if args.production else '테스트'}")
     
     start_time = datetime.now()
@@ -51,21 +48,15 @@ def main():
         logger.info(f"✅ 총 {len(all_news_items)}개 뉴스 아이템 수집 완료")
         
         # 2. 중복 제거 (이미 collector에서 수행됨)
-        logger.info("\n🔄 2단계: 중복 제거...")
-        unique_news_items = all_news_items
-        logger.info(f"✅ 중복 제거 후 {len(unique_news_items)}개 뉴스 아이템")
+        logger.info(f"\n🔄 2단계: 중복 제거 완료 - {len(all_news_items)}개 고유 뉴스")
         
-        # 수집된 뉴스가 너무 적으면 경고
-        if len(unique_news_items) < args.count:
-            logger.warning(f"⚠️  수집된 뉴스({len(unique_news_items)}개)가 요청된 개수({args.count}개)보다 적습니다.")
-        
-        # 3. 뉴스 분류, 태깅, 요약, 중요도 점수 계산
-        logger.info(f"\n🏷️  3단계: 뉴스 분류, 태깅, 요약, 중요도 점수 계산...")
+        # 3. 뉴스 분류, 태깅, 요약 (중요도 점수 제외)
+        logger.info(f"\n🏷️  3단계: 뉴스 분류, 태깅, 요약...")
         classifier = AdvancedClassifier(
             use_ai_summary=args.ai_summary,
-            use_claude_summary=args.claude  # 새로 추가
-            )
-        processed_news = classifier.process_news_list(unique_news_items)
+            use_claude_summary=args.claude
+        )
+        processed_news = classifier.process_news_list_simplified(all_news_items)
         
         if not processed_news:
             raise ValueError("처리된 뉴스가 없습니다.")
@@ -74,70 +65,48 @@ def main():
         
         # 처리 통계 출력
         categories = {}
-        total_importance = 0
         for news in processed_news:
             category = news.get('category', 'NEWS')
             categories[category] = categories.get(category, 0) + 1
-            total_importance += news.get('importance_score', 0)
         
-        avg_importance = total_importance / len(processed_news) if processed_news else 0
         logger.info(f"📊 카테고리별 분포: {dict(sorted(categories.items()))}")
-        logger.info(f"📊 평균 중요도 점수: {avg_importance:.3f}")
         
-        # 4. 상위 뉴스 선별 (핵심 변경사항)
-        logger.info(f"\n🎯 4단계: 상위 뉴스 선별 ({args.mode} 모드, {args.count}개)...")
+        # 4. 최신순으로 정렬하여 상위 N개 선택
+        logger.info(f"\n📅 4단계: 최신순 정렬하여 상위 {args.count}개 선택...")
         
-        if args.mode == 'importance':
-            # 순수 중요도순 선별
-            selected_news = classifier.select_top_news_by_importance(processed_news, max_total=args.count)
-            selection_type = "중요도 기반"
-        else:
-            # 트렌딩순 선별 (최신성 + 중요도 + 화제성 + 아티스트 인기도)
-            selected_news = classifier.select_trending_news(processed_news, max_total=args.count)
-            selection_type = "트렌딩 기반"
+        # 발행 시간순으로 정렬 (최신순)
+        try:
+            sorted_news = sorted(
+                processed_news, 
+                key=lambda x: x.get('published_date', ''), 
+                reverse=True
+            )
+        except:
+            # 정렬 실패 시 원본 순서 유지
+            sorted_news = processed_news
         
-        if not selected_news:
-            raise ValueError("선별된 뉴스가 없습니다.")
+        # 상위 N개 선택
+        selected_news = sorted_news[:args.count]
         
-        logger.info(f"✅ {selection_type}으로 {len(selected_news)}개 뉴스 선별 완료")
+        logger.info(f"✅ 최신순으로 {len(selected_news)}개 뉴스 선택 완료")
         
         # 선별된 뉴스 통계
         selected_categories = {}
-        selected_importance_scores = []
-        trending_scores = []
-        
         for news in selected_news:
             category = news.get('category', 'NEWS')
             selected_categories[category] = selected_categories.get(category, 0) + 1
-            selected_importance_scores.append(news.get('importance_score', 0))
-            if 'trending_score' in news:
-                trending_scores.append(news['trending_score'])
         
         logger.info(f"📊 선별된 뉴스 카테고리 분포: {dict(sorted(selected_categories.items()))}")
         
-        if selected_importance_scores:
-            avg_selected_importance = sum(selected_importance_scores) / len(selected_importance_scores)
-            max_importance = max(selected_importance_scores)
-            min_importance = min(selected_importance_scores)
-            logger.info(f"📊 선별된 뉴스 중요도: 평균 {avg_selected_importance:.3f}, 범위 {min_importance:.3f}~{max_importance:.3f}")
-        
-        if trending_scores:
-            avg_trending = sum(trending_scores) / len(trending_scores)
-            max_trending = max(trending_scores)
-            min_trending = min(trending_scores)
-            logger.info(f"📊 트렌딩 점수: 평균 {avg_trending:.3f}, 범위 {min_trending:.3f}~{max_trending:.3f}")
-        
         # 상위 5개 뉴스 미리보기
-        logger.info(f"\n🔝 상위 5개 뉴스 미리보기:")
+        logger.info(f"\n🔝 최신 5개 뉴스 미리보기:")
         for i, news in enumerate(selected_news[:5]):
             title = news.get('title', '')[:50] + "..." if len(news.get('title', '')) > 50 else news.get('title', '')
-            importance = news.get('importance_score', 0)
-            trending = news.get('trending_score', 0) if 'trending_score' in news else importance
             category = news.get('category', 'NEWS')
             source = news.get('source', '')
+            published_date = news.get('published_date', '')
             
-            score_text = f"트렌딩: {trending:.3f}" if args.mode == 'trending' else f"중요도: {importance:.3f}"
-            logger.info(f"  {i+1}. [{score_text}] [{category}] {title} ({source})")
+            logger.info(f"  {i+1}. [{category}] {title} ({source}) - {published_date}")
         
         # 5. JSON 파일 생성 및 저장
         logger.info(f"\n💾 5단계: JSON 파일 생성 및 저장...")
@@ -191,14 +160,14 @@ def main():
         end_time = datetime.now()
         duration = (end_time - start_time).total_seconds()
         
-        logger.info(f"\n🎉 === 음악 뉴스 자동화 시스템 완료 ===")
+        logger.info(f"\n🎉 === 단순화된 음악 뉴스 자동화 시스템 완료 ===")
         logger.info(f"⏱️  총 실행 시간: {duration:.1f}초")
         logger.info(f"📊 처리 통계:")
         logger.info(f"  - 수집된 뉴스: {len(all_news_items)}개")
         logger.info(f"  - 처리된 뉴스: {len(processed_news)}개")
         logger.info(f"  - 선별된 뉴스: {len(selected_news)}개")
-        logger.info(f"  - 선별 방식: {selection_type}")
-        logger.info(f"  - AI 요약: {'사용됨' if args.ai_summary else '미사용'}")
+        logger.info(f"  - 선별 방식: 최신순 정렬")
+        logger.info(f"  - AI 요약: {'사용됨' if args.ai_summary or args.claude else '미사용'}")
         
         if args.production:
             success_rate = (sum(delivery_results.values()) / len(delivery_results)) * 100
@@ -221,22 +190,6 @@ def main():
         logger.error(f"\n💥 치명적 오류 발생!")
         logger.error(f"❌ 오류: {str(e)}")
         logger.error(f"⏱️  실행 시간: {duration:.1f}초")
-        
-        # 오류 발생 시 간단한 진단 정보
-        logger.error(f"🔍 진단 정보:")
-        logger.error(f"  - 실행 모드: {'프로덕션' if args.production else '테스트'}")
-        logger.error(f"  - 선별 모드: {args.mode}")
-        logger.error(f"  - AI 요약: {'사용' if args.ai_summary else '미사용'}")
-        
-        # 환경변수 확인 (민감 정보 제외)
-        required_env_vars = ['OPENAI_API_KEY', 'SLACK_TOKEN', 'EMAIL_ADDRESS', 'EMAIL_PASSWORD']
-        missing_vars = [var for var in required_env_vars if not os.getenv(var)]
-        
-        if missing_vars and args.production:
-            logger.error(f"  - 누락된 환경변수: {missing_vars}")
-            logger.error(f"  💡 해결방법: GitHub Secrets 또는 .env 파일에서 API 키 설정 확인")
-        
-        logger.error(f"\n📧 지속적인 문제 발생 시 로그를 확인하여 문제를 진단해주세요.")
         
         return 1  # 실패
 
