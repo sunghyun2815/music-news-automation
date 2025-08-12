@@ -15,30 +15,31 @@ logger = logging.getLogger(__name__)
 
 class AdvancedClassifier:
     def __init__(self, use_ai_summary: bool = False, use_claude_summary: bool = False):
-    self.use_ai_summary = use_ai_summary
-    self.use_claude_summary = use_claude_summary  # 새로 추가
-    self.ai_summarizer = None
-    self.claude_summarizer = None  # 새로 추가
-    
-    # Claude 요약기 초기화 (새로 추가)
-    if self.use_claude_summary:
-        try:
-            from anthropic_summarizer import AnthropicSummarizer
-            self.claude_summarizer = AnthropicSummarizer()
-            logger.info("Claude 요약기 초기화 완료")
-        except Exception as e:
-            logger.warning(f"Claude 요약기 초기화 실패: {e}")
-            self.claude_summarizer = None
-    
-    # 기존 OpenAI 요약기 초기화
-    elif self.use_ai_summary:
-        try:
-            from ai_summarizer import AISummarizer
-            self.ai_summarizer = AISummarizer()
-            logger.info("AI 요약기 초기화 완료")
-        except ImportError:
-            logger.warning("AI 요약기를 찾을 수 없습니다.")
-            self.ai_summarizer = None
+        """분류기 초기화"""
+        self.use_ai_summary = use_ai_summary
+        self.use_claude_summary = use_claude_summary
+        self.ai_summarizer = None
+        self.claude_summarizer = None
+        
+        # Claude 요약기 초기화 (우선순위)
+        if self.use_claude_summary:
+            try:
+                from anthropic_summarizer import AnthropicSummarizer
+                self.claude_summarizer = AnthropicSummarizer()
+                logger.info("Claude 요약기 초기화 완료")
+            except Exception as e:
+                logger.warning(f"Claude 요약기 초기화 실패: {e}")
+                self.claude_summarizer = None
+        
+        # OpenAI 요약기 초기화 (Claude 없을 때)
+        elif self.use_ai_summary:
+            try:
+                from ai_summarizer import AISummarizer
+                self.ai_summarizer = AISummarizer()
+                logger.info("OpenAI 요약기 초기화 완료")
+            except Exception as e:
+                logger.warning(f"OpenAI 요약기 초기화 실패: {e}")
+                self.ai_summarizer = None
         
         # 분류 키워드 정의
         self.category_keywords = {
@@ -333,21 +334,21 @@ class AdvancedClassifier:
                     break
             
             # 요약 생성
-            summary = f"Who: {who}\nWhat: {what}\nWhen: {when}"
+            summary = f"{who}가 {when} 음악 관련 소식을 전했습니다."
             
             # 추가 컨텍스트
             if 'album' in text or '앨범' in text:
-                summary += "\n새 앨범 관련 소식"
+                summary = f"{who}가 {when} 새 앨범 관련 소식을 발표했습니다."
             elif 'tour' in text or '투어' in text:
-                summary += "\n투어 관련 소식"
+                summary = f"{who}가 {when} 투어 관련 소식을 발표했습니다."
             elif 'chart' in text or '차트' in text:
-                summary += "\n차트 관련 소식"
+                summary = f"{who}가 {when} 차트에서 좋은 성과를 거두었습니다."
             
             return summary
             
         except Exception as e:
             logger.error(f"한글 요약 생성 오류: {e}")
-            return f"제목: {title[:50]}..." if len(title) > 50 else title
+            return f"음악 업계 소식: {title[:50]}..." if len(title) > 50 else title
     
     def extract_artists_from_text(self, text: str) -> List[str]:
         """텍스트에서 아티스트명 추출"""
@@ -416,42 +417,84 @@ class AdvancedClassifier:
                 })
         
         # 요약 처리
-       if self.use_claude_summary and self.claude_summarizer:
-        # Claude 요약 사용
-        try:
-            logger.info("Claude 요약 시작...")
-            sorted_news = sorted(processed_news, key=lambda x: x.get('importance_score', 0), reverse=True)
-            claude_processed = self.claude_summarizer.batch_summarize(sorted_news[:10], max_items=10)
-            
-            final_news = []
-            for i, news in enumerate(sorted_news):
-                if i < len(claude_processed) and 'claude_summary' in claude_processed[i]:
-                    news['summary'] = claude_processed[i]['claude_summary']
-                    news['summary_type'] = 'claude_generated'
-                else:
-                    news['summary'] = self.generate_korean_summary(
-                        news.get('title', ''), 
-                        news.get('description', ''), 
-                        news.get('url', '')
-                    )
-                    news['summary_type'] = 'rule_based'
-                final_news.append(news)
-            
-            processed_news = final_news
-            
-        except Exception as e:
-            logger.error(f"Claude 요약 오류: {e}")
-            # 실패 시 기존 로직 사용
+        if self.use_claude_summary and self.claude_summarizer:
+            # Claude 요약 사용
+            try:
+                logger.info("Claude 요약 시작...")
+                sorted_news = sorted(processed_news, key=lambda x: x.get('importance_score', 0), reverse=True)
+                claude_processed = self.claude_summarizer.batch_summarize(sorted_news[:10], max_items=10)
+                
+                final_news = []
+                for i, news in enumerate(sorted_news):
+                    if i < len(claude_processed) and 'claude_summary' in claude_processed[i]:
+                        news['summary'] = claude_processed[i]['claude_summary']
+                        news['summary_type'] = 'claude_generated'
+                    else:
+                        news['summary'] = self.generate_korean_summary(
+                            news.get('title', ''), 
+                            news.get('description', ''), 
+                            news.get('url', '')
+                        )
+                        news['summary_type'] = 'rule_based'
+                    final_news.append(news)
+                
+                processed_news = final_news
+                
+            except Exception as e:
+                logger.error(f"Claude 요약 오류: {e}")
+                for news in processed_news:
+                    if 'summary' not in news:
+                        news['summary'] = self.generate_korean_summary(
+                            news.get('title', ''), 
+                            news.get('description', ''), 
+                            news.get('url', '')
+                        )
+                        news['summary_type'] = 'rule_based'
+        
+        elif self.use_ai_summary and self.ai_summarizer:
+            # OpenAI 요약 사용
+            try:
+                sorted_news = sorted(processed_news, key=lambda x: x.get('importance_score', 0), reverse=True)
+                ai_processed = self.ai_summarizer.batch_summarize(sorted_news[:10], max_items=10)
+                
+                final_news = []
+                for i, news in enumerate(sorted_news):
+                    if i < len(ai_processed) and 'ai_summary' in ai_processed[i]:
+                        news['summary'] = ai_processed[i]['ai_summary']
+                        news['summary_type'] = 'ai_generated'
+                    else:
+                        news['summary'] = self.generate_korean_summary(
+                            news.get('title', ''), 
+                            news.get('description', ''), 
+                            news.get('url', '')
+                        )
+                        news['summary_type'] = 'rule_based'
+                    final_news.append(news)
+                
+                processed_news = final_news
+                        
+            except Exception as e:
+                logger.error(f"AI 요약 오류: {e}")
+                for news in processed_news:
+                    if 'summary' not in news:
+                        news['summary'] = self.generate_korean_summary(
+                            news.get('title', ''), 
+                            news.get('description', ''), 
+                            news.get('url', '')
+                        )
+                        news['summary_type'] = 'rule_based'
+        else:
+            # 규칙 기반 요약만 사용
             for news in processed_news:
-                if 'summary' not in news:
-                    news['summary'] = self.generate_korean_summary(
-                        news.get('title', ''), 
-                        news.get('description', ''), 
-                        news.get('url', '')
-                    )
-                    news['summary_type'] = 'rule_based'
-    
-    else:
+                news['summary'] = self.generate_korean_summary(
+                    news.get('title', ''), 
+                    news.get('description', ''), 
+                    news.get('url', '')
+                )
+                news['summary_type'] = 'rule_based'
+        
+        logger.info(f"{len(processed_news)}개 뉴스 처리 완료")
+        return processed_news
     
     def select_top_news_by_importance(self, news_list: List[Dict], max_total: int = 30) -> List[Dict]:
         """중요도 순으로 상위 뉴스 선별"""
