@@ -15,7 +15,6 @@ from collections import Counter  # Counter 임포트 추가
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
 logger = logging.getLogger(__name__)
 
-
 class MusicNewsJSONGenerator:
     def __init__(self):
         self.output_file = "music_news.json"
@@ -36,6 +35,7 @@ class MusicNewsJSONGenerator:
         for news in processed_news:
             category = news.get('category', 'NEWS')
             if category in categorized_news:
+
                 # 웹사이트용 데이터 구조
                 web_news_item = {
                     'id': news.get('id', ''),
@@ -52,6 +52,7 @@ class MusicNewsJSONGenerator:
                     },
                     'category': category
                 }
+
                 categorized_news[category].append(web_news_item)
 
         # 메타데이터 추가
@@ -162,44 +163,40 @@ https://raw.githubusercontent.com/YOUR-USERNAME/music-news-automation/main/music
 
 ### API 정보
 https://raw.githubusercontent.com/YOUR-USERNAME/music-news-automation/main/api_info.json
+...
+"""
+        try:
+            with open('README.md', 'w', encoding='utf-8') as f:
+                f.write(readme_content)
 
-## 📊 데이터 구조
+            logger.info("README.md 파일이 성공적으로 생성되었습니다.")
+            return readme_content
 
-```json
-{
-  "metadata": {
-    "generated_at": "2025-06-24T10:00:00",
-    "total_news": 14,
-    "categories": {
-      "NEWS": 4,
-      "REPORT": 3,
-      "INSIGHT": 4,
-      "INTERVIEW": 2,
-      "COLUMN": 1
-    }
-  },
-  "news": {
-    "NEWS": [
-      {
-        "id": "unique_id",
-        "title": "뉴스 제목",
-        "summary": "5W1H 기반 요약",
-        "url": "원본 링크",
-        "source": "출처",
-        "published_date": "발행일",
-        "importance_score": 0.87,
-        "tags": {
-          "genre": ["pop", "rock"],
-          "industry": ["tour", "album"],
-          "region": ["us", "korea"]
-        },
-        "category": "NEWS"
-      }
+        except Exception as e:
+            logger.error(f"README.md 파일 생성 실패: {e}")
+            raise
+
+
+# 메인 실행부
+if __name__ == "__main__":
+    generator = MusicNewsJSONGenerator()
+
+    sample_news = [
+        {
+            'id': 'test1',
+            'title': '테스트 뉴스',
+            'summary': '테스트 요약',
+            'url': 'https://example.com',
+            'source': '테스트 소스',
+            'published_date': '2024-01-01',
+            'importance_score': 5,
+            'tags': {'genre': ['K-pop'], 'industry': ['음반'], 'region': ['한국']},
+            'category': 'NEWS'
+        }
     ]
-  },
-  "summary": {
-    "top_genres": ["pop", "rock", "hip-hop"],
-    "top_regions": ["us", "korea", "uk"],
-    "top_industries": ["tour", "album", "streaming"]
-  }
-}
+
+    json_data = generator.generate_json_data(sample_news)
+    generator.save_json_file(json_data)
+    generator.generate_api_info()
+    generator.create_readme_for_api()
+    print("✅ 모든 파일이 생성되었습니다.")
