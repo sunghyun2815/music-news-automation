@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """
-Enhanced Advanced News Collector
-강화된 중복 제거 기능이 포함된 RSS 피드 수집 모듈
+Enhanced Advanced News Collector - FIXED VERSION
+강화된 중복 제거 기능이 포함된 RSS 피드 수집 모듈 (수정된 버전)
 """
 
 import feedparser
@@ -41,17 +41,23 @@ class AdvancedNewsCollector:
             'ep', 'lp', 'vinyl', 'digital', 'radio', 'playlist'
         }
         
-        # 중복 제거 설정
-        self.duplicate_threshold = 0.85
+        # 중복 제거 설정 - 더 엄격하게 조정
+        self.duplicate_threshold = 0.75  # 0.85 → 0.75로 낮춤
         self.collected_news = []
         
         # 중복 검사용 캐시
         self.url_cache = set()
         self.title_cache = set()
         self.content_hashes = set()
+        
+        # 인기 아티스트별 더 엄격한 중복 검사
+        self.popular_artists = [
+            'taylor swift', 'bts', 'blackpink', 'drake', 'ariana grande', 
+            'billie eilish', 'dua lipa', 'olivia rodrigo', 'travis scott', 'kendrick lamar'
+        ]
     
     def normalize_url(self, url: str) -> str:
-        """URL 정규화"""
+        """URL 정규화 - 개선된 버전"""
         try:
             parsed = urlparse(url.lower())
             
@@ -65,14 +71,13 @@ class AdvancedNewsCollector:
                 if param in query_dict:
                     filtered_query[param] = query_dict[param]
             
-            # 정규화된 URL 생성
+            # 정규화된 URL 생성 (도메인 + 경로만)
             normalized = f"{parsed.netloc}{parsed.path}"
             
-            # 중요한 쿼리 파라미터가 있으면 추가
-            if filtered_query:
-                query_str = '&'.join([f"{k}={v[0]}" for k, v in filtered_query.items()])
-                normalized += f"?{query_str}"
-                
+            # 슬래시 정리
+            normalized = re.sub(r'/+$', '', normalized)  # 끝의 슬래시 제거
+            normalized = re.sub(r'/+', '/', normalized)  # 연속 슬래시 정리
+            
             return normalized
             
         except Exception as e:
@@ -80,87 +85,141 @@ class AdvancedNewsCollector:
             return url.lower()
     
     def normalize_title(self, title: str) -> str:
-        """제목 정규화"""
+        """제목 정규화 - 개선된 버전"""
         # 소문자 변환
         normalized = title.lower().strip()
         
-        # 특수문자 정리
-        normalized = re.sub(r'[^\w\s]', '', normalized)
+        # 특수문자 정리 (따옴표는 보존)
+        normalized = re.sub(r'[^\w\s\'\"''""]', ' ', normalized)
         
         # 연속된 공백을 하나로
         normalized = re.sub(r'\s+', ' ', normalized)
         
-        # 일반적인 접두사 제거
-        prefixes_to_remove = ['exclusive', 'breaking', 'watch', 'listen', 'new']
+        # 일반적인 접두사 제거 (더 포괄적으로)
+        prefixes_to_remove = [
+            'exclusive', 'breaking', 'watch', 'listen', 'new', 'stream',
+            'premiere', 'first look', 'video', 'audio', 'live', 'official'
+        ]
+        
         for prefix in prefixes_to_remove:
-            if normalized.startswith(prefix + ' '):
-                normalized = normalized[len(prefix + ' '):]
+            pattern = f'^{prefix}\\s+'
+            normalized = re.sub(pattern, '', normalized)
+        
+        # 끝의 불필요한 단어들 제거
+        suffixes_to_remove = ['watch', 'listen', 'video', 'audio', 'stream']
+        for suffix in suffixes_to_remove:
+            pattern = f'\\s+{suffix}$'
+            normalized = re.sub(pattern, '', normalized)
         
         return normalized.strip()
     
+    def extract_core_keywords(self, title: str, description: str) -> Set[str]:
+        """핵심 키워드 추출 - 새로운 메소드"""
+        text = f"{title} {description}".lower()
+        
+        # 아티스트명 추출
+        artist_names = set()
+        for artist in self.popular_artists:
+            if artist in text:
+                artist_names.add(artist)
+        
+        # 다른 잠재적 아티스트명 추출 (대문자로 시작하는 단어들)
+        artist_pattern = r'\b([A-Z][a-z]+(?:\s+[A-Z][a-z]+)*)\b'
+        matches = re.findall(artist_pattern, f"{title} {description}")
+        for match in matches:
+            if len(match.split()) <= 3 and len(match) > 2:  # 3단어 이하, 2글자 이상
+                artist_names.add(match.lower())
+        
+        # 핵심 행동 키워드
+        action_keywords = set()
+        actions = ['announces', 'releases', 'debuts', 'shares', 'drops', 'reveals', 'teases']
+        for action in actions:
+            if action in text:
+                action_keywords.add(action)
+        
+        # 음악 관련 키워드
+        music_keywords = set()
+        music_terms = ['album', 'song', 'tour', 'concert', 'single', 'ep', 'collaboration']
+        for term in music_terms:
+            if term in text:
+                music_keywords.add(term)
+        
+        return artist_names | action_keywords | music_keywords
+    
     def generate_content_hash(self, title: str, description: str) -> str:
-        """내용 기반 해시 생성"""
-        # 제목과 설명을 정규화
-        norm_title = self.normalize_title(title)
-        norm_desc = re.sub(r'[^\w\s]', '', description.lower())
+        """내용 기반 해시 생성 - 개선된 버전"""
+        # 핵심 키워드 추출
+        core_keywords = self.extract_core_keywords(title, description)
         
-        # 핵심 단어만 추출
-        words = []
-        for text in [norm_title, norm_desc]:
-            text_words = [w for w in text.split() if len(w) > 3]
-            words.extend(text_words[:10])
+        # 제목에서 핵심 단어들만 추출
+        title_words = set(self.normalize_title(title).split())
+        desc_words = set(re.sub(r'[^\w\s]', '', description.lower()).split())
         
-        # 해시 생성
-        content = ' '.join(sorted(set(words)))
+        # 길이가 3글자 이상인 의미있는 단어들만 선택
+        meaningful_words = []
+        for word in (title_words | desc_words):
+            if len(word) >= 3 and word not in ['the', 'and', 'for', 'with', 'from', 'new', 'has']:
+                meaningful_words.append(word)
+        
+        # 핵심 키워드와 의미있는 단어들을 합쳐서 해시 생성
+        all_keywords = core_keywords | set(meaningful_words[:10])
+        content = ' '.join(sorted(all_keywords))
+        
         return hashlib.md5(content.encode()).hexdigest()
     
     def calculate_title_similarity(self, title1: str, title2: str) -> float:
-        """제목 유사도 계산"""
+        """제목 유사도 계산 - 개선된 버전"""
         norm1 = set(self.normalize_title(title1).split())
         norm2 = set(self.normalize_title(title2).split())
         
         if not norm1 or not norm2:
             return 0.0
         
+        # Jaccard 유사도 계산
         intersection = len(norm1.intersection(norm2))
         union = len(norm1.union(norm2))
         
-        return intersection / union if union > 0 else 0.0
+        jaccard_similarity = intersection / union if union > 0 else 0.0
+        
+        # 추가: 핵심 키워드 매칭 점수
+        keywords1 = self.extract_core_keywords(title1, "")
+        keywords2 = self.extract_core_keywords(title2, "")
+        
+        if keywords1 and keywords2:
+            keyword_intersection = len(keywords1.intersection(keywords2))
+            keyword_union = len(keywords1.union(keywords2))
+            keyword_similarity = keyword_intersection / keyword_union if keyword_union > 0 else 0.0
+        else:
+            keyword_similarity = 0.0
+        
+        # 가중 평균 (제목 단어 70%, 핵심 키워드 30%)
+        final_similarity = (jaccard_similarity * 0.7) + (keyword_similarity * 0.3)
+        
+        return final_similarity
     
-    def extract_key_entities(self, title: str, description: str) -> Set[str]:
-        """핵심 엔티티 추출"""
-        entities = set()
-        text = f"{title} {description}"
+    def check_popular_artist_duplicate(self, news1: Dict, news2: Dict) -> bool:
+        """인기 아티스트에 대한 더 엄격한 중복 검사"""
+        text1 = f"{news1.get('title', '')} {news1.get('description', '')}".lower()
+        text2 = f"{news2.get('title', '')} {news2.get('description', '')}".lower()
         
-        # 따옴표 안의 텍스트
-        quote_patterns = [r'"([^"]+)"', r"'([^']+)'"]
-        for pattern in quote_patterns:
-            matches = re.findall(pattern, text)
-            entities.update(match.lower() for match in matches if len(match) > 2)
+        # 같은 인기 아티스트가 포함된 경우
+        for artist in self.popular_artists:
+            if artist in text1 and artist in text2:
+                # 제목 유사도가 60% 이상이면 중복으로 판단
+                similarity = self.calculate_title_similarity(
+                    news1.get('title', ''), 
+                    news2.get('title', '')
+                )
+                if similarity >= 0.6:  # 인기 아티스트는 더 엄격하게
+                    logger.debug(f"인기 아티스트 '{artist}' 중복 발견: {similarity:.2f}")
+                    return True
         
-        # 대문자로 시작하는 단어들
-        artist_pattern = r'\b([A-Z][a-z]+(?:\s+[A-Z][a-z]+)*)\b'
-        matches = re.findall(artist_pattern, text)
-        
-        # 알려진 아티스트명 필터링
-        known_artists = {
-            'taylor swift', 'billie eilish', 'ariana grande', 'drake', 'metallica',
-            'bts', 'blackpink', 'twice', 'stray kids', 'newjeans', 'ive',
-            'my chemical romance', 'mayday parade', 'mother love bone'
-        }
-        
-        for match in matches:
-            if (match.lower() in known_artists or 
-                len(match.split()) >= 2 and 
-                match not in ['New Album', 'Live From', 'Very Imminent']):
-                entities.add(match.lower())
-        
-        return entities
+        return False
     
     def is_duplicate_advanced(self, news1: Dict, news2: Dict) -> bool:
         """강화된 중복 검사"""
         
-        # 1. URL 기반 검사
+        # 1. URL 기반 검사 (강화)
         url1 = self.normalize_url(news1.get('link', ''))
         url2 = self.normalize_url(news2.get('link', ''))
         
@@ -168,18 +227,22 @@ class AdvancedNewsCollector:
             logger.debug(f"URL 중복 발견: {url1}")
             return True
         
-        # 2. 제목 유사도 검사
+        # 2. 인기 아티스트에 대한 특별 검사
+        if self.check_popular_artist_duplicate(news1, news2):
+            return True
+        
+        # 3. 제목 유사도 검사 (임계값 낮춤)
         title1 = news1.get('title', '')
         title2 = news2.get('title', '')
         
         title_similarity = self.calculate_title_similarity(title1, title2)
         
-        # 제목이 90% 이상 유사하면 중복
-        if title_similarity >= 0.9:
+        # 제목이 80% 이상 유사하면 중복 (기존 90%에서 낮춤)
+        if title_similarity >= 0.8:
             logger.debug(f"제목 유사도 중복: {title_similarity:.2f}")
             return True
         
-        # 3. 내용 해시 기반 검사
+        # 4. 내용 해시 기반 검사
         hash1 = self.generate_content_hash(title1, news1.get('description', ''))
         hash2 = self.generate_content_hash(title2, news2.get('description', ''))
         
@@ -187,28 +250,28 @@ class AdvancedNewsCollector:
             logger.debug(f"내용 해시 중복: {hash1}")
             return True
         
-        # 4. 엔티티 기반 검사
-        if title_similarity >= 0.7:
-            entities1 = self.extract_key_entities(title1, news1.get('description', ''))
-            entities2 = self.extract_key_entities(title2, news2.get('description', ''))
+        # 5. 핵심 키워드 중복도가 높은 경우
+        if title_similarity >= 0.65:  # 중간 정도 유사한 경우
+            keywords1 = self.extract_core_keywords(title1, news1.get('description', ''))
+            keywords2 = self.extract_core_keywords(title2, news2.get('description', ''))
             
-            if entities1 and entities2:
-                entity_overlap = len(entities1.intersection(entities2))
-                entity_union = len(entities1.union(entities2))
+            if keywords1 and keywords2:
+                keyword_overlap = len(keywords1.intersection(keywords2))
+                keyword_total = len(keywords1.union(keywords2))
                 
-                if entity_union > 0:
-                    entity_similarity = entity_overlap / entity_union
-                    combined_similarity = (title_similarity * 0.6) + (entity_similarity * 0.4)
+                if keyword_total > 0:
+                    keyword_similarity = keyword_overlap / keyword_total
+                    combined_score = (title_similarity * 0.6) + (keyword_similarity * 0.4)
                     
-                    if combined_similarity >= 0.8:
-                        logger.debug(f"엔티티 기반 중복 발견")
+                    if combined_score >= 0.75:  # 종합 점수 75% 이상이면 중복
+                        logger.debug(f"키워드+제목 종합 중복: {combined_score:.2f}")
                         return True
         
-        # 5. 같은 소스에서 같은 시간대의 유사한 뉴스
+        # 6. 같은 소스에서 같은 시간대의 유사한 뉴스
         source1 = news1.get('source', '')
         source2 = news2.get('source', '')
         
-        if (source1 == source2 and title_similarity >= 0.6):
+        if (source1 == source2 and title_similarity >= 0.5):
             time1 = news1.get('published_date', '')
             time2 = news2.get('published_date', '')
             
@@ -218,7 +281,7 @@ class AdvancedNewsCollector:
                     dt2 = datetime.strptime(time2, '%Y-%m-%d %H:%M:%S')
                     time_diff = abs((dt1 - dt2).total_seconds())
                     
-                    if time_diff <= 3600:  # 1시간
+                    if time_diff <= 7200:  # 2시간 (기존 1시간에서 확장)
                         logger.debug(f"시간+소스 기반 중복")
                         return True
                         
@@ -235,7 +298,13 @@ class AdvancedNewsCollector:
         removed_count = 0
         url_cache = set()
         
-        for news in news_list:
+        # 먼저 발행시간 순으로 정렬 (최신순)
+        try:
+            sorted_news = sorted(news_list, key=lambda x: x.get('published_date', ''), reverse=True)
+        except:
+            sorted_news = news_list
+        
+        for news in sorted_news:
             is_duplicate = False
             
             # 빠른 URL 검사
@@ -243,7 +312,7 @@ class AdvancedNewsCollector:
             if normalized_url in url_cache:
                 is_duplicate = True
                 removed_count += 1
-                logger.debug(f"URL 캐시 중복 제거")
+                logger.debug(f"URL 캐시 중복 제거: {news.get('title', '')[:50]}...")
             else:
                 url_cache.add(normalized_url)
                 
@@ -259,7 +328,9 @@ class AdvancedNewsCollector:
                         if should_replace:
                             unique_news.remove(existing_news)
                             unique_news.append(news)
-                            logger.debug(f"더 나은 뉴스로 교체")
+                            logger.debug(f"더 나은 뉴스로 교체: {news.get('title', '')[:50]}...")
+                        else:
+                            logger.debug(f"중복 제거: {news.get('title', '')[:50]}...")
                         
                         break
             
@@ -273,72 +344,98 @@ class AdvancedNewsCollector:
         if removed_count > 0:
             removal_rate = (removed_count / len(news_list)) * 100
             logger.info(f"중복 제거율: {removal_rate:.1f}%")
-            self.analyze_duplicate_patterns(news_list, unique_news)
+            
+            # 중복이 많이 제거되었다면 상세 분석
+            if removal_rate > 15:
+                self.analyze_duplicate_patterns(news_list, unique_news)
         
         return unique_news
     
     def should_replace_news(self, existing: Dict, new: Dict) -> bool:
-        """두 중복 뉴스 중 어느 것을 선택할지 결정"""
+        """두 중복 뉴스 중 어느 것을 선택할지 결정 - 개선된 버전"""
         
-        # 1. 소스 신뢰도 비교
+        # 1. 소스 신뢰도 비교 (가중치 증가)
         source_priority = {
-            'billboard.com': 5,
-            'rollingstone.com': 4,
-            'pitchfork.com': 3,
-            'variety.com': 4,
-            'nme.com': 2,
-            'consequence.net': 2,
-            'stereogum.com': 2,
-            'musicbusinessworldwide.com': 3
+            'billboard.com': 10,
+            'rollingstone.com': 9,
+            'pitchfork.com': 8,
+            'variety.com': 7,
+            'musicbusinessworldwide.com': 6,
+            'consequence.net': 5,
+            'nme.com': 4,
+            'stereogum.com': 3
         }
         
         existing_priority = source_priority.get(existing.get('source', ''), 1)
         new_priority = source_priority.get(new.get('source', ''), 1)
         
-        if new_priority > existing_priority:
+        # 소스 우선순위 차이가 2 이상이면 결정적
+        if new_priority - existing_priority >= 2:
             return True
-        elif new_priority < existing_priority:
+        elif existing_priority - new_priority >= 2:
             return False
         
-        # 2. 내용 길이 비교
+        # 2. 제목 품질 비교 (길이와 정보량)
+        existing_title_quality = len(existing.get('title', '')) + existing.get('title', '').count(' ')
+        new_title_quality = len(new.get('title', '')) + new.get('title', '').count(' ')
+        
+        # 3. 내용 길이 비교
         existing_content_length = len(existing.get('description', ''))
         new_content_length = len(new.get('description', ''))
         
-        if new_content_length > existing_content_length * 1.2:
-            return True
-        
-        # 3. 발행 시간 비교
+        # 4. 발행 시간 비교 (최신성)
         try:
             existing_time = datetime.strptime(existing.get('published_date', ''), '%Y-%m-%d %H:%M:%S')
             new_time = datetime.strptime(new.get('published_date', ''), '%Y-%m-%d %H:%M:%S')
             
-            if new_time > existing_time:
+            # 새 뉴스가 1시간 이상 최신이면 선호
+            time_diff = (new_time - existing_time).total_seconds()
+            if time_diff > 3600:  # 1시간
                 return True
+            elif time_diff < -3600:
+                return False
         except ValueError:
             pass
         
-        return False
+        # 5. 종합 점수 계산
+        existing_score = (existing_priority * 3) + (existing_title_quality * 0.1) + (existing_content_length * 0.01)
+        new_score = (new_priority * 3) + (new_title_quality * 0.1) + (new_content_length * 0.01)
+        
+        return new_score > existing_score
     
     def analyze_duplicate_patterns(self, original_list: List[Dict], unique_list: List[Dict]):
-        """중복 패턴 분석"""
-        # 제목별 중복 통계
-        title_counts = {}
+        """중복 패턴 분석 - 개선된 버전"""
+        
+        # 아티스트별 중복 통계
+        artist_duplicates = {}
+        
         for news in original_list:
-            normalized_title = self.normalize_title(news.get('title', ''))
-            title_key = ' '.join(normalized_title.split()[:5])
-            title_counts[title_key] = title_counts.get(title_key, 0) + 1
+            title = news.get('title', '').lower()
+            for artist in self.popular_artists:
+                if artist in title:
+                    artist_duplicates[artist] = artist_duplicates.get(artist, 0) + 1
         
-        # 중복이 많은 제목들 출력
-        high_duplicate_titles = [(title, count) for title, count in title_counts.items() if count > 1]
-        high_duplicate_titles.sort(key=lambda x: x[1], reverse=True)
+        # 중복이 많은 아티스트들 출력
+        high_duplicate_artists = [(artist, count) for artist, count in artist_duplicates.items() if count > 1]
+        high_duplicate_artists.sort(key=lambda x: x[1], reverse=True)
         
-        if high_duplicate_titles:
-            logger.info("주요 중복 뉴스:")
-            for title, count in high_duplicate_titles[:3]:
-                logger.info(f"  '{title}...': {count}개")
+        if high_duplicate_artists:
+            logger.info("아티스트별 중복 뉴스:")
+            for artist, count in high_duplicate_artists[:5]:
+                logger.info(f"  {artist.title()}: {count}개")
+        
+        # 소스별 중복 통계
+        source_counts = {}
+        for news in original_list:
+            source = news.get('source', '')
+            source_counts[source] = source_counts.get(source, 0) + 1
+        
+        logger.info("소스별 뉴스 수:")
+        for source, count in sorted(source_counts.items(), key=lambda x: x[1], reverse=True)[:5]:
+            logger.info(f"  {source}: {count}개")
     
     def fetch_rss_feed(self, url: str) -> List[Dict]:
-        """RSS 피드에서 뉴스 수집"""
+        """RSS 피드에서 뉴스 수집 - 기존 코드 유지"""
         try:
             logger.info(f"RSS 피드 수집 중: {url}")
             
@@ -398,7 +495,7 @@ class AdvancedNewsCollector:
                         'published': entry.get('published', ''),
                         'published_date': pub_time.strftime('%Y-%m-%d %H:%M:%S') if pub_time else datetime.now().strftime('%Y-%m-%d %H:%M:%S'),
                         'relevance_score': relevance,
-                        'entities': list(self.extract_key_entities(title, description)),
+                        'entities': list(self.extract_core_keywords(title, description)),
                         'feed_url': url,
                         'collected_at': datetime.now().isoformat()
                     }
@@ -462,27 +559,18 @@ class AdvancedNewsCollector:
 if __name__ == "__main__":
     collector = AdvancedNewsCollector()
     
-    # 중복 제거 테스트
-    test_news = [
-        {
-            'title': 'Taylor Swift Announces New Album',
-            'description': 'Pop star announces new music',
-            'link': 'https://billboard.com/news/taylor-swift-album',
-            'source': 'billboard.com',
-            'published_date': '2025-08-12 10:00:00'
-        },
-        {
-            'title': 'Taylor Swift Announces New Album, The Life of a Showgirl',
-            'description': 'Taylor Swift has announced her upcoming album',
-            'link': 'https://rollingstone.com/music/taylor-swift-new-album',
-            'source': 'rollingstone.com', 
-            'published_date': '2025-08-12 10:30:00'
-        }
-    ]
+    # 실제 뉴스 수집 테스트
+    print("=== 실제 뉴스 수집 및 중복 제거 테스트 ===")
+    news_items = collector.collect_all_news()
     
-    print("=== 중복 제거 테스트 ===")
-    unique = collector.remove_duplicates_enhanced(test_news)
-    print(f"원본: {len(test_news)}개 -> 결과: {len(unique)}개")
+    print(f"최종 수집된 뉴스: {len(news_items)}개")
     
-    for news in unique:
-        print(f"- {news['title'][:50]}... ({news['source']})")
+    # 상위 10개 뉴스 미리보기
+    print("\n상위 10개 뉴스:")
+    for i, news in enumerate(news_items[:10]):
+        title = news['title'][:60] + "..." if len(news['title']) > 60 else news['title']
+        print(f"{i+1}. {title} ({news['source']})")
+    
+    # Taylor Swift 관련 뉴스 개수 확인
+    taylor_count = sum(1 for news in news_items if 'taylor swift' in news['title'].lower())
+    print(f"\nTaylor Swift 관련 뉴스: {taylor_count}개")
