@@ -9,20 +9,21 @@ import os
 from datetime import datetime
 from typing import List, Dict
 import logging
-from collections import Counter # Counter 임포트 추가
+from collections import Counter  # Counter 임포트 추가
 
 # 로깅 설정
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
 logger = logging.getLogger(__name__)
 
+
 class MusicNewsJSONGenerator:
     def __init__(self):
         self.output_file = "music_news.json"
         self.archive_dir = "archive"
-        
-   def generate_json_data(self, processed_news: List[Dict]) -> Dict:
-    """뉴스 데이터를 JSON 형태로 변환 - Priority 0/1 시스템"""
-    
+
+    def generate_json_data(self, processed_news: List[Dict]) -> Dict:
+        """뉴스 데이터를 JSON 형태로 변환 - Priority 0/1 시스템"""
+
         # 카테고리별로 분류
         categorized_news = {
             'NEWS': [],
@@ -31,11 +32,10 @@ class MusicNewsJSONGenerator:
             'INTERVIEW': [],
             'COLUMN': []
         }
-    
+
         for news in processed_news:
             category = news.get('category', 'NEWS')
             if category in categorized_news:
-            
                 # 웹사이트용 데이터 구조
                 web_news_item = {
                     'id': news.get('id', ''),
@@ -52,16 +52,15 @@ class MusicNewsJSONGenerator:
                     },
                     'category': category
                 }
-                
                 categorized_news[category].append(web_news_item)
-    
+
         # 메타데이터 추가
         json_data = {
             'metadata': {
                 'generated_at': datetime.now().isoformat(),
                 'total_news': len(processed_news),
                 'categories': {
-                    category: len(news_list) 
+                    category: len(news_list)
                     for category, news_list in categorized_news.items()
                 },
                 'version': '1.0',
@@ -80,48 +79,48 @@ class MusicNewsJSONGenerator:
                 'top_regions': self._get_top_tags(processed_news, 'region')
             }
         }
-    
+
         return json_data
-    
+
     def _get_top_tags(self, news_list: List[Dict], tag_type: str) -> List[str]:
         """상위 태그 추출"""
         tag_counts = {}
-        
+
         for news in news_list:
             tags = news.get('tags', {}).get(tag_type, [])
             for tag in tags:
                 tag_counts[tag] = tag_counts.get(tag, 0) + 1
-        
+
         # 상위 5개 태그 반환
         sorted_tags = sorted(tag_counts.items(), key=lambda x: x[1], reverse=True)
         return [tag for tag, count in sorted_tags[:5]]
-    
+
     def save_json_file(self, json_data: Dict) -> str:
         """JSON 파일 저장"""
         try:
             # 메인 JSON 파일 저장
             with open(self.output_file, 'w', encoding='utf-8') as f:
                 json.dump(json_data, f, ensure_ascii=False, indent=2)
-            
+
             logger.info(f"JSON 파일 저장 완료: {self.output_file}")
-            
+
             # 아카이브 파일도 저장 (날짜별)
             os.makedirs(self.archive_dir, exist_ok=True)
-            
+
             timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
             archive_file = f"{self.archive_dir}/music_news_{timestamp}.json"
-            
+
             with open(archive_file, 'w', encoding='utf-8') as f:
                 json.dump(json_data, f, ensure_ascii=False, indent=2)
-            
+
             logger.info(f"JSON 데이터 아카이브 완료: {archive_file}")
-            
+
             return self.output_file
-            
+
         except Exception as e:
             logger.error(f"JSON 파일 저장 실패: {e}")
             raise
-    
+
     def generate_api_info(self) -> Dict:
         """API 정보 생성"""
         api_info = {
@@ -143,13 +142,13 @@ class MusicNewsJSONGenerator:
                 'last_updated': datetime.now().isoformat()
             }
         }
-        
+
         # API 정보 파일 저장
         with open('api_info.json', 'w', encoding='utf-8') as f:
             json.dump(api_info, f, ensure_ascii=False, indent=2)
-        
+
         return api_info
-    
+
     def create_readme_for_api(self) -> str:
         """API 사용법 README 생성"""
         readme_content = """# 🎵 Music News API
@@ -204,90 +203,3 @@ https://raw.githubusercontent.com/YOUR-USERNAME/music-news-automation/main/api_i
     "top_industries": ["tour", "album", "streaming"]
   }
 }
-```
-
-## 🏷️ 뉴스 카테고리
-
-- **NEWS**: 일반 뉴스 및 공지사항
-- **REPORT**: 산업 리포트 및 분석 자료
-- **INSIGHT**: 트렌드 분석 및 인사이트
-- **INTERVIEW**: 아티스트/업계 인물 인터뷰
-- **COLUMN**: 칼럼 및 오피니언
-
-## 🔄 업데이트 스케줄
-
-매일 오전 10시 (KST) 자동 업데이트
-
-## 📈 사용 예시
-
-### Python
-```python
-import requests
-
-response = requests.get('https://raw.githubusercontent.com/YOUR-USERNAME/music-news-automation/main/music_news.json')
-news_data = response.json()
-
-for article in news_data['news']['NEWS']:
-    print(f"제목: {article['title']}")
-    print(f"요약: {article['summary']}")
-```
-
-### JavaScript
-```javascript
-fetch('https://raw.githubusercontent.com/YOUR-USERNAME/music-news-automation/main/music_news.json')
-  .then(response => response.json())
-  .then(data => {
-    console.log('총 뉴스 수:', data.metadata.total_news);
-  });
-```
-
-## 📄 라이선스
-
-MIT License
-
----
-*Generated by Music News Automation System*
-"""
-        
-        try:
-            # README 파일 저장
-            with open('README.md', 'w', encoding='utf-8') as f:
-                f.write(readme_content)
-            
-            logger.info("README.md 파일이 성공적으로 생성되었습니다.")
-            return readme_content
-            
-        except Exception as e:
-            logger.error(f"README.md 파일 생성 실패: {e}")
-            raise
-
-
-# 메인 실행부 (옵션)
-if __name__ == "__main__":
-    generator = MusicNewsJSONGenerator()
-    
-    # 테스트용 샘플 데이터
-    sample_news = [
-        {
-            'id': 'test1',
-            'title': '테스트 뉴스',
-            'summary': '테스트 요약',
-            'url': 'https://example.com',
-            'source': '테스트 소스',
-            'published_date': '2024-01-01',
-            'importance_score': 5,
-            'tags': {'genre': ['K-pop'], 'industry': ['음반'], 'region': ['한국']},
-            'category': 'NEWS'
-        }
-    ]
-    
-    # JSON 생성
-    json_data = generator.generate_json_data(sample_news)
-    generator.save_json_file(json_data)
-    
-    # API 정보 생성
-    generator.generate_api_info()
-    
-    # README 생성
-    generator.create_readme_for_api()
-    print("✅ 모든 파일이 생성되었습니다.")
