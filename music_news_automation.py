@@ -28,6 +28,7 @@ def main():
     parser.add_argument('--mode', choices=['importance', 'trending'], default='trending', 
                        help='선별 모드: importance(중요도순) 또는 trending(트렌딩순, 기본값)')
     parser.add_argument('--ai-summary', action='store_true', help='AI 요약 사용 (OpenAI API 필요)')
+    parser.add_argument('--claude', action='store_true', help='Claude 요약 사용')
     args = parser.parse_args()
     
     logger.info("🎵 === 음악 뉴스 자동화 시스템 시작 ===")
@@ -60,7 +61,10 @@ def main():
         
         # 3. 뉴스 분류, 태깅, 요약, 중요도 점수 계산
         logger.info(f"\n🏷️  3단계: 뉴스 분류, 태깅, 요약, 중요도 점수 계산...")
-        classifier = AdvancedClassifier(use_ai_summary=args.ai_summary)
+        classifier = AdvancedClassifier(
+            use_ai_summary=args.ai_summary,
+            use_claude_summary=args.claude  # 새로 추가
+            )
         processed_news = classifier.process_news_list(unique_news_items)
         
         if not processed_news:
