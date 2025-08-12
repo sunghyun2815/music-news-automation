@@ -14,22 +14,31 @@ logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(
 logger = logging.getLogger(__name__)
 
 class AdvancedClassifier:
-    def __init__(self, use_ai_summary: bool = False):
-        self.use_ai_summary = use_ai_summary
-        self.ai_summarizer = None
-        
-        # AI 요약기 초기화 (선택적)
-        if self.use_ai_summary:
-            try:
-                from ai_summarizer import AISummarizer
-                self.ai_summarizer = AISummarizer()
-                logger.info("AI 요약기 초기화 완료")
-            except ImportError:
-                logger.warning("AI 요약기를 찾을 수 없습니다. 규칙 기반 요약을 사용합니다.")
-                self.ai_summarizer = None
-            except Exception as e:
-                logger.warning(f"AI 요약기 초기화 실패: {e}. 규칙 기반 요약을 사용합니다.")
-                self.ai_summarizer = None
+    def __init__(self, use_ai_summary: bool = False, use_claude_summary: bool = False):
+    self.use_ai_summary = use_ai_summary
+    self.use_claude_summary = use_claude_summary  # 새로 추가
+    self.ai_summarizer = None
+    self.claude_summarizer = None  # 새로 추가
+    
+    # Claude 요약기 초기화 (새로 추가)
+    if self.use_claude_summary:
+        try:
+            from anthropic_summarizer import AnthropicSummarizer
+            self.claude_summarizer = AnthropicSummarizer()
+            logger.info("Claude 요약기 초기화 완료")
+        except Exception as e:
+            logger.warning(f"Claude 요약기 초기화 실패: {e}")
+            self.claude_summarizer = None
+    
+    # 기존 OpenAI 요약기 초기화
+    elif self.use_ai_summary:
+        try:
+            from ai_summarizer import AISummarizer
+            self.ai_summarizer = AISummarizer()
+            logger.info("AI 요약기 초기화 완료")
+        except ImportError:
+            logger.warning("AI 요약기를 찾을 수 없습니다.")
+            self.ai_summarizer = None
         
         # 분류 키워드 정의
         self.category_keywords = {
@@ -407,17 +416,42 @@ class AdvancedClassifier:
                 })
         
         # 요약 처리
-        for news in processed_news:
-            if 'summary' not in news:
-                news['summary'] = self.generate_korean_summary(
-                    news.get('title', ''), 
-                    news.get('description', ''), 
-                    news.get('url', '')
-                )
-                news['summary_type'] = 'rule_based'
-        
-        logger.info(f"{len(processed_news)}개 뉴스 처리 완료")
-        return processed_news
+       if self.use_claude_summary and self.claude_summarizer:
+        # Claude 요약 사용
+        try:
+            logger.info("Claude 요약 시작...")
+            sorted_news = sorted(processed_news, key=lambda x: x.get('importance_score', 0), reverse=True)
+            claude_processed = self.claude_summarizer.batch_summarize(sorted_news[:10], max_items=10)
+            
+            final_news = []
+            for i, news in enumerate(sorted_news):
+                if i < len(claude_processed) and 'claude_summary' in claude_processed[i]:
+                    news['summary'] = claude_processed[i]['claude_summary']
+                    news['summary_type'] = 'claude_generated'
+                else:
+                    news['summary'] = self.generate_korean_summary(
+                        news.get('title', ''), 
+                        news.get('description', ''), 
+                        news.get('url', '')
+                    )
+                    news['summary_type'] = 'rule_based'
+                final_news.append(news)
+            
+            processed_news = final_news
+            
+        except Exception as e:
+            logger.error(f"Claude 요약 오류: {e}")
+            # 실패 시 기존 로직 사용
+            for news in processed_news:
+                if 'summary' not in news:
+                    news['summary'] = self.generate_korean_summary(
+                        news.get('title', ''), 
+                        news.get('description', ''), 
+                        news.get('url', '')
+                    )
+                    news['summary_type'] = 'rule_based'
+    
+    else:
     
     def select_top_news_by_importance(self, news_list: List[Dict], max_total: int = 30) -> List[Dict]:
         """중요도 순으로 상위 뉴스 선별"""
