@@ -42,11 +42,26 @@ class AdvancedClassifier:
         
         # 분류 키워드 정의
         self.category_keywords = {
-            'NEWS': ['announces', 'releases', 'debuts', 'signs', 'tour', 'concert', 'collaboration', '발표', '발매', '데뷔', '콘서트', '투어'],
-            'REPORT': ['chart', 'sales', 'revenue', 'market', 'statistics', 'data', 'analysis', '차트', '판매', '매출', '시장', '통계'],
-            'INSIGHT': ['trend', 'prediction', 'future', 'impact', 'influence', 'change', '트렌드', '예측', '미래', '영향'],
-            'INTERVIEW': ['interview', 'talks', 'says', 'reveals', 'discusses', 'exclusive', '인터뷰', '말했다', '밝혔다'],
-            'COLUMN': ['opinion', 'commentary', 'editorial', 'perspective', 'review', '의견', '칼럼', '리뷰']
+            'NEWS': [
+                'announces', 'releases', 'debuts', 'signs', 'tour', 'concert', 'collaboration',
+                '발표', '발매', '데뷔', '콘서트', '투어', '컬래버레이션'
+            ],
+            'REPORT': [
+                'chart', 'sales', 'revenue', 'market', 'statistics', 'data', 'analysis',
+                '차트', '판매', '매출', '시장', '통계', '데이터', '분석'
+            ],
+            'INSIGHT': [
+                'trend', 'prediction', 'future', 'impact', 'influence', 'change',
+                '트렌드', '예측', '미래', '영향', '변화', '인사이트'
+            ],
+            'INTERVIEW': [
+                'interview', 'talks', 'says', 'reveals', 'discusses', 'exclusive',
+                '인터뷰', '말했다', '밝혔다', '공개했다', '독점'
+            ],
+            'COLUMN': [
+                'opinion', 'commentary', 'editorial', 'perspective', 'review',
+                '의견', '칼럼', '사설', '리뷰', '평가'
+            ]
         }
         
         # 수정된 장르 키워드 (더 정확한 분류)
@@ -131,12 +146,12 @@ class AdvancedClassifier:
         for artist, genre in artist_genre_map.items():
             if artist in text:
                 genre_tags.append(genre)
-                break  # 첫 번째 매치만 사용
+                break
         
         # 아티스트 매치가 없으면 키워드 기반 분류
         if not genre_tags:
             for genre, keywords in self.genre_keywords.items():
-                if genre == 'K-POP':  # K-POP은 명시적 키워드만
+                if genre == 'K-POP':
                     if any(kw in text for kw in ['k-pop', 'kpop', 'korean pop', 'hallyu', '케이팝']):
                         genre_tags.append(genre)
                 else:
@@ -149,7 +164,7 @@ class AdvancedClassifier:
             if any(keyword.lower() in text for keyword in keywords):
                 industry_tags.append(industry)
         
-        # 지역 태그 (K-POP이 이미 있으면 KOREA 자동 추가 안함)
+        # 지역 태그
         region_tags = []
         for region, keywords in self.region_keywords.items():
             if region == 'KOREA' and 'K-POP' in genre_tags:
@@ -158,16 +173,16 @@ class AdvancedClassifier:
                 region_tags.append(region)
         
         return {
-            'genre': list(set(genre_tags))[:2],  # 최대 2개
-            'industry': list(set(industry_tags))[:3],  # 최대 3개
-            'region': list(set(region_tags))[:2]  # 최대 2개
+            'genre': list(set(genre_tags))[:2],
+            'industry': list(set(industry_tags))[:3],
+            'region': list(set(region_tags))[:2]
         }
     
     def extract_artists_from_text(self, text: str) -> List[str]:
         """개선된 아티스트명 추출"""
         artists = []
         
-        # 알려진 아티스트명 직접 매칭 (가장 정확)
+        # 알려진 아티스트명 직접 매칭
         known_artists = [
             'Taylor Swift', 'Ariana Grande', 'Billie Eilish', 'Dua Lipa', 'Olivia Rodrigo',
             'Drake', 'Travis Scott', 'Kid Cudi', 'Kendrick Lamar',
@@ -184,21 +199,23 @@ class AdvancedClassifier:
         # 패턴 기반 추출 (보조)
         if not artists:
             patterns = [
-                r'\b([A-Z][a-z]+ [A-Z][a-z]+)\b',  # 두 단어 이름
-                r'\b([A-Z]{2,})\b',  # 대문자 약어
+                r'\b([A-Z][a-z]+ [A-Z][a-z]+)\b',
+                r'\b([A-Z]{2,})\b',
             ]
             
             for pattern in patterns:
                 matches = re.findall(pattern, text)
                 for match in matches:
                     # 필터링
+                    exclude_words = ['Music', 'Video', 'News', 'Album', 'Song', 'Tour', 'Concert', 
+                                   'Live From', 'Very Imminent', 'Is Ready', 'New Album']
                     if (len(match) > 2 and 
-                        match not in ['Music', 'Video', 'News', 'Album', 'Song', 'Tour', 'Concert', 'Live From', 'Very Imminent', 'Is Ready'] and
+                        match not in exclude_words and
                         not match.startswith('The ') and
                         not any(word in match.lower() for word in ['new', 'first', 'live', 'from'])):
                         artists.append(match)
         
-        return artists[:3]  # 최대 3개만 반환
+        return artists[:3]
     
     def generate_korean_summary(self, title: str, description: str, url: str = "") -> str:
         """개선된 한국어 요약 생성"""
@@ -287,7 +304,7 @@ class AdvancedClassifier:
             industry_score = 0.7
         
         # 5. 시간 요소 (10%)
-        recency_score = 0.8  # 기본값
+        recency_score = 0.8
         
         # 6. 소셜 반응 (5%)
         social_score = 0.3
