@@ -263,33 +263,202 @@ class AdvancedClassifier:
         }
     
     def generate_korean_summary(self, title: str, description: str, url: str = "") -> str:
-        """개선된 한국어 요약 생성"""
+        """개선된 한국어 요약 생성 - 더 구체적이고 정보가 풍부함"""
         try:
             # 정확한 아티스트명 추출
-            artists = self.extract_artists_from_text(f"{title} {description}")
-            who = artists[0] if artists else "음악 아티스트"
+            artist = self.extract_artist_with_context(title, description)
             
-            # 제목과 내용 분석
-            text = f"{title} {description}".lower()
+            # 앨범명, 곡명 추출
+            album_title = self.extract_album_title_improved(title, description)
+            song_title = self.extract_song_title(title, description)
             
-            # 특별한 경우들 먼저 처리
+            # 텍스트 분석
+            title_lower = title.lower()
+            desc_lower = description.lower()
+            combined_text = f"{title_lower} {desc_lower}"
             
-            # 1. 부고 관련
-            if any(word in text for word in ['dies', 'death', 'funeral', 'obituary', '부고']):
-                return f"음악계 인사의 부고 관련 소식이 전해졌습니다."
+            # 1. 앨범 발표
+            if 'announce' in combined_text and 'album' in combined_text:
+                if album_title:
+                    base_summary = f"{artist}가 새 앨범 '{album_title}'을 발표했다."
+                else:
+                    base_summary = f"{artist}가 새 앨범 발표 소식을 전했다."
+                
+                # 추가 정보
+                additional_info = []
+                
+                if song_title:
+                    additional_info.append(f"리드 싱글 '{song_title}'을 공개했다")
+                
+                if 'september' in desc_lower or '9월' in desc_lower:
+                    additional_info.append("9월 발매 예정이다")
+                elif 'october' in desc_lower or '10월' in desc_lower:
+                    additional_info.append("10월 발매 예정이다")
+                elif 'next month' in desc_lower or '내월' in desc_lower:
+                    additional_info.append("다음 달 발매 예정이다")
+                
+                if 'producer' in combined_text:
+                    additional_info.append("프로듀서 정보도 함께 공개했다")
+                
+                if 'tour' in combined_text:
+                    additional_info.append("투어 중 녹음된 것으로 알려졌다")
+                
+                if additional_info:
+                    return f"{base_summary} {' '.join(additional_info)}."
+                else:
+                    return base_summary
             
-            # 2. 팟캐스트 출연
-            if 'podcast' in text and any(word in text for word in ['appear', 'guest', 'teases']):
-                return f"{who}가 최근 팟캐스트 출연을 발표했습니다."
+            # 2. 싱글/곡 공개
+            elif any(word in combined_text for word in ['shares', 'hear', 'listen']) and any(word in combined_text for word in ['song', 'single', 'track']):
+                if song_title:
+                    base_summary = f"{artist}가 새 싱글 '{song_title}'을 공개했다."
+                else:
+                    base_summary = f"{artist}가 새 싱글을 발표했다."
+                
+                if album_title:
+                    return f"{base_summary} 이 곡은 앨범 '{album_title}'에 수록될 예정이다."
+                elif 'upcoming' in combined_text or '예정' in combined_text:
+                    return f"{base_summary} 향후 발매될 앨범의 선공개 싱글로 보인다."
+                else:
+                    return base_summary
             
-            # 3. 카운트다운/티징
-            if any(word in text for word in ['countdown', 'teases', 'tease', 'mysterious']):
-                return f"{who}가 새로운 프로젝트를 예고하며 팬들의 관심을 모으고 있습니다."
+            # 3. 투어/콘서트
+            elif 'tour' in combined_text or 'concert' in combined_text:
+                if 'announce' in combined_text:
+                    return f"{artist}가 새로운 투어 계획을 발표했다. 티켓 예매 및 공연 일정 정보가 공개되었다."
+                elif 'expand' in combined_text:
+                    return f"{artist}가 기존 투어 일정을 확장한다고 발표했다. 추가 공연 도시와 날짜가 확정되었다."
+                elif 'recorded' in combined_text:
+                    return f"{artist}가 투어 중 새 앨범을 녹음했다는 소식이 전해졌다."
+                else:
+                    return f"{artist}의 라이브 공연 관련 소식이 전해졌다."
             
-            # 4. 앨범 발표
-            if any(word in text for word in ['album', 'ep']) and any(word in text for word in ['announces', 'announce', 'debut']):
-                # 앨범 제목 추출 시도
-                album_title = self.extract_album_title_improved(title, description)
+            # 4. 리이슈/재발매
+            elif 'reissue' in combined_text or 'deluxe' in combined_text:
+                if album_title:
+                    base_summary = f"{artist}의 앨범 '{album_title}' 디럭스 에디션이 발표되었다."
+                else:
+                    base_summary = f"{artist}의 과거 앨범이 재발매된다."
+                
+                additional_content = []
+                if 'demo' in combined_text:
+                    additional_content.append("데모 버전")
+                if 'live' in combined_text:
+                    additional_content.append("라이브 녹음")
+                if 'unreleased' in combined_text:
+                    additional_content.append("미발표 곡들")
+                
+                if additional_content:
+                    return f"{base_summary} {', '.join(additional_content)} 등의 추가 콘텐츠가 포함되어 있다."
+                else:
+                    return base_summary
+            
+            # 5. 법적 분쟁
+            elif any(word in combined_text for word in ['sued', 'lawsuit', 'legal', 'court']):
+                if 'million' in combined_text:
+                    amount_match = re.search(r'\$(\d+)\s*million', combined_text)
+                    if amount_match:
+                        amount = amount_match.group(1)
+                        return f"{artist}가 {amount}00만 달러 규모의 법적 분쟁에 휘말렸다. 관련 소송이 진행 중인 것으로 알려졌다."
+                
+                return f"{artist}와 관련된 법적 분쟁 소식이 전해졌다."
+            
+            # 6. 앨범 리뷰/평가
+            elif 'album of the week' in combined_text or 'review' in combined_text:
+                if album_title:
+                    return f"{artist}의 앨범 '{album_title}'이 주목받고 있다. 음악 평론가들로부터 긍정적인 반응을 얻고 있으며, 실험적인 사운드로 평가받고 있다."
+                else:
+                    return f"{artist}의 새 음반이 음악계에서 화제가 되고 있다."
+            
+            # 7. 협업/피처링
+            elif 'feature' in combined_text or 'collaboration' in combined_text:
+                # 다른 아티스트명 찾기
+                other_artists = []
+                for known_artist in self.known_artists.values():
+                    if known_artist.lower() in combined_text and known_artist != artist:
+                        other_artists.append(known_artist)
+                
+                if other_artists:
+                    return f"{artist}가 {', '.join(other_artists)}와의 협업 소식을 전했다. 두 아티스트의 만남이 팬들 사이에서 큰 화제가 되고 있다."
+                else:
+                    return f"{artist}의 새로운 협업 프로젝트 소식이 공개되었다."
+            
+            # 8. 차트/성과
+            elif any(word in combined_text for word in ['chart', 'number', '#1', 'top']):
+                return f"{artist}가 최근 음악 차트에서 좋은 성과를 거두었다. 팬들과 업계의 관심이 집중되고 있다."
+            
+            # 9. 확인/컨펌
+            elif 'confirm' in combined_text:
+                if album_title:
+                    return f"{artist}가 앨범 '{album_title}'의 발매일과 세부 정보를 확정했다."
+                else:
+                    return f"{artist}가 새로운 프로젝트의 구체적인 계획을 확정 발표했다."
+            
+            # 10. 부고/사망
+            elif any(word in combined_text for word in ['dies', 'death', 'funeral', 'obituary', '부고']):
+                return f"음악계 인사의 부고 관련 소식이 전해졌다."
+            
+            # 11. 기본 케이스 - 더 구체적으로
+            else:
+                if album_title and song_title:
+                    return f"{artist}가 앨범 '{album_title}'의 수록곡 '{song_title}' 관련 소식을 전했다."
+                elif album_title:
+                    return f"{artist}가 앨범 '{album_title}' 관련 활동 소식을 공개했다."
+                elif song_title:
+                    return f"{artist}가 신곡 '{song_title}' 관련 소식을 발표했다."
+                else:
+                    return f"{artist}의 최신 음악 활동 소식이 업데이트되었다."
+        
+        except Exception as e:
+            logger.error(f"한국어 요약 생성 오류: {e}")
+            return f"음악 업계 소식: {title[:50]}..." if len(title) > 50 else title
+    
+    def extract_artist_with_context(self, title: str, description: str) -> str:
+        """문맥을 고려한 정확한 아티스트명 추출"""
+        text = f"{title} {description}".lower()
+        
+        # 1. 알려진 아티스트 직접 매칭 (가장 긴 이름부터)
+        sorted_artists = sorted(self.known_artists.items(), key=lambda x: len(x[0]), reverse=True)
+        for artist_key, artist_name in sorted_artists:
+            if artist_key in text:
+                return artist_name
+        
+        # 2. 제목에서 첫 번째 부분 추출
+        title_words = title.split()
+        if title_words:
+            # "Artist Name Announces..." 패턴
+            if len(title_words) >= 2:
+                first_two = ' '.join(title_words[:2])
+                if not any(word.lower() in ['new', 'the', 'a', 'an', 'album', 'song'] for word in title_words[:2]):
+                    return first_two
+            
+            # 단일 단어 아티스트명
+            if title_words[0] not in ['New', 'The', 'A', 'An', 'Album', 'Song']:
+                return title_words[0]
+        
+        return "음악 아티스트"
+    
+    def extract_song_title(self, title: str, description: str) -> str:
+        """곡 제목 추출"""
+        text = f"{title} {description}"
+        
+        song_patterns = [
+            r'hear\s+["\']([^"\']+)["\']',
+            r'single\s+["\']([^"\']+)["\']',
+            r'song\s+["\']([^"\']+)["\']',
+            r'track\s+["\']([^"\']+)["\']',
+            r'["\']([^"\']+)["\'].*single',
+            r':\s*hear\s+["\']([^"\']+)["\']',
+            r':\s*["\']([^"\']+)["\']'
+        ]
+        
+        for pattern in song_patterns:
+            matches = re.findall(pattern, text, re.IGNORECASE)
+            for match in matches:
+                if 2 <= len(match) <= 40 and not any(word in match.lower() for word in ['album', 'new', 'the', 'a']):
+                    return match
+        
+        return Nonetitle, description)
                 if album_title:
                     return f"{who}가 새 앨범 '{album_title}'을 발표했습니다."
                 else:
