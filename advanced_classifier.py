@@ -458,6 +458,221 @@ class AdvancedClassifier:
                 if 2 <= len(match) <= 40 and not any(word in match.lower() for word in ['album', 'new', 'the', 'a']):
                     return match
         
+    def calculate_importance_score(self, news: Dict) -> float:
+        """중요도 점수 계산"""
+        title = news.get('title', '').lower()
+        description = news.get('description', '').lower()
+        source = news.get('source', '')
+        
+        text_combined = f"{title} {description}"
+        
+        # 1. 소스 신뢰도 (25%)
+        source_score = self.calculate_source_credibility(source)
+        
+        # 2. 키워드 중요도 (20%)
+        high_impact_keywords = ['breaking', 'exclusive', 'first', 'debuts', 'announces', 'record-breaking']
+        keyword_score = min(sum(0.1 for kw in high_impact_keywords if kw in text_combined), 0.8)
+        
+        # 3. 아티스트 영향력 (25%)
+        artist_influence = self.calculate_artist_influence_dynamic(text_combined)
+        
+        # 4. 산업 임팩트 (15%)
+        industry_score = 0
+        if any(kw in text_combined for kw in ['album', 'chart', 'award', 'tour']):
+            industry_score = 0.7
+        
+        # 5. 시간 요소 (10%)
+        recency_score = 0.8
+        
+        # 6. 소셜 반응 (5%)
+        social_score = 0.3
+        
+        final_score = (
+            source_score * 0.25 +
+            keyword_score * 0.20 +
+            artist_influence * 0.25 +
+            industry_score * 0.15 +
+            recency_score * 0.10 +
+            social_score * 0.05
+        )
+        
+    def calculate_source_credibility(self, source: str) -> float:
+        """소스 신뢰도 계산"""
+        source_weights = {
+            'billboard.com': 0.95, 'variety.com': 0.90, 'rollingstone.com': 0.88,
+            'pitchfork.com': 0.85, 'musicbusinessworldwide.com': 0.85, 'consequence.net': 0.80,
+            'nme.com': 0.75, 'stereogum.com': 0.75
+        }
+        
+        source_lower = source.lower()
+        for domain, weight in source_weights.items():
+            if domain in source_lower:
+                return weight
+    def process_news_list(self, news_list: List[Dict]) -> List[Dict]:
+        """뉴스 리스트 처리 (중요도 점수 포함)"""
+        processed_news = []
+        
+        for news in news_list:
+            try:
+                title = news.get('title', '')
+                description = news.get('description', '')
+                url = news.get('url', news.get('link', ''))
+                
+                # 카테고리 분류
+                category = self.classify_category(title, description)
+                
+                # 태그 추출
+                tags = self.extract_tags(title, description, url)
+                
+                # 중요도 점수 계산
+                temp_item = {**news, 'category': category, 'tags': tags}
+                importance_score = self.calculate_importance_score(temp_item)
+                
+                # 요약 생성
+                summary = self.generate_korean_summary(title, description, url)
+                
+                # 최종 처리된 뉴스 항목
+                processed_item = {
+                    **news,
+                    'category': category,
+                    'tags': tags,
+                    'importance_score': importance_score,
+                    'summary': summary,
+                    'summary_type': 'rule_based'
+                }
+                
+                processed_news.append(processed_item)
+                
+            except Exception as e:
+                logger.error(f"뉴스 처리 오류: {e}")
+                processed_news.append({
+                    **news,
+                    'category': 'NEWS',
+                    'tags': {'genre': [], 'industry': [], 'region': []},
+                    'importance_score': 0.5,
+                    'summary': f"음악 업계 소식: {news.get('title', '')[:50]}...",
+                    'summary_type': 'fallback'
+                })
+        
+        logger.info(f"{len(processed_news)}개 뉴스 처리 완료")
+        return processed_news
+    
+    def select_top_news_by_importance(self, news_list: List[Dict], max_total: int = 20) -> List[Dict]:
+        """중요도 순으로 상위 뉴스 선별"""
+        logger.info(f"중요도 기반 뉴스 선별: 전체 {len(news_list)}개 중 상위 {max_total}개 선별")
+        
+        sorted_news = sorted(news_list, key=lambda x: x.get('importance_score', 0), reverse=True)
+        selected_news = sorted_news[:max_total]
+        
+        # 통계 로깅
+        category_count = {}
+        for news in selected_news:
+            category = news.get('category', 'NEWS')
+            category_count[category] = category_count.get(category, 0) + 1
+        
+        logger.info(f"선별된 {len(selected_news)}개 뉴스의 카테고리 분포:")
+        for category, count in sorted(category_count.items()):
+            logger.info(f"  {category}: {count}개")
+        
+        return selected_news
+    
+    def select_trending_news(self, news_list: List[Dict], max_total: int = 20) -> List[Dict]:
+        """트렌딩 뉴스 선별"""
+        logger.info(f"트렌딩 뉴스 선별: 전체 {len(news_list)}개 중 상위 {max_total}개 선별")
+        
+        # 간단한 트렌딩 점수 (중요도 기반)
+        for news in news_list:
+            news['trending_score'] = news.get('importance_score', 0)
+        
+        sorted_news = sorted(news_list, key=lambda x: x.get('trending_score', 0), reverse=True)
+        selected_news = sorted_news[:max_total]
+        
+        return selected_news
+
+
+# 테스트 코드
+if __name__ == "__main__":
+    # 샘플 뉴스로 테스트
+    sample_news = [
+        {
+            'title': 'Taylor Swift Announces New Album, The Life of a Showgirl',
+            'description': 'Pop superstar Taylor Swift has announced her upcoming album.',
+            'url': 'https://example.com/test',
+            'source': 'billboard.com'
+        },
+        {
+            'title': 'Remble Drops New Album Juco',
+            'description': 'Hip-hop artist Remble has released his latest album.',
+            'url': 'https://example.com/test2',
+            'source': 'pitchfork.com'
+        },
+        {
+            'title': 'Bobby Whitlock, Derek & the Dominos Co-Founder, Dies at 77',
+            'description': 'The legendary musician has passed away.',
+            'url': 'https://example.com/test3',
+            'source': 'rollingstone.com'
+        }
+    ]
+    
+    classifier = AdvancedClassifier()
+    processed = classifier.process_news_list_simplified(sample_news)
+    
+    print("=== 테스트 결과 ===")
+    for news in processed:
+        print(f"제목: {news['title']}")
+        
+        # 아티스트 추출 테스트
+        artists = classifier.extract_artists_from_text(news['title'])
+        print(f"추출된 아티스트: {artists}")
+        
+        print(f"장르: {news['tags']['genre']}")
+        print(f"요약: {news['summary']}")
+        print("---")
+    
+    def calculate_artist_influence_dynamic(self, text: str) -> float:
+        """아티스트 영향력 계산"""
+        # 메가 스타들
+        mega_stars = ['taylor swift', 'bts', 'blackpink', 'drake', 'billie eilish']
+        if any(artist in text for artist in mega_stars):
+            return 1.0
+        
+        # 주요 아티스트들
+        major_artists = ['ariana grande', 'dua lipa', 'travis scott', 'kendrick lamar', 'metallica']
+        if any(artist in text for artist in major_artists):
+            return 0.9
+        
+        # 기타 유명 아티스트들
+        known_artists = list(self.known_artists.keys())
+        if any(artist in text for artist in known_artists):
+            return 0.7
+        
+        # 업계 키워드
+        if any(pattern in text for pattern in ['grammy', 'billboard', 'platinum', 'chart']):
+            return 0.8
+        
+        return 0.5
+    
+    def extract_album_title_improved(self, title: str, description: str) -> str:
+        """개선된 앨범 제목 추출"""
+        text = f"{title} {description}"
+        
+        # 다양한 따옴표 패턴
+        quote_patterns = [
+            r"'([^']+)'",
+            r'"([^"]+)"', 
+            r"'([^']+)'",
+            r'"([^"]+)"'
+        ]
+        
+        for pattern in quote_patterns:
+            matches = re.findall(pattern, text)
+            for match in matches:
+                # 앨범 제목 같은 것들 필터링
+                if (3 <= len(match) <= 50 and 
+                    not match.lower() in ['new heights', 'ts12', 'very beautiful'] and
+                    not any(word in match.lower() for word in ['very', 'new', 'first', 'live', 'from'])):
+                    return match
+        
         return Nonetitle, description)
                 if album_title:
                     return f"{who}가 새 앨범 '{album_title}'을 발표했습니다."
