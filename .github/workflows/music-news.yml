@@ -175,7 +175,7 @@ jobs:
         
         echo "✅ Environment variables verification completed"
     
-    - name: Run music news automation with AI
+    - name: Run music news automation with Claude AI
       env:
         ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
         SLACK_BOT_TOKEN: ${{ secrets.SLACK_TOKEN }}
@@ -191,8 +191,14 @@ jobs:
         echo "📅 Execution time: $(date)"
         echo "🤖 AI Summary: $([ -n "$ANTHROPIC_API_KEY" ] && echo "Enabled" || echo "Disabled")"
         
-        # 프로덕션 모드로 실행
-        python music_news_automation.py --production
+        # Claude AI 플래그 추가하여 프로덕션 모드로 실행
+        if [ -n "$ANTHROPIC_API_KEY" ]; then
+          echo "🚀 Running with Claude AI summarization..."
+          python music_news_automation.py --production --claude
+        else
+          echo "⚠️ Running without AI summarization (fallback mode)..."
+          python music_news_automation.py --production
+        fi
         
         echo "✅ Music news automation completed successfully"
         echo "📅 Completion time: $(date)"
