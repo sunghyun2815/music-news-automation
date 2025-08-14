@@ -673,7 +673,7 @@ if __name__ == "__main__":
                     not any(word in match.lower() for word in ['very', 'new', 'first', 'live', 'from'])):
                     return match
         
-        return Nonetitle, description)
+        return Nonetitle, description
                 if album_title:
                     return f"{who}가 새 앨범 '{album_title}'을 발표했습니다."
                 else:
