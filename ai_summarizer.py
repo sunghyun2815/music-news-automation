@@ -1,249 +1,106 @@
-#!/usr/bin/env python3
-"""
-AI 요약 시스템 (Claude API 연동) - 영어 자연문 요약
-음악 뉴스에 대한 고품질 영어 요약 생성
-"""
+# ai_summarizer.py의 프롬프트 템플릿을 다음과 같이 교체하세요:
 
-import os
-import time
-import logging
-from typing import List, Dict, Optional
-from anthropic import Anthropic
-import json
-
-# 로깅 설정
-logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
-logger = logging.getLogger(__name__)
-
-class AISummarizer:
-    def __init__(self):
-        """AI 요약기 초기화"""
-        self.api_key = os.environ.get('ANTHROPIC_API_KEY')
-        if not self.api_key:
-            raise ValueError("ANTHROPIC_API_KEY 환경 변수가 설정되지 않았습니다.")
-        
-        self.client = Anthropic(api_key=self.api_key)
-        self.request_count = 0
-        self.max_requests_per_minute = 50  # API 레이트 리미트
-        
-        # 한글 자연문 요약 프롬프트 템플릿
-        self.prompt_template = """
-다음 음악 업계 뉴스를 자연스럽고 매끄러운 한국어 문장 1-2개로 요약해주세요.
+self.prompt_template = """
+다음 음악 업계 뉴스를 한국어로 요약해주세요.
 
 제목: {title}
 내용: {description}
-URL: {url}
+출처: {url}
 
 요구사항:
-- 자연스러운 한국어 1-2문장으로 작성 (최대 150자)
-- 핵심 정보 포함: 누가, 무엇을, 언제, 어디서 (해당하는 경우)
-- 음악 업계 전문 용어를 적절히 사용
-- 뉴스 브리핑 스타일로 간결하고 정보성 있게 작성
-- 가장 뉴스가치 있는 부분에 집중
-- 자연스러운 한국어 문체 사용
+1. **자연스러운 한국어 문장 2-3개로 작성** (총 120-200자)
+2. **5W1H 정보를 구체적으로 포함**:
+   - 누가(Who): 아티스트명, 밴드명을 정확히 명시
+   - 무엇을(What): 구체적인 활동 (앨범 발매, 투어, 싱글 등)
+   - 언제(When): 발매일, 일정 등 시기 정보 (있는 경우)
+   - 어디서(Where): 지역, 국가 정보 (해당 시)
 
-요약:"""
+3. **문체 스타일**:
+   - 뉴스 기사 톤의 자연스러운 한국어
+   - "~했다", "~한다", "~될 예정이다" 등 다양한 문미
+   - 아티스트명은 원어 그대로 유지
+   - 구체적인 정보 우선 (날짜, 숫자, 고유명사)
 
-    def generate_summary(self, title: str, description: str, url: str = "") -> str:
-        """
-        Claude API를 사용하여 영어 자연문 뉴스 요약 생성
-        
-        Args:
-            title: 뉴스 제목
-            description: 뉴스 내용
-            url: 뉴스 URL (선택사항)
-            
-        Returns:
-            생성된 영어 요약 텍스트
-        """
-        try:
-            # 레이트 리미트 체크
-            self._check_rate_limit()
-            
-            # 프롬프트 생성
-            prompt = self.prompt_template.format(
-                title=title,
-                description=description,
-                url=url
-            )
-            
-            logger.info(f"AI 한글 요약 요청: {title[:50]}...")
-            
-            # Claude API 호출
-            response = self.client.messages.create(
-                model="claude-3-haiku-20240307",  # 빠르고 경제적인 모델
-                max_tokens=300,  # 한글은 토큰이 더 많이 필요할 수 있음
-                temperature=0.3,
-                messages=[{
-                    "role": "user",
-                    "content": prompt
-                }]
-            )
-            
-            # 응답 처리
-            summary = response.content[0].text.strip()
-            
-            # 요약 후처리
-            summary = self._post_process_summary(summary)
-            
-            logger.info(f"AI 한글 요약 완료: {len(summary)} 문자")
-            self.request_count += 1
-            
-            return summary
-            
-        except Exception as e:
-            logger.error(f"AI 요약 생성 오류: {e}")
-            # 오류 시 기본 영어 요약 반환
-            return self._generate_fallback_summary(title, description)
-    
-    def batch_summarize(self, news_list: List[Dict], max_items: int = 10) -> List[Dict]:
-        """
-        여러 뉴스를 배치로 요약 처리
-        
-        Args:
-            news_list: 뉴스 리스트
-            max_items: 최대 처리 개수 (비용 제한)
-            
-        Returns:
-            AI 요약이 추가된 뉴스 리스트
-        """
-        logger.info(f"배치 AI 한글 요약 시작: {len(news_list)} 개 중 상위 {max_items}개 처리")
-        
-        processed_news = []
-        
-        # 중요도 순으로 정렬
-        sorted_news = sorted(
-            news_list, 
-            key=lambda x: x.get('importance_score', 0), 
-            reverse=True
-        )
-        
-        for i, news in enumerate(sorted_news):
-            try:
-                # 최대 처리 개수 제한
-                if i >= max_items:
-                    # 나머지는 기존 요약 유지
-                    processed_news.append(news)
-                    continue
-                
-                # AI 한글 요약 생성
-                ai_summary = self.generate_summary(
-                    title=news.get('title', ''),
-                    description=news.get('description', ''),
-                    url=news.get('url', '')
-                )
-                
-                # 뉴스 항목 업데이트
-                updated_news = {
-                    **news,
-                    'ai_summary': ai_summary,
-                    'summary_type': 'ai_generated'
-                }
-                
-                processed_news.append(updated_news)
-                
-                # API 레이트 리미트 준수
-                time.sleep(0.1)  # 요청 간격 조절
-                
-            except Exception as e:
-                logger.error(f"뉴스 처리 오류: {e} - {news.get('title', '')}")
-                # 오류 시 원본 뉴스 유지
-                processed_news.append({
-                    **news,
-                    'summary_type': 'rule_based'
-                })
-        
-        logger.info(f"배치 AI 한글 요약 완료: {min(max_items, len(news_list))}개 처리됨")
-        return processed_news
-    
-    def _check_rate_limit(self):
-        """API 레이트 리미트 체크"""
-        if self.request_count >= self.max_requests_per_minute:
-            logger.warning("API 레이트 리미트 도달, 1분 대기...")
-            time.sleep(60)
-            self.request_count = 0
-    
-    def _post_process_summary(self, summary: str) -> str:
-        """한글 요약 후처리"""
-        # "요약:" 접두사 제거
-        if summary.startswith("요약:"):
-            summary = summary[3:].strip()
-        
-        # 불필요한 문자 제거
-        summary = summary.replace("**", "").replace("*", "")
-        
-        # 따옴표 정리
-        summary = summary.strip('"').strip("'")
-        
-        # 길이 제한 (한글은 문자 기준)
-        if len(summary) > 200:
-            # 문장 단위로 자르기
-            sentences = summary.split('. ')
-            if len(sentences) == 1:
-                # 마침표가 없으면 그냥 자르기
-                summary = summary[:197] + "..."
-            else:
-                truncated = sentences[0]
-                for sentence in sentences[1:]:
-                    if len(truncated + '. ' + sentence) <= 197:
-                        truncated += '. ' + sentence
-                    else:
-                        break
-                summary = truncated + "..."
-        
+4. **금지사항**:
+   - "음악 활동 소식이 업데이트되었다" 같은 일반적 표현 금지
+   - "최신 소식이 전해졌다" 같은 뻔한 표현 금지
+   - 너무 간단한 1문장 요약 금지
+
+예시:
+- 좋은 예: "호주 밴드 템퍼 트랩(The Temper Trap)이 9년 만의 신곡 'Lucky Dimes'를 발표했다. 이번 싱글은 인디 록 그룹의 오랜 공백을 깨고 돌아온 의미 있는 작품으로 평가받고 있다."
+- 나쁜 예: "음악 아티스트의 최신 음악 활동 소식이 업데이트되었다."
+
+요약 (5W1H 포함, 구체적이고 자연스러운 문장):"""
+
+# 그리고 _post_process_summary 함수도 다음과 같이 개선:
+
+def _post_process_summary(self, summary: str) -> str:
+    """요약 후처리 - 품질 검증 강화"""
+    if not summary:
         return summary
     
-    def _generate_fallback_summary(self, title: str, description: str) -> str:
-        """오류 시 기본 한글 요약 생성"""
-        # 간단한 규칙 기반 한글 요약
-        if any(word in title.lower() for word in ['announces', 'reveals', 'drops']):
-            return f"음악 아티스트가 새로운 소식을 발표했습니다. {title.split()[0] if title else '아티스트'}가 음악 업계에서 중요한 발표를 했습니다."
-        elif any(word in title.lower() for word in ['tour', 'concert', 'live']):
-            return f"라이브 음악 이벤트가 발표되었습니다. {title.split()[0] if title else '아티스트'}가 투어 또는 콘서트 계획을 공개했습니다."
-        elif any(word in title.lower() for word in ['deal', 'signs', 'partnership']):
-            return f"음악 업계 비즈니스 소식입니다. 새로운 파트너십이나 계약이 음악 비즈니스 분야에서 발표되었습니다."
-        elif any(word in title.lower() for word in ['chart', 'number', 'top']):
-            return f"음악 차트 성과 업데이트입니다. {title.split()[0] if title else '아티스트'}가 주목할 만한 차트 순위나 이정표를 달성했습니다."
+    # 기본 정리
+    summary = summary.strip()
+    
+    # 프롬프트 잔재 제거
+    import re
+    summary = re.sub(r'^(요약|Summary|한국어 요약)\s*[:：]\s*', '', summary)
+    summary = summary.strip('"\'""''')
+    
+    # 품질 검증 - 너무 일반적인 표현 체크
+    generic_phrases = [
+        "음악 활동 소식이 업데이트되었다",
+        "최신 소식이 전해졌다",
+        "새로운 소식을 발표했다",
+        "업계 뉴스가 보도되었다"
+    ]
+    
+    for phrase in generic_phrases:
+        if phrase in summary:
+            # 일반적인 표현이 발견되면 경고 로그
+            logger.warning(f"일반적인 표현 발견: {phrase}")
+            # 여전히 반환하되, 향후 개선이 필요함을 표시
+            break
+    
+    # 문장 끝 정리
+    if summary and not summary.endswith(('.', '다', '요', '음', '됨', '함')):
+        summary += '.'
+    
+    # 길이 제한 (200자)
+    if len(summary) > 200:
+        sentences = summary.split('.')
+        if len(sentences) > 1:
+            truncated = sentences[0]
+            for sentence in sentences[1:]:
+                if len(truncated + '. ' + sentence) <= 197:
+                    truncated += '. ' + sentence
+                else:
+                    break
+            summary = truncated.rstrip('.') + '.'
         else:
-            return f"음악 업계 뉴스 업데이트입니다. {title[:50]}..." if len(title) > 50 else title
+            summary = summary[:197] + '...'
+    
+    return summary
 
-# 설정 정보
-AI_SUMMARIZER_CONFIG = {
-    "model": "claude-3-haiku-20240307",
-    "max_tokens": 300,
-    "temperature": 0.3,
-    "max_items_per_batch": 10,
-    "rate_limit_per_minute": 50,
-    "language": "Korean",
-    "style": "Natural Korean journalistic sentences"
-}
+# _generate_fallback_summary 함수도 개선:
 
-def test_ai_summarizer():
-    """AI 요약기 테스트"""
-    try:
-        summarizer = AISummarizer()
-        
-        # 테스트 뉴스
-        test_news = {
-            'title': 'Taylor Swift Announces New Album "Midnight Stories"',
-            'description': 'Pop superstar Taylor Swift revealed her upcoming album during a surprise announcement, featuring collaborations with indie artists.',
-            'url': 'https://example.com/taylor-swift-album'
-        }
-        
-        summary = summarizer.generate_summary(
-            title=test_news['title'],
-            description=test_news['description'],
-            url=test_news['url']
-        )
-        
-        print(f"한글 자연문 요약 결과:\n{summary}")
-        return True
-        
-    except Exception as e:
-        print(f"테스트 실패: {e}")
-        return False
-
-if __name__ == "__main__":
-    # 테스트 실행
-    print("=== AI 한글 요약기 테스트 ===")
-    test_ai_summarizer()
+def _generate_fallback_summary(self, title: str, description: str) -> str:
+    """오류 시 개선된 대체 요약 생성"""
+    # 아티스트명 추출
+    artist_name = title.split()[0] if title else "음악 아티스트"
+    
+    # 키워드 기반 구체적 요약
+    title_lower = title.lower()
+    
+    if any(word in title_lower for word in ['album', 'ep']):
+        return f"{artist_name}가 새 앨범 발매 소식을 공개했다. 이번 릴리스는 팬들과 음악 업계의 큰 관심을 받고 있다."
+    elif any(word in title_lower for word in ['single', 'song', 'track']):
+        return f"{artist_name}가 새로운 싱글을 발표했다. 새 곡은 아티스트의 음악적 진화를 보여주는 작품으로 평가받고 있다."
+    elif any(word in title_lower for word in ['tour', 'concert', 'live']):
+        return f"{artist_name}가 새로운 투어 일정을 발표했다. 콘서트 관련 상세 정보는 공식 채널을 통해 확인할 수 있다."
+    elif any(word in title_lower for word in ['chart', 'number', 'top']):
+        return f"{artist_name}가 음악 차트에서 주목할 만한 성과를 기록했다. 이번 차트 진입은 아티스트의 상업적 성공을 입증한다."
+    elif any(word in title_lower for word in ['deal', 'sign', 'contract']):
+        return f"{artist_name}가 새로운 음악 계약을 체결했다고 발표되었다. 이번 파트너십은 아티스트의 향후 활동에 긍정적 영향을 미칠 전망이다."
+    else:
+        return f"{artist_name}와 관련된 주요 음악 업계 소식이 전해졌다. {title[:60]}{'...' if len(title) > 60 else ''}"
