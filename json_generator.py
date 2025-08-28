@@ -73,7 +73,7 @@ class MusicNewsJSONGenerator:
                     'instructions': 'Change priority from 0 to 1 for featured news'
                 }
             },
-            'all': categorized_news,
+            'news': categorized_news,
             'summary': {
                 'top_genres': self._get_top_tags(processed_news, 'genre'),
                 'top_industries': self._get_top_tags(processed_news, 'industry'),
