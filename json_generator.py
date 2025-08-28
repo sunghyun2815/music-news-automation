@@ -41,7 +41,7 @@ class MusicNewsJSONGenerator:
                 'summary': news.get('summary', ''),
                 'url': news.get('link', ''),  # link -> url로 변경
                 'published_date': news.get('published_date', ''),
-                'category': news.get('category', 'news'),  # 원본 카테고리 유지
+                'category': 'interview',  # 모든 뉴스를 'interview' 카테고리로 설정!
                 'source': news.get('source', ''),  # 추가 정보
             }
 
