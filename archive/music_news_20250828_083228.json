@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generated_at": "2025-08-28T08:32:28.927769",
+    "generated_at": "2025-08-28T02:24:13.432379",
     "total_news": 50,
     "categories": {
       "NEWS": 46,
@@ -18,183 +18,8 @@
       "instructions": "Change priority from 0 to 1 for featured news"
     }
   },
-  "all": {
+  "news": {
     "NEWS": [
-      {
-        "id": "3e07bd720470",
-        "title": "Tomorrow X Together’s Yeonjun to release new solo album in November",
-        "summary": "투모로우바이투게더의 멤버 연준이 11월에 새로운 솔로 앨범을 발매할 예정입니다. 연준은 지난 2024년 9월 데뷔 믹스테이프를 발표한 바 있으며, 이번 신보는 그의 두 번째 솔로 작품이 될 것입니다. 투모로우바이투게더는 현재 K팝 대세 그룹으로 자리잡고 있으며, 연준의 솔로 활동은 팬들의 큰 관심을 받고 있습니다.",
-        "url": "https://www.nme.com/news/music/tomorrow-x-togethers-yeonjun-to-release-new-solo-album-in-november-3888242?utm_source=rss&utm_medium=rss&utm_campaign=tomorrow-x-togethers-yeonjun-to-release-new-solo-album-in-november",
-        "source": "www.nme.com",
-        "published_date": "2025-08-28 07:31:58",
-        "priority": 0,
-        "tags": {
-          "genre": [],
-          "industry": [
-            "album"
-          ],
-          "region": [
-            "us"
-          ]
-        },
-        "category": "NEWS"
-      },
-      {
-        "id": "d878e2101ccf",
-        "title": "Watch Coldplay perform ‘Cemeteries of London’ for the first time since 2011 at Wembley Stadium",
-        "summary": "Watch와 관련된 주요 음악 업계 소식이 전해졌다. Watch Coldplay perform ‘Cemeteries of London’ for the first ...",
-        "url": "https://www.nme.com/news/music/watch-coldplay-perform-cemeteries-of-london-for-the-first-time-since-2011-at-wembley-stadium-3888245?utm_source=rss&utm_medium=rss&utm_campaign=watch-coldplay-perform-cemeteries-of-london-for-the-first-time-since-2011-at-wembley-stadium",
-        "source": "www.nme.com",
-        "published_date": "2025-08-28 07:31:20",
-        "priority": 0,
-        "tags": {
-          "genre": [],
-          "industry": [
-            "album",
-            "tour"
-          ],
-          "region": [
-            "us",
-            "uk"
-          ]
-        },
-        "category": "NEWS"
-      },
-      {
-        "id": "f746eab0e413",
-        "title": "Mariah Carey Unveils Track List, Collaborations for ‘Here for It All’",
-        "summary": "마라이어 캐리가 16번째 정규 앨범 'Here for It All'의 트랙리스트와 피처링 아티스트를 공개했다. 이번 앨범에는 Anderson .Paak과 The Clark Sisters가 참여했으며, 오는 3월 31일 발매될 예정이다. 팝 디바 마라이어 캐리는 자신의 새 앨범을 통해 오랜만에 팬들과 만날 것으로 기대를 모으고 있다.",
-        "url": "https://www.rollingstone.com/music/music-news/mariah-carey-here-for-it-all-track-list-1235417318/",
-        "source": "www.rollingstone.com",
-        "published_date": "2025-08-28 07:15:37",
-        "priority": 0,
-        "tags": {
-          "genre": [
-            "pop"
-          ],
-          "industry": [
-            "album",
-            "single",
-            "collaboration"
-          ],
-          "region": [
-            "us"
-          ]
-        },
-        "category": "NEWS"
-      },
-      {
-        "id": "d3ca0b0eb91e",
-        "title": "Bon Jovi announce ‘Forever (Legendary Edition)’, join forces with Bruce Springsteen, Avril Lavigne, Robbie Williams and more",
-        "summary": "Bon와 관련된 주요 음악 업계 소식이 전해졌다. Bon Jovi announce ‘Forever (Legendary Edition)’, join forces...",
-        "url": "https://www.nme.com/news/music/bon-jovi-announce-forever-legendary-edition-join-forces-with-bruce-springsteen-avril-lavigne-robbie-williams-and-more-3888236?utm_source=rss&utm_medium=rss&utm_campaign=bon-jovi-announce-forever-legendary-edition-join-forces-with-bruce-springsteen-avril-lavigne-robbie-williams-and-more",
-        "source": "www.nme.com",
-        "published_date": "2025-08-28 06:37:51",
-        "priority": 0,
-        "tags": {
-          "genre": [],
-          "industry": [
-            "album",
-            "tour"
-          ],
-          "region": [
-            "us"
-          ]
-        },
-        "category": "NEWS"
-      },
-      {
-        "id": "85ac32478b77",
-        "title": "A ‘Kpop Demon Hunters’ sequel is in the works",
-        "summary": "A와 관련된 주요 음악 업계 소식이 전해졌다. A ‘Kpop Demon Hunters’ sequel is in the works",
-        "url": "https://www.nme.com/news/film/a-kpop-demon-hunters-sequel-is-in-the-works-3888211?utm_source=rss&utm_medium=rss&utm_campaign=a-kpop-demon-hunters-sequel-is-in-the-works",
-        "source": "www.nme.com",
-        "published_date": "2025-08-28 05:48:45",
-        "priority": 0,
-        "tags": {
-          "genre": [
-            "pop",
-            "k-pop"
-          ],
-          "industry": [],
-          "region": []
-        },
-        "category": "NEWS"
-      },
-      {
-        "id": "d87945d51427",
-        "title": "Hilary Duff Celebrates ‘Metamorphosis’ Anniversary, Leaves Fans Guessing With Subtle Hint",
-        "summary": "힐러리 더프가 2003년 발표한 두 번째 정규 앨범 'Metamorphosis'의 19주년을 기념했다. 당시 이 앨범은 빌보드 200 차트 1위를 기록하며 큰 사랑을 받았다. 최근 힐러리 더프는 소셜 미디어에 앨범 커버 이미지를 게시하며 팬들의 호기심을 자극했다. 이를 통해 그녀가 새로운 음악 활동을 준비하고 있음을 암시한 것으로 보인다.",
-        "url": "https://www.rollingstone.com/music/music-news/hilary-duff-metamorphosis-anniversary-1235417276/",
-        "source": "www.rollingstone.com",
-        "published_date": "2025-08-28 04:15:55",
-        "priority": 0,
-        "tags": {
-          "genre": [],
-          "industry": [
-            "album"
-          ],
-          "region": [
-            "us"
-          ]
-        },
-        "category": "NEWS"
-      },
-      {
-        "id": "249c39337d9d",
-        "title": "Drake and PARTYNEXTDOOR have released 19 crowdsourced music videos for ‘Somebody Loves Me’",
-        "summary": "Drake와 관련된 주요 음악 업계 소식이 전해졌다. Drake and PARTYNEXTDOOR have released 19 crowdsourced music ...",
-        "url": "https://www.nme.com/news/music/drake-and-partynextdoor-have-released-19-crowdsourced-music-videos-for-somebody-loves-me-3888206?utm_source=rss&utm_medium=rss&utm_campaign=drake-and-partynextdoor-have-released-19-crowdsourced-music-videos-for-somebody-loves-me",
-        "source": "www.nme.com",
-        "published_date": "2025-08-28 04:12:47",
-        "priority": 0,
-        "tags": {
-          "genre": [],
-          "industry": [
-            "award"
-          ],
-          "region": [
-            "us"
-          ]
-        },
-        "category": "NEWS"
-      },
-      {
-        "id": "8bb9f038d8eb",
-        "title": "‘America’s Got Talent’ Quarterfinals Round 2: See Who Advances",
-        "summary": "‘America’s와 관련된 주요 음악 업계 소식이 전해졌다. ‘America’s Got Talent’ Quarterfinals Round 2: See Who Advanc...",
-        "url": "https://www.billboard.com/culture/tv-film/americas-got-talent-quarterfinals-2-see-who-advances-1236053517/",
-        "source": "www.billboard.com",
-        "published_date": "2025-08-28 03:48:20",
-        "priority": 0,
-        "tags": {
-          "genre": [],
-          "industry": [
-            "tour"
-          ],
-          "region": [
-            "us"
-          ]
-        },
-        "category": "NEWS"
-      },
-      {
-        "id": "a4778faa6e2c",
-        "title": "Watch Lil Wayne pause Kansas City gig to celebrate Taylor Swift and Travis Kelce’s engagement",
-        "summary": "Watch와 관련된 주요 음악 업계 소식이 전해졌다. Watch Lil Wayne pause Kansas City gig to celebrate Taylor Sw...",
-        "url": "https://www.nme.com/news/music/watch-lil-wayne-pause-kansas-city-gig-to-celebrate-taylor-swift-and-travis-kelces-engagement-3888201?utm_source=rss&utm_medium=rss&utm_campaign=watch-lil-wayne-pause-kansas-city-gig-to-celebrate-taylor-swift-and-travis-kelces-engagement",
-        "source": "www.nme.com",
-        "published_date": "2025-08-28 03:19:09",
-        "priority": 0,
-        "tags": {
-          "genre": [],
-          "industry": [],
-          "region": [
-            "us"
-          ]
-        },
-        "category": "NEWS"
-      },
       {
         "id": "1520d60f4c25",
         "title": "Ariana Grande teases 2026 plans with cryptic video: “See you next year”",
@@ -234,7 +59,7 @@
       {
         "id": "213abfd618d5",
         "title": "Watch Maren Morris Take the Hamptons to ‘My Church’ With Yola",
-        "summary": "싱어송라이터 Maren Morris가 Yola와 함께 'My Church'를 연주하는 모습이 담긴 영상이 공개되었다. 이 노래는 Morris가 아티스트로 거듭나는 데 큰 역할을 했다고 밝혔다. 이번 공연은 Soho Sessions 시리즈의 일환으로 진행되었으며, 해먼즈에서 열렸다.",
+        "summary": "미국 싱어송라이터 마렌 모리스가 최근 소호 세션스 시리즈의 일환으로 자신의 대표곡 \"My Church\"를 공연했다. 모리스는 이 노래가 자신을 단순한 싱어송라이터에서 진정한 아티스트로 변화시켰다고 밝혔다. 이번 공연에는 영국 가수 요라가 함께 출연했으며, 두 사람의 감동적인 무대가 호평을 받았다.",
         "url": "https://www.rollingstone.com/music/music-news/maren-morris-my-church-yola-live-video-1235416300/",
         "source": "www.rollingstone.com",
         "published_date": "2025-08-28 00:58:55",
@@ -254,7 +79,7 @@
       {
         "id": "c0c67d1ef9f3",
         "title": "Broken Record Announce New Album Routine: Hear “T-60”",
-        "summary": "Broken와 관련된 주요 음악 업계 소식이 전해졌다. Broken Record Announce New Album Routine: Hear “T-60”",
+        "summary": "미국 콜로라도 주 덴버 출신의 밴드 브로큰 레코드(Broken Record)가 새 앨범 'Routine'을 발표한다. 이번 앨범의 선공개 싱글 \"T-60\"이 이미 공개되었으며, 2023년 초 발표한 앨범 'Nothing Moves Me'에 이어 또 한 번의 작품을 선보이게 되었다. 브로큰 레코드는 이번 신보로 팬들의 기대를 모으고 있다.",
         "url": "https://www.stereogum.com/2320918/broken-record-announce-new-album-routine-hear-t-60/music/",
         "source": "www.stereogum.com",
         "published_date": "2025-08-28 00:51:25",
@@ -555,9 +380,29 @@
         "category": "NEWS"
       },
       {
+        "id": "d9610e2a4864",
+        "title": "How Another Planet Entertainment Has Helped Spur San Francisco’s Live Music Revival",
+        "summary": "How의 라이브 공연 관련 소식이 전해졌다. 콘서트 티켓과 일정 정보가 업데이트되었다.",
+        "url": "https://www.billboard.com/pro/how-another-planet-spurred-san-francisco-live-music-revival/",
+        "source": "www.billboard.com",
+        "published_date": "2025-08-27 21:33:47",
+        "priority": 0,
+        "tags": {
+          "genre": [],
+          "industry": [
+            "album",
+            "tour"
+          ],
+          "region": [
+            "us"
+          ]
+        },
+        "category": "NEWS"
+      },
+      {
         "id": "4b17a1f3214c",
         "title": "Travis Kelce Is Dancing to Taylor Swift’s New Album While Fans Decipher Podcast Easter Eggs",
-        "summary": "미국 NFL 선수 트래비스 켈시가 자신의 팟캐스트 '뉴 하이츠'에서 테일러 스위프트의 새 앨범 '라이프 오브 어 쇼걸'에 대한 애정을 드러냈다. 켈시는 첫 에피소드에서 자신이 가장 좋아하는 곡을 언급하며, 팬들이 스위프트의 최근 발표 관련 숨겨진 단서를 찾아내는 데 힘썼다. 이번 소식은 스위프트의 최근 발표 소식이 화제가 된 가운데 전해졌다.",
+        "summary": "미국 NFL 선수 트래비스 켈시가 자신의 팟캐스트 '뉴 하이츠'에서 테일러 스위프트의 새 앨범 '라이프 오브 어 쇼걸'에 대한 애정을 드러냈습니다.  켈시는 첫 번째 에피소드에서 자신이 가장 좋아하는 트랙을 공개했는데, 이는 스위프트의 최근 발표 소식과 관련된 이스터에그로 해석되고 있습니다.",
         "url": "https://www.rollingstone.com/music/music-news/travis-kelce-taylor-swift-easter-eggs-podcast-1235416923/",
         "source": "www.rollingstone.com",
         "published_date": "2025-08-27 21:29:09",
@@ -679,7 +524,7 @@
       {
         "id": "13562d77df33",
         "title": "Oliver Sim – “Obsession”",
-        "summary": "영국 싱어송라이터 올리버 심(Oliver Sim)이 자신의 솔로 데뷔 앨범 'Hideous Bastard' 발매 후 3년 만에 새로운 싱글 \"Obsession\"을 발표했다.",
+        "summary": "영국 가수 올리버 심(Oliver Sim)이 자신의 솔로 데뷔 앨범 'Hideous Bastard'를 발매한 지 3년 만에 새로운 싱글 \"Obsession\"을 공개했다.",
         "url": "https://www.stereogum.com/2320875/oliver-sim-obsession/music/",
         "source": "www.stereogum.com",
         "published_date": "2025-08-27 20:41:46",
@@ -817,7 +662,7 @@
       {
         "id": "ab960be2a0f3",
         "title": "Fall Out Boy Crawl Out ‘From Under the Cork Tree’ to Celebrate LP’s 20th Anniversary",
-        "summary": "Fall와 관련된 주요 음악 업계 소식이 전해졌다. Fall Out Boy Crawl Out ‘From Under the Cork Tree’ to Celebra...",
+        "summary": "팔 아웃 보이(Fall Out Boy) 밴드가 2003년 발표한 대표 팝 펑크 앨범 '프롬 언더 더 코크 트리(From Under the Cork Tree)'의 20주년을 기념해 리마스터링 버전을 발매한다. 이와 함께 특별 박스세트도 출시될 예정이다. 이번 기념 앨범은 2023년 5월 19일 북미 지역에서 선보일 계획이다.",
         "url": "https://www.rollingstone.com/music/music-news/fall-out-boy-from-under-cork-tree-20-anniversary-edition-1235416755/",
         "source": "www.rollingstone.com",
         "published_date": "2025-08-27 19:13:04",
@@ -903,6 +748,163 @@
           "region": []
         },
         "category": "NEWS"
+      },
+      {
+        "id": "4763b03cb839",
+        "title": "Benee Announces New Album Ur An Angel I’m Just Particles: Hear “Cinnamon”",
+        "summary": "Benee가 새 앨범 발매 소식을 공개했다. 팬들과 업계의 큰 관심을 받고 있다.",
+        "url": "https://www.stereogum.com/2320858/benee-announces-new-album-ur-an-angel-im-just-particles-hear-cinnamon/music/",
+        "source": "www.stereogum.com",
+        "published_date": "2025-08-27 18:34:43",
+        "priority": 0,
+        "tags": {
+          "genre": [
+            "pop"
+          ],
+          "industry": [
+            "album",
+            "single"
+          ],
+          "region": [
+            "us"
+          ]
+        },
+        "category": "NEWS"
+      },
+      {
+        "id": "888a43b69e55",
+        "title": "Teenager Convicted in Terror Plot Against Taylor Swift Concert in Vienna",
+        "summary": "Teenager의 라이브 공연 관련 소식이 전해졌다. 콘서트 티켓과 일정 정보가 업데이트되었다.",
+        "url": "https://pitchfork.com/news/teenager-convicted-in-terror-plot-against-taylor-swift-concert-in-vienna",
+        "source": "pitchfork.com",
+        "published_date": "2025-08-27 18:31:12",
+        "priority": 0,
+        "tags": {
+          "genre": [],
+          "industry": [
+            "tour"
+          ],
+          "region": [
+            "us"
+          ]
+        },
+        "category": "NEWS"
+      },
+      {
+        "id": "069e598336e4",
+        "title": "Elias Rønnenfelt Announces New Album Speak Daggers: Hear “USA Baby”",
+        "summary": "아이스에이지(Iceage)의 보컬 엘리아스 뢴넨펠트(Elias Rønnenfelt)가 새 솔로 앨범 '스피크 대거스(Speak Daggers)'를 10월에 발매할 예정입니다.  이번 앨범은 지난해 10월 발표한 데뷔 솔로 앨범 '헤비 글로리(Heavy Glory)' 이후 약 1년 만에 나오는 작품입니다.",
+        "url": "https://www.stereogum.com/2320842/elias-ronnenfelt-announces-new-album-speak-daggers-hear-usa-baby/music/",
+        "source": "www.stereogum.com",
+        "published_date": "2025-08-27 18:30:06",
+        "priority": 0,
+        "tags": {
+          "genre": [],
+          "industry": [
+            "album",
+            "single"
+          ],
+          "region": [
+            "us"
+          ]
+        },
+        "category": "NEWS"
+      },
+      {
+        "id": "e6afadd86ad5",
+        "title": "Cardi B Says Security Guard Is Suing Her for Whopping $24 Million",
+        "summary": "Cardi와 관련된 주요 음악 업계 소식이 전해졌다. Cardi B Says Security Guard Is Suing Her for Whopping $24 Mi...",
+        "url": "https://www.rollingstone.com/music/music-news/cardi-b-testifies-security-guard-suing-24-million-1235416768/",
+        "source": "www.rollingstone.com",
+        "published_date": "2025-08-27 18:26:50",
+        "priority": 0,
+        "tags": {
+          "genre": [],
+          "industry": [
+            "album"
+          ],
+          "region": [
+            "us"
+          ]
+        },
+        "category": "NEWS"
+      },
+      {
+        "id": "a1a75c13ae59",
+        "title": "Jesus Piece Break Up, But It Appears Singer Is Continuing as Je$us Piece",
+        "summary": "Jesus와 관련된 주요 음악 업계 소식이 전해졌다. Jesus Piece Break Up, But It Appears Singer Is Continuing as...",
+        "url": "https://consequence.net/2025/08/jesus-piece-break-up/",
+        "source": "consequenceofsound.net",
+        "published_date": "2025-08-27 18:09:34",
+        "priority": 0,
+        "tags": {
+          "genre": [],
+          "industry": [
+            "album"
+          ],
+          "region": [
+            "us"
+          ]
+        },
+        "category": "NEWS"
+      },
+      {
+        "id": "25fca57d2754",
+        "title": "Who Is She? Spawns Side Project Themed Around Romantasy Book Series",
+        "summary": "Who와 관련된 주요 음악 업계 소식이 전해졌다. Who Is She? Spawns Side Project Themed Around Romantasy Book...",
+        "url": "https://www.stereogum.com/2320848/fairie-born-acotar-who-is-she-side-project-romantasy-book-series/music/",
+        "source": "www.stereogum.com",
+        "published_date": "2025-08-27 18:05:00",
+        "priority": 0,
+        "tags": {
+          "genre": [
+            "rock"
+          ],
+          "industry": [
+            "album"
+          ],
+          "region": [
+            "us"
+          ]
+        },
+        "category": "NEWS"
+      },
+      {
+        "id": "b24d28023487",
+        "title": "Gloria Gaynor, Who’s Being Urged To Reject Kennedy Center Honor, Actually Donated Thousands To MAGA Republicans",
+        "summary": "Gloria와 관련된 주요 음악 업계 소식이 전해졌다. Gloria Gaynor, Who’s Being Urged To Reject Kennedy Center Ho...",
+        "url": "https://www.stereogum.com/2320800/gloria-gaynor-whos-being-urged-to-reject-kennedy-center-honor-actually-donated-thousands-to-maga-republicans/news/",
+        "source": "www.stereogum.com",
+        "published_date": "2025-08-27 17:57:50",
+        "priority": 0,
+        "tags": {
+          "genre": [],
+          "industry": [
+            "album",
+            "award"
+          ],
+          "region": [
+            "us"
+          ]
+        },
+        "category": "NEWS"
+      },
+      {
+        "id": "032c8cf943d8",
+        "title": "Gear Up: Fender Labor Day Sale Offers Deals on Guitars, Basses, Accessories, and Parts",
+        "summary": "Gear와 관련된 주요 음악 업계 소식이 전해졌다. Gear Up: Fender Labor Day Sale Offers Deals on Guitars, Bass...",
+        "url": "https://consequence.net/2025/08/fender-labor-day-sale-2025/",
+        "source": "consequenceofsound.net",
+        "published_date": "2025-08-27 17:39:37",
+        "priority": 0,
+        "tags": {
+          "genre": [],
+          "industry": [],
+          "region": [
+            "us"
+          ]
+        },
+        "category": "NEWS"
       }
     ],
     "REPORT": [
@@ -975,7 +977,7 @@
       {
         "id": "43837b48c604",
         "title": "Blood Orange – “Countryside” (Feat. Eva Tolkin, Liam Benzvi, & Ian Isiah)",
-        "summary": "Blood의 새로운 협업 프로젝트 소식이 공개되었다. 음악 팬들의 기대감이 높아지고 있다.",
+        "summary": "영국 출신 싱어송라이터 Dev Hynes가 이끄는 음악 프로젝트 Blood Orange가 오는 금요일 새 앨범 'Essex Honey'를 발표할 예정입니다.  이번 앨범은 2018년 발표한 'Negro Swan' 이후 4년 만의 신작입니다.",
         "url": "https://www.stereogum.com/2320856/blood-orange-countryside-feat-eva-tolkin-liam-benzvi-ian-isiah/music/",
         "source": "www.stereogum.com",
         "published_date": "2025-08-27 19:15:55",
@@ -1002,15 +1004,15 @@
       "pop",
       "rock",
       "hip-hop",
-      "k-pop",
-      "country"
+      "country",
+      "k-pop"
     ],
     "top_industries": [
       "album",
-      "tour",
       "single",
+      "tour",
       "collaboration",
-      "award"
+      "label"
     ],
     "top_regions": [
       "us",
