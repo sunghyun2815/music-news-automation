@@ -70,12 +70,14 @@ class MusicNewsJSONGenerator:
             'news': {
                 # NewsSection.tsx는 Object.values()로 이 객체의 모든 값을 순회함
                 # 따라서 각 키의 값이 배열이어야 함
-                'all_articles': all_news_articles,  # 모든 뉴스를 하나의 배열에
                 
-                # 혹시 카테고리별로도 필요할 수 있으니 추가 (선택사항)
-                'news': [article for article in all_news_articles if article.get('category', '').lower() in ['news', 'report']],
-                'interview': [article for article in all_news_articles if article.get('category', '').lower() in ['interview', 'column']],
-                'insight': [article for article in all_news_articles if article.get('category', '').lower() == 'insight'],
+                'all_articles': [],  # 비워둠 - 사용하지 않음
+                
+                'news': [],  # 차트파인더용으로 비워둠 (나중에 차트 데이터 들어갈 예정)
+                
+                'interview': all_news_articles,  # 모든 뉴스를 여기에! NEWS CLIPPER에서 표시됨
+                
+                'insight': [],  # 비워둠
             },
             'summary': {
                 'total_count': len(all_news_articles),
