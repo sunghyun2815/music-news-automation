@@ -1,8 +1,8 @@
 {
   "api_info": {
     "name": "Music News API",
-    "version": "1.0",
-    "description": "Automated music industry news aggregation",
+    "version": "2.0",
+    "description": "Automated music industry news aggregation - NewsSection.tsx compatible",
     "update_schedule": "Daily at 10:00 AM KST",
     "endpoints": {
       "latest_news": "https://raw.githubusercontent.com/YOUR-USERNAME/music-news-automation/main/music_news.json",
@@ -10,16 +10,16 @@
     },
     "data_structure": {
       "metadata": "Generation info and statistics",
-      "news": "Categorized news articles",
-      "summary": "Top tags and trends"
+      "news": "Object with arrays - compatible with NewsSection.tsx",
+      "summary": "Statistics and counts"
     },
+    "compatible_with": "NewsSection.tsx",
     "categories": [
-      "NEWS",
-      "REPORT",
-      "INSIGHT",
-      "INTERVIEW",
-      "COLUMN"
+      "news",
+      "interview",
+      "insight",
+      "column"
     ],
-    "last_updated": "2025-08-28T08:39:06.115218"
+    "last_updated": "2025-08-28T09:06:46.411972"
   }
 }
