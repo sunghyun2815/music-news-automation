@@ -1,8 +1,8 @@
 {
   "metadata": {
-    "generated_at": "2026-10-10T06:39:01.784462",
+    "generated_at": "2026-10-11T06:45:45.325186",
     "total_news": 50,
-    "last_updated": "2026-10-10T06:39:01.784469",
+    "last_updated": "2026-10-11T06:45:45.325194",
     "version": "2.0",
     "compatible_with": "NewsSection.tsx"
   },
@@ -11,20 +11,220 @@
     "news": [],
     "interview": [
       {
-        "title": "Phil Wickham, Josiah Queen, Brandon Lake, Tasha Cobbs Leonard Top GMA Dove Awards Winners",
-        "summary": "Phil가 음악 차트에서 주목할 만한 성과를 기록했다. 상업적 성공을 입증하는 결과다.",
-        "url": "https://www.billboard.com/music/awards/phil-wickham-josiah-queen-gma-dove-awards-winners-1236358562/",
-        "published_date": "2026-10-10 04:27:34",
+        "title": "Soulja Boy Teases 2028 Presidential Run: ‘A Bigger Vision’",
+        "summary": "Soulja와 관련된 주요 음악 업계 소식이 전해졌다. Soulja Boy Teases 2028 Presidential Run: ‘A Bigger Vision’",
+        "url": "https://www.billboard.com/music/rb-hip-hop/soulja-boy-teases-2028-presidential-run-1236358638/",
+        "published_date": "2026-10-11 06:26:37",
         "category": "interview",
         "source": "www.billboard.com"
       },
       {
-        "title": "ADÉLA Makes Her Case For Pop Stardom at Sold-Out Los Angeles Show: ‘I’m an Immigrant’",
-        "summary": "ADÉLA와 관련된 주요 음악 업계 소식이 전해졌다. ADÉLA Makes Her Case For Pop Stardom at Sold-Out Los Angeles...",
-        "url": "https://www.billboard.com/music/concerts/adela-sold-out-los-angeles-concert-the-fonda-theatre-review-1236358527/",
-        "published_date": "2026-10-10 04:27:14",
+        "title": "Night One Of Head Trip 2026 Ends Early Due to Weather",
+        "summary": "Night와 관련된 주요 음악 업계 소식이 전해졌다. Night One Of Head Trip 2026 Ends Early Due to Weather",
+        "url": "https://www.billboard.com/music/music-news/head-trip-2026-ends-early-weather-1236358640/",
+        "published_date": "2026-10-11 06:22:50",
         "category": "interview",
         "source": "www.billboard.com"
+      },
+      {
+        "title": "Shane Gillis Drops F-Bomb on SNL",
+        "summary": "Shane가 새로운 음악을 공개했다. 팬들과 비평가들의 긍정적 반응을 얻고 있다.",
+        "url": "https://consequence.net/2026/10/shane-gillis-drops-f-bomb-on-snl/",
+        "published_date": "2026-10-11 04:28:55",
+        "category": "interview",
+        "source": "consequenceofsound.net"
+      },
+      {
+        "title": "Barry Manilow Walks Off Stage, Cancels Vegas Shows Due to Bronchitis",
+        "summary": "Barry와 관련된 주요 음악 업계 소식이 전해졌다. Barry Manilow Walks Off Stage, Cancels Vegas Shows Due to Br...",
+        "url": "https://www.billboard.com/music/music-news/barry-manilow-cuts-short-las-vegas-show-cancels-concerts-1236358635/",
+        "published_date": "2026-10-11 03:52:24",
+        "category": "interview",
+        "source": "www.billboard.com"
+      },
+      {
+        "title": "‘Golden’ Is Still Golden, Wins Best Song at 2026 World Soundtrack Awards (Full Winners List)",
+        "summary": "‘Golden’와 관련된 주요 음악 업계 소식이 전해졌다. ‘Golden’ Is Still Golden, Wins Best Song at 2026 World Sound...",
+        "url": "https://www.billboard.com/music/awards/2026-world-soundtrack-awards-winners-list-1236358619/",
+        "published_date": "2026-10-10 23:16:32",
+        "category": "interview",
+        "source": "www.billboard.com"
+      },
+      {
+        "title": "Sex Pistols Berate Dude for Infiltrating Women-Only Mosh Pit [Updated]",
+        "summary": "Sex와 관련된 주요 음악 업계 소식이 전해졌다. Sex Pistols Berate Dude for Infiltrating Women-Only Mosh Pit...",
+        "url": "https://consequence.net/2026/10/sex-pistols-berate-dude-for-infiltrating-women-only-mosh-pit/",
+        "published_date": "2026-10-10 20:15:19",
+        "category": "interview",
+        "source": "consequenceofsound.net"
+      },
+      {
+        "title": "Geordie Greep Responds to Sexual Misconduct Allegation, Cancels Tour Dates",
+        "summary": "Geordie의 라이브 공연 관련 소식이 전해졌다. 콘서트 티켓과 일정 정보가 업데이트되었다.",
+        "url": "https://www.billboard.com/music/music-news/geordie-greep-misconduct-allegation-cancels-tour-dates-1236358602/",
+        "published_date": "2026-10-10 20:04:35",
+        "category": "interview",
+        "source": "www.billboard.com"
+      },
+      {
+        "title": "Barry Manilow’s Vegas Comeback Derailed by Bronchitis",
+        "summary": "Barry와 관련된 주요 음악 업계 소식이 전해졌다. Barry Manilow’s Vegas Comeback Derailed by Bronchitis",
+        "url": "https://consequence.net/2026/10/barry-manilows-vegas-comeback-derailed-by-bronchitis/",
+        "published_date": "2026-10-10 19:14:24",
+        "category": "interview",
+        "source": "consequenceofsound.net"
+      },
+      {
+        "title": "Charli XCX Welcomes Tinashe for Surprise Performance at 2026 Austin City Limits Festival",
+        "summary": "Charli와 관련된 주요 음악 업계 소식이 전해졌다. Charli XCX Welcomes Tinashe for Surprise Performance at 2026...",
+        "url": "https://www.billboard.com/music/music-news/charli-xcx-tinashe-2026-austin-city-limits-festival-1236358595/",
+        "published_date": "2026-10-10 18:37:26",
+        "category": "interview",
+        "source": "www.billboard.com"
+      },
+      {
+        "title": "Danny Trejo Says He’s “Not Pro-ICE” Amid Backlash Over Daily Wire Movie",
+        "summary": "Danny와 관련된 주요 음악 업계 소식이 전해졌다. Danny Trejo Says He’s “Not Pro-ICE” Amid Backlash Over Daily...",
+        "url": "https://consequence.net/2026/10/danny-trejo-says-hes-not-pro-ice-amid-backlash-over-daily-wire-movie/",
+        "published_date": "2026-10-10 17:34:25",
+        "category": "interview",
+        "source": "consequenceofsound.net"
+      },
+      {
+        "title": "Shane Gillis & Rosalía on ‘SNL’: Here’s Where to Watch ‘Saturday Night Live’ Online for Free",
+        "summary": "Shane의 라이브 공연 관련 소식이 전해졌다. 콘서트 티켓과 일정 정보가 업데이트되었다.",
+        "url": "https://www.billboard.com/culture/product-recommendations/snl-2026-shane-gillis-rosalia-watch-live-online-free-1236357933/",
+        "published_date": "2026-10-10 16:50:45",
+        "category": "interview",
+        "source": "www.billboard.com"
+      },
+      {
+        "title": "See Charli XCX Bring Out Tinashe at ACL Festival",
+        "summary": "See와 관련된 주요 음악 업계 소식이 전해졌다. See Charli XCX Bring Out Tinashe at ACL Festival",
+        "url": "https://www.rollingstone.com/music/music-news/charli-xcx-tinashe-acl-festival-1235640837/",
+        "published_date": "2026-10-10 16:45:17",
+        "category": "interview",
+        "source": "www.rollingstone.com"
+      },
+      {
+        "title": "Geordie Greep Shows Cancelled Following Sexual Misconduct Allegations",
+        "summary": "Geordie와 관련된 주요 음악 업계 소식이 전해졌다. Geordie Greep Shows Cancelled Following Sexual Misconduct Al...",
+        "url": "https://pitchfork.com/story/geordie-greep-shows-cancelled-following-sexual-misconduct-allegations/",
+        "published_date": "2026-10-10 16:10:30",
+        "category": "interview",
+        "source": "pitchfork.com"
+      },
+      {
+        "title": "Modest Mouse Deliver Good Vibes and Birthday Wishes at New York’s Rooftop at Pier 17: Photos + Setlist",
+        "summary": "Modest의 라이브 공연 관련 소식이 전해졌다. 콘서트 티켓과 일정 정보가 업데이트되었다.",
+        "url": "https://consequence.net/2026/10/modest-mouse-rooftop-pier-17-photos-review/",
+        "published_date": "2026-10-10 16:04:59",
+        "category": "interview",
+        "source": "consequenceofsound.net"
+      },
+      {
+        "title": "WWE Money in the Bank 2026: Here’s How to Watch the Premium Live Event Online for Free",
+        "summary": "WWE의 라이브 공연 관련 소식이 전해졌다. 콘서트 티켓과 일정 정보가 업데이트되었다.",
+        "url": "https://www.billboard.com/culture/product-recommendations/wwe-money-in-the-bank-2026-how-to-watch-live-online-free-1236357022/",
+        "published_date": "2026-10-10 16:04:41",
+        "category": "interview",
+        "source": "www.billboard.com"
+      },
+      {
+        "title": "For World Mental Health Day, a check-up on the music industry",
+        "summary": "For와 관련된 주요 음악 업계 소식이 전해졌다. For World Mental Health Day, a check-up on the music industr...",
+        "url": "https://www.billboard.com/music/features/for-world-mental-health-day-2026-1236358584/",
+        "published_date": "2026-10-10 15:08:44",
+        "category": "interview",
+        "source": "www.billboard.com"
+      },
+      {
+        "title": "Charli XCX Brings Out Tinashe At ACL",
+        "summary": "Charli와 관련된 주요 음악 업계 소식이 전해졌다. Charli XCX Brings Out Tinashe At ACL",
+        "url": "https://stereogum.com/2514217/charli-xcx-brings-out-tinashe-at-acl/news/",
+        "published_date": "2026-10-10 14:01:48",
+        "category": "interview",
+        "source": "www.stereogum.com"
+      },
+      {
+        "title": "Indigo Girls’ Bus Driver Killed in Crash",
+        "summary": "Indigo와 관련된 주요 음악 업계 소식이 전해졌다. Indigo Girls’ Bus Driver Killed in Crash",
+        "url": "https://consequence.net/2026/10/indigo-girls-bus-driver-killed-in-crash/",
+        "published_date": "2026-10-10 13:57:43",
+        "category": "interview",
+        "source": "consequenceofsound.net"
+      },
+      {
+        "title": "Geordie Greep Cancels Tour Dates Amid Sexual Misconduct Allegation",
+        "summary": "Geordie의 라이브 공연 관련 소식이 전해졌다. 콘서트 티켓과 일정 정보가 업데이트되었다.",
+        "url": "https://www.rollingstone.com/music/music-news/geordie-greep-cancel-tour-dates-sexual-misconduct-claim-1235640795/",
+        "published_date": "2026-10-10 13:50:34",
+        "category": "interview",
+        "source": "www.rollingstone.com"
+      },
+      {
+        "title": "Ella Langley Cancels Tulsa Concert Due To Bomb Threat",
+        "summary": "Ella의 라이브 공연 관련 소식이 전해졌다. 콘서트 티켓과 일정 정보가 업데이트되었다.",
+        "url": "https://stereogum.com/2514213/ella-langley-cancels-tulsa-concert-due-to-bomb-threat/news/",
+        "published_date": "2026-10-10 13:43:19",
+        "category": "interview",
+        "source": "www.stereogum.com"
+      },
+      {
+        "title": "Geordie Greep Cancels US Tour Following Sexual Misconduct Allegation",
+        "summary": "Geordie의 라이브 공연 관련 소식이 전해졌다. 콘서트 티켓과 일정 정보가 업데이트되었다.",
+        "url": "https://stereogum.com/2514211/geordie-greep-cancels-us-tour-following-sexual-misconduct-allegation/news/",
+        "published_date": "2026-10-10 13:17:54",
+        "category": "interview",
+        "source": "www.stereogum.com"
+      },
+      {
+        "title": "‘Saturday Night Live U.K.’: Here’s Where to Watch Season 2 Online for Free",
+        "summary": "‘Saturday의 라이브 공연 관련 소식이 전해졌다. 콘서트 티켓과 일정 정보가 업데이트되었다.",
+        "url": "https://www.billboard.com/culture/product-recommendations/saturday-night-live-uk-season-2-watch-stream-online-free-1236338739/",
+        "published_date": "2026-10-10 12:45:12",
+        "category": "interview",
+        "source": "www.billboard.com"
+      },
+      {
+        "title": "The Rolling Stones are back in the studio again",
+        "summary": "The와 관련된 주요 음악 업계 소식이 전해졌다. The Rolling Stones are back in the studio again",
+        "url": "https://www.nme.com/news/music/the-rolling-stones-are-back-in-the-studio-again-3972859?utm_source=rss&utm_medium=rss&utm_campaign=the-rolling-stones-are-back-in-the-studio-again",
+        "published_date": "2026-10-10 10:43:15",
+        "category": "interview",
+        "source": "www.nme.com"
+      },
+      {
+        "title": "Radiohead’s Thom Yorke shares most important piece of advice given to him by R.E.M.’s Michael Stipe",
+        "summary": "Radiohead’s와 관련된 주요 음악 업계 소식이 전해졌다. Radiohead’s Thom Yorke shares most important piece of advice...",
+        "url": "https://www.nme.com/news/music/radiohead-thom-yorke-important-advice-rem-michael-stipe-3972855?utm_source=rss&utm_medium=rss&utm_campaign=radiohead-thom-yorke-important-advice-rem-michael-stipe",
+        "published_date": "2026-10-10 10:04:55",
+        "category": "interview",
+        "source": "www.nme.com"
+      },
+      {
+        "title": "Olivia Rodrigo shares how she spent “exorbitant amount of money” on iconic piece of The White Stripes clothing",
+        "summary": "Olivia와 관련된 주요 음악 업계 소식이 전해졌다. Olivia Rodrigo shares how she spent “exorbitant amount of mo...",
+        "url": "https://www.nme.com/news/music/olivia-rodrigo-exorbitant-money-iconic-piece-white-stripes-clothing-3972851?utm_source=rss&utm_medium=rss&utm_campaign=olivia-rodrigo-exorbitant-money-iconic-piece-white-stripes-clothing",
+        "published_date": "2026-10-10 09:22:57",
+        "category": "interview",
+        "source": "www.nme.com"
+      },
+      {
+        "title": "The Chemical Brothers, Ellie Goulding, Adéla lead latest wave of line-up for Open’er 2027",
+        "summary": "The와 관련된 주요 음악 업계 소식이 전해졌다. The Chemical Brothers, Ellie Goulding, Adéla lead latest wav...",
+        "url": "https://www.nme.com/news/music/chemical-brothers-ellie-goulding-adela-line-up-opener-2027-3972847?utm_source=rss&utm_medium=rss&utm_campaign=chemical-brothers-ellie-goulding-adela-line-up-opener-2027",
+        "published_date": "2026-10-10 08:29:16",
+        "category": "interview",
+        "source": "www.nme.com"
+      },
+      {
+        "title": "Art Garfunkel postpones UK tour after being diagnosed with respiratory infection",
+        "summary": "Art의 라이브 공연 관련 소식이 전해졌다. 콘서트 티켓과 일정 정보가 업데이트되었다.",
+        "url": "https://www.nme.com/news/music/art-garfunkel-postpones-uk-tour-diagnosed-respiratory-infection-3972843?utm_source=rss&utm_medium=rss&utm_campaign=art-garfunkel-postpones-uk-tour-diagnosed-respiratory-infection",
+        "published_date": "2026-10-10 07:42:01",
+        "category": "interview",
+        "source": "www.nme.com"
       },
       {
         "title": "Geordie Greep Denies Rape Allegation During Vancouver Concert [Updated]",
@@ -36,7 +236,7 @@
       },
       {
         "title": "The Strokes’ Nick Valensi, Aziya, and Mr Hudson Unleash New Song ‘Scream Your Name’",
-        "summary": "The와 관련된 주요 음악 업계 소식이 전해졌다. The Strokes’ Nick Valensi, Aziya, and Mr Hudson Unleash New ...",
+        "summary": "The Strokes’가 새로운 싱글을 발표했다. 새 곡은 아티스트의 음악적 진화를 보여주는 작품으로 평가받고 있다.",
         "url": "https://www.rollingstone.com/music/music-news/the-strokes-nick-valensi-aziya-mr-hudson-scream-your-name-1235640707/",
         "published_date": "2026-10-10 01:59:36",
         "category": "interview",
@@ -51,52 +251,12 @@
         "source": "www.rollingstone.com"
       },
       {
-        "title": "‘JAŸ-Z in 8’ Finale: 5 Things We Learned From Episodes 7 & 8",
-        "summary": "‘JAŸ-Z와 관련된 주요 음악 업계 소식이 전해졌다. ‘JAŸ-Z in 8’ Finale: 5 Things We Learned From Episodes 7 & 8",
-        "url": "https://www.billboard.com/lists/jay-z-in-8-finale-review-episodes-7-8-rick-rubin-hbo-max/",
-        "published_date": "2026-10-10 00:00:00",
-        "category": "interview",
-        "source": "www.billboard.com"
-      },
-      {
-        "title": "Gunna Launches SB The Label Imprint & Releases ‘Pop It’ Video With Tennis Star Coco Gauff: ‘A New Chapter for Me’",
-        "summary": "Gunna가 새로운 음악을 공개했다. 팬들과 비평가들의 긍정적 반응을 얻고 있다.",
-        "url": "https://www.billboard.com/music/rb-hip-hop/gunna-sb-label-pop-it-coco-gauff-1236358460/",
-        "published_date": "2026-10-09 23:21:57",
-        "category": "interview",
-        "source": "www.billboard.com"
-      },
-      {
-        "title": "50 Cent Jokes That Jay-Z Will Perform at His Future Wedding — Kanye Too, ‘If He’s Not Banned at the Time’",
-        "summary": "50와 관련된 주요 음악 업계 소식이 전해졌다. 50 Cent Jokes That Jay-Z Will Perform at His Future Wedding ...",
-        "url": "https://www.billboard.com/music/rb-hip-hop/50-cent-jay-z-kanye-wedding-performers-1236358464/",
-        "published_date": "2026-10-09 23:10:10",
-        "category": "interview",
-        "source": "www.billboard.com"
-      },
-      {
-        "title": "Summer Walker in Legal Dispute With Interscope Over Record Deal",
-        "summary": "Summer와 관련된 주요 음악 업계 소식이 전해졌다. Summer Walker in Legal Dispute With Interscope Over Record D...",
-        "url": "https://www.billboard.com/pro/summer-walker-legal-dispute-interscope-record-deal/",
-        "published_date": "2026-10-09 22:56:15",
-        "category": "interview",
-        "source": "www.billboard.com"
-      },
-      {
         "title": "Scarlett Johansson Faces Down Evil in First Trailer for The Exorcist: Martyrs: Watch",
         "summary": "Scarlett와 관련된 주요 음악 업계 소식이 전해졌다. Scarlett Johansson Faces Down Evil in First Trailer for The ...",
         "url": "https://consequence.net/2026/10/the-exorcist-martyrs-trailer/",
         "published_date": "2026-10-09 22:43:15",
         "category": "interview",
         "source": "consequenceofsound.net"
-      },
-      {
-        "title": "Ella Langley Cancels Oklahoma Concert Hours Before Showtime Citing ‘Serious Security Threat’",
-        "summary": "Ella의 라이브 공연 관련 소식이 전해졌다. 콘서트 티켓과 일정 정보가 업데이트되었다.",
-        "url": "https://www.billboard.com/music/country/ella-langley-concert-canceled-tulsa-oklahoma-security-threat-1236358477/",
-        "published_date": "2026-10-09 22:38:19",
-        "category": "interview",
-        "source": "www.billboard.com"
       },
       {
         "title": "Ella Langley Cancels Tulsa Concert Following Bomb Threat: Report",
@@ -115,36 +275,12 @@
         "source": "pitchfork.com"
       },
       {
-        "title": "Brandy Heading to Africa to Headline Flytime’s House of R&B Concert for Lagos’ Detty December",
-        "summary": "Brandy의 라이브 공연 관련 소식이 전해졌다. 콘서트 티켓과 일정 정보가 업데이트되었다.",
-        "url": "https://www.billboard.com/music/rb-hip-hop/brandy-flytime-house-of-rb-concert-lagos-nigeria-1236358381/",
-        "published_date": "2026-10-09 21:49:28",
-        "category": "interview",
-        "source": "www.billboard.com"
-      },
-      {
-        "title": "ADÉLA Reunites With KATSEYE Members & Owns the Stage at Red Bottoms Tour Stop in LA: Exclusive Photos",
-        "summary": "ADÉLA의 라이브 공연 관련 소식이 전해졌다. 콘서트 티켓과 일정 정보가 업데이트되었다.",
-        "url": "https://www.billboard.com/photos/adela-los-angeles-concert-photos-katseye-fonda-1236358300/",
-        "published_date": "2026-10-09 21:44:54",
-        "category": "interview",
-        "source": "www.billboard.com"
-      },
-      {
         "title": "Katie Dey Announces New Album universal will: Hear “for you”",
         "summary": "Katie Dey가 새 앨범 발매 소식을 공개했다. 이번 릴리스는 팬들과 음악 업계의 큰 관심을 받고 있다.",
         "url": "https://stereogum.com/2514199/katie-dey-announces-new-album-universal-will-hear-for-you/music/",
         "published_date": "2026-10-09 21:39:43",
         "category": "interview",
         "source": "www.stereogum.com"
-      },
-      {
-        "title": "Daisuke Ashihara’s ‘World Trigger’ Vol. 30 Tops Billboard Japan Book Hot 100 as Comics Sweep Top 10",
-        "summary": "Daisuke가 음악 차트에서 주목할 만한 성과를 기록했다. 상업적 성공을 입증하는 결과다.",
-        "url": "https://www.billboard.com/music/chart-beat/daisuke-ashihara-world-trigger-vol-30-japan-book-hot-100-1236358444/",
-        "published_date": "2026-10-09 21:33:22",
-        "category": "interview",
-        "source": "www.billboard.com"
       },
       {
         "title": "Rocketship Announce New Album Hurt Feelings: Hear “New Threats”",
@@ -273,142 +409,6 @@
         "published_date": "2026-10-09 18:11:46",
         "category": "interview",
         "source": "www.rollingstone.com"
-      },
-      {
-        "title": "Slayyyter Confronts a Cheater in Self-Directed ‘I Think He’s Got a Girl’ Video",
-        "summary": "Slayyyter와 관련된 주요 음악 업계 소식이 전해졌다. Slayyyter Confronts a Cheater in Self-Directed ‘I Think He’s...",
-        "url": "https://www.rollingstone.com/music/music-news/slayyyter-i-think-hes-got-a-girl-video-1235640278/",
-        "published_date": "2026-10-09 18:09:51",
-        "category": "interview",
-        "source": "www.rollingstone.com"
-      },
-      {
-        "title": "Isaac Slade Joins Ed Sheeran’s Tour as New Opening Act",
-        "summary": "Isaac의 라이브 공연 관련 소식이 전해졌다. 콘서트 티켓과 일정 정보가 업데이트되었다.",
-        "url": "https://consequence.net/2026/10/isaac-slade-joins-ed-sheerans-tour-as-new-opening-act/",
-        "published_date": "2026-10-09 17:53:28",
-        "category": "interview",
-        "source": "consequenceofsound.net"
-      },
-      {
-        "title": "Mastodon Announce Marrow Deep Vinyl Pressed with Real Mastodon Fossils",
-        "summary": "Mastodon와 관련된 주요 음악 업계 소식이 전해졌다. Mastodon Announce Marrow Deep Vinyl Pressed with Real Mastod...",
-        "url": "https://consequence.net/2026/10/mastodon-marrow-deep-vinyl-real-mastodon-fossils/",
-        "published_date": "2026-10-09 17:52:01",
-        "category": "interview",
-        "source": "consequenceofsound.net"
-      },
-      {
-        "title": "Interpol’s Paul Banks is readying an album with a new band he formed with Liars’ Aaron Hemphill in Berlin",
-        "summary": "Interpol’s와 관련된 주요 음악 업계 소식이 전해졌다. Interpol’s Paul Banks is readying an album with a new band h...",
-        "url": "https://www.nme.com/news/music/interpols-paul-banks-is-readying-an-album-with-a-new-band-he-formed-with-liars-aaron-hemphill-in-berlin-3972835?utm_source=rss&utm_medium=rss&utm_campaign=interpols-paul-banks-is-readying-an-album-with-a-new-band-he-formed-with-liars-aaron-hemphill-in-berlin",
-        "published_date": "2026-10-09 17:33:14",
-        "category": "interview",
-        "source": "www.nme.com"
-      },
-      {
-        "title": "Alanis Morissette Announces First Holiday Album Good Weather for Immaculate Conception",
-        "summary": "Alanis가 새 앨범 발매 소식을 공개했다. 팬들과 업계의 큰 관심을 받고 있다.",
-        "url": "https://consequence.net/2026/10/alanis-morissette-holiday-album-good-weather-for-immaculate-conception/",
-        "published_date": "2026-10-09 17:31:45",
-        "category": "interview",
-        "source": "consequenceofsound.net"
-      },
-      {
-        "title": "Stream On This Week: A Fun Legal Drama Battles Silicon Valley, and the Taskmasters Have Recommendations",
-        "summary": "Stream와 관련된 주요 음악 업계 소식이 전해졌다. Stream On This Week: A Fun Legal Drama Battles Silicon Valle...",
-        "url": "https://consequence.net/2026/10/stream-on-cupertino-taskmaster-vhs-mixtape/",
-        "published_date": "2026-10-09 17:00:28",
-        "category": "interview",
-        "source": "consequenceofsound.net"
-      },
-      {
-        "title": "Stream Plague Skater’s Revved-Up, Bashed-Out, All-Over-The-Place Finale Plague Skater III",
-        "summary": "Stream와 관련된 주요 음악 업계 소식이 전해졌다. Stream Plague Skater’s Revved-Up, Bashed-Out, All-Over-The-P...",
-        "url": "https://stereogum.com/2514156/stream-plague-skaters-revved-up-bashed-out-all-over-the-place-finale-plague-skater-iii/music/",
-        "published_date": "2026-10-09 16:50:04",
-        "category": "interview",
-        "source": "www.stereogum.com"
-      },
-      {
-        "title": "Cardi B – “Don’t Chart”",
-        "summary": "Cardi가 음악 차트에서 주목할 만한 성과를 기록했다. 상업적 성공을 입증하는 결과다.",
-        "url": "https://stereogum.com/2514152/cardi-b-dont-chart/music/",
-        "published_date": "2026-10-09 16:48:00",
-        "category": "interview",
-        "source": "www.stereogum.com"
-      },
-      {
-        "title": "New LEGO Marvel Skyline Depicts Marvel’s New York City in Microscale",
-        "summary": "New와 관련된 주요 음악 업계 소식이 전해졌다. New LEGO Marvel Skyline Depicts Marvel’s New York City in Mi...",
-        "url": "https://consequence.net/2026/10/lego-marvel-skyline-microscale/",
-        "published_date": "2026-10-09 16:42:35",
-        "category": "interview",
-        "source": "consequenceofsound.net"
-      },
-      {
-        "title": "Aluna – “Moaning” (Feat. Jengi)",
-        "summary": "Aluna –와 관련된 주요 음악 업계 소식이 전해졌다. Aluna – “Moaning” (Feat. Jengi)",
-        "url": "https://stereogum.com/2514104/aluna-moaning-feat-jengi/news/",
-        "published_date": "2026-10-09 16:31:12",
-        "category": "interview",
-        "source": "www.stereogum.com"
-      },
-      {
-        "title": "Geddy Lee Dedicates Song to His Holocaust Survivor Mother at October 7th RUSH Show: Watch",
-        "summary": "Geddy와 관련된 주요 음악 업계 소식이 전해졌다. Geddy Lee Dedicates Song to His Holocaust Survivor Mother at...",
-        "url": "https://consequence.net/2026/10/geddy-lee-dedicates-song-to-mother-october-7th-rush-show/",
-        "published_date": "2026-10-09 16:23:33",
-        "category": "interview",
-        "source": "consequenceofsound.net"
-      },
-      {
-        "title": "Remi Wolf Announces 2027 Tour, Releases New Album Mud: Stream",
-        "summary": "Remi가 새 앨범 발매 소식을 공개했다. 팬들과 업계의 큰 관심을 받고 있다.",
-        "url": "https://consequence.net/2026/10/remi-wolf-2027-tour-mud-new-album-stream/",
-        "published_date": "2026-10-09 16:17:49",
-        "category": "interview",
-        "source": "consequenceofsound.net"
-      },
-      {
-        "title": "Alanis Morissette Announces New Christmas Album Feat. Brandi Carlile, Steve Martin, & Martin Short",
-        "summary": "Alanis가 새 앨범 발매 소식을 공개했다. 팬들과 업계의 큰 관심을 받고 있다.",
-        "url": "https://stereogum.com/2514139/alanis-morissette-announces-new-christmas-album-feat-brandi-carlile-steve-martin-martin-short/music/",
-        "published_date": "2026-10-09 16:17:20",
-        "category": "interview",
-        "source": "www.stereogum.com"
-      },
-      {
-        "title": "Thom Yorke says he wishes he hadn’t written Radiohead’s ‘High And Dry’",
-        "summary": "Thom와 관련된 주요 음악 업계 소식이 전해졌다. Thom Yorke says he wishes he hadn’t written Radiohead’s ‘Hig...",
-        "url": "https://www.nme.com/news/music/thom-yorke-says-he-wishes-he-hadnt-written-radioheads-high-and-dry-3972822?utm_source=rss&utm_medium=rss&utm_campaign=thom-yorke-says-he-wishes-he-hadnt-written-radioheads-high-and-dry",
-        "published_date": "2026-10-09 16:12:21",
-        "category": "interview",
-        "source": "www.nme.com"
-      },
-      {
-        "title": "Alanis Morissette Made a Holiday Album",
-        "summary": "Alanis와 관련된 주요 음악 업계 소식이 전해졌다. Alanis Morissette Made a Holiday Album",
-        "url": "https://pitchfork.com/story/alanis-morissette-made-a-holiday-album/",
-        "published_date": "2026-10-09 16:10:23",
-        "category": "interview",
-        "source": "pitchfork.com"
-      },
-      {
-        "title": "You’re Not Crazy: Instagram Was Indeed Persuading You to Listen to Creed",
-        "summary": "You’re와 관련된 주요 음악 업계 소식이 전해졌다. You’re Not Crazy: Instagram Was Indeed Persuading You to Lis...",
-        "url": "https://www.rollingstone.com/music/music-news/creed-higher-instagram-recommendation-1235640225/",
-        "published_date": "2026-10-09 15:57:12",
-        "category": "interview",
-        "source": "www.rollingstone.com"
-      },
-      {
-        "title": "From Sony Music’s 260,000 deepfake takedowns to Suno’s live music expansion… it’s MBW’s Weekly Round-Up",
-        "summary": "From의 라이브 공연 관련 소식이 전해졌다. 콘서트 티켓과 일정 정보가 업데이트되었다.",
-        "url": "https://www.musicbusinessworldwide.com/from-sony-musics-260000-deepfake-takedowns-to-sunos-live-music-expansion-its-mbws-weekly-round-up/",
-        "published_date": "2026-10-09 15:54:26",
-        "category": "interview",
-        "source": "www.musicbusinessworldwide.com"
       }
     ],
     "insight": []
@@ -419,13 +419,12 @@
       "interview": 50
     },
     "by_source": {
-      "consequenceofsound.net": 13,
-      "www.stereogum.com": 13,
+      "consequenceofsound.net": 12,
+      "www.stereogum.com": 12,
       "www.billboard.com": 10,
       "www.rollingstone.com": 7,
-      "pitchfork.com": 4,
-      "www.nme.com": 2,
-      "www.musicbusinessworldwide.com": 1
+      "www.nme.com": 5,
+      "pitchfork.com": 4
     },
     "members_only_count": 0
   }
