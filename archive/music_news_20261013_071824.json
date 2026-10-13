@@ -1,0 +1,432 @@
+{
+  "metadata": {
+    "generated_at": "2026-10-13T07:18:24.691444",
+    "total_news": 50,
+    "last_updated": "2026-10-13T07:18:24.691452",
+    "version": "2.0",
+    "compatible_with": "NewsSection.tsx"
+  },
+  "news": {
+    "all_articles": [],
+    "news": [],
+    "interview": [
+      {
+        "title": "Maren Morris Hits Back at Shane Gillis’ ‘SNL’ Joke About Women Being ‘Whores’ at the Gym",
+        "summary": "Maren와 관련된 주요 음악 업계 소식이 전해졌다. Maren Morris Hits Back at Shane Gillis’ ‘SNL’ Joke About Wom...",
+        "url": "https://www.rollingstone.com/music/music-news/maren-morris-shane-gillis-snl-monologue-joke-response-1235641829/",
+        "published_date": "2026-10-13 06:57:24",
+        "category": "interview",
+        "source": "www.rollingstone.com"
+      },
+      {
+        "title": "Amyl and the Sniffers to Headline Golden Hour at Bondi Beach in 2027",
+        "summary": "Amyl와 관련된 주요 음악 업계 소식이 전해졌다. Amyl and the Sniffers to Headline Golden Hour at Bondi Beach...",
+        "url": "https://www.billboard.com/music/concerts/amyl-and-the-sniffers-golden-hour-bondi-beach-2027-1236359628/",
+        "published_date": "2026-10-13 05:35:38",
+        "category": "interview",
+        "source": "www.billboard.com"
+      },
+      {
+        "title": "A$AP Rocky Announces First Australian and New Zealand Tour in Eight Years",
+        "summary": "A$AP가 새로운 투어 계획을 발표했다. 콘서트 일정이 곧 공개될 예정이다.",
+        "url": "https://www.billboard.com/music/rb-hip-hop/asap-rocky-australia-new-zealand-tour-2026-1236359625/",
+        "published_date": "2026-10-13 04:20:05",
+        "category": "interview",
+        "source": "www.billboard.com"
+      },
+      {
+        "title": "Selma Blair Arrested After Attempting to Open Airplane Door Mid-Flight, Assaulting Crew",
+        "summary": "Selma와 관련된 주요 음악 업계 소식이 전해졌다. Selma Blair Arrested After Attempting to Open Airplane Door ...",
+        "url": "https://consequence.net/2026/10/selma-blair-flight-assault-arrest/",
+        "published_date": "2026-10-13 02:58:26",
+        "category": "interview",
+        "source": "consequenceofsound.net"
+      },
+      {
+        "title": "Maren Morris, Flavor Flav, Maggie Baird & More Speak Out Against Shane Gillis ‘SNL’ Monologue: ‘It’s Actually Dangerous for Women’",
+        "summary": "Maren와 관련된 주요 음악 업계 소식이 전해졌다. Maren Morris, Flavor Flav, Maggie Baird & More Speak Out Aga...",
+        "url": "https://www.billboard.com/culture/tv-film/shane-gillis-snl-monologue-response-maren-morris-flavor-flav-1236359613/",
+        "published_date": "2026-10-13 02:10:54",
+        "category": "interview",
+        "source": "www.billboard.com"
+      },
+      {
+        "title": "Shakira Closes Historic Madrid Residency With Maluma, Bizarrap & More: ‘Someone Pinch Me’",
+        "summary": "Shakira와 관련된 주요 음악 업계 소식이 전해졌다. Shakira Closes Historic Madrid Residency With Maluma, Bizarr...",
+        "url": "https://www.billboard.com/music/latin/shakira-final-concert-madrid-residency-maluma-bizarrap-1236359605/",
+        "published_date": "2026-10-13 01:35:46",
+        "category": "interview",
+        "source": "www.billboard.com"
+      },
+      {
+        "title": "RJ Mitte Remembered by Breaking Bad’s Bryan Cranston, Aaron Paul: “I Am in Deep Despair”",
+        "summary": "RJ와 관련된 주요 음악 업계 소식이 전해졌다. RJ Mitte Remembered by Breaking Bad’s Bryan Cranston, Aaron ...",
+        "url": "https://consequence.net/2026/10/rj-mitte-death-celebrity-reactions-tributes/",
+        "published_date": "2026-10-13 00:48:29",
+        "category": "interview",
+        "source": "consequenceofsound.net"
+      },
+      {
+        "title": "Taylor Swift, Meet The Beatles: How This Dynamic Duo Tells the Story of Now & Then on the Billboard Charts",
+        "summary": "Taylor Swift,가 음악 차트에서 주목할 만한 성과를 기록했다. 이번 차트 진입은 아티스트의 상업적 성공을 입증한다.",
+        "url": "https://www.billboard.com/media/podcasts/taylor-swift-beatles-chart-history-pop-shop-podcast-1236359335/",
+        "published_date": "2026-10-13 00:42:05",
+        "category": "interview",
+        "source": "www.billboard.com"
+      },
+      {
+        "title": "Metallica’s James Hetfield Has a Message for Entertainers Who Bring Their ‘Bullsh–‘ Agenda to the Stage",
+        "summary": "Metallica’s와 관련된 주요 음악 업계 소식이 전해졌다. Metallica’s James Hetfield Has a Message for Entertainers Wh...",
+        "url": "https://www.billboard.com/music/rock/metallica-james-hetfield-las-vegas-sphere-politics-music-1236359568/",
+        "published_date": "2026-10-13 00:26:07",
+        "category": "interview",
+        "source": "www.billboard.com"
+      },
+      {
+        "title": "BTS & BIGBANG Lead Nominations for 2026 MAMA Awards: Full List",
+        "summary": "BTS와 관련된 주요 음악 업계 소식이 전해졌다. BTS & BIGBANG Lead Nominations for 2026 MAMA Awards: Full Li...",
+        "url": "https://www.billboard.com/music/awards/2026-mama-awards-nominations-full-list-bts-bigbang-1236359513/",
+        "published_date": "2026-10-12 23:41:52",
+        "category": "interview",
+        "source": "www.billboard.com"
+      },
+      {
+        "title": "Kacey Musgraves Is Dogging Kristi Noem After Trump Appointee Says She’d Take Ella Langley Over Kacey ‘Any Day’",
+        "summary": "Kacey와 관련된 주요 음악 업계 소식이 전해졌다. Kacey Musgraves Is Dogging Kristi Noem After Trump Appointee...",
+        "url": "https://www.billboard.com/music/country/kacey-musgraves-kristi-noem-james-talarico-clap-back-1236359512/",
+        "published_date": "2026-10-12 23:24:59",
+        "category": "interview",
+        "source": "www.billboard.com"
+      },
+      {
+        "title": "Kacey Musgraves Puts Kristi Noem in the Dog House After Petty Jab",
+        "summary": "Kacey와 관련된 주요 음악 업계 소식이 전해졌다. Kacey Musgraves Puts Kristi Noem in the Dog House After Pett...",
+        "url": "https://www.rollingstone.com/music/music-news/kacey-musgraves-kristi-noem-james-talarico-concert-1235641690/",
+        "published_date": "2026-10-12 23:03:20",
+        "category": "interview",
+        "source": "www.rollingstone.com"
+      },
+      {
+        "title": "BTS Gets Competitive With a Pickleball Tournament in New ‘Run BTS 2.0’ Episode",
+        "summary": "BTS의 라이브 공연 관련 소식이 전해졌다. 콘서트 티켓과 일정 정보가 업데이트되었다.",
+        "url": "https://www.billboard.com/music/music-news/bts-pickleball-run-bts-20-episode-1236359482/",
+        "published_date": "2026-10-12 22:44:09",
+        "category": "interview",
+        "source": "www.billboard.com"
+      },
+      {
+        "title": "Catalog Is Surging On Spotify – Making Frontline Hits An Even Harder Game",
+        "summary": "Catalog와 관련된 주요 음악 업계 소식이 전해졌다. Catalog Is Surging On Spotify – Making Frontline Hits An Eve...",
+        "url": "https://www.musicbusinessworldwide.com/catalog-surging-on-spotify-making-frontline-hits-an-even-harder-game/",
+        "published_date": "2026-10-12 22:16:33",
+        "category": "interview",
+        "source": "www.musicbusinessworldwide.com"
+      },
+      {
+        "title": "Head Trip 2026 Was (Accidentally) the Craziest One-Night Lineup in EDM History: Seven Takeaways From the Historic Festival",
+        "summary": "Head와 관련된 주요 음악 업계 소식이 전해졌다. Head Trip 2026 Was (Accidentally) the Craziest One-Night Lin...",
+        "url": "https://www.billboard.com/lists/head-trip-festival-recap-skrillex-calvin-harris-coachella/",
+        "published_date": "2026-10-12 22:16:08",
+        "category": "interview",
+        "source": "www.billboard.com"
+      },
+      {
+        "title": "Kacey Musgraves Bodies Kristi Noem",
+        "summary": "Kacey와 관련된 주요 음악 업계 소식이 전해졌다. Kacey Musgraves Bodies Kristi Noem",
+        "url": "https://consequence.net/2026/10/kacey-musgraves-kristi-noem-murdered/",
+        "published_date": "2026-10-12 22:07:57",
+        "category": "interview",
+        "source": "consequenceofsound.net"
+      },
+      {
+        "title": "DistroKid Removed Songs From Streaming Platforms in Response to UMG Copyright Suit",
+        "summary": "DistroKid Removed가 새로운 싱글을 발표했다. 새 곡은 아티스트의 음악적 진화를 보여주는 작품으로 평가받고 있다.",
+        "url": "https://www.rollingstone.com/music/music-news/distrokid-removed-music-response-umg-lawsuit-1235641464/",
+        "published_date": "2026-10-12 21:18:01",
+        "category": "interview",
+        "source": "www.rollingstone.com"
+      },
+      {
+        "title": "Breaking Bad’s RJ Mitte Dead at 34",
+        "summary": "Breaking와 관련된 주요 음악 업계 소식이 전해졌다. Breaking Bad’s RJ Mitte Dead at 34",
+        "url": "https://consequence.net/2026/10/rj-mitte-dead-breaking-bad-obituary/",
+        "published_date": "2026-10-12 20:33:07",
+        "category": "interview",
+        "source": "consequenceofsound.net"
+      },
+      {
+        "title": "Behemoth and Dimmu Borgir’s Shagrath Honor Cronos with Live Venom Cover: Watch",
+        "summary": "Behemoth의 라이브 공연 관련 소식이 전해졌다. 콘서트 티켓과 일정 정보가 업데이트되었다.",
+        "url": "https://consequence.net/2026/10/behemoth-debut-venom-cover-live/",
+        "published_date": "2026-10-12 20:25:58",
+        "category": "interview",
+        "source": "consequenceofsound.net"
+      },
+      {
+        "title": "Zach Bryan Announces New EP Featuring Lana Del Rey and Turnpike Troubadours",
+        "summary": "Zach Bryan가 새 앨범 발매 소식을 공개했다. 이번 릴리스는 팬들과 음악 업계의 큰 관심을 받고 있다.",
+        "url": "https://consequence.net/2026/10/zach-bryan-announces-new-ep-featuring-lana-del-rey-and-turnpike-troubadours/",
+        "published_date": "2026-10-12 20:21:49",
+        "category": "interview",
+        "source": "consequenceofsound.net"
+      },
+      {
+        "title": "Anthrax’s Frank Bello Is All-In for More “Big Four” Shows: “Talk to Metallica”",
+        "summary": "Anthrax’s와 관련된 주요 음악 업계 소식이 전해졌다. Anthrax’s Frank Bello Is All-In for More “Big Four” Shows: “...",
+        "url": "https://consequence.net/2026/10/anthrax-frank-bello-big-four-shows/",
+        "published_date": "2026-10-12 19:59:17",
+        "category": "interview",
+        "source": "consequenceofsound.net"
+      },
+      {
+        "title": "Yttling Jazz & Chrissie Hynde – “People Are Strange” (The Doors Cover)",
+        "summary": "Yttling와 관련된 주요 음악 업계 소식이 전해졌다. Yttling Jazz & Chrissie Hynde – “People Are Strange” (The Do...",
+        "url": "https://stereogum.com/2514375/yttling-jazz-chrissie-hynde-people-are-strange-the-doors-cover/music/",
+        "published_date": "2026-10-12 19:46:23",
+        "category": "interview",
+        "source": "www.stereogum.com"
+      },
+      {
+        "title": "Don Henley Is Spending Big to Help Democrats Win in Texas",
+        "summary": "Don와 관련된 주요 음악 업계 소식이 전해졌다. Don Henley Is Spending Big to Help Democrats Win in Texas",
+        "url": "https://consequence.net/2026/10/don-henley-is-spending-big-to-help-democrats-win-in-texas/",
+        "published_date": "2026-10-12 19:36:40",
+        "category": "interview",
+        "source": "consequenceofsound.net"
+      },
+      {
+        "title": "Songwriters drop ‘alright, alright, alright’ sample lawsuit against Travis Scott and Sony Music",
+        "summary": "Songwriters drop가 새로운 싱글을 발표했다. 새 곡은 아티스트의 음악적 진화를 보여주는 작품으로 평가받고 있다.",
+        "url": "https://www.musicbusinessworldwide.com/songwriters-drop-alright-alright-alright-sample-lawsuit-against-travis-scott-and-sony-music/",
+        "published_date": "2026-10-12 19:12:28",
+        "category": "interview",
+        "source": "www.musicbusinessworldwide.com"
+      },
+      {
+        "title": "Spotify launches Spotify Technology to sell its internal software tools to other companies, says the brand is ‘becoming the R&D operating system’",
+        "summary": "Spotify와 관련된 주요 음악 업계 소식이 전해졌다. Spotify launches Spotify Technology to sell its internal sof...",
+        "url": "https://www.musicbusinessworldwide.com/spotify-launches-spotify-technology-to-sell-its-internal-software-tools-to-other-companies-says-the-brand-is-becoming-the-rd-operating-system/",
+        "published_date": "2026-10-12 19:12:15",
+        "category": "interview",
+        "source": "www.musicbusinessworldwide.com"
+      },
+      {
+        "title": "VisionQuest Is a Bittersweet Farewell to an Era of Marvel TV: Review",
+        "summary": "VisionQuest와 관련된 주요 음악 업계 소식이 전해졌다. VisionQuest Is a Bittersweet Farewell to an Era of Marvel TV...",
+        "url": "https://consequence.net/2026/10/visionquest-review-marvel-mcu-disney-plus/",
+        "published_date": "2026-10-12 19:00:25",
+        "category": "interview",
+        "source": "consequenceofsound.net"
+      },
+      {
+        "title": "Taylor Kraemer Splits With VIAL",
+        "summary": "Taylor와 관련된 주요 음악 업계 소식이 전해졌다. Taylor Kraemer Splits With VIAL",
+        "url": "https://stereogum.com/2514366/taylor-kraemer-splits-with-vial/news/",
+        "published_date": "2026-10-12 18:52:52",
+        "category": "interview",
+        "source": "www.stereogum.com"
+      },
+      {
+        "title": "Doechii Revives Her “Swamp Sessions” Series With New Song “Bombs”",
+        "summary": "Doechii와 관련된 주요 음악 업계 소식이 전해졌다. Doechii Revives Her “Swamp Sessions” Series With New Song “B...",
+        "url": "https://pitchfork.com/story/doechii-revives-her-swamp-sessions-series-with-new-song-bombs/",
+        "published_date": "2026-10-12 18:38:25",
+        "category": "interview",
+        "source": "pitchfork.com"
+      },
+      {
+        "title": "Rosalía Joins Fontaines D.C. on the Aching Orchestral Ballad ‘Where Is Gone?’",
+        "summary": "Rosalía Joins와 관련된 주요 음악 업계 소식이 전해졌다. Rosalía Joins Fontaines D.C. on the Aching Orchestral Ballad...",
+        "url": "https://www.rollingstone.com/music/music-news/fontaines-dc-rosalia-where-is-gone-single-1235641130/",
+        "published_date": "2026-10-12 17:54:38",
+        "category": "interview",
+        "source": "www.rollingstone.com"
+      },
+      {
+        "title": "Doechii – “Bomb”",
+        "summary": "Doechii와 관련된 주요 음악 업계 소식이 전해졌다. Doechii – “Bomb”",
+        "url": "https://stereogum.com/2514359/doechii-bomb/music/",
+        "published_date": "2026-10-12 17:51:30",
+        "category": "interview",
+        "source": "www.stereogum.com"
+      },
+      {
+        "title": "Dave Lombardo Reflects on Slayer’s Reign in Blood: “It Still Gives Me Chills”",
+        "summary": "Dave와 관련된 주요 음악 업계 소식이 전해졌다. Dave Lombardo Reflects on Slayer’s Reign in Blood: “It Still...",
+        "url": "https://consequence.net/2026/10/dave-lombardo-reflects-reign-in-blood/",
+        "published_date": "2026-10-12 17:38:19",
+        "category": "interview",
+        "source": "consequenceofsound.net"
+      },
+      {
+        "title": "Fontaines D.C. – “Where Is Gone?” (Feat. Rosalía)",
+        "summary": "Fontaines의 새로운 협업 프로젝트 소식이 공개되었다. 음악 팬들의 기대감이 높아지고 있다.",
+        "url": "https://stereogum.com/2514317/fontaines-d-c-where-is-gone-feat-rosalia/music/",
+        "published_date": "2026-10-12 17:34:02",
+        "category": "interview",
+        "source": "www.stereogum.com"
+      },
+      {
+        "title": "Fontaines D.C. Recruit Rosalía for New Song “Where Is Gone?”",
+        "summary": "Fontaines D.C.가 새로운 싱글을 발표했다. 새 곡은 아티스트의 음악적 진화를 보여주는 작품으로 평가받고 있다.",
+        "url": "https://pitchfork.com/story/fontaines-dc-recruit-rosalia-for-new-song-where-is-gone/",
+        "published_date": "2026-10-12 17:32:37",
+        "category": "interview",
+        "source": "pitchfork.com"
+      },
+      {
+        "title": "Fontaines D.C. Release New Duet with Rosalía “Where Is Gone?”: Stream",
+        "summary": "Fontaines와 관련된 주요 음악 업계 소식이 전해졌다. Fontaines D.C. Release New Duet with Rosalía “Where Is Gone?...",
+        "url": "https://consequence.net/2026/10/fontaines-dc-rosalia-where-is-gone-new-song-stream/",
+        "published_date": "2026-10-12 17:30:16",
+        "category": "interview",
+        "source": "consequenceofsound.net"
+      },
+      {
+        "title": "KISS’ Gene Simmons Has Elon Musk and Donald Trump’s Phone Numbers: “I’m Kind of a Big Deal”",
+        "summary": "KISS’가 음악 차트에서 주목할 만한 성과를 기록했다. 상업적 성공을 입증하는 결과다.",
+        "url": "https://consequence.net/2026/10/kiss-gene-simmons-elon-musk-donald-trump-phone-numbers/",
+        "published_date": "2026-10-12 17:20:02",
+        "category": "interview",
+        "source": "consequenceofsound.net"
+      },
+      {
+        "title": "James Hetfield Shades Entertainers With Agendas “To Influence You With Their Bullshit”",
+        "summary": "James와 관련된 주요 음악 업계 소식이 전해졌다. James Hetfield Shades Entertainers With Agendas “To Influenc...",
+        "url": "https://stereogum.com/2514338/james-hetfield-shades-entertainers-with-political-agendas-at-metallicas-sphere-residency/news/",
+        "published_date": "2026-10-12 16:47:41",
+        "category": "interview",
+        "source": "www.stereogum.com"
+      },
+      {
+        "title": "American Motors – “Marlboro Miles”",
+        "summary": "American와 관련된 주요 음악 업계 소식이 전해졌다. American Motors – “Marlboro Miles”",
+        "url": "https://stereogum.com/2514340/american-motors-marlboro-miles/music/",
+        "published_date": "2026-10-12 16:42:13",
+        "category": "interview",
+        "source": "www.stereogum.com"
+      },
+      {
+        "title": "RZA, Ernest Dickerson, David Moreau, and Renee Zhan on V/H/S Mixtape, Killer Puppets, and Sampling Death Itself: Podcast",
+        "summary": "RZA,와 관련된 주요 음악 업계 소식이 전해졌다. RZA, Ernest Dickerson, David Moreau, and Renee Zhan on V/H/S...",
+        "url": "https://consequence.net/2026/10/vhs-mixtape-rza-ernest-dickerson-david-moreau-renee-zhan/",
+        "published_date": "2026-10-12 16:41:33",
+        "category": "interview",
+        "source": "consequenceofsound.net"
+      },
+      {
+        "title": "Sienna Spiro to Kick Off 2026 “My House” Tour: How to Get Last-Minute Tickets",
+        "summary": "Sienna의 라이브 공연 관련 소식이 전해졌다. 콘서트 티켓과 일정 정보가 업데이트되었다.",
+        "url": "https://consequence.net/2026/10/sienna-spiro-my-house-2026-tour-last-minute-tickets/",
+        "published_date": "2026-10-12 16:25:39",
+        "category": "interview",
+        "source": "consequenceofsound.net"
+      },
+      {
+        "title": "Sony’s WH-1000XM5, Our Best Overall Pick for Noise-Canceling Headphones, Is Still 50% Off",
+        "summary": "Sony’s와 관련된 주요 음악 업계 소식이 전해졌다. Sony’s WH-1000XM5, Our Best Overall Pick for Noise-Canceling...",
+        "url": "https://consequence.net/2026/10/sony-wh-1000xm5-headphones-amazon-deal-sale/",
+        "published_date": "2026-10-12 16:12:47",
+        "category": "interview",
+        "source": "consequenceofsound.net"
+      },
+      {
+        "title": "Spiral XP – “Faith Electric”",
+        "summary": "Spiral와 관련된 주요 음악 업계 소식이 전해졌다. Spiral XP – “Faith Electric”",
+        "url": "https://stereogum.com/2514330/spiral-xp-faith-electric/music/",
+        "published_date": "2026-10-12 16:07:44",
+        "category": "interview",
+        "source": "www.stereogum.com"
+      },
+      {
+        "title": "Britney Spears Just Released a 2001 Song She Wrote With Justin Timberlake",
+        "summary": "Britney Spears가 새로운 싱글을 발표했다. 새 곡은 아티스트의 음악적 진화를 보여주는 작품으로 평가받고 있다.",
+        "url": "https://www.rollingstone.com/music/music-news/unreleased-britney-spears-song-written-justin-timberlake-1235641215/",
+        "published_date": "2026-10-12 16:02:02",
+        "category": "interview",
+        "source": "www.rollingstone.com"
+      },
+      {
+        "title": "Mike Love and Al Jardine of the Beach Boys Play Simultaneous, Historic Shows",
+        "summary": "Mike와 관련된 주요 음악 업계 소식이 전해졌다. Mike Love and Al Jardine of the Beach Boys Play Simultaneous...",
+        "url": "https://www.rollingstone.com/music/music-news/mike-love-al-jardine-beach-boys-historic-shows-1235641223/",
+        "published_date": "2026-10-12 15:42:59",
+        "category": "interview",
+        "source": "www.rollingstone.com"
+      },
+      {
+        "title": "Haute & Freddy Are All Over The Carrie Series, Including A New Peter Gabriel Cover",
+        "summary": "Haute와 관련된 주요 음악 업계 소식이 전해졌다. Haute & Freddy Are All Over The Carrie Series, Including A N...",
+        "url": "https://stereogum.com/2514305/haute-freddy-are-all-over-the-carrie-series-including-a-new-peter-gabriel-cover/news/",
+        "published_date": "2026-10-12 15:22:35",
+        "category": "interview",
+        "source": "www.stereogum.com"
+      },
+      {
+        "title": "Watch Sunflower Bean’s Julia Cumming step in on bass for Wolf Alice as they support Olivia Rodrigo on US tour",
+        "summary": "Watch의 라이브 공연 관련 소식이 전해졌다. 콘서트 티켓과 일정 정보가 업데이트되었다.",
+        "url": "https://www.nme.com/news/music/watch-sunflower-bean-julia-cumming-step-in-wolf-alice-olivia-rodrigo-tour-3972977?utm_source=rss&utm_medium=rss&utm_campaign=watch-sunflower-bean-julia-cumming-step-in-wolf-alice-olivia-rodrigo-tour",
+        "published_date": "2026-10-12 15:06:50",
+        "category": "interview",
+        "source": "www.nme.com"
+      },
+      {
+        "title": "Lana Del Rey Returns To The Stage With “White Feather Hawk Tail Deer Hunter,” Stove",
+        "summary": "Lana의 새로운 협업 프로젝트 소식이 공개되었다. 음악 팬들의 기대감이 높아지고 있다.",
+        "url": "https://stereogum.com/2514292/lana-del-rey-returns-to-the-stage-with-white-feather-hawk-tail-deer-hunter-stove/news/",
+        "published_date": "2026-10-12 14:52:29",
+        "category": "interview",
+        "source": "www.stereogum.com"
+      },
+      {
+        "title": "Cornell Cancels Between Friends Concert Amid Cornell 7 Investigation",
+        "summary": "Cornell의 라이브 공연 관련 소식이 전해졌다. 콘서트 티켓과 일정 정보가 업데이트되었다.",
+        "url": "https://stereogum.com/2514306/cornell-cancels-concert-with-between-friends-amid-rape-investigation/news/",
+        "published_date": "2026-10-12 14:33:18",
+        "category": "interview",
+        "source": "www.stereogum.com"
+      },
+      {
+        "title": "Sombr Brings Out Lindsey Buckingham, Remakes “Homewrecker” With Nickel Creek",
+        "summary": "Sombr와 관련된 주요 음악 업계 소식이 전해졌다. Sombr Brings Out Lindsey Buckingham, Remakes “Homewrecker” W...",
+        "url": "https://stereogum.com/2514307/sombr-brings-out-lindsey-buckingham-remakes-homewrecker-with-nickel-creek/music/",
+        "published_date": "2026-10-12 14:28:23",
+        "category": "interview",
+        "source": "www.stereogum.com"
+      },
+      {
+        "title": "Pride and Power: Rolling Stone’s 2026 Latin Package",
+        "summary": "Pride와 관련된 주요 음악 업계 소식이 전해졌다. Pride and Power: Rolling Stone’s 2026 Latin Package",
+        "url": "https://www.rollingstone.com/music/music-news/latin-2026-shell-1235641090/",
+        "published_date": "2026-10-12 14:00:00",
+        "category": "interview",
+        "source": "www.rollingstone.com"
+      },
+      {
+        "title": "Kelly Clarkson Fires Back At Brooklyn Curiosity Shop",
+        "summary": "Kelly와 관련된 주요 음악 업계 소식이 전해졌다. Kelly Clarkson Fires Back At Brooklyn Curiosity Shop",
+        "url": "https://stereogum.com/2514293/kelly-clarkson-fires-back-at-brooklyn-curiosity-shop/news/",
+        "published_date": "2026-10-12 13:50:35",
+        "category": "interview",
+        "source": "www.stereogum.com"
+      }
+    ],
+    "insight": []
+  },
+  "summary": {
+    "total_count": 50,
+    "by_category": {
+      "interview": 50
+    },
+    "by_source": {
+      "consequenceofsound.net": 15,
+      "www.stereogum.com": 12,
+      "www.billboard.com": 10,
+      "www.rollingstone.com": 7,
+      "www.musicbusinessworldwide.com": 3,
+      "pitchfork.com": 2,
+      "www.nme.com": 1
+    },
+    "members_only_count": 0
+  }
+}
