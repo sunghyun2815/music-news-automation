@@ -1,0 +1,431 @@
+{
+  "metadata": {
+    "generated_at": "2026-10-15T05:30:08.697461",
+    "total_news": 50,
+    "last_updated": "2026-10-15T05:30:08.697469",
+    "version": "2.0",
+    "compatible_with": "NewsSection.tsx"
+  },
+  "news": {
+    "all_articles": [],
+    "news": [],
+    "interview": [
+      {
+        "title": "Rauw Alejandro and Camilo’s ‘Tattoo (Remix)’ Enters YouTube’s Billion Views Club",
+        "summary": "Rauw Alejandro와 관련된 주요 음악 업계 소식이 전해졌다. Rauw Alejandro and Camilo’s ‘Tattoo (Remix)’ Enters YouTube’...",
+        "url": "https://www.billboard.com/music/latin/rauw-alejandro-camilo-tattoo-remix-youtube-billion-views-1236361081/",
+        "published_date": "2026-10-15 03:53:43",
+        "category": "interview",
+        "source": "www.billboard.com"
+      },
+      {
+        "title": "Sienna Spiro to Perform at 2026 ARIA Awards",
+        "summary": "Sienna Spiro와 관련된 주요 음악 업계 소식이 전해졌다. Sienna Spiro to Perform at 2026 ARIA Awards",
+        "url": "https://www.billboard.com/music/awards/sienna-spiro-perform-2026-aria-awards-1236361069/",
+        "published_date": "2026-10-15 03:00:23",
+        "category": "interview",
+        "source": "www.billboard.com"
+      },
+      {
+        "title": "Former Recognition Music CEO Ben Katovsky Leaves Catalog Fund for Top Job at Pipeline",
+        "summary": "Former가 음악 차트에서 주목할 만한 성과를 기록했다. 상업적 성공을 입증하는 결과다.",
+        "url": "https://www.billboard.com/pro/former-recognition-music-ceo-ben-katovsky-joins-pipeline/",
+        "published_date": "2026-10-15 01:40:47",
+        "category": "interview",
+        "source": "www.billboard.com"
+      },
+      {
+        "title": "Carín León’s ‘Desde Que Te Tengo’ Is No. 1 on Latin Pop Airplay",
+        "summary": "Carín와 관련된 주요 음악 업계 소식이 전해졌다. Carín León’s ‘Desde Que Te Tengo’ Is No. 1 on Latin Pop Airp...",
+        "url": "https://www.billboard.com/music/chart-beat/carin-leon-desde-que-te-tengo-number-one-latin-pop-airplay-1236361057/",
+        "published_date": "2026-10-15 01:27:50",
+        "category": "interview",
+        "source": "www.billboard.com"
+      },
+      {
+        "title": "Watch Miranda Lambert Serenade Her Husband With New ‘Choosin’ Texas’ Lyrics for His Birthday: ‘He’s in Vegas, I Can Tell’",
+        "summary": "Watch와 관련된 주요 음악 업계 소식이 전해졌다. Watch Miranda Lambert Serenade Her Husband With New ‘Choosin...",
+        "url": "https://www.billboard.com/music/country/miranda-lambert-husband-birthday-choosin-texas-vegas-brendan-1236361049/",
+        "published_date": "2026-10-15 01:22:44",
+        "category": "interview",
+        "source": "www.billboard.com"
+      },
+      {
+        "title": "Drakeo the Ruler’s Mom Settles With Live Nation Over Rapper’s Killing at Music Festival",
+        "summary": "Drakeo의 라이브 공연 관련 소식이 전해졌다. 콘서트 티켓과 일정 정보가 업데이트되었다.",
+        "url": "https://www.rollingstone.com/music/music-news/drakeo-the-ruler-mom-settles-live-nation-wrongful-death-1235642809/",
+        "published_date": "2026-10-15 00:26:23",
+        "category": "interview",
+        "source": "www.rollingstone.com"
+      },
+      {
+        "title": "Music-Related Legislation Before Congress Right Now: Full List of Bills (UPDATING)",
+        "summary": "Music-Related Legislation와 관련된 주요 음악 업계 소식이 전해졌다. Music-Related Legislation Before Congress Right Now: Full Li...",
+        "url": "https://www.billboard.com/lists/music-related-bills-congress-now-list-legislation/",
+        "published_date": "2026-10-15 00:17:00",
+        "category": "interview",
+        "source": "www.billboard.com"
+      },
+      {
+        "title": "Bill Aimed at Promoting Music Tourism in U.S. Signed Into Law by President Trump",
+        "summary": "Bill의 라이브 공연 관련 소식이 전해졌다. 콘서트 티켓과 일정 정보가 업데이트되었다.",
+        "url": "https://www.billboard.com/pro/music-tourism-act-signed-law-president-donald-trump/",
+        "published_date": "2026-10-15 00:15:25",
+        "category": "interview",
+        "source": "www.billboard.com"
+      },
+      {
+        "title": "Ye Must Now Pay Over $300,000 to Construction Worker Injured During Malibu Mansion Build",
+        "summary": "Ye와 관련된 주요 음악 업계 소식이 전해졌다. Ye Must Now Pay Over $300,000 to Construction Worker Injured...",
+        "url": "https://www.billboard.com/pro/kanye-verdict-300k-malibu-mansion-construction-worker-trial/",
+        "published_date": "2026-10-14 23:32:49",
+        "category": "interview",
+        "source": "www.billboard.com"
+      },
+      {
+        "title": "Ben Katovsky joins Matt Spetzler’s Pipeline as CEO",
+        "summary": "Ben와 관련된 주요 음악 업계 소식이 전해졌다. Ben Katovsky joins Matt Spetzler’s Pipeline as CEO",
+        "url": "https://www.musicbusinessworldwide.com/ben-katovsky-joins-matt-spetzlers-pipeline-as-ceo/",
+        "published_date": "2026-10-14 23:01:08",
+        "category": "interview",
+        "source": "www.musicbusinessworldwide.com"
+      },
+      {
+        "title": "YouTube Music Rolls Out Labels for AI-Generated Content",
+        "summary": "YouTube와 관련된 주요 음악 업계 소식이 전해졌다. YouTube Music Rolls Out Labels for AI-Generated Content",
+        "url": "https://www.billboard.com/pro/youtube-music-adding-labels-ai-music/",
+        "published_date": "2026-10-14 22:51:07",
+        "category": "interview",
+        "source": "www.billboard.com"
+      },
+      {
+        "title": "Drakeo the Ruler’s Estate Settles With Live Nation, Others Over Fatal Festival Stabbing",
+        "summary": "Drakeo the가 새로운 투어 일정을 발표했다. 콘서트 관련 상세 정보는 공식 채널을 통해 확인할 수 있다.",
+        "url": "https://www.billboard.com/pro/drakeo-the-ruler-settles-live-nation-lawsuit-stabbing/",
+        "published_date": "2026-10-14 22:37:55",
+        "category": "interview",
+        "source": "www.billboard.com"
+      },
+      {
+        "title": "Chance the Rapper Wins Lingering Legal Fight With Ex-Manager: ‘Owed Him Loyalty’",
+        "summary": "Chance와 관련된 주요 음악 업계 소식이 전해졌다. Chance the Rapper Wins Lingering Legal Fight With Ex-Manager...",
+        "url": "https://www.rollingstone.com/music/music-news/chance-the-rapper-legal-fight-manager-pat-corcoran-1235642805/",
+        "published_date": "2026-10-14 22:27:15",
+        "category": "interview",
+        "source": "www.rollingstone.com"
+      },
+      {
+        "title": "Zach Bryan Announces ‘Young Manhood and Other Donatable Organs’ Tour Across North America and Australia",
+        "summary": "Zach가 새로운 투어 계획을 발표했다. 콘서트 일정이 곧 공개될 예정이다.",
+        "url": "https://www.rollingstone.com/music/music-news/zach-bryan-young-manhood-and-other-donatable-organs-tour-1235642872/",
+        "published_date": "2026-10-14 22:14:37",
+        "category": "interview",
+        "source": "www.rollingstone.com"
+      },
+      {
+        "title": "Woman Accusing Geordie Greep of Sexual Assault Alleges Singer Kissed Her While She Slept",
+        "summary": "Woman와 관련된 주요 음악 업계 소식이 전해졌다. Woman Accusing Geordie Greep of Sexual Assault Alleges Singe...",
+        "url": "https://www.rollingstone.com/music/music-news/geordie-greep-sexual-assault-allegations-detailed-victim-1235642784/",
+        "published_date": "2026-10-14 21:53:17",
+        "category": "interview",
+        "source": "www.rollingstone.com"
+      },
+      {
+        "title": "Zach Bryan Announces 2027 “Young Manhood and Other Donatable Organs Tour”",
+        "summary": "Zach가 새로운 투어 계획을 발표했다. 콘서트 일정이 곧 공개될 예정이다.",
+        "url": "https://consequence.net/2026/10/zach-bryan-2027-stadium-tour/",
+        "published_date": "2026-10-14 20:57:36",
+        "category": "interview",
+        "source": "consequenceofsound.net"
+      },
+      {
+        "title": "Geordie Greep Responds After Accuser and Former Bandmate Speak Out About Alleged Assault",
+        "summary": "Geordie와 관련된 주요 음악 업계 소식이 전해졌다. Geordie Greep Responds After Accuser and Former Bandmate Spe...",
+        "url": "https://consequence.net/2026/10/geordie-greep-responds-after-accuser-and-former-bandmate-speak-out-about-alleged-assault/",
+        "published_date": "2026-10-14 20:30:52",
+        "category": "interview",
+        "source": "consequenceofsound.net"
+      },
+      {
+        "title": "Christopher Nolan’s The Odyssey 4K Limited Edition Steelbook Now Available for Pre-Order",
+        "summary": "Christopher가 음악 차트에서 주목할 만한 성과를 기록했다. 상업적 성공을 입증하는 결과다.",
+        "url": "https://consequence.net/2026/10/the-odyssey-4k-steelbook-pre-order/",
+        "published_date": "2026-10-14 20:27:44",
+        "category": "interview",
+        "source": "consequenceofsound.net"
+      },
+      {
+        "title": "Geordie Greep Responds to Accuser’s Sexual Misconduct Allegations",
+        "summary": "Geordie와 관련된 주요 음악 업계 소식이 전해졌다. Geordie Greep Responds to Accuser’s Sexual Misconduct Allega...",
+        "url": "https://pitchfork.com/story/geordie-greep-responds-to-accusers-sexual-misconduct-allegations/",
+        "published_date": "2026-10-14 20:00:33",
+        "category": "interview",
+        "source": "pitchfork.com"
+      },
+      {
+        "title": "Mynolia – “Take The Mountain By Surprise”",
+        "summary": "Mynolia와 관련된 주요 음악 업계 소식이 전해졌다. Mynolia – “Take The Mountain By Surprise”",
+        "url": "https://stereogum.com/2514633/mynolia-take-the-mountain-by-surprise/music/",
+        "published_date": "2026-10-14 19:54:51",
+        "category": "interview",
+        "source": "www.stereogum.com"
+      },
+      {
+        "title": "Dijon and Mk.gee Are a Wedding Band Now",
+        "summary": "Dijon와 관련된 주요 음악 업계 소식이 전해졌다. Dijon and Mk.gee Are a Wedding Band Now",
+        "url": "https://pitchfork.com/story/dijon-and-mkgee-are-a-wedding-band-now/",
+        "published_date": "2026-10-14 19:24:17",
+        "category": "interview",
+        "source": "pitchfork.com"
+      },
+      {
+        "title": "Danny Elfman and Filter’s Richard Patrick on New Albums, Film Scores, and Getting Heavier: Podcast",
+        "summary": "Danny와 관련된 주요 음악 업계 소식이 전해졌다. Danny Elfman and Filter’s Richard Patrick on New Albums, Fil...",
+        "url": "https://consequence.net/2026/10/danny-elfman-filter-richard-podcast/",
+        "published_date": "2026-10-14 19:07:14",
+        "category": "interview",
+        "source": "consequenceofsound.net"
+      },
+      {
+        "title": "Here’s exactly what Amazon, Spotify, Apple and other streaming services want to pay songwriters for 2028–2032",
+        "summary": "Here’s exactly가 새로운 싱글을 발표했다. 새 곡은 아티스트의 음악적 진화를 보여주는 작품으로 평가받고 있다.",
+        "url": "https://www.musicbusinessworldwide.com/heres-exactly-what-amazon-spotify-apple-and-other-streaming-services-want-to-pay-songwriters-for-2028-2032/",
+        "published_date": "2026-10-14 19:03:58",
+        "category": "interview",
+        "source": "www.musicbusinessworldwide.com"
+      },
+      {
+        "title": "June McDoom – “Human Angel”",
+        "summary": "June와 관련된 주요 음악 업계 소식이 전해졌다. June McDoom – “Human Angel”",
+        "url": "https://stereogum.com/2514622/june-mcdoom-human-angel/music/",
+        "published_date": "2026-10-14 18:57:37",
+        "category": "interview",
+        "source": "www.stereogum.com"
+      },
+      {
+        "title": "Al Jardine Left “Speechless” After Seeing Mike Love Perform Amid Health Issues",
+        "summary": "Al와 관련된 주요 음악 업계 소식이 전해졌다. Al Jardine Left “Speechless” After Seeing Mike Love Perform ...",
+        "url": "https://consequence.net/2026/10/al-jardine-speechless-mike-love-health-recent-shows/",
+        "published_date": "2026-10-14 18:56:29",
+        "category": "interview",
+        "source": "consequenceofsound.net"
+      },
+      {
+        "title": "Jim Roppo named Vice Chairman of Warner Records Group",
+        "summary": "Jim와 관련된 주요 음악 업계 소식이 전해졌다. Jim Roppo named Vice Chairman of Warner Records Group",
+        "url": "https://www.musicbusinessworldwide.com/jim-roppo-named-vice-chairman-of-warner-records-group/",
+        "published_date": "2026-10-14 18:55:33",
+        "category": "interview",
+        "source": "www.musicbusinessworldwide.com"
+      },
+      {
+        "title": "Sean “Diddy” Combs Sustained Head Injury in Prison Fight with Jamaican Drug Lord: Report",
+        "summary": "Sean와 관련된 주요 음악 업계 소식이 전해졌다. Sean “Diddy” Combs Sustained Head Injury in Prison Fight wit...",
+        "url": "https://consequence.net/2026/10/sean-diddy-combs-injured-prison-fight-jamaican-drug-lord/",
+        "published_date": "2026-10-14 18:43:47",
+        "category": "interview",
+        "source": "consequenceofsound.net"
+      },
+      {
+        "title": "Shygirl – “Mantra”",
+        "summary": "Shygirl와 관련된 주요 음악 업계 소식이 전해졌다. Shygirl – “Mantra”",
+        "url": "https://stereogum.com/2514614/shygirl-mantra/music/",
+        "published_date": "2026-10-14 18:28:10",
+        "category": "interview",
+        "source": "www.stereogum.com"
+      },
+      {
+        "title": "Summer Walker Sues Label For Fraud",
+        "summary": "Summer와 관련된 주요 음악 업계 소식이 전해졌다. Summer Walker Sues Label For Fraud",
+        "url": "https://stereogum.com/2514603/summer-walker-sues-label-for-fraud/news/",
+        "published_date": "2026-10-14 18:09:53",
+        "category": "interview",
+        "source": "www.stereogum.com"
+      },
+      {
+        "title": "Joe Glass – “outontouragain”",
+        "summary": "Joe의 라이브 공연 관련 소식이 전해졌다. 콘서트 티켓과 일정 정보가 업데이트되었다.",
+        "url": "https://stereogum.com/2514607/joe-glass-outontouragain/music/",
+        "published_date": "2026-10-14 18:09:10",
+        "category": "interview",
+        "source": "www.stereogum.com"
+      },
+      {
+        "title": "Geordie Greep’s Alleged Victim Speaks Out, Greep Responds",
+        "summary": "Geordie와 관련된 주요 음악 업계 소식이 전해졌다. Geordie Greep’s Alleged Victim Speaks Out, Greep Responds",
+        "url": "https://stereogum.com/2514604/geordie-greeps-alleged-victim-speaks-out-keyboardist-quits/news/",
+        "published_date": "2026-10-14 18:04:21",
+        "category": "interview",
+        "source": "www.stereogum.com"
+      },
+      {
+        "title": "26 Songs I Want to Hear in the Girls Reboot",
+        "summary": "26와 관련된 주요 음악 업계 소식이 전해졌다. 26 Songs I Want to Hear in the Girls Reboot",
+        "url": "https://pitchfork.com/story/26-songs-i-want-to-hear-in-the-girls-reboot/",
+        "published_date": "2026-10-14 17:48:21",
+        "category": "interview",
+        "source": "pitchfork.com"
+      },
+      {
+        "title": "Yangze – “F*** No”",
+        "summary": "Yangze와 관련된 주요 음악 업계 소식이 전해졌다. Yangze – “F*** No”",
+        "url": "https://stereogum.com/2514597/yangze-f-no/music/",
+        "published_date": "2026-10-14 17:35:09",
+        "category": "interview",
+        "source": "www.stereogum.com"
+      },
+      {
+        "title": "Kanye West Slapped With Nearly $200,000 in Legal Fees and Costs in Malibu Mansion Fiasco",
+        "summary": "Kanye와 관련된 주요 음악 업계 소식이 전해졌다. Kanye West Slapped With Nearly $200,000 in Legal Fees and Co...",
+        "url": "https://www.rollingstone.com/music/music-news/kanye-west-tony-saxon-malibu-mansion-dispute-1235642498/",
+        "published_date": "2026-10-14 17:32:53",
+        "category": "interview",
+        "source": "www.rollingstone.com"
+      },
+      {
+        "title": "Def Leppard’s Phil Collen Praises Mexico’s The Warning While Calling Out Sexism in Rock",
+        "summary": "Def와 관련된 주요 음악 업계 소식이 전해졌다. Def Leppard’s Phil Collen Praises Mexico’s The Warning While...",
+        "url": "https://consequence.net/2026/10/def-leppards-phil-collen-praises-the-warning/",
+        "published_date": "2026-10-14 17:29:58",
+        "category": "interview",
+        "source": "consequenceofsound.net"
+      },
+      {
+        "title": "John Errol – “Like It Like That”",
+        "summary": "John와 관련된 주요 음악 업계 소식이 전해졌다. John Errol – “Like It Like That”",
+        "url": "https://stereogum.com/2514593/john-errol-like-it-like-that/music/",
+        "published_date": "2026-10-14 17:26:46",
+        "category": "interview",
+        "source": "www.stereogum.com"
+      },
+      {
+        "title": "Winona Fighter Announce New Album Brutal & Extremely Underrated, 2027 Tour Dates",
+        "summary": "Winona Fighter가 새 앨범 발매 소식을 공개했다. 이번 릴리스는 팬들과 음악 업계의 큰 관심을 받고 있다.",
+        "url": "https://consequence.net/2026/10/winona-fighter-new-album-brutal-extremely-underrated/",
+        "published_date": "2026-10-14 17:25:48",
+        "category": "interview",
+        "source": "consequenceofsound.net"
+      },
+      {
+        "title": "Slash: Guns N’ Roses Taking 2027 Off from Touring with Hopes of Working on New Music",
+        "summary": "Slash:의 라이브 공연 관련 소식이 전해졌다. 콘서트 티켓과 일정 정보가 업데이트되었다.",
+        "url": "https://consequence.net/2026/10/slash-guns-n-roses-2027-no-tour-new-music/",
+        "published_date": "2026-10-14 17:24:01",
+        "category": "interview",
+        "source": "consequenceofsound.net"
+      },
+      {
+        "title": "Summer Walker Sues Label and Management for Fraud",
+        "summary": "Summer와 관련된 주요 음악 업계 소식이 전해졌다. Summer Walker Sues Label and Management for Fraud",
+        "url": "https://pitchfork.com/story/summer-walker-sues-label-and-management-for-fraud/",
+        "published_date": "2026-10-14 17:09:49",
+        "category": "interview",
+        "source": "pitchfork.com"
+      },
+      {
+        "title": "Adéla Defends Rachel Chinouriri After Fan Ripped Down Promo Posters",
+        "summary": "Adéla와 관련된 주요 음악 업계 소식이 전해졌다. Adéla Defends Rachel Chinouriri After Fan Ripped Down Promo ...",
+        "url": "https://www.rollingstone.com/music/music-news/adela-defends-rachel-chinouriri-ripped-down-posters-1235642465/",
+        "published_date": "2026-10-14 17:06:57",
+        "category": "interview",
+        "source": "www.rollingstone.com"
+      },
+      {
+        "title": "Vehicle Announce Debut Album Fumes: Hear “Miserable Vibes”",
+        "summary": "Vehicle와 관련된 주요 음악 업계 소식이 전해졌다. Vehicle Announce Debut Album Fumes: Hear “Miserable Vibes”",
+        "url": "https://stereogum.com/2514588/vehicle-announce-debut-album-fumes-hear-miserable-vibes/music/",
+        "published_date": "2026-10-14 16:39:31",
+        "category": "interview",
+        "source": "www.stereogum.com"
+      },
+      {
+        "title": "YouTube Music starts labeling AI-generated songs, using partner disclosures and its own detection tools",
+        "summary": "YouTube Music가 새로운 싱글을 발표했다. 새 곡은 아티스트의 음악적 진화를 보여주는 작품으로 평가받고 있다.",
+        "url": "https://www.musicbusinessworldwide.com/youtube-music-starts-labeling-ai-generated-songs-using-partner-disclosures-and-its-own-detection-tools/",
+        "published_date": "2026-10-14 16:37:08",
+        "category": "interview",
+        "source": "www.musicbusinessworldwide.com"
+      },
+      {
+        "title": "Yummm Announce New Album Sillyputty: Hear “Plug” & “Yarrow”",
+        "summary": "Yummm와 관련된 주요 음악 업계 소식이 전해졌다. Yummm Announce New Album Sillyputty: Hear “Plug” & “Yarrow”",
+        "url": "https://stereogum.com/2514580/yummm-announce-new-album-sillyputty-hear-plug-yarrow/music/",
+        "published_date": "2026-10-14 16:26:11",
+        "category": "interview",
+        "source": "www.stereogum.com"
+      },
+      {
+        "title": "Multiple layoffs at Universal Music Group, as $270M cost-cutting program continues",
+        "summary": "Multiple와 관련된 주요 음악 업계 소식이 전해졌다. Multiple layoffs at Universal Music Group, as $270M cost-cut...",
+        "url": "https://www.musicbusinessworldwide.com/multiple-layoffs-at-universal-cutting-program-continues/",
+        "published_date": "2026-10-14 16:23:53",
+        "category": "interview",
+        "source": "www.musicbusinessworldwide.com"
+      },
+      {
+        "title": "Catherine Elicson – “I’m On Fire” & “All Sound”",
+        "summary": "Catherine와 관련된 주요 음악 업계 소식이 전해졌다. Catherine Elicson – “I’m On Fire” & “All Sound”",
+        "url": "https://stereogum.com/2514583/catherine-elicson-im-on-fire-all-sound/music/",
+        "published_date": "2026-10-14 16:15:56",
+        "category": "interview",
+        "source": "www.stereogum.com"
+      },
+      {
+        "title": "The Rolling Stones’ Release Date for ‘Foreign Tongues’ Deluxe Edition",
+        "summary": "The와 관련된 주요 음악 업계 소식이 전해졌다. The Rolling Stones’ Release Date for ‘Foreign Tongues’ Delux...",
+        "url": "https://www.rollingstone.com/music/music-news/the-rolling-stones-announce-foreign-tongues-deluxe-edition-1235642496/",
+        "published_date": "2026-10-14 16:12:21",
+        "category": "interview",
+        "source": "www.rollingstone.com"
+      },
+      {
+        "title": "Ballet Experts Suspect a Trick Behind Rosalía’s En Pointe SNL Performance, but They’re Not Complaining",
+        "summary": "Ballet와 관련된 주요 음악 업계 소식이 전해졌다. Ballet Experts Suspect a Trick Behind Rosalía’s En Pointe SN...",
+        "url": "https://consequence.net/2026/10/ballet-experts-suspect-trick-rosalia-snl/",
+        "published_date": "2026-10-14 16:09:57",
+        "category": "interview",
+        "source": "consequenceofsound.net"
+      },
+      {
+        "title": "Taylor Swift expands voice trademark filings to the UK, EU, and Australia",
+        "summary": "Taylor와 관련된 주요 음악 업계 소식이 전해졌다. Taylor Swift expands voice trademark filings to the UK, EU, ...",
+        "url": "https://www.musicbusinessworldwide.com/taylor-swift-expands-voice-trademark-filings-to-the-uk-eu-and-australia-amid-ai-deepfake-crackdown/",
+        "published_date": "2026-10-14 16:08:00",
+        "category": "interview",
+        "source": "www.musicbusinessworldwide.com"
+      },
+      {
+        "title": "The Very Freaky Whalefall Confirms That Getting Swallowed by a Whale Is No Fun: Review",
+        "summary": "The와 관련된 주요 음악 업계 소식이 전해졌다. The Very Freaky Whalefall Confirms That Getting Swallowed by...",
+        "url": "https://consequence.net/2026/10/whalefall-review-austin-abrams/",
+        "published_date": "2026-10-14 16:00:29",
+        "category": "interview",
+        "source": "consequenceofsound.net"
+      },
+      {
+        "title": "Land Of Talk – “Dogs” & “Cats”",
+        "summary": "Land와 관련된 주요 음악 업계 소식이 전해졌다. Land Of Talk – “Dogs” & “Cats”",
+        "url": "https://stereogum.com/2514576/land-of-talk-dogs-cats/music/",
+        "published_date": "2026-10-14 15:59:10",
+        "category": "interview",
+        "source": "www.stereogum.com"
+      }
+    ],
+    "insight": []
+  },
+  "summary": {
+    "total_count": 50,
+    "by_category": {
+      "interview": 50
+    },
+    "by_source": {
+      "www.stereogum.com": 12,
+      "consequenceofsound.net": 11,
+      "www.billboard.com": 10,
+      "www.rollingstone.com": 7,
+      "www.musicbusinessworldwide.com": 6,
+      "pitchfork.com": 4
+    },
+    "members_only_count": 0
+  }
+}
