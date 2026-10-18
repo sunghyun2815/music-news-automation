@@ -1,0 +1,431 @@
+{
+  "metadata": {
+    "generated_at": "2026-10-18T05:20:50.688954",
+    "total_news": 50,
+    "last_updated": "2026-10-18T05:20:50.688961",
+    "version": "2.0",
+    "compatible_with": "NewsSection.tsx"
+  },
+  "news": {
+    "all_articles": [],
+    "news": [],
+    "interview": [
+      {
+        "title": "SNL UK Mocks Recent SNL Host Shane Gillis",
+        "summary": "SNL와 관련된 주요 음악 업계 소식이 전해졌다. SNL UK Mocks Recent SNL Host Shane Gillis",
+        "url": "https://consequence.net/2026/10/snl-uk-mocks-recent-snl-host-shane-gillis/",
+        "published_date": "2026-10-18 01:51:35",
+        "category": "interview",
+        "source": "consequenceofsound.net"
+      },
+      {
+        "title": "Eminem Defends New Collaboration With ‘Old Friend’ Kid Rock: ‘Not About Choosing Sides’",
+        "summary": "Eminem Defends와 관련된 주요 음악 업계 소식이 전해졌다. Eminem Defends New Collaboration With ‘Old Friend’ Kid Rock:...",
+        "url": "https://www.rollingstone.com/music/music-news/eminem-defends-kid-rock-collaboration-1235644386/",
+        "published_date": "2026-10-17 20:01:03",
+        "category": "interview",
+        "source": "www.rollingstone.com"
+      },
+      {
+        "title": "Wynonna Judd Doesn’t Think Politics Belong at Her Concerts",
+        "summary": "Wynonna의 라이브 공연 관련 소식이 전해졌다. 콘서트 티켓과 일정 정보가 업데이트되었다.",
+        "url": "https://consequence.net/2026/10/wynonna-judd-doesnt-think-politics-belong-at-her-concerts/",
+        "published_date": "2026-10-17 20:00:22",
+        "category": "interview",
+        "source": "consequenceofsound.net"
+      },
+      {
+        "title": "Zach Bryan Gets Candid About Sobriety in Matthew McConaughey Interview: ‘Why Am I Drinking?’",
+        "summary": "Zach와 관련된 주요 음악 업계 소식이 전해졌다. Zach Bryan Gets Candid About Sobriety in Matthew McConaughey...",
+        "url": "https://www.billboard.com/music/country/zach-bryan-sobriety-matthew-mcconaughey-interview-1236362369/",
+        "published_date": "2026-10-17 19:28:02",
+        "category": "interview",
+        "source": "www.billboard.com"
+      },
+      {
+        "title": "Eminem Defends New Kid Rock Collaboration",
+        "summary": "Eminem의 새로운 협업 프로젝트 소식이 공개되었다. 음악 팬들의 기대감이 높아지고 있다.",
+        "url": "https://stereogum.com/2514883/eminem-defends-new-kid-rock-collaboration/news/",
+        "published_date": "2026-10-17 18:06:41",
+        "category": "interview",
+        "source": "www.stereogum.com"
+      },
+      {
+        "title": "Iron Maiden Announce 2027 Run for Your Lives North American Tour: See the Dates",
+        "summary": "Iron의 라이브 공연 관련 소식이 전해졌다. 콘서트 티켓과 일정 정보가 업데이트되었다.",
+        "url": "https://www.billboard.com/music/rock/iron-maiden-2027-north-american-tour-dates-1236362365/",
+        "published_date": "2026-10-17 17:52:08",
+        "category": "interview",
+        "source": "www.billboard.com"
+      },
+      {
+        "title": "Iron Maiden Announce Surprise 2027 North American Tour",
+        "summary": "Iron의 라이브 공연 관련 소식이 전해졌다. 콘서트 티켓과 일정 정보가 업데이트되었다.",
+        "url": "https://www.rollingstone.com/music/music-news/iron-maiden-surprise-2027-north-american-tour-1235644371/",
+        "published_date": "2026-10-17 16:34:08",
+        "category": "interview",
+        "source": "www.rollingstone.com"
+      },
+      {
+        "title": "Bette Midler Accepts 2026 Woody Guthrie Prize, Sings Protest Classic: ‘My Small Contribution to the Resistance’",
+        "summary": "Bette와 관련된 주요 음악 업계 소식이 전해졌다. Bette Midler Accepts 2026 Woody Guthrie Prize, Sings Protest...",
+        "url": "https://www.billboard.com/music/awards/bette-midler-woody-guthrie-prize-2026-accepts-performs-1236362345/",
+        "published_date": "2026-10-17 16:15:17",
+        "category": "interview",
+        "source": "www.billboard.com"
+      },
+      {
+        "title": "Geese’s “100 Horses” Is Terrorizing MLB The Show 26 Players",
+        "summary": "Geese’s와 관련된 주요 음악 업계 소식이 전해졌다. Geese’s “100 Horses” Is Terrorizing MLB The Show 26 Players",
+        "url": "https://consequence.net/2026/10/geeses-100-horses-is-terrorizing-mlb-the-show-26-players/",
+        "published_date": "2026-10-17 15:49:21",
+        "category": "interview",
+        "source": "consequenceofsound.net"
+      },
+      {
+        "title": "Eminem Defends Kid Rock Collab: “Just Choosing to Make Music with My Old Friend”",
+        "summary": "Eminem와 관련된 주요 음악 업계 소식이 전해졌다. Eminem Defends Kid Rock Collab: “Just Choosing to Make Music...",
+        "url": "https://consequence.net/2026/10/emimen-defends-kid-rock-collab/",
+        "published_date": "2026-10-17 15:34:06",
+        "category": "interview",
+        "source": "consequenceofsound.net"
+      },
+      {
+        "title": "Nice As Fuck Reunite For First Show In A Decade",
+        "summary": "Nice와 관련된 주요 음악 업계 소식이 전해졌다. Nice As Fuck Reunite For First Show In A Decade",
+        "url": "https://stereogum.com/2514878/nice-as-fuck-reunite-for-first-show-in-a-decade/news/",
+        "published_date": "2026-10-17 15:31:17",
+        "category": "interview",
+        "source": "www.stereogum.com"
+      },
+      {
+        "title": "Harry Styles Debuts Liam Payne Tribute Song, Films Doc With John Wilson",
+        "summary": "Harry와 관련된 주요 음악 업계 소식이 전해졌다. Harry Styles Debuts Liam Payne Tribute Song, Films Doc With ...",
+        "url": "https://stereogum.com/2514874/harry-styles-debuts-new-liam-payne-tribute-song-what-is-enough-at-msg/news/",
+        "published_date": "2026-10-17 15:11:03",
+        "category": "interview",
+        "source": "www.stereogum.com"
+      },
+      {
+        "title": "Harry Styles Debuts New Song Written for Liam Payne on Second Anniversary of His Death",
+        "summary": "Harry와 관련된 주요 음악 업계 소식이 전해졌다. Harry Styles Debuts New Song Written for Liam Payne on Secon...",
+        "url": "https://consequence.net/2026/10/harry-styles-debuts-new-song-written-for-liam-payne-on-second-anniversary-of-his-death/",
+        "published_date": "2026-10-17 15:04:21",
+        "category": "interview",
+        "source": "consequenceofsound.net"
+      },
+      {
+        "title": "Liam Gallagher Is Still Marding With Fontaines D.C.",
+        "summary": "Liam와 관련된 주요 음악 업계 소식이 전해졌다. Liam Gallagher Is Still Marding With Fontaines D.C.",
+        "url": "https://stereogum.com/2514869/liam-gallagher-is-still-marding-with-fontaines-d-c/news/",
+        "published_date": "2026-10-17 14:49:35",
+        "category": "interview",
+        "source": "www.stereogum.com"
+      },
+      {
+        "title": "Miley Cyrus Pays Tribute to Dolly Parton at Hollywood Bowl Comeback Concert",
+        "summary": "Miley의 라이브 공연 관련 소식이 전해졌다. 콘서트 티켓과 일정 정보가 업데이트되었다.",
+        "url": "https://consequence.net/2026/10/miley-cyrus-pays-tribute-to-dolly-parton-at-hollywood-bowl-comeback-concert/",
+        "published_date": "2026-10-17 14:25:58",
+        "category": "interview",
+        "source": "consequenceofsound.net"
+      },
+      {
+        "title": "Say Now Aren’t Flirting on New Single, They’re Just ‘Hot and Talking’",
+        "summary": "Say Now가 새로운 싱글을 발표했다. 새 곡은 아티스트의 음악적 진화를 보여주는 작품으로 평가받고 있다.",
+        "url": "https://www.rollingstone.com/music/music-news/say-now-new-single-hot-and-talking-1235642594/",
+        "published_date": "2026-10-17 14:00:00",
+        "category": "interview",
+        "source": "www.rollingstone.com"
+      },
+      {
+        "title": "Becky G Brings World Mental Health Day Festival to a Powerful Close in NYC & More Uplifting Moments",
+        "summary": "Becky와 관련된 주요 음악 업계 소식이 전해졌다. Becky G Brings World Mental Health Day Festival to a Powerfu...",
+        "url": "https://www.billboard.com/music/latin/becky-g-world-mental-health-day-latin-grammys-leading-ladies-1236360559/",
+        "published_date": "2026-10-17 14:00:00",
+        "category": "interview",
+        "source": "www.billboard.com"
+      },
+      {
+        "title": "Kid Rock Drops Christian Music Album with Eminem Collaboration “Heal My Faith”",
+        "summary": "Kid Rock가 새 앨범 발매 소식을 공개했다. 이번 릴리스는 팬들과 음악 업계의 큰 관심을 받고 있다.",
+        "url": "https://consequence.net/2026/10/kid-rock-christian-album-eminem/",
+        "published_date": "2026-10-17 13:28:30",
+        "category": "interview",
+        "source": "consequenceofsound.net"
+      },
+      {
+        "title": "Architects’ Sam Carter speaks out on impact “anxiety and constant focus” on his voice after online criticism",
+        "summary": "Architects’와 관련된 주요 음악 업계 소식이 전해졌다. Architects’ Sam Carter speaks out on impact “anxiety and con...",
+        "url": "https://www.nme.com/news/music/architects-sam-carter-speaks-out-on-impact-anxiety-and-constant-focus-on-his-voice-after-online-criticism-3973426?utm_source=rss&utm_medium=rss&utm_campaign=architects-sam-carter-speaks-out-on-impact-anxiety-and-constant-focus-on-his-voice-after-online-criticism",
+        "published_date": "2026-10-17 11:12:13",
+        "category": "interview",
+        "source": "www.nme.com"
+      },
+      {
+        "title": "Watch Metallica share pro-shot footage of ‘…And Justice For All’ and ‘The Call Of Ktulu’ at Las Vegas Sphere residency",
+        "summary": "Watch와 관련된 주요 음악 업계 소식이 전해졌다. Watch Metallica share pro-shot footage of ‘…And Justice For ...",
+        "url": "https://www.nme.com/news/music/watch-metallica-share-pro-shot-footage-of-and-justice-for-all-and-the-call-of-ktulu-at-las-vegas-sphere-residency-3973419?utm_source=rss&utm_medium=rss&utm_campaign=watch-metallica-share-pro-shot-footage-of-and-justice-for-all-and-the-call-of-ktulu-at-las-vegas-sphere-residency",
+        "published_date": "2026-10-17 09:56:05",
+        "category": "interview",
+        "source": "www.nme.com"
+      },
+      {
+        "title": "Liam Gallagher says Fontaines D.C. “are not good enough” to open for Oasis on their ‘Live ’27’ tour",
+        "summary": "Liam Gallagher가 새로운 투어 일정을 발표했다. 콘서트 관련 상세 정보는 공식 채널을 통해 확인할 수 있다.",
+        "url": "https://www.nme.com/news/music/liam-gallagher-says-fontaines-d-c-are-not-good-enough-to-open-for-oasis-on-their-live-27-tour-3973414?utm_source=rss&utm_medium=rss&utm_campaign=liam-gallagher-says-fontaines-d-c-are-not-good-enough-to-open-for-oasis-on-their-live-27-tour",
+        "published_date": "2026-10-17 09:07:26",
+        "category": "interview",
+        "source": "www.nme.com"
+      },
+      {
+        "title": "‘I’m Experiencing Everything I’ve Ever Wanted’: Recapping Miley’s Live Return, On Her Own Terms",
+        "summary": "‘I’m의 라이브 공연 관련 소식이 전해졌다. 콘서트 티켓과 일정 정보가 업데이트되었다.",
+        "url": "https://www.billboard.com/lists/miley-hollywood-bowl-live-return-recap/",
+        "published_date": "2026-10-17 08:09:27",
+        "category": "interview",
+        "source": "www.billboard.com"
+      },
+      {
+        "title": "Harry Styles pays tribute to Liam Payne on anniversary of One Direction star’s death with moving new song ‘What Is Enough’",
+        "summary": "Harry와 관련된 주요 음악 업계 소식이 전해졌다. Harry Styles pays tribute to Liam Payne on anniversary of On...",
+        "url": "https://www.nme.com/news/music/harry-styles-pays-tribute-to-liam-payne-on-anniversary-of-one-direction-stars-death-with-moving-new-song-what-is-enough-3973408?utm_source=rss&utm_medium=rss&utm_campaign=harry-styles-pays-tribute-to-liam-payne-on-anniversary-of-one-direction-stars-death-with-moving-new-song-what-is-enough",
+        "published_date": "2026-10-17 08:00:57",
+        "category": "interview",
+        "source": "www.nme.com"
+      },
+      {
+        "title": "Harry Styles Pays Tribute to Liam Payne With Unreleased Song on Anniversary of His Death",
+        "summary": "Harry와 관련된 주요 음악 업계 소식이 전해졌다. Harry Styles Pays Tribute to Liam Payne With Unreleased Song...",
+        "url": "https://www.billboard.com/music/music-news/harry-styles-dedicates-song-to-liam-payne-1236362307/",
+        "published_date": "2026-10-17 05:07:06",
+        "category": "interview",
+        "source": "www.billboard.com"
+      },
+      {
+        "title": "Apple Watch Ultra 3 Drops to Record-Low $649",
+        "summary": "Apple가 새로운 음악을 공개했다. 팬들과 비평가들의 긍정적 반응을 얻고 있다.",
+        "url": "https://consequence.net/2026/10/apple-watch-ultra-3-amazon-deal-sale/",
+        "published_date": "2026-10-17 04:00:08",
+        "category": "interview",
+        "source": "consequenceofsound.net"
+      },
+      {
+        "title": "Harry Styles Performs New Song Written for Liam Payne on Anniversary of His Death",
+        "summary": "Harry Styles가 새로운 싱글을 발표했다. 새 곡은 아티스트의 음악적 진화를 보여주는 작품으로 평가받고 있다.",
+        "url": "https://www.rollingstone.com/music/music-news/harry-styles-liam-payne-new-song-msg-1235644335/",
+        "published_date": "2026-10-17 03:46:48",
+        "category": "interview",
+        "source": "www.rollingstone.com"
+      },
+      {
+        "title": "50 Cent Says Diddy’s ‘Gonna Turn Up in This Next Joint’ After Prison Transfer",
+        "summary": "50와 관련된 주요 음악 업계 소식이 전해졌다. 50 Cent Says Diddy’s ‘Gonna Turn Up in This Next Joint’ Afte...",
+        "url": "https://www.billboard.com/music/rb-hip-hop/50-cent-diddy-transfer-prison-reaction-1236362276/",
+        "published_date": "2026-10-17 00:54:44",
+        "category": "interview",
+        "source": "www.billboard.com"
+      },
+      {
+        "title": "Diddy Moved From New Jersey Prison to Similar Facility in Pennsylvania",
+        "summary": "Diddy와 관련된 주요 음악 업계 소식이 전해졌다. Diddy Moved From New Jersey Prison to Similar Facility in Pe...",
+        "url": "https://www.billboard.com/business/legal/diddy-moved-from-new-jersey-prison-to-pennsylvania-1236362285/",
+        "published_date": "2026-10-17 00:53:07",
+        "category": "interview",
+        "source": "www.billboard.com"
+      },
+      {
+        "title": "Pharrell Trying to ‘Rewrite History’ and ‘Erase’ Chad Hugo from Neptunes, Producer Claims",
+        "summary": "Pharrell와 관련된 주요 음악 업계 소식이 전해졌다. Pharrell Trying to ‘Rewrite History’ and ‘Erase’ Chad Hugo f...",
+        "url": "https://www.rollingstone.com/music/music-news/pharrell-chad-hugo-neptunes-copyright-infringement-lawsuit-1235644309/",
+        "published_date": "2026-10-17 00:27:38",
+        "category": "interview",
+        "source": "www.rollingstone.com"
+      },
+      {
+        "title": "Swizz Beatz Reveals Michael Jackson Had a Crush on Alicia Keys: ‘I Think Janet Was the One That Told A.K.’",
+        "summary": "Swizz가 중요한 음악 관련 발표를 했다. 이번 소식은 팬들의 주목을 받고 있다.",
+        "url": "https://www.billboard.com/music/rb-hip-hop/swizz-beatz-michael-jackson-crush-alicia-keys-1236362241/",
+        "published_date": "2026-10-17 00:04:55",
+        "category": "interview",
+        "source": "www.billboard.com"
+      },
+      {
+        "title": "Billboard’s Music Industry Events Calendar",
+        "summary": "Billboard’s와 관련된 주요 음악 업계 소식이 전해졌다. Billboard’s Music Industry Events Calendar",
+        "url": "https://www.billboard.com/pro/music-industry-events-calendar-festivals-awards-conferences/",
+        "published_date": "2026-10-17 00:02:00",
+        "category": "interview",
+        "source": "www.billboard.com"
+      },
+      {
+        "title": "Metallica Share Pro-Shot Video of Breathtaking Las Vegas Sphere Performances: Watch",
+        "summary": "Metallica와 관련된 주요 음악 업계 소식이 전해졌다. Metallica Share Pro-Shot Video of Breathtaking Las Vegas Sph...",
+        "url": "https://consequence.net/2026/10/metallica-pro-shot-videos-sphere/",
+        "published_date": "2026-10-16 22:25:16",
+        "category": "interview",
+        "source": "consequenceofsound.net"
+      },
+      {
+        "title": "Charges Against Timothy Busfield for Child Sex Abuse Tossed by Judge",
+        "summary": "Charges와 관련된 주요 음악 업계 소식이 전해졌다. Charges Against Timothy Busfield for Child Sex Abuse Tossed ...",
+        "url": "https://consequence.net/2026/10/timothy-busfield-child-sex-abuse-charges-tossed/",
+        "published_date": "2026-10-16 21:52:25",
+        "category": "interview",
+        "source": "consequenceofsound.net"
+      },
+      {
+        "title": "At $50 Off, the Base iPad Is Back Down to Its Prime Day Price",
+        "summary": "At와 관련된 주요 음악 업계 소식이 전해졌다. At $50 Off, the Base iPad Is Back Down to Its Prime Day Pric...",
+        "url": "https://consequence.net/2026/10/base-ipad-drops-to-399-amazon/",
+        "published_date": "2026-10-16 20:40:17",
+        "category": "interview",
+        "source": "consequenceofsound.net"
+      },
+      {
+        "title": "Worldpeace DMT’s Stick Around For Tea Is Not Your Father’s Laptop Twee",
+        "summary": "Worldpeace가 음악 차트에서 주목할 만한 성과를 기록했다. 상업적 성공을 입증하는 결과다.",
+        "url": "https://stereogum.com/2514847/worldpeace-dmts-stick-around-for-tea-is-not-your-fathers-laptop-twee/music/",
+        "published_date": "2026-10-16 20:23:55",
+        "category": "interview",
+        "source": "www.stereogum.com"
+      },
+      {
+        "title": "Antonio Banderas and Nicolas Cage Confirmed for True Detective Season 5",
+        "summary": "Antonio와 관련된 주요 음악 업계 소식이 전해졌다. Antonio Banderas and Nicolas Cage Confirmed for True Detecti...",
+        "url": "https://consequence.net/2026/10/true-detective-season-5-antonio-banderas/",
+        "published_date": "2026-10-16 20:04:47",
+        "category": "interview",
+        "source": "consequenceofsound.net"
+      },
+      {
+        "title": "The 5 Best Songs Of The Week",
+        "summary": "The와 관련된 주요 음악 업계 소식이 전해졌다. The 5 Best Songs Of The Week",
+        "url": "https://stereogum.com/2514816/the-5-best-songs-of-the-week-648/lists/the-5-best-songs-of-the-week/",
+        "published_date": "2026-10-16 19:35:37",
+        "category": "interview",
+        "source": "www.stereogum.com"
+      },
+      {
+        "title": "Saya Gray, quickly, quickly, Aminé, & More Share New Songs For The Movie Version Of Colin Meloy’s Wildwood",
+        "summary": "Saya와 관련된 주요 음악 업계 소식이 전해졌다. Saya Gray, quickly, quickly, Aminé, & More Share New Songs F...",
+        "url": "https://stereogum.com/2514829/saya-gray-quickly-quickly-amine-more-share-new-songs-for-the-movie-version-of-colin-meloys-wildwood/news/",
+        "published_date": "2026-10-16 18:45:54",
+        "category": "interview",
+        "source": "www.stereogum.com"
+      },
+      {
+        "title": "HEALTH Share Two New Songs From The Street Fighter Soundtrack",
+        "summary": "HEALTH와 관련된 주요 음악 업계 소식이 전해졌다. HEALTH Share Two New Songs From The Street Fighter Soundtrac...",
+        "url": "https://stereogum.com/2514828/health-share-two-new-songs-from-the-street-fighter-soundtrack/music/",
+        "published_date": "2026-10-16 18:17:26",
+        "category": "interview",
+        "source": "www.stereogum.com"
+      },
+      {
+        "title": "A$AP Rocky Finally Drops His ‘Fan Favorite’ Song ‘Shroom Clouds’",
+        "summary": "A$AP가 새로운 음악을 공개했다. 팬들과 비평가들의 긍정적 반응을 얻고 있다.",
+        "url": "https://www.rollingstone.com/music/music-news/asap-rocky-drops-fan-favorite-song-shroom-clouds-1235644012/",
+        "published_date": "2026-10-16 18:10:47",
+        "category": "interview",
+        "source": "www.rollingstone.com"
+      },
+      {
+        "title": "Method Man Reacts to Once Upon a Time in Shaolin for First Time: “I Don’t Hate It”",
+        "summary": "Method와 관련된 주요 음악 업계 소식이 전해졌다. Method Man Reacts to Once Upon a Time in Shaolin for First T...",
+        "url": "https://consequence.net/2026/10/method-man-once-upon-a-time-in-shaolin-first-listen-reaction/",
+        "published_date": "2026-10-16 17:58:17",
+        "category": "interview",
+        "source": "consequenceofsound.net"
+      },
+      {
+        "title": "Stream LA Power-Pop Band Exploding Flowers’ New Album Alphabet Window",
+        "summary": "Stream와 관련된 주요 음악 업계 소식이 전해졌다. Stream LA Power-Pop Band Exploding Flowers’ New Album Alphab...",
+        "url": "https://stereogum.com/2514781/stream-la-power-pop-exploding-flowers-new-album-alphabet-window/music/",
+        "published_date": "2026-10-16 17:48:20",
+        "category": "interview",
+        "source": "www.stereogum.com"
+      },
+      {
+        "title": "Tierra Whack Shares Seven New Songs On Deluxe Whack’s Museum",
+        "summary": "Tierra와 관련된 주요 음악 업계 소식이 전해졌다. Tierra Whack Shares Seven New Songs On Deluxe Whack’s Museum",
+        "url": "https://stereogum.com/2514820/tierra-whack-shares-seven-new-songs-on-deluxe-whacks-museum/music/",
+        "published_date": "2026-10-16 17:47:37",
+        "category": "interview",
+        "source": "www.stereogum.com"
+      },
+      {
+        "title": "From Universal Music’s fresh round of layoffs to Spotify’s catalog surge… it’s MBW’s Weekly Round-up",
+        "summary": "From와 관련된 주요 음악 업계 소식이 전해졌다. From Universal Music’s fresh round of layoffs to Spotify’s c...",
+        "url": "https://www.musicbusinessworldwide.com/from-universal-musics-fresh-round-of-layoffs-to-spotifys-catalog-surge-its-mbws-weekly-round-up/",
+        "published_date": "2026-10-16 17:29:30",
+        "category": "interview",
+        "source": "www.musicbusinessworldwide.com"
+      },
+      {
+        "title": "LDB Fest 2027 Lineup Has Haywire, Integrity, Harm’s Way, More",
+        "summary": "LDB와 관련된 주요 음악 업계 소식이 전해졌다. LDB Fest 2027 Lineup Has Haywire, Integrity, Harm’s Way, Mor...",
+        "url": "https://stereogum.com/2514811/ldb-fest-2027-lineup-has-haywire-integrity-harms-way-more/news/",
+        "published_date": "2026-10-16 17:24:42",
+        "category": "interview",
+        "source": "www.stereogum.com"
+      },
+      {
+        "title": "Dave Grohl and Pat Smear Bring Some Foo Fighters Style to the Pretty Reckless’ ‘About You’",
+        "summary": "Dave와 관련된 주요 음악 업계 소식이 전해졌다. Dave Grohl and Pat Smear Bring Some Foo Fighters Style to th...",
+        "url": "https://www.rollingstone.com/music/music-news/pretty-reckless-dave-grohl-pat-smear-about-you-1235643925/",
+        "published_date": "2026-10-16 17:20:10",
+        "category": "interview",
+        "source": "www.rollingstone.com"
+      },
+      {
+        "title": "SOB x RBE Announce New Album From The Land: Hear “Someone”",
+        "summary": "SOB와 관련된 주요 음악 업계 소식이 전해졌다. SOB x RBE Announce New Album From The Land: Hear “Someone”",
+        "url": "https://stereogum.com/2514813/sob-x-rbe-announce-new-album-from-the-land-hear-someone/music/",
+        "published_date": "2026-10-16 17:19:03",
+        "category": "interview",
+        "source": "www.stereogum.com"
+      },
+      {
+        "title": "Heavy Song of the Week: Insomnium Continue Mournful Path on “The Hour Grows Late”",
+        "summary": "Heavy와 관련된 주요 음악 업계 소식이 전해졌다. Heavy Song of the Week: Insomnium Continue Mournful Path on ...",
+        "url": "https://consequence.net/2026/10/heavy-song-of-the-week-insomnium-the-hour-grows-late/",
+        "published_date": "2026-10-16 17:17:16",
+        "category": "interview",
+        "source": "consequenceofsound.net"
+      },
+      {
+        "title": "Method Man Hears Wu-Tang Clan’s One-Copy-Only Album for First Time: ‘I Don’t Hate It’",
+        "summary": "Method와 관련된 주요 음악 업계 소식이 전해졌다. Method Man Hears Wu-Tang Clan’s One-Copy-Only Album for Firs...",
+        "url": "https://www.rollingstone.com/music/music-news/method-man-wu-tang-clan-hears-shaolin-album-first-time-1235643904/",
+        "published_date": "2026-10-16 17:04:14",
+        "category": "interview",
+        "source": "www.rollingstone.com"
+      },
+      {
+        "title": "Stream On This Week: Mountain Climbing and World Politics Ain’t Easy, Plus Some Elizabeth Holmes Homework",
+        "summary": "Stream와 관련된 주요 음악 업계 소식이 전해졌다. Stream On This Week: Mountain Climbing and World Politics Ai...",
+        "url": "https://consequence.net/2026/10/stream-on-tenzing-diplomat-banana-bowl/",
+        "published_date": "2026-10-16 17:00:10",
+        "category": "interview",
+        "source": "consequenceofsound.net"
+      }
+    ],
+    "insight": []
+  },
+  "summary": {
+    "total_count": 50,
+    "by_category": {
+      "interview": 50
+    },
+    "by_source": {
+      "consequenceofsound.net": 15,
+      "www.stereogum.com": 12,
+      "www.billboard.com": 10,
+      "www.rollingstone.com": 8,
+      "www.nme.com": 4,
+      "www.musicbusinessworldwide.com": 1
+    },
+    "members_only_count": 0
+  }
+}
