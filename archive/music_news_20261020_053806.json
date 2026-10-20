@@ -1,0 +1,431 @@
+{
+  "metadata": {
+    "generated_at": "2026-10-20T05:38:06.660585",
+    "total_news": 50,
+    "last_updated": "2026-10-20T05:38:06.660593",
+    "version": "2.0",
+    "compatible_with": "NewsSection.tsx"
+  },
+  "news": {
+    "all_articles": [],
+    "news": [],
+    "interview": [
+      {
+        "title": "Cardi B’s Tiny Desk Performance Is a Masterclass in Excellence",
+        "summary": "Cardi와 관련된 주요 음악 업계 소식이 전해졌다. Cardi B’s Tiny Desk Performance Is a Masterclass in Excellen...",
+        "url": "https://www.rollingstone.com/music/music-news/cardi-b-tiny-desk-performance-video-1235645313/",
+        "published_date": "2026-10-20 05:32:12",
+        "category": "interview",
+        "source": "www.rollingstone.com"
+      },
+      {
+        "title": "Swae Lee Announces 2027 Australian Same Difference Tour",
+        "summary": "Swae Lee가 새로운 투어 일정을 발표했다. 콘서트 관련 상세 정보는 공식 채널을 통해 확인할 수 있다.",
+        "url": "https://www.billboard.com/music/music-news/swae-lee-australian-tour-2027-same-difference-1236363395/",
+        "published_date": "2026-10-20 04:43:10",
+        "category": "interview",
+        "source": "www.billboard.com"
+      },
+      {
+        "title": "JOP From Fuerza Regida Accepts the Publisher of the Year Award for Street Mob | Latin Music Power Players 2026",
+        "summary": "JOP From가 새 앨범 발매 소식을 공개했다. 이번 릴리스는 팬들과 음악 업계의 큰 관심을 받고 있다.",
+        "url": "https://www.billboard.com/video/jop-from-fuerza-regida-accepts-publisher-of-the-year-award/",
+        "published_date": "2026-10-20 03:05:21",
+        "category": "interview",
+        "source": "www.billboard.com"
+      },
+      {
+        "title": "Omar Al-Joulani Presents Hans Schafer with Executive of the Year | Latin Music Power Players 2026",
+        "summary": "Omar와 관련된 주요 음악 업계 소식이 전해졌다. Omar Al-Joulani Presents Hans Schafer with Executive of the ...",
+        "url": "https://www.billboard.com/video/omar-al-joulani-presents-hans-schafer-executive-of-the-year/",
+        "published_date": "2026-10-20 03:04:17",
+        "category": "interview",
+        "source": "www.billboard.com"
+      },
+      {
+        "title": "George Prajin From Double P Records Accepts the Top Regional Mexican Albums Label of the Year Award | Latin Music Power Players 2026",
+        "summary": "George Prajin가 새 앨범 발매 소식을 공개했다. 이번 릴리스는 팬들과 음악 업계의 큰 관심을 받고 있다.",
+        "url": "https://www.billboard.com/video/george-prajin-regional-mexican-albums-label-of-the-year/",
+        "published_date": "2026-10-20 01:37:43",
+        "category": "interview",
+        "source": "www.billboard.com"
+      },
+      {
+        "title": "Ozuna Presents Alex Gallardo from Sony Music US Latin With the Latin Airplay Label of the Year Award | Latin Music Power Players 2026",
+        "summary": "Ozuna Presents와 관련된 주요 음악 업계 소식이 전해졌다. Ozuna Presents Alex Gallardo from Sony Music US Latin With t...",
+        "url": "https://www.billboard.com/video/ozuna-presents-alex-gallardo-with-latin-airplay-label-award/",
+        "published_date": "2026-10-20 01:29:16",
+        "category": "interview",
+        "source": "www.billboard.com"
+      },
+      {
+        "title": "A Very ‘Glee’ Reunion! Darren Criss Makes Debut at London’s Royal Albert Hall With Surprise Chris Colfer Duet: ‘It’s Been Awhile’",
+        "summary": "A와 관련된 주요 음악 업계 소식이 전해졌다. A Very ‘Glee’ Reunion! Darren Criss Makes Debut at London’s ...",
+        "url": "https://www.billboard.com/music/music-news/darren-criss-chris-colfer-reunion-london-royal-albert-hall-1236363302/",
+        "published_date": "2026-10-20 01:21:45",
+        "category": "interview",
+        "source": "www.billboard.com"
+      },
+      {
+        "title": "Muna Safe After Tour Bus Catches Fire on California Highway",
+        "summary": "Muna의 라이브 공연 관련 소식이 전해졌다. 콘서트 티켓과 일정 정보가 업데이트되었다.",
+        "url": "https://www.rollingstone.com/music/music-news/muna-tour-bus-catches-fire-safe-1235645213/",
+        "published_date": "2026-10-20 00:59:33",
+        "category": "interview",
+        "source": "www.rollingstone.com"
+      },
+      {
+        "title": "Leila Cobo Presents Hot Latin Songs Label of the Year Award to Lucas Barbosa from Rimas | Latin Music Power Players 2026",
+        "summary": "Leila Cobo가 새로운 싱글을 발표했다. 새 곡은 아티스트의 음악적 진화를 보여주는 작품으로 평가받고 있다.",
+        "url": "https://www.billboard.com/video/hot-latin-songs-label-of-the-year-award-to-rimas/",
+        "published_date": "2026-10-20 00:59:08",
+        "category": "interview",
+        "source": "www.billboard.com"
+      },
+      {
+        "title": "Levon Helm’s Daughter Countersues Levon Helm Studios",
+        "summary": "Levon와 관련된 주요 음악 업계 소식이 전해졌다. Levon Helm’s Daughter Countersues Levon Helm Studios",
+        "url": "https://pitchfork.com/story/levon-helms-daughter-countersues-levon-helm-studios/",
+        "published_date": "2026-10-20 00:37:34",
+        "category": "interview",
+        "source": "pitchfork.com"
+      },
+      {
+        "title": "Leila Cobo Presents Regional Mexican Airplay Label of the Year to Universal Music Latin’s Angel Kaminsky | Latin Music Power Players 2026",
+        "summary": "Leila Cobo와 관련된 주요 음악 업계 소식이 전해졌다. Leila Cobo Presents Regional Mexican Airplay Label of the Ye...",
+        "url": "https://www.billboard.com/video/angel-kaminsky-latin-music-power-players-2026/",
+        "published_date": "2026-10-20 00:31:09",
+        "category": "interview",
+        "source": "www.billboard.com"
+      },
+      {
+        "title": "The New Urban Movement | Billboard Latin Music Week 2026",
+        "summary": "The와 관련된 주요 음악 업계 소식이 전해졌다. The New Urban Movement | Billboard Latin Music Week 2026",
+        "url": "https://www.billboard.com/video/the-new-urban-movement-billboard-latin-music-week/",
+        "published_date": "2026-10-20 00:29:14",
+        "category": "interview",
+        "source": "www.billboard.com"
+      },
+      {
+        "title": "Mariah Carey Beats Brother’s $20 Million Defamation Lawsuit Over Tell-All Memoir",
+        "summary": "Mariah와 관련된 주요 음악 업계 소식이 전해졌다. Mariah Carey Beats Brother’s $20 Million Defamation Lawsuit ...",
+        "url": "https://www.rollingstone.com/music/music-news/mariah-carey-brother-defamation-lawsuit-memoir-1235645209/",
+        "published_date": "2026-10-20 00:15:18",
+        "category": "interview",
+        "source": "www.rollingstone.com"
+      },
+      {
+        "title": "REPUBLIC Rules the Billboard 200 Top 10 With 8 Albums, Led by Taylor Swift",
+        "summary": "REPUBLIC Rules가 새 앨범 발매 소식을 공개했다. 이번 릴리스는 팬들과 음악 업계의 큰 관심을 받고 있다.",
+        "url": "https://www.billboard.com/music/chart-beat/republic-billboard-200-top-10-eight-albums-taylor-swift-1236363260/",
+        "published_date": "2026-10-20 00:04:02",
+        "category": "interview",
+        "source": "www.billboard.com"
+      },
+      {
+        "title": "Muna Safe After Tour Bus Fire",
+        "summary": "Muna의 라이브 공연 관련 소식이 전해졌다. 콘서트 티켓과 일정 정보가 업데이트되었다.",
+        "url": "https://pitchfork.com/story/muna-safe-after-tour-bus-fire/",
+        "published_date": "2026-10-19 21:51:32",
+        "category": "interview",
+        "source": "pitchfork.com"
+      },
+      {
+        "title": "Dominic Fike Shares New Single “Pangea,” Earns First Top 10 Hit With 8-Year-Old “Babydoll”",
+        "summary": "Dominic가 음악 차트에서 주목할 만한 성과를 기록했다. 상업적 성공을 입증하는 결과다.",
+        "url": "https://stereogum.com/2515085/dominic-fike-shares-new-single-pangea-earns-first-top-10-hit-with-8-year-old-babydoll/music/",
+        "published_date": "2026-10-19 21:33:43",
+        "category": "interview",
+        "source": "www.stereogum.com"
+      },
+      {
+        "title": "MUNA’s Tour Bus Catches Fire on California Freeway",
+        "summary": "MUNA’s의 라이브 공연 관련 소식이 전해졌다. 콘서트 티켓과 일정 정보가 업데이트되었다.",
+        "url": "https://consequence.net/2026/10/munas-tour-bus-catches-fire-on-california-freeway/",
+        "published_date": "2026-10-19 21:12:07",
+        "category": "interview",
+        "source": "consequenceofsound.net"
+      },
+      {
+        "title": "25 Essential Albums by the Greatest Bands of All Time",
+        "summary": "25 Essential가 새 앨범 발매 소식을 공개했다. 이번 릴리스는 팬들과 음악 업계의 큰 관심을 받고 있다.",
+        "url": "https://consequence.net/2026/10/essential-albums-best-bands-of-all-time/",
+        "published_date": "2026-10-19 21:00:17",
+        "category": "interview",
+        "source": "consequenceofsound.net"
+      },
+      {
+        "title": "MUNA’s Gets So Hot Tour Bus Catches Fire In Burbank",
+        "summary": "MUNA’s의 라이브 공연 관련 소식이 전해졌다. 콘서트 티켓과 일정 정보가 업데이트되었다.",
+        "url": "https://stereogum.com/2515077/munas-gets-so-hot-tour-bus-catches-fire-in-burbank/news/",
+        "published_date": "2026-10-19 20:42:07",
+        "category": "interview",
+        "source": "www.stereogum.com"
+      },
+      {
+        "title": "Oli Sykes and Courtney LaPlante Team Up for Super Bowl-Level Performance at Valorant Champions Ceremony",
+        "summary": "Oli와 관련된 주요 음악 업계 소식이 전해졌다. Oli Sykes and Courtney LaPlante Team Up for Super Bowl-Level...",
+        "url": "https://consequence.net/2026/10/oli-sykes-courtney-laplante-performance-valorant-champions-ceremony/",
+        "published_date": "2026-10-19 20:40:47",
+        "category": "interview",
+        "source": "consequenceofsound.net"
+      },
+      {
+        "title": "You Can See Everything Could Totally Disrupt This Year’s Oscars",
+        "summary": "You와 관련된 주요 음악 업계 소식이 전해졌다. You Can See Everything Could Totally Disrupt This Year’s Osc...",
+        "url": "https://consequence.net/2026/10/you-can-see-everything-oscars-nathan-fielder/",
+        "published_date": "2026-10-19 20:07:36",
+        "category": "interview",
+        "source": "consequenceofsound.net"
+      },
+      {
+        "title": "Ariel Winter on The Sisters Grimm Season 2 and the Immortality of Animated Characters: Podcast",
+        "summary": "Ariel와 관련된 주요 음악 업계 소식이 전해졌다. Ariel Winter on The Sisters Grimm Season 2 and the Immortali...",
+        "url": "https://consequence.net/2026/10/ariel-winter-the-sisters-grimm-sofia-the-first/",
+        "published_date": "2026-10-19 20:00:27",
+        "category": "interview",
+        "source": "consequenceofsound.net"
+      },
+      {
+        "title": "Lil Jon Opens Up About Learning The Man Who Raised Him Wasn’t His Biological Father",
+        "summary": "Lil와 관련된 주요 음악 업계 소식이 전해졌다. Lil Jon Opens Up About Learning The Man Who Raised Him Wasn’...",
+        "url": "https://stereogum.com/2515070/lil-jon-opens-up-about-learning-the-man-who-raised-him-wasnt-his-biological-father/news/",
+        "published_date": "2026-10-19 19:56:03",
+        "category": "interview",
+        "source": "www.stereogum.com"
+      },
+      {
+        "title": "Brooklyn Street Named After Late Baby’s All Right Co-Founder Billy Jones",
+        "summary": "Brooklyn와 관련된 주요 음악 업계 소식이 전해졌다. Brooklyn Street Named After Late Baby’s All Right Co-Founder...",
+        "url": "https://pitchfork.com/story/brooklyn-street-named-after-late-babys-all-right-co-founder-billy-jones/",
+        "published_date": "2026-10-19 19:25:54",
+        "category": "interview",
+        "source": "pitchfork.com"
+      },
+      {
+        "title": "‘I HAVE A NEW OUTLOOK  NOW: IT’S SUPPOSED  TO BE FUN; IT’S NOT  SUPPOSED TO BE SCARY’",
+        "summary": "‘I와 관련된 주요 음악 업계 소식이 전해졌다. ‘I HAVE A NEW OUTLOOK  NOW: IT’S SUPPOSED  TO BE FUN; IT’S N...",
+        "url": "https://www.musicbusinessworldwide.com/i-have-a-new-outlook-now-its-supposed-to-be-fun-its-not-supposed-to-be-scary/",
+        "published_date": "2026-10-19 19:25:20",
+        "category": "interview",
+        "source": "www.musicbusinessworldwide.com"
+      },
+      {
+        "title": "Selena Gomez Says Vaping Nicotine Changed Her Voice",
+        "summary": "Selena와 관련된 주요 음악 업계 소식이 전해졌다. Selena Gomez Says Vaping Nicotine Changed Her Voice",
+        "url": "https://consequence.net/2026/10/selena-gomez-says-vaping-nicotine-changed-her-voice/",
+        "published_date": "2026-10-19 19:24:09",
+        "category": "interview",
+        "source": "consequenceofsound.net"
+      },
+      {
+        "title": "Amy Helm Countersues Levon Helm Studios",
+        "summary": "Amy와 관련된 주요 음악 업계 소식이 전해졌다. Amy Helm Countersues Levon Helm Studios",
+        "url": "https://stereogum.com/2515057/amy-helm-countersues-levon-helm-studios/news/",
+        "published_date": "2026-10-19 19:12:17",
+        "category": "interview",
+        "source": "www.stereogum.com"
+      },
+      {
+        "title": "The Pretty Reckless Unveil Music Video for “About You” Collab with Dave Grohl and Pat Smear: Watch",
+        "summary": "The와 관련된 주요 음악 업계 소식이 전해졌다. The Pretty Reckless Unveil Music Video for “About You” Colla...",
+        "url": "https://consequence.net/2026/10/the-pretty-reckless-music-video-about-you-dave-grohl-pat-smear/",
+        "published_date": "2026-10-19 18:56:28",
+        "category": "interview",
+        "source": "consequenceofsound.net"
+      },
+      {
+        "title": "Jon Stewart to Remain The Daily Show Host Through End of Trump’s Presidency",
+        "summary": "Jon와 관련된 주요 음악 업계 소식이 전해졌다. Jon Stewart to Remain The Daily Show Host Through End of Tru...",
+        "url": "https://consequence.net/2026/10/jon-stewart-to-remain-the-daily-show-host-through-end-of-trumps-presidency/",
+        "published_date": "2026-10-19 18:50:22",
+        "category": "interview",
+        "source": "consequenceofsound.net"
+      },
+      {
+        "title": "Donnie Wahlberg Unscathed After Private Jet Skids Off Las Vegas Runway",
+        "summary": "Donnie와 관련된 주요 음악 업계 소식이 전해졌다. Donnie Wahlberg Unscathed After Private Jet Skids Off Las Ve...",
+        "url": "https://consequence.net/2026/10/donnie-wahlberg-private-jet-runway-skid-las-vegas/",
+        "published_date": "2026-10-19 18:12:59",
+        "category": "interview",
+        "source": "consequenceofsound.net"
+      },
+      {
+        "title": "Richard Riehle, Office Space’s Tom Smykowski, Dead at 78",
+        "summary": "Richard와 관련된 주요 음악 업계 소식이 전해졌다. Richard Riehle, Office Space’s Tom Smykowski, Dead at 78",
+        "url": "https://consequence.net/2026/10/richard-riehle-office-spaces-tom-smykowski-dead-at-78/",
+        "published_date": "2026-10-19 17:54:39",
+        "category": "interview",
+        "source": "consequenceofsound.net"
+      },
+      {
+        "title": "A$AP Rocky Discovers the Wonders of Nature in Trippy New ‘Shroom Clouds’ Video",
+        "summary": "A$AP와 관련된 주요 음악 업계 소식이 전해졌다. A$AP Rocky Discovers the Wonders of Nature in Trippy New ‘Sh...",
+        "url": "https://www.rollingstone.com/music/music-news/asap-shroom-clouds-music-video-1235644870/",
+        "published_date": "2026-10-19 17:33:40",
+        "category": "interview",
+        "source": "www.rollingstone.com"
+      },
+      {
+        "title": "Rosalía Says She Never Listens to Her Albums, Calls Doing So “Pointless” and “Torture”",
+        "summary": "Rosalía와 관련된 주요 음악 업계 소식이 전해졌다. Rosalía Says She Never Listens to Her Albums, Calls Doing So...",
+        "url": "https://consequence.net/2026/10/rosalia-never-listens-to-her-albums-pointless-torture/",
+        "published_date": "2026-10-19 17:30:19",
+        "category": "interview",
+        "source": "consequenceofsound.net"
+      },
+      {
+        "title": "She Wants Revenge Announce First Album in Over 15 Years, Unveil “Black Wax/Our Love”: Stream",
+        "summary": "She와 관련된 주요 음악 업계 소식이 전해졌다. She Wants Revenge Announce First Album in Over 15 Years, Unv...",
+        "url": "https://consequence.net/2026/10/she-wants-revenge-the-loved-black-wax-our-love/",
+        "published_date": "2026-10-19 17:20:50",
+        "category": "interview",
+        "source": "consequenceofsound.net"
+      },
+      {
+        "title": "“Seemingly Random” Fat Joe Story Bolsters NYT Investigation Into Possible O.J. Simpson Accomplice",
+        "summary": "“Seemingly와 관련된 주요 음악 업계 소식이 전해졌다. “Seemingly Random” Fat Joe Story Bolsters NYT Investigation ...",
+        "url": "https://stereogum.com/2515008/seemingly-random-fat-joe-story-bolsters-nyt-investigation-into-possible-o-j-simpson-accomplice/news/",
+        "published_date": "2026-10-19 17:08:52",
+        "category": "interview",
+        "source": "www.stereogum.com"
+      },
+      {
+        "title": "Tinashe Announces 2027 Tour: “The Show Must Go On”",
+        "summary": "Tinashe가 새로운 투어 계획을 발표했다. 콘서트 일정이 곧 공개될 예정이다.",
+        "url": "https://consequence.net/2026/10/tinashe-2027-tour-dates/",
+        "published_date": "2026-10-19 17:08:35",
+        "category": "interview",
+        "source": "consequenceofsound.net"
+      },
+      {
+        "title": "Watch Cardi B Blaze Through Her No-Brakes Tiny Desk Performance",
+        "summary": "Watch와 관련된 주요 음악 업계 소식이 전해졌다. Watch Cardi B Blaze Through Her No-Brakes Tiny Desk Performa...",
+        "url": "https://pitchfork.com/story/watch-cardi-b-blaze-through-her-no-brakes-tiny-desk-performance/",
+        "published_date": "2026-10-19 17:07:09",
+        "category": "interview",
+        "source": "pitchfork.com"
+      },
+      {
+        "title": "Artists Behind Olivia Rodrigo ‘Expectations’ Music Video Debunk AI Accusations",
+        "summary": "Artists와 관련된 주요 음악 업계 소식이 전해졌다. Artists Behind Olivia Rodrigo ‘Expectations’ Music Video Deb...",
+        "url": "https://www.rollingstone.com/music/music-news/olivia-rodrigo-expectations-ai-debunk-1235644671/",
+        "published_date": "2026-10-19 17:06:04",
+        "category": "interview",
+        "source": "www.rollingstone.com"
+      },
+      {
+        "title": "Sophia Stel, Worldpeace DMT, Weed420, and More: This Week’s Pitchfork Selects Playlist",
+        "summary": "Sophia와 관련된 주요 음악 업계 소식이 전해졌다. Sophia Stel, Worldpeace DMT, Weed420, and More: This Week’s ...",
+        "url": "https://pitchfork.com/story/sophia-stel-worldpeace-dmt-weed-420-this-weeks-pitchfork-selects-playlist/",
+        "published_date": "2026-10-19 17:00:59",
+        "category": "interview",
+        "source": "pitchfork.com"
+      },
+      {
+        "title": "Watch Underscores Debut New Song With Jane Remover",
+        "summary": "Watch와 관련된 주요 음악 업계 소식이 전해졌다. Watch Underscores Debut New Song With Jane Remover",
+        "url": "https://pitchfork.com/story/watch-underscores-bring-out-jane-remover-to-debut-new-song/",
+        "published_date": "2026-10-19 17:00:53",
+        "category": "interview",
+        "source": "pitchfork.com"
+      },
+      {
+        "title": "Iconic Bigfoot Footage Confirmed Fake by New Documentary",
+        "summary": "Iconic와 관련된 주요 음악 업계 소식이 전해졌다. Iconic Bigfoot Footage Confirmed Fake by New Documentary",
+        "url": "https://consequence.net/2026/10/bigfoot-footage-confirmed-fake-documentary/",
+        "published_date": "2026-10-19 16:47:45",
+        "category": "interview",
+        "source": "consequenceofsound.net"
+      },
+      {
+        "title": "Tinashe Is Touring in 2027",
+        "summary": "Tinashe의 라이브 공연 관련 소식이 전해졌다. 콘서트 티켓과 일정 정보가 업데이트되었다.",
+        "url": "https://pitchfork.com/story/tinashe-is-touring-in-2027/",
+        "published_date": "2026-10-19 16:38:09",
+        "category": "interview",
+        "source": "pitchfork.com"
+      },
+      {
+        "title": "‘The only way to properly create value in music is to make lasting copyrights.’",
+        "summary": "‘The와 관련된 주요 음악 업계 소식이 전해졌다. ‘The only way to properly create value in music is to make l...",
+        "url": "https://www.musicbusinessworldwide.com/aaron-bay-schuck-the-only-way-to-properly-create-value-in-music-is-to-make-lasting-copyrights/",
+        "published_date": "2026-10-19 16:35:28",
+        "category": "interview",
+        "source": "www.musicbusinessworldwide.com"
+      },
+      {
+        "title": "Dazy – “Unreasonable Person”",
+        "summary": "Dazy와 관련된 주요 음악 업계 소식이 전해졌다. Dazy – “Unreasonable Person”",
+        "url": "https://stereogum.com/2515040/dazy-unreasonable-person/music/",
+        "published_date": "2026-10-19 16:32:49",
+        "category": "interview",
+        "source": "www.stereogum.com"
+      },
+      {
+        "title": "KROQ’s Almost Acoustic Christmas 2026 Lineup: Foo Fighters, Weezer, Sublime, and Interpol",
+        "summary": "KROQ’s와 관련된 주요 음악 업계 소식이 전해졌다. KROQ’s Almost Acoustic Christmas 2026 Lineup: Foo Fighters, ...",
+        "url": "https://consequence.net/2026/10/kroq-almost-acoustic-christmas-2026-lineup-foo-fighters-weezer/",
+        "published_date": "2026-10-19 16:26:36",
+        "category": "interview",
+        "source": "consequenceofsound.net"
+      },
+      {
+        "title": "Spirit Ghost – “Dungeon Crawler”",
+        "summary": "Spirit와 관련된 주요 음악 업계 소식이 전해졌다. Spirit Ghost – “Dungeon Crawler”",
+        "url": "https://stereogum.com/2514989/spirit-ghost-dungeon-crawler/music/",
+        "published_date": "2026-10-19 16:18:01",
+        "category": "interview",
+        "source": "www.stereogum.com"
+      },
+      {
+        "title": "Slapshot Play Farewell Show, Bring Out Fiddlehead’s Pat Flynn",
+        "summary": "Slapshot와 관련된 주요 음악 업계 소식이 전해졌다. Slapshot Play Farewell Show, Bring Out Fiddlehead’s Pat Flyn...",
+        "url": "https://stereogum.com/2515020/slapshot-play-farewell-show-bring-out-fiddleheads-pat-flynn/news/",
+        "published_date": "2026-10-19 16:10:45",
+        "category": "interview",
+        "source": "www.stereogum.com"
+      },
+      {
+        "title": "Amy Helm Was Ousted From Levon Helm Studios in ‘Illegal Takeover,’ New Lawsuit Claims",
+        "summary": "Amy와 관련된 주요 음악 업계 소식이 전해졌다. Amy Helm Was Ousted From Levon Helm Studios in ‘Illegal Take...",
+        "url": "https://www.rollingstone.com/music/music-news/amy-helm-lawsuit-levon-helm-studio-dispute-1235644168/",
+        "published_date": "2026-10-19 15:52:27",
+        "category": "interview",
+        "source": "www.rollingstone.com"
+      },
+      {
+        "title": "Sleep Token Distance Themselves From Self-Proclaimed Co-Creator’s New Offering",
+        "summary": "Sleep와 관련된 주요 음악 업계 소식이 전해졌다. Sleep Token Distance Themselves From Self-Proclaimed Co-Crea...",
+        "url": "https://stereogum.com/2515001/sleep-token-distance-themselves-from-self-proclaimed-co-creators-new-offering/news/",
+        "published_date": "2026-10-19 15:43:38",
+        "category": "interview",
+        "source": "www.stereogum.com"
+      },
+      {
+        "title": "Watch Raincoats, X-Ray Spex, and Slits Members Salute Poly Styrene at London Punk Festival",
+        "summary": "Watch와 관련된 주요 음악 업계 소식이 전해졌다. Watch Raincoats, X-Ray Spex, and Slits Members Salute Poly S...",
+        "url": "https://www.rollingstone.com/music/music-news/poly-styrene-tribute-god-save-the-queens-1235644559/",
+        "published_date": "2026-10-19 15:32:15",
+        "category": "interview",
+        "source": "www.rollingstone.com"
+      }
+    ],
+    "insight": []
+  },
+  "summary": {
+    "total_count": 50,
+    "by_category": {
+      "interview": 50
+    },
+    "by_source": {
+      "consequenceofsound.net": 15,
+      "www.billboard.com": 10,
+      "www.stereogum.com": 9,
+      "www.rollingstone.com": 7,
+      "pitchfork.com": 7,
+      "www.musicbusinessworldwide.com": 2
+    },
+    "members_only_count": 0
+  }
+}
