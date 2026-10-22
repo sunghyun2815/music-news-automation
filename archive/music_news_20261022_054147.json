@@ -1,0 +1,432 @@
+{
+  "metadata": {
+    "generated_at": "2026-10-22T05:41:47.064779",
+    "total_news": 50,
+    "last_updated": "2026-10-22T05:41:47.064788",
+    "version": "2.0",
+    "compatible_with": "NewsSection.tsx"
+  },
+  "news": {
+    "all_articles": [],
+    "news": [],
+    "interview": [
+      {
+        "title": "Live Nation Adds North Melbourne Venue to Australian Portfolio",
+        "summary": "Live의 라이브 공연 관련 소식이 전해졌다. 콘서트 티켓과 일정 정보가 업데이트되었다.",
+        "url": "https://www.billboard.com/pro/live-nation-north-melbourne-venue-australian-portfolio/",
+        "published_date": "2026-10-22 04:00:29",
+        "category": "interview",
+        "source": "www.billboard.com"
+      },
+      {
+        "title": "John Anderson, Country Music Hall of Fame Inductee, Dies at 71",
+        "summary": "John와 관련된 주요 음악 업계 소식이 전해졌다. John Anderson, Country Music Hall of Fame Inductee, Dies at ...",
+        "url": "https://www.billboard.com/music/country/john-anderson-country-music-hall-of-fame-inductee-dead-1236365341/",
+        "published_date": "2026-10-22 02:47:15",
+        "category": "interview",
+        "source": "www.billboard.com"
+      },
+      {
+        "title": "Talking Heads Announce First Authorized Book New Feeling",
+        "summary": "Talking와 관련된 주요 음악 업계 소식이 전해졌다. Talking Heads Announce First Authorized Book New Feeling",
+        "url": "https://consequence.net/2026/10/talking-heads-reunite-new-feeling-book/",
+        "published_date": "2026-10-22 02:25:19",
+        "category": "interview",
+        "source": "consequenceofsound.net"
+      },
+      {
+        "title": "Icon Q&A With Rubén Blades | Billboard Latin Music Week 2026",
+        "summary": "Icon Q&A와 관련된 주요 음악 업계 소식이 전해졌다. Icon Q&A With Rubén Blades | Billboard Latin Music Week 2026",
+        "url": "https://www.billboard.com/video/icon-qa-with-ruben-blades-billboard-latin-music/",
+        "published_date": "2026-10-22 02:18:18",
+        "category": "interview",
+        "source": "www.billboard.com"
+      },
+      {
+        "title": "Generaciones: Why Nostalgia Is Hipper Than Ever | Billboard Latin Music Week 2026",
+        "summary": "Generaciones:와 관련된 주요 음악 업계 소식이 전해졌다. Generaciones: Why Nostalgia Is Hipper Than Ever | Billboard ...",
+        "url": "https://www.billboard.com/video/generaciones-why-nostalgia-is-hipper-than-ever/",
+        "published_date": "2026-10-22 01:24:31",
+        "category": "interview",
+        "source": "www.billboard.com"
+      },
+      {
+        "title": "The Many Faces of Latin Pop Today | Billboard Latin Music Week 2026",
+        "summary": "The Many와 관련된 주요 음악 업계 소식이 전해졌다. The Many Faces of Latin Pop Today | Billboard Latin Music We...",
+        "url": "https://www.billboard.com/video/the-many-faces-of-latin-pop-today-billboard-latin-music/",
+        "published_date": "2026-10-22 01:23:19",
+        "category": "interview",
+        "source": "www.billboard.com"
+      },
+      {
+        "title": "Building the Tour With Rawayana | Billboard Latin Music Week 2026",
+        "summary": "Building the가 새로운 투어 일정을 발표했다. 콘서트 관련 상세 정보는 공식 채널을 통해 확인할 수 있다.",
+        "url": "https://www.billboard.com/video/building-the-tour-with-rawayana-billboard-latin-music-week/",
+        "published_date": "2026-10-22 01:22:35",
+        "category": "interview",
+        "source": "www.billboard.com"
+      },
+      {
+        "title": "Jack Avery Testifies He’s ‘Very Scared’ of Ex Accused of Murder Plot, Wins Sole Custody of Daughter",
+        "summary": "Jack와 관련된 주요 음악 업계 소식이 전해졌다. Jack Avery Testifies He’s ‘Very Scared’ of Ex Accused of Mur...",
+        "url": "https://www.rollingstone.com/music/music-news/jack-avery-gabbie-gonzalez-murder-plot-custody-daughter-1235646294/",
+        "published_date": "2026-10-22 01:10:28",
+        "category": "interview",
+        "source": "www.rollingstone.com"
+      },
+      {
+        "title": "Rubén Blades Reflects on His Legacy at Latin Music Week: ‘What I Wrote Was Honest & I Still Feel That Way’",
+        "summary": "Rubén Blades와 관련된 주요 음악 업계 소식이 전해졌다. Rubén Blades Reflects on His Legacy at Latin Music Week: ‘Wh...",
+        "url": "https://www.billboard.com/music/latin/ruben-blades-reflects-legacy-latin-music-week-1236365295/",
+        "published_date": "2026-10-22 00:46:02",
+        "category": "interview",
+        "source": "www.billboard.com"
+      },
+      {
+        "title": "Becky G Talks ‘Baraja Bendita,’ Sisterhood & Why ‘Latino Joy Is So Important’ at Latin Music Week",
+        "summary": "Becky G와 관련된 주요 음악 업계 소식이 전해졌다. Becky G Talks ‘Baraja Bendita,’ Sisterhood & Why ‘Latino Joy...",
+        "url": "https://www.billboard.com/music/latin/becky-g-baraja-bendita-latin-music-week-2026-interview-1236365246/",
+        "published_date": "2026-10-22 00:44:32",
+        "category": "interview",
+        "source": "www.billboard.com"
+      },
+      {
+        "title": "Kid Cudi to Star as Jean-Michel Basquiat in ‘Jean’ Film He Directed & Wrote: ‘This One I’m So Proud of’",
+        "summary": "Kid와 관련된 주요 음악 업계 소식이 전해졌다. Kid Cudi to Star as Jean-Michel Basquiat in ‘Jean’ Film He D...",
+        "url": "https://www.billboard.com/music/rb-hip-hop/kid-cudi-jean-michel-basquiat-movie-1236365215/",
+        "published_date": "2026-10-22 00:43:25",
+        "category": "interview",
+        "source": "www.billboard.com"
+      },
+      {
+        "title": "Aaron Carter Estate Reaches Settlement With Walgreens Over Xanax Prescriptions",
+        "summary": "Aaron와 관련된 주요 음악 업계 소식이 전해졌다. Aaron Carter Estate Reaches Settlement With Walgreens Over X...",
+        "url": "https://www.rollingstone.com/music/music-news/aaron-carter-estate-settlement-walgreens-xanax-prescription-1235646315/",
+        "published_date": "2026-10-22 00:39:38",
+        "category": "interview",
+        "source": "www.rollingstone.com"
+      },
+      {
+        "title": "BTS’ j-hope Joins Forces With Streetwear Legend Nigo for New Nike Sneakers: How to Shop the Drop",
+        "summary": "BTS’와 관련된 주요 음악 업계 소식이 전해졌다. BTS’ j-hope Joins Forces With Streetwear Legend Nigo for New...",
+        "url": "https://www.billboard.com/culture/product-recommendations/bts-j-hope-nigo-nike-air-force-1-sneakers-release-oct-2026-1236365240/",
+        "published_date": "2026-10-21 23:35:13",
+        "category": "interview",
+        "source": "www.billboard.com"
+      },
+      {
+        "title": "Talking Heads Announce New Book",
+        "summary": "Talking와 관련된 주요 음악 업계 소식이 전해졌다. Talking Heads Announce New Book",
+        "url": "https://pitchfork.com/story/talking-heads-announce-new-book/",
+        "published_date": "2026-10-21 23:03:37",
+        "category": "interview",
+        "source": "pitchfork.com"
+      },
+      {
+        "title": "Talking Heads Reunite for Coffee-Table Book",
+        "summary": "Talking와 관련된 주요 음악 업계 소식이 전해졌다. Talking Heads Reunite for Coffee-Table Book",
+        "url": "https://www.rollingstone.com/music/music-news/talking-heads-new-feeling-book-1235646227/",
+        "published_date": "2026-10-21 21:45:37",
+        "category": "interview",
+        "source": "www.rollingstone.com"
+      },
+      {
+        "title": "Iron Maiden Legend Nicko McBrain Turned Down Trump Golf Invite: “[He] Should Be Put in Jail”",
+        "summary": "Iron와 관련된 주요 음악 업계 소식이 전해졌다. Iron Maiden Legend Nicko McBrain Turned Down Trump Golf Invi...",
+        "url": "https://consequence.net/2026/10/iron-maiden-nicko-mcbrain-turned-down-trump-golf-invite/",
+        "published_date": "2026-10-21 20:05:35",
+        "category": "interview",
+        "source": "consequenceofsound.net"
+      },
+      {
+        "title": "Poison Ivy TV Series in the Works at HBO",
+        "summary": "Poison와 관련된 주요 음악 업계 소식이 전해졌다. Poison Ivy TV Series in the Works at HBO",
+        "url": "https://consequence.net/2026/10/poison-ivy-hbo-series-lauren-lefranc/",
+        "published_date": "2026-10-21 20:02:53",
+        "category": "interview",
+        "source": "consequenceofsound.net"
+      },
+      {
+        "title": "Dowsers – “Dogwood” & “Three Forks Of Cheat”",
+        "summary": "Dowsers와 관련된 주요 음악 업계 소식이 전해졌다. Dowsers – “Dogwood” & “Three Forks Of Cheat”",
+        "url": "https://stereogum.com/2515282/dowsers-dogwood-three-forks-of-cheat/music/",
+        "published_date": "2026-10-21 19:57:20",
+        "category": "interview",
+        "source": "www.stereogum.com"
+      },
+      {
+        "title": "Clayface Is DC Comics’ Scariest Horror Movie Ever: Review",
+        "summary": "Clayface와 관련된 주요 음악 업계 소식이 전해졌다. Clayface Is DC Comics’ Scariest Horror Movie Ever: Review",
+        "url": "https://consequence.net/2026/10/clayface-review-dc-comics-mike-flanagan/",
+        "published_date": "2026-10-21 19:00:08",
+        "category": "interview",
+        "source": "consequenceofsound.net"
+      },
+      {
+        "title": "Warpaint Announce New Live Album ARTIFACT, Share “Billie Holiday” and “New Song”: Stream",
+        "summary": "Warpaint Announce가 새 앨범 발매 소식을 공개했다. 이번 릴리스는 팬들과 음악 업계의 큰 관심을 받고 있다.",
+        "url": "https://consequence.net/2026/10/warpaint-announce-new-live-album-artifact-share-billie-holiday-and-new-song-stream/",
+        "published_date": "2026-10-21 18:42:33",
+        "category": "interview",
+        "source": "consequenceofsound.net"
+      },
+      {
+        "title": "Kid Cudi Is Writing, Producing, And Starring In His Own Jean-Michel Basquiat Biopic",
+        "summary": "Kid와 관련된 주요 음악 업계 소식이 전해졌다. Kid Cudi Is Writing, Producing, And Starring In His Own Jean...",
+        "url": "https://stereogum.com/2515266/kid-cudi-is-writing-producing-and-starring-in-his-own-jean-michel-basquiat-biopic/news/",
+        "published_date": "2026-10-21 18:37:17",
+        "category": "interview",
+        "source": "www.stereogum.com"
+      },
+      {
+        "title": "Lita Ford Inks Record Deal for New Album, Teases New Single “Dracula”",
+        "summary": "Lita Ford가 새 앨범 발매 소식을 공개했다. 이번 릴리스는 팬들과 음악 업계의 큰 관심을 받고 있다.",
+        "url": "https://consequence.net/2026/10/lita-ford-inks-record-deal-teases-dracula/",
+        "published_date": "2026-10-21 18:22:34",
+        "category": "interview",
+        "source": "consequenceofsound.net"
+      },
+      {
+        "title": "Kid Cudi to Write, Direct, and Star in Jean-Michel Basquiat Biopic Jean",
+        "summary": "Kid와 관련된 주요 음악 업계 소식이 전해졌다. Kid Cudi to Write, Direct, and Star in Jean-Michel Basquiat ...",
+        "url": "https://consequence.net/2026/10/kid-cudi-jean-michel-basquiat-biopic-jean-star-direct/",
+        "published_date": "2026-10-21 18:20:52",
+        "category": "interview",
+        "source": "consequenceofsound.net"
+      },
+      {
+        "title": "Aerosmith Share Rehearsal Pics Ahead of Comeback Gigs, Confirm Joey Kramer’s Return",
+        "summary": "Aerosmith와 관련된 주요 음악 업계 소식이 전해졌다. Aerosmith Share Rehearsal Pics Ahead of Comeback Gigs, Confi...",
+        "url": "https://consequence.net/2026/10/aerosmith-rehearsal-pics-joey-kramer-return/",
+        "published_date": "2026-10-21 18:10:18",
+        "category": "interview",
+        "source": "consequenceofsound.net"
+      },
+      {
+        "title": "Watch Fontaines D.C. Perform on Jools Holland",
+        "summary": "Watch와 관련된 주요 음악 업계 소식이 전해졌다. Watch Fontaines D.C. Perform on Jools Holland",
+        "url": "https://pitchfork.com/story/watch-fontaines-dc-perform-on-jools-holland/",
+        "published_date": "2026-10-21 18:08:42",
+        "category": "interview",
+        "source": "pitchfork.com"
+      },
+      {
+        "title": "Ben Folds Five Announce First Tour Since 2013",
+        "summary": "Ben의 라이브 공연 관련 소식이 전해졌다. 콘서트 티켓과 일정 정보가 업데이트되었다.",
+        "url": "https://pitchfork.com/story/ben-folds-five-announce-first-tour-since-2013/",
+        "published_date": "2026-10-21 17:53:46",
+        "category": "interview",
+        "source": "pitchfork.com"
+      },
+      {
+        "title": "Yung Miami Reveals Full Tracklist for Debut Solo Album",
+        "summary": "Yung Miami가 새 앨범 발매 소식을 공개했다. 이번 릴리스는 팬들과 음악 업계의 큰 관심을 받고 있다.",
+        "url": "https://pitchfork.com/story/yung-miami-announces-debut-solo-album-watch-dis-features/",
+        "published_date": "2026-10-21 17:45:06",
+        "category": "interview",
+        "source": "pitchfork.com"
+      },
+      {
+        "title": "Maz Announces New EP Loveandpain: Hear The Title Track",
+        "summary": "Maz가 중요한 음악 관련 발표를 했다. 이번 소식은 팬들의 주목을 받고 있다.",
+        "url": "https://stereogum.com/2515253/maz-announces-new-ep-loveandpain-hear-the-title-track/music/",
+        "published_date": "2026-10-21 17:43:24",
+        "category": "interview",
+        "source": "www.stereogum.com"
+      },
+      {
+        "title": "Ben Folds Five Announce First Tour in 15 Years",
+        "summary": "Ben의 라이브 공연 관련 소식이 전해졌다. 콘서트 티켓과 일정 정보가 업데이트되었다.",
+        "url": "https://consequence.net/2026/10/ben-folds-five-2027-us-tour/",
+        "published_date": "2026-10-21 17:39:11",
+        "category": "interview",
+        "source": "consequenceofsound.net"
+      },
+      {
+        "title": "Ben Folds Five Announce Reunion Tour",
+        "summary": "Ben의 라이브 공연 관련 소식이 전해졌다. 콘서트 티켓과 일정 정보가 업데이트되었다.",
+        "url": "https://stereogum.com/2515249/ben-folds-five-announce-reunion-tour/news/",
+        "published_date": "2026-10-21 17:38:28",
+        "category": "interview",
+        "source": "www.stereogum.com"
+      },
+      {
+        "title": "Fenne Lily – “Stranger Things”",
+        "summary": "Fenne와 관련된 주요 음악 업계 소식이 전해졌다. Fenne Lily – “Stranger Things”",
+        "url": "https://stereogum.com/2515245/fenne-lily-stranger-things/music/",
+        "published_date": "2026-10-21 17:24:04",
+        "category": "interview",
+        "source": "www.stereogum.com"
+      },
+      {
+        "title": "MxPx Announce New Album, Unleash Single “Panic Attack”: Stream",
+        "summary": "MxPx와 관련된 주요 음악 업계 소식이 전해졌다. MxPx Announce New Album, Unleash Single “Panic Attack”: Stre...",
+        "url": "https://consequence.net/2026/10/mxpx-new-album-single-panic-attack/",
+        "published_date": "2026-10-21 17:23:32",
+        "category": "interview",
+        "source": "consequenceofsound.net"
+      },
+      {
+        "title": "Kanye West at AT&T Stadium: Get Last-Minute Tickets",
+        "summary": "Kanye와 관련된 주요 음악 업계 소식이 전해졌다. Kanye West at AT&T Stadium: Get Last-Minute Tickets",
+        "url": "https://consequence.net/2026/10/kanye-west-att-stadium-get-last-minute-tickets/",
+        "published_date": "2026-10-21 17:14:24",
+        "category": "interview",
+        "source": "consequenceofsound.net"
+      },
+      {
+        "title": "David Murray, Year One",
+        "summary": "David와 관련된 주요 음악 업계 소식이 전해졌다. David Murray, Year One",
+        "url": "https://stereogum.com/2515225/david-murray-year-one/columns/ugly-beauty/",
+        "published_date": "2026-10-21 17:01:34",
+        "category": "interview",
+        "source": "www.stereogum.com"
+      },
+      {
+        "title": "Doechii – “Catwoman”",
+        "summary": "Doechii와 관련된 주요 음악 업계 소식이 전해졌다. Doechii – “Catwoman”",
+        "url": "https://stereogum.com/2515238/doechii-catwoman/music/",
+        "published_date": "2026-10-21 16:35:32",
+        "category": "interview",
+        "source": "www.stereogum.com"
+      },
+      {
+        "title": "Universal Music Group signs Thai artist Jeff Satur, aiming to make him ‘T-Pop’s first global superstar’",
+        "summary": "Universal와 관련된 주요 음악 업계 소식이 전해졌다. Universal Music Group signs Thai artist Jeff Satur, aiming t...",
+        "url": "https://www.musicbusinessworldwide.com/universal-music-group-signs-thai-artist-jeff-satur-aiming-to-make-him-t-pops-first-global-superstar/",
+        "published_date": "2026-10-21 16:21:41",
+        "category": "interview",
+        "source": "www.musicbusinessworldwide.com"
+      },
+      {
+        "title": "Chvrches Announce First Album in Six Years and 2027 Tour",
+        "summary": "Chvrches의 라이브 공연 관련 소식이 전해졌다. 콘서트 티켓과 일정 정보가 업데이트되었다.",
+        "url": "https://pitchfork.com/story/chvrches-announce-first-album-in-six-years-and-2027-tour/",
+        "published_date": "2026-10-21 16:20:36",
+        "category": "interview",
+        "source": "pitchfork.com"
+      },
+      {
+        "title": "Season’s Greetings! Hilary Duff Is Releasing a Holiday EP",
+        "summary": "Season’s와 관련된 주요 음악 업계 소식이 전해졌다. Season’s Greetings! Hilary Duff Is Releasing a Holiday EP",
+        "url": "https://www.rollingstone.com/music/music-news/hilary-duff-holiday-things-ep-1235645720/",
+        "published_date": "2026-10-21 16:16:43",
+        "category": "interview",
+        "source": "www.rollingstone.com"
+      },
+      {
+        "title": "Chvrches Announce New Album All The King’s Men",
+        "summary": "Chvrches와 관련된 주요 음악 업계 소식이 전해졌다. Chvrches Announce New Album All The King’s Men",
+        "url": "https://stereogum.com/2515234/chvrches-announce-new-album-all-the-kings-men/music/",
+        "published_date": "2026-10-21 16:15:20",
+        "category": "interview",
+        "source": "www.stereogum.com"
+      },
+      {
+        "title": "Snoh Aalegra Unveils New Album With Song Featuring Nile Rodgers and Raphael Saadiq",
+        "summary": "Snoh가 새 앨범 발매 소식을 공개했다. 팬들과 업계의 큰 관심을 받고 있다.",
+        "url": "https://pitchfork.com/story/snoh-aalegra-unveils-new-album-with-song-featuring-nile-rodgers-and-raphael-saadiq/",
+        "published_date": "2026-10-21 16:07:50",
+        "category": "interview",
+        "source": "pitchfork.com"
+      },
+      {
+        "title": "Chvrches announce first album in nearly six years ‘All The King’s Men’ along with 2027 UK, Ireland and North America tour",
+        "summary": "Chvrches의 라이브 공연 관련 소식이 전해졌다. 콘서트 티켓과 일정 정보가 업데이트되었다.",
+        "url": "https://www.nme.com/news/music/chvrches-announce-album-all-the-kings-men-2027-uk-ireland-north-america-tour-3973779?utm_source=rss&utm_medium=rss&utm_campaign=chvrches-announce-album-all-the-kings-men-2027-uk-ireland-north-america-tour",
+        "published_date": "2026-10-21 16:00:21",
+        "category": "interview",
+        "source": "www.nme.com"
+      },
+      {
+        "title": "CHVRCHES Announce New Album All the King’s Men and 2027 North American Tour",
+        "summary": "CHVRCHES의 라이브 공연 관련 소식이 전해졌다. 콘서트 티켓과 일정 정보가 업데이트되었다.",
+        "url": "https://consequence.net/2026/10/chvrches-all-the-kings-men-2027-tour/",
+        "published_date": "2026-10-21 16:00:05",
+        "category": "interview",
+        "source": "consequenceofsound.net"
+      },
+      {
+        "title": "Angine De Poitrine announce huge 2027 world tour – including Halifax and London dates around Glastonbury",
+        "summary": "Angine의 라이브 공연 관련 소식이 전해졌다. 콘서트 티켓과 일정 정보가 업데이트되었다.",
+        "url": "https://www.nme.com/news/music/angine-de-poitrine-announce-2027-world-tour-glastonbury-gap-buy-tickets-3973787?utm_source=rss&utm_medium=rss&utm_campaign=angine-de-poitrine-announce-2027-world-tour-glastonbury-gap-buy-tickets",
+        "published_date": "2026-10-21 15:58:45",
+        "category": "interview",
+        "source": "www.nme.com"
+      },
+      {
+        "title": "GoFundMe Launched for They Are Gutting a Body of Water’s Douglas Dulgarian for Cancer Treatment",
+        "summary": "GoFundMe와 관련된 주요 음악 업계 소식이 전해졌다. GoFundMe Launched for They Are Gutting a Body of Water’s Dou...",
+        "url": "https://www.rollingstone.com/music/music-news/douglas-dulgarian-they-are-gutting-a-body-of-water-gofundme-1235645945/",
+        "published_date": "2026-10-21 15:45:55",
+        "category": "interview",
+        "source": "www.rollingstone.com"
+      },
+      {
+        "title": "Cloud Nothings Announce Metal-Influenced New Album What Kind of Hell Did You Survive?, Drop “Death Keeps Me Alive”: Stream",
+        "summary": "Cloud의 라이브 공연 관련 소식이 전해졌다. 콘서트 티켓과 일정 정보가 업데이트되었다.",
+        "url": "https://consequence.net/2026/10/cloud-nothings-new-album-what-kind-of-hell-did-you-survive/",
+        "published_date": "2026-10-21 15:44:07",
+        "category": "interview",
+        "source": "consequenceofsound.net"
+      },
+      {
+        "title": "Angine de Poitrine Set 2027 International Tour",
+        "summary": "Angine의 라이브 공연 관련 소식이 전해졌다. 콘서트 티켓과 일정 정보가 업데이트되었다.",
+        "url": "https://pitchfork.com/story/angine-de-poitrine-set-2027-international-tour/",
+        "published_date": "2026-10-21 15:42:52",
+        "category": "interview",
+        "source": "pitchfork.com"
+      },
+      {
+        "title": "My Wonderful Boyfriend – “Chip City”",
+        "summary": "My와 관련된 주요 음악 업계 소식이 전해졌다. My Wonderful Boyfriend – “Chip City”",
+        "url": "https://stereogum.com/2515227/my-wonderful-boyfriend-chip-city/music/",
+        "published_date": "2026-10-21 15:33:19",
+        "category": "interview",
+        "source": "www.stereogum.com"
+      },
+      {
+        "title": "‘A certain amount of almost unreasonable self-belief is necessary’",
+        "summary": "‘A와 관련된 주요 음악 업계 소식이 전해졌다. ‘A certain amount of almost unreasonable self-belief is nece...",
+        "url": "https://www.musicbusinessworldwide.com/a-certain-amount-of-almost-unreasonable-self-belief-is-necessary/",
+        "published_date": "2026-10-21 15:30:10",
+        "category": "interview",
+        "source": "www.musicbusinessworldwide.com"
+      },
+      {
+        "title": "Warner Music Group unifies its recorded music and publishing sync teams under Ron Broitman",
+        "summary": "Warner와 관련된 주요 음악 업계 소식이 전해졌다. Warner Music Group unifies its recorded music and publishing...",
+        "url": "https://www.musicbusinessworldwide.com/warner-music-group-unifies-its-recorded-music-and-publishing-sync-teams-under-ron-broitman/",
+        "published_date": "2026-10-21 15:28:46",
+        "category": "interview",
+        "source": "www.musicbusinessworldwide.com"
+      },
+      {
+        "title": "The Offspring’s Noodles Steps Away from Live Shows Due to “Fairly Serious Health Issue”",
+        "summary": "The의 라이브 공연 관련 소식이 전해졌다. 콘서트 티켓과 일정 정보가 업데이트되었다.",
+        "url": "https://consequence.net/2026/10/the-offspring-noodles-serious-health-issue/",
+        "published_date": "2026-10-21 15:24:42",
+        "category": "interview",
+        "source": "consequenceofsound.net"
+      }
+    ],
+    "insight": []
+  },
+  "summary": {
+    "total_count": 50,
+    "by_category": {
+      "interview": 50
+    },
+    "by_source": {
+      "consequenceofsound.net": 14,
+      "www.billboard.com": 10,
+      "www.stereogum.com": 9,
+      "pitchfork.com": 7,
+      "www.rollingstone.com": 5,
+      "www.musicbusinessworldwide.com": 3,
+      "www.nme.com": 2
+    },
+    "members_only_count": 0
+  }
+}
