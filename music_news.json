@@ -1,8 +1,8 @@
 {
   "metadata": {
-    "generated_at": "2026-10-24T05:19:23.168689",
+    "generated_at": "2026-10-25T05:36:22.678884",
     "total_news": 50,
-    "last_updated": "2026-10-24T05:19:23.168698",
+    "last_updated": "2026-10-25T05:36:22.678893",
     "version": "2.0",
     "compatible_with": "NewsSection.tsx"
   },
@@ -10,6 +10,158 @@
     "all_articles": [],
     "news": [],
     "interview": [
+      {
+        "title": "Macklemore Speaks Out on Palestine and ICE at First Show Since Ed Sheeran Tour Exit",
+        "summary": "Macklemore의 라이브 공연 관련 소식이 전해졌다. 콘서트 티켓과 일정 정보가 업데이트되었다.",
+        "url": "https://www.billboard.com/music/music-news/macklemore-free-palestine-red-rocks-ed-sheeran-tour-exit-1236367576/",
+        "published_date": "2026-10-25 05:26:30",
+        "category": "interview",
+        "source": "www.billboard.com"
+      },
+      {
+        "title": "Drake Turns 40, Shares Personal Childhood Photos: ‘I Accept You for You’",
+        "summary": "Drake와 관련된 주요 음악 업계 소식이 전해졌다. Drake Turns 40, Shares Personal Childhood Photos: ‘I Accept ...",
+        "url": "https://www.billboard.com/music/rb-hip-hop/drake-i-want-it-that-way-backstreet-boys-40th-birthday-1236367560/",
+        "published_date": "2026-10-24 23:00:22",
+        "category": "interview",
+        "source": "www.billboard.com"
+      },
+      {
+        "title": "Jay-Z Brings Out Blue Ivy, John Legend, DJ Khaled & Scarface in Los Angeles",
+        "summary": "Jay-Z와 관련된 주요 음악 업계 소식이 전해졌다. Jay-Z Brings Out Blue Ivy, John Legend, DJ Khaled & Scarface...",
+        "url": "https://www.billboard.com/music/rb-hip-hop/jay-z-la-night-one-guests-blue-ivy-john-legend-scarface-1236367544/",
+        "published_date": "2026-10-24 19:24:38",
+        "category": "interview",
+        "source": "www.billboard.com"
+      },
+      {
+        "title": "Stevie Wonder Sues to Evict Ex-Fiancée Who Has Been Living At His Property Rent-Free for 38 Years",
+        "summary": "Stevie와 관련된 주요 음악 업계 소식이 전해졌다. Stevie Wonder Sues to Evict Ex-Fiancée Who Has Been Living A...",
+        "url": "https://consequence.net/2026/10/stevie-wonder-sues-fiancee-living-rent-free/",
+        "published_date": "2026-10-24 19:22:31",
+        "category": "interview",
+        "source": "consequenceofsound.net"
+      },
+      {
+        "title": "Elvis Presley Rightsholders Sue Anthropic for Training on 274 Songs Without Permission",
+        "summary": "Elvis와 관련된 주요 음악 업계 소식이 전해졌다. Elvis Presley Rightsholders Sue Anthropic for Training on 27...",
+        "url": "https://www.rollingstone.com/music/music-news/elvis-presley-rightsholders-anthropic-lawsuit-infringement-1235647682/",
+        "published_date": "2026-10-24 18:28:26",
+        "category": "interview",
+        "source": "www.rollingstone.com"
+      },
+      {
+        "title": "Ali G Ropes Noel Gallagher Into New Movie Promo",
+        "summary": "Ali와 관련된 주요 음악 업계 소식이 전해졌다. Ali G Ropes Noel Gallagher Into New Movie Promo",
+        "url": "https://stereogum.com/2515535/ali-g-ropes-noel-gallagher-into-new-movie-promo/news/",
+        "published_date": "2026-10-24 17:20:13",
+        "category": "interview",
+        "source": "www.stereogum.com"
+      },
+      {
+        "title": "Doja Cat Talks About What She Loves About Collaborating With SZA & Performing With Latto",
+        "summary": "Doja와 관련된 주요 음악 업계 소식이 전해졌다. Doja Cat Talks About What She Loves About Collaborating With...",
+        "url": "https://www.billboard.com/video/doja-cat-meta-interview/",
+        "published_date": "2026-10-24 17:02:22",
+        "category": "interview",
+        "source": "www.billboard.com"
+      },
+      {
+        "title": "Slayyyter Addresses People Trying To “Recancel” Her, Cancels Rest Of Tour",
+        "summary": "Slayyyter의 라이브 공연 관련 소식이 전해졌다. 콘서트 티켓과 일정 정보가 업데이트되었다.",
+        "url": "https://stereogum.com/2515530/slayyyter-addresses-people-trying-to-recancel-her-cancels-rest-of-tour/news/",
+        "published_date": "2026-10-24 16:45:45",
+        "category": "interview",
+        "source": "www.stereogum.com"
+      },
+      {
+        "title": "Dallas Cowboys Cheerleaders Take Legal Action Against My Chemical Romance Over Staged Shootout",
+        "summary": "Dallas와 관련된 주요 음악 업계 소식이 전해졌다. Dallas Cowboys Cheerleaders Take Legal Action Against My Che...",
+        "url": "https://stereogum.com/2515526/dallas-cowboys-cheerleaders-take-legal-action-against-my-chemical-romance-over-staged-shootout/news/",
+        "published_date": "2026-10-24 15:54:18",
+        "category": "interview",
+        "source": "www.stereogum.com"
+      },
+      {
+        "title": "Anthropic Sued For Stealing Elvis Presley Music to Train AI: ‘Deeply Protective of These Iconic Songs’",
+        "summary": "Anthropic Sued가 새 앨범 발매 소식을 공개했다. 이번 릴리스는 팬들과 음악 업계의 큰 관심을 받고 있다.",
+        "url": "https://www.billboard.com/pro/elvis-presley-estate-sues-suno-anthropic/",
+        "published_date": "2026-10-24 14:34:54",
+        "category": "interview",
+        "source": "www.billboard.com"
+      },
+      {
+        "title": "Dallas Cowboys Cheerleaders Sue My Chemical Romance",
+        "summary": "Dallas와 관련된 주요 음악 업계 소식이 전해졌다. Dallas Cowboys Cheerleaders Sue My Chemical Romance",
+        "url": "https://consequence.net/2026/10/dallas-cowboys-cheerleaders-sue-my-chemical-romance/",
+        "published_date": "2026-10-24 14:05:37",
+        "category": "interview",
+        "source": "consequenceofsound.net"
+      },
+      {
+        "title": "Maluma Opens Up About Therapy and Finding Balance at Billboard Latin Music Week & More Uplifting Moments",
+        "summary": "Maluma Opens와 관련된 주요 음악 업계 소식이 전해졌다. Maluma Opens Up About Therapy and Finding Balance at Billboa...",
+        "url": "https://www.billboard.com/music/latin/maluma-betterhelp-latin-music-week-2026-uplifting-moments-1236367482/",
+        "published_date": "2026-10-24 14:00:00",
+        "category": "interview",
+        "source": "www.billboard.com"
+      },
+      {
+        "title": "My Chemical Romance Face Legal Action From Dallas Cowboys Cheerleaders Over Stage Costumes",
+        "summary": "My와 관련된 주요 음악 업계 소식이 전해졌다. My Chemical Romance Face Legal Action From Dallas Cowboys Ch...",
+        "url": "https://www.rollingstone.com/music/music-news/my-chemical-romance-legal-action-dallas-cowboys-cheerleaders-1235647551/",
+        "published_date": "2026-10-24 13:47:22",
+        "category": "interview",
+        "source": "www.rollingstone.com"
+      },
+      {
+        "title": "Sam Fender says he’s “not happy” with prices for 2027 stadium tour and they’re “getting changed”",
+        "summary": "Sam의 라이브 공연 관련 소식이 전해졌다. 콘서트 티켓과 일정 정보가 업데이트되었다.",
+        "url": "https://www.nme.com/news/music/sam-fender-not-happy-with-prices-for-2027-stadium-tour-getting-changed-3974129?utm_source=rss&utm_medium=rss&utm_campaign=sam-fender-not-happy-with-prices-for-2027-stadium-tour-getting-changed",
+        "published_date": "2026-10-24 11:16:40",
+        "category": "interview",
+        "source": "www.nme.com"
+      },
+      {
+        "title": "Here’s How to Watch UFC 333 Live Online for Free",
+        "summary": "Here’s의 라이브 공연 관련 소식이 전해졌다. 콘서트 티켓과 일정 정보가 업데이트되었다.",
+        "url": "https://www.billboard.com/culture/product-recommendations/ufc-333-oct-2026-watch-mma-live-online-free-1236364114/",
+        "published_date": "2026-10-24 11:00:00",
+        "category": "interview",
+        "source": "www.billboard.com"
+      },
+      {
+        "title": "Macklemore calls for “free Palestine” and condemns ICE at first show since Ed Sheeran saga",
+        "summary": "Macklemore와 관련된 주요 음악 업계 소식이 전해졌다. Macklemore calls for “free Palestine” and condemns ICE at fi...",
+        "url": "https://www.nme.com/news/music/macklemore-calls-for-free-palestine-condemns-ice-first-show-since-ed-sheeran-saga-3974113?utm_source=rss&utm_medium=rss&utm_campaign=macklemore-calls-for-free-palestine-condemns-ice-first-show-since-ed-sheeran-saga",
+        "published_date": "2026-10-24 10:03:29",
+        "category": "interview",
+        "source": "www.nme.com"
+      },
+      {
+        "title": "Slayyyter cancels UK and European tour dates due to illness",
+        "summary": "Slayyyter의 라이브 공연 관련 소식이 전해졌다. 콘서트 티켓과 일정 정보가 업데이트되었다.",
+        "url": "https://www.nme.com/news/music/slayyyter-cancels-uk-and-european-tour-dates-due-to-illness-3974102?utm_source=rss&utm_medium=rss&utm_campaign=slayyyter-cancels-uk-and-european-tour-dates-due-to-illness",
+        "published_date": "2026-10-24 08:59:54",
+        "category": "interview",
+        "source": "www.nme.com"
+      },
+      {
+        "title": "Watch Noel Gallagher talk Oasis reunion and “compromise” of working with Liam on ‘Chicken Shop Date’",
+        "summary": "Watch와 관련된 주요 음악 업계 소식이 전해졌다. Watch Noel Gallagher talk Oasis reunion and “compromise” of ...",
+        "url": "https://www.nme.com/news/music/watch-noel-gallagher-talk-oasis-reunion-on-chicken-shop-date-3974092?utm_source=rss&utm_medium=rss&utm_campaign=watch-noel-gallagher-talk-oasis-reunion-on-chicken-shop-date",
+        "published_date": "2026-10-24 08:11:32",
+        "category": "interview",
+        "source": "www.nme.com"
+      },
+      {
+        "title": "Drake Sings ‘I Want It That Way’ With Backstreet Boys at 40th Birthday Bash",
+        "summary": "Drake와 관련된 주요 음악 업계 소식이 전해졌다. Drake Sings ‘I Want It That Way’ With Backstreet Boys at 40t...",
+        "url": "https://www.billboard.com/music/rb-hip-hop/drake-40th-birthday-backstreet-boys-surprise-performance-1236367504/",
+        "published_date": "2026-10-24 06:11:30",
+        "category": "interview",
+        "source": "www.billboard.com"
+      },
       {
         "title": "In Canada: Summer Walker, Bebe Rexha to Accept Awards at Billboard Canada Women in Music 2026",
         "summary": "In Canada:가 새 앨범 발매 소식을 공개했다. 이번 릴리스는 팬들과 음악 업계의 큰 관심을 받고 있다.",
@@ -27,76 +179,12 @@
         "source": "www.billboard.com"
       },
       {
-        "title": "Hailee Steinfeld Will Have a Hold on You in ‘Magic’ Cover of The Cars for ‘Hexed’ Movie: Listen",
-        "summary": "Hailee와 관련된 주요 음악 업계 소식이 전해졌다. Hailee Steinfeld Will Have a Hold on You in ‘Magic’ Cover of...",
-        "url": "https://www.billboard.com/music/music-news/hailee-steinfeld-magic-the-cars-cover-hexed-movie-listen-1236367434/",
-        "published_date": "2026-10-23 21:59:36",
-        "category": "interview",
-        "source": "www.billboard.com"
-      },
-      {
-        "title": "Billboard Latin Music Week 2026 Photo Booth: Anuel AA, Becky G, Maluma & More",
-        "summary": "Billboard와 관련된 주요 음악 업계 소식이 전해졌다. Billboard Latin Music Week 2026 Photo Booth: Anuel AA, Becky...",
-        "url": "https://www.billboard.com/photos/billboard-latin-music-week-2026-photo-booth-anuel-aa-becky-g-maluma-more-1236365751/",
-        "published_date": "2026-10-23 21:34:31",
-        "category": "interview",
-        "source": "www.billboard.com"
-      },
-      {
-        "title": "Noel Gallagher Says ‘F—‘ Vegetarians on ‘Chicken Shop Date’ — With One Very Notable Exception",
-        "summary": "Noel와 관련된 주요 음악 업계 소식이 전해졌다. Noel Gallagher Says ‘F—‘ Vegetarians on ‘Chicken Shop Date’ ...",
-        "url": "https://www.billboard.com/music/music-news/noel-gallagher-chicken-shop-date-vegetarians-paul-mccartney-1236367401/",
-        "published_date": "2026-10-23 21:33:09",
-        "category": "interview",
-        "source": "www.billboard.com"
-      },
-      {
-        "title": "Vince Gill & Charlie Handsome Lead 2026 NMPA Gold & Platinum Gala Honorees",
-        "summary": "Vince Gill와 관련된 주요 음악 업계 소식이 전해졌다. Vince Gill & Charlie Handsome Lead 2026 NMPA Gold & Platinum...",
-        "url": "https://www.billboard.com/pro/vince-gill-charlie-handsome-2026-nmpa-gold-platinum-gala/",
-        "published_date": "2026-10-23 21:19:40",
-        "category": "interview",
-        "source": "www.billboard.com"
-      },
-      {
-        "title": "Matchbox Twenty 2027: Here’s Where to Shop Affordable Tour Tickets Online",
-        "summary": "Matchbox의 라이브 공연 관련 소식이 전해졌다. 콘서트 티켓과 일정 정보가 업데이트되었다.",
-        "url": "https://www.billboard.com/culture/product-recommendations/matchbox-twenty-2027-tour-tickets-buy-shop-online-1236367080/",
-        "published_date": "2026-10-23 21:08:12",
-        "category": "interview",
-        "source": "www.billboard.com"
-      },
-      {
         "title": "Stevie Wonder Files Lawsuit to Evict Woman Living on His Property Rent-Free for 38 Years",
         "summary": "Stevie와 관련된 주요 음악 업계 소식이 전해졌다. Stevie Wonder Files Lawsuit to Evict Woman Living on His Pro...",
         "url": "https://www.rollingstone.com/music/music-news/stevie-wonder-lawsuit-evict-woman-rent-free-house-1235647480/",
         "published_date": "2026-10-23 21:00:27",
         "category": "interview",
         "source": "www.rollingstone.com"
-      },
-      {
-        "title": "World Series 2026: Here’s Where to Watch the Tampa Bay Rays vs. Milwaukee Brewers Live Online Free",
-        "summary": "World의 라이브 공연 관련 소식이 전해졌다. 콘서트 티켓과 일정 정보가 업데이트되었다.",
-        "url": "https://www.billboard.com/culture/product-recommendations/world-series-2026-rays-brewers-mlb-watch-live-online-free-1236364399/",
-        "published_date": "2026-10-23 21:00:00",
-        "category": "interview",
-        "source": "www.billboard.com"
-      },
-      {
-        "title": "Yung Miami Says Drake ‘Left Me on Read’ After Trying to Get OVO Rapper on ‘Spend Dat’ Remix: ‘Just Tell Me No’",
-        "summary": "Yung와 관련된 주요 음악 업계 소식이 전해졌다. Yung Miami Says Drake ‘Left Me on Read’ After Trying to Get ...",
-        "url": "https://www.billboard.com/music/rb-hip-hop/yung-miami-drake-spend-dat-remix-1236367368/",
-        "published_date": "2026-10-23 20:43:55",
-        "category": "interview",
-        "source": "www.billboard.com"
-      },
-      {
-        "title": "‘Case Closed’ Vol. 109 Debuts at No. 1 on Billboard Japan Book Hot 100",
-        "summary": "‘Case와 관련된 주요 음악 업계 소식이 전해졌다. ‘Case Closed’ Vol. 109 Debuts at No. 1 on Billboard Japan Bo...",
-        "url": "https://www.billboard.com/music/chart-beat/case-closed-vol-109-billboard-japan-book-hot-100-1236367405/",
-        "published_date": "2026-10-23 20:40:32",
-        "category": "interview",
-        "source": "www.billboard.com"
       },
       {
         "title": "Tinashe Announces 2027 Tour: “The Show Must Go On”",
@@ -107,7 +195,7 @@
         "source": "consequenceofsound.net"
       },
       {
-        "title": "Previously Unseen Footage of Scott Weiland Performing “Vaseline” Arrives with Live Album Release: Watch",
+        "title": "Previously Unseen Footage of Scott Weiland Performing “Vasoline” Arrives with Live Album Release: Watch",
         "summary": "Previously Unseen가 새 앨범 발매 소식을 공개했다. 이번 릴리스는 팬들과 음악 업계의 큰 관심을 받고 있다.",
         "url": "https://consequence.net/2026/10/scott-weiland-vaseline-live/",
         "published_date": "2026-10-23 20:03:09",
@@ -321,94 +409,6 @@
         "published_date": "2026-10-23 15:26:19",
         "category": "interview",
         "source": "www.nme.com"
-      },
-      {
-        "title": "Haywire Announce Extensive 2027 World Tour",
-        "summary": "Haywire의 라이브 공연 관련 소식이 전해졌다. 콘서트 티켓과 일정 정보가 업데이트되었다.",
-        "url": "https://consequence.net/2026/10/haywire-2027-world-tour/",
-        "published_date": "2026-10-23 15:22:19",
-        "category": "interview",
-        "source": "consequenceofsound.net"
-      },
-      {
-        "title": "Panchiko Announce New Album Chimera Feat. billy woods, Mei Semones, Clarion, & More",
-        "summary": "Panchiko의 새로운 협업 프로젝트 소식이 공개되었다. 음악 팬들의 기대감이 높아지고 있다.",
-        "url": "https://stereogum.com/2515419/panchiko-announce-new-album-chimera-feat-billy-woods-mei-semones-clarion-more/music/",
-        "published_date": "2026-10-23 15:22:05",
-        "category": "interview",
-        "source": "www.stereogum.com"
-      },
-      {
-        "title": "Chappell Roan Duets With Caroline Polachek, PinkPantheress, and Lola Young",
-        "summary": "Chappell와 관련된 주요 음악 업계 소식이 전해졌다. Chappell Roan Duets With Caroline Polachek, PinkPantheress, ...",
-        "url": "https://pitchfork.com/story/chappell-roan-duets-with-caroline-polachek-pinkpantheress-and-lola-young/",
-        "published_date": "2026-10-23 15:07:56",
-        "category": "interview",
-        "source": "pitchfork.com"
-      },
-      {
-        "title": "John Mayer launches Sob Rock Records in partnership with Universal’s Mercury",
-        "summary": "John Mayer와 관련된 주요 음악 업계 소식이 전해졌다. John Mayer launches Sob Rock Records in partnership with Uni...",
-        "url": "https://www.musicbusinessworldwide.com/john-mayer-launches-sob-rock-records-in-partnership-with-universals-mercury/",
-        "published_date": "2026-10-23 15:04:40",
-        "category": "interview",
-        "source": "www.musicbusinessworldwide.com"
-      },
-      {
-        "title": "“World’s Top Autograph Seeker” Apologizes To Harry Styles After Heated Street Encounter",
-        "summary": "“World’s가 음악 차트에서 주목할 만한 성과를 기록했다. 상업적 성공을 입증하는 결과다.",
-        "url": "https://stereogum.com/2515417/worlds-top-autograph-seeker-apologizes-to-harry-styles-after-heated-street-encounter/news/",
-        "published_date": "2026-10-23 14:50:38",
-        "category": "interview",
-        "source": "www.stereogum.com"
-      },
-      {
-        "title": "Haywire Set Jam-Packed 2027 Tour",
-        "summary": "Haywire의 라이브 공연 관련 소식이 전해졌다. 콘서트 티켓과 일정 정보가 업데이트되었다.",
-        "url": "https://pitchfork.com/story/haywire-set-jam-packed-2027-tour/",
-        "published_date": "2026-10-23 14:44:40",
-        "category": "interview",
-        "source": "pitchfork.com"
-      },
-      {
-        "title": "The Strokes and Phoebe Bridgers among musical guests for new episodes of ‘SNL’",
-        "summary": "The와 관련된 주요 음악 업계 소식이 전해졌다. The Strokes and Phoebe Bridgers among musical guests for new...",
-        "url": "https://www.nme.com/news/music/the-strokes-phoebe-bridgers-musical-guests-snl-3974064?utm_source=rss&utm_medium=rss&utm_campaign=the-strokes-phoebe-bridgers-musical-guests-snl",
-        "published_date": "2026-10-23 14:30:57",
-        "category": "interview",
-        "source": "www.nme.com"
-      },
-      {
-        "title": "Tony Iommi Releases From the Dark, First Solo Album in Over 20 Years: Stream",
-        "summary": "Tony가 새 앨범을 발매했다. 이번 릴리스는 아티스트의 대표작이 될 것으로 기대된다.",
-        "url": "https://consequence.net/2026/10/tony-iommi-from-the-dark-album-stream/",
-        "published_date": "2026-10-23 14:30:21",
-        "category": "interview",
-        "source": "consequenceofsound.net"
-      },
-      {
-        "title": "ADÉLA Makes Late Night Debut with “Nicole Kidman” and “Ain’t in LA” on Fallon: Watch",
-        "summary": "ADÉLA와 관련된 주요 음악 업계 소식이 전해졌다. ADÉLA Makes Late Night Debut with “Nicole Kidman” and “Ain’t...",
-        "url": "https://consequence.net/2026/10/adela-nicole-kidman-aint-in-la-fallon-watch/",
-        "published_date": "2026-10-23 14:29:32",
-        "category": "interview",
-        "source": "consequenceofsound.net"
-      },
-      {
-        "title": "From Spotify’s giant profits to yet another legal fight for Suno…it’s MBW’s Weekly Round-Up",
-        "summary": "From와 관련된 주요 음악 업계 소식이 전해졌다. From Spotify’s giant profits to yet another legal fight for ...",
-        "url": "https://www.musicbusinessworldwide.com/from-spotifys-giant-profits-to-yet-another-legal-fight-for-suno-its-mbws-weekly-round-up/",
-        "published_date": "2026-10-23 14:25:19",
-        "category": "interview",
-        "source": "www.musicbusinessworldwide.com"
-      },
-      {
-        "title": "Kacey Musgraves Announces Middle Of Nowhere Vol. 2: Tex Mex Tapes: Hear Two Tracks",
-        "summary": "Kacey가 중요한 음악 관련 발표를 했다. 이번 소식은 팬들의 주목을 받고 있다.",
-        "url": "https://stereogum.com/2515408/kacey-musgraves-announces-middle-of-nowhere-vol-2-tex-mex-tapes-hear-two-tracks/music/",
-        "published_date": "2026-10-23 14:24:48",
-        "category": "interview",
-        "source": "www.stereogum.com"
       }
     ],
     "insight": []
@@ -419,13 +419,13 @@
       "interview": 50
     },
     "by_source": {
-      "consequenceofsound.net": 14,
+      "consequenceofsound.net": 13,
       "www.billboard.com": 10,
       "www.stereogum.com": 10,
-      "www.rollingstone.com": 5,
-      "pitchfork.com": 4,
-      "www.nme.com": 4,
-      "www.musicbusinessworldwide.com": 3
+      "www.rollingstone.com": 7,
+      "www.nme.com": 7,
+      "pitchfork.com": 2,
+      "www.musicbusinessworldwide.com": 1
     },
     "members_only_count": 0
   }
