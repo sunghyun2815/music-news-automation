@@ -1,0 +1,432 @@
+{
+  "metadata": {
+    "generated_at": "2026-10-27T05:55:44.950109",
+    "total_news": 50,
+    "last_updated": "2026-10-27T05:55:44.950118",
+    "version": "2.0",
+    "compatible_with": "NewsSection.tsx"
+  },
+  "news": {
+    "all_articles": [],
+    "news": [],
+    "interview": [
+      {
+        "title": "Dead Man’s Bones Unveil First New Song in 17 Years",
+        "summary": "Dead와 관련된 주요 음악 업계 소식이 전해졌다. Dead Man’s Bones Unveil First New Song in 17 Years",
+        "url": "https://pitchfork.com/story/dead-mans-bones-unveil-first-new-song-in-17-years/",
+        "published_date": "2026-10-27 05:10:37",
+        "category": "interview",
+        "source": "pitchfork.com"
+      },
+      {
+        "title": "Sophia Stel announces 2027 US, UK and Europe tour in support of debut album ‘The Greatest Album Of All Time’",
+        "summary": "Sophia Stel가 새 앨범 발매 소식을 공개했다. 이번 릴리스는 팬들과 음악 업계의 큰 관심을 받고 있다.",
+        "url": "https://www.nme.com/news/music/sophia-stel-2027-uk-europe-north-america-tour-dates-buy-tickets-3974318?utm_source=rss&utm_medium=rss&utm_campaign=sophia-stel-2027-uk-europe-north-america-tour-dates-buy-tickets",
+        "published_date": "2026-10-27 04:05:05",
+        "category": "interview",
+        "source": "www.nme.com"
+      },
+      {
+        "title": "Taylor Swift Says Nashville Songwriters ‘Raised Me’ During Hall of Fame Induction",
+        "summary": "Taylor와 관련된 주요 음악 업계 소식이 전해졌다. Taylor Swift Says Nashville Songwriters ‘Raised Me’ During H...",
+        "url": "https://www.billboard.com/music/music-news/taylor-swift-nashville-songwriters-hall-of-fame-speech-1236368575/",
+        "published_date": "2026-10-27 03:18:25",
+        "category": "interview",
+        "source": "www.billboard.com"
+      },
+      {
+        "title": "Macklemore, Hozier and Kneecap Play Sold-Out Free Palestine Benefit Concert in Dublin",
+        "summary": "Macklemore,의 라이브 공연 관련 소식이 전해졌다. 콘서트 티켓과 일정 정보가 업데이트되었다.",
+        "url": "https://www.billboard.com/music/music-news/macklemore-hozier-kneecap-free-palestine-benefit-concert-dublin-1236368558/",
+        "published_date": "2026-10-27 02:50:34",
+        "category": "interview",
+        "source": "www.billboard.com"
+      },
+      {
+        "title": "JAY-Z Officially Announced As 2027 Super Bowl Halftime Show Headline Act",
+        "summary": "JAY-Z와 관련된 주요 음악 업계 소식이 전해졌다. JAY-Z Officially Announced As 2027 Super Bowl Halftime Show ...",
+        "url": "https://consequence.net/2026/10/jay-z-super-bowl-halftime-show-headliner/",
+        "published_date": "2026-10-27 02:25:14",
+        "category": "interview",
+        "source": "consequenceofsound.net"
+      },
+      {
+        "title": "Jay-Z Confirmed for Super Bowl 2027 Halftime Show",
+        "summary": "Jay-Z와 관련된 주요 음악 업계 소식이 전해졌다. Jay-Z Confirmed for Super Bowl 2027 Halftime Show",
+        "url": "https://pitchfork.com/story/jay-z-confirmed-for-super-bowl-2027-halftime-show/",
+        "published_date": "2026-10-27 02:21:32",
+        "category": "interview",
+        "source": "pitchfork.com"
+      },
+      {
+        "title": "Jay-Z to Headline 2027 Super Bowl Halftime Show: ‘GOAT’s Out of the Bag’",
+        "summary": "Jay-Z와 관련된 주요 음악 업계 소식이 전해졌다. Jay-Z to Headline 2027 Super Bowl Halftime Show: ‘GOAT’s Out...",
+        "url": "https://www.billboard.com/music/rb-hip-hop/jay-z-super-bowl-halftime-2027-headliner-1236368561/",
+        "published_date": "2026-10-27 02:07:07",
+        "category": "interview",
+        "source": "www.billboard.com"
+      },
+      {
+        "title": "Taylor Swift Makes History as Youngest-Ever Nashville Songwriters Hall of Fame Inductee",
+        "summary": "Taylor와 관련된 주요 음악 업계 소식이 전해졌다. Taylor Swift Makes History as Youngest-Ever Nashville Songwr...",
+        "url": "https://consequence.net/2026/10/taylor-swift-makes-history-as-youngest-ever-nashville-songwriters-hall-of-fame-inductee/",
+        "published_date": "2026-10-27 01:55:24",
+        "category": "interview",
+        "source": "consequenceofsound.net"
+      },
+      {
+        "title": "Jay-Z to Headline Super Bowl LXI Halftime Show: ‘A Dream Come True’",
+        "summary": "Jay-Z와 관련된 주요 음악 업계 소식이 전해졌다. Jay-Z to Headline Super Bowl LXI Halftime Show: ‘A Dream Com...",
+        "url": "https://www.rollingstone.com/music/music-news/jay-z-headline-2027-super-bowl-halftime-show-1235648064/",
+        "published_date": "2026-10-27 01:51:31",
+        "category": "interview",
+        "source": "www.rollingstone.com"
+      },
+      {
+        "title": "Neil Young Sues Trump Committee for $10 Million Over Use of ‘Rockin’ in the Free World’",
+        "summary": "Neil와 관련된 주요 음악 업계 소식이 전해졌다. Neil Young Sues Trump Committee for $10 Million Over Use of ...",
+        "url": "https://www.rollingstone.com/music/music-news/neil-young-sues-trump-pac-rockin-in-the-free-world-rally-1235648258/",
+        "published_date": "2026-10-27 01:30:18",
+        "category": "interview",
+        "source": "www.rollingstone.com"
+      },
+      {
+        "title": "Sufjan Stevens Makes First Live Appearance in Over Eight Years",
+        "summary": "Sufjan의 라이브 공연 관련 소식이 전해졌다. 콘서트 티켓과 일정 정보가 업데이트되었다.",
+        "url": "https://pitchfork.com/story/sufjan-stevens-makes-first-live-appearance-in-over-eight-years/",
+        "published_date": "2026-10-27 01:20:04",
+        "category": "interview",
+        "source": "pitchfork.com"
+      },
+      {
+        "title": "LISA Drops New Limited-Edition Merch for Her PlayStation Collab: Shop the BLACKPINK Star’s Designs Online",
+        "summary": "LISA가 새로운 음악을 공개했다. 팬들과 비평가들의 긍정적 반응을 얻고 있다.",
+        "url": "https://www.billboard.com/culture/product-recommendations/blackpink-lisa-playstation-merch-buy-online-limited-edition-1236366129/",
+        "published_date": "2026-10-27 01:01:59",
+        "category": "interview",
+        "source": "www.billboard.com"
+      },
+      {
+        "title": "Taylor Swift Says ‘There Is No Music Community Like This’ at Nashville Songwriters Hall of Fame Speech",
+        "summary": "Taylor Swift가 새로운 싱글을 발표했다. 새 곡은 아티스트의 음악적 진화를 보여주는 작품으로 평가받고 있다.",
+        "url": "https://www.rollingstone.com/music/music-news/taylor-swift-nashville-songwriters-hall-of-fame-speech-1235648096/",
+        "published_date": "2026-10-27 00:49:58",
+        "category": "interview",
+        "source": "www.rollingstone.com"
+      },
+      {
+        "title": "Taylor Swift Inducted Into Nashville Songwriters Hall of Fame: ‘Not Lost on Me How Crazy This Is’",
+        "summary": "Taylor Swift가 새로운 싱글을 발표했다. 새 곡은 아티스트의 음악적 진화를 보여주는 작품으로 평가받고 있다.",
+        "url": "https://www.rollingstone.com/music/music-news/taylor-swift-inducted-nashville-songwriters-hall-of-fame-1235648093/",
+        "published_date": "2026-10-27 00:05:00",
+        "category": "interview",
+        "source": "www.rollingstone.com"
+      },
+      {
+        "title": "Macklemore Launches ‘Free Palestine’ Tour With Hozier and Kneecap in Dublin",
+        "summary": "Macklemore Launches가 새로운 투어 일정을 발표했다. 콘서트 관련 상세 정보는 공식 채널을 통해 확인할 수 있다.",
+        "url": "https://www.rollingstone.com/music/music-news/macklemore-free-palestine-tour-dublin-performers-1235648074/",
+        "published_date": "2026-10-27 00:03:55",
+        "category": "interview",
+        "source": "www.rollingstone.com"
+      },
+      {
+        "title": "At ADE 2026, a Top Music Lawyer Talks AI, Independence & What the Biz Can Learn From Radiohead",
+        "summary": "At ADE가 새 앨범 발매 소식을 공개했다. 이번 릴리스는 팬들과 음악 업계의 큰 관심을 받고 있다.",
+        "url": "https://www.billboard.com/lists/ade-2026-cliff-fluet-talk-ai-streaming-fan-engagement/",
+        "published_date": "2026-10-26 23:57:09",
+        "category": "interview",
+        "source": "www.billboard.com"
+      },
+      {
+        "title": "New Anthony Edwards Ad Takes Shots at Drake: ‘A Certain Bandwagon Fan Is Facing FOMO & Buried in Lawsuits’",
+        "summary": "New와 관련된 주요 음악 업계 소식이 전해졌다. New Anthony Edwards Ad Takes Shots at Drake: ‘A Certain Band...",
+        "url": "https://www.billboard.com/music/rb-hip-hop/anthony-edwards-adidas-ad-drake-shots-hasan-minhaj-1236368315/",
+        "published_date": "2026-10-26 23:00:45",
+        "category": "interview",
+        "source": "www.billboard.com"
+      },
+      {
+        "title": "They Might Be Giants Announce “The Bigger Show Tour” Dates in 2027",
+        "summary": "They의 라이브 공연 관련 소식이 전해졌다. 콘서트 티켓과 일정 정보가 업데이트되었다.",
+        "url": "https://consequence.net/2026/10/they-might-be-giants-announce-the-bigger-show-tour-dates-in-2027/",
+        "published_date": "2026-10-26 22:46:07",
+        "category": "interview",
+        "source": "consequenceofsound.net"
+      },
+      {
+        "title": "Neil Young Hits Trump With $10M Lawsuit for Playing ‘Rockin’ in the Free World’ at Rally — Again",
+        "summary": "Neil와 관련된 주요 음악 업계 소식이 전해졌다. Neil Young Hits Trump With $10M Lawsuit for Playing ‘Rockin’...",
+        "url": "https://www.billboard.com/pro/neil-young-trump-lawsuit-song-midterm-election-rally/",
+        "published_date": "2026-10-26 22:38:31",
+        "category": "interview",
+        "source": "www.billboard.com"
+      },
+      {
+        "title": "Chlöe Bailey Dresses Up as ‘Hot Meg Griffin’ From ‘Family Guy’ for Halloween & SZA Loves It",
+        "summary": "Chlöe와 관련된 주요 음악 업계 소식이 전해졌다. Chlöe Bailey Dresses Up as ‘Hot Meg Griffin’ From ‘Family Gu...",
+        "url": "https://www.billboard.com/music/rb-hip-hop/chloe-bailey-hot-meg-griffin-family-guy-sza-reacts-1236368328/",
+        "published_date": "2026-10-26 22:25:29",
+        "category": "interview",
+        "source": "www.billboard.com"
+      },
+      {
+        "title": "Santos Bravos Plays What Would you Queue | Billboard Latin",
+        "summary": "Santos와 관련된 주요 음악 업계 소식이 전해졌다. Santos Bravos Plays What Would you Queue | Billboard Latin",
+        "url": "https://www.billboard.com/video/santos-bravos-plays-what-would-you-queue/",
+        "published_date": "2026-10-26 22:23:19",
+        "category": "interview",
+        "source": "www.billboard.com"
+      },
+      {
+        "title": "Jay-Z Slams AI, Says to ‘Question Everything’ After SoFi Concert Criticism: ‘We Got Real Intelligence, Not Artificial Intelligence’",
+        "summary": "Jay-Z의 라이브 공연 관련 소식이 전해졌다. 콘서트 티켓과 일정 정보가 업데이트되었다.",
+        "url": "https://www.billboard.com/music/rb-hip-hop/jay-z-slams-ai-sofi-stadium-concert-ticket-resales-audio-1236368314/",
+        "published_date": "2026-10-26 22:21:22",
+        "category": "interview",
+        "source": "www.billboard.com"
+      },
+      {
+        "title": "System of a Down Add Second, Third, and Fourth 2027 Rose Bowl Shows [Updated]",
+        "summary": "System와 관련된 주요 음악 업계 소식이 전해졌다. System of a Down Add Second, Third, and Fourth 2027 Rose Bow...",
+        "url": "https://consequence.net/2026/10/system-of-a-down-second-third-2027-rose-bowl-shows/",
+        "published_date": "2026-10-26 21:45:35",
+        "category": "interview",
+        "source": "consequenceofsound.net"
+      },
+      {
+        "title": "Judge Dismisses Lawsuit Claiming Spotify Allowed Billions of Fake Streams of Drake’s Music",
+        "summary": "Judge와 관련된 주요 음악 업계 소식이 전해졌다. Judge Dismisses Lawsuit Claiming Spotify Allowed Billions of...",
+        "url": "https://www.rollingstone.com/music/music-news/drake-spotify-fake-stream-fraud-lawsuit-dismissed-1235648076/",
+        "published_date": "2026-10-26 21:31:44",
+        "category": "interview",
+        "source": "www.rollingstone.com"
+      },
+      {
+        "title": "Jack Antonoff Knocks Ed Sheeran for Caving to Billionaire’s Demand to Drop Macklemore",
+        "summary": "Jack와 관련된 주요 음악 업계 소식이 전해졌다. Jack Antonoff Knocks Ed Sheeran for Caving to Billionaire’s ...",
+        "url": "https://www.rollingstone.com/music/music-news/jack-antonoff-ed-sheeran-macklemore-tour-1235648117/",
+        "published_date": "2026-10-26 21:11:44",
+        "category": "interview",
+        "source": "www.rollingstone.com"
+      },
+      {
+        "title": "The Flaming Lips Announce New Album The Teardrop Throbs on Third Man Records, Share New Song: Stream",
+        "summary": "The Flaming가 새 앨범 발매 소식을 공개했다. 이번 릴리스는 팬들과 음악 업계의 큰 관심을 받고 있다.",
+        "url": "https://consequence.net/2026/10/the-flaming-lips-the-teardrop-throbs-new-album-2027-tour-new-song/",
+        "published_date": "2026-10-26 21:06:22",
+        "category": "interview",
+        "source": "consequenceofsound.net"
+      },
+      {
+        "title": "Tool’s Danny Carey and The Cult’s John Tempesta Perform with Seattle Seahawks Drumline: Watch",
+        "summary": "Tool’s와 관련된 주요 음악 업계 소식이 전해졌다. Tool’s Danny Carey and The Cult’s John Tempesta Perform with...",
+        "url": "https://consequence.net/2026/10/tool-danny-carey-the-cult-john-tempesta-seattle-seahawks-drumline/",
+        "published_date": "2026-10-26 20:57:24",
+        "category": "interview",
+        "source": "consequenceofsound.net"
+      },
+      {
+        "title": "evilgiane & Slimesito Announce New Album EVILSLIME 2 Out Friday: Hear “Georgia State”",
+        "summary": "evilgiane와 관련된 주요 음악 업계 소식이 전해졌다. evilgiane & Slimesito Announce New Album EVILSLIME 2 Out Fri...",
+        "url": "https://stereogum.com/2515652/evilgiane-slimesito-announce-new-album-evilslime-2-out-friday-hear-georgia-state/news/",
+        "published_date": "2026-10-26 20:37:32",
+        "category": "interview",
+        "source": "www.stereogum.com"
+      },
+      {
+        "title": "Sesame Street Invades the SNL Writers’ Room in New Sketch: Watch",
+        "summary": "Sesame와 관련된 주요 음악 업계 소식이 전해졌다. Sesame Street Invades the SNL Writers’ Room in New Sketch: W...",
+        "url": "https://consequence.net/2026/10/sesame-street-saturday-night-live-sketch/",
+        "published_date": "2026-10-26 20:27:03",
+        "category": "interview",
+        "source": "consequenceofsound.net"
+      },
+      {
+        "title": "Flaming Lips Announce First Album in Six Years and Concert Series in U.S. and U.K.",
+        "summary": "Flaming의 라이브 공연 관련 소식이 전해졌다. 콘서트 티켓과 일정 정보가 업데이트되었다.",
+        "url": "https://www.rollingstone.com/music/music-news/flaming-lips-teardrop-throbs-album-announcement-1235648060/",
+        "published_date": "2026-10-26 20:13:47",
+        "category": "interview",
+        "source": "www.rollingstone.com"
+      },
+      {
+        "title": "The Flaming Lips Reveal New Album The Teardrop Throbs",
+        "summary": "The와 관련된 주요 음악 업계 소식이 전해졌다. The Flaming Lips Reveal New Album The Teardrop Throbs",
+        "url": "https://pitchfork.com/story/the-flaming-lips-reveal-new-album-the-teardrop-throbs/",
+        "published_date": "2026-10-26 20:01:33",
+        "category": "interview",
+        "source": "pitchfork.com"
+      },
+      {
+        "title": "BTS’s Reduced Stage Production Across South America Sparks Controversy Ahead of Sold-Out Brazil Shows",
+        "summary": "BTS’s와 관련된 주요 음악 업계 소식이 전해졌다. BTS’s Reduced Stage Production Across South America Sparks C...",
+        "url": "https://consequence.net/2026/10/bts-stage-production-controversy-brazil/",
+        "published_date": "2026-10-26 19:36:58",
+        "category": "interview",
+        "source": "consequenceofsound.net"
+      },
+      {
+        "title": "Director James McTeigue on How the V for Vendetta Mask Became a Global Symbol of Protest",
+        "summary": "Director와 관련된 주요 음악 업계 소식이 전해졌다. Director James McTeigue on How the V for Vendetta Mask Becam...",
+        "url": "https://consequence.net/2026/10/v-for-vendetta-mask-guy-fawkes-james-mcteigue/",
+        "published_date": "2026-10-26 19:34:11",
+        "category": "interview",
+        "source": "consequenceofsound.net"
+      },
+      {
+        "title": "John Lydon Announces Photographic Memoir Marking 50th Anniversary of Sex Pistols",
+        "summary": "John가 중요한 음악 관련 발표를 했다. 이번 소식은 팬들의 주목을 받고 있다.",
+        "url": "https://consequence.net/2026/10/john-lydon-photographic-memoir-sex-pistols-pil/",
+        "published_date": "2026-10-26 19:31:40",
+        "category": "interview",
+        "source": "consequenceofsound.net"
+      },
+      {
+        "title": "The Flaming Lips Announce First Post-Steven Drozd Album The Teardrop Throbs: Hear “God Will Control The Werewolves”",
+        "summary": "The와 관련된 주요 음악 업계 소식이 전해졌다. The Flaming Lips Announce First Post-Steven Drozd Album The ...",
+        "url": "https://stereogum.com/2515626/the-flaming-lips-announce-first-post-steven-drozd-album-the-teardrop-throbs-hear-god-will-control-the-werewolves/music/",
+        "published_date": "2026-10-26 19:04:46",
+        "category": "interview",
+        "source": "www.stereogum.com"
+      },
+      {
+        "title": "KPop Demon Hunters’s New Dance Rehearsal Videos Offer a Clear Look at the Choreography",
+        "summary": "KPop와 관련된 주요 음악 업계 소식이 전해졌다. KPop Demon Hunters’s New Dance Rehearsal Videos Offer a Clea...",
+        "url": "https://consequence.net/2026/10/kpop-demon-hunters-choreography-videos/",
+        "published_date": "2026-10-26 19:01:34",
+        "category": "interview",
+        "source": "consequenceofsound.net"
+      },
+      {
+        "title": "Sophia Stel Announces “the greatest tour of all time”",
+        "summary": "Sophia가 새로운 투어 계획을 발표했다. 콘서트 일정이 곧 공개될 예정이다.",
+        "url": "https://consequence.net/2026/10/sophia-stel-2027-north-american-tour-dates/",
+        "published_date": "2026-10-26 18:56:00",
+        "category": "interview",
+        "source": "consequenceofsound.net"
+      },
+      {
+        "title": "Tate McRae Beats Taylor Swift, Olivia Rodrigo in Billboard Hot 100 Race for … Number Two",
+        "summary": "Tate가 음악 차트에서 주목할 만한 성과를 기록했다. 상업적 성공을 입증하는 결과다.",
+        "url": "https://www.rollingstone.com/music/music-news/tate-mcrae-billboard-hot-100-number-two-olivia-rodrigo-1235645932/",
+        "published_date": "2026-10-26 18:44:29",
+        "category": "interview",
+        "source": "www.rollingstone.com"
+      },
+      {
+        "title": "Best AirPods Deals for November 2026",
+        "summary": "Best와 관련된 주요 음악 업계 소식이 전해졌다. Best AirPods Deals for November 2026",
+        "url": "https://consequence.net/2026/10/airpods-best-deals-november-2026/",
+        "published_date": "2026-10-26 18:38:51",
+        "category": "interview",
+        "source": "consequenceofsound.net"
+      },
+      {
+        "title": "Lazer Bullet Announce Debut Album 40K Psychosis Angel: Hear “Angel Shit”",
+        "summary": "Lazer와 관련된 주요 음악 업계 소식이 전해졌다. Lazer Bullet Announce Debut Album 40K Psychosis Angel: Hear ...",
+        "url": "https://stereogum.com/2515621/lazer-bullet-announce-debut-album-40k-psychosis-angel-hear-angel-shit/music/",
+        "published_date": "2026-10-26 18:36:19",
+        "category": "interview",
+        "source": "www.stereogum.com"
+      },
+      {
+        "title": "HYBE AMERICAS launches Latin pop label TRU Records, with SANTOS BRAVOS as its first artist",
+        "summary": "HYBE와 관련된 주요 음악 업계 소식이 전해졌다. HYBE AMERICAS launches Latin pop label TRU Records, with SAN...",
+        "url": "https://www.musicbusinessworldwide.com/hybe-americas-launches-latin-pop-label-tru-records-with-santos-bravos-as-its-first-artist/",
+        "published_date": "2026-10-26 18:16:53",
+        "category": "interview",
+        "source": "www.musicbusinessworldwide.com"
+      },
+      {
+        "title": "Elon Musk’s “Historically Accurate” The Odyssey Not Historical, Not Accurate, Not Even The Odyssey",
+        "summary": "Elon와 관련된 주요 음악 업계 소식이 전해졌다. Elon Musk’s “Historically Accurate” The Odyssey Not Historic...",
+        "url": "https://consequence.net/2026/10/elon-musk-ai-the-odyssey-why-its-bad/",
+        "published_date": "2026-10-26 18:15:04",
+        "category": "interview",
+        "source": "consequenceofsound.net"
+      },
+      {
+        "title": "Universal and Sony cleared to depose ex-Menlo Ventures exec over deleted post: ‘I’ve personally shifted most of my listening to Suno’",
+        "summary": "Universal와 관련된 주요 음악 업계 소식이 전해졌다. Universal and Sony cleared to depose ex-Menlo Ventures exec ...",
+        "url": "https://www.musicbusinessworldwide.com/universal-and-sony-cleared-to-depose-ex-menlo-ventures-exec-over-deleted-post-ive-personally-shifted-most-of-my-listening-to-suno/",
+        "published_date": "2026-10-26 18:11:03",
+        "category": "interview",
+        "source": "www.musicbusinessworldwide.com"
+      },
+      {
+        "title": "Heartworms tells us about dance-driven single ‘Guess I’m Stuck In The Dark’ and tackling “uncertainty and dark humour” on new album",
+        "summary": "Heartworms와 관련된 주요 음악 업계 소식이 전해졌다. Heartworms tells us about dance-driven single ‘Guess I’m Stu...",
+        "url": "https://www.nme.com/news/music/heartworms-interview-guess-im-stuck-in-the-dark-new-album-interpol-bloc-party-tour-3974261?utm_source=rss&utm_medium=rss&utm_campaign=heartworms-interview-guess-im-stuck-in-the-dark-new-album-interpol-bloc-party-tour",
+        "published_date": "2026-10-26 18:00:10",
+        "category": "interview",
+        "source": "www.nme.com"
+      },
+      {
+        "title": "Live Nation tells court Trump ‘briefly appeared’ at meeting where terms of its DOJ antitrust settlement were finalized",
+        "summary": "Live의 라이브 공연 관련 소식이 전해졌다. 콘서트 티켓과 일정 정보가 업데이트되었다.",
+        "url": "https://www.musicbusinessworldwide.com/live-nation-tells-court-trump-briefly-appeared-at-meeting-where-terms-of-its-doj-antitrust-settlement-were-finalized/",
+        "published_date": "2026-10-26 17:55:51",
+        "category": "interview",
+        "source": "www.musicbusinessworldwide.com"
+      },
+      {
+        "title": "Rightsholders behind Elvis Presley’s hits sue Anthropic for more than $48.6M, alleging it scraped lyrics to 274 songs and stripped songwriter credits to train Claude",
+        "summary": "Rightsholders와 관련된 주요 음악 업계 소식이 전해졌다. Rightsholders behind Elvis Presley’s hits sue Anthropic for ...",
+        "url": "https://www.musicbusinessworldwide.com/rightsholders-behind-elvis-presleys-hits-sue-anthropic-for-more-than-48-6m-alleging-it-scraped-lyrics-to-274-songs-and-stripped-songwriter-credits-to-train-claude/",
+        "published_date": "2026-10-26 17:55:13",
+        "category": "interview",
+        "source": "www.musicbusinessworldwide.com"
+      },
+      {
+        "title": "Mary J. Blige strikes deal with Primary Wave covering her song and recording catalogs",
+        "summary": "Mary J.가 새로운 싱글을 발표했다. 새 곡은 아티스트의 음악적 진화를 보여주는 작품으로 평가받고 있다.",
+        "url": "https://www.musicbusinessworldwide.com/mary-j-blige-strikes-deal-with-primary-wave-covering-her-song-and-recording-catalogs/",
+        "published_date": "2026-10-26 17:54:49",
+        "category": "interview",
+        "source": "www.musicbusinessworldwide.com"
+      },
+      {
+        "title": "Omni’s Philip Frobos Announces New Solo Album Taste For The Unsavory: Hear “The Handoff” (Feat. Gustaf’s Lydia Gammill)",
+        "summary": "Omni’s가 새 앨범 발매 소식을 공개했다. 팬들과 업계의 큰 관심을 받고 있다.",
+        "url": "https://stereogum.com/2515605/omnis-philip-frobos-announces-new-solo-album-taste-for-the-unsavory-hear-the-handoff-feat-gustafs-lydia-gammill/music/",
+        "published_date": "2026-10-26 17:50:55",
+        "category": "interview",
+        "source": "www.stereogum.com"
+      },
+      {
+        "title": "The National Members, John Legend Appearing At Ohio Rallies For Dr. Amy Acton",
+        "summary": "The와 관련된 주요 음악 업계 소식이 전해졌다. The National Members, John Legend Appearing At Ohio Rallies ...",
+        "url": "https://stereogum.com/2515584/the-national-members-john-legend-appearing-at-ohio-rallies-for-dr-amy-acton/news/",
+        "published_date": "2026-10-26 17:21:00",
+        "category": "interview",
+        "source": "www.stereogum.com"
+      },
+      {
+        "title": "Ecco2K, Whait, Angelo LeRoi, and More: This Week’s Pitchfork Selects Playlist",
+        "summary": "Ecco2K,와 관련된 주요 음악 업계 소식이 전해졌다. Ecco2K, Whait, Angelo LeRoi, and More: This Week’s Pitchfork...",
+        "url": "https://pitchfork.com/story/ecco2k-whait-angelo-leroi-and-more-this-weeks-pitchfork-selects-playlist/",
+        "published_date": "2026-10-26 17:14:40",
+        "category": "interview",
+        "source": "pitchfork.com"
+      }
+    ],
+    "insight": []
+  },
+  "summary": {
+    "total_count": 50,
+    "by_category": {
+      "interview": 50
+    },
+    "by_source": {
+      "consequenceofsound.net": 14,
+      "www.billboard.com": 10,
+      "www.rollingstone.com": 9,
+      "pitchfork.com": 5,
+      "www.stereogum.com": 5,
+      "www.musicbusinessworldwide.com": 5,
+      "www.nme.com": 2
+    },
+    "members_only_count": 0
+  }
+}
