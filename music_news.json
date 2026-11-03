@@ -1,8 +1,8 @@
 {
   "metadata": {
-    "generated_at": "2026-11-02T07:07:40.734726",
+    "generated_at": "2026-11-03T07:30:06.062405",
     "total_news": 50,
-    "last_updated": "2026-11-02T07:07:40.734736",
+    "last_updated": "2026-11-03T07:30:06.062415",
     "version": "2.0",
     "compatible_with": "NewsSection.tsx"
   },
@@ -11,404 +11,404 @@
     "news": [],
     "interview": [
       {
-        "title": "Suki Waterhouse, Australian Crawl Join Sydney Opera House’s On The Steps Series",
-        "summary": "Suki Waterhouse,가 새 앨범 발매 소식을 공개했다. 이번 릴리스는 팬들과 음악 업계의 큰 관심을 받고 있다.",
-        "url": "https://www.billboard.com/music/concerts/suki-waterhouse-australian-crawl-sydney-opera-houses-on-the-steps-1236371837/",
-        "published_date": "2026-11-02 06:45:33",
+        "title": "5 Seconds of Summer Bring Out The Wiggles in Melbourne",
+        "summary": "5와 관련된 주요 음악 업계 소식이 전해졌다. 5 Seconds of Summer Bring Out The Wiggles in Melbourne",
+        "url": "https://www.billboard.com/music/pop/5-seconds-of-summer-the-wiggles-melbourne-1236372717/",
+        "published_date": "2026-11-03 06:06:43",
         "category": "interview",
         "source": "www.billboard.com"
       },
       {
-        "title": "Ausify Campaign Returns as Australian Music’s Streaming  Share Hits New Low",
-        "summary": "Ausify Campaign와 관련된 주요 음악 업계 소식이 전해졌다. Ausify Campaign Returns as Australian Music’s Streaming  Sha...",
-        "url": "https://www.billboard.com/pro/ausify-campaign-returns/",
-        "published_date": "2026-11-02 03:50:58",
+        "title": "Emilia Explores New Era with ‘Bodypainting’: ‘It Speaks More of Freedom and Sensuality’",
+        "summary": "Emilia와 관련된 주요 음악 업계 소식이 전해졌다. Emilia Explores New Era with ‘Bodypainting’: ‘It Speaks More...",
+        "url": "https://www.billboard.com/music/latin/cafecito-con-emilia-bodypainting-interview-1236372139/",
+        "published_date": "2026-11-03 05:41:02",
         "category": "interview",
         "source": "www.billboard.com"
       },
       {
-        "title": "Marty Erlichman, Barbra Streisand’s Longtime Manager, Dies at 97",
-        "summary": "Marty와 관련된 주요 음악 업계 소식이 전해졌다. Marty Erlichman, Barbra Streisand’s Longtime Manager, Dies a...",
-        "url": "https://www.billboard.com/pro/marty-erlichman-death-barbra-streisand-manager/",
-        "published_date": "2026-11-02 01:12:50",
+        "title": "Kelly Clarkson Compares 13-Year-Old ‘The Voice’ Singer to Whitney Houston",
+        "summary": "Kelly와 관련된 주요 음악 업계 소식이 전해졌다. Kelly Clarkson Compares 13-Year-Old ‘The Voice’ Singer to Wh...",
+        "url": "https://www.billboard.com/culture/tv-film/kelly-clarkson-the-voice-singer-whitney-houston-1236372715/",
+        "published_date": "2026-11-03 05:15:17",
         "category": "interview",
         "source": "www.billboard.com"
       },
       {
-        "title": "The 18 Best Musician Halloween Costumes This Year",
-        "summary": "The와 관련된 주요 음악 업계 소식이 전해졌다. The 18 Best Musician Halloween Costumes This Year",
-        "url": "https://pitchfork.com/story/the-17-best-musician-halloween-costumes-this-year/",
-        "published_date": "2026-11-02 00:56:36",
+        "title": "The Chicks Postpone Los Angeles Concert Hours Before Showtime Due to Illness",
+        "summary": "The의 라이브 공연 관련 소식이 전해졌다. 콘서트 티켓과 일정 정보가 업데이트되었다.",
+        "url": "https://www.rollingstone.com/music/music-news/the-chicks-postpone-los-angeles-concert-illness-1235651668/",
+        "published_date": "2026-11-03 04:18:35",
+        "category": "interview",
+        "source": "www.rollingstone.com"
+      },
+      {
+        "title": "Bruce Springsteen Backs Abdul El-Sayed for Senate: ‘A Fighter Against the Corrupt’",
+        "summary": "Bruce와 관련된 주요 음악 업계 소식이 전해졌다. Bruce Springsteen Backs Abdul El-Sayed for Senate: ‘A Fighte...",
+        "url": "https://www.rollingstone.com/music/music-news/bruce-springsteen-backs-abdul-el-sayed-for-senate-1235651655/",
+        "published_date": "2026-11-03 03:05:57",
+        "category": "interview",
+        "source": "www.rollingstone.com"
+      },
+      {
+        "title": "Here’s Why the My Chemical Romance Lawsuit Really Ended, According to the Band’s Manager",
+        "summary": "Here’s와 관련된 주요 음악 업계 소식이 전해졌다. Here’s Why the My Chemical Romance Lawsuit Really Ended, Acc...",
+        "url": "https://www.billboard.com/pro/my-chemical-romance-cowboys-cheerleaders-lawsuit-why-ended/",
+        "published_date": "2026-11-03 02:04:19",
+        "category": "interview",
+        "source": "www.billboard.com"
+      },
+      {
+        "title": "Dallas Cowboys Cheerleaders Drop My Chemical Romance Lawsuit, but War of Words Rages On",
+        "summary": "Dallas와 관련된 주요 음악 업계 소식이 전해졌다. Dallas Cowboys Cheerleaders Drop My Chemical Romance Lawsuit...",
+        "url": "https://www.rollingstone.com/music/music-news/my-chemical-romance-dallas-cowboys-cheerleaders-uniforms-1235651651/",
+        "published_date": "2026-11-03 01:55:35",
+        "category": "interview",
+        "source": "www.rollingstone.com"
+      },
+      {
+        "title": "Jingle Ball 2026: Buy Tickets to See Olivia Rodrigo, Sombr, KATSEYE, ADÉLA & More",
+        "summary": "Jingle와 관련된 주요 음악 업계 소식이 전해졌다. Jingle Ball 2026: Buy Tickets to See Olivia Rodrigo, Sombr, ...",
+        "url": "https://www.billboard.com/culture/product-recommendations/iheartradio-jingle-ball-2026-buy-tickets-online-shop-prices-1236372531/",
+        "published_date": "2026-11-03 01:32:47",
+        "category": "interview",
+        "source": "www.billboard.com"
+      },
+      {
+        "title": "TWS: The Beauty of Growing Up Unscripted",
+        "summary": "TWS:와 관련된 주요 음악 업계 소식이 전해졌다. TWS: The Beauty of Growing Up Unscripted",
+        "url": "https://www.billboard.com/lists/tws-interview-to-us-growing-up-unscripted/",
+        "published_date": "2026-11-03 01:00:00",
+        "category": "interview",
+        "source": "www.billboard.com"
+      },
+      {
+        "title": "Justin Timberlake to Drop a Docuseries Featuring Janet Jackson Discussing Super Bowl Debacle",
+        "summary": "Justin의 새로운 협업 프로젝트 소식이 공개되었다. 음악 팬들의 기대감이 높아지고 있다.",
+        "url": "https://www.rollingstone.com/music/music-news/justin-timberlake-docuseries-janet-jackson-super-bowl-1235651589/",
+        "published_date": "2026-11-02 23:20:53",
+        "category": "interview",
+        "source": "www.rollingstone.com"
+      },
+      {
+        "title": "Justin Timberlake Prepping Four-Part “Tell-All” Docuseries Featuring Janet Jackson",
+        "summary": "Justin의 새로운 협업 프로젝트 소식이 공개되었다. 음악 팬들의 기대감이 높아지고 있다.",
+        "url": "https://stereogum.com/2516399/justin-timberlake-prepping-four-part-tell-all-docuseries-featuring-janet-jackson/news/",
+        "published_date": "2026-11-02 22:55:32",
+        "category": "interview",
+        "source": "www.stereogum.com"
+      },
+      {
+        "title": "Justin Timberlake to Release 4-Part Docuseries That Includes Janet Jackson as a Guest",
+        "summary": "Justin와 관련된 주요 음악 업계 소식이 전해졌다. Justin Timberlake to Release 4-Part Docuseries That Includes...",
+        "url": "https://www.billboard.com/music/music-news/justin-timberlake-docuseries-janet-jackson-apple-tv-1236372543/",
+        "published_date": "2026-11-02 22:55:05",
+        "category": "interview",
+        "source": "www.billboard.com"
+      },
+      {
+        "title": "Trent Reznor and Atticus Ross Scored ‘The Further Mis-Adventures of Cliff Booth’",
+        "summary": "Trent와 관련된 주요 음악 업계 소식이 전해졌다. Trent Reznor and Atticus Ross Scored ‘The Further Mis-Advent...",
+        "url": "https://www.rollingstone.com/music/music-news/trent-reznor-atticus-ross-misadventures-cliff-booth-1235651484/",
+        "published_date": "2026-11-02 22:49:49",
+        "category": "interview",
+        "source": "www.rollingstone.com"
+      },
+      {
+        "title": "Tove Lo Extends “ESTRUS World Tour” with Spring 2027 US Dates",
+        "summary": "Tove의 라이브 공연 관련 소식이 전해졌다. 콘서트 티켓과 일정 정보가 업데이트되었다.",
+        "url": "https://consequence.net/2026/11/tove-lo-2027-us-tour-dates/",
+        "published_date": "2026-11-02 22:42:03",
+        "category": "interview",
+        "source": "consequenceofsound.net"
+      },
+      {
+        "title": "‘Monday Night Football’ 2026: How to Watch Chicago Bears vs. Seattle Seahawks Live Online Free",
+        "summary": "‘Monday의 라이브 공연 관련 소식이 전해졌다. 콘서트 티켓과 일정 정보가 업데이트되었다.",
+        "url": "https://www.billboard.com/culture/product-recommendations/monday-night-football-2026-2027-watch-nfl-live-online-free-1236339452/",
+        "published_date": "2026-11-02 22:24:51",
+        "category": "interview",
+        "source": "www.billboard.com"
+      },
+      {
+        "title": "Bruce Springsteen Backs Michigan’s Dr. Abdul El-Sayed for U.S. Senate Amid Haley Stevens Reversal: ‘He’s a Fighter’",
+        "summary": "Bruce와 관련된 주요 음악 업계 소식이 전해졌다. Bruce Springsteen Backs Michigan’s Dr. Abdul El-Sayed for U....",
+        "url": "https://www.billboard.com/music/music-news/bruce-springsteen-michigan-abdul-el-sayed-us-senate-1236372511/",
+        "published_date": "2026-11-02 22:20:21",
+        "category": "interview",
+        "source": "www.billboard.com"
+      },
+      {
+        "title": "Spike Lee Invented the Red Yankees Hat That Fred Durst Made Famous: “He Didn’t Have It Before Me”",
+        "summary": "Spike와 관련된 주요 음악 업계 소식이 전해졌다. Spike Lee Invented the Red Yankees Hat That Fred Durst Made ...",
+        "url": "https://consequence.net/2026/11/spike-lee-invented-red-yankees-hat-fred-durst/",
+        "published_date": "2026-11-02 22:15:35",
+        "category": "interview",
+        "source": "consequenceofsound.net"
+      },
+      {
+        "title": "New Music Releases and Upcoming Albums in 2026 and 2027",
+        "summary": "New Music가 새 앨범 발매 소식을 공개했다. 이번 릴리스는 팬들과 음악 업계의 큰 관심을 받고 있다.",
+        "url": "https://pitchfork.com/news/new-album-releases/",
+        "published_date": "2026-11-02 22:05:17",
         "category": "interview",
         "source": "pitchfork.com"
       },
       {
-        "title": "Wu-Tang Clan to Headline Detroit Lions Thanksgiving Game Halftime Show",
-        "summary": "Wu-Tang와 관련된 주요 음악 업계 소식이 전해졌다. Wu-Tang Clan to Headline Detroit Lions Thanksgiving Game Hal...",
-        "url": "https://www.billboard.com/music/rb-hip-hop/wu-tang-clan-halftime-show-detroit-lions-thanksgiving-game-1236371793/",
-        "published_date": "2026-11-01 22:46:52",
+        "title": "Taylor Swift’s Songs Written for Movies, Ranked (Critic’s Picks)",
+        "summary": "Taylor와 관련된 주요 음악 업계 소식이 전해졌다. Taylor Swift’s Songs Written for Movies, Ranked (Critic’s Pi...",
+        "url": "https://www.billboard.com/lists/taylor-swift-movie-songs-ranked/",
+        "published_date": "2026-11-02 22:05:00",
         "category": "interview",
         "source": "www.billboard.com"
       },
       {
-        "title": "‘Sunday Night Football’: How to Watch Philadelphia Eagles vs. Washington Commanders Game Live Online Free",
-        "summary": "‘Sunday의 라이브 공연 관련 소식이 전해졌다. 콘서트 티켓과 일정 정보가 업데이트되었다.",
-        "url": "https://www.billboard.com/culture/product-recommendations/sunday-night-football-2026-2027-watch-nfl-live-online-free-1236343279/",
-        "published_date": "2026-11-01 22:15:28",
-        "category": "interview",
-        "source": "www.billboard.com"
-      },
-      {
-        "title": "Harry Styles Dresses as NYC ‘Pizza Rat,’ Gets Jalen Brunson Tribute at Final MSG Residency Show",
-        "summary": "Harry와 관련된 주요 음악 업계 소식이 전해졌다. Harry Styles Dresses as NYC ‘Pizza Rat,’ Gets Jalen Brunson ...",
-        "url": "https://www.billboard.com/music/pop/harry-styles-pizza-rat-harryween-msg-residency-final-show-1236371781/",
-        "published_date": "2026-11-01 21:36:01",
-        "category": "interview",
-        "source": "www.billboard.com"
-      },
-      {
-        "title": "My Chemical Romance Tops the Billboard 200 With 20-Year-Old Album",
-        "summary": "My가 음악 차트에서 주목할 만한 성과를 기록했다. 상업적 성공을 입증하는 결과다.",
-        "url": "https://www.rollingstone.com/music/music-news/my-chemical-romance-black-parade-billboard-200-number-one-1235650097/",
-        "published_date": "2026-11-01 21:08:58",
-        "category": "interview",
-        "source": "www.rollingstone.com"
-      },
-      {
-        "title": "Morgan Wallen, Garth Brooks, Taylor Swift & More Artists With Most Weeks at No. 1 on Top Country Albums Chart: Full List",
-        "summary": "Morgan가 음악 차트에서 주목할 만한 성과를 기록했다. 상업적 성공을 입증하는 결과다.",
-        "url": "https://www.billboard.com/lists/top-country-albums-number-ones-biggest/",
-        "published_date": "2026-11-01 20:49:13",
-        "category": "interview",
-        "source": "www.billboard.com"
-      },
-      {
-        "title": "Kid Rock Reveals He Used AI on New Song with Eminem",
-        "summary": "Kid가 중요한 음악 관련 발표를 했다. 이번 소식은 팬들의 주목을 받고 있다.",
-        "url": "https://consequence.net/2026/11/kid-rock-reveals-he-used-ai-on-song/",
-        "published_date": "2026-11-01 20:21:25",
+        "title": "Panchiko Announces 2027 US Tour Behind New Album Chimera",
+        "summary": "Panchiko가 새 앨범 발매 소식을 공개했다. 팬들과 업계의 큰 관심을 받고 있다.",
+        "url": "https://consequence.net/2026/11/panchiko-2027-us-tour/",
+        "published_date": "2026-11-02 21:43:45",
         "category": "interview",
         "source": "consequenceofsound.net"
       },
       {
-        "title": "Rawayana Throws Venezuelan-Style Halloween Party in NYC, Feat. Guests Cheo Pardo & Yorghaki",
-        "summary": "Rawayana의 새로운 협업 프로젝트 소식이 공개되었다. 음악 팬들의 기대감이 높아지고 있다.",
-        "url": "https://www.billboard.com/music/latin/rawayana-venezuelan-halloween-party-new-york-concert-review-1236371750/",
-        "published_date": "2026-11-01 20:10:08",
-        "category": "interview",
-        "source": "www.billboard.com"
-      },
-      {
-        "title": "My Chemical Romance Earns First No. 1 Album on Billboard 200 After ‘The Black Parade’ Reissue",
-        "summary": "My와 관련된 주요 음악 업계 소식이 전해졌다. My Chemical Romance Earns First No. 1 Album on Billboard 200...",
-        "url": "https://www.billboard.com/music/chart-beat/my-chemical-romance-number-one-billboard-200-black-parade-1236371717/",
-        "published_date": "2026-11-01 20:00:11",
-        "category": "interview",
-        "source": "www.billboard.com"
-      },
-      {
-        "title": "Juan Atkins, Techno Pioneer and Cybotron Co-Founder, Dies at 64",
-        "summary": "Juan와 관련된 주요 음악 업계 소식이 전해졌다. Juan Atkins, Techno Pioneer and Cybotron Co-Founder, Dies at...",
-        "url": "https://www.billboard.com/music/music-news/juan-atkins-death-techno-music-pioneer-cybotron-dies-1236371734/",
-        "published_date": "2026-11-01 19:42:47",
-        "category": "interview",
-        "source": "www.billboard.com"
-      },
-      {
-        "title": "Wu-Tang Clan to Headline Halftime Show of Detroit Lions’ Thanksgiving Day Game",
-        "summary": "Wu-Tang와 관련된 주요 음악 업계 소식이 전해졌다. Wu-Tang Clan to Headline Halftime Show of Detroit Lions’ Tha...",
-        "url": "https://consequence.net/2026/11/wu-tang-clan-thanksgiving-day-lions-halftime-show/",
-        "published_date": "2026-11-01 19:28:48",
-        "category": "interview",
-        "source": "consequenceofsound.net"
-      },
-      {
-        "title": "Harry Styles Covers “Psycho Killer” on Final Night of MSG Residency",
-        "summary": "Harry와 관련된 주요 음악 업계 소식이 전해졌다. Harry Styles Covers “Psycho Killer” on Final Night of MSG Re...",
-        "url": "https://consequence.net/2026/11/harry-styles-covers-psycho-killer/",
-        "published_date": "2026-11-01 17:50:10",
-        "category": "interview",
-        "source": "consequenceofsound.net"
-      },
-      {
-        "title": "Juan Atkins, Techno Music Pioneer, Dead at 64",
-        "summary": "Juan와 관련된 주요 음악 업계 소식이 전해졌다. Juan Atkins, Techno Music Pioneer, Dead at 64",
-        "url": "https://www.rollingstone.com/music/music-news/juan-atkins-techno-music-pioneer-cybotron-dead-obituary-1235651028/",
-        "published_date": "2026-11-01 17:17:49",
-        "category": "interview",
-        "source": "www.rollingstone.com"
-      },
-      {
-        "title": "Lost Daft Punk Mix From 1997 Discovered and Released",
-        "summary": "Lost Daft와 관련된 주요 음악 업계 소식이 전해졌다. Lost Daft Punk Mix From 1997 Discovered and Released",
-        "url": "https://consequence.net/2026/11/dj-uncovers-lost-daft-punk-mix/",
-        "published_date": "2026-11-01 16:53:42",
-        "category": "interview",
-        "source": "consequenceofsound.net"
-      },
-      {
-        "title": "Gracie Abrams (And David S. Pumpkins) Returns To SNL",
-        "summary": "Gracie와 관련된 주요 음악 업계 소식이 전해졌다. Gracie Abrams (And David S. Pumpkins) Returns To SNL",
-        "url": "https://stereogum.com/2516238/gracie-abrams-and-david-s-pumpkins-returns-to-snl/news/",
-        "published_date": "2026-11-01 16:50:27",
+        "title": "Chastity Belt – “Friends For This”",
+        "summary": "Chastity와 관련된 주요 음악 업계 소식이 전해졌다. Chastity Belt – “Friends For This”",
+        "url": "https://stereogum.com/2516394/chastity-belt-friends-for-this/music/",
+        "published_date": "2026-11-02 21:26:54",
         "category": "interview",
         "source": "www.stereogum.com"
       },
       {
-        "title": "Juan Atkins, Co-Founder of Techno Music, Dies at 64",
-        "summary": "Juan와 관련된 주요 음악 업계 소식이 전해졌다. Juan Atkins, Co-Founder of Techno Music, Dies at 64",
-        "url": "https://pitchfork.com/story/juan-atkins-co-founder-of-techno-music-dies-at-64/",
-        "published_date": "2026-11-01 15:49:25",
+        "title": "Pixies Unearth Four Archival Tracks, Including Steve Albini Version of “Dig for Fire”",
+        "summary": "Pixies와 관련된 주요 음악 업계 소식이 전해졌다. Pixies Unearth Four Archival Tracks, Including Steve Albini ...",
+        "url": "https://consequence.net/2026/11/pixies-archival-tracks-dig-for-fire-albini/",
+        "published_date": "2026-11-02 20:42:41",
+        "category": "interview",
+        "source": "consequenceofsound.net"
+      },
+      {
+        "title": "David Byrne Hails Argentina’s New Generation of Musicians in Latest Curated Playlist: “It’s a Moment!”",
+        "summary": "David Byrne와 관련된 주요 음악 업계 소식이 전해졌다. David Byrne Hails Argentina’s New Generation of Musicians in...",
+        "url": "https://consequence.net/2026/11/david-byrne-argentina-playlist/",
+        "published_date": "2026-11-02 20:17:29",
+        "category": "interview",
+        "source": "consequenceofsound.net"
+      },
+      {
+        "title": "Nettspend, Gracie Abrams, Factory Floor, and More: This Week’s Pitchfork Selects Playlist",
+        "summary": "Nettspend, Gracie와 관련된 주요 음악 업계 소식이 전해졌다. Nettspend, Gracie Abrams, Factory Floor, and More: This Week...",
+        "url": "https://pitchfork.com/story/nettspend-gracie-abrams-factory-floor-pitchfork-selects-playlist-songs-of-the-week/",
+        "published_date": "2026-11-02 20:13:06",
         "category": "interview",
         "source": "pitchfork.com"
       },
       {
-        "title": "Billy Strings Plays He-Man-Themed Set Dressed As He-Man",
-        "summary": "Billy와 관련된 주요 음악 업계 소식이 전해졌다. Billy Strings Plays He-Man-Themed Set Dressed As He-Man",
-        "url": "https://stereogum.com/2516231/billy-strings-plays-he-man-themed-set-dressed-as-he-man/news/",
-        "published_date": "2026-11-01 15:34:14",
-        "category": "interview",
-        "source": "www.stereogum.com"
-      },
-      {
-        "title": "Harry Styles Wraps Up MSG Residency With Pizza Rat Costume, “Psycho Killer” Cover, Jalen Brunson",
-        "summary": "Harry와 관련된 주요 음악 업계 소식이 전해졌다. Harry Styles Wraps Up MSG Residency With Pizza Rat Costume, ...",
-        "url": "https://stereogum.com/2516224/harry-styles-wraps-up-msg-residency-with-pizza-rat-costume-psycho-killer-cover-jalen-brunson/news/",
-        "published_date": "2026-11-01 14:31:42",
-        "category": "interview",
-        "source": "www.stereogum.com"
-      },
-      {
-        "title": "Michael Mann Accidentally Shoots Himself at Firing Range",
-        "summary": "Michael와 관련된 주요 음악 업계 소식이 전해졌다. Michael Mann Accidentally Shoots Himself at Firing Range",
-        "url": "https://consequence.net/2026/11/michael-mann-shoots-himself-at-firing-range/",
-        "published_date": "2026-11-01 13:55:20",
-        "category": "interview",
-        "source": "consequenceofsound.net"
-      },
-      {
-        "title": "Watch Gracie Abrams channel ‘Romeo + Juliet’ for performances of ‘Hit The Wall’ and ‘Here You Come, There You Go’ on ‘SNL’",
-        "summary": "Watch Gracie와 관련된 주요 음악 업계 소식이 전해졌다. Watch Gracie Abrams channel ‘Romeo + Juliet’ for performance...",
-        "url": "https://www.nme.com/news/music/watch-gracie-abrams-channel-romeo-juliet-for-performances-of-hit-the-wall-and-here-you-come-there-you-go-on-snl-3974753?utm_source=rss&utm_medium=rss&utm_campaign=watch-gracie-abrams-channel-romeo-juliet-for-performances-of-hit-the-wall-and-here-you-come-there-you-go-on-snl",
-        "published_date": "2026-11-01 11:43:44",
-        "category": "interview",
-        "source": "www.nme.com"
-      },
-      {
-        "title": "Turnstile turned down the chance to tour with Metallica",
-        "summary": "Turnstile의 라이브 공연 관련 소식이 전해졌다. 콘서트 티켓과 일정 정보가 업데이트되었다.",
-        "url": "https://www.nme.com/news/music/turnstile-turned-down-the-chance-to-tour-with-metallica-3974749?utm_source=rss&utm_medium=rss&utm_campaign=turnstile-turned-down-the-chance-to-tour-with-metallica",
-        "published_date": "2026-11-01 10:31:13",
-        "category": "interview",
-        "source": "www.nme.com"
-      },
-      {
-        "title": "Deep Purple postpone shows after Ian Gillan hospitalised following “medical emergency”",
-        "summary": "Deep와 관련된 주요 음악 업계 소식이 전해졌다. Deep Purple postpone shows after Ian Gillan hospitalised fol...",
-        "url": "https://www.nme.com/news/music/deep-purple-postpone-shows-ian-gillan-hospitalised-medical-emergency-3974745?utm_source=rss&utm_medium=rss&utm_campaign=deep-purple-postpone-shows-ian-gillan-hospitalised-medical-emergency",
-        "published_date": "2026-11-01 09:38:13",
-        "category": "interview",
-        "source": "www.nme.com"
-      },
-      {
-        "title": "Here’s how your favourite musicians and actors dressed up for Halloween 2026",
-        "summary": "Here’s와 관련된 주요 음악 업계 소식이 전해졌다. Here’s how your favourite musicians and actors dressed up fo...",
-        "url": "https://www.nme.com/news/music/heres-how-your-favourite-musicians-and-actors-dressed-up-for-halloween-2026-3974741?utm_source=rss&utm_medium=rss&utm_campaign=heres-how-your-favourite-musicians-and-actors-dressed-up-for-halloween-2026",
-        "published_date": "2026-11-01 09:07:01",
-        "category": "interview",
-        "source": "www.nme.com"
-      },
-      {
-        "title": "‘SNL’: Watch Gracie Abrams Perform ‘Hit the Wall,’ ‘Here You Come, There You Go’",
-        "summary": "‘SNL’: Watch와 관련된 주요 음악 업계 소식이 전해졌다. ‘SNL’: Watch Gracie Abrams Perform ‘Hit the Wall,’ ‘Here You...",
-        "url": "https://www.rollingstone.com/music/music-news/snl-watch-gracie-abrams-perform-hit-wall-here-you-come-there-you-go-1235650873/",
-        "published_date": "2026-11-01 07:22:52",
+        "title": "Timbaland Sues Ex-Managers for $15 Million, Fires Back at Claim He Blew Fortune",
+        "summary": "Timbaland와 관련된 주요 음악 업계 소식이 전해졌다. Timbaland Sues Ex-Managers for $15 Million, Fires Back at Cl...",
+        "url": "https://www.rollingstone.com/music/music-news/timbaland-sues-ex-managers-lawsuit-1235651347/",
+        "published_date": "2026-11-02 20:01:35",
         "category": "interview",
         "source": "www.rollingstone.com"
       },
       {
-        "title": "Trump Ruins David S. Pumpkins’ Return to SNL",
-        "summary": "Trump와 관련된 주요 음악 업계 소식이 전해졌다. Trump Ruins David S. Pumpkins’ Return to SNL",
-        "url": "https://consequence.net/2026/11/trump-ruins-david-s-pumpkins-return-to-snl/",
-        "published_date": "2026-11-01 04:37:06",
+        "title": "FTC and four states demand jury trial in BOTS Act lawsuit against Live Nation and Ticketmaster",
+        "summary": "FTC의 라이브 공연 관련 소식이 전해졌다. 콘서트 티켓과 일정 정보가 업데이트되었다.",
+        "url": "https://www.musicbusinessworldwide.com/ftc-and-four-states-demand-jury-trial-in-bots-act-lawsuit-against-live-nation-and-ticketmaster/",
+        "published_date": "2026-11-02 20:00:59",
+        "category": "interview",
+        "source": "www.musicbusinessworldwide.com"
+      },
+      {
+        "title": "The Viral Bar Owner Who Stole Conan’s Subway Takes Episode Is Back for More",
+        "summary": "The와 관련된 주요 음악 업계 소식이 전해졌다. The Viral Bar Owner Who Stole Conan’s Subway Takes Episode I...",
+        "url": "https://consequence.net/2026/11/debbie-shields-subway-takes-confessions-pod/",
+        "published_date": "2026-11-02 19:51:53",
         "category": "interview",
         "source": "consequenceofsound.net"
       },
       {
-        "title": "Harry Styles Honored by Jalen Brunson at Madison Square Garden, Receives 30 Nights Banner",
-        "summary": "Harry와 관련된 주요 음악 업계 소식이 전해졌다. Harry Styles Honored by Jalen Brunson at Madison Square Gard...",
-        "url": "https://www.rollingstone.com/music/music-news/harry-styles-jalen-bruson-banner-msg-psycho-killer-1235648896/",
-        "published_date": "2026-11-01 03:09:16",
-        "category": "interview",
-        "source": "www.rollingstone.com"
-      },
-      {
-        "title": "Snooper – “Orange Exposure”",
-        "summary": "Snooper와 관련된 주요 음악 업계 소식이 전해졌다. Snooper – “Orange Exposure”",
-        "url": "https://stereogum.com/2516216/snooper-orange-exposure/music/",
-        "published_date": "2026-10-31 18:12:57",
-        "category": "interview",
-        "source": "www.stereogum.com"
-      },
-      {
-        "title": "My Chemical Romance Bring Out Bert McCracken, Confirm Plans For New Album",
-        "summary": "My와 관련된 주요 음악 업계 소식이 전해졌다. My Chemical Romance Bring Out Bert McCracken, Confirm Plans ...",
-        "url": "https://stereogum.com/2516212/my-chemical-romance-bring-out-bert-mccracken-confirm-plans-for-new-album/news/",
-        "published_date": "2026-10-31 17:59:29",
-        "category": "interview",
-        "source": "www.stereogum.com"
-      },
-      {
-        "title": "James Hetfield Says Turnstile Turned Down Metallica Tour",
-        "summary": "James의 라이브 공연 관련 소식이 전해졌다. 콘서트 티켓과 일정 정보가 업데이트되었다.",
-        "url": "https://stereogum.com/2516208/james-hetfield-says-turnstile-turned-down-metallica-tour/news/",
-        "published_date": "2026-10-31 17:25:39",
-        "category": "interview",
-        "source": "www.stereogum.com"
-      },
-      {
-        "title": "Deep Purple Postpone Shows as Singer Ian Gillan Hospitalized Due to “Medical Emergency”",
-        "summary": "Deep와 관련된 주요 음악 업계 소식이 전해졌다. Deep Purple Postpone Shows as Singer Ian Gillan Hospitalized...",
-        "url": "https://consequence.net/2026/10/deep-purple-ian-gillan-medical-emergency/",
-        "published_date": "2026-10-31 17:12:36",
+        "title": "A Perfect Circle’s Billy Howerdel Auctioning 120-Plus Items of Gear and Memorabilia",
+        "summary": "A와 관련된 주요 음악 업계 소식이 전해졌다. A Perfect Circle’s Billy Howerdel Auctioning 120-Plus Items ...",
+        "url": "https://consequence.net/2026/11/a-perfect-circle-billy-howerdel-auction/",
+        "published_date": "2026-11-02 19:44:51",
         "category": "interview",
         "source": "consequenceofsound.net"
       },
       {
-        "title": "Harry Styles Says the Scariest Thing This Halloween Is New York City’s Coffee Prices",
-        "summary": "Harry와 관련된 주요 음악 업계 소식이 전해졌다. Harry Styles Says the Scariest Thing This Halloween Is New Y...",
-        "url": "https://consequence.net/2026/10/harry-styles-harryween-coffee-prices/",
-        "published_date": "2026-10-31 16:56:46",
+        "title": "Godzilla Minus Zero Review: Bigger, Louder, Chonkier, and Beautiful",
+        "summary": "Godzilla와 관련된 주요 음악 업계 소식이 전해졌다. Godzilla Minus Zero Review: Bigger, Louder, Chonkier, and Be...",
+        "url": "https://consequence.net/2026/11/godzilla-minus-zero-review-takashi-yamazaki/",
+        "published_date": "2026-11-02 19:32:08",
         "category": "interview",
         "source": "consequenceofsound.net"
       },
       {
-        "title": "Two Arrested in Murder of SNL Writer Jimmy Fowlie’s Sister",
-        "summary": "Two와 관련된 주요 음악 업계 소식이 전해졌다. Two Arrested in Murder of SNL Writer Jimmy Fowlie’s Sister",
-        "url": "https://consequence.net/2026/10/two-arrested-in-murder-of-snl-writer-sister/",
-        "published_date": "2026-10-31 16:49:49",
+        "title": "Boy Throb Announce 2027 North American Tour",
+        "summary": "Boy의 라이브 공연 관련 소식이 전해졌다. 콘서트 티켓과 일정 정보가 업데이트되었다.",
+        "url": "https://consequence.net/2026/11/boy-throb-2027-north-american-tour/",
+        "published_date": "2026-11-02 19:07:45",
         "category": "interview",
         "source": "consequenceofsound.net"
       },
       {
-        "title": "Deep Purple Postpone Concerts After Singer Ian Gillan’s ‘Medical Emergency’",
-        "summary": "Deep Purple가 새 앨범 발매 소식을 공개했다. 이번 릴리스는 팬들과 음악 업계의 큰 관심을 받고 있다.",
-        "url": "https://www.rollingstone.com/music/music-news/deep-purple-postpone-concerts-ian-gillan-medical-emergency-1235650888/",
-        "published_date": "2026-10-31 16:38:32",
-        "category": "interview",
-        "source": "www.rollingstone.com"
-      },
-      {
-        "title": "Christian Musician Kid Rock Compares Abdul El-Sayed to 9/11 Hijackers",
-        "summary": "Christian와 관련된 주요 음악 업계 소식이 전해졌다. Christian Musician Kid Rock Compares Abdul El-Sayed to 9/11 ...",
-        "url": "https://consequence.net/2026/10/kid-rock-abdul-el-sayed-9-11-hijackers-maher/",
-        "published_date": "2026-10-31 16:25:31",
+        "title": "Deep Purple’s Ian Gillan Gives Update After “Medical Emergency,” Band Postpones Remainder of Tour",
+        "summary": "Deep Purple’s가 새 앨범 발매 소식을 공개했다. 이번 릴리스는 팬들과 음악 업계의 큰 관심을 받고 있다.",
+        "url": "https://consequence.net/2026/11/deep-purple-ian-gillan-update-medical-emergency/",
+        "published_date": "2026-11-02 18:44:34",
         "category": "interview",
         "source": "consequenceofsound.net"
       },
       {
-        "title": "SZA Seemingly Confirms Coachella 2027 Headlining Appearance, Work on New Album",
-        "summary": "SZA와 관련된 주요 음악 업계 소식이 전해졌다. SZA Seemingly Confirms Coachella 2027 Headlining Appearance,...",
-        "url": "https://consequence.net/2026/10/sza-coachella-2027-new-album/",
-        "published_date": "2026-10-31 16:14:27",
+        "title": "Trent Reznor and Atticus Ross Are Back at It (Scoring David Fincher Movies)",
+        "summary": "Trent와 관련된 주요 음악 업계 소식이 전해졌다. Trent Reznor and Atticus Ross Are Back at It (Scoring David ...",
+        "url": "https://pitchfork.com/story/trent-reznor-and-atticus-ross-david-fincher-mis-adventures-of-cliff-booth/",
+        "published_date": "2026-11-02 18:39:08",
         "category": "interview",
-        "source": "consequenceofsound.net"
+        "source": "pitchfork.com"
       },
       {
-        "title": "James Hetfield Says Turnstile Turned Down Touring with Metallica",
-        "summary": "James의 라이브 공연 관련 소식이 전해졌다. 콘서트 티켓과 일정 정보가 업데이트되었다.",
-        "url": "https://consequence.net/2026/10/james-hetfield-turnstile-turned-down-metallica/",
-        "published_date": "2026-10-31 14:58:29",
+        "title": "Alphabet shareholder sues Sundar Pichai and 12 others over training Google’s AI, including Lyria, on copyrighted works",
+        "summary": "Alphabet와 관련된 주요 음악 업계 소식이 전해졌다. Alphabet shareholder sues Sundar Pichai and 12 others over t...",
+        "url": "https://www.musicbusinessworldwide.com/alphabet-shareholder-sues-sundar-pichai-and-12-others-over-training-googles-ai-including-lyria-on-copyrighted-works/",
+        "published_date": "2026-11-02 18:32:50",
         "category": "interview",
-        "source": "consequenceofsound.net"
+        "source": "www.musicbusinessworldwide.com"
       },
       {
-        "title": "Michael Douglas Gives Update on Jack Nicholson: He’s ‘Well’ But Has ‘Disappeared’",
-        "summary": "Michael와 관련된 주요 음악 업계 소식이 전해졌다. Michael Douglas Gives Update on Jack Nicholson: He’s ‘Well’ ...",
-        "url": "https://www.rollingstone.com/music/music-news/michael-douglas-jack-nicholson-update-1235650863/",
-        "published_date": "2026-10-31 13:56:16",
-        "category": "interview",
-        "source": "www.rollingstone.com"
-      },
-      {
-        "title": "My Chemical Romance Confirm Plans for New Album",
-        "summary": "My와 관련된 주요 음악 업계 소식이 전해졌다. My Chemical Romance Confirm Plans for New Album",
-        "url": "https://consequence.net/2026/10/my-chemical-romance-plans-for-new-album/",
-        "published_date": "2026-10-31 12:53:59",
-        "category": "interview",
-        "source": "consequenceofsound.net"
-      },
-      {
-        "title": "Watch Harry Styles recreate his 2010 ‘X Factor’ audition with Stevie Wonder cover at ‘Harryween’ show",
-        "summary": "Watch와 관련된 주요 음악 업계 소식이 전해졌다. Watch Harry Styles recreate his 2010 ‘X Factor’ audition wit...",
-        "url": "https://www.nme.com/news/music/watch-harry-styles-recreate-x-factor-audition-stevie-wonder-harryween-3974732?utm_source=rss&utm_medium=rss&utm_campaign=watch-harry-styles-recreate-x-factor-audition-stevie-wonder-harryween",
-        "published_date": "2026-10-31 11:42:15",
-        "category": "interview",
-        "source": "www.nme.com"
-      },
-      {
-        "title": "“Blue dot fever”: Lily Allen dresses up as Ticketmaster unsold seat map for Halloween",
-        "summary": "“Blue와 관련된 주요 음악 업계 소식이 전해졌다. “Blue dot fever”: Lily Allen dresses up as Ticketmaster unso...",
-        "url": "https://www.nme.com/news/music/blue-dot-fever-lily-allen-ticketmaster-unsold-seat-map-halloween-3974727?utm_source=rss&utm_medium=rss&utm_campaign=blue-dot-fever-lily-allen-ticketmaster-unsold-seat-map-halloween",
-        "published_date": "2026-10-31 10:41:59",
-        "category": "interview",
-        "source": "www.nme.com"
-      },
-      {
-        "title": "Greta Thunberg, Paloma Faith and Nemahsis join Macklemore at London ‘Free Palestine’ tour finale",
-        "summary": "Greta의 라이브 공연 관련 소식이 전해졌다. 콘서트 티켓과 일정 정보가 업데이트되었다.",
-        "url": "https://www.nme.com/news/music/greta-thunberg-paloma-faith-and-nemahsis-join-macklemore-at-london-free-palestine-tour-finale-3974723?utm_source=rss&utm_medium=rss&utm_campaign=greta-thunberg-paloma-faith-and-nemahsis-join-macklemore-at-london-free-palestine-tour-finale",
-        "published_date": "2026-10-31 09:33:07",
-        "category": "interview",
-        "source": "www.nme.com"
-      },
-      {
-        "title": "My Chemical Romance’s Gerard Way reveals plans to make new album in 2027 and return to touring in 2028",
-        "summary": "My Chemical가 새 앨범 발매 소식을 공개했다. 이번 릴리스는 팬들과 음악 업계의 큰 관심을 받고 있다.",
-        "url": "https://www.nme.com/news/music/my-chemical-romance-gerard-way-plans-new-album-2027-touring-2028-3974719?utm_source=rss&utm_medium=rss&utm_campaign=my-chemical-romance-gerard-way-plans-new-album-2027-touring-2028",
-        "published_date": "2026-10-31 08:42:13",
-        "category": "interview",
-        "source": "www.nme.com"
-      },
-      {
-        "title": "Live Nation Defends My Chemical Romance’s Dallas Cowboys Cheerleaders Lookalikes: It Was ‘Parody’",
+        "title": "Live Nation’s Ticketmaster brings festival ticketing subsidiary Front Gate Tickets into CashorTrade face-value resale partnership",
         "summary": "Live의 라이브 공연 관련 소식이 전해졌다. 콘서트 티켓과 일정 정보가 업데이트되었다.",
-        "url": "https://www.rollingstone.com/music/music-news/live-nation-my-chemical-romance-dallas-cowboys-cheerleaders-1235650825/",
-        "published_date": "2026-10-31 02:55:00",
+        "url": "https://www.musicbusinessworldwide.com/live-nations-ticketmaster-brings-festival-ticketing-subsidiary-front-gate-tickets-into-cashortrade-face-value-resale-partnership/",
+        "published_date": "2026-11-02 18:32:34",
         "category": "interview",
-        "source": "www.rollingstone.com"
+        "source": "www.musicbusinessworldwide.com"
       },
       {
-        "title": "Harryween Is Back From Dead: Harry Styles Dons ‘X Factor’ Outfit for Stevie Wonder Cover",
-        "summary": "Harryween와 관련된 주요 음악 업계 소식이 전해졌다. Harryween Is Back From Dead: Harry Styles Dons ‘X Factor’ Ou...",
-        "url": "https://www.rollingstone.com/music/music-news/harry-styles-harryween-stevie-wonder-x-factor-isnt-lovely-1235650398/",
-        "published_date": "2026-10-31 02:38:47",
-        "category": "interview",
-        "source": "www.rollingstone.com"
-      },
-      {
-        "title": "Raye to Voice Character and Pen Music for Benny Safdie Film Based on 1976 Novel ‘Lizard Music’",
-        "summary": "Raye와 관련된 주요 음악 업계 소식이 전해졌다. Raye to Voice Character and Pen Music for Benny Safdie Film ...",
-        "url": "https://www.rollingstone.com/music/music-news/raye-benny-safdie-film-lizard-music-novel-1235650792/",
-        "published_date": "2026-10-30 23:04:53",
-        "category": "interview",
-        "source": "www.rollingstone.com"
-      },
-      {
-        "title": "Bradford Cox Releases New Atlas Sound Song “Octoberland”: Steam",
-        "summary": "Bradford가 새로운 음악을 공개했다. 팬들과 비평가들의 긍정적 반응을 얻고 있다.",
-        "url": "https://consequence.net/2026/10/bradford-cox-atlas-sound-octoberland/",
-        "published_date": "2026-10-30 21:17:56",
+        "title": "David Mamet, Andy Garcia, Paul Anka Consent to Receive 2026 Kennedy Center Honors",
+        "summary": "David와 관련된 주요 음악 업계 소식이 전해졌다. David Mamet, Andy Garcia, Paul Anka Consent to Receive 2026 ...",
+        "url": "https://consequence.net/2026/11/2026-kennedy-center-honors-david-mamet-andy-garcia/",
+        "published_date": "2026-11-02 18:10:36",
         "category": "interview",
         "source": "consequenceofsound.net"
       },
       {
-        "title": "Triumph Cancel Fall Leg of 50th Anniversary Tour “Due to Sudden and Unexpected Medical Circumstances”",
-        "summary": "Triumph의 라이브 공연 관련 소식이 전해졌다. 콘서트 티켓과 일정 정보가 업데이트되었다.",
-        "url": "https://consequence.net/2026/10/triumph-cancel-fall-tour/",
-        "published_date": "2026-10-30 21:12:19",
+        "title": "Kennedy Center 2026 Honorees Include Paul Anka, Barbara Mandrell, David Foster",
+        "summary": "Kennedy와 관련된 주요 음악 업계 소식이 전해졌다. Kennedy Center 2026 Honorees Include Paul Anka, Barbara Mand...",
+        "url": "https://stereogum.com/2516347/kennedy-center-2026-honorees-include-paul-anka-barbara-mandrell-david-foster/news/",
+        "published_date": "2026-11-02 18:06:51",
+        "category": "interview",
+        "source": "www.stereogum.com"
+      },
+      {
+        "title": "My Chemical Romance’s Black Parade First Anniversary Reissue to Ever Top Billboard 200",
+        "summary": "My Chemical가 음악 차트에서 주목할 만한 성과를 기록했다. 이번 차트 진입은 아티스트의 상업적 성공을 입증한다.",
+        "url": "https://consequence.net/2026/11/my-chemical-romance-anniversay-reissue-debut-1-billboard/",
+        "published_date": "2026-11-02 18:06:25",
         "category": "interview",
         "source": "consequenceofsound.net"
+      },
+      {
+        "title": "Aerosmith Bring Out Run-DMC, Alice in Chains Members, and More Friends to Rock Night Two at Hollywood Bowl: Review + Setlist",
+        "summary": "Aerosmith와 관련된 주요 음악 업계 소식이 전해졌다. Aerosmith Bring Out Run-DMC, Alice in Chains Members, and Mo...",
+        "url": "https://consequence.net/2026/11/aerosmith-hollywood-bowl-night-two-review-setlist/",
+        "published_date": "2026-11-02 18:03:15",
+        "category": "interview",
+        "source": "consequenceofsound.net"
+      },
+      {
+        "title": "Listen To Maiya Blaney’s Understated Mary Bed EP",
+        "summary": "Listen와 관련된 주요 음악 업계 소식이 전해졌다. Listen To Maiya Blaney’s Understated Mary Bed EP",
+        "url": "https://stereogum.com/2516313/listen-to-maiya-blaneys-understated-mary-bed-ep/music/",
+        "published_date": "2026-11-02 18:00:12",
+        "category": "interview",
+        "source": "www.stereogum.com"
+      },
+      {
+        "title": "Scorpions Announce 2027 Tour Following Postponement of 2026 Dates",
+        "summary": "Scorpions의 라이브 공연 관련 소식이 전해졌다. 콘서트 티켓과 일정 정보가 업데이트되었다.",
+        "url": "https://consequence.net/2026/11/scorpions-2027-tour/",
+        "published_date": "2026-11-02 17:50:05",
+        "category": "interview",
+        "source": "consequenceofsound.net"
+      },
+      {
+        "title": "Andy Garcia, David Foster, Paul Anka Lead Kennedy Center Honors",
+        "summary": "Andy와 관련된 주요 음악 업계 소식이 전해졌다. Andy Garcia, David Foster, Paul Anka Lead Kennedy Center Hon...",
+        "url": "https://www.rollingstone.com/music/music-news/andy-garcia-david-foster-paul-anka-kennedy-center-honors-1235651317/",
+        "published_date": "2026-11-02 17:49:03",
+        "category": "interview",
+        "source": "www.rollingstone.com"
+      },
+      {
+        "title": "Joshua Idehen – “Say Less”",
+        "summary": "Joshua와 관련된 주요 음악 업계 소식이 전해졌다. Joshua Idehen – “Say Less”",
+        "url": "https://stereogum.com/2516336/joshua-idehen-say-less/music/",
+        "published_date": "2026-11-02 17:48:00",
+        "category": "interview",
+        "source": "www.stereogum.com"
+      },
+      {
+        "title": "Olivia Rodrigo Announces New Holiday Single “take me home (4 christmas)”",
+        "summary": "Olivia가 중요한 음악 관련 발표를 했다. 이번 소식은 팬들의 주목을 받고 있다.",
+        "url": "https://consequence.net/2026/11/olivia-rodrigo-take-me-home-4-christmas-holiday-song/",
+        "published_date": "2026-11-02 17:36:24",
+        "category": "interview",
+        "source": "consequenceofsound.net"
+      },
+      {
+        "title": "Band To Watch: RIP Magic",
+        "summary": "Band와 관련된 주요 음악 업계 소식이 전해졌다. Band To Watch: RIP Magic",
+        "url": "https://stereogum.com/2516252/band-to-watch-rip-magic/interviews/band-to-watch/",
+        "published_date": "2026-11-02 17:31:04",
+        "category": "interview",
+        "source": "www.stereogum.com"
+      },
+      {
+        "title": "Computerwife – “Hammered”",
+        "summary": "Computerwife와 관련된 주요 음악 업계 소식이 전해졌다. Computerwife – “Hammered”",
+        "url": "https://stereogum.com/2516335/computerwife-hammered-born-from-a-wish/music/",
+        "published_date": "2026-11-02 17:19:06",
+        "category": "interview",
+        "source": "www.stereogum.com"
+      },
+      {
+        "title": "Interpol announce intimate London replacement show after Bloc Party co-headline gig cancelled",
+        "summary": "Interpol와 관련된 주요 음악 업계 소식이 전해졌다. Interpol announce intimate London replacement show after Blo...",
+        "url": "https://www.nme.com/news/music/interpol-london-olympia-british-airways-arc-bloc-party-replacement-show-tickets-3974851?utm_source=rss&utm_medium=rss&utm_campaign=interpol-london-olympia-british-airways-arc-bloc-party-replacement-show-tickets",
+        "published_date": "2026-11-02 17:08:50",
+        "category": "interview",
+        "source": "www.nme.com"
+      },
+      {
+        "title": "Watch Harry Styles cover Talking Heads’ ‘Psycho Killer’ (and dress as NYC ‘pizza rat’) at final night of MSG residency",
+        "summary": "Watch와 관련된 주요 음악 업계 소식이 전해졌다. Watch Harry Styles cover Talking Heads’ ‘Psycho Killer’ (and...",
+        "url": "https://www.nme.com/news/music/watch-harry-styles-cover-talking-heads-psycho-killer-and-dress-as-nyc-pizza-rat-at-final-night-of-msg-residency-3974850?utm_source=rss&utm_medium=rss&utm_campaign=watch-harry-styles-cover-talking-heads-psycho-killer-and-dress-as-nyc-pizza-rat-at-final-night-of-msg-residency",
+        "published_date": "2026-11-02 17:05:36",
+        "category": "interview",
+        "source": "www.nme.com"
+      },
+      {
+        "title": "Oso Oso – “the facts”",
+        "summary": "Oso와 관련된 주요 음악 업계 소식이 전해졌다. Oso Oso – “the facts”",
+        "url": "https://stereogum.com/2516332/oso-oso-the-facts/music/",
+        "published_date": "2026-11-02 16:51:09",
+        "category": "interview",
+        "source": "www.stereogum.com"
+      },
+      {
+        "title": "Kevin Saunderson and Derrick May Honor Belleville Three ‘Brother’ Juan Atkins",
+        "summary": "Kevin와 관련된 주요 음악 업계 소식이 전해졌다. Kevin Saunderson and Derrick May Honor Belleville Three ‘Bro...",
+        "url": "https://www.rollingstone.com/music/music-news/juan-atkins-tribute-derrick-may-kevin-saunderson-techno-1235651287/",
+        "published_date": "2026-11-02 16:43:53",
+        "category": "interview",
+        "source": "www.rollingstone.com"
+      },
+      {
+        "title": "Steven Tyler Addresses Bill Burr’s Claim That Aerosmith Won’t Play More Shows",
+        "summary": "Steven와 관련된 주요 음악 업계 소식이 전해졌다. Steven Tyler Addresses Bill Burr’s Claim That Aerosmith Won’...",
+        "url": "https://stereogum.com/2516327/steven-tyler-addresses-bill-burrs-claim-that-aerosmith-wont-play-more-shows/news/",
+        "published_date": "2026-11-02 16:38:51",
+        "category": "interview",
+        "source": "www.stereogum.com"
       }
     ],
     "insight": []
@@ -421,10 +421,11 @@
     "by_source": {
       "consequenceofsound.net": 15,
       "www.billboard.com": 10,
-      "www.rollingstone.com": 9,
-      "www.nme.com": 8,
-      "www.stereogum.com": 6,
-      "pitchfork.com": 2
+      "www.stereogum.com": 9,
+      "www.rollingstone.com": 8,
+      "pitchfork.com": 3,
+      "www.musicbusinessworldwide.com": 3,
+      "www.nme.com": 2
     },
     "members_only_count": 0
   }
