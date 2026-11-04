@@ -1,0 +1,432 @@
+{
+  "metadata": {
+    "generated_at": "2026-11-04T07:10:56.846175",
+    "total_news": 50,
+    "last_updated": "2026-11-04T07:10:56.846184",
+    "version": "2.0",
+    "compatible_with": "NewsSection.tsx"
+  },
+  "news": {
+    "all_articles": [],
+    "news": [],
+    "interview": [
+      {
+        "title": "Australian Consumer Advocacy Group Blasts Ticketing Giants for ‘Fleecing Fans’",
+        "summary": "Australian와 관련된 주요 음악 업계 소식이 전해졌다. Australian Consumer Advocacy Group Blasts Ticketing Giants f...",
+        "url": "https://www.billboard.com/pro/australia-choice-ticketek-ticketmaster-shonky-awards/",
+        "published_date": "2026-11-04 07:08:26",
+        "category": "interview",
+        "source": "www.billboard.com"
+      },
+      {
+        "title": "CISAC Reports Record Global Creator Royalties, Warns of ‘Largest Test’ From AI",
+        "summary": "CISAC Reports가 새 앨범 발매 소식을 공개했다. 이번 릴리스는 팬들과 음악 업계의 큰 관심을 받고 있다.",
+        "url": "https://www.billboard.com/pro/cisac-record-global-creator-royalties-warns-ai-threat/",
+        "published_date": "2026-11-04 07:00:00",
+        "category": "interview",
+        "source": "www.billboard.com"
+      },
+      {
+        "title": "KATSEYE Postpones Detroit Concert Due to Illness",
+        "summary": "KATSEYE의 라이브 공연 관련 소식이 전해졌다. 콘서트 티켓과 일정 정보가 업데이트되었다.",
+        "url": "https://www.billboard.com/music/pop/katseye-postpones-detroit-concert-illness-1236373677/",
+        "published_date": "2026-11-04 03:50:08",
+        "category": "interview",
+        "source": "www.billboard.com"
+      },
+      {
+        "title": "Barbie’s Diwali Doll Is Back in Stock for the Festival of Lights: Here’s Where to Find It Online",
+        "summary": "Barbie’s Diwali와 관련된 주요 음악 업계 소식이 전해졌다. Barbie’s Diwali Doll Is Back in Stock for the Festival of Li...",
+        "url": "https://www.billboard.com/culture/product-recommendations/barbie-diwali-doll-where-to-buy-online-1235793605/",
+        "published_date": "2026-11-04 03:23:00",
+        "category": "interview",
+        "source": "www.billboard.com"
+      },
+      {
+        "title": "Diana Ross Sets One-Off Australia Concert",
+        "summary": "Diana의 라이브 공연 관련 소식이 전해졌다. 콘서트 티켓과 일정 정보가 업데이트되었다.",
+        "url": "https://www.billboard.com/music/concerts/diana-ross-2027-australia-concert-1236373654/",
+        "published_date": "2026-11-04 02:50:26",
+        "category": "interview",
+        "source": "www.billboard.com"
+      },
+      {
+        "title": "Katseye Postpones Detroit Show as Megan Recovers From Illness",
+        "summary": "Katseye와 관련된 주요 음악 업계 소식이 전해졌다. Katseye Postpones Detroit Show as Megan Recovers From Illnes...",
+        "url": "https://www.rollingstone.com/music/music-news/katseye-postpones-detroit-show-megan-recovers-illness-1235652359/",
+        "published_date": "2026-11-04 02:46:47",
+        "category": "interview",
+        "source": "www.rollingstone.com"
+      },
+      {
+        "title": "Eminem’s ‘Not Afraid’ Featured in Abdul El-Sayed’s Election Day Campaign",
+        "summary": "Eminem’s의 새로운 협업 프로젝트 소식이 공개되었다. 음악 팬들의 기대감이 높아지고 있다.",
+        "url": "https://www.billboard.com/music/rb-hip-hop/eminem-not-afraid-abdul-el-sayed-election-day-video-1236373637/",
+        "published_date": "2026-11-04 02:43:12",
+        "category": "interview",
+        "source": "www.billboard.com"
+      },
+      {
+        "title": "Sony PlayStation 5: Here’s Where to Shop the Gaming Console Before ‘Grand Theft Auto VI’ Drops Online",
+        "summary": "Sony가 새로운 음악을 공개했다. 팬들과 비평가들의 긍정적 반응을 얻고 있다.",
+        "url": "https://www.billboard.com/culture/product-recommendations/sony-playstation-5-where-to-buy-online-1235772826/",
+        "published_date": "2026-11-04 01:47:10",
+        "category": "interview",
+        "source": "www.billboard.com"
+      },
+      {
+        "title": "JISOO Announces ‘Sun Showers,’ New Song for ‘The Angry Birds Movie 3’",
+        "summary": "JISOO가 중요한 음악 관련 발표를 했다. 이번 소식은 팬들의 주목을 받고 있다.",
+        "url": "https://www.billboard.com/culture/tv-film/jisoo-sun-showers-angry-birds-movie-3-song-1236373617/",
+        "published_date": "2026-11-04 01:01:24",
+        "category": "interview",
+        "source": "www.billboard.com"
+      },
+      {
+        "title": "My Chemical Romance Leads ‘Parade’ of Reissues Marching Onto Billboard 200 Albums Chart",
+        "summary": "My Chemical가 새 앨범 발매 소식을 공개했다. 이번 릴리스는 팬들과 음악 업계의 큰 관심을 받고 있다.",
+        "url": "https://www.billboard.com/media/podcasts/my-chemical-romance-reissues-billboard-200-pop-shop-podcast-1236373369/",
+        "published_date": "2026-11-04 00:55:05",
+        "category": "interview",
+        "source": "www.billboard.com"
+      },
+      {
+        "title": "23 Best Christmas Gifts for Teens, From TikTok-Approved Finds to Pop Culture Favorites",
+        "summary": "23와 관련된 주요 음악 업계 소식이 전해졌다. 23 Best Christmas Gifts for Teens, From TikTok-Approved Find...",
+        "url": "https://www.billboard.com/culture/product-recommendations/best-christmas-gifts-for-teens-2026-buy-online-viral-1236373344/",
+        "published_date": "2026-11-03 23:40:42",
+        "category": "interview",
+        "source": "www.billboard.com"
+      },
+      {
+        "title": "Mastodon Seek Partial Dismissal of Brent Hinds Estate’s Lawsuit Against Them",
+        "summary": "Mastodon와 관련된 주요 음악 업계 소식이 전해졌다. Mastodon Seek Partial Dismissal of Brent Hinds Estate’s Laws...",
+        "url": "https://www.rollingstone.com/music/music-news/mastodon-response-brent-hinds-estate-lawsuit-1235652204/",
+        "published_date": "2026-11-03 23:09:23",
+        "category": "interview",
+        "source": "www.rollingstone.com"
+      },
+      {
+        "title": "C. Tangana Reflects on Loss and Fatherhood as He Returns to Rap With “Milko Freestyle”: Watch",
+        "summary": "C.와 관련된 주요 음악 업계 소식이 전해졌다. C. Tangana Reflects on Loss and Fatherhood as He Returns to ...",
+        "url": "https://consequence.net/2026/11/c-tangana-returns-to-rap-milko-freestyle/",
+        "published_date": "2026-11-03 23:01:09",
+        "category": "interview",
+        "source": "consequenceofsound.net"
+      },
+      {
+        "title": "Tinashe to Republican Voters During Midterm Elections: ‘Yall Can Go’",
+        "summary": "Tinashe와 관련된 주요 음악 업계 소식이 전해졌다. Tinashe to Republican Voters During Midterm Elections: ‘Yall...",
+        "url": "https://www.rollingstone.com/music/music-news/tinashe-democrat-support-midterm-elections-1235652177/",
+        "published_date": "2026-11-03 22:31:21",
+        "category": "interview",
+        "source": "www.rollingstone.com"
+      },
+      {
+        "title": "Conan O’Brien Says Modern Politics Rewards People with “No Soul”",
+        "summary": "Conan와 관련된 주요 음악 업계 소식이 전해졌다. Conan O’Brien Says Modern Politics Rewards People with “No S...",
+        "url": "https://consequence.net/2026/11/conan-obrien-politics-no-soul/",
+        "published_date": "2026-11-03 22:30:46",
+        "category": "interview",
+        "source": "consequenceofsound.net"
+      },
+      {
+        "title": "Google’s Pixel 11 Pro Is $300 Off for a Limited Time",
+        "summary": "Google’s와 관련된 주요 음악 업계 소식이 전해졌다. Google’s Pixel 11 Pro Is $300 Off for a Limited Time",
+        "url": "https://consequence.net/2026/11/googles-pixel-11-pro-is-300-off-for-a-limited-time/",
+        "published_date": "2026-11-03 22:00:49",
+        "category": "interview",
+        "source": "consequenceofsound.net"
+      },
+      {
+        "title": "‘Supercharged’ royalties, Downtown’s margins, and cost cuts: What I learned from UMG’s Q3 earnings call",
+        "summary": "‘Supercharged’와 관련된 주요 음악 업계 소식이 전해졌다. ‘Supercharged’ royalties, Downtown’s margins, and cost cuts:...",
+        "url": "https://www.musicbusinessworldwide.com/supercharged-downtowns-margins-and-more-cost-cuts-what-i-learned-from-umgs-q3-earnings/",
+        "published_date": "2026-11-03 21:54:30",
+        "category": "interview",
+        "source": "www.musicbusinessworldwide.com"
+      },
+      {
+        "title": "KPop Demon Hunters: The Criterion Collection Edition Now Available on 4K Ultra HD",
+        "summary": "KPop와 관련된 주요 음악 업계 소식이 전해졌다. KPop Demon Hunters: The Criterion Collection Edition Now Ava...",
+        "url": "https://consequence.net/2026/11/kpop-demon-hunters-criterion-4k-buy-now/",
+        "published_date": "2026-11-03 21:18:48",
+        "category": "interview",
+        "source": "consequenceofsound.net"
+      },
+      {
+        "title": "Former Kobalt exec Simon Dennett joins Spanish Point, developer of music rights platform Matching Engine, as Chief Product Officer",
+        "summary": "Former와 관련된 주요 음악 업계 소식이 전해졌다. Former Kobalt exec Simon Dennett joins Spanish Point, develo...",
+        "url": "https://www.musicbusinessworldwide.com/former-kobalt-exec-simon-dennett-joins-music-rights-tech-firm-spanish-point-as-chief-product-officer/",
+        "published_date": "2026-11-03 21:09:29",
+        "category": "interview",
+        "source": "www.musicbusinessworldwide.com"
+      },
+      {
+        "title": "Tame Impala and Jennie’s ‘Dracula’ Saw a Major Streaming Bump Over Halloweekend",
+        "summary": "Tame와 관련된 주요 음악 업계 소식이 전해졌다. Tame Impala and Jennie’s ‘Dracula’ Saw a Major Streaming Bum...",
+        "url": "https://www.rollingstone.com/music/music-news/tame-impala-jennie-dracula-remix-stream-surge-1235651451/",
+        "published_date": "2026-11-03 20:25:17",
+        "category": "interview",
+        "source": "www.rollingstone.com"
+      },
+      {
+        "title": "Journey Members Getting Along Well, Plan to Turn Farewell Tour Into “Long Goodbye”",
+        "summary": "Journey의 라이브 공연 관련 소식이 전해졌다. 콘서트 티켓과 일정 정보가 업데이트되었다.",
+        "url": "https://consequence.net/2026/11/journey-farewell-tour-long-goodbye/",
+        "published_date": "2026-11-03 19:48:29",
+        "category": "interview",
+        "source": "consequenceofsound.net"
+      },
+      {
+        "title": "Steve Ellis, Singer of 1967 Classic ‘Everlasting Love,’ Dead at 76",
+        "summary": "Steve와 관련된 주요 음악 업계 소식이 전해졌다. Steve Ellis, Singer of 1967 Classic ‘Everlasting Love,’ Dead...",
+        "url": "https://www.rollingstone.com/music/music-news/steve-ellis-love-affair-everlasting-love-dead-obituary-1235651940/",
+        "published_date": "2026-11-03 19:43:31",
+        "category": "interview",
+        "source": "www.rollingstone.com"
+      },
+      {
+        "title": "Sony’s Top-of-the-Line WH-1000XM6 Headphones Are $80 Off for a Limited Time",
+        "summary": "Sony’s가 음악 차트에서 주목할 만한 성과를 기록했다. 상업적 성공을 입증하는 결과다.",
+        "url": "https://consequence.net/2026/11/sony-wh-1000xm6-headphones-80-off/",
+        "published_date": "2026-11-03 19:33:46",
+        "category": "interview",
+        "source": "consequenceofsound.net"
+      },
+      {
+        "title": "‘Arabic music is not a niche waiting to be discovered.’",
+        "summary": "‘Arabic와 관련된 주요 음악 업계 소식이 전해졌다. ‘Arabic music is not a niche waiting to be discovered.’",
+        "url": "https://www.musicbusinessworldwide.com/arabic-music-is-not-a-niche-waiting-to-be-discovered/",
+        "published_date": "2026-11-03 19:11:42",
+        "category": "interview",
+        "source": "www.musicbusinessworldwide.com"
+      },
+      {
+        "title": "HYBE says it is ‘incubating’ markets in Southeast Asia, as local acts rise in the region",
+        "summary": "HYBE와 관련된 주요 음악 업계 소식이 전해졌다. HYBE says it is ‘incubating’ markets in Southeast Asia, as l...",
+        "url": "https://www.musicbusinessworldwide.com/hybe-says-it-is-incubating-markets-in-southeast-asia-as-local-acts-rise-in-the-region/",
+        "published_date": "2026-11-03 18:52:14",
+        "category": "interview",
+        "source": "www.musicbusinessworldwide.com"
+      },
+      {
+        "title": "Carl Cox, Bonobo, and Jessie Ware Among First 30 Acts Revealed by Barcelona’s Sónar 2027",
+        "summary": "Carl와 관련된 주요 음악 업계 소식이 전해졌다. Carl Cox, Bonobo, and Jessie Ware Among First 30 Acts Reveal...",
+        "url": "https://consequence.net/2026/11/sonar-2027-barcelona-carl-cox-bonobo-jessie-ware/",
+        "published_date": "2026-11-03 18:21:45",
+        "category": "interview",
+        "source": "consequenceofsound.net"
+      },
+      {
+        "title": "Poison the Well and Alexisonfire Announce Co-Headlining 2027 Tour with Support from Touché Amoré",
+        "summary": "Poison의 라이브 공연 관련 소식이 전해졌다. 콘서트 티켓과 일정 정보가 업데이트되었다.",
+        "url": "https://consequence.net/2026/11/alexisonfire-poison-the-well-2027-tour-touche-amore/",
+        "published_date": "2026-11-03 18:03:09",
+        "category": "interview",
+        "source": "consequenceofsound.net"
+      },
+      {
+        "title": "Dutch Uncles Announce New Album Polygon Hotel: Hear “No Note”",
+        "summary": "Dutch와 관련된 주요 음악 업계 소식이 전해졌다. Dutch Uncles Announce New Album Polygon Hotel: Hear “No Note...",
+        "url": "https://stereogum.com/2516440/dutch-uncles-announce-new-album-polygon-hotel-hear-no-note/music/",
+        "published_date": "2026-11-03 17:56:42",
+        "category": "interview",
+        "source": "www.stereogum.com"
+      },
+      {
+        "title": "Album Of The Week: Willi Carlisle The Universal Bubba",
+        "summary": "Album Of가 새 앨범 발매 소식을 공개했다. 이번 릴리스는 팬들과 음악 업계의 큰 관심을 받고 있다.",
+        "url": "https://stereogum.com/2516368/album-of-the-week-willi-carlisle-the-universal-bubba/reviews/album-of-the-week/",
+        "published_date": "2026-11-03 17:46:10",
+        "category": "interview",
+        "source": "www.stereogum.com"
+      },
+      {
+        "title": "Anna McClellan – “Anywhere” (Feat. Gloorp)",
+        "summary": "Anna의 새로운 협업 프로젝트 소식이 공개되었다. 음악 팬들의 기대감이 높아지고 있다.",
+        "url": "https://stereogum.com/2516337/anna-mcclellan-anywhere-feat-gloorp/music/",
+        "published_date": "2026-11-03 17:45:13",
+        "category": "interview",
+        "source": "www.stereogum.com"
+      },
+      {
+        "title": "Kora Puckett – “In My Veins”",
+        "summary": "Kora와 관련된 주요 음악 업계 소식이 전해졌다. Kora Puckett – “In My Veins”",
+        "url": "https://stereogum.com/2516431/kora-puckett-in-my-veins-narrow-head/music/",
+        "published_date": "2026-11-03 17:36:54",
+        "category": "interview",
+        "source": "www.stereogum.com"
+      },
+      {
+        "title": "Eminem Grants Music to Abdul El-Sayed After Collaborating with His Vocal Critic Kid Rock",
+        "summary": "Eminem와 관련된 주요 음악 업계 소식이 전해졌다. Eminem Grants Music to Abdul El-Sayed After Collaborating wi...",
+        "url": "https://consequence.net/2026/11/eminem-music-abdul-el-sayed/",
+        "published_date": "2026-11-03 17:27:19",
+        "category": "interview",
+        "source": "consequenceofsound.net"
+      },
+      {
+        "title": "1000 Rabbits – “Stupid Boy”",
+        "summary": "1000와 관련된 주요 음악 업계 소식이 전해졌다. 1000 Rabbits – “Stupid Boy”",
+        "url": "https://stereogum.com/2516428/1000-rabbits-stupid-boy/music/",
+        "published_date": "2026-11-03 17:02:44",
+        "category": "interview",
+        "source": "www.stereogum.com"
+      },
+      {
+        "title": "Pixies share unearthed classic tracks from ‘Bossanova’ and ‘Trompe le Monde’ eras",
+        "summary": "Pixies share가 새로운 싱글을 발표했다. 새 곡은 아티스트의 음악적 진화를 보여주는 작품으로 평가받고 있다.",
+        "url": "https://www.nme.com/news/music/pixies-share-unearthed-classic-tracks-from-bossanova-and-trompe-le-monde-eras-3974914?utm_source=rss&utm_medium=rss&utm_campaign=pixies-share-unearthed-classic-tracks-from-bossanova-and-trompe-le-monde-eras",
+        "published_date": "2026-11-03 17:02:43",
+        "category": "interview",
+        "source": "www.nme.com"
+      },
+      {
+        "title": "Charlotte Adigéry & Bolis Pupul Announce New Album Mainland Madinina: Hear “From Healer To Dealer”",
+        "summary": "Charlotte와 관련된 주요 음악 업계 소식이 전해졌다. Charlotte Adigéry & Bolis Pupul Announce New Album Mainland ...",
+        "url": "https://stereogum.com/2516425/charlotte-adigery-bolis-pupul-announce-new-album-mainland-madinina-hear-from-healer-to-dealer/music/",
+        "published_date": "2026-11-03 16:38:53",
+        "category": "interview",
+        "source": "www.stereogum.com"
+      },
+      {
+        "title": "Saya Gray Drops Qwerty III EP",
+        "summary": "Saya가 새로운 음악을 공개했다. 팬들과 비평가들의 긍정적 반응을 얻고 있다.",
+        "url": "https://pitchfork.com/story/saya-gray-drops-qwerty-iii-ep/",
+        "published_date": "2026-11-03 15:59:57",
+        "category": "interview",
+        "source": "pitchfork.com"
+      },
+      {
+        "title": "Purple Pilgrims – “Look To The Moon”",
+        "summary": "Purple와 관련된 주요 음악 업계 소식이 전해졌다. Purple Pilgrims – “Look To The Moon”",
+        "url": "https://stereogum.com/2516338/purple-pilgrims-look-to-the-moon/music/",
+        "published_date": "2026-11-03 15:50:26",
+        "category": "interview",
+        "source": "www.stereogum.com"
+      },
+      {
+        "title": "Sam Fender Covers The Rolling Stones For John Lewis Christmas Ad",
+        "summary": "Sam와 관련된 주요 음악 업계 소식이 전해졌다. Sam Fender Covers The Rolling Stones For John Lewis Christma...",
+        "url": "https://stereogum.com/2516420/sam-fender-covers-the-rolling-stones-for-john-lewis-christmas-ad/music/",
+        "published_date": "2026-11-03 15:49:02",
+        "category": "interview",
+        "source": "www.stereogum.com"
+      },
+      {
+        "title": "King of the LEGO: Massive Godzilla LEGO Set Stomping into Stores for Black Friday",
+        "summary": "King와 관련된 주요 음악 업계 소식이 전해졌다. King of the LEGO: Massive Godzilla LEGO Set Stomping into St...",
+        "url": "https://consequence.net/2026/11/godzilla-lego-set-model-black-friday/",
+        "published_date": "2026-11-03 15:26:33",
+        "category": "interview",
+        "source": "consequenceofsound.net"
+      },
+      {
+        "title": "Mick Jagger Praises Sam Fender’s Rolling Stones Cover",
+        "summary": "Mick와 관련된 주요 음악 업계 소식이 전해졌다. Mick Jagger Praises Sam Fender’s Rolling Stones Cover",
+        "url": "https://www.rollingstone.com/music/music-news/mick-jagger-sam-fender-you-cant-always-get-what-you-want-1235651718/",
+        "published_date": "2026-11-03 15:22:04",
+        "category": "interview",
+        "source": "www.rollingstone.com"
+      },
+      {
+        "title": "Kurt Vile Shreds Through “99 BPM” on Fallon",
+        "summary": "Kurt와 관련된 주요 음악 업계 소식이 전해졌다. Kurt Vile Shreds Through “99 BPM” on Fallon",
+        "url": "https://pitchfork.com/story/kurt-vile-shreds-through-99-bpm-on-fallon/",
+        "published_date": "2026-11-03 15:08:38",
+        "category": "interview",
+        "source": "pitchfork.com"
+      },
+      {
+        "title": "Movie Theater Will Be Hypnotizing Viewers to Relive Films for the First Time",
+        "summary": "Movie의 라이브 공연 관련 소식이 전해졌다. 콘서트 티켓과 일정 정보가 업데이트되었다.",
+        "url": "https://consequence.net/2026/11/movie-theater-hypnotizing-film-fans/",
+        "published_date": "2026-11-03 15:00:29",
+        "category": "interview",
+        "source": "consequenceofsound.net"
+      },
+      {
+        "title": "Adobe partners with Universal and Warner to bring licensed music to Premiere mobile, its free video editing app",
+        "summary": "Adobe와 관련된 주요 음악 업계 소식이 전해졌다. Adobe partners with Universal and Warner to bring licensed m...",
+        "url": "https://www.musicbusinessworldwide.com/adobe-partners-with-universal-and-warner-to-bring-licensed-music-to-premiere-mobile-its-free-video-editing-app/",
+        "published_date": "2026-11-03 14:58:28",
+        "category": "interview",
+        "source": "www.musicbusinessworldwide.com"
+      },
+      {
+        "title": "Saya Gray Releases New EP QWERTY III",
+        "summary": "Saya가 새로운 음악을 공개했다. 팬들과 비평가들의 긍정적 반응을 얻고 있다.",
+        "url": "https://stereogum.com/2516416/saya-gray-releases-new-ep-qwerty-iii/music/",
+        "published_date": "2026-11-03 14:39:53",
+        "category": "interview",
+        "source": "www.stereogum.com"
+      },
+      {
+        "title": "The Cure’s Robert Smith Promises More Concerts and New Music in 2027",
+        "summary": "The의 라이브 공연 관련 소식이 전해졌다. 콘서트 티켓과 일정 정보가 업데이트되었다.",
+        "url": "https://consequence.net/2026/11/the-cures-robert-smith-promises-more-concerts-and-new-music-in-2027/",
+        "published_date": "2026-11-03 14:32:30",
+        "category": "interview",
+        "source": "consequenceofsound.net"
+      },
+      {
+        "title": "WMG acquires indie distributor Zebralution Music",
+        "summary": "WMG와 관련된 주요 음악 업계 소식이 전해졌다. WMG acquires indie distributor Zebralution Music",
+        "url": "https://www.musicbusinessworldwide.com/wmg-acquires-indie-distributor-zebralution-music/",
+        "published_date": "2026-11-03 14:26:30",
+        "category": "interview",
+        "source": "www.musicbusinessworldwide.com"
+      },
+      {
+        "title": "Watch Aerosmith return for first show in three years – with Dave Grohl on drums",
+        "summary": "Watch와 관련된 주요 음악 업계 소식이 전해졌다. Watch Aerosmith return for first show in three years – with ...",
+        "url": "https://www.nme.com/news/music/watch-aerosmith-return-for-first-show-in-three-years-with-dave-grohl-on-drums-3974899?utm_source=rss&utm_medium=rss&utm_campaign=watch-aerosmith-return-for-first-show-in-three-years-with-dave-grohl-on-drums",
+        "published_date": "2026-11-03 14:12:14",
+        "category": "interview",
+        "source": "www.nme.com"
+      },
+      {
+        "title": "Charlotte Adigéry and Bolis Pupul Line Up New Album and Tour",
+        "summary": "Charlotte의 라이브 공연 관련 소식이 전해졌다. 콘서트 티켓과 일정 정보가 업데이트되었다.",
+        "url": "https://pitchfork.com/story/charlotte-adigery-and-bolis-pupul-line-up-new-album-and-tour/",
+        "published_date": "2026-11-03 14:08:24",
+        "category": "interview",
+        "source": "pitchfork.com"
+      },
+      {
+        "title": "HYBE banks $1B+ in Q3, its biggest ever quarter – with over $500M from live",
+        "summary": "HYBE banks가 새로운 투어 일정을 발표했다. 콘서트 관련 상세 정보는 공식 채널을 통해 확인할 수 있다.",
+        "url": "https://www.musicbusinessworldwide.com/bts-world-tour-powers-hybe-to-record-quarterly-revenues-of-1-08b-in-q3-up-109-8-yoy-as-concerts-generate-512m/",
+        "published_date": "2026-11-03 13:54:24",
+        "category": "interview",
+        "source": "www.musicbusinessworldwide.com"
+      },
+      {
+        "title": "Watch Kurt Vile Rip Through “99 BPM” On Fallon",
+        "summary": "Watch와 관련된 주요 음악 업계 소식이 전해졌다. Watch Kurt Vile Rip Through “99 BPM” On Fallon",
+        "url": "https://stereogum.com/2516412/watch-kurt-vile-rip-through-99-bpm-on-fallon/news/",
+        "published_date": "2026-11-03 13:39:59",
+        "category": "interview",
+        "source": "www.stereogum.com"
+      }
+    ],
+    "insight": []
+  },
+  "summary": {
+    "total_count": 50,
+    "by_category": {
+      "interview": 50
+    },
+    "by_source": {
+      "consequenceofsound.net": 12,
+      "www.billboard.com": 10,
+      "www.stereogum.com": 10,
+      "www.musicbusinessworldwide.com": 7,
+      "www.rollingstone.com": 6,
+      "pitchfork.com": 3,
+      "www.nme.com": 2
+    },
+    "members_only_count": 0
+  }
+}
