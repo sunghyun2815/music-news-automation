@@ -1,0 +1,432 @@
+{
+  "metadata": {
+    "generated_at": "2026-11-05T07:39:05.087060",
+    "total_news": 50,
+    "last_updated": "2026-11-05T07:39:05.087070",
+    "version": "2.0",
+    "compatible_with": "NewsSection.tsx"
+  },
+  "news": {
+    "all_articles": [],
+    "news": [],
+    "interview": [
+      {
+        "title": "BIGBANG Adds World Tour Finale at L.A.’s SoFi Stadium",
+        "summary": "BIGBANG의 라이브 공연 관련 소식이 전해졌다. 콘서트 티켓과 일정 정보가 업데이트되었다.",
+        "url": "https://www.billboard.com/music/concerts/bigbang-world-tour-finale-sofi-stadium-1236374554/",
+        "published_date": "2026-11-05 06:54:56",
+        "category": "interview",
+        "source": "www.billboard.com"
+      },
+      {
+        "title": "‘A Vast Landgrab’: ICMP Weighs-In on Big AI’s Australian Copyright Battleground (EXCLUSIVE)",
+        "summary": "‘A와 관련된 주요 음악 업계 소식이 전해졌다. ‘A Vast Landgrab’: ICMP Weighs-In on Big AI’s Australian Cop...",
+        "url": "https://www.billboard.com/pro/icmp-john-phelan-interview-big-ai-australian-copyright/",
+        "published_date": "2026-11-05 06:09:59",
+        "category": "interview",
+        "source": "www.billboard.com"
+      },
+      {
+        "title": "Texas’ New Attorney General Nathan Johnson Is a Former ‘Dragon Ball Z’ Composer",
+        "summary": "Texas’와 관련된 주요 음악 업계 소식이 전해졌다. Texas’ New Attorney General Nathan Johnson Is a Former ‘Drag...",
+        "url": "https://www.billboard.com/music/music-news/texas-ag-nathan-johnson-dragon-ball-z-composer-1236374532/",
+        "published_date": "2026-11-05 05:23:00",
+        "category": "interview",
+        "source": "www.billboard.com"
+      },
+      {
+        "title": "Nikki Minaj is Going Down With Trump’s Ship After Nearly Every Candidate She Backed Lost",
+        "summary": "Nikki와 관련된 주요 음악 업계 소식이 전해졌다. Nikki Minaj is Going Down With Trump’s Ship After Nearly Eve...",
+        "url": "https://www.rollingstone.com/music/music-news/nikki-minaj-down-with-trump-ship-candidates-endorsed-lost-1235653035/",
+        "published_date": "2026-11-05 05:17:09",
+        "category": "interview",
+        "source": "www.rollingstone.com"
+      },
+      {
+        "title": "The $1.4 Billion ‘No-Brainer’ Opportunity The Music Industry Is Missing",
+        "summary": "The와 관련된 주요 음악 업계 소식이 전해졌다. The $1.4 Billion ‘No-Brainer’ Opportunity The Music Industry...",
+        "url": "https://www.billboard.com/pro/soundtrack-opportunity-music-industry-missing/",
+        "published_date": "2026-11-05 05:08:53",
+        "category": "interview",
+        "source": "www.billboard.com"
+      },
+      {
+        "title": "Stevie Wonder’s Eviction Lawsuit Escalates as Rent-Free Resident Demands Repairs to Walls and Plumbing",
+        "summary": "Stevie와 관련된 주요 음악 업계 소식이 전해졌다. Stevie Wonder’s Eviction Lawsuit Escalates as Rent-Free Resi...",
+        "url": "https://www.rollingstone.com/music/music-news/stevie-wonder-eviction-lawsuit-woman-rent-free-repairs-1235653031/",
+        "published_date": "2026-11-05 02:35:22",
+        "category": "interview",
+        "source": "www.rollingstone.com"
+      },
+      {
+        "title": "Billboard’s Music Industry Events Calendar",
+        "summary": "Billboard’s와 관련된 주요 음악 업계 소식이 전해졌다. Billboard’s Music Industry Events Calendar",
+        "url": "https://www.billboard.com/pro/music-industry-events-calendar-festivals-awards-conferences/",
+        "published_date": "2026-11-05 01:47:00",
+        "category": "interview",
+        "source": "www.billboard.com"
+      },
+      {
+        "title": "Judge Torn on Lil Durk Bail Question After Murder-for-Hire Verdict: ‘A Question of Psychology’",
+        "summary": "Judge와 관련된 주요 음악 업계 소식이 전해졌다. Judge Torn on Lil Durk Bail Question After Murder-for-Hire V...",
+        "url": "https://www.billboard.com/pro/lil-durk-bail-motion-judge-torn-rapper-jail/",
+        "published_date": "2026-11-05 01:11:32",
+        "category": "interview",
+        "source": "www.billboard.com"
+      },
+      {
+        "title": "50 Cent Jokingly Sends Diddy a Happy Birthday Message With Jail Photo: ‘Wishing You Many More LOL’",
+        "summary": "50와 관련된 주요 음악 업계 소식이 전해졌다. 50 Cent Jokingly Sends Diddy a Happy Birthday Message With J...",
+        "url": "https://www.billboard.com/music/rb-hip-hop/50-cent-diddy-happy-birthday-1236374084/",
+        "published_date": "2026-11-05 00:59:33",
+        "category": "interview",
+        "source": "www.billboard.com"
+      },
+      {
+        "title": "Jimmy Kimmel Takes Dig at Trump With Nicki Minaj Joke: ‘The Only A– on Trump’s Mind Tonight Is the One That Got Handed to Him’",
+        "summary": "Jimmy와 관련된 주요 음악 업계 소식이 전해졌다. Jimmy Kimmel Takes Dig at Trump With Nicki Minaj Joke: ‘The ...",
+        "url": "https://www.billboard.com/culture/politics/jimmy-kimmel-president-donald-trump-nicki-minaj-ass-joke-1236374399/",
+        "published_date": "2026-11-05 00:18:56",
+        "category": "interview",
+        "source": "www.billboard.com"
+      },
+      {
+        "title": "Watch Druski Get Down to This Viral Latin Hit With Marcello Hernandez Ahead of ‘SNL’ Hosting Debut",
+        "summary": "Watch와 관련된 주요 음악 업계 소식이 전해졌다. Watch Druski Get Down to This Viral Latin Hit With Marcello ...",
+        "url": "https://www.billboard.com/culture/tv-film/druski-snl-hosting-promo-dame-hombro-dance-1236374373/",
+        "published_date": "2026-11-04 23:05:22",
+        "category": "interview",
+        "source": "www.billboard.com"
+      },
+      {
+        "title": "Warner Records Nashville Lays Off Five, Including EVP of Marketing Victoria Mason",
+        "summary": "Warner와 관련된 주요 음악 업계 소식이 전해졌다. Warner Records Nashville Lays Off Five, Including EVP of Mar...",
+        "url": "https://www.billboard.com/pro/warner-records-nashville-layoffs-five-staffers-cut-label/",
+        "published_date": "2026-11-04 23:05:19",
+        "category": "interview",
+        "source": "www.billboard.com"
+      },
+      {
+        "title": "Watch This Is Lorelei Play The Singer in My Band Songs on KCRW",
+        "summary": "Watch This가 새로운 싱글을 발표했다. 새 곡은 아티스트의 음악적 진화를 보여주는 작품으로 평가받고 있다.",
+        "url": "https://pitchfork.com/story/watch-this-is-lorelei-play-the-singer-in-my-band-songs-on-kcrw/",
+        "published_date": "2026-11-04 22:47:12",
+        "category": "interview",
+        "source": "pitchfork.com"
+      },
+      {
+        "title": "Abdul El-Sayed  Embraced His Swiftie Status All the Way to the U.S. Senate",
+        "summary": "Abdul와 관련된 주요 음악 업계 소식이 전해졌다. Abdul El-Sayed  Embraced His Swiftie Status All the Way to t...",
+        "url": "https://www.rollingstone.com/music/music-news/abdul-el-sayed-taylor-swift-1235652663/",
+        "published_date": "2026-11-04 21:43:39",
+        "category": "interview",
+        "source": "www.rollingstone.com"
+      },
+      {
+        "title": "Harry Styles residency boosts MSG Entertainment as revenues rise 37% to $217M in calendar Q3",
+        "summary": "Harry와 관련된 주요 음악 업계 소식이 전해졌다. Harry Styles residency boosts MSG Entertainment as revenues ...",
+        "url": "https://www.musicbusinessworldwide.com/harry-styles-run-pushes-msg-entertainment-to-record-concert-quarter-at-madison-square-garden-as-revenues-rise-37-to-217m-in-calendar-q3/",
+        "published_date": "2026-11-04 21:12:49",
+        "category": "interview",
+        "source": "www.musicbusinessworldwide.com"
+      },
+      {
+        "title": "The Midterms Gave Us a Blue Wave — And Some Hilarious Music Memes",
+        "summary": "The와 관련된 주요 음악 업계 소식이 전해졌다. The Midterms Gave Us a Blue Wave — And Some Hilarious Music ...",
+        "url": "https://www.rollingstone.com/music/music-news/2026-midterm-election-music-memes-1235652733/",
+        "published_date": "2026-11-04 21:05:35",
+        "category": "interview",
+        "source": "www.rollingstone.com"
+      },
+      {
+        "title": "As Nicki Minaj Rallied for Trump’s GOP, Her Lawyers Told Court She Still Owes Them $295,000",
+        "summary": "As와 관련된 주요 음악 업계 소식이 전해졌다. As Nicki Minaj Rallied for Trump’s GOP, Her Lawyers Told Cou...",
+        "url": "https://www.rollingstone.com/music/music-news/nicki-minaj-default-bid-president-trump-new-hampshire-1235652674/",
+        "published_date": "2026-11-04 20:47:45",
+        "category": "interview",
+        "source": "www.rollingstone.com"
+      },
+      {
+        "title": "Sam And Louise Sullivan – “Trying Your Luck (4-track)” (The Strokes Cover)",
+        "summary": "Sam와 관련된 주요 음악 업계 소식이 전해졌다. Sam And Louise Sullivan – “Trying Your Luck (4-track)” (The ...",
+        "url": "https://stereogum.com/2516537/sam-and-louise-sullivan-trying-your-luck-the-strokes-cover/music/",
+        "published_date": "2026-11-04 20:38:04",
+        "category": "interview",
+        "source": "www.stereogum.com"
+      },
+      {
+        "title": "Desert Age Documentary 10th Anniversary Re-Release: See Photos of Kyuss, Black Flag, and More",
+        "summary": "Desert와 관련된 주요 음악 업계 소식이 전해졌다. Desert Age Documentary 10th Anniversary Re-Release: See Phot...",
+        "url": "https://consequence.net/2026/11/desert-age-documentary-10th-anniversary-photos-kyuss-black-flag/",
+        "published_date": "2026-11-04 20:00:46",
+        "category": "interview",
+        "source": "consequenceofsound.net"
+      },
+      {
+        "title": "GIFT – “Every Step”",
+        "summary": "GIFT와 관련된 주요 음악 업계 소식이 전해졌다. GIFT – “Every Step”",
+        "url": "https://stereogum.com/2516370/gift-every-step-frenzy-for-the-thrill-song-video/music/",
+        "published_date": "2026-11-04 19:36:50",
+        "category": "interview",
+        "source": "www.stereogum.com"
+      },
+      {
+        "title": "Bob Dylan Meets With Pope Leo XIV in a Private Audience",
+        "summary": "Bob와 관련된 주요 음악 업계 소식이 전해졌다. Bob Dylan Meets With Pope Leo XIV in a Private Audience",
+        "url": "https://www.rollingstone.com/music/music-news/bob-dylan-pope-leo-xiv-meet-private-audience-1235652631/",
+        "published_date": "2026-11-04 19:18:44",
+        "category": "interview",
+        "source": "www.rollingstone.com"
+      },
+      {
+        "title": "Cynthia Erivo to Play Tupac’s Mom in Snoop Dogg Biopic",
+        "summary": "Cynthia와 관련된 주요 음악 업계 소식이 전해졌다. Cynthia Erivo to Play Tupac’s Mom in Snoop Dogg Biopic",
+        "url": "https://consequence.net/2026/11/cynthia-erivo-snoop-biopic-afeni-shakur-tupac/",
+        "published_date": "2026-11-04 19:02:34",
+        "category": "interview",
+        "source": "consequenceofsound.net"
+      },
+      {
+        "title": "Christine And The Queens – “Rendez-vous Avec Toi”",
+        "summary": "Christine와 관련된 주요 음악 업계 소식이 전해졌다. Christine And The Queens – “Rendez-vous Avec Toi”",
+        "url": "https://stereogum.com/2516516/christine-and-the-queens-rendez-vous-avec-toi/music/",
+        "published_date": "2026-11-04 18:31:40",
+        "category": "interview",
+        "source": "www.stereogum.com"
+      },
+      {
+        "title": "HYBE to transfer its entire $285.6M stake in crypto firm Dunamu to US subsidiary HYBE Americas",
+        "summary": "HYBE와 관련된 주요 음악 업계 소식이 전해졌다. HYBE to transfer its entire $285.6M stake in crypto firm Dun...",
+        "url": "https://www.musicbusinessworldwide.com/hybe-to-transfer-its-entire-285-6m-stake-in-crypto-firm-dunamu-to-us-subsidiary-hybe-americas/",
+        "published_date": "2026-11-04 18:19:42",
+        "category": "interview",
+        "source": "www.musicbusinessworldwide.com"
+      },
+      {
+        "title": "Everything Everything fight modern life on new album ‘Poison Pop’: “It’s about this drink that kills you, but you still want it”",
+        "summary": "Everything와 관련된 주요 음악 업계 소식이 전해졌다. Everything Everything fight modern life on new album ‘Poison...",
+        "url": "https://www.nme.com/news/music/everything-everything-grappling-with-modern-life-poison-pop-interview-ai-3974839?utm_source=rss&utm_medium=rss&utm_campaign=everything-everything-grappling-with-modern-life-poison-pop-interview-ai",
+        "published_date": "2026-11-04 18:00:36",
+        "category": "interview",
+        "source": "www.nme.com"
+      },
+      {
+        "title": "Bob Dylan Meets Pope Leo",
+        "summary": "Bob와 관련된 주요 음악 업계 소식이 전해졌다. Bob Dylan Meets Pope Leo",
+        "url": "https://consequence.net/2026/11/bob-dylan-meets-pope-leo/",
+        "published_date": "2026-11-04 17:57:14",
+        "category": "interview",
+        "source": "consequenceofsound.net"
+      },
+      {
+        "title": "5 things to know about CISAC’s global report, as songwriter royalty collections hit record $15.9B in 2025, with $900M+ from The MLC, and AI in focus",
+        "summary": "5 things가 새 앨범 발매 소식을 공개했다. 이번 릴리스는 팬들과 음악 업계의 큰 관심을 받고 있다.",
+        "url": "https://www.musicbusinessworldwide.com/5-things-to-know-about-cisacs-global-report-as-songwriter-royalty-collections-hit-record-15-9b-in-2025-with-900m-from-the-mlc-and-ai-in-focus/",
+        "published_date": "2026-11-04 17:54:11",
+        "category": "interview",
+        "source": "www.musicbusinessworldwide.com"
+      },
+      {
+        "title": "Bob Dylan, Wearing Hoodie, Meets Pope",
+        "summary": "Bob와 관련된 주요 음악 업계 소식이 전해졌다. Bob Dylan, Wearing Hoodie, Meets Pope",
+        "url": "https://pitchfork.com/story/bob-dylan-wearing-hoodie-meets-pope/",
+        "published_date": "2026-11-04 17:51:17",
+        "category": "interview",
+        "source": "pitchfork.com"
+      },
+      {
+        "title": "CoSign: Hudson Freeman Turns the Rapture Inside Out on Doom Country",
+        "summary": "CoSign: Hudson가 새로운 음악 계약을 체결했다고 발표되었다. 이번 파트너십은 아티스트의 향후 활동에 긍정적 영향을 미칠 전망이다.",
+        "url": "https://consequence.net/2026/11/hudson-freeman-doom-country-cosign-interview/",
+        "published_date": "2026-11-04 17:40:05",
+        "category": "interview",
+        "source": "consequenceofsound.net"
+      },
+      {
+        "title": "Suno asks court to dismiss Jason Isbell’s right-of-publicity class action. It claims artist names are ‘shorthand’ for musical genres.",
+        "summary": "Suno와 관련된 주요 음악 업계 소식이 전해졌다. Suno asks court to dismiss Jason Isbell’s right-of-publicity...",
+        "url": "https://www.musicbusinessworldwide.com/suno-asks-court-to-dismiss-jason-isbells-right-of-publicity-class-action-it-claims-artist-names-are-shorthand-for-musical-genres/",
+        "published_date": "2026-11-04 17:35:23",
+        "category": "interview",
+        "source": "www.musicbusinessworldwide.com"
+      },
+      {
+        "title": "Daniel Hong joins Nebula17 as COO, as Naoki Osada’s US-Japan music company signs distribution deal with The Orchard",
+        "summary": "Daniel와 관련된 주요 음악 업계 소식이 전해졌다. Daniel Hong joins Nebula17 as COO, as Naoki Osada’s US-Japan...",
+        "url": "https://www.musicbusinessworldwide.com/daniel-hong-joins-nebula17-as-coo-as-naoki-osadas-us-japan-music-company-signs-distribution-deal-with-the-orchard/",
+        "published_date": "2026-11-04 17:35:09",
+        "category": "interview",
+        "source": "www.musicbusinessworldwide.com"
+      },
+      {
+        "title": "Lou Diamond Phillips on Gangland, Young Guns 3, and The Chair Company Season 2: Podcast",
+        "summary": "Lou와 관련된 주요 음악 업계 소식이 전해졌다. Lou Diamond Phillips on Gangland, Young Guns 3, and The Chai...",
+        "url": "https://consequence.net/2026/11/lou-diamond-phillips-gangland-young-guns-3/",
+        "published_date": "2026-11-04 17:30:14",
+        "category": "interview",
+        "source": "consequenceofsound.net"
+      },
+      {
+        "title": "Pearl Jam Still Auditioning Drummers: “We Want to Play Some Shows Next Year”",
+        "summary": "Pearl와 관련된 주요 음악 업계 소식이 전해졌다. Pearl Jam Still Auditioning Drummers: “We Want to Play Some ...",
+        "url": "https://consequence.net/2026/11/pearl-jam-still-auditioning-drummers/",
+        "published_date": "2026-11-04 17:26:57",
+        "category": "interview",
+        "source": "consequenceofsound.net"
+      },
+      {
+        "title": "Juanes to Release 25-Song Greatest Hits Collection Celebrating His 25-Year Career",
+        "summary": "Juanes to가 새로운 싱글을 발표했다. 새 곡은 아티스트의 음악적 진화를 보여주는 작품으로 평가받고 있다.",
+        "url": "https://consequence.net/2026/11/juanes-greatest-hits-celebrating-25-years/",
+        "published_date": "2026-11-04 17:17:15",
+        "category": "interview",
+        "source": "consequenceofsound.net"
+      },
+      {
+        "title": "Four Tet Produced a Tech-House Remix for the Durutti Column",
+        "summary": "Four와 관련된 주요 음악 업계 소식이 전해졌다. Four Tet Produced a Tech-House Remix for the Durutti Column",
+        "url": "https://pitchfork.com/story/four-tet-remixes-the-durutti-column/",
+        "published_date": "2026-11-04 17:14:12",
+        "category": "interview",
+        "source": "pitchfork.com"
+      },
+      {
+        "title": "Robin Finck Is Selling His Nine Inch Nails and GN’R Guitars",
+        "summary": "Robin와 관련된 주요 음악 업계 소식이 전해졌다. Robin Finck Is Selling His Nine Inch Nails and GN’R Guitars",
+        "url": "https://www.rollingstone.com/music/music-news/robin-finck-nine-inch-nails-guns-n-roses-guitars-1235651930/",
+        "published_date": "2026-11-04 17:02:09",
+        "category": "interview",
+        "source": "www.rollingstone.com"
+      },
+      {
+        "title": "Love Remain – “Shadow Swim”",
+        "summary": "Love와 관련된 주요 음악 업계 소식이 전해졌다. Love Remain – “Shadow Swim”",
+        "url": "https://stereogum.com/2516506/love-remain-shadow-swim/music/",
+        "published_date": "2026-11-04 16:48:56",
+        "category": "interview",
+        "source": "www.stereogum.com"
+      },
+      {
+        "title": "Australian Punkers The Chats Announce Spring 2027 North American Tour",
+        "summary": "Australian의 라이브 공연 관련 소식이 전해졌다. 콘서트 티켓과 일정 정보가 업데이트되었다.",
+        "url": "https://consequence.net/2026/11/the-chats-2027-north-american-tour/",
+        "published_date": "2026-11-04 16:46:04",
+        "category": "interview",
+        "source": "consequenceofsound.net"
+      },
+      {
+        "title": "Kiwi Jr. – “Something Wicked”",
+        "summary": "Kiwi와 관련된 주요 음악 업계 소식이 전해졌다. Kiwi Jr. – “Something Wicked”",
+        "url": "https://stereogum.com/2516446/kiwi-jr-something-wicked-blowin-up/music/",
+        "published_date": "2026-11-04 16:43:19",
+        "category": "interview",
+        "source": "www.stereogum.com"
+      },
+      {
+        "title": "Christine And The The Queens makes funky return with new single ‘Rendez-vous Avec Toi’: “The electricity remains eternally mysterious”",
+        "summary": "Christine And가 새로운 싱글을 발표했다. 새 곡은 아티스트의 음악적 진화를 보여주는 작품으로 평가받고 있다.",
+        "url": "https://www.nme.com/news/music/christine-the-queens-releases-new-single-rendez-vous-avec-toi-listen-3975012?utm_source=rss&utm_medium=rss&utm_campaign=christine-the-queens-releases-new-single-rendez-vous-avec-toi-listen",
+        "published_date": "2026-11-04 16:42:52",
+        "category": "interview",
+        "source": "www.nme.com"
+      },
+      {
+        "title": "Quivers – “Bottle The Nervous”",
+        "summary": "Quivers와 관련된 주요 음악 업계 소식이 전해졌다. Quivers – “Bottle The Nervous”",
+        "url": "https://stereogum.com/2516500/quivers-bottle-the-nervous/music/",
+        "published_date": "2026-11-04 16:38:22",
+        "category": "interview",
+        "source": "www.stereogum.com"
+      },
+      {
+        "title": "Kanye West Announces 2027 Concert at Mexico City’s Iconic Estadio Azteca",
+        "summary": "Kanye가 중요한 음악 관련 발표를 했다. 이번 소식은 팬들의 주목을 받고 있다.",
+        "url": "https://consequence.net/2026/11/kanye-west-concert-mexico-estadio-azteca/",
+        "published_date": "2026-11-04 16:11:35",
+        "category": "interview",
+        "source": "consequenceofsound.net"
+      },
+      {
+        "title": "Crate – “Crushed To Nothing”",
+        "summary": "Crate와 관련된 주요 음악 업계 소식이 전해졌다. Crate – “Crushed To Nothing”",
+        "url": "https://stereogum.com/2516498/crate-crushed-to-nothing/music/",
+        "published_date": "2026-11-04 16:03:43",
+        "category": "interview",
+        "source": "www.stereogum.com"
+      },
+      {
+        "title": "Queens Of The Stone Age on 2027 tour plans: “We’re going to do something that’s beyond what we’ve ever done before”",
+        "summary": "Queens Of가 새로운 투어 일정을 발표했다. 콘서트 관련 상세 정보는 공식 채널을 통해 확인할 수 있다.",
+        "url": "https://www.nme.com/news/music/queens-of-the-stone-age-tease-2027-tour-plans-beyond-what-weve-ever-done-before-3975001?utm_source=rss&utm_medium=rss&utm_campaign=queens-of-the-stone-age-tease-2027-tour-plans-beyond-what-weve-ever-done-before",
+        "published_date": "2026-11-04 16:01:11",
+        "category": "interview",
+        "source": "www.nme.com"
+      },
+      {
+        "title": "Iron Maiden and Z2 Comics Announce Somewhere In Time Graphic Novel",
+        "summary": "Iron Maiden와 관련된 주요 음악 업계 소식이 전해졌다. Iron Maiden and Z2 Comics Announce Somewhere In Time Graphic...",
+        "url": "https://consequence.net/2026/11/iron-maiden-announce-somewhere-in-time-graphic-novel/",
+        "published_date": "2026-11-04 16:00:11",
+        "category": "interview",
+        "source": "consequenceofsound.net"
+      },
+      {
+        "title": "Hannah Jadagu – “Curse”",
+        "summary": "Hannah와 관련된 주요 음악 업계 소식이 전해졌다. Hannah Jadagu – “Curse”",
+        "url": "https://stereogum.com/2516488/hannah-jadagu-curse/music/",
+        "published_date": "2026-11-04 15:51:02",
+        "category": "interview",
+        "source": "www.stereogum.com"
+      },
+      {
+        "title": "Blue Bendy – “Vocal Fry Academia”",
+        "summary": "Blue와 관련된 주요 음악 업계 소식이 전해졌다. Blue Bendy – “Vocal Fry Academia”",
+        "url": "https://stereogum.com/2516494/blue-bendy-vocal-fry-academia/music/",
+        "published_date": "2026-11-04 15:46:15",
+        "category": "interview",
+        "source": "www.stereogum.com"
+      },
+      {
+        "title": "Morat Are Redefining What a Latin Superstar Looks Like, One Pop-Rock Song At a Time",
+        "summary": "Morat와 관련된 주요 음악 업계 소식이 전해졌다. Morat Are Redefining What a Latin Superstar Looks Like, One ...",
+        "url": "https://consequence.net/2026/11/morat-redefine-latin-band-us-interview/",
+        "published_date": "2026-11-04 15:41:47",
+        "category": "interview",
+        "source": "consequenceofsound.net"
+      },
+      {
+        "title": "Cult of Luna Unleash “Sadness Will Reign” Featuring Gojira’s Joe Duplantier",
+        "summary": "Cult의 새로운 협업 프로젝트 소식이 공개되었다. 음악 팬들의 기대감이 높아지고 있다.",
+        "url": "https://consequence.net/2026/11/cult-of-luna-sadness-will-reign-joe-duplantier/",
+        "published_date": "2026-11-04 15:40:31",
+        "category": "interview",
+        "source": "consequenceofsound.net"
+      },
+      {
+        "title": "Former Dragon Ball Z Composer Nathan Johnson Elected Attorney General of Texas",
+        "summary": "Former와 관련된 주요 음악 업계 소식이 전해졌다. Former Dragon Ball Z Composer Nathan Johnson Elected Attorne...",
+        "url": "https://consequence.net/2026/11/dragon-ball-z-nathan-johnson-attorney-general-texas/",
+        "published_date": "2026-11-04 15:25:56",
+        "category": "interview",
+        "source": "consequenceofsound.net"
+      }
+    ],
+    "insight": []
+  },
+  "summary": {
+    "total_count": 50,
+    "by_category": {
+      "interview": 50
+    },
+    "by_source": {
+      "consequenceofsound.net": 13,
+      "www.billboard.com": 10,
+      "www.stereogum.com": 9,
+      "www.rollingstone.com": 7,
+      "www.musicbusinessworldwide.com": 5,
+      "pitchfork.com": 3,
+      "www.nme.com": 3
+    },
+    "members_only_count": 0
+  }
+}
