@@ -1,0 +1,431 @@
+{
+  "metadata": {
+    "generated_at": "2026-11-08T06:53:55.837506",
+    "total_news": 50,
+    "last_updated": "2026-11-08T06:53:55.837514",
+    "version": "2.0",
+    "compatible_with": "NewsSection.tsx"
+  },
+  "news": {
+    "all_articles": [],
+    "news": [],
+    "interview": [
+      {
+        "title": "Druski Spoofs You Can See Everything on SNL",
+        "summary": "Druski와 관련된 주요 음악 업계 소식이 전해졌다. Druski Spoofs You Can See Everything on SNL",
+        "url": "https://consequence.net/2026/11/druski-spoofs-you-can-see-everything-snl/",
+        "published_date": "2026-11-08 05:44:07",
+        "category": "interview",
+        "source": "consequenceofsound.net"
+      },
+      {
+        "title": "James Talarico Crashes SNL’s Cold Open: “It’s Clear People Want Something New”",
+        "summary": "James와 관련된 주요 음악 업계 소식이 전해졌다. James Talarico Crashes SNL’s Cold Open: “It’s Clear People W...",
+        "url": "https://consequence.net/2026/11/james-talarico-snl-cold-open/",
+        "published_date": "2026-11-08 05:11:53",
+        "category": "interview",
+        "source": "consequenceofsound.net"
+      },
+      {
+        "title": "U2 Weigh In on Ed Sheeran and Macklemore Tour Controversy",
+        "summary": "U2의 라이브 공연 관련 소식이 전해졌다. 콘서트 티켓과 일정 정보가 업데이트되었다.",
+        "url": "https://www.billboard.com/music/music-news/u2-macklemore-ed-sheeran-tour-censorship-comments-1236377026/",
+        "published_date": "2026-11-08 03:53:23",
+        "category": "interview",
+        "source": "www.billboard.com"
+      },
+      {
+        "title": "Simple Plan Are Meeting a Whole New Generation of Fans, 25 Years In",
+        "summary": "Simple와 관련된 주요 음악 업계 소식이 전해졌다. Simple Plan Are Meeting a Whole New Generation of Fans, 25 Y...",
+        "url": "https://www.billboard.com/music/music-news/simple-plan-new-generation-fans-chuck-comeau-interview-1236368697/",
+        "published_date": "2026-11-08 03:45:04",
+        "category": "interview",
+        "source": "www.billboard.com"
+      },
+      {
+        "title": "Druski & The Strokes on ‘SNL’: Here’s Where to Watch ‘Saturday Night Live’ Online for Free",
+        "summary": "Druski의 라이브 공연 관련 소식이 전해졌다. 콘서트 티켓과 일정 정보가 업데이트되었다.",
+        "url": "https://www.billboard.com/culture/product-recommendations/snl-2026-druski-the-strokes-watch-live-online-free-1236375885/",
+        "published_date": "2026-11-08 01:30:00",
+        "category": "interview",
+        "source": "www.billboard.com"
+      },
+      {
+        "title": "Rob Schneider Was Briefed on the Iran War",
+        "summary": "Rob와 관련된 주요 음악 업계 소식이 전해졌다. Rob Schneider Was Briefed on the Iran War",
+        "url": "https://consequence.net/2026/11/rob-schneider-iran-war/",
+        "published_date": "2026-11-08 00:45:34",
+        "category": "interview",
+        "source": "consequenceofsound.net"
+      },
+      {
+        "title": "Alanis Morissette Shares She Identifies as Pansexual",
+        "summary": "Alanis Morissette와 관련된 주요 음악 업계 소식이 전해졌다. Alanis Morissette Shares She Identifies as Pansexual",
+        "url": "https://www.billboard.com/culture/pride/alanis-morissette-pansexual-1236376991/",
+        "published_date": "2026-11-08 00:39:09",
+        "category": "interview",
+        "source": "www.billboard.com"
+      },
+      {
+        "title": "Deep Purple’s Ian Gillan Shares Encouraging News After Undergoing Surgery",
+        "summary": "Deep와 관련된 주요 음악 업계 소식이 전해졌다. Deep Purple’s Ian Gillan Shares Encouraging News After Under...",
+        "url": "https://www.billboard.com/music/rock/deep-purple-ian-gillan-health-update-after-surgery-1236376961/",
+        "published_date": "2026-11-07 20:43:32",
+        "category": "interview",
+        "source": "www.billboard.com"
+      },
+      {
+        "title": "Television’s Richard Lloyd Dead At 75",
+        "summary": "Television’s와 관련된 주요 음악 업계 소식이 전해졌다. Television’s Richard Lloyd Dead At 75",
+        "url": "https://stereogum.com/2516946/televisions-richard-lloyd-dead-at-75/news/",
+        "published_date": "2026-11-07 17:43:36",
+        "category": "interview",
+        "source": "www.stereogum.com"
+      },
+      {
+        "title": "Richard Lloyd, Television Guitarist, Dies at 75",
+        "summary": "Richard와 관련된 주요 음악 업계 소식이 전해졌다. Richard Lloyd, Television Guitarist, Dies at 75",
+        "url": "https://pitchfork.com/story/richard-lloyd-television-guitarist-dies-at-75/",
+        "published_date": "2026-11-07 17:11:52",
+        "category": "interview",
+        "source": "pitchfork.com"
+      },
+      {
+        "title": "Richard Lloyd, Television Guitarist, Dead at 75",
+        "summary": "Richard와 관련된 주요 음악 업계 소식이 전해졌다. Richard Lloyd, Television Guitarist, Dead at 75",
+        "url": "https://consequence.net/2026/11/richard-lloyd-television-dead/",
+        "published_date": "2026-11-07 16:39:09",
+        "category": "interview",
+        "source": "consequenceofsound.net"
+      },
+      {
+        "title": "Richard Lloyd, Television’s Virtuoso Guitarist, Dead at 75",
+        "summary": "Richard와 관련된 주요 음악 업계 소식이 전해졌다. Richard Lloyd, Television’s Virtuoso Guitarist, Dead at 75",
+        "url": "https://www.rollingstone.com/music/music-news/richard-lloyd-television-guitarist-dead-obituary-1235614110/",
+        "published_date": "2026-11-07 16:28:15",
+        "category": "interview",
+        "source": "www.rollingstone.com"
+      },
+      {
+        "title": "Deep Purple’s Ian Gillan Undergoes ‘Successful’ Surgery After Medical Emergency",
+        "summary": "Deep와 관련된 주요 음악 업계 소식이 전해졌다. Deep Purple’s Ian Gillan Undergoes ‘Successful’ Surgery Afte...",
+        "url": "https://www.rollingstone.com/music/music-news/deep-purple-ian-gillan-successful-surgery-medical-emergency-1235654349/",
+        "published_date": "2026-11-07 16:20:10",
+        "category": "interview",
+        "source": "www.rollingstone.com"
+      },
+      {
+        "title": "Elvis Presley Rights Owners Sue Suno Over AI Voice Cloning: ‘Elvis’ Identity Was Stolen’",
+        "summary": "Elvis와 관련된 주요 음악 업계 소식이 전해졌다. Elvis Presley Rights Owners Sue Suno Over AI Voice Cloning: ...",
+        "url": "https://www.billboard.com/pro/elvis-presley-ai-voice-cloning-lawsuit-suno/",
+        "published_date": "2026-11-07 15:38:11",
+        "category": "interview",
+        "source": "www.billboard.com"
+      },
+      {
+        "title": "Rosalía Reflects On One Year Of Lux With 1,000-Track Playlist",
+        "summary": "Rosalía와 관련된 주요 음악 업계 소식이 전해졌다. Rosalía Reflects On One Year Of Lux With 1,000-Track Playlis...",
+        "url": "https://stereogum.com/2516941/rosalia-reflects-on-one-year-of-lux-with-1000-track-playlist/news/",
+        "published_date": "2026-11-07 15:26:44",
+        "category": "interview",
+        "source": "www.stereogum.com"
+      },
+      {
+        "title": "“Christmas Wrapping” Songwriter Is A Huge Olivia Rodrigo Fan And Says Her New Single Is An “Homage,” Not A Ripoff",
+        "summary": "“Christmas Wrapping”가 새로운 싱글을 발표했다. 새 곡은 아티스트의 음악적 진화를 보여주는 작품으로 평가받고 있다.",
+        "url": "https://stereogum.com/2516936/christmas-wrapping-songwriter-is-a-huge-olivia-rodrigo-fan-and-says-her-new-single-is-an-homage-not-a-ripoff/news/",
+        "published_date": "2026-11-07 14:53:55",
+        "category": "interview",
+        "source": "www.stereogum.com"
+      },
+      {
+        "title": "Arde Bogotá on Going to Los Angeles to Make Their Most Spanish Album Yet",
+        "summary": "Arde Bogotá가 새 앨범 발매 소식을 공개했다. 이번 릴리스는 팬들과 음악 업계의 큰 관심을 받고 있다.",
+        "url": "https://consequence.net/2026/11/arde-bogota-new-album-los-angeles-spain/",
+        "published_date": "2026-11-07 14:13:39",
+        "category": "interview",
+        "source": "consequenceofsound.net"
+      },
+      {
+        "title": "WWE Crown Jewel 2026: Here’s How to Watch the Premium Live Event Online for Free",
+        "summary": "WWE의 라이브 공연 관련 소식이 전해졌다. 콘서트 티켓과 일정 정보가 업데이트되었다.",
+        "url": "https://www.billboard.com/culture/product-recommendations/wwe-crown-jewel-2026-how-to-watch-live-online-free-1236372909/",
+        "published_date": "2026-11-07 14:00:00",
+        "category": "interview",
+        "source": "www.billboard.com"
+      },
+      {
+        "title": "Manics honour Richey Edwards as Suede look to the future at London co-headline show",
+        "summary": "Manics와 관련된 주요 음악 업계 소식이 전해졌다. Manics honour Richey Edwards as Suede look to the future at ...",
+        "url": "https://www.nme.com/news/music/manic-street-preachers-suede-o2-london-co-headline-show-setlist-photos-footage-3975347?utm_source=rss&utm_medium=rss&utm_campaign=manic-street-preachers-suede-o2-london-co-headline-show-setlist-photos-footage",
+        "published_date": "2026-11-07 10:55:13",
+        "category": "interview",
+        "source": "www.nme.com"
+      },
+      {
+        "title": "U2 on the Ed Sheeran Macklemore row: “No billionaire, no promoter, no owner has the right to censor anybody”",
+        "summary": "U2와 관련된 주요 음악 업계 소식이 전해졌다. U2 on the Ed Sheeran Macklemore row: “No billionaire, no pro...",
+        "url": "https://www.nme.com/news/music/u2-ed-sheeran-macklemore-no-billionaire-promoter-owner-has-right-censor-anybody-3975357?utm_source=rss&utm_medium=rss&utm_campaign=u2-ed-sheeran-macklemore-no-billionaire-promoter-owner-has-right-censor-anybody",
+        "published_date": "2026-11-07 10:30:46",
+        "category": "interview",
+        "source": "www.nme.com"
+      },
+      {
+        "title": "Nick Cave announces North American ‘Conversations’ tour for 2027",
+        "summary": "Nick가 새로운 투어 계획을 발표했다. 콘서트 일정이 곧 공개될 예정이다.",
+        "url": "https://www.nme.com/news/music/nick-cave-announces-north-american-conversations-tour-for-2027-3975349?utm_source=rss&utm_medium=rss&utm_campaign=nick-cave-announces-north-american-conversations-tour-for-2027",
+        "published_date": "2026-11-07 09:41:53",
+        "category": "interview",
+        "source": "www.nme.com"
+      },
+      {
+        "title": "Macklemore says nine US arenas rejected his ‘Free Palestine’ tour: “We will build our own stages”",
+        "summary": "Macklemore의 라이브 공연 관련 소식이 전해졌다. 콘서트 티켓과 일정 정보가 업데이트되었다.",
+        "url": "https://www.nme.com/news/music/macklemore-nine-us-arenas-rejected-free-palestine-tour-3975343?utm_source=rss&utm_medium=rss&utm_campaign=macklemore-nine-us-arenas-rejected-free-palestine-tour",
+        "published_date": "2026-11-07 08:38:00",
+        "category": "interview",
+        "source": "www.nme.com"
+      },
+      {
+        "title": "Benson Boone Brings Young Fan Battling Cancer Onstage at Brisbane Concert",
+        "summary": "Benson의 라이브 공연 관련 소식이 전해졌다. 콘서트 티켓과 일정 정보가 업데이트되었다.",
+        "url": "https://www.billboard.com/music/music-news/benson-boone-kenzie-riddle-beautiful-things-brisbane-1236376893/",
+        "published_date": "2026-11-07 06:13:57",
+        "category": "interview",
+        "source": "www.billboard.com"
+      },
+      {
+        "title": "Céline Dion Plays Air Bass at Metallica’s Sphere Show",
+        "summary": "Céline와 관련된 주요 음악 업계 소식이 전해졌다. Céline Dion Plays Air Bass at Metallica’s Sphere Show",
+        "url": "https://www.billboard.com/music/music-news/celine-dion-metallica-sphere-air-bass-video-1236376892/",
+        "published_date": "2026-11-07 06:01:25",
+        "category": "interview",
+        "source": "www.billboard.com"
+      },
+      {
+        "title": "Robert Pattinson Emerges As Candidate to Play James Bond",
+        "summary": "Robert와 관련된 주요 음악 업계 소식이 전해졌다. Robert Pattinson Emerges As Candidate to Play James Bond",
+        "url": "https://consequence.net/2026/11/robert-pattinson-emerges-as-candidate-to-play-james-bond/",
+        "published_date": "2026-11-07 03:08:42",
+        "category": "interview",
+        "source": "consequenceofsound.net"
+      },
+      {
+        "title": "Young Miko Kisses Her “Late Checkout Tour” Goodbye with a Star-Studded Brooklyn Finale: Review + Tracklist",
+        "summary": "Young의 라이브 공연 관련 소식이 전해졌다. 콘서트 티켓과 일정 정보가 업데이트되었다.",
+        "url": "https://consequence.net/2026/11/young-miko-late-checkout-tour-finale-review/",
+        "published_date": "2026-11-07 02:06:35",
+        "category": "interview",
+        "source": "consequenceofsound.net"
+      },
+      {
+        "title": "Guppy – “Looking Right At It”",
+        "summary": "Guppy와 관련된 주요 음악 업계 소식이 전해졌다. Guppy – “Looking Right At It”",
+        "url": "https://stereogum.com/2516903/guppy-looking-right-at-it/music/",
+        "published_date": "2026-11-06 22:18:54",
+        "category": "interview",
+        "source": "www.stereogum.com"
+      },
+      {
+        "title": "Carriers – “Look At Miss Ohio” (Gillian Welch & David Rawlings Cover)",
+        "summary": "Carriers와 관련된 주요 음악 업계 소식이 전해졌다. Carriers – “Look At Miss Ohio” (Gillian Welch & David Rawlin...",
+        "url": "https://stereogum.com/2516786/carriers-look-at-miss-ohio-gillian-welch-david-rawlings-cover-amy-acton/music/",
+        "published_date": "2026-11-06 21:59:09",
+        "category": "interview",
+        "source": "www.stereogum.com"
+      },
+      {
+        "title": "Hear Fiona Apple and the Bolt Cutters Cover Mother Earth’s ‘Revolution’",
+        "summary": "Hear와 관련된 주요 음악 업계 소식이 전해졌다. Hear Fiona Apple and the Bolt Cutters Cover Mother Earth’s ‘...",
+        "url": "https://www.rollingstone.com/music/music-news/fiona-apple-the-bolt-cutters-cover-mother-earth-revolution-1235654198/",
+        "published_date": "2026-11-06 21:45:07",
+        "category": "interview",
+        "source": "www.rollingstone.com"
+      },
+      {
+        "title": "Fiona Apple Releases New Cover of Mother Earth’s “Revolution”: Steam",
+        "summary": "Fiona가 새로운 음악을 공개했다. 팬들과 비평가들의 긍정적 반응을 얻고 있다.",
+        "url": "https://consequence.net/2026/11/fiona-apple-new-cover-mother-earth-revolution/",
+        "published_date": "2026-11-06 21:35:12",
+        "category": "interview",
+        "source": "consequenceofsound.net"
+      },
+      {
+        "title": "Dusted – “Black Tattoo”",
+        "summary": "Dusted와 관련된 주요 음악 업계 소식이 전해졌다. Dusted – “Black Tattoo”",
+        "url": "https://stereogum.com/2516785/dusted-black-tattoo-brian-borcherdt-holy-fuck/music/",
+        "published_date": "2026-11-06 21:17:35",
+        "category": "interview",
+        "source": "www.stereogum.com"
+      },
+      {
+        "title": "MJ Lenderman Shares New Neil Young Cover, Harry Crews Book Foreword",
+        "summary": "MJ와 관련된 주요 음악 업계 소식이 전해졌다. MJ Lenderman Shares New Neil Young Cover, Harry Crews Book F...",
+        "url": "https://stereogum.com/2516876/mj-lenderman-shares-new-neil-young-cover-harry-crews-book-foreword/music/",
+        "published_date": "2026-11-06 20:42:36",
+        "category": "interview",
+        "source": "www.stereogum.com"
+      },
+      {
+        "title": "The 5 Best Songs Of The Week",
+        "summary": "The와 관련된 주요 음악 업계 소식이 전해졌다. The 5 Best Songs Of The Week",
+        "url": "https://stereogum.com/2516820/the-5-best-songs-of-the-week-651/lists/the-5-best-songs-of-the-week/",
+        "published_date": "2026-11-06 20:23:18",
+        "category": "interview",
+        "source": "www.stereogum.com"
+      },
+      {
+        "title": "In Photos: “The Art of Metallica” Exhibit Opens in San Francisco",
+        "summary": "In와 관련된 주요 음악 업계 소식이 전해졌다. In Photos: “The Art of Metallica” Exhibit Opens in San Franc...",
+        "url": "https://consequence.net/2026/11/the-art-of-metallica-exhibit-san-francisco-photos/",
+        "published_date": "2026-11-06 19:55:21",
+        "category": "interview",
+        "source": "consequenceofsound.net"
+      },
+      {
+        "title": "Nick Diamonds – “Got The Devil” (Feat. Fat Tony & Yoni Wolf) & “The River” (Feat. Giovanni Marks & Fat Tony)",
+        "summary": "Nick의 새로운 협업 프로젝트 소식이 공개되었다. 음악 팬들의 기대감이 높아지고 있다.",
+        "url": "https://stereogum.com/2516833/nick-diamonds-got-the-devil-the-river-fat-tony-yoni-wolf-giovanni-marks/music/",
+        "published_date": "2026-11-06 19:46:17",
+        "category": "interview",
+        "source": "www.stereogum.com"
+      },
+      {
+        "title": "Macklemore Says Nine U.S. Venues Turned Down ‘Free Palestine’ Tour: ‘They Got Me F-cked Up’",
+        "summary": "Macklemore의 라이브 공연 관련 소식이 전해졌다. 콘서트 티켓과 일정 정보가 업데이트되었다.",
+        "url": "https://www.rollingstone.com/music/music-news/macklemore-us-venues-free-palestine-tour-1235654083/",
+        "published_date": "2026-11-06 19:38:17",
+        "category": "interview",
+        "source": "www.rollingstone.com"
+      },
+      {
+        "title": "Alanis Morissette Releases First Holiday Album Good Weather for Immaculate Conception: Stream",
+        "summary": "Alanis Morissette가 새 앨범 발매 소식을 공개했다. 이번 릴리스는 팬들과 음악 업계의 큰 관심을 받고 있다.",
+        "url": "https://consequence.net/2026/11/alanis-morissette-releases-christmas-album/",
+        "published_date": "2026-11-06 19:37:16",
+        "category": "interview",
+        "source": "consequenceofsound.net"
+      },
+      {
+        "title": "Fiona Apple & The Bolt Cutters Cover Mother Earth’s “Revolution” For Doctors Without Borders Benefit Comp",
+        "summary": "Fiona와 관련된 주요 음악 업계 소식이 전해졌다. Fiona Apple & The Bolt Cutters Cover Mother Earth’s “Revolut...",
+        "url": "https://stereogum.com/2516832/fiona-apple-the-bolt-cutters-cover-mother-earths-revolution-for-doctors-without-borders-benefit-comp/music/",
+        "published_date": "2026-11-06 19:18:30",
+        "category": "interview",
+        "source": "www.stereogum.com"
+      },
+      {
+        "title": "Tegan and Sara Celebrate the Season With ‘I Love Christmas’ and ‘A December to Remember’",
+        "summary": "Tegan와 관련된 주요 음악 업계 소식이 전해졌다. Tegan and Sara Celebrate the Season With ‘I Love Christmas’ ...",
+        "url": "https://www.rollingstone.com/music/music-news/tegan-and-sara-i-love-christmas-december-to-remember-videos-1235654055/",
+        "published_date": "2026-11-06 19:18:29",
+        "category": "interview",
+        "source": "www.rollingstone.com"
+      },
+      {
+        "title": "Bad History Month Shares Fundraising EP After Accidentally Getting Shot In His Calf",
+        "summary": "Bad와 관련된 주요 음악 업계 소식이 전해졌다. Bad History Month Shares Fundraising EP After Accidentally G...",
+        "url": "https://stereogum.com/2516817/bad-history-month-shares-fundraising-ep-after-getting-shot-in-his-calf/music/",
+        "published_date": "2026-11-06 19:02:54",
+        "category": "interview",
+        "source": "www.stereogum.com"
+      },
+      {
+        "title": "Nick Cave Launches 2027 Tour",
+        "summary": "Nick의 라이브 공연 관련 소식이 전해졌다. 콘서트 티켓과 일정 정보가 업데이트되었다.",
+        "url": "https://pitchfork.com/story/nick-cave-launches-2027-tour/",
+        "published_date": "2026-11-06 19:02:49",
+        "category": "interview",
+        "source": "pitchfork.com"
+      },
+      {
+        "title": "Becky And The Birds – “Way Back To You”",
+        "summary": "Becky와 관련된 주요 음악 업계 소식이 전해졌다. Becky And The Birds – “Way Back To You”",
+        "url": "https://stereogum.com/2516783/becky-and-the-birds-way-back-to-you/music/",
+        "published_date": "2026-11-06 18:48:14",
+        "category": "interview",
+        "source": "www.stereogum.com"
+      },
+      {
+        "title": "Nick Cave Announces “Conversations With Nick Cave” Tour",
+        "summary": "Nick Cave가 새로운 투어 일정을 발표했다. 콘서트 관련 상세 정보는 공식 채널을 통해 확인할 수 있다.",
+        "url": "https://consequence.net/2026/11/nick-cave-conversations-tour/",
+        "published_date": "2026-11-06 18:32:58",
+        "category": "interview",
+        "source": "consequenceofsound.net"
+      },
+      {
+        "title": "Bruiser Wolf & Conductor Williams Announce New Album The Dealer Wins: Hear “The Score” (Feat. Marv Won)",
+        "summary": "Bruiser의 새로운 협업 프로젝트 소식이 공개되었다. 음악 팬들의 기대감이 높아지고 있다.",
+        "url": "https://stereogum.com/2516807/bruiser-wolf-conductor-williams-announce-new-album-the-dealer-wins-hear-the-score-feat-marv-won/music/",
+        "published_date": "2026-11-06 18:31:20",
+        "category": "interview",
+        "source": "www.stereogum.com"
+      },
+      {
+        "title": "Nick Cave Will Now Be Answering Your Questions in Person",
+        "summary": "Nick와 관련된 주요 음악 업계 소식이 전해졌다. Nick Cave Will Now Be Answering Your Questions in Person",
+        "url": "https://www.rollingstone.com/music/music-news/nick-cave-conversations-audience-questions-tour-dates-1235653362/",
+        "published_date": "2026-11-06 18:23:01",
+        "category": "interview",
+        "source": "www.rollingstone.com"
+      },
+      {
+        "title": "Tegan And Sara – “I Love Christmas” & “A December To Remember”",
+        "summary": "Tegan와 관련된 주요 음악 업계 소식이 전해졌다. Tegan And Sara – “I Love Christmas” & “A December To Remembe...",
+        "url": "https://stereogum.com/2516784/tegan-and-sara-i-love-christmas-a-december-to-remember-holiday-songs/music/",
+        "published_date": "2026-11-06 18:20:42",
+        "category": "interview",
+        "source": "www.stereogum.com"
+      },
+      {
+        "title": "Macklemore Accuses U.S. Arenas of Turning Down Free Palestine Tour",
+        "summary": "Macklemore의 라이브 공연 관련 소식이 전해졌다. 콘서트 티켓과 일정 정보가 업데이트되었다.",
+        "url": "https://pitchfork.com/story/macklemore-accuses-arenas-of-turning-down-free-palestine-tour/",
+        "published_date": "2026-11-06 18:17:37",
+        "category": "interview",
+        "source": "pitchfork.com"
+      },
+      {
+        "title": "Stream On This Week: Alan Ritchson Doesn’t Need Words to Get Vengeance",
+        "summary": "Stream와 관련된 주요 음악 업계 소식이 전해졌다. Stream On This Week: Alan Ritchson Doesn’t Need Words to Get...",
+        "url": "https://consequence.net/2026/11/stream-on-motor-city-reggie-dinkins/",
+        "published_date": "2026-11-06 18:00:57",
+        "category": "interview",
+        "source": "consequenceofsound.net"
+      },
+      {
+        "title": "Macklemore Says Major Arenas Refusing to Host His “Free Palestine” Tour in US",
+        "summary": "Macklemore의 라이브 공연 관련 소식이 전해졌다. 콘서트 티켓과 일정 정보가 업데이트되었다.",
+        "url": "https://consequence.net/2026/11/macklemore-free-palestine-tour-us-venues-blocking/",
+        "published_date": "2026-11-06 17:58:49",
+        "category": "interview",
+        "source": "consequenceofsound.net"
+      },
+      {
+        "title": "Heavy Song of the Week: Whitechapel Display Deathcore Mastery on “Bedlam”",
+        "summary": "Heavy와 관련된 주요 음악 업계 소식이 전해졌다. Heavy Song of the Week: Whitechapel Display Deathcore Master...",
+        "url": "https://consequence.net/2026/11/heavy-song-of-the-week-whitechapel-bedlam/",
+        "published_date": "2026-11-06 17:55:34",
+        "category": "interview",
+        "source": "consequenceofsound.net"
+      }
+    ],
+    "insight": []
+  },
+  "summary": {
+    "total_count": 50,
+    "by_category": {
+      "interview": 50
+    },
+    "by_source": {
+      "consequenceofsound.net": 14,
+      "www.stereogum.com": 14,
+      "www.billboard.com": 9,
+      "www.rollingstone.com": 6,
+      "www.nme.com": 4,
+      "pitchfork.com": 3
+    },
+    "members_only_count": 0
+  }
+}
