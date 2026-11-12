@@ -1,0 +1,431 @@
+{
+  "metadata": {
+    "generated_at": "2026-11-12T07:55:45.449341",
+    "total_news": 50,
+    "last_updated": "2026-11-12T07:55:45.449349",
+    "version": "2.0",
+    "compatible_with": "NewsSection.tsx"
+  },
+  "news": {
+    "all_articles": [],
+    "news": [],
+    "interview": [
+      {
+        "title": "Anyma Will Return to the Great Pyramids of Giza In 2027",
+        "summary": "Anyma와 관련된 주요 음악 업계 소식이 전해졌다. Anyma Will Return to the Great Pyramids of Giza In 2027",
+        "url": "https://www.billboard.com/music/concerts/anyma-return-great-pyramids-of-giza-2027-1236379880/",
+        "published_date": "2026-11-12 04:39:15",
+        "category": "interview",
+        "source": "www.billboard.com"
+      },
+      {
+        "title": "Orville Peck Turns Brooklyn Paramount into a Honkey Tonk on “Man Turned Mule Tour”: Photos + Setlist",
+        "summary": "Orville의 라이브 공연 관련 소식이 전해졌다. 콘서트 티켓과 일정 정보가 업데이트되었다.",
+        "url": "https://consequence.net/2026/11/orville-peck-brooklyn-paramount-photos-setlist/",
+        "published_date": "2026-11-12 01:23:21",
+        "category": "interview",
+        "source": "consequenceofsound.net"
+      },
+      {
+        "title": "Ebro & Peter Rosenberg Aren’t Buying Ye’s ‘Comeback’ Narrative After Antisemitism: ‘It’s All Marketing’",
+        "summary": "Ebro와 관련된 주요 음악 업계 소식이 전해졌다. Ebro & Peter Rosenberg Aren’t Buying Ye’s ‘Comeback’ Narrati...",
+        "url": "https://www.billboard.com/music/rb-hip-hop/ebro-peter-rosenberg-kanye-west-touring-success-debate-1236379601/",
+        "published_date": "2026-11-12 00:56:03",
+        "category": "interview",
+        "source": "www.billboard.com"
+      },
+      {
+        "title": "Young Thug and Birdman Dismissed From Lawsuit Over 2015 Lil Wayne Tour Bus Shooting",
+        "summary": "Young의 라이브 공연 관련 소식이 전해졌다. 콘서트 티켓과 일정 정보가 업데이트되었다.",
+        "url": "https://www.billboard.com/pro/young-thug-birdman-dismissed-lil-wayne-bus-shooting-lawsuit/",
+        "published_date": "2026-11-12 00:50:29",
+        "category": "interview",
+        "source": "www.billboard.com"
+      },
+      {
+        "title": "Ariana Grande & Ricky Alvarez Make Red-Carpet Debut at ‘Focker-in-Law’ NYC Premiere: See Photos",
+        "summary": "Ariana와 관련된 주요 음악 업계 소식이 전해졌다. Ariana Grande & Ricky Alvarez Make Red-Carpet Debut at ‘Fock...",
+        "url": "https://www.billboard.com/culture/tv-film/ariana-grande-ricky-alvarez-red-carpet-photos-focker-in-law-1236379763/",
+        "published_date": "2026-11-12 00:36:52",
+        "category": "interview",
+        "source": "www.billboard.com"
+      },
+      {
+        "title": "Yella Beezy Found Guilty in 2020 Murder of Rapper MO3 on a Dallas Highway",
+        "summary": "Yella와 관련된 주요 음악 업계 소식이 전해졌다. Yella Beezy Found Guilty in 2020 Murder of Rapper MO3 on a D...",
+        "url": "https://www.billboard.com/music/rb-hip-hop/yella-beezy-guilty-murder-mo3-dallas-highway-1236379779/",
+        "published_date": "2026-11-12 00:09:04",
+        "category": "interview",
+        "source": "www.billboard.com"
+      },
+      {
+        "title": "Elvis Presley Enterprises is putting Tennessee’s ELVIS Act to the test in its voice-imitation lawsuit against Suno",
+        "summary": "Elvis와 관련된 주요 음악 업계 소식이 전해졌다. Elvis Presley Enterprises is putting Tennessee’s ELVIS Act t...",
+        "url": "https://www.musicbusinessworldwide.com/elvis-presley-enterprises-is-putting-tennessees-elvis-act-to-the-test-in-its-voice-imitation-lawsuit-against-suno/",
+        "published_date": "2026-11-11 23:53:10",
+        "category": "interview",
+        "source": "www.musicbusinessworldwide.com"
+      },
+      {
+        "title": "Summer Walker Countersued by LVRN for Commissions and Royalties: ‘Stubbornly Litigious’",
+        "summary": "Summer와 관련된 주요 음악 업계 소식이 전해졌다. Summer Walker Countersued by LVRN for Commissions and Royalt...",
+        "url": "https://www.billboard.com/pro/summer-walker-lawsuit-countersued-lvrn-commissions/",
+        "published_date": "2026-11-11 23:40:25",
+        "category": "interview",
+        "source": "www.billboard.com"
+      },
+      {
+        "title": "ILLIT Achieves First No. 1 on Billboard’s Top Album Sales Chart With ‘BREAK EVEN’",
+        "summary": "ILLIT Achieves가 새 앨범 발매 소식을 공개했다. 이번 릴리스는 팬들과 음악 업계의 큰 관심을 받고 있다.",
+        "url": "https://www.billboard.com/music/chart-beat/illit-first-number-one-top-album-sales-break-even-1236379188/",
+        "published_date": "2026-11-11 23:29:14",
+        "category": "interview",
+        "source": "www.billboard.com"
+      },
+      {
+        "title": "Gwen Stefani & Gavin Rossdale Reunite to Support Son Kingston at His L.A. Concert Alongside Blake Shelton",
+        "summary": "Gwen의 라이브 공연 관련 소식이 전해졌다. 콘서트 티켓과 일정 정보가 업데이트되었다.",
+        "url": "https://www.billboard.com/music/music-news/gwen-stefani-gavin-rossdale-son-concert-blake-shelton-1236379775/",
+        "published_date": "2026-11-11 23:23:25",
+        "category": "interview",
+        "source": "www.billboard.com"
+      },
+      {
+        "title": "Garth Brooks Buys Frequency of Nashville’s Adored Indie Station Lightning 100",
+        "summary": "Garth와 관련된 주요 음악 업계 소식이 전해졌다. Garth Brooks Buys Frequency of Nashville’s Adored Indie Stat...",
+        "url": "https://consequence.net/2026/11/garth-brooks-lightning-100-nashville-radio/",
+        "published_date": "2026-11-11 23:20:25",
+        "category": "interview",
+        "source": "consequenceofsound.net"
+      },
+      {
+        "title": "Snoop Dogg Bringing ‘A Not-So-Silent Night’ Into Holiday Homes Thanks to ‘Christmas With Snoop’ Special",
+        "summary": "Snoop와 관련된 주요 음악 업계 소식이 전해졌다. Snoop Dogg Bringing ‘A Not-So-Silent Night’ Into Holiday Hom...",
+        "url": "https://www.billboard.com/culture/tv-film/snoop-dogg-nbc-christmas-special-christmas-with-snoop-1236379742/",
+        "published_date": "2026-11-11 23:17:16",
+        "category": "interview",
+        "source": "www.billboard.com"
+      },
+      {
+        "title": "Hinterland Music Festival Reveals 2027 Lineup Led by Phoebe Bridgers, Slayyter, and Billy Strings",
+        "summary": "Hinterland가 중요한 음악 관련 발표를 했다. 이번 소식은 팬들의 주목을 받고 있다.",
+        "url": "https://consequence.net/2026/11/hinterland-2027-lineup-phoebe-bridgers-slayyter-billy-strings/",
+        "published_date": "2026-11-11 23:10:18",
+        "category": "interview",
+        "source": "consequenceofsound.net"
+      },
+      {
+        "title": "Slayyyter, Phoebe Bridgers, Billy Strings to Headline Iowa’s 2027 Hinterland Festival",
+        "summary": "Slayyyter,와 관련된 주요 음악 업계 소식이 전해졌다. Slayyyter, Phoebe Bridgers, Billy Strings to Headline Iowa’s...",
+        "url": "https://www.billboard.com/music/concerts/2027-hinterland-fest-slayyyter-phoebe-bridgers-billy-strings-lineup-1236379427/",
+        "published_date": "2026-11-11 22:56:43",
+        "category": "interview",
+        "source": "www.billboard.com"
+      },
+      {
+        "title": "Frankie Muniz Hospitalized After Crash at Daytona International Speedway",
+        "summary": "Frankie와 관련된 주요 음악 업계 소식이 전해졌다. Frankie Muniz Hospitalized After Crash at Daytona Internatio...",
+        "url": "https://consequence.net/2026/11/frankie-muniz-hospitalized-nascar-crash/",
+        "published_date": "2026-11-11 22:35:39",
+        "category": "interview",
+        "source": "consequenceofsound.net"
+      },
+      {
+        "title": "Index – “Heartbeat Glitch”",
+        "summary": "Index와 관련된 주요 음악 업계 소식이 전해졌다. Index – “Heartbeat Glitch”",
+        "url": "https://stereogum.com/2517667/index-heartbeat-glitch/music/",
+        "published_date": "2026-11-11 22:30:48",
+        "category": "interview",
+        "source": "www.stereogum.com"
+      },
+      {
+        "title": "Summer Walker’s Label LVRN Fires Back With Breach of Contract Counterclaim",
+        "summary": "Summer와 관련된 주요 음악 업계 소식이 전해졌다. Summer Walker’s Label LVRN Fires Back With Breach of Contrac...",
+        "url": "https://www.rollingstone.com/music/music-news/summer-walker-label-lvrn-breach-of-contract-interscope-1235656161/",
+        "published_date": "2026-11-11 22:23:21",
+        "category": "interview",
+        "source": "www.rollingstone.com"
+      },
+      {
+        "title": "19 Thoughts On The Coachella 2027 Poster",
+        "summary": "19와 관련된 주요 음악 업계 소식이 전해졌다. 19 Thoughts On The Coachella 2027 Poster",
+        "url": "https://stereogum.com/2517607/19-thoughts-on-the-coachella-2027-poster/columns/sounding-board/",
+        "published_date": "2026-11-11 21:59:36",
+        "category": "interview",
+        "source": "www.stereogum.com"
+      },
+      {
+        "title": "RUSH Beef Up 2027 Las Vegas Sphere Residency with Five Additional Dates",
+        "summary": "RUSH와 관련된 주요 음악 업계 소식이 전해졌다. RUSH Beef Up 2027 Las Vegas Sphere Residency with Five Addit...",
+        "url": "https://consequence.net/2026/11/rush-las-vegas-sphere-residency-five-additional-dates/",
+        "published_date": "2026-11-11 21:43:45",
+        "category": "interview",
+        "source": "consequenceofsound.net"
+      },
+      {
+        "title": "KATSEYE’s Megan Performs Seated And Wearing Sunglasses After Concussion",
+        "summary": "KATSEYE’s와 관련된 주요 음악 업계 소식이 전해졌다. KATSEYE’s Megan Performs Seated And Wearing Sunglasses After...",
+        "url": "https://stereogum.com/2517694/katseyes-megan-performs-seated-and-wearing-sunglasses-after-concussion/news/",
+        "published_date": "2026-11-11 21:35:55",
+        "category": "interview",
+        "source": "www.stereogum.com"
+      },
+      {
+        "title": "Sony Revives Walkman Headphones for Modern Devices",
+        "summary": "Sony와 관련된 주요 음악 업계 소식이 전해졌다. Sony Revives Walkman Headphones for Modern Devices",
+        "url": "https://consequence.net/2026/11/sony-mdr-3r-walkman-headphones-usb-c/",
+        "published_date": "2026-11-11 21:13:34",
+        "category": "interview",
+        "source": "consequenceofsound.net"
+      },
+      {
+        "title": "sombr Begs Fan to Stop Flipping Him Off at His Shows",
+        "summary": "sombr가 음악 차트에서 주목할 만한 성과를 기록했다. 상업적 성공을 입증하는 결과다.",
+        "url": "https://consequence.net/2026/11/sombr-fan-flipping-him-off-concert/",
+        "published_date": "2026-11-11 21:03:31",
+        "category": "interview",
+        "source": "consequenceofsound.net"
+      },
+      {
+        "title": "Star’s Revenge – “Sea Shanty”",
+        "summary": "Star’s와 관련된 주요 음악 업계 소식이 전해졌다. Star’s Revenge – “Sea Shanty”",
+        "url": "https://stereogum.com/2517668/stars-revenge-sea-shanty-geese-sunflower-bean/music/",
+        "published_date": "2026-11-11 20:45:13",
+        "category": "interview",
+        "source": "www.stereogum.com"
+      },
+      {
+        "title": "Taylor Swift and Travis Kelce’s Landscaping Plans Approved Despite Concern for Animals’ Sex Lives",
+        "summary": "Taylor의 라이브 공연 관련 소식이 전해졌다. 콘서트 티켓과 일정 정보가 업데이트되었다.",
+        "url": "https://consequence.net/2026/11/taylor-swift-and-travis-kelces-landscaping-plans-approved-despite-concern-for-animals-sex-lives/",
+        "published_date": "2026-11-11 20:41:42",
+        "category": "interview",
+        "source": "consequenceofsound.net"
+      },
+      {
+        "title": "Parent Teacher Announces New EP Celestial Mom: Hear “Eight Cents”",
+        "summary": "Parent가 중요한 음악 관련 발표를 했다. 이번 소식은 팬들의 주목을 받고 있다.",
+        "url": "https://stereogum.com/2517665/parent-teacher-announces-new-ep-celestial-mom-hear-eight-cents/music/",
+        "published_date": "2026-11-11 20:25:20",
+        "category": "interview",
+        "source": "www.stereogum.com"
+      },
+      {
+        "title": "Middle Kids – “Big Freak”",
+        "summary": "Middle와 관련된 주요 음악 업계 소식이 전해졌다. Middle Kids – “Big Freak”",
+        "url": "https://stereogum.com/2517666/middle-kids-big-freak/music/",
+        "published_date": "2026-11-11 20:24:18",
+        "category": "interview",
+        "source": "www.stereogum.com"
+      },
+      {
+        "title": "Jeanne River – “PP2” (Feat. Cameron Winter)",
+        "summary": "Jeanne의 새로운 협업 프로젝트 소식이 공개되었다. 음악 팬들의 기대감이 높아지고 있다.",
+        "url": "https://stereogum.com/2517663/jeanne-river-pp2-feat-cameron-winter/music/",
+        "published_date": "2026-11-11 20:21:32",
+        "category": "interview",
+        "source": "www.stereogum.com"
+      },
+      {
+        "title": "John Tempesta Breaks Down His Drum Part for Rob Zombie’s “Dragula”: Watch",
+        "summary": "John와 관련된 주요 음악 업계 소식이 전해졌다. John Tempesta Breaks Down His Drum Part for Rob Zombie’s “Dr...",
+        "url": "https://consequence.net/2026/11/john-tempesta-drumeo-drum-part-rob-zombie-dragula/",
+        "published_date": "2026-11-11 20:17:26",
+        "category": "interview",
+        "source": "consequenceofsound.net"
+      },
+      {
+        "title": "Merge Holiday Album to Feature Original New Pornographers, Tubs Songs",
+        "summary": "Merge의 새로운 협업 프로젝트 소식이 공개되었다. 음악 팬들의 기대감이 높아지고 있다.",
+        "url": "https://pitchfork.com/story/merge-holiday-album-to-feature-original-new-poronographers-tubs-songs/",
+        "published_date": "2026-11-11 19:49:12",
+        "category": "interview",
+        "source": "pitchfork.com"
+      },
+      {
+        "title": "DJ Seinfeld & Peter Xan – “Modern Dystopia”",
+        "summary": "DJ가 음악 차트에서 주목할 만한 성과를 기록했다. 상업적 성공을 입증하는 결과다.",
+        "url": "https://stereogum.com/2517660/dj-seinfeld-peter-xan-modern-dystopia/music/",
+        "published_date": "2026-11-11 19:41:23",
+        "category": "interview",
+        "source": "www.stereogum.com"
+      },
+      {
+        "title": "Usher and Chris Brown Cancel Additional Shows on R&B Tour",
+        "summary": "Usher의 라이브 공연 관련 소식이 전해졌다. 콘서트 티켓과 일정 정보가 업데이트되었다.",
+        "url": "https://www.rollingstone.com/music/music-news/usher-chris-brown-cancel-additional-shows-rb-tour-1235656008/",
+        "published_date": "2026-11-11 19:31:57",
+        "category": "interview",
+        "source": "www.rollingstone.com"
+      },
+      {
+        "title": "Coachella: 7 Takeaways From the 2027 Lineup",
+        "summary": "Coachella:와 관련된 주요 음악 업계 소식이 전해졌다. Coachella: 7 Takeaways From the 2027 Lineup",
+        "url": "https://consequence.net/2026/11/coachella-2027-lineup-one-day-later/",
+        "published_date": "2026-11-11 19:30:56",
+        "category": "interview",
+        "source": "consequenceofsound.net"
+      },
+      {
+        "title": "Christopher Stracey & Marika Hackman Share The Body Soundtrack Featuring A Kylie Minogue Cover",
+        "summary": "Christopher가 음악 차트에서 주목할 만한 성과를 기록했다. 상업적 성공을 입증하는 결과다.",
+        "url": "https://stereogum.com/2517656/christopher-stracey-marika-hackman-share-the-body-soundtrack-featuring-a-kylie-minogue-cover/music/",
+        "published_date": "2026-11-11 19:06:02",
+        "category": "interview",
+        "source": "www.stereogum.com"
+      },
+      {
+        "title": "Esther Rose – “Numb” (Feat. Angela Autumn)",
+        "summary": "Esther의 새로운 협업 프로젝트 소식이 공개되었다. 음악 팬들의 기대감이 높아지고 있다.",
+        "url": "https://stereogum.com/2517647/esther-rose-numb-feat-angela-autumn/music/",
+        "published_date": "2026-11-11 18:44:09",
+        "category": "interview",
+        "source": "www.stereogum.com"
+      },
+      {
+        "title": "Naima Bock – “Rocks”",
+        "summary": "Naima와 관련된 주요 음악 업계 소식이 전해졌다. Naima Bock – “Rocks”",
+        "url": "https://stereogum.com/2517637/naima-bock-rocks/music/",
+        "published_date": "2026-11-11 18:44:06",
+        "category": "interview",
+        "source": "www.stereogum.com"
+      },
+      {
+        "title": "Melissa Auf der Maur Books First Solo Shows in 15 Years, Announces Vinyl Release for ’90s Demos",
+        "summary": "Melissa가 중요한 음악 관련 발표를 했다. 이번 소식은 팬들의 주목을 받고 있다.",
+        "url": "https://consequence.net/2026/11/melissa-auf-der-maur-first-solo-shows-15-years/",
+        "published_date": "2026-11-11 18:42:56",
+        "category": "interview",
+        "source": "consequenceofsound.net"
+      },
+      {
+        "title": "‘Public markets are pricing the quarter, not the catalog.’",
+        "summary": "‘Public와 관련된 주요 음악 업계 소식이 전해졌다. ‘Public markets are pricing the quarter, not the catalog.’",
+        "url": "https://www.musicbusinessworldwide.com/public-markets-are-pricing-the-quarter-not-the-catalog/",
+        "published_date": "2026-11-11 18:27:38",
+        "category": "interview",
+        "source": "www.musicbusinessworldwide.com"
+      },
+      {
+        "title": "Stream 2hollis’ Genre-Bending New Album Pirouette, Featuring Writing And Production From Mk.gee",
+        "summary": "Stream의 새로운 협업 프로젝트 소식이 공개되었다. 음악 팬들의 기대감이 높아지고 있다.",
+        "url": "https://stereogum.com/2517631/stream-2hollis-genre-bending-new-album-pirouette-featuring-writing-and-production-from-mk-gee/music/",
+        "published_date": "2026-11-11 18:25:13",
+        "category": "interview",
+        "source": "www.stereogum.com"
+      },
+      {
+        "title": "Coachella 2027: How to Buy Tickets, Pricing, and What Else to Know",
+        "summary": "Coachella와 관련된 주요 음악 업계 소식이 전해졌다. Coachella 2027: How to Buy Tickets, Pricing, and What Else t...",
+        "url": "https://consequence.net/2026/11/coachella-2027-how-to-buy-tickets/",
+        "published_date": "2026-11-11 18:23:42",
+        "category": "interview",
+        "source": "consequenceofsound.net"
+      },
+      {
+        "title": "The Legend of Zelda: Ocarina of Time Sets New Switch 2 Sales Record",
+        "summary": "The와 관련된 주요 음악 업계 소식이 전해졌다. The Legend of Zelda: Ocarina of Time Sets New Switch 2 Sales...",
+        "url": "https://consequence.net/2026/11/legend-of-zelda-ocarina-of-time-switch-2-sales-record/",
+        "published_date": "2026-11-11 18:22:32",
+        "category": "interview",
+        "source": "consequenceofsound.net"
+      },
+      {
+        "title": "DistroKid launches music publishing service powered by Kobalt",
+        "summary": "DistroKid launches와 관련된 주요 음악 업계 소식이 전해졌다. DistroKid launches music publishing service powered by Kobal...",
+        "url": "https://www.musicbusinessworldwide.com/distrokid-launches-music-publishing-service-powered-by-kobalt/",
+        "published_date": "2026-11-11 18:03:10",
+        "category": "interview",
+        "source": "www.musicbusinessworldwide.com"
+      },
+      {
+        "title": "dexter in the newsagent – “Edge Of The World”",
+        "summary": "dexter와 관련된 주요 음악 업계 소식이 전해졌다. dexter in the newsagent – “Edge Of The World”",
+        "url": "https://stereogum.com/2517632/dexter-in-the-newsagent-edge-of-the-world/music/",
+        "published_date": "2026-11-11 18:00:35",
+        "category": "interview",
+        "source": "www.stereogum.com"
+      },
+      {
+        "title": "RZA invests in AYO Music Group, the music copyright administrator co-founded by Deborah Mannis-Gardner and Pär Almqvist",
+        "summary": "RZA와 관련된 주요 음악 업계 소식이 전해졌다. RZA invests in AYO Music Group, the music copyright administ...",
+        "url": "https://www.musicbusinessworldwide.com/rza-invests-in-ayo-music-group-the-music-copyright-administrator-co-founded-by-deborah-mannis-gardner-and-par-almqvist/",
+        "published_date": "2026-11-11 17:50:42",
+        "category": "interview",
+        "source": "www.musicbusinessworldwide.com"
+      },
+      {
+        "title": "Coachella 2027 Brings Argentine Cumbia Villera to the Desert for the First Time with Los Pibes Chorros",
+        "summary": "Coachella와 관련된 주요 음악 업계 소식이 전해졌다. Coachella 2027 Brings Argentine Cumbia Villera to the Desert...",
+        "url": "https://consequence.net/2026/11/coachella-2027-argentine-cumbia-villera-los-pibes-chorros/",
+        "published_date": "2026-11-11 17:49:08",
+        "category": "interview",
+        "source": "consequenceofsound.net"
+      },
+      {
+        "title": "Racing Mount Pleasant – “Great Destroyer”",
+        "summary": "Racing와 관련된 주요 음악 업계 소식이 전해졌다. Racing Mount Pleasant – “Great Destroyer”",
+        "url": "https://stereogum.com/2517628/racing-mount-pleasant-great-destroyer/music/",
+        "published_date": "2026-11-11 17:46:12",
+        "category": "interview",
+        "source": "www.stereogum.com"
+      },
+      {
+        "title": "Jeanne River Recruits Cameron Winter for Debut Single",
+        "summary": "Jeanne River가 새로운 싱글을 발표했다. 새 곡은 아티스트의 음악적 진화를 보여주는 작품으로 평가받고 있다.",
+        "url": "https://pitchfork.com/story/jeanne-river-recruits-cameron-winter-for-debut-single/",
+        "published_date": "2026-11-11 17:45:12",
+        "category": "interview",
+        "source": "pitchfork.com"
+      },
+      {
+        "title": "Gang of Youths Announce New Album Compañero, 2027 North American Tour",
+        "summary": "Gang of가 새 앨범 발매 소식을 공개했다. 이번 릴리스는 팬들과 음악 업계의 큰 관심을 받고 있다.",
+        "url": "https://consequence.net/2026/11/gang-of-youths-new-album-companero-2027-tour/",
+        "published_date": "2026-11-11 17:41:02",
+        "category": "interview",
+        "source": "consequenceofsound.net"
+      },
+      {
+        "title": "Runnner Announces New Album Love Songs From The Hottest Summer On Record: Hear “Want To Want To”",
+        "summary": "Runnner가 새 앨범 발매 소식을 공개했다. 이번 릴리스는 팬들과 음악 업계의 큰 관심을 받고 있다.",
+        "url": "https://stereogum.com/2517624/runnner-announces-new-album-love-songs-from-the-hottest-summer-on-record-hear-want-to-want-to/music/",
+        "published_date": "2026-11-11 17:35:42",
+        "category": "interview",
+        "source": "www.stereogum.com"
+      },
+      {
+        "title": "Beyoncé Recreates Sade’s Love Deluxe Album Cover",
+        "summary": "Beyoncé와 관련된 주요 음악 업계 소식이 전해졌다. Beyoncé Recreates Sade’s Love Deluxe Album Cover",
+        "url": "https://pitchfork.com/story/beyonce-recreates-sades-love-deluxe-album-cover/",
+        "published_date": "2026-11-11 17:21:17",
+        "category": "interview",
+        "source": "pitchfork.com"
+      },
+      {
+        "title": "Gang Of Youths Announce New Album Compañero: Hear “Benny’s Video”",
+        "summary": "Gang와 관련된 주요 음악 업계 소식이 전해졌다. Gang Of Youths Announce New Album Compañero: Hear “Benny’s V...",
+        "url": "https://stereogum.com/2517619/gang-of-youths-announce-new-album-companero-hear-bennys-video/music/",
+        "published_date": "2026-11-11 17:03:16",
+        "category": "interview",
+        "source": "www.stereogum.com"
+      }
+    ],
+    "insight": []
+  },
+  "summary": {
+    "total_count": 50,
+    "by_category": {
+      "interview": 50
+    },
+    "by_source": {
+      "www.stereogum.com": 16,
+      "consequenceofsound.net": 15,
+      "www.billboard.com": 10,
+      "www.musicbusinessworldwide.com": 4,
+      "pitchfork.com": 3,
+      "www.rollingstone.com": 2
+    },
+    "members_only_count": 0
+  }
+}
