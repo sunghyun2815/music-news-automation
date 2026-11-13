@@ -1,0 +1,431 @@
+{
+  "metadata": {
+    "generated_at": "2026-11-13T07:33:27.311618",
+    "total_news": 50,
+    "last_updated": "2026-11-13T07:33:27.311629",
+    "version": "2.0",
+    "compatible_with": "NewsSection.tsx"
+  },
+  "news": {
+    "all_articles": [],
+    "news": [],
+    "interview": [
+      {
+        "title": "5 Things You Didn’t See on TV at the 2026 Latin Grammys",
+        "summary": "5와 관련된 주요 음악 업계 소식이 전해졌다. 5 Things You Didn’t See on TV at the 2026 Latin Grammys",
+        "url": "https://www.billboard.com/lists/latin-grammys-2026-things-you-didnt-see-tv/",
+        "published_date": "2026-11-13 07:13:42",
+        "category": "interview",
+        "source": "www.billboard.com"
+      },
+      {
+        "title": "Dolly Parton Heals the Soul on Final Recording, ‘Torn,’ a Duet With Bono on U2’s New Album",
+        "summary": "Dolly Parton가 새 앨범 발매 소식을 공개했다. 이번 릴리스는 팬들과 음악 업계의 큰 관심을 받고 있다.",
+        "url": "https://www.rollingstone.com/music/music-news/dolly-parton-final-recording-u2-torn-song-1235657413/",
+        "published_date": "2026-11-13 07:00:29",
+        "category": "interview",
+        "source": "www.rollingstone.com"
+      },
+      {
+        "title": "‘The Hunger Games’ Soundtrack, ATEEZ, U2 Feat. Dolly Parton & More: New Music Friday Guide",
+        "summary": "‘The의 새로운 협업 프로젝트 소식이 공개되었다. 음악 팬들의 기대감이 높아지고 있다.",
+        "url": "https://www.billboard.com/music/music-news/ateez-u2-dolly-parton-new-music-friday-guide-1236379613/",
+        "published_date": "2026-11-13 06:14:37",
+        "category": "interview",
+        "source": "www.billboard.com"
+      },
+      {
+        "title": "Daddy Yankee Surprised by Janet Jackson Upon Receiving his POTY Award: ‘Your Music Has Inspired an Entire Generation’",
+        "summary": "Daddy와 관련된 주요 음악 업계 소식이 전해졌다. Daddy Yankee Surprised by Janet Jackson Upon Receiving his P...",
+        "url": "https://www.billboard.com/music/awards/daddy-yankee-janet-jackson-latin-grammys-2026-poty-1236381424/",
+        "published_date": "2026-11-13 06:11:09",
+        "category": "interview",
+        "source": "www.billboard.com"
+      },
+      {
+        "title": "All the 2026 Latin Grammys Performances, Ranked",
+        "summary": "All와 관련된 주요 음악 업계 소식이 전해졌다. All the 2026 Latin Grammys Performances, Ranked",
+        "url": "https://www.billboard.com/lists/all-2026-latin-grammys-performances-ranked/",
+        "published_date": "2026-11-13 06:08:16",
+        "category": "interview",
+        "source": "www.billboard.com"
+      },
+      {
+        "title": "‘The Consummate Gentleman of Rock ‘n’ Roll’: Nile Rodgers Pays Tribute to Duran Duran’s Retiring Drummer Roger Taylor",
+        "summary": "‘The와 관련된 주요 음악 업계 소식이 전해졌다. ‘The Consummate Gentleman of Rock ‘n’ Roll’: Nile Rodgers Pa...",
+        "url": "https://www.billboard.com/music/rock/nile-rodgers-tribute-duran-duran-retiring-roger-taylor-1236381417/",
+        "published_date": "2026-11-13 05:58:25",
+        "category": "interview",
+        "source": "www.billboard.com"
+      },
+      {
+        "title": "Hear U2’s Posthumous Dolly Parton Duet",
+        "summary": "Hear와 관련된 주요 음악 업계 소식이 전해졌다. Hear U2’s Posthumous Dolly Parton Duet",
+        "url": "https://pitchfork.com/story/hear-u2s-posthumous-dolly-parton-duet/",
+        "published_date": "2026-11-13 05:01:36",
+        "category": "interview",
+        "source": "pitchfork.com"
+      },
+      {
+        "title": "Dolly Parton Sings ‘Her Heart Out’ on Posthumous U2 Collaboration ‘Torn’: Stream It Now",
+        "summary": "Dolly의 새로운 협업 프로젝트 소식이 공개되었다. 음악 팬들의 기대감이 높아지고 있다.",
+        "url": "https://www.billboard.com/music/music-news/dolly-parton-posthumous-u2-collaboration-torn-stream-it-now-1236381318/",
+        "published_date": "2026-11-13 05:00:54",
+        "category": "interview",
+        "source": "www.billboard.com"
+      },
+      {
+        "title": "Shane MacGowan Tribute Album Featuring Springsteen, U2, Tom Waits & More Released",
+        "summary": "Shane의 새로운 협업 프로젝트 소식이 공개되었다. 음악 팬들의 기대감이 높아지고 있다.",
+        "url": "https://consequence.net/2026/11/twentieth-century-paddy-shane-macgowan-tribute-released/",
+        "published_date": "2026-11-13 05:00:45",
+        "category": "interview",
+        "source": "consequenceofsound.net"
+      },
+      {
+        "title": "Rosalía and Milo J Sweep the 2026 Latin Grammys: Full List of Winners",
+        "summary": "Rosalía와 관련된 주요 음악 업계 소식이 전해졌다. Rosalía and Milo J Sweep the 2026 Latin Grammys: Full List o...",
+        "url": "https://www.billboard.com/lists/latin-grammys-2026-list-of-winners/",
+        "published_date": "2026-11-13 04:59:00",
+        "category": "interview",
+        "source": "www.billboard.com"
+      },
+      {
+        "title": "Sienna Spiro Cancels Appearance at 2026 ARIA Awards: ‘I Have to Listen to My Body’",
+        "summary": "Sienna와 관련된 주요 음악 업계 소식이 전해졌다. Sienna Spiro Cancels Appearance at 2026 ARIA Awards: ‘I Have...",
+        "url": "https://www.billboard.com/music/awards/sienna-spiro-cancels-2026-aria-awards-1236381349/",
+        "published_date": "2026-11-13 04:22:38",
+        "category": "interview",
+        "source": "www.billboard.com"
+      },
+      {
+        "title": "Aria Vega Wins Best New Artist at the 2026 Latin Grammys: ‘Dreams Know No Fear’",
+        "summary": "Aria와 관련된 주요 음악 업계 소식이 전해졌다. Aria Vega Wins Best New Artist at the 2026 Latin Grammys: ‘D...",
+        "url": "https://www.billboard.com/music/latin/aria-vega-best-new-artist-2026-latin-grammys-speech-1236381295/",
+        "published_date": "2026-11-13 03:22:18",
+        "category": "interview",
+        "source": "www.billboard.com"
+      },
+      {
+        "title": "On Winning First Latin Grammy, Camila Fernández Thanks Expectant Baby for ‘Strength to be Here’",
+        "summary": "On Winning와 관련된 주요 음악 업계 소식이 전해졌다. On Winning First Latin Grammy, Camila Fernández Thanks Expec...",
+        "url": "https://www.billboard.com/music/latin/camila-fernandez-latin-grammys-tears-baby-1236381244/",
+        "published_date": "2026-11-13 02:41:48",
+        "category": "interview",
+        "source": "www.billboard.com"
+      },
+      {
+        "title": "Watch Rosalía Perform a Lux Medley at the 2026 Latin Grammys",
+        "summary": "Watch와 관련된 주요 음악 업계 소식이 전해졌다. Watch Rosalía Perform a Lux Medley at the 2026 Latin Grammys",
+        "url": "https://pitchfork.com/story/watch-rosalia-perform-a-lux-medley-at-the-2026-latin-grammys/",
+        "published_date": "2026-11-13 02:33:11",
+        "category": "interview",
+        "source": "pitchfork.com"
+      },
+      {
+        "title": "Sting Is Officially a Latin Grammy Winner",
+        "summary": "Sting와 관련된 주요 음악 업계 소식이 전해졌다. Sting Is Officially a Latin Grammy Winner",
+        "url": "https://www.rollingstone.com/music/music-news/sting-first-latin-grammy-win-1235657253/",
+        "published_date": "2026-11-13 01:45:50",
+        "category": "interview",
+        "source": "www.rollingstone.com"
+      },
+      {
+        "title": "Sister of Godzilla vs. Kong Star Kaylee Hottle Will Take Over Late Actress’ Role in New Film",
+        "summary": "Sister와 관련된 주요 음악 업계 소식이 전해졌다. Sister of Godzilla vs. Kong Star Kaylee Hottle Will Take Ove...",
+        "url": "https://consequence.net/2026/11/kaylee-hottle-sister-steps-into-role/",
+        "published_date": "2026-11-13 01:44:46",
+        "category": "interview",
+        "source": "consequenceofsound.net"
+      },
+      {
+        "title": "Pink Floyd’s Roger Waters Files for Divorce From Fourth Wife Kamilah Chavis After 5 Years of Marriage",
+        "summary": "Pink와 관련된 주요 음악 업계 소식이 전해졌다. Pink Floyd’s Roger Waters Files for Divorce From Fourth Wife...",
+        "url": "https://www.rollingstone.com/music/music-news/pink-floyd-roger-waters-files-for-divorce-kamilah-chavis-1235657256/",
+        "published_date": "2026-11-13 01:38:13",
+        "category": "interview",
+        "source": "www.rollingstone.com"
+      },
+      {
+        "title": "Kanye West Sued by Musician Who Says He Was Locked in Wyoming High School to Write Opera",
+        "summary": "Kanye West와 관련된 주요 음악 업계 소식이 전해졌다. Kanye West Sued by Musician Who Says He Was Locked in Wyomin...",
+        "url": "https://www.rollingstone.com/music/music-news/kanye-west-sued-opera-singer-wyoming-high-school-1235657183/",
+        "published_date": "2026-11-13 01:05:29",
+        "category": "interview",
+        "source": "www.rollingstone.com"
+      },
+      {
+        "title": "Pivot Gang Announce 2027 “All My Friends Tour”",
+        "summary": "Pivot의 라이브 공연 관련 소식이 전해졌다. 콘서트 티켓과 일정 정보가 업데이트되었다.",
+        "url": "https://consequence.net/2026/11/pivot-gang-announce-all-my-friends-tour/",
+        "published_date": "2026-11-13 00:57:20",
+        "category": "interview",
+        "source": "consequenceofsound.net"
+      },
+      {
+        "title": "Latin Grammy Winner Paloma Morphy Shares “LA APUESTA,” New Single from Upcoming Sophomore Album: Watch",
+        "summary": "Latin Grammy가 새 앨범 발매 소식을 공개했다. 이번 릴리스는 팬들과 음악 업계의 큰 관심을 받고 있다.",
+        "url": "https://consequence.net/2026/11/paloma-morphy-single-la-apuesta/",
+        "published_date": "2026-11-13 00:00:10",
+        "category": "interview",
+        "source": "consequenceofsound.net"
+      },
+      {
+        "title": "Saba and Pivot Gang Set 2027 North American Tour",
+        "summary": "Saba의 라이브 공연 관련 소식이 전해졌다. 콘서트 티켓과 일정 정보가 업데이트되었다.",
+        "url": "https://pitchfork.com/story/saba-and-pivot-gang-set-2027-north-american-tour/",
+        "published_date": "2026-11-12 23:15:44",
+        "category": "interview",
+        "source": "pitchfork.com"
+      },
+      {
+        "title": "Ralphie Choo Returns With New Album and Song",
+        "summary": "Ralphie Choo가 새 앨범 발매 소식을 공개했다. 이번 릴리스는 팬들과 음악 업계의 큰 관심을 받고 있다.",
+        "url": "https://pitchfork.com/story/ralphie-choo-returns-with-new-album-and-song/",
+        "published_date": "2026-11-12 23:03:19",
+        "category": "interview",
+        "source": "pitchfork.com"
+      },
+      {
+        "title": "LEGO Announces First Star Wars 50th Anniversary Sets: A New Hope Poster, Darth Vader Wall Art, and More",
+        "summary": "LEGO가 중요한 음악 관련 발표를 했다. 이번 소식은 팬들의 주목을 받고 있다.",
+        "url": "https://consequence.net/2026/11/lego-star-wars-50th-anniversary-sets/",
+        "published_date": "2026-11-12 22:53:14",
+        "category": "interview",
+        "source": "consequenceofsound.net"
+      },
+      {
+        "title": "Courtney Werner (Magic Tuber Stringband, Dowsers, Weirs) Announces Debut Solo Album Tritium Forests: Hear “sierra one whiskey eight”",
+        "summary": "Courtney가 새 앨범 발매 소식을 공개했다. 팬들과 업계의 큰 관심을 받고 있다.",
+        "url": "https://stereogum.com/2517790/courtney-werner-magic-tuber-stringband-dowsers-weirs-announces-debut-solo-album-tritium-forests-hear-sierra-one-whiskey-eight/music/",
+        "published_date": "2026-11-12 21:42:26",
+        "category": "interview",
+        "source": "www.stereogum.com"
+      },
+      {
+        "title": "2027 Download Festival Features blink-182, Bring Me the Horizon, Evanescence, Turnstile, and Faith No More",
+        "summary": "2027의 새로운 협업 프로젝트 소식이 공개되었다. 음악 팬들의 기대감이 높아지고 있다.",
+        "url": "https://consequence.net/2026/11/2027-download-festival-lineup/",
+        "published_date": "2026-11-12 21:42:15",
+        "category": "interview",
+        "source": "consequenceofsound.net"
+      },
+      {
+        "title": "Deftones to Give ‘Private Music’ Public Offering on Spring Tour",
+        "summary": "Deftones의 라이브 공연 관련 소식이 전해졌다. 콘서트 티켓과 일정 정보가 업데이트되었다.",
+        "url": "https://www.rollingstone.com/music/music-news/deftones-knocked-loose-julie-north-american-tour-1235656707/",
+        "published_date": "2026-11-12 20:54:13",
+        "category": "interview",
+        "source": "www.rollingstone.com"
+      },
+      {
+        "title": "UMG’s Bravado strikes worldwide merch deal with Disney’s Searchlight Pictures",
+        "summary": "UMG’s와 관련된 주요 음악 업계 소식이 전해졌다. UMG’s Bravado strikes worldwide merch deal with Disney’s Sea...",
+        "url": "https://www.musicbusinessworldwide.com/umgs-bravado-strikes-worldwide-merch-deal-with-disneys-searchlight-pictures/",
+        "published_date": "2026-11-12 20:35:16",
+        "category": "interview",
+        "source": "www.musicbusinessworldwide.com"
+      },
+      {
+        "title": "Takeoff’s Estate Resolves Sex Assault Lawsuit Two Weeks Before Trial",
+        "summary": "Takeoff’s와 관련된 주요 음악 업계 소식이 전해졌다. Takeoff’s Estate Resolves Sex Assault Lawsuit Two Weeks Befo...",
+        "url": "https://www.rollingstone.com/music/music-news/takeoff-estate-resolves-sex-assault-lawsuit-trial-1235656626/",
+        "published_date": "2026-11-12 20:01:40",
+        "category": "interview",
+        "source": "www.rollingstone.com"
+      },
+      {
+        "title": "beatBread forms advisory board including executives from Meta and Suno",
+        "summary": "beatBread와 관련된 주요 음악 업계 소식이 전해졌다. beatBread forms advisory board including executives from Met...",
+        "url": "https://www.musicbusinessworldwide.com/beatbread-forms-advisory-board-including-executives-from-meta-and-suno/",
+        "published_date": "2026-11-12 20:00:31",
+        "category": "interview",
+        "source": "www.musicbusinessworldwide.com"
+      },
+      {
+        "title": "U2 Praise Cameron Winter, Lambrini Girls, & Fontaines D.C.",
+        "summary": "U2와 관련된 주요 음악 업계 소식이 전해졌다. U2 Praise Cameron Winter, Lambrini Girls, & Fontaines D.C.",
+        "url": "https://stereogum.com/2517784/u2-praise-cameron-winter-lambrini-girls-fontaines-d-c/news/",
+        "published_date": "2026-11-12 20:00:19",
+        "category": "interview",
+        "source": "www.stereogum.com"
+      },
+      {
+        "title": "TesseracT Announce New EP, Unveil “Crucible”: Stream",
+        "summary": "TesseracT와 관련된 주요 음악 업계 소식이 전해졌다. TesseracT Announce New EP, Unveil “Crucible”: Stream",
+        "url": "https://consequence.net/2026/11/tesseract-new-ep-single-crucible/",
+        "published_date": "2026-11-12 19:53:22",
+        "category": "interview",
+        "source": "consequenceofsound.net"
+      },
+      {
+        "title": "NVIDIA’s venture arm asks court to block UMG and Sony’s demand for testimony in Suno lawsuit, calling itself a ‘passive minority investor’",
+        "summary": "NVIDIA’s와 관련된 주요 음악 업계 소식이 전해졌다. NVIDIA’s venture arm asks court to block UMG and Sony’s dema...",
+        "url": "https://www.musicbusinessworldwide.com/nvidias-venture-arm-asks-court-to-block-umg-and-sonys-demand-for-testimony-in-suno-lawsuit-calling-itself-a-passive-minority-investor/",
+        "published_date": "2026-11-12 19:49:08",
+        "category": "interview",
+        "source": "www.musicbusinessworldwide.com"
+      },
+      {
+        "title": "Brian Eno Turned Down Roxy Music’s 2022 Farewell Tour Because He Stopped Flying “for Environmental Reasons”",
+        "summary": "Brian의 라이브 공연 관련 소식이 전해졌다. 콘서트 티켓과 일정 정보가 업데이트되었다.",
+        "url": "https://consequence.net/2026/11/brian-eno-roxy-music-farewell-tour-flying/",
+        "published_date": "2026-11-12 19:42:46",
+        "category": "interview",
+        "source": "consequenceofsound.net"
+      },
+      {
+        "title": "Shannon Sanders promoted to AVP, Creative, Nashville at BMI",
+        "summary": "Shannon와 관련된 주요 음악 업계 소식이 전해졌다. Shannon Sanders promoted to AVP, Creative, Nashville at BMI",
+        "url": "https://www.musicbusinessworldwide.com/shannon-sanders-promoted-to-avp-creative-nashville-at-bmi/",
+        "published_date": "2026-11-12 19:31:25",
+        "category": "interview",
+        "source": "www.musicbusinessworldwide.com"
+      },
+      {
+        "title": "Discus – “JML” (Feat. Living Hour’s Sam Sarty)",
+        "summary": "Discus의 새로운 협업 프로젝트 소식이 공개되었다. 음악 팬들의 기대감이 높아지고 있다.",
+        "url": "https://stereogum.com/2517755/discus-jml-feat-living-hours-sam-sarty/music/",
+        "published_date": "2026-11-12 19:30:01",
+        "category": "interview",
+        "source": "www.stereogum.com"
+      },
+      {
+        "title": "Rising UK R&B artist Season 25 lands ‘seven-figure’ deal for viral single ‘Shotta’s.’ with London’s Isekai Records and Create label broke Records",
+        "summary": "Rising UK가 새로운 싱글을 발표했다. 새 곡은 아티스트의 음악적 진화를 보여주는 작품으로 평가받고 있다.",
+        "url": "https://www.musicbusinessworldwide.com/rising-uk-rb-artist-season-25-lands-seven-figure-deal-for-viral-single-shottas-with-londons-isekai-records-and-create-label-broke-records/",
+        "published_date": "2026-11-12 19:28:50",
+        "category": "interview",
+        "source": "www.musicbusinessworldwide.com"
+      },
+      {
+        "title": "Alexisonfire Announce New Album, Unleash Single “Push the River”: Stream",
+        "summary": "Alexisonfire와 관련된 주요 음악 업계 소식이 전해졌다. Alexisonfire Announce New Album, Unleash Single “Push the Ri...",
+        "url": "https://consequence.net/2026/11/alexisonfire-new-album-unleash-push-the-river/",
+        "published_date": "2026-11-12 19:00:02",
+        "category": "interview",
+        "source": "consequenceofsound.net"
+      },
+      {
+        "title": "Mass Text Announce New Album Perfect New Knife: Hear “Pink Slips”",
+        "summary": "Mass와 관련된 주요 음악 업계 소식이 전해졌다. Mass Text Announce New Album Perfect New Knife: Hear “Pink S...",
+        "url": "https://stereogum.com/2517757/mass-text-announce-new-album-perfect-new-knife-hear-pink-slips/music/",
+        "published_date": "2026-11-12 18:33:36",
+        "category": "interview",
+        "source": "www.stereogum.com"
+      },
+      {
+        "title": "New 750-Cap Venue Domino to Open on Brooklyn Waterfront in 2027",
+        "summary": "New와 관련된 주요 음악 업계 소식이 전해졌다. New 750-Cap Venue Domino to Open on Brooklyn Waterfront in 2...",
+        "url": "https://consequence.net/2026/11/domino-venue-brooklyn-williamsburg-waterfront/",
+        "published_date": "2026-11-12 18:22:14",
+        "category": "interview",
+        "source": "consequenceofsound.net"
+      },
+      {
+        "title": "Russell Brand’s Pubic Hair Removed from London Museum",
+        "summary": "Russell와 관련된 주요 음악 업계 소식이 전해졌다. Russell Brand’s Pubic Hair Removed from London Museum",
+        "url": "https://consequence.net/2026/11/russell-brands-pubic-hair-removed-from-london-museum/",
+        "published_date": "2026-11-12 18:17:43",
+        "category": "interview",
+        "source": "consequenceofsound.net"
+      },
+      {
+        "title": "Michael Rapaport Cosigns “Dope New Group” Yeah Yeah Yeahs, Karen O Shares New Solo Song “Soft Machine”",
+        "summary": "Michael와 관련된 주요 음악 업계 소식이 전해졌다. Michael Rapaport Cosigns “Dope New Group” Yeah Yeah Yeahs, K...",
+        "url": "https://stereogum.com/2517760/michael-rapaport-cosigns-dope-new-group-yeah-yeah-yeahs-karen-o-shares-new-solo-song-soft-machine/news/",
+        "published_date": "2026-11-12 18:09:24",
+        "category": "interview",
+        "source": "www.stereogum.com"
+      },
+      {
+        "title": "Jimmy Page Is Done with Touring But Is “Still Playing” Guitar",
+        "summary": "Jimmy의 라이브 공연 관련 소식이 전해졌다. 콘서트 티켓과 일정 정보가 업데이트되었다.",
+        "url": "https://consequence.net/2026/11/jimmy-page-no-more-tours-still-plays-guitar/",
+        "published_date": "2026-11-12 18:09:09",
+        "category": "interview",
+        "source": "consequenceofsound.net"
+      },
+      {
+        "title": "Robyn Makes Tiny Desk Concert Debut: Watch",
+        "summary": "Robyn의 라이브 공연 관련 소식이 전해졌다. 콘서트 티켓과 일정 정보가 업데이트되었다.",
+        "url": "https://consequence.net/2026/11/robyn-tiny-desk-concert-watch/",
+        "published_date": "2026-11-12 17:59:08",
+        "category": "interview",
+        "source": "consequenceofsound.net"
+      },
+      {
+        "title": "The Weeknd Is Lovelorn in ‘Hong Kong’ in New Video",
+        "summary": "The와 관련된 주요 음악 업계 소식이 전해졌다. The Weeknd Is Lovelorn in ‘Hong Kong’ in New Video",
+        "url": "https://www.rollingstone.com/music/music-news/the-weeknd-hong-kong-new-song-video-1235656565/",
+        "published_date": "2026-11-12 17:58:37",
+        "category": "interview",
+        "source": "www.rollingstone.com"
+      },
+      {
+        "title": "Sam Fender Announces Spring 2027 North American Tour",
+        "summary": "Sam가 새로운 투어 계획을 발표했다. 콘서트 일정이 곧 공개될 예정이다.",
+        "url": "https://consequence.net/2026/11/sam-fender-spring-2027-north-american-tour/",
+        "published_date": "2026-11-12 17:45:13",
+        "category": "interview",
+        "source": "consequenceofsound.net"
+      },
+      {
+        "title": "Phoebe Bridgers Extends Tour Into 2027",
+        "summary": "Phoebe Bridgers가 새로운 투어 일정을 발표했다. 콘서트 관련 상세 정보는 공식 채널을 통해 확인할 수 있다.",
+        "url": "https://pitchfork.com/story/phoebe-bridgers-extends-tour-into-2027/",
+        "published_date": "2026-11-12 17:40:34",
+        "category": "interview",
+        "source": "pitchfork.com"
+      },
+      {
+        "title": "What’s Going on With Katseye?",
+        "summary": "What’s와 관련된 주요 음악 업계 소식이 전해졌다. What’s Going on With Katseye?",
+        "url": "https://www.rollingstone.com/music/music-news/katseye-whats-going-on-1235656274/",
+        "published_date": "2026-11-12 17:37:25",
+        "category": "interview",
+        "source": "www.rollingstone.com"
+      },
+      {
+        "title": "Live Nation-backed Creator Nation hires former Shamrock exec Alicia Zhu as Chief Operating Officer to oversee M&A",
+        "summary": "Live의 라이브 공연 관련 소식이 전해졌다. 콘서트 티켓과 일정 정보가 업데이트되었다.",
+        "url": "https://www.musicbusinessworldwide.com/live-nation-backed-creator-nation-hires-former-shamrock-capital-exec-alicia-zhu-as-coo-to-oversee-ma/",
+        "published_date": "2026-11-12 17:35:21",
+        "category": "interview",
+        "source": "www.musicbusinessworldwide.com"
+      },
+      {
+        "title": "Eminem’s Debut Release ‘Infinite’ Now Streaming for 30th Anniversary",
+        "summary": "Eminem’s Debut와 관련된 주요 음악 업계 소식이 전해졌다. Eminem’s Debut Release ‘Infinite’ Now Streaming for 30th Ann...",
+        "url": "https://www.rollingstone.com/music/music-news/eminem-infinite-ep-30th-anniversary-1235656552/",
+        "published_date": "2026-11-12 17:33:16",
+        "category": "interview",
+        "source": "www.rollingstone.com"
+      },
+      {
+        "title": "HYBE, SM, JYP, and YG incorporate Fanomenon festival JV with $3M in capital and a board seat each (report)",
+        "summary": "HYBE,와 관련된 주요 음악 업계 소식이 전해졌다. HYBE, SM, JYP, and YG incorporate Fanomenon festival JV with...",
+        "url": "https://www.musicbusinessworldwide.com/hybe-sm-jyp-and-yg-incorporate-fanomenon-festival-jv-with-3m-in-capital-and-a-board-seat-each-report/",
+        "published_date": "2026-11-12 17:29:28",
+        "category": "interview",
+        "source": "www.musicbusinessworldwide.com"
+      }
+    ],
+    "insight": []
+  },
+  "summary": {
+    "total_count": 50,
+    "by_category": {
+      "interview": 50
+    },
+    "by_source": {
+      "consequenceofsound.net": 14,
+      "www.billboard.com": 10,
+      "www.rollingstone.com": 9,
+      "www.musicbusinessworldwide.com": 7,
+      "pitchfork.com": 5,
+      "www.stereogum.com": 5
+    },
+    "members_only_count": 0
+  }
+}
