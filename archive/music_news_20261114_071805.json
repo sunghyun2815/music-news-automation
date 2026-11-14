@@ -1,0 +1,432 @@
+{
+  "metadata": {
+    "generated_at": "2026-11-14T07:18:05.076966",
+    "total_news": 50,
+    "last_updated": "2026-11-14T07:18:05.076973",
+    "version": "2.0",
+    "compatible_with": "NewsSection.tsx"
+  },
+  "news": {
+    "all_articles": [],
+    "news": [],
+    "interview": [
+      {
+        "title": "Journey Drummer Deen Castronovo Exits Mid-Tour to Focus on His Health",
+        "summary": "Journey의 라이브 공연 관련 소식이 전해졌다. 콘서트 티켓과 일정 정보가 업데이트되었다.",
+        "url": "https://www.billboard.com/music/rock/journey-deen-castronovo-steps-away-steve-murphy-drummer-1236382208/",
+        "published_date": "2026-11-14 06:59:25",
+        "category": "interview",
+        "source": "www.billboard.com"
+      },
+      {
+        "title": "Rock & Roll Hall of Fame Induction Ceremony to Kick Off as Planned Amid FAA Grounding Flights Debacle",
+        "summary": "Rock와 관련된 주요 음악 업계 소식이 전해졌다. Rock & Roll Hall of Fame Induction Ceremony to Kick Off as P...",
+        "url": "https://www.rollingstone.com/music/music-news/rock-and-roll-hall-of-fame-induction-ceremony-flights-1235658269/",
+        "published_date": "2026-11-14 02:49:03",
+        "category": "interview",
+        "source": "www.rollingstone.com"
+      },
+      {
+        "title": "Billboard’s Music Industry Events Calendar",
+        "summary": "Billboard’s와 관련된 주요 음악 업계 소식이 전해졌다. Billboard’s Music Industry Events Calendar",
+        "url": "https://www.billboard.com/pro/music-industry-events-calendar-festivals-awards-conferences/",
+        "published_date": "2026-11-14 01:00:00",
+        "category": "interview",
+        "source": "www.billboard.com"
+      },
+      {
+        "title": "Kanye West Settles Lawsuit Over Sample Blocked by Descendant of Holocaust Survivors",
+        "summary": "Kanye West와 관련된 주요 음악 업계 소식이 전해졌다. Kanye West Settles Lawsuit Over Sample Blocked by Descendant...",
+        "url": "https://www.rollingstone.com/music/music-news/kanye-west-settles-lawsuit-alice-merton-holocaust-survivors-1235658191/",
+        "published_date": "2026-11-14 00:59:53",
+        "category": "interview",
+        "source": "www.rollingstone.com"
+      },
+      {
+        "title": "Drummer Deen Castronovo Steps Away from Journey",
+        "summary": "Drummer와 관련된 주요 음악 업계 소식이 전해졌다. Drummer Deen Castronovo Steps Away from Journey",
+        "url": "https://consequence.net/2026/11/drummer-deen-castronovo-steps-away-from-journey/",
+        "published_date": "2026-11-14 00:25:37",
+        "category": "interview",
+        "source": "consequenceofsound.net"
+      },
+      {
+        "title": "In Canada: Canada Music Fund to Receive $67M Boost; Women in Music Executive Award Winners Share Their Wisdom",
+        "summary": "In Canada:와 관련된 주요 음악 업계 소식이 전해졌다. In Canada: Canada Music Fund to Receive $67M Boost; Women in...",
+        "url": "https://www.billboard.com/pro/canada-music-fund-67m-boost-canada-news/",
+        "published_date": "2026-11-14 00:10:09",
+        "category": "interview",
+        "source": "www.billboard.com"
+      },
+      {
+        "title": "John Summit, David Guetta, Alison Wonderland & More to Play College Football Playoff National Championship Weekend",
+        "summary": "John와 관련된 주요 음악 업계 소식이 전해졌다. John Summit, David Guetta, Alison Wonderland & More to Play ...",
+        "url": "https://www.billboard.com/music/music-news/las-vegas-college-football-champship-music-festival-summit-1236382125/",
+        "published_date": "2026-11-13 23:16:54",
+        "category": "interview",
+        "source": "www.billboard.com"
+      },
+      {
+        "title": "Young Thug Responds to Quavo’s Attempt to Have Him Reconcile With Gunna: ‘How Uma Fix Some Sh– I Didn’t Break Qua?’",
+        "summary": "Young와 관련된 주요 음악 업계 소식이 전해졌다. Young Thug Responds to Quavo’s Attempt to Have Him Reconcile...",
+        "url": "https://www.billboard.com/music/rb-hip-hop/young-thug-quavo-gunna-offset-reconciliation-ysl-trial-1236382064/",
+        "published_date": "2026-11-13 23:13:43",
+        "category": "interview",
+        "source": "www.billboard.com"
+      },
+      {
+        "title": "Who Is Sara Schell, The Newcomer Who Won Songwriter of the Year at the 2026 Latin Grammys?",
+        "summary": "Who와 관련된 주요 음악 업계 소식이 전해졌다. Who Is Sara Schell, The Newcomer Who Won Songwriter of the Y...",
+        "url": "https://www.billboard.com/music/latin/meet-sara-schell-latin-grammy-songwriter-of-the-year-nominee-1236379607/",
+        "published_date": "2026-11-13 23:00:00",
+        "category": "interview",
+        "source": "www.billboard.com"
+      },
+      {
+        "title": "Justin Bieber Pops Out at Rising British Star’s $30 Concert in L.A. in Surprise Cameo: ‘Who’s Gonna Pinch Me Then?’",
+        "summary": "Justin의 라이브 공연 관련 소식이 전해졌다. 콘서트 티켓과 일정 정보가 업데이트되었다.",
+        "url": "https://www.billboard.com/music/music-news/justin-bieber-surprise-cameo-finn-askew-la-show-1236382042/",
+        "published_date": "2026-11-13 22:58:37",
+        "category": "interview",
+        "source": "www.billboard.com"
+      },
+      {
+        "title": "Il Volo Reflect on 18 Years Together, Their Christmas Traditions and What’s Next",
+        "summary": "Il와 관련된 주요 음악 업계 소식이 전해졌다. Il Volo Reflect on 18 Years Together, Their Christmas Tradit...",
+        "url": "https://www.billboard.com/music/music-news/il-volo-our-christmas-billboard-italy-1236382101/",
+        "published_date": "2026-11-13 22:42:25",
+        "category": "interview",
+        "source": "www.billboard.com"
+      },
+      {
+        "title": "Journey Go Their Separate Ways With Longtime Drummer",
+        "summary": "Journey와 관련된 주요 음악 업계 소식이 전해졌다. Journey Go Their Separate Ways With Longtime Drummer",
+        "url": "https://www.rollingstone.com/music/music-news/journey-part-ways-with-drummer-1235658141/",
+        "published_date": "2026-11-13 22:42:06",
+        "category": "interview",
+        "source": "www.rollingstone.com"
+      },
+      {
+        "title": "Dashboard Confessional 2027: Where to Shop Affordable Unplugged 25th Anniversary Tour Tickets Online",
+        "summary": "Dashboard의 라이브 공연 관련 소식이 전해졌다. 콘서트 티켓과 일정 정보가 업데이트되었다.",
+        "url": "https://www.billboard.com/culture/product-recommendations/dashboard-confessional-2027-tour-tickets-buy-shop-online-1236379707/",
+        "published_date": "2026-11-13 22:37:25",
+        "category": "interview",
+        "source": "www.billboard.com"
+      },
+      {
+        "title": "Viva La Lisa! 5 Best Moments From LISA’s Opening Night in Las Vegas",
+        "summary": "Viva와 관련된 주요 음악 업계 소식이 전해졌다. Viva La Lisa! 5 Best Moments From LISA’s Opening Night in La...",
+        "url": "https://www.billboard.com/lists/lisa-las-vegas-opening-night-review-best-moments/",
+        "published_date": "2026-11-13 22:32:15",
+        "category": "interview",
+        "source": "www.billboard.com"
+      },
+      {
+        "title": "Megan Moroney, Teddy Swims, Ejae to Perform at 100th Macy’s Thanksgiving Parade",
+        "summary": "Megan와 관련된 주요 음악 업계 소식이 전해졌다. Megan Moroney, Teddy Swims, Ejae to Perform at 100th Macy’s ...",
+        "url": "https://www.rollingstone.com/music/music-news/megan-moroney-teddy-swims-ejae-macys-thanksgiving-parade-1235658100/",
+        "published_date": "2026-11-13 21:49:29",
+        "category": "interview",
+        "source": "www.rollingstone.com"
+      },
+      {
+        "title": "Coachella 2027 Passes Are Sold Out",
+        "summary": "Coachella와 관련된 주요 음악 업계 소식이 전해졌다. Coachella 2027 Passes Are Sold Out",
+        "url": "https://consequence.net/2026/11/coachella-2027-passes-sold-out/",
+        "published_date": "2026-11-13 21:14:49",
+        "category": "interview",
+        "source": "consequenceofsound.net"
+      },
+      {
+        "title": "The 5 Best Songs Of The Week",
+        "summary": "The와 관련된 주요 음악 업계 소식이 전해졌다. The 5 Best Songs Of The Week",
+        "url": "https://stereogum.com/2517796/the-5-best-songs-of-the-week-652/lists/the-5-best-songs-of-the-week/",
+        "published_date": "2026-11-13 20:14:30",
+        "category": "interview",
+        "source": "www.stereogum.com"
+      },
+      {
+        "title": "Reservoir expands copyright lawsuits against Suno and Anthropic to more than 2,500 songs combined",
+        "summary": "Reservoir와 관련된 주요 음악 업계 소식이 전해졌다. Reservoir expands copyright lawsuits against Suno and Anthro...",
+        "url": "https://www.musicbusinessworldwide.com/reservoir-expands-copyright-lawsuits-against-suno-and-anthropic-to-more-than-2500-songs-combined/",
+        "published_date": "2026-11-13 20:10:22",
+        "category": "interview",
+        "source": "www.musicbusinessworldwide.com"
+      },
+      {
+        "title": "THE•TEAM forms 11-member board after Providence completes buyout of founder Casey Wasserman",
+        "summary": "THE•TEAM와 관련된 주요 음악 업계 소식이 전해졌다. THE•TEAM forms 11-member board after Providence completes bu...",
+        "url": "https://www.musicbusinessworldwide.com/theteam-forms-11-member-board-after-providence-completes-buyout-of-founder-casey-wasserman/",
+        "published_date": "2026-11-13 20:09:52",
+        "category": "interview",
+        "source": "www.musicbusinessworldwide.com"
+      },
+      {
+        "title": "Live Nation-operated Cleveland amphitheater breaks ground, ahead of 2028 opening",
+        "summary": "Live의 라이브 공연 관련 소식이 전해졌다. 콘서트 티켓과 일정 정보가 업데이트되었다.",
+        "url": "https://www.musicbusinessworldwide.com/live-nation-operated-cleveland-amphitheater-breaks-ground-ahead-of-2028-opening/",
+        "published_date": "2026-11-13 20:09:41",
+        "category": "interview",
+        "source": "www.musicbusinessworldwide.com"
+      },
+      {
+        "title": "UMG and Warner Chappell agree to settle lawsuit alleging Quavo’s 2018 track ‘Bubble Gum’ copied a demo handed to him at a Migos after-party",
+        "summary": "UMG와 관련된 주요 음악 업계 소식이 전해졌다. UMG and Warner Chappell agree to settle lawsuit alleging Qua...",
+        "url": "https://www.musicbusinessworldwide.com/umg-and-warner-chappell-agree-to-settle-lawsuit-alleging-quavos-2018-track-bubble-gum-copied-a-demo-handed-to-him-at-a-migos-after-party/",
+        "published_date": "2026-11-13 20:09:25",
+        "category": "interview",
+        "source": "www.musicbusinessworldwide.com"
+      },
+      {
+        "title": "camp flog gnaw stream",
+        "summary": "camp와 관련된 주요 음악 업계 소식이 전해졌다. camp flog gnaw stream",
+        "url": "https://pitchfork.com/story/camp-flog-gnaw-2026-amazon-music-livestream-schedule-and-details/",
+        "published_date": "2026-11-13 19:58:27",
+        "category": "interview",
+        "source": "pitchfork.com"
+      },
+      {
+        "title": "Dicky Barrett Appears To Be Relaunching The Mighty Mighty Bosstones With New Bandmates",
+        "summary": "Dicky와 관련된 주요 음악 업계 소식이 전해졌다. Dicky Barrett Appears To Be Relaunching The Mighty Mighty Bo...",
+        "url": "https://stereogum.com/2517975/the-mighty-mighty-bosstones-announce-reunion-show/news/",
+        "published_date": "2026-11-13 19:42:45",
+        "category": "interview",
+        "source": "www.stereogum.com"
+      },
+      {
+        "title": "yeule – “Lovepill”",
+        "summary": "yeule와 관련된 주요 음악 업계 소식이 전해졌다. yeule – “Lovepill”",
+        "url": "https://stereogum.com/2517963/yeule-lovepill/music/",
+        "published_date": "2026-11-13 19:03:58",
+        "category": "interview",
+        "source": "www.stereogum.com"
+      },
+      {
+        "title": "Veeze – “guillermoandrade”",
+        "summary": "Veeze와 관련된 주요 음악 업계 소식이 전해졌다. Veeze – “guillermoandrade”",
+        "url": "https://stereogum.com/2517955/veeze-guillermoandrade/music/",
+        "published_date": "2026-11-13 18:52:53",
+        "category": "interview",
+        "source": "www.stereogum.com"
+      },
+      {
+        "title": "Brògeal – “The Last Noel” (Feat. Rianne Downey)",
+        "summary": "Brògeal의 새로운 협업 프로젝트 소식이 공개되었다. 음악 팬들의 기대감이 높아지고 있다.",
+        "url": "https://stereogum.com/2517892/brogeal-the-last-noel-feat-rianne-downey/music/",
+        "published_date": "2026-11-13 18:48:40",
+        "category": "interview",
+        "source": "www.stereogum.com"
+      },
+      {
+        "title": "Pearl Jam’s Mike McCready Unveils Title Track to Rock Opera Farewell to Seasons: Stream",
+        "summary": "Pearl가 중요한 음악 관련 발표를 했다. 이번 소식은 팬들의 주목을 받고 있다.",
+        "url": "https://consequence.net/2026/11/pearl-jam-mike-mccready-farewell-to-seasons-song/",
+        "published_date": "2026-11-13 18:47:35",
+        "category": "interview",
+        "source": "consequenceofsound.net"
+      },
+      {
+        "title": "Hi-NRG! – “Handsome Daughter” & “Free Roof, On The House”",
+        "summary": "Hi-NRG!와 관련된 주요 음악 업계 소식이 전해졌다. Hi-NRG! – “Handsome Daughter” & “Free Roof, On The House”",
+        "url": "https://stereogum.com/2517953/hi-nrg-handsome-daughter-free-roof-on-the-house/music/",
+        "published_date": "2026-11-13 18:45:14",
+        "category": "interview",
+        "source": "www.stereogum.com"
+      },
+      {
+        "title": "54 Ultra Shares Clairo Collab “Honeymoon”",
+        "summary": "54와 관련된 주요 음악 업계 소식이 전해졌다. 54 Ultra Shares Clairo Collab “Honeymoon”",
+        "url": "https://stereogum.com/2517941/54-ultra-clairo-collab-honeymoon/music/",
+        "published_date": "2026-11-13 18:43:40",
+        "category": "interview",
+        "source": "www.stereogum.com"
+      },
+      {
+        "title": "Crate Release Debut Album, Stereogum Presents Release Show In Brooklyn Next Month",
+        "summary": "Crate와 관련된 주요 음악 업계 소식이 전해졌다. Crate Release Debut Album, Stereogum Presents Release Show I...",
+        "url": "https://stereogum.com/2517873/crate-release-debut-album-stereogum-presents-release-show-in-brooklyn-next-month/music/",
+        "published_date": "2026-11-13 18:15:29",
+        "category": "interview",
+        "source": "www.stereogum.com"
+      },
+      {
+        "title": "Heavy Song of the Week: Gatta Morta Fuse ’90s Alt Rock with Sludgy Heavy Metal on “Music for Furbies”",
+        "summary": "Heavy와 관련된 주요 음악 업계 소식이 전해졌다. Heavy Song of the Week: Gatta Morta Fuse ’90s Alt Rock with ...",
+        "url": "https://consequence.net/2026/11/heavy-song-of-the-week-gatta-morta-music-for-furbies/",
+        "published_date": "2026-11-13 18:15:27",
+        "category": "interview",
+        "source": "consequenceofsound.net"
+      },
+      {
+        "title": "Panda Bear Remixes Grace Ives’ “Stupid Bitches”",
+        "summary": "Panda와 관련된 주요 음악 업계 소식이 전해졌다. Panda Bear Remixes Grace Ives’ “Stupid Bitches”",
+        "url": "https://pitchfork.com/story/panda-bear-remixes-grace-ives-stupid-bitches/",
+        "published_date": "2026-11-13 18:14:46",
+        "category": "interview",
+        "source": "pitchfork.com"
+      },
+      {
+        "title": "Dovetail – “sunday night”",
+        "summary": "Dovetail와 관련된 주요 음악 업계 소식이 전해졌다. Dovetail – “sunday night”",
+        "url": "https://stereogum.com/2517939/dovetail-sunday-night/music/",
+        "published_date": "2026-11-13 18:11:22",
+        "category": "interview",
+        "source": "www.stereogum.com"
+      },
+      {
+        "title": "Stream On This Week: Rose Byrne Is Doing Her Nathan Fielder Homework",
+        "summary": "Stream와 관련된 주요 음악 업계 소식이 전해졌다. Stream On This Week: Rose Byrne Is Doing Her Nathan Fielder ...",
+        "url": "https://consequence.net/2026/11/stream-on-paper-trail-the-good-daughter/",
+        "published_date": "2026-11-13 18:00:23",
+        "category": "interview",
+        "source": "consequenceofsound.net"
+      },
+      {
+        "title": "Robyn Says Eurovision Is “Just Shit” Now: “It Really Is Embarrassing”",
+        "summary": "Robyn와 관련된 주요 음악 업계 소식이 전해졌다. Robyn Says Eurovision Is “Just Shit” Now: “It Really Is Emba...",
+        "url": "https://stereogum.com/2517936/robyn-says-eurovision-is-just-shit-now-it-really-is-embarrassing/news/",
+        "published_date": "2026-11-13 17:50:52",
+        "category": "interview",
+        "source": "www.stereogum.com"
+      },
+      {
+        "title": "Rosalía makes history with Album Of The Year award win at Latin Grammys and performs ‘Lux’ medley",
+        "summary": "Rosalía makes가 새 앨범 발매 소식을 공개했다. 이번 릴리스는 팬들과 음악 업계의 큰 관심을 받고 있다.",
+        "url": "https://www.nme.com/news/music/rosalia-album-year-award-latin-grammys-performs-lux-medley-3975928",
+        "published_date": "2026-11-13 17:47:55",
+        "category": "interview",
+        "source": "www.nme.com"
+      },
+      {
+        "title": "Valerie June Releases Uplifting Cover of Louis Armstrong’s ‘What a Wonderful World’",
+        "summary": "Valerie가 새로운 음악을 공개했다. 팬들과 비평가들의 긍정적 반응을 얻고 있다.",
+        "url": "https://www.rollingstone.com/music/music-news/valerie-june-what-a-wonderful-world-cover-1235657545/",
+        "published_date": "2026-11-13 17:34:46",
+        "category": "interview",
+        "source": "www.rollingstone.com"
+      },
+      {
+        "title": "IDK Taps Eminem for J Dilla-Produced New Song “WELCOME”: Stream",
+        "summary": "IDK와 관련된 주요 음악 업계 소식이 전해졌다. IDK Taps Eminem for J Dilla-Produced New Song “WELCOME”: Str...",
+        "url": "https://consequence.net/2026/11/idk-eminem-j-dilla-new-song-welcome/",
+        "published_date": "2026-11-13 17:31:27",
+        "category": "interview",
+        "source": "consequenceofsound.net"
+      },
+      {
+        "title": "Austra – “Bittersweet” & “Chains And Anchors”",
+        "summary": "Austra와 관련된 주요 음악 업계 소식이 전해졌다. Austra – “Bittersweet” & “Chains And Anchors”",
+        "url": "https://stereogum.com/2517771/austra-bittersweet-chains-and-anchors/music/",
+        "published_date": "2026-11-13 17:28:08",
+        "category": "interview",
+        "source": "www.stereogum.com"
+      },
+      {
+        "title": "Zsela Announces New Album The Party: Hear “Real Romantic”",
+        "summary": "Zsela가 새 앨범 발매 소식을 공개했다. 팬들과 업계의 큰 관심을 받고 있다.",
+        "url": "https://stereogum.com/2517932/zsela-announces-new-album-the-party-hear-real-romantic/music/",
+        "published_date": "2026-11-13 17:22:31",
+        "category": "interview",
+        "source": "www.stereogum.com"
+      },
+      {
+        "title": "Roger Waters Files for Divorce from Fifth Wife",
+        "summary": "Roger와 관련된 주요 음악 업계 소식이 전해졌다. Roger Waters Files for Divorce from Fifth Wife",
+        "url": "https://consequence.net/2026/11/roger-waters-divorce-fifth-wife/",
+        "published_date": "2026-11-13 17:06:38",
+        "category": "interview",
+        "source": "consequenceofsound.net"
+      },
+      {
+        "title": "Shygirl, Brutalismus 3000, Nirosta Steel Feature on Club Kid Companion EP",
+        "summary": "Shygirl,의 새로운 협업 프로젝트 소식이 공개되었다. 음악 팬들의 기대감이 높아지고 있다.",
+        "url": "https://pitchfork.com/story/shygirl-brutalismus-3000-nirosta-steel-feature-on-club-kid-ep/",
+        "published_date": "2026-11-13 16:59:26",
+        "category": "interview",
+        "source": "pitchfork.com"
+      },
+      {
+        "title": "Hiding Places – “Paradise”",
+        "summary": "Hiding와 관련된 주요 음악 업계 소식이 전해졌다. Hiding Places – “Paradise”",
+        "url": "https://stereogum.com/2517923/hiding-places-paradise/music/",
+        "published_date": "2026-11-13 16:57:48",
+        "category": "interview",
+        "source": "www.stereogum.com"
+      },
+      {
+        "title": "IDK Brings Together Eminem and J Dilla for First Time on New Song ‘Welcome’",
+        "summary": "IDK와 관련된 주요 음악 업계 소식이 전해졌다. IDK Brings Together Eminem and J Dilla for First Time on New...",
+        "url": "https://www.rollingstone.com/music/music-news/idk-eminem-j-dilla-new-song-welcome-1235657529/",
+        "published_date": "2026-11-13 16:56:34",
+        "category": "interview",
+        "source": "www.rollingstone.com"
+      },
+      {
+        "title": "The Edge Finally Breaks His Legendary Silence On Elf 2",
+        "summary": "The와 관련된 주요 음악 업계 소식이 전해졌다. The Edge Finally Breaks His Legendary Silence On Elf 2",
+        "url": "https://stereogum.com/2517921/the-edge-finally-breaks-his-legendary-silence-on-elf-2/news/",
+        "published_date": "2026-11-13 16:53:20",
+        "category": "interview",
+        "source": "www.stereogum.com"
+      },
+      {
+        "title": "Watch Queens Of The Stone Age’s NSFW ‘From The Cliff’ video, co-written by Josh Homme",
+        "summary": "Watch와 관련된 주요 음악 업계 소식이 전해졌다. Watch Queens Of The Stone Age’s NSFW ‘From The Cliff’ video,...",
+        "url": "https://www.nme.com/news/music/queens-of-the-stone-ages-nsfw-from-the-cliff-video-josh-homme-3975920",
+        "published_date": "2026-11-13 16:42:35",
+        "category": "interview",
+        "source": "www.nme.com"
+      },
+      {
+        "title": "Ethel Cain & Robin Carolan – “Wynter Waxeth”",
+        "summary": "Ethel와 관련된 주요 음악 업계 소식이 전해졌다. Ethel Cain & Robin Carolan – “Wynter Waxeth”",
+        "url": "https://stereogum.com/2517871/ethel-cain-robin-carolan-wynter-waxeth-werwulf-robert-eggers/music/",
+        "published_date": "2026-11-13 16:42:02",
+        "category": "interview",
+        "source": "www.stereogum.com"
+      },
+      {
+        "title": "Avril Lavigne Reveals Baby Daughter with Mystery Partner",
+        "summary": "Avril가 중요한 음악 관련 발표를 했다. 이번 소식은 팬들의 주목을 받고 있다.",
+        "url": "https://consequence.net/2026/11/avril-lavigne-baby-daughter-partner/",
+        "published_date": "2026-11-13 16:40:47",
+        "category": "interview",
+        "source": "consequenceofsound.net"
+      },
+      {
+        "title": "Blink-182’s Travis Barker quit smoking after being “diagnosed with precancer of the oesophagus”",
+        "summary": "Blink-182’s와 관련된 주요 음악 업계 소식이 전해졌다. Blink-182’s Travis Barker quit smoking after being “diagnose...",
+        "url": "https://www.nme.com/news/music/blink-182s-travis-barker-quit-smoking-after-being-diagnosed-with-precancer-of-the-oesophagus-3975909",
+        "published_date": "2026-11-13 16:31:41",
+        "category": "interview",
+        "source": "www.nme.com"
+      },
+      {
+        "title": "Hayley Williams Brings Out Seu Jorge to Cover David Bowie",
+        "summary": "Hayley와 관련된 주요 음악 업계 소식이 전해졌다. Hayley Williams Brings Out Seu Jorge to Cover David Bowie",
+        "url": "https://pitchfork.com/story/hayley-williams-brings-out-seu-jorge-to-cover-david-bowie/",
+        "published_date": "2026-11-13 16:29:24",
+        "category": "interview",
+        "source": "pitchfork.com"
+      }
+    ],
+    "insight": []
+  },
+  "summary": {
+    "total_count": 50,
+    "by_category": {
+      "interview": 50
+    },
+    "by_source": {
+      "www.stereogum.com": 15,
+      "www.billboard.com": 10,
+      "consequenceofsound.net": 8,
+      "www.rollingstone.com": 6,
+      "www.musicbusinessworldwide.com": 4,
+      "pitchfork.com": 4,
+      "www.nme.com": 3
+    },
+    "members_only_count": 0
+  }
+}
