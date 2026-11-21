@@ -1,0 +1,432 @@
+{
+  "metadata": {
+    "generated_at": "2026-11-21T07:56:23.941211",
+    "total_news": 50,
+    "last_updated": "2026-11-21T07:56:23.941220",
+    "version": "2.0",
+    "compatible_with": "NewsSection.tsx"
+  },
+  "news": {
+    "all_articles": [],
+    "news": [],
+    "interview": [
+      {
+        "title": "Mashd N Kutcher Remix Rogue Traders and Dannii Minogue’s ‘Dirty Dirty Disco’",
+        "summary": "Mashd와 관련된 주요 음악 업계 소식이 전해졌다. Mashd N Kutcher Remix Rogue Traders and Dannii Minogue’s ‘Di...",
+        "url": "https://www.billboard.com/music/music-news/mashd-n-kutcher-remix-rogue-traders-dannii-minogue-dirty-dirty-disco-1236387275/",
+        "published_date": "2026-11-21 07:22:09",
+        "category": "interview",
+        "source": "www.billboard.com"
+      },
+      {
+        "title": "Phil Collins Says Cher Sang His ‘We Are the World’ Line at Live Aid After He Left Early",
+        "summary": "Phil의 라이브 공연 관련 소식이 전해졌다. 콘서트 티켓과 일정 정보가 업데이트되었다.",
+        "url": "https://www.billboard.com/music/rock/phil-collins-live-aid-cher-concorde-eric-clapton-siriusxm-1236387268/",
+        "published_date": "2026-11-21 06:47:33",
+        "category": "interview",
+        "source": "www.billboard.com"
+      },
+      {
+        "title": "2026 CMA Awards Jump to 7-Year Ratings High",
+        "summary": "2026와 관련된 주요 음악 업계 소식이 전해졌다. 2026 CMA Awards Jump to 7-Year Ratings High",
+        "url": "https://www.billboard.com/music/awards/2026-cma-awards-ratings-up-seven-year-high-1236387203/",
+        "published_date": "2026-11-21 01:54:57",
+        "category": "interview",
+        "source": "www.billboard.com"
+      },
+      {
+        "title": "A Guide to the Best Black Friday Streaming Deals: See Platforms, Prices & Plans for Less",
+        "summary": "A와 관련된 주요 음악 업계 소식이 전해졌다. A Guide to the Best Black Friday Streaming Deals: See Platfo...",
+        "url": "https://www.billboard.com/culture/product-recommendations/best-black-friday-streaming-deals-2026-prices-plans-1236386882/",
+        "published_date": "2026-11-21 01:14:59",
+        "category": "interview",
+        "source": "www.billboard.com"
+      },
+      {
+        "title": "From Bad Bunny to Sexyy Red, Here’s Every Music Cameo in ‘Grand Theft Auto VI’",
+        "summary": "From와 관련된 주요 음악 업계 소식이 전해졌다. From Bad Bunny to Sexyy Red, Here’s Every Music Cameo in ‘Gr...",
+        "url": "https://www.billboard.com/lists/gta-vi-music-celebrity-cameos-bad-bunny-anitta/",
+        "published_date": "2026-11-21 01:11:58",
+        "category": "interview",
+        "source": "www.billboard.com"
+      },
+      {
+        "title": "Nick Cannon Hospitalized Amid Lupus Battle: ‘Pray for Me, Y’all!’",
+        "summary": "Nick와 관련된 주요 음악 업계 소식이 전해졌다. Nick Cannon Hospitalized Amid Lupus Battle: ‘Pray for Me, Y’...",
+        "url": "https://www.billboard.com/music/rb-hip-hop/nick-cannon-hospital-lupus-prayers-1236387115/",
+        "published_date": "2026-11-21 00:26:42",
+        "category": "interview",
+        "source": "www.billboard.com"
+      },
+      {
+        "title": "Kylie Cantrall Talks ‘Bold, Grown & Messy’ New Music, How Her Disney Fans ‘Coexist’ With Growing Audience",
+        "summary": "Kylie와 관련된 주요 음악 업계 소식이 전해졌다. Kylie Cantrall Talks ‘Bold, Grown & Messy’ New Music, How He...",
+        "url": "https://www.billboard.com/music/pop/kyliecantrall-opens-up-about-new-music-its-bold-grown-messy-1236385194/",
+        "published_date": "2026-11-21 00:20:22",
+        "category": "interview",
+        "source": "www.billboard.com"
+      },
+      {
+        "title": "Mort Weiner, Veteran Label Executive, Dies at 92: ‘His Commitment to Artists and Our Industry Was Superb’",
+        "summary": "Mort와 관련된 주요 음악 업계 소식이 전해졌다. Mort Weiner, Veteran Label Executive, Dies at 92: ‘His Commi...",
+        "url": "https://www.billboard.com/pro/mort-weiner-death-veteran-record-label-executive-dead-92/",
+        "published_date": "2026-11-21 00:15:54",
+        "category": "interview",
+        "source": "www.billboard.com"
+      },
+      {
+        "title": "Rising Argentine Star Milo J Signs With CAA",
+        "summary": "Rising Argentine가 새로운 음악 계약을 체결했다고 발표되었다. 이번 파트너십은 아티스트의 향후 활동에 긍정적 영향을 미칠 전망이다.",
+        "url": "https://www.billboard.com/pro/milo-j-signs-caa/",
+        "published_date": "2026-11-21 00:03:32",
+        "category": "interview",
+        "source": "www.billboard.com"
+      },
+      {
+        "title": "Watch Ice Spice’s Speechless Reaction to Seeing Her Madame Tussauds Wax Figure for the First Time: ‘This Is So Accurate’",
+        "summary": "Watch와 관련된 주요 음악 업계 소식이 전해졌다. Watch Ice Spice’s Speechless Reaction to Seeing Her Madame T...",
+        "url": "https://www.billboard.com/music/rb-hip-hop/ice-spice-wax-figure-photos-video-reaction-1236386894/",
+        "published_date": "2026-11-20 23:37:08",
+        "category": "interview",
+        "source": "www.billboard.com"
+      },
+      {
+        "title": "Rosalía Calls Taylor Swift a ‘Master Songwriter,’ Reveals Her Favorite Swift Track",
+        "summary": "Rosalía Calls가 새로운 싱글을 발표했다. 새 곡은 아티스트의 음악적 진화를 보여주는 작품으로 평가받고 있다.",
+        "url": "https://www.rollingstone.com/music/music-news/rosalia-praises-taylor-swift-master-songwriter-1235661869/",
+        "published_date": "2026-11-20 22:35:32",
+        "category": "interview",
+        "source": "www.rollingstone.com"
+      },
+      {
+        "title": "Every Song Across All 24 Radio Stations in Grand Theft Auto VI",
+        "summary": "Every Song가 새로운 싱글을 발표했다. 새 곡은 아티스트의 음악적 진화를 보여주는 작품으로 평가받고 있다.",
+        "url": "https://consequence.net/2026/11/gta-6-radio-stations-songs-soundtrack/",
+        "published_date": "2026-11-20 21:39:10",
+        "category": "interview",
+        "source": "consequenceofsound.net"
+      },
+      {
+        "title": "The 5 Best Songs Of The Week",
+        "summary": "The와 관련된 주요 음악 업계 소식이 전해졌다. The 5 Best Songs Of The Week",
+        "url": "https://stereogum.com/2518768/the-5-best-songs-of-the-week-653/lists/the-5-best-songs-of-the-week/",
+        "published_date": "2026-11-20 21:30:52",
+        "category": "interview",
+        "source": "www.stereogum.com"
+      },
+      {
+        "title": "The Thrills Announce First Show In 19 Years",
+        "summary": "The와 관련된 주요 음악 업계 소식이 전해졌다. The Thrills Announce First Show In 19 Years",
+        "url": "https://stereogum.com/2518884/the-thrills-announce-first-show-in-19-years/news/",
+        "published_date": "2026-11-20 21:19:11",
+        "category": "interview",
+        "source": "www.stereogum.com"
+      },
+      {
+        "title": "Heavy Song of the Week: Kerry King Thrashes Us to Death with “My War”",
+        "summary": "Heavy와 관련된 주요 음악 업계 소식이 전해졌다. Heavy Song of the Week: Kerry King Thrashes Us to Death with...",
+        "url": "https://consequence.net/2026/11/heavy-song-of-the-week-kerry-king-my-war/",
+        "published_date": "2026-11-20 18:40:51",
+        "category": "interview",
+        "source": "consequenceofsound.net"
+      },
+      {
+        "title": "Home Alone Sequel with Macaulay Culkin Officially in the Works at Disney",
+        "summary": "Home와 관련된 주요 음악 업계 소식이 전해졌다. Home Alone Sequel with Macaulay Culkin Officially in the Wor...",
+        "url": "https://consequence.net/2026/11/home-alone-sequel-macaulay-culkin/",
+        "published_date": "2026-11-20 18:32:13",
+        "category": "interview",
+        "source": "consequenceofsound.net"
+      },
+      {
+        "title": "The Offspring Announce Just the Punk Stuff Live Album",
+        "summary": "The Offspring가 새 앨범 발매 소식을 공개했다. 이번 릴리스는 팬들과 음악 업계의 큰 관심을 받고 있다.",
+        "url": "https://consequence.net/2026/11/the-offspring-just-the-punk-stuff-live-album/",
+        "published_date": "2026-11-20 18:14:16",
+        "category": "interview",
+        "source": "consequenceofsound.net"
+      },
+      {
+        "title": "Grimes Releases Two New Psy Opera Songs",
+        "summary": "Grimes가 새로운 음악을 공개했다. 팬들과 비평가들의 긍정적 반응을 얻고 있다.",
+        "url": "https://pitchfork.com/story/listen-to-two-new-grimes-songs/",
+        "published_date": "2026-11-20 18:11:09",
+        "category": "interview",
+        "source": "pitchfork.com"
+      },
+      {
+        "title": "Beastie Boys’ Mike D Brings Solo Album — and His Sons — to Tiny Desk Concert",
+        "summary": "Beastie의 라이브 공연 관련 소식이 전해졌다. 콘서트 티켓과 일정 정보가 업데이트되었다.",
+        "url": "https://www.rollingstone.com/music/music-news/beastie-boys-mike-d-brings-album-thank-you-to-tiny-desk-1235659577/",
+        "published_date": "2026-11-20 18:05:41",
+        "category": "interview",
+        "source": "www.rollingstone.com"
+      },
+      {
+        "title": "Stream On This Week: The Bourdain Biopic That’s Not a Biopic, Plus Benedict Cumberbatch Squirms",
+        "summary": "Stream와 관련된 주요 음악 업계 소식이 전해졌다. Stream On This Week: The Bourdain Biopic That’s Not a Biopic...",
+        "url": "https://consequence.net/2026/11/stream-on-tony-cunk-on-cinema-stick/",
+        "published_date": "2026-11-20 18:00:11",
+        "category": "interview",
+        "source": "consequenceofsound.net"
+      },
+      {
+        "title": "Megan Moroney and Alex Warren Know a Good Song When They Hear It in the Car",
+        "summary": "Megan와 관련된 주요 음악 업계 소식이 전해졌다. Megan Moroney and Alex Warren Know a Good Song When They Hea...",
+        "url": "https://www.rollingstone.com/music/music-news/megan-moroney-alex-warren-know-good-song-in-the-car-1235654145/",
+        "published_date": "2026-11-20 17:58:00",
+        "category": "interview",
+        "source": "www.rollingstone.com"
+      },
+      {
+        "title": "Portishead’s Music Disappears from Platforms in Israel: Report",
+        "summary": "Portishead’s Music가 새 앨범 발매 소식을 공개했다. 이번 릴리스는 팬들과 음악 업계의 큰 관심을 받고 있다.",
+        "url": "https://consequence.net/2026/11/portisheads-music-in-israel/",
+        "published_date": "2026-11-20 17:52:14",
+        "category": "interview",
+        "source": "consequenceofsound.net"
+      },
+      {
+        "title": "Dave Matthews Band Announce Argentina Return Nearly 17 Years After Recording Memorable Live Album",
+        "summary": "Dave Matthews가 새 앨범 발매 소식을 공개했다. 이번 릴리스는 팬들과 음악 업계의 큰 관심을 받고 있다.",
+        "url": "https://consequence.net/2026/11/dave-matthews-band-argentina-return-live-album/",
+        "published_date": "2026-11-20 17:41:54",
+        "category": "interview",
+        "source": "consequenceofsound.net"
+      },
+      {
+        "title": "Unreleased D’Angelo Song ‘Kamikazi’ Emerges in ‘GTA VI’",
+        "summary": "Unreleased와 관련된 주요 음악 업계 소식이 전해졌다. Unreleased D’Angelo Song ‘Kamikazi’ Emerges in ‘GTA VI’",
+        "url": "https://www.rollingstone.com/music/music-news/dangelo-unreleased-song-kamakazi-grand-theft-auto-6-1235661667/",
+        "published_date": "2026-11-20 17:27:05",
+        "category": "interview",
+        "source": "www.rollingstone.com"
+      },
+      {
+        "title": "Music Venue Trust and Fender team up for intimate London showcase gig with Unpeople",
+        "summary": "Music와 관련된 주요 음악 업계 소식이 전해졌다. Music Venue Trust and Fender team up for intimate London sho...",
+        "url": "https://www.nme.com/news/music/music-venue-trust-and-fender-team-up-for-intimate-london-showcase-gig-with-unpeople-3976599",
+        "published_date": "2026-11-20 17:24:09",
+        "category": "interview",
+        "source": "www.nme.com"
+      },
+      {
+        "title": "Hans Zimmer Announces New Live Electronic Album The Next Level",
+        "summary": "Hans Zimmer가 새 앨범 발매 소식을 공개했다. 이번 릴리스는 팬들과 음악 업계의 큰 관심을 받고 있다.",
+        "url": "https://consequence.net/2026/11/hans-zimmer-live-album-the-next-level/",
+        "published_date": "2026-11-20 17:23:00",
+        "category": "interview",
+        "source": "consequenceofsound.net"
+      },
+      {
+        "title": "Brittany Howard & Robert Glasper – “Makings Of Tomorrow”",
+        "summary": "Brittany와 관련된 주요 음악 업계 소식이 전해졌다. Brittany Howard & Robert Glasper – “Makings Of Tomorrow”",
+        "url": "https://stereogum.com/2518854/brittany-howard-robert-glasper-makings-of-tomorrow/music/",
+        "published_date": "2026-11-20 17:17:48",
+        "category": "interview",
+        "source": "www.stereogum.com"
+      },
+      {
+        "title": "Vevo dscvr artists to watch 2027: Dalvin La Melodía, Conep, Devon Again, Mari Froes, Die Spitz",
+        "summary": "Vevo와 관련된 주요 음악 업계 소식이 전해졌다. Vevo dscvr artists to watch 2027: Dalvin La Melodía, Conep, ...",
+        "url": "https://www.musicbusinessworldwide.com/vevo-dscvr-artists-to-watch-2027-dalvin-la-melodia-conep-devon-again-mari-froes-die-spitz/",
+        "published_date": "2026-11-20 16:57:17",
+        "category": "interview",
+        "source": "www.musicbusinessworldwide.com"
+      },
+      {
+        "title": "Stone Sour Unveil Previously Unreleased Song “Full of Empty”: Stream",
+        "summary": "Stone Sour가 새로운 싱글을 발표했다. 새 곡은 아티스트의 음악적 진화를 보여주는 작품으로 평가받고 있다.",
+        "url": "https://consequence.net/2026/11/stone-sour-full-of-empty/",
+        "published_date": "2026-11-20 16:39:03",
+        "category": "interview",
+        "source": "consequenceofsound.net"
+      },
+      {
+        "title": "Liam Gallagher, Bonehead and Primal Scream lead tributes on one year anniversary of Mani’s death",
+        "summary": "Liam와 관련된 주요 음악 업계 소식이 전해졌다. Liam Gallagher, Bonehead and Primal Scream lead tributes on ...",
+        "url": "https://www.nme.com/news/music/liam-gallagher-bonehead-and-primal-scream-lead-tributes-on-one-year-anniversary-of-manis-death-3976584",
+        "published_date": "2026-11-20 16:31:16",
+        "category": "interview",
+        "source": "www.nme.com"
+      },
+      {
+        "title": "Blondie Reveal Tender New Song “Come Back Home”: Stream",
+        "summary": "Blondie와 관련된 주요 음악 업계 소식이 전해졌다. Blondie Reveal Tender New Song “Come Back Home”: Stream",
+        "url": "https://consequence.net/2026/11/blondie-come-back-home-new-song-stream/",
+        "published_date": "2026-11-20 16:15:14",
+        "category": "interview",
+        "source": "consequenceofsound.net"
+      },
+      {
+        "title": "Tom Waits’ Rare ‘Orphans: Bonus’ EP, Previously Vinyl-Only, Now Streaming",
+        "summary": "Tom Waits’가 새 앨범 발매 소식을 공개했다. 이번 릴리스는 팬들과 음악 업계의 큰 관심을 받고 있다.",
+        "url": "https://www.rollingstone.com/music/music-news/tom-waits-orphans-bonus-streaming-services-1235661577/",
+        "published_date": "2026-11-20 16:09:45",
+        "category": "interview",
+        "source": "www.rollingstone.com"
+      },
+      {
+        "title": "Sleep’s Dale Crover & Bubba DuPree Name 10 Essential 1970s Classic Rock Albums",
+        "summary": "Sleep’s와 관련된 주요 음악 업계 소식이 전해졌다. Sleep’s Dale Crover & Bubba DuPree Name 10 Essential 1970s C...",
+        "url": "https://consequence.net/2026/11/sleep-dale-crover-bubba-dupree-crate-digging-10-essential-1970s-classic-rock-albums/",
+        "published_date": "2026-11-20 15:55:49",
+        "category": "interview",
+        "source": "consequenceofsound.net"
+      },
+      {
+        "title": "Atlas Sound Returns With Surprise New Album ‘Thanatos,’ First LP in 15 Years",
+        "summary": "Atlas와 관련된 주요 음악 업계 소식이 전해졌다. Atlas Sound Returns With Surprise New Album ‘Thanatos,’ Firs...",
+        "url": "https://www.rollingstone.com/music/music-news/atlas-sound-bradford-cox-surprise-new-album-thanatos-1235661600/",
+        "published_date": "2026-11-20 15:53:45",
+        "category": "interview",
+        "source": "www.rollingstone.com"
+      },
+      {
+        "title": "Lana Del Rey’s “Crazy for You” Gets Official Release for GTA VI",
+        "summary": "Lana와 관련된 주요 음악 업계 소식이 전해졌다. Lana Del Rey’s “Crazy for You” Gets Official Release for GTA...",
+        "url": "https://pitchfork.com/story/lana-del-reys-crazy-for-you-gets-official-release-for-gta-vi/",
+        "published_date": "2026-11-20 15:42:36",
+        "category": "interview",
+        "source": "pitchfork.com"
+      },
+      {
+        "title": "Mike D Delivers Lively Performance of Debut Solo Album at NPR’s Tiny Desk: Watch",
+        "summary": "Mike의 라이브 공연 관련 소식이 전해졌다. 콘서트 티켓과 일정 정보가 업데이트되었다.",
+        "url": "https://consequence.net/2026/11/mike-d-npr-tiny-desk-concert-thank-you/",
+        "published_date": "2026-11-20 15:37:39",
+        "category": "interview",
+        "source": "consequenceofsound.net"
+      },
+      {
+        "title": "Gates To Hell – “Rotting Heart”",
+        "summary": "Gates와 관련된 주요 음악 업계 소식이 전해졌다. Gates To Hell – “Rotting Heart”",
+        "url": "https://stereogum.com/2518847/gates-to-hell-rotting-heart/music/",
+        "published_date": "2026-11-20 15:35:39",
+        "category": "interview",
+        "source": "www.stereogum.com"
+      },
+      {
+        "title": "BST Hyde Park 2027: Billie Eilish announced as latest headliner",
+        "summary": "BST와 관련된 주요 음악 업계 소식이 전해졌다. BST Hyde Park 2027: Billie Eilish announced as latest headli...",
+        "url": "https://www.nme.com/news/music/bst-hyde-park-2027-billie-eilish-london-tour-headline-tickets-3976586",
+        "published_date": "2026-11-20 15:34:48",
+        "category": "interview",
+        "source": "www.nme.com"
+      },
+      {
+        "title": "Spanish Indie Rock Darlings Carolina Durante Return with First New Music in Two Years: Watch",
+        "summary": "Spanish와 관련된 주요 음악 업계 소식이 전해졌다. Spanish Indie Rock Darlings Carolina Durante Return with Fir...",
+        "url": "https://consequence.net/2026/11/spanish-indie-carolina-durante-new-music/",
+        "published_date": "2026-11-20 15:24:45",
+        "category": "interview",
+        "source": "consequenceofsound.net"
+      },
+      {
+        "title": "Madra Salach – “Searrach”",
+        "summary": "Madra와 관련된 주요 음악 업계 소식이 전해졌다. Madra Salach – “Searrach”",
+        "url": "https://stereogum.com/2518845/madra-salach-searrach/news/",
+        "published_date": "2026-11-20 15:23:46",
+        "category": "interview",
+        "source": "www.stereogum.com"
+      },
+      {
+        "title": "Guns N’ Roses’ Duff McKagan and Gibson Launch Search for His First Bass Guitar",
+        "summary": "Guns와 관련된 주요 음악 업계 소식이 전해졌다. Guns N’ Roses’ Duff McKagan and Gibson Launch Search for His...",
+        "url": "https://consequence.net/2026/11/guns-n-roses-duff-mckagan-gibson-search-bass-guitar/",
+        "published_date": "2026-11-20 15:23:26",
+        "category": "interview",
+        "source": "consequenceofsound.net"
+      },
+      {
+        "title": "Duetti raises $665M, Warner posts a record $2B quarter… It’s MBW’s Weekly Round-Up",
+        "summary": "Duetti와 관련된 주요 음악 업계 소식이 전해졌다. Duetti raises $665M, Warner posts a record $2B quarter… It’s...",
+        "url": "https://www.musicbusinessworldwide.com/duetti-raises-665m-warner-posts-a-record-2b-quarter-its-mbws-weekly-round-up/",
+        "published_date": "2026-11-20 15:19:41",
+        "category": "interview",
+        "source": "www.musicbusinessworldwide.com"
+      },
+      {
+        "title": "Atlas Sound Releases New Album Thanatos: Stream",
+        "summary": "Atlas가 새 앨범을 발매했다. 이번 릴리스는 아티스트의 대표작이 될 것으로 기대된다.",
+        "url": "https://consequence.net/2026/11/atlas-sound-new-album-thanatos-stream/",
+        "published_date": "2026-11-20 15:10:20",
+        "category": "interview",
+        "source": "consequenceofsound.net"
+      },
+      {
+        "title": "Tems – “African Love Story”",
+        "summary": "Tems와 관련된 주요 음악 업계 소식이 전해졌다. Tems – “African Love Story”",
+        "url": "https://stereogum.com/2518836/tems-african-love-story/music/",
+        "published_date": "2026-11-20 15:04:51",
+        "category": "interview",
+        "source": "www.stereogum.com"
+      },
+      {
+        "title": "Pophouse appoints Oak View Group’s Kristina Heney and Netflix’s Greg Lombardo as Presidents",
+        "summary": "Pophouse와 관련된 주요 음악 업계 소식이 전해졌다. Pophouse appoints Oak View Group’s Kristina Heney and Netfli...",
+        "url": "https://www.musicbusinessworldwide.com/pophouse-appoints-oak-view-groups-kristina-heney-and-netflixs-greg-lombardo-as-presidents/",
+        "published_date": "2026-11-20 15:03:53",
+        "category": "interview",
+        "source": "www.musicbusinessworldwide.com"
+      },
+      {
+        "title": "NetEase Cloud Music’s Q3 revenues fell 0.9% YoY to $290m – after subscription revenues grew 5.3% in H1",
+        "summary": "NetEase와 관련된 주요 음악 업계 소식이 전해졌다. NetEase Cloud Music’s Q3 revenues fell 0.9% YoY to $290m – a...",
+        "url": "https://www.musicbusinessworldwide.com/netease-cloud-musics-q3-revenues-fell-0-9-yoy-to-290m-after-subscription-revenues-grew-5-3-in-h1/",
+        "published_date": "2026-11-20 15:03:12",
+        "category": "interview",
+        "source": "www.musicbusinessworldwide.com"
+      },
+      {
+        "title": "Øya Festival 2027: The Strokes, Robyn, Angine de Poitrine, Pavement, Slayyyter lead first names on line-up",
+        "summary": "Øya와 관련된 주요 음악 업계 소식이 전해졌다. Øya Festival 2027: The Strokes, Robyn, Angine de Poitrine, P...",
+        "url": "https://www.nme.com/news/music/oya-festival-2027-the-strokes-robyn-angine-de-poitrine-pavement-slayyyter-lead-first-names-on-line-up-3976574",
+        "published_date": "2026-11-20 14:59:44",
+        "category": "interview",
+        "source": "www.nme.com"
+      },
+      {
+        "title": "Ovven – “Outside”",
+        "summary": "Ovven와 관련된 주요 음악 업계 소식이 전해졌다. Ovven – “Outside”",
+        "url": "https://stereogum.com/2518839/ovven-outside/music/",
+        "published_date": "2026-11-20 14:56:17",
+        "category": "interview",
+        "source": "www.stereogum.com"
+      },
+      {
+        "title": "5 New Albums You Should Listen to Now: Atlas Sound, Toro y Moi, and More",
+        "summary": "5와 관련된 주요 음악 업계 소식이 전해졌다. 5 New Albums You Should Listen to Now: Atlas Sound, Toro y M...",
+        "url": "https://pitchfork.com/story/5-new-albums-you-should-listen-to-now-atlas-sound-toro-y-moi-and-more/",
+        "published_date": "2026-11-20 14:53:41",
+        "category": "interview",
+        "source": "pitchfork.com"
+      },
+      {
+        "title": "Panchiko – “Day One” (Feat. billy woods & Cotillon)",
+        "summary": "Panchiko의 새로운 협업 프로젝트 소식이 공개되었다. 음악 팬들의 기대감이 높아지고 있다.",
+        "url": "https://stereogum.com/2518819/panchiko-day-one-feat-billy-woods-cotillon/music/",
+        "published_date": "2026-11-20 14:23:54",
+        "category": "interview",
+        "source": "www.stereogum.com"
+      }
+    ],
+    "insight": []
+  },
+  "summary": {
+    "total_count": 50,
+    "by_category": {
+      "interview": 50
+    },
+    "by_source": {
+      "consequenceofsound.net": 15,
+      "www.billboard.com": 10,
+      "www.stereogum.com": 8,
+      "www.rollingstone.com": 6,
+      "www.nme.com": 4,
+      "www.musicbusinessworldwide.com": 4,
+      "pitchfork.com": 3
+    },
+    "members_only_count": 0
+  }
+}
