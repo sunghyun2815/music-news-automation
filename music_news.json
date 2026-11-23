@@ -1,8 +1,8 @@
 {
   "metadata": {
-    "generated_at": "2026-11-22T07:42:20.036459",
+    "generated_at": "2026-11-23T08:31:38.831624",
     "total_news": 50,
-    "last_updated": "2026-11-22T07:42:20.036469",
+    "last_updated": "2026-11-23T08:31:38.831635",
     "version": "2.0",
     "compatible_with": "NewsSection.tsx"
   },
@@ -11,68 +11,204 @@
     "news": [],
     "interview": [
       {
-        "title": "Britney Spears Apologizes to Her Family on Instagram: ‘I Just Miss Them Like Crazy’",
-        "summary": "Britney와 관련된 주요 음악 업계 소식이 전해졌다. Britney Spears Apologizes to Her Family on Instagram: ‘I Jus...",
-        "url": "https://www.billboard.com/music/pop/britney-spears-instagram-apology-family-1236387442/",
-        "published_date": "2026-11-22 07:03:05",
+        "title": "Don Toliver’s Manchester Show Evacuated After ‘Unknown Substance’ Released in Crowd",
+        "summary": "Don의 라이브 공연 관련 소식이 전해졌다. 콘서트 티켓과 일정 정보가 업데이트되었다.",
+        "url": "https://www.rollingstone.com/music/music-news/don-toliver-manchester-show-evacuation-unknown-substance-1235662518/",
+        "published_date": "2026-11-23 08:09:24",
+        "category": "interview",
+        "source": "www.rollingstone.com"
+      },
+      {
+        "title": "Molly Meldrum to Receive State Funeral as Kylie Minogue, Jimmy Barnes Lead Tributes",
+        "summary": "Molly와 관련된 주요 음악 업계 소식이 전해졌다. Molly Meldrum to Receive State Funeral as Kylie Minogue, Jim...",
+        "url": "https://www.billboard.com/music/music-news/molly-meldrum-state-funeral-tributes-kylie-minogue-jimmy-barnes-1236387665/",
+        "published_date": "2026-11-23 06:55:52",
         "category": "interview",
         "source": "www.billboard.com"
       },
       {
-        "title": "Miley Cyrus Marries Maxx Morando in Poolside Ceremony Led by the Flaming Lips’ Wayne Coyne",
-        "summary": "Miley와 관련된 주요 음악 업계 소식이 전해졌다. Miley Cyrus Marries Maxx Morando in Poolside Ceremony Led by...",
-        "url": "https://www.billboard.com/music/pop/miley-cyrus-marries-maxx-morando-palm-springs-wedding-1236387428/",
-        "published_date": "2026-11-22 05:24:42",
+        "title": "Inside Stockholm’s Gasometer, Europe’s Most Ambitious New Music Venue: ‘This Will Create Waves Far Beyond Here’",
+        "summary": "Inside와 관련된 주요 음악 업계 소식이 전해졌다. Inside Stockholm’s Gasometer, Europe’s Most Ambitious New Mu...",
+        "url": "https://www.billboard.com/pro/stockholm-gasometer-music-venue-europe/",
+        "published_date": "2026-11-23 06:00:00",
         "category": "interview",
         "source": "www.billboard.com"
       },
       {
-        "title": "CORTIS’ Martin Calls Panic “Legends” After Their “Left-Handed” Performance | MAMA Awards 2026",
-        "summary": "CORTIS’와 관련된 주요 음악 업계 소식이 전해졌다. CORTIS’ Martin Calls Panic “Legends” After Their “Left-Hande...",
-        "url": "https://www.billboard.com/video/cortis-martin-calls-panic-legends-after-left-handed-performance-mama-awards-2026/",
-        "published_date": "2026-11-22 00:36:18",
+        "title": "Nirosta Steel Shares Alternate Versions of My Skyscraper Tracks",
+        "summary": "Nirosta와 관련된 주요 음악 업계 소식이 전해졌다. Nirosta Steel Shares Alternate Versions of My Skyscraper Tra...",
+        "url": "https://pitchfork.com/story/nirosta-steel-shares-alternate-versions-of-my-skyscraper-tracks/",
+        "published_date": "2026-11-23 05:03:35",
+        "category": "interview",
+        "source": "pitchfork.com"
+      },
+      {
+        "title": "Don Toliver’s Manchester Show Evacuated After Suspected Tear Gas Incident",
+        "summary": "Don의 라이브 공연 관련 소식이 전해졌다. 콘서트 티켓과 일정 정보가 업데이트되었다.",
+        "url": "https://stereogum.com/2519772/don-tolivers-manchester-show-evacuated-after-suspected-tear-gas-incident/news/",
+        "published_date": "2026-11-23 04:59:00",
+        "category": "interview",
+        "source": "www.stereogum.com"
+      },
+      {
+        "title": "Watch Olivia Rodrigo Cover ‘Dead Leaves and the Dirty Ground’ at Jack White’s Blue Room",
+        "summary": "Watch와 관련된 주요 음악 업계 소식이 전해졌다. Watch Olivia Rodrigo Cover ‘Dead Leaves and the Dirty Ground...",
+        "url": "https://www.rollingstone.com/music/music-news/olivia-rodrigo-dead-leaves-and-the-dirty-ground-cover-live-1235662456/",
+        "published_date": "2026-11-23 03:35:49",
+        "category": "interview",
+        "source": "www.rollingstone.com"
+      },
+      {
+        "title": "Molly Meldrum, Australian Music Broadcaster and ‘Countdown’ Host, Dies at 83",
+        "summary": "Molly와 관련된 주요 음악 업계 소식이 전해졌다. Molly Meldrum, Australian Music Broadcaster and ‘Countdown’ ...",
+        "url": "https://www.billboard.com/music/music-news/molly-meldrum-countdown-host-dies-83-1236387631/",
+        "published_date": "2026-11-23 00:30:36",
         "category": "interview",
         "source": "www.billboard.com"
       },
       {
-        "title": "LE SSERAFIM On Teaming Up With KATSEYE & ILLIT For “ICONIC BY MISTAKE” | MAMA Awards 2026",
-        "summary": "LE와 관련된 주요 음악 업계 소식이 전해졌다. LE SSERAFIM On Teaming Up With KATSEYE & ILLIT For “ICONIC B...",
-        "url": "https://www.billboard.com/video/le-sserafim-on-teaming-up-with-katseye-illit-iconic-by-mistake-mama-awards-2026/",
-        "published_date": "2026-11-22 00:22:54",
+        "title": "Fans Choose LISA’s ‘Leave With Me’ as This Week’s Favorite New Music",
+        "summary": "Fans와 관련된 주요 음악 업계 소식이 전해졌다. Fans Choose LISA’s ‘Leave With Me’ as This Week’s Favorite N...",
+        "url": "https://www.billboard.com/music/music-news/lisa-leave-with-me-best-new-music-poll-results-1236387524/",
+        "published_date": "2026-11-22 23:18:25",
         "category": "interview",
         "source": "www.billboard.com"
       },
       {
-        "title": "Gorillaz, CHVRCHES, Yung Lean & More: 5 Best Moments in Mexico City’s Corona Capital (Day 1)",
-        "summary": "Gorillaz,와 관련된 주요 음악 업계 소식이 전해졌다. Gorillaz, CHVRCHES, Yung Lean & More: 5 Best Moments in Mexi...",
-        "url": "https://www.billboard.com/lists/corona-capital-mexico-day-1-gorillaz-chvrches-yung-lean/",
-        "published_date": "2026-11-21 22:00:03",
+        "title": "NFL Mexico City Game Halftime Show 2026: Here’s Where to Watch The Warning Perform Live Online Free",
+        "summary": "NFL의 라이브 공연 관련 소식이 전해졌다. 콘서트 티켓과 일정 정보가 업데이트되었다.",
+        "url": "https://www.billboard.com/culture/product-recommendations/nfl-mexico-city-game-the-warning-halftime-watch-live-free-1236385357/",
+        "published_date": "2026-11-22 22:20:00",
         "category": "interview",
         "source": "www.billboard.com"
       },
       {
-        "title": "Gorillaz Celebrate Mexico’s ‘Revolutionary Spirit’ at Corona Capital, Bring Out Johnny Marr and Trueno",
-        "summary": "Gorillaz와 관련된 주요 음악 업계 소식이 전해졌다. Gorillaz Celebrate Mexico’s ‘Revolutionary Spirit’ at Corona...",
-        "url": "https://www.billboard.com/music/latin/gorillaz-corona-capital-festival-2026-mexico-city-recap-1236387340/",
-        "published_date": "2026-11-21 18:46:58",
+        "title": "Morgan Wallen, Garth Brooks, Taylor Swift & More Artists With Most Weeks at No. 1 on Top Country Albums Chart: Full List",
+        "summary": "Morgan가 음악 차트에서 주목할 만한 성과를 기록했다. 상업적 성공을 입증하는 결과다.",
+        "url": "https://www.billboard.com/lists/top-country-albums-number-ones-biggest/",
+        "published_date": "2026-11-22 22:01:27",
         "category": "interview",
         "source": "www.billboard.com"
       },
       {
-        "title": "BTS, ENHYPEN, BIGBANG & CORTIS Are Big Winners of 2026 MAMA Awards",
-        "summary": "BTS,와 관련된 주요 음악 업계 소식이 전해졌다. BTS, ENHYPEN, BIGBANG & CORTIS Are Big Winners of 2026 MAMA ...",
-        "url": "https://www.billboard.com/music/awards/2026-mama-awards-winners-list-1236387006/",
-        "published_date": "2026-11-21 18:31:43",
+        "title": "Twenty One Pilots, The Offspring, Peaches & More: 5 Best Moments in Mexico City’s Corona Capital (Day 2)",
+        "summary": "Twenty와 관련된 주요 음악 업계 소식이 전해졌다. Twenty One Pilots, The Offspring, Peaches & More: 5 Best Mom...",
+        "url": "https://www.billboard.com/lists/corona-capital-2026-day-2-twenty-one-pilots-offspring/",
+        "published_date": "2026-11-22 21:58:31",
         "category": "interview",
         "source": "www.billboard.com"
       },
       {
-        "title": "Ariana Grande Recalls ‘Wildest Place’ She’s Heard Her Music Playing: ‘Getting a Bikini Wax’",
-        "summary": "Ariana와 관련된 주요 음악 업계 소식이 전해졌다. Ariana Grande Recalls ‘Wildest Place’ She’s Heard Her Music ...",
-        "url": "https://www.billboard.com/music/pop/ariana-grande-bikini-wax-song-story-focker-in-law-interview-1236387309/",
-        "published_date": "2026-11-21 17:31:31",
+        "title": "ATEEZ Earn Fourth No. 1 on Billboard 200 With ‘GOLDEN HOUR : Part.6’",
+        "summary": "ATEEZ와 관련된 주요 음악 업계 소식이 전해졌다. ATEEZ Earn Fourth No. 1 on Billboard 200 With ‘GOLDEN HOUR :...",
+        "url": "https://www.billboard.com/music/chart-beat/ateez-golden-hour-part6-no1-billboard-200-chart-1236387535/",
+        "published_date": "2026-11-22 21:40:27",
         "category": "interview",
         "source": "www.billboard.com"
+      },
+      {
+        "title": "Miley Cyrus & Maxx Morando’s Wedding Photos Are Here",
+        "summary": "Miley와 관련된 주요 음악 업계 소식이 전해졌다. Miley Cyrus & Maxx Morando’s Wedding Photos Are Here",
+        "url": "https://www.billboard.com/culture/lifestyle/miley-cyrus-wedding-photos-maxx-morando-1236387483/",
+        "published_date": "2026-11-22 19:57:07",
+        "category": "interview",
+        "source": "www.billboard.com"
+      },
+      {
+        "title": "Selena Gomez Helps Couple With Baby’s Sex Reveal at Spurs Game, ‘With No Hesitation’",
+        "summary": "Selena와 관련된 주요 음악 업계 소식이 전해졌다. Selena Gomez Helps Couple With Baby’s Sex Reveal at Spurs Ga...",
+        "url": "https://www.billboard.com/music/pop/selena-gomez-baby-gender-reveal-spurs-game-couple-1236387456/",
+        "published_date": "2026-11-22 18:15:39",
+        "category": "interview",
+        "source": "www.billboard.com"
+      },
+      {
+        "title": "Wayne Coyne Officiates Miley Cyrus’ Wedding",
+        "summary": "Wayne와 관련된 주요 음악 업계 소식이 전해졌다. Wayne Coyne Officiates Miley Cyrus’ Wedding",
+        "url": "https://consequence.net/2026/11/wayne-coyne-officiates-miley-cyrus-wedding/",
+        "published_date": "2026-11-22 16:46:30",
+        "category": "interview",
+        "source": "consequenceofsound.net"
+      },
+      {
+        "title": "Georgia Maq Shares New Single, Wins Nathan Fielder Lookalike Contest",
+        "summary": "Georgia와 관련된 주요 음악 업계 소식이 전해졌다. Georgia Maq Shares New Single, Wins Nathan Fielder Lookalike...",
+        "url": "https://stereogum.com/2519654/georgia-maq-shares-new-single-wins-nathan-fielder-lookalike-contest/news/",
+        "published_date": "2026-11-22 16:36:13",
+        "category": "interview",
+        "source": "www.stereogum.com"
+      },
+      {
+        "title": "Cherry Blossom Festivalgoers Throw Beer At Swae Lee, T-Shirt At Khalid",
+        "summary": "Cherry와 관련된 주요 음악 업계 소식이 전해졌다. Cherry Blossom Festivalgoers Throw Beer At Swae Lee, T-Shirt...",
+        "url": "https://stereogum.com/2519645/cherry-blossom-festivalgoers-throw-beer-at-swae-lee-t-shirt-at-khalid/news/",
+        "published_date": "2026-11-22 15:57:03",
+        "category": "interview",
+        "source": "www.stereogum.com"
+      },
+      {
+        "title": "Boy George on His Israel Trip: ‘I Wasn’t Able to Not Say Something’",
+        "summary": "Boy와 관련된 주요 음악 업계 소식이 전해졌다. Boy George on His Israel Trip: ‘I Wasn’t Able to Not Say Som...",
+        "url": "https://www.rollingstone.com/music/music-news/boy-george-israel-trip-we-will-dance-again-interview-1235662143/",
+        "published_date": "2026-11-22 15:28:36",
+        "category": "interview",
+        "source": "www.rollingstone.com"
+      },
+      {
+        "title": "Muse’s Matt Bellamy Wants an AI Guitar",
+        "summary": "Muse’s와 관련된 주요 음악 업계 소식이 전해졌다. Muse’s Matt Bellamy Wants an AI Guitar",
+        "url": "https://consequence.net/2026/11/muse-matt-bellamy-ai-guitar/",
+        "published_date": "2026-11-22 15:17:36",
+        "category": "interview",
+        "source": "consequenceofsound.net"
+      },
+      {
+        "title": "OsamaSon’s DJ Apologizes For Causing Crowd Crush At Terminal 5",
+        "summary": "OsamaSon’s와 관련된 주요 음악 업계 소식이 전해졌다. OsamaSon’s DJ Apologizes For Causing Crowd Crush At Terminal...",
+        "url": "https://stereogum.com/2519640/osamasons-dj-apologizes-for-causing-crowd-crush-at-terminal-5/news/",
+        "published_date": "2026-11-22 15:10:30",
+        "category": "interview",
+        "source": "www.stereogum.com"
+      },
+      {
+        "title": "Wayne Coyne Officiates Miley Cyrus & Maxx Morando’s Wedding",
+        "summary": "Wayne와 관련된 주요 음악 업계 소식이 전해졌다. Wayne Coyne Officiates Miley Cyrus & Maxx Morando’s Wedding",
+        "url": "https://stereogum.com/2519632/wayne-coyne-officiates-miley-cyrus-maxx-morandos-wedding/news/",
+        "published_date": "2026-11-22 14:32:29",
+        "category": "interview",
+        "source": "www.stereogum.com"
+      },
+      {
+        "title": "Miley Cyrus and Maxx Morando Marry at Palm Springs Wedding",
+        "summary": "Miley와 관련된 주요 음악 업계 소식이 전해졌다. Miley Cyrus and Maxx Morando Marry at Palm Springs Wedding",
+        "url": "https://www.rollingstone.com/music/music-news/miley-cyrus-maxx-morando-married-springs-wedding-1235662077/",
+        "published_date": "2026-11-22 13:15:09",
+        "category": "interview",
+        "source": "www.rollingstone.com"
+      },
+      {
+        "title": "Kelly Lee Owens announces two-day music festival in Wales to celebrate grassroots venues as part of Hometown Meltdown",
+        "summary": "Kelly Lee가 중요한 음악 관련 발표를 했다. 이번 소식은 팬들과 업계 관계자들의 주목을 받고 있다.",
+        "url": "https://www.nme.com/news/music/kelly-lee-owens-music-festival-wales-grassroots-venues-hometown-meltdown-3976656",
+        "published_date": "2026-11-22 11:38:10",
+        "category": "interview",
+        "source": "www.nme.com"
+      },
+      {
+        "title": "Maruja thank fans for supporting them through burnout after “beautiful and brutal year” with new live album ‘The Holy Inadequate’ and Ritual Union headline set",
+        "summary": "Maruja의 라이브 공연 관련 소식이 전해졌다. 콘서트 티켓과 일정 정보가 업데이트되었다.",
+        "url": "https://www.nme.com/news/music/maruja-thank-fans-burnout-live-album-holy-inadequate-ritual-union-headline-3976651",
+        "published_date": "2026-11-22 10:41:59",
+        "category": "interview",
+        "source": "www.nme.com"
+      },
+      {
+        "title": "Life Without Buildings reunite after 24 years and make hometown live return in Glasgow",
+        "summary": "Life의 라이브 공연 관련 소식이 전해졌다. 콘서트 티켓과 일정 정보가 업데이트되었다.",
+        "url": "https://www.nme.com/news/music/life-without-buildings-reunite-24-years-hometown-glasgow-setlist-footage-3976648",
+        "published_date": "2026-11-22 09:27:17",
+        "category": "interview",
+        "source": "www.nme.com"
       },
       {
         "title": "Promoter Behind Troubled Furnace Fest And Rock The Country Shuts Down",
@@ -81,22 +217,6 @@
         "published_date": "2026-11-21 16:10:07",
         "category": "interview",
         "source": "www.stereogum.com"
-      },
-      {
-        "title": "ILLIT Talk Creating “ICONIC BY MISTAKE” With LE SSERAFIM and KATSEYE | MAMA Awards 2026",
-        "summary": "ILLIT와 관련된 주요 음악 업계 소식이 전해졌다. ILLIT Talk Creating “ICONIC BY MISTAKE” With LE SSERAFIM and...",
-        "url": "https://www.billboard.com/video/illit-on-creating-icon-by-mistake-with-le-sserafim-and-katseye-mama-awards-2026/",
-        "published_date": "2026-11-21 15:28:11",
-        "category": "interview",
-        "source": "www.billboard.com"
-      },
-      {
-        "title": "Feid, Anthony Ramos & More to Join 100th Macy’s Thanksgiving Day Parade & More Uplifting Moments in Latin Music",
-        "summary": "Feid,와 관련된 주요 음악 업계 소식이 전해졌다. Feid, Anthony Ramos & More to Join 100th Macy’s Thanksgiving...",
-        "url": "https://www.billboard.com/music/latin/feid-macys-thanksgiving-day-parade-100th-edition-uplifting-1236386980/",
-        "published_date": "2026-11-21 15:00:00",
-        "category": "interview",
-        "source": "www.billboard.com"
       },
       {
         "title": "MGMT Pay Tribute To Late Video Director Ray Tintori",
@@ -289,126 +409,6 @@
         "published_date": "2026-11-20 16:57:17",
         "category": "interview",
         "source": "www.musicbusinessworldwide.com"
-      },
-      {
-        "title": "Stone Sour Unveil Previously Unreleased Song “Full of Empty”: Stream",
-        "summary": "Stone Sour가 새로운 싱글을 발표했다. 새 곡은 아티스트의 음악적 진화를 보여주는 작품으로 평가받고 있다.",
-        "url": "https://consequence.net/2026/11/stone-sour-full-of-empty/",
-        "published_date": "2026-11-20 16:39:03",
-        "category": "interview",
-        "source": "consequenceofsound.net"
-      },
-      {
-        "title": "Liam Gallagher, Bonehead and Primal Scream lead tributes on one year anniversary of Mani’s death",
-        "summary": "Liam와 관련된 주요 음악 업계 소식이 전해졌다. Liam Gallagher, Bonehead and Primal Scream lead tributes on ...",
-        "url": "https://www.nme.com/news/music/liam-gallagher-bonehead-and-primal-scream-lead-tributes-on-one-year-anniversary-of-manis-death-3976584",
-        "published_date": "2026-11-20 16:31:16",
-        "category": "interview",
-        "source": "www.nme.com"
-      },
-      {
-        "title": "Blondie Reveal Tender New Song “Come Back Home”: Stream",
-        "summary": "Blondie와 관련된 주요 음악 업계 소식이 전해졌다. Blondie Reveal Tender New Song “Come Back Home”: Stream",
-        "url": "https://consequence.net/2026/11/blondie-come-back-home-new-song-stream/",
-        "published_date": "2026-11-20 16:15:14",
-        "category": "interview",
-        "source": "consequenceofsound.net"
-      },
-      {
-        "title": "Tom Waits’ Rare ‘Orphans: Bonus’ EP, Previously Vinyl-Only, Now Streaming",
-        "summary": "Tom Waits’가 새 앨범 발매 소식을 공개했다. 이번 릴리스는 팬들과 음악 업계의 큰 관심을 받고 있다.",
-        "url": "https://www.rollingstone.com/music/music-news/tom-waits-orphans-bonus-streaming-services-1235661577/",
-        "published_date": "2026-11-20 16:09:45",
-        "category": "interview",
-        "source": "www.rollingstone.com"
-      },
-      {
-        "title": "Sleep’s Dale Crover & Bubba DuPree Name 10 Essential 1970s Classic Rock Albums",
-        "summary": "Sleep’s와 관련된 주요 음악 업계 소식이 전해졌다. Sleep’s Dale Crover & Bubba DuPree Name 10 Essential 1970s C...",
-        "url": "https://consequence.net/2026/11/sleep-dale-crover-bubba-dupree-crate-digging-10-essential-1970s-classic-rock-albums/",
-        "published_date": "2026-11-20 15:55:49",
-        "category": "interview",
-        "source": "consequenceofsound.net"
-      },
-      {
-        "title": "Atlas Sound Returns With Surprise New Album ‘Thanatos,’ First LP in 15 Years",
-        "summary": "Atlas와 관련된 주요 음악 업계 소식이 전해졌다. Atlas Sound Returns With Surprise New Album ‘Thanatos,’ Firs...",
-        "url": "https://www.rollingstone.com/music/music-news/atlas-sound-bradford-cox-surprise-new-album-thanatos-1235661600/",
-        "published_date": "2026-11-20 15:53:45",
-        "category": "interview",
-        "source": "www.rollingstone.com"
-      },
-      {
-        "title": "Lana Del Rey’s “Crazy for You” Gets Official Release for GTA VI",
-        "summary": "Lana와 관련된 주요 음악 업계 소식이 전해졌다. Lana Del Rey’s “Crazy for You” Gets Official Release for GTA...",
-        "url": "https://pitchfork.com/story/lana-del-reys-crazy-for-you-gets-official-release-for-gta-vi/",
-        "published_date": "2026-11-20 15:42:36",
-        "category": "interview",
-        "source": "pitchfork.com"
-      },
-      {
-        "title": "Mike D Delivers Lively Performance of Debut Solo Album at NPR’s Tiny Desk: Watch",
-        "summary": "Mike의 라이브 공연 관련 소식이 전해졌다. 콘서트 티켓과 일정 정보가 업데이트되었다.",
-        "url": "https://consequence.net/2026/11/mike-d-npr-tiny-desk-concert-thank-you/",
-        "published_date": "2026-11-20 15:37:39",
-        "category": "interview",
-        "source": "consequenceofsound.net"
-      },
-      {
-        "title": "Gates To Hell – “Rotting Heart”",
-        "summary": "Gates와 관련된 주요 음악 업계 소식이 전해졌다. Gates To Hell – “Rotting Heart”",
-        "url": "https://stereogum.com/2518847/gates-to-hell-rotting-heart/music/",
-        "published_date": "2026-11-20 15:35:39",
-        "category": "interview",
-        "source": "www.stereogum.com"
-      },
-      {
-        "title": "BST Hyde Park 2027: Billie Eilish announced as latest headliner",
-        "summary": "BST와 관련된 주요 음악 업계 소식이 전해졌다. BST Hyde Park 2027: Billie Eilish announced as latest headli...",
-        "url": "https://www.nme.com/news/music/bst-hyde-park-2027-billie-eilish-london-tour-headline-tickets-3976586",
-        "published_date": "2026-11-20 15:34:48",
-        "category": "interview",
-        "source": "www.nme.com"
-      },
-      {
-        "title": "Spanish Indie Rock Darlings Carolina Durante Return with First New Music in Two Years: Watch",
-        "summary": "Spanish와 관련된 주요 음악 업계 소식이 전해졌다. Spanish Indie Rock Darlings Carolina Durante Return with Fir...",
-        "url": "https://consequence.net/2026/11/spanish-indie-carolina-durante-new-music/",
-        "published_date": "2026-11-20 15:24:45",
-        "category": "interview",
-        "source": "consequenceofsound.net"
-      },
-      {
-        "title": "Madra Salach – “Searrach”",
-        "summary": "Madra와 관련된 주요 음악 업계 소식이 전해졌다. Madra Salach – “Searrach”",
-        "url": "https://stereogum.com/2518845/madra-salach-searrach/news/",
-        "published_date": "2026-11-20 15:23:46",
-        "category": "interview",
-        "source": "www.stereogum.com"
-      },
-      {
-        "title": "Guns N’ Roses’ Duff McKagan and Gibson Launch Search for His First Bass Guitar",
-        "summary": "Guns와 관련된 주요 음악 업계 소식이 전해졌다. Guns N’ Roses’ Duff McKagan and Gibson Launch Search for His...",
-        "url": "https://consequence.net/2026/11/guns-n-roses-duff-mckagan-gibson-search-bass-guitar/",
-        "published_date": "2026-11-20 15:23:26",
-        "category": "interview",
-        "source": "consequenceofsound.net"
-      },
-      {
-        "title": "Duetti raises $665M, Warner posts a record $2B quarter… It’s MBW’s Weekly Round-Up",
-        "summary": "Duetti와 관련된 주요 음악 업계 소식이 전해졌다. Duetti raises $665M, Warner posts a record $2B quarter… It’s...",
-        "url": "https://www.musicbusinessworldwide.com/duetti-raises-665m-warner-posts-a-record-2b-quarter-its-mbws-weekly-round-up/",
-        "published_date": "2026-11-20 15:19:41",
-        "category": "interview",
-        "source": "www.musicbusinessworldwide.com"
-      },
-      {
-        "title": "Atlas Sound Releases New Album Thanatos: Stream",
-        "summary": "Atlas가 새 앨범을 발매했다. 이번 릴리스는 아티스트의 대표작이 될 것으로 기대된다.",
-        "url": "https://consequence.net/2026/11/atlas-sound-new-album-thanatos-stream/",
-        "published_date": "2026-11-20 15:10:20",
-        "category": "interview",
-        "source": "consequenceofsound.net"
       }
     ],
     "insight": []
@@ -419,13 +419,13 @@
       "interview": 50
     },
     "by_source": {
-      "consequenceofsound.net": 15,
+      "www.stereogum.com": 11,
       "www.billboard.com": 10,
-      "www.stereogum.com": 8,
-      "www.nme.com": 7,
-      "www.rollingstone.com": 6,
+      "consequenceofsound.net": 10,
+      "www.rollingstone.com": 8,
+      "www.nme.com": 8,
       "pitchfork.com": 2,
-      "www.musicbusinessworldwide.com": 2
+      "www.musicbusinessworldwide.com": 1
     },
     "members_only_count": 0
   }
