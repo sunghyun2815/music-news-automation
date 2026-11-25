@@ -1,0 +1,432 @@
+{
+  "metadata": {
+    "generated_at": "2026-11-25T09:28:25.022781",
+    "total_news": 50,
+    "last_updated": "2026-11-25T09:28:25.022788",
+    "version": "2.0",
+    "compatible_with": "NewsSection.tsx"
+  },
+  "news": {
+    "all_articles": [],
+    "news": [],
+    "interview": [
+      {
+        "title": "2 Chainz Shares Health Update After Cybertruck Crash, Reveals He Suffered Broken Ribs",
+        "summary": "2가 중요한 음악 관련 발표를 했다. 이번 소식은 팬들의 주목을 받고 있다.",
+        "url": "https://www.billboard.com/music/rb-hip-hop/2-chainz-car-crash-broken-ribs-1236389102/",
+        "published_date": "2026-11-25 07:49:20",
+        "category": "interview",
+        "source": "www.billboard.com"
+      },
+      {
+        "title": "‘Dancing With the Stars’ Crowns Season 35 Champion",
+        "summary": "‘Dancing와 관련된 주요 음악 업계 소식이 전해졌다. ‘Dancing With the Stars’ Crowns Season 35 Champion",
+        "url": "https://www.billboard.com/music/awards/dancing-with-the-stars-season-35-champion-1236389354/",
+        "published_date": "2026-11-25 05:32:04",
+        "category": "interview",
+        "source": "www.billboard.com"
+      },
+      {
+        "title": "‘A True Giant of the Music Industry’: King Charles Remembers Ian ‘Molly’ Meldrum And Their Infamous Interview",
+        "summary": "‘A와 관련된 주요 음악 업계 소식이 전해졌다. ‘A True Giant of the Music Industry’: King Charles Remembers...",
+        "url": "https://www.billboard.com/music/music-news/king-charles-remembers-ian-molly-meldrum-1236389344/",
+        "published_date": "2026-11-25 04:55:12",
+        "category": "interview",
+        "source": "www.billboard.com"
+      },
+      {
+        "title": "6 New Holiday Pop Songs From Hilary Duff, Olivia Rodrigo, Elton John & More for Your Christmas Party Playlist",
+        "summary": "6와 관련된 주요 음악 업계 소식이 전해졌다. 6 New Holiday Pop Songs From Hilary Duff, Olivia Rodrigo, El...",
+        "url": "https://www.billboard.com/media/podcasts/holiday-pop-songs-hilary-duff-olivia-rodrigo-pop-shop-podcast-1236389093/",
+        "published_date": "2026-11-25 04:18:54",
+        "category": "interview",
+        "source": "www.billboard.com"
+      },
+      {
+        "title": "Matthew Capper, Late Music Publishing Exec, Honored With New Award",
+        "summary": "Matthew와 관련된 주요 음악 업계 소식이 전해졌다. Matthew Capper, Late Music Publishing Exec, Honored With New...",
+        "url": "https://www.billboard.com/pro/matthew-capper-honored-annual-award/",
+        "published_date": "2026-11-25 03:42:50",
+        "category": "interview",
+        "source": "www.billboard.com"
+      },
+      {
+        "title": "Brandi Carlile Says the ‘Horror’ of ICE Arrests at Seattle Airport ‘Cannot Be Overstated’",
+        "summary": "Brandi Carlile와 관련된 주요 음악 업계 소식이 전해졌다. Brandi Carlile Says the ‘Horror’ of ICE Arrests at Seattle A...",
+        "url": "https://www.rollingstone.com/music/music-news/brandi-carlile-ice-arrests-seattle-airport-action-1235664018/",
+        "published_date": "2026-11-25 01:13:18",
+        "category": "interview",
+        "source": "www.rollingstone.com"
+      },
+      {
+        "title": "Billboard’s Music Industry Events Calendar",
+        "summary": "Billboard’s와 관련된 주요 음악 업계 소식이 전해졌다. Billboard’s Music Industry Events Calendar",
+        "url": "https://www.billboard.com/pro/music-industry-events-calendar-festivals-awards-conferences/",
+        "published_date": "2026-11-25 00:46:00",
+        "category": "interview",
+        "source": "www.billboard.com"
+      },
+      {
+        "title": "Dolly Parton Estate Reveals Creative Team That Will ‘Preserve and Carry Forward’ Her Legacy",
+        "summary": "Dolly가 중요한 음악 관련 발표를 했다. 이번 소식은 팬들의 주목을 받고 있다.",
+        "url": "https://www.billboard.com/pro/dolly-parton-estate-creative-team-star-legacy/",
+        "published_date": "2026-11-25 00:30:06",
+        "category": "interview",
+        "source": "www.billboard.com"
+      },
+      {
+        "title": "Kodak Black Has Secret Radio Station in ‘Grand Theft Auto VI’: Here’s How to Unlock It",
+        "summary": "Kodak와 관련된 주요 음악 업계 소식이 전해졌다. Kodak Black Has Secret Radio Station in ‘Grand Theft Auto VI...",
+        "url": "https://www.billboard.com/music/rb-hip-hop/kodak-black-secret-radio-station-grand-theft-auto-vi-1236389147/",
+        "published_date": "2026-11-25 00:15:13",
+        "category": "interview",
+        "source": "www.billboard.com"
+      },
+      {
+        "title": "Chart Rewind: In 1956, ‘Blues’ Singer Marty Robbins Swept 3 Country Charts",
+        "summary": "Chart Rewind:가 새 앨범 발매 소식을 공개했다. 이번 릴리스는 팬들과 음악 업계의 큰 관심을 받고 있다.",
+        "url": "https://www.billboard.com/music/chart-beat/marty-robbins-singing-the-blues-chart-rewind-1956-1236389281/",
+        "published_date": "2026-11-25 00:10:29",
+        "category": "interview",
+        "source": "www.billboard.com"
+      },
+      {
+        "title": "E.D.I. Mean Says 2Pac Was Planning to Squash Beef With Biggie: ‘I’m Deading Everything’",
+        "summary": "E.D.I.와 관련된 주요 음악 업계 소식이 전해졌다. E.D.I. Mean Says 2Pac Was Planning to Squash Beef With Biggi...",
+        "url": "https://www.billboard.com/music/rb-hip-hop/e-d-i-mean-2pac-planning-squash-beef-with-biggie-1236389146/",
+        "published_date": "2026-11-24 23:14:24",
+        "category": "interview",
+        "source": "www.billboard.com"
+      },
+      {
+        "title": "Ninajirachi Drops I Love My Computer Remix Album",
+        "summary": "Ninajirachi가 새 앨범을 발매했다. 이번 릴리스는 아티스트의 대표작이 될 것으로 기대된다.",
+        "url": "https://pitchfork.com/story/ninajirachi-drops-i-love-my-computer-remix-album/",
+        "published_date": "2026-11-24 23:06:25",
+        "category": "interview",
+        "source": "pitchfork.com"
+      },
+      {
+        "title": "Pearl Jam Rage Against ‘Unconscionable’ ICE Arrests at Seattle Airport",
+        "summary": "Pearl와 관련된 주요 음악 업계 소식이 전해졌다. Pearl Jam Rage Against ‘Unconscionable’ ICE Arrests at Seatt...",
+        "url": "https://www.rollingstone.com/music/music-news/pearl-jam-seattle-airport-ice-arrests-1235663883/",
+        "published_date": "2026-11-24 22:38:06",
+        "category": "interview",
+        "source": "www.rollingstone.com"
+      },
+      {
+        "title": "Ninajirachi Throws a Party With All Her Friends on Surprise Remix Album",
+        "summary": "Ninajirachi Throws가 새 앨범 발매 소식을 공개했다. 이번 릴리스는 팬들과 음악 업계의 큰 관심을 받고 있다.",
+        "url": "https://www.rollingstone.com/music/music-news/ninajirachi-i-love-my-computer-remix-album-1235663118/",
+        "published_date": "2026-11-24 22:32:56",
+        "category": "interview",
+        "source": "www.rollingstone.com"
+      },
+      {
+        "title": "Cher’s Victory in Royalties War Under Fire as Mary Bono Pushes for Reversal",
+        "summary": "Cher’s와 관련된 주요 음악 업계 소식이 전해졌다. Cher’s Victory in Royalties War Under Fire as Mary Bono Push...",
+        "url": "https://www.rollingstone.com/music/music-news/cher-sonny-bono-mary-royalties-war-appeal-1235663741/",
+        "published_date": "2026-11-24 21:24:18",
+        "category": "interview",
+        "source": "www.rollingstone.com"
+      },
+      {
+        "title": "Tidal Is the First Streaming Service to Ban AI Music",
+        "summary": "Tidal와 관련된 주요 음악 업계 소식이 전해졌다. Tidal Is the First Streaming Service to Ban AI Music",
+        "url": "https://www.rollingstone.com/music/music-news/tidal-bans-ai-music-1235663794/",
+        "published_date": "2026-11-24 21:20:28",
+        "category": "interview",
+        "source": "www.rollingstone.com"
+      },
+      {
+        "title": "Pearl Jam Decry “Cold Cruelty” of ICE Detainment at Seattle Airport",
+        "summary": "Pearl와 관련된 주요 음악 업계 소식이 전해졌다. Pearl Jam Decry “Cold Cruelty” of ICE Detainment at Seattle ...",
+        "url": "https://consequence.net/2026/11/pearl-jam-speak-out-ice/",
+        "published_date": "2026-11-24 21:15:11",
+        "category": "interview",
+        "source": "consequenceofsound.net"
+      },
+      {
+        "title": "Bose QuietComfort Headphones Are Over Half Off at $167 for Black Friday",
+        "summary": "Bose와 관련된 주요 음악 업계 소식이 전해졌다. Bose QuietComfort Headphones Are Over Half Off at $167 for B...",
+        "url": "https://consequence.net/2026/11/bose-quietcomfort-headphones-black-friday-deal-2026/",
+        "published_date": "2026-11-24 20:30:56",
+        "category": "interview",
+        "source": "consequenceofsound.net"
+      },
+      {
+        "title": "United Talent Agency to move London businesses into new UK HQ",
+        "summary": "United와 관련된 주요 음악 업계 소식이 전해졌다. United Talent Agency to move London businesses into new UK H...",
+        "url": "https://www.musicbusinessworldwide.com/united-talent-agency-to-move-london-businesses-into-new-uk-hq/",
+        "published_date": "2026-11-24 19:59:20",
+        "category": "interview",
+        "source": "www.musicbusinessworldwide.com"
+      },
+      {
+        "title": "Stephanie Streeter appointed VP, Partnership Sales at AEG Global Partnerships and AXS",
+        "summary": "Stephanie와 관련된 주요 음악 업계 소식이 전해졌다. Stephanie Streeter appointed VP, Partnership Sales at AEG Gl...",
+        "url": "https://www.musicbusinessworldwide.com/stephanie-streeter-appointed-vp-partnership-sales-at-aeg-global-partnerships-and-axs/",
+        "published_date": "2026-11-24 19:39:59",
+        "category": "interview",
+        "source": "www.musicbusinessworldwide.com"
+      },
+      {
+        "title": "Black Friday Streaming Deals: HBO Max, Disney+/Hulu Bundle, Apple TV Starting at $4.99/Month",
+        "summary": "Black와 관련된 주요 음악 업계 소식이 전해졌다. Black Friday Streaming Deals: HBO Max, Disney+/Hulu Bundle, ...",
+        "url": "https://consequence.net/2026/11/best-black-friday-streaming-deals-2026/",
+        "published_date": "2026-11-24 19:37:28",
+        "category": "interview",
+        "source": "consequenceofsound.net"
+      },
+      {
+        "title": "Album Of The Week: Star’s Revenge Star’s Revenge II",
+        "summary": "Album와 관련된 주요 음악 업계 소식이 전해졌다. Album Of The Week: Star’s Revenge Star’s Revenge II",
+        "url": "https://stereogum.com/2520760/album-of-the-week-stars-revenge-stars-revenge-ii/reviews/album-of-the-week/",
+        "published_date": "2026-11-24 19:17:29",
+        "category": "interview",
+        "source": "www.stereogum.com"
+      },
+      {
+        "title": "Rafael Toral Announces New Album Long Ways",
+        "summary": "Rafael가 새 앨범 발매 소식을 공개했다. 팬들과 업계의 큰 관심을 받고 있다.",
+        "url": "https://stereogum.com/2521293/rafael-toral-announces-new-album-long-ways/music/",
+        "published_date": "2026-11-24 19:11:49",
+        "category": "interview",
+        "source": "www.stereogum.com"
+      },
+      {
+        "title": "Mastodon Announce Spring 2027 UK/European Tour",
+        "summary": "Mastodon의 라이브 공연 관련 소식이 전해졌다. 콘서트 티켓과 일정 정보가 업데이트되었다.",
+        "url": "https://consequence.net/2026/11/mastodon-spring-2027-eu-uk-tour/",
+        "published_date": "2026-11-24 19:02:22",
+        "category": "interview",
+        "source": "consequenceofsound.net"
+      },
+      {
+        "title": "Tidal Bans AI Songs",
+        "summary": "Tidal와 관련된 주요 음악 업계 소식이 전해졌다. Tidal Bans AI Songs",
+        "url": "https://pitchfork.com/story/tidal-bans-ai-songs/",
+        "published_date": "2026-11-24 18:25:59",
+        "category": "interview",
+        "source": "pitchfork.com"
+      },
+      {
+        "title": "Ariana Grande Doc to Show the Process Behind ‘Eternal Sunshine’ and ‘Petal’",
+        "summary": "Ariana와 관련된 주요 음악 업계 소식이 전해졌다. Ariana Grande Doc to Show the Process Behind ‘Eternal Sunshi...",
+        "url": "https://www.rollingstone.com/music/music-news/ariana-grande-eternal-sunshine-tour-doc-1235663582/",
+        "published_date": "2026-11-24 17:58:05",
+        "category": "interview",
+        "source": "www.rollingstone.com"
+      },
+      {
+        "title": "Nick Carter Loses Bid to Dismiss Sexual Battery Claim From Melissa Schuman",
+        "summary": "Nick와 관련된 주요 음악 업계 소식이 전해졌다. Nick Carter Loses Bid to Dismiss Sexual Battery Claim From M...",
+        "url": "https://www.rollingstone.com/music/music-news/nick-carter-backstreet-boys-melissa-schuman-claim-survives-1235663534/",
+        "published_date": "2026-11-24 17:53:26",
+        "category": "interview",
+        "source": "www.rollingstone.com"
+      },
+      {
+        "title": "Jorg Kuning Announces New Album Clun Pearls: Hear “Bitzer’s Cello”",
+        "summary": "Jorg가 새 앨범 발매 소식을 공개했다. 팬들과 업계의 큰 관심을 받고 있다.",
+        "url": "https://stereogum.com/2521283/jorg-kuning-announces-new-album-clun-pearls-hear-blitzers-cello/music/",
+        "published_date": "2026-11-24 17:48:50",
+        "category": "interview",
+        "source": "www.stereogum.com"
+      },
+      {
+        "title": "See Noah Kahan Captivate Audiences With Extended ‘Orbiter’",
+        "summary": "See와 관련된 주요 음악 업계 소식이 전해졌다. See Noah Kahan Captivate Audiences With Extended ‘Orbiter’",
+        "url": "https://www.rollingstone.com/music/music-news/noah-kahan-live-from-the-great-divide-album-1235663532/",
+        "published_date": "2026-11-24 17:42:34",
+        "category": "interview",
+        "source": "www.rollingstone.com"
+      },
+      {
+        "title": "Punchbag – “Fangirl”",
+        "summary": "Punchbag와 관련된 주요 음악 업계 소식이 전해졌다. Punchbag – “Fangirl”",
+        "url": "https://stereogum.com/2521279/punchbag-fangirl/music/",
+        "published_date": "2026-11-24 17:25:30",
+        "category": "interview",
+        "source": "www.stereogum.com"
+      },
+      {
+        "title": "Carly Rae Jepsen’s ‘Run Away With Me’ Sees 288 Percent Streaming Bump Thanks to ‘GTA VI’",
+        "summary": "Carly Rae가 새 앨범 발매 소식을 공개했다. 이번 릴리스는 팬들과 음악 업계의 큰 관심을 받고 있다.",
+        "url": "https://www.rollingstone.com/music/music-news/carly-rae-jepsens-run-away-with-me-gta-vi-streaming-bump-1235663046/",
+        "published_date": "2026-11-24 17:15:59",
+        "category": "interview",
+        "source": "www.rollingstone.com"
+      },
+      {
+        "title": "Noah Kahan Announces Live from the Great Divide",
+        "summary": "Noah가 중요한 음악 관련 발표를 했다. 이번 소식은 팬들의 주목을 받고 있다.",
+        "url": "https://consequence.net/2026/11/noah-kahan-live-album-live-from-the-great-divide/",
+        "published_date": "2026-11-24 17:07:54",
+        "category": "interview",
+        "source": "consequenceofsound.net"
+      },
+      {
+        "title": "Sid The Cat & Stereogum Present Ramones Night In LA Next Month",
+        "summary": "Sid와 관련된 주요 음악 업계 소식이 전해졌다. Sid The Cat & Stereogum Present Ramones Night In LA Next Mon...",
+        "url": "https://stereogum.com/2521272/sid-the-cat-stereogum-present-ramones-night-in-la-next-month/news/",
+        "published_date": "2026-11-24 17:04:31",
+        "category": "interview",
+        "source": "www.stereogum.com"
+      },
+      {
+        "title": "Foo Fighters Fans Share How the Band Changed Their Lives in New Fandemonium Docuseries",
+        "summary": "Foo의 라이브 공연 관련 소식이 전해졌다. 콘서트 티켓과 일정 정보가 업데이트되었다.",
+        "url": "https://consequence.net/2026/11/foo-fighters-fandemonium-docuseries/",
+        "published_date": "2026-11-24 17:00:06",
+        "category": "interview",
+        "source": "consequenceofsound.net"
+      },
+      {
+        "title": "Olivia Rodrigo Shares Heartache for the Holidays With ‘Miss This Christmas’ Live Debut",
+        "summary": "Olivia Rodrigo가 새로운 투어 일정을 발표했다. 콘서트 관련 상세 정보는 공식 채널을 통해 확인할 수 있다.",
+        "url": "https://www.rollingstone.com/music/music-news/olivia-rodrigo-debut-miss-this-christmas-live-1235663504/",
+        "published_date": "2026-11-24 16:53:35",
+        "category": "interview",
+        "source": "www.rollingstone.com"
+      },
+      {
+        "title": "Singer Ryan McCombs Exits Drowning Pool Again To Focus on SOiL",
+        "summary": "Singer와 관련된 주요 음악 업계 소식이 전해졌다. Singer Ryan McCombs Exits Drowning Pool Again To Focus on SO...",
+        "url": "https://consequence.net/2026/11/drowning-pool-vocalist-ryan-mccombs-exits-for-soil/",
+        "published_date": "2026-11-24 16:44:53",
+        "category": "interview",
+        "source": "consequenceofsound.net"
+      },
+      {
+        "title": "U2 announce 2027 North American ‘Carnaval De Luz’ stadium tour",
+        "summary": "U2의 라이브 공연 관련 소식이 전해졌다. 콘서트 티켓과 일정 정보가 업데이트되었다.",
+        "url": "https://www.nme.com/news/music/u2-announce-2027-north-american-carnaval-de-luz-stadium-tour-3976883",
+        "published_date": "2026-11-24 16:44:35",
+        "category": "interview",
+        "source": "www.nme.com"
+      },
+      {
+        "title": "Lambrini Girls – “Don’t Talk To Me Until I’ve Had My Abortion”",
+        "summary": "Lambrini와 관련된 주요 음악 업계 소식이 전해졌다. Lambrini Girls – “Don’t Talk To Me Until I’ve Had My Abortio...",
+        "url": "https://stereogum.com/2521215/lambrini-girls-dont-talk-to-me-until-ive-had-my-abortion/music/",
+        "published_date": "2026-11-24 16:43:13",
+        "category": "interview",
+        "source": "www.stereogum.com"
+      },
+      {
+        "title": "Tidal to Ban and Remove “Wholly AI-Generated Music”",
+        "summary": "Tidal와 관련된 주요 음악 업계 소식이 전해졌다. Tidal to Ban and Remove “Wholly AI-Generated Music”",
+        "url": "https://consequence.net/2026/11/tidal-bans-fully-ai-generated-music/",
+        "published_date": "2026-11-24 16:35:11",
+        "category": "interview",
+        "source": "consequenceofsound.net"
+      },
+      {
+        "title": "Now You Can See You Can See Everything at Home on VOD",
+        "summary": "Now와 관련된 주요 음악 업계 소식이 전해졌다. Now You Can See You Can See Everything at Home on VOD",
+        "url": "https://consequence.net/2026/11/you-can-see-everything-vod-release-amazon/",
+        "published_date": "2026-11-24 16:30:30",
+        "category": "interview",
+        "source": "consequenceofsound.net"
+      },
+      {
+        "title": "Slipknot and Dr. Martens Announce New Collaboration",
+        "summary": "Slipknot의 새로운 협업 프로젝트 소식이 공개되었다. 음악 팬들의 기대감이 높아지고 있다.",
+        "url": "https://consequence.net/2026/11/slipknot-and-dr-martens-announce-new-collaboration/",
+        "published_date": "2026-11-24 16:28:46",
+        "category": "interview",
+        "source": "consequenceofsound.net"
+      },
+      {
+        "title": "Mia Joy – “Circle” (Feat. Midwife)",
+        "summary": "Mia의 새로운 협업 프로젝트 소식이 공개되었다. 음악 팬들의 기대감이 높아지고 있다.",
+        "url": "https://stereogum.com/2521191/mia-joy-circle-feat-midwife/music/",
+        "published_date": "2026-11-24 16:26:14",
+        "category": "interview",
+        "source": "www.stereogum.com"
+      },
+      {
+        "title": "Anuel AA Promises Free Concert in Colombia After 50-Minute Performance Sparks Fan Outrage",
+        "summary": "Anuel의 라이브 공연 관련 소식이 전해졌다. 콘서트 티켓과 일정 정보가 업데이트되었다.",
+        "url": "https://consequence.net/2026/11/anuel-aa-free-concert-colombia-after-outrage/",
+        "published_date": "2026-11-24 16:25:27",
+        "category": "interview",
+        "source": "consequenceofsound.net"
+      },
+      {
+        "title": "The Big Moon talk the “endless madness” of 2026 and the “pinch me” moment of playing Brixton Academy",
+        "summary": "The와 관련된 주요 음악 업계 소식이 전해졌다. The Big Moon talk the “endless madness” of 2026 and the “pin...",
+        "url": "https://www.nme.com/news/music/the-big-moon-interview-forever-illness-motherhood-brixton-academy-future-3976873",
+        "published_date": "2026-11-24 16:20:19",
+        "category": "interview",
+        "source": "www.nme.com"
+      },
+      {
+        "title": "Tidal bans fully AI-generated music from its platform",
+        "summary": "Tidal와 관련된 주요 음악 업계 소식이 전해졌다. Tidal bans fully AI-generated music from its platform",
+        "url": "https://www.musicbusinessworldwide.com/tidal-bans-fully-ai-generated-music-from-its-platform/",
+        "published_date": "2026-11-24 16:09:43",
+        "category": "interview",
+        "source": "www.musicbusinessworldwide.com"
+      },
+      {
+        "title": "Peter Gabriel – “Yes, It Will Go”",
+        "summary": "Peter와 관련된 주요 음악 업계 소식이 전해졌다. Peter Gabriel – “Yes, It Will Go”",
+        "url": "https://stereogum.com/2521187/peter-gabriel-yes-it-will-go/music/",
+        "published_date": "2026-11-24 15:57:36",
+        "category": "interview",
+        "source": "www.stereogum.com"
+      },
+      {
+        "title": "Instagrammer Performs Heavy Cover of Stray Kids’ “RUN IT” After Seeing K-pop Band’s Requests: Watch",
+        "summary": "Instagrammer와 관련된 주요 음악 업계 소식이 전해졌다. Instagrammer Performs Heavy Cover of Stray Kids’ “RUN IT” Af...",
+        "url": "https://consequence.net/2026/11/instagrammer-performs-heavy-cover-stray-kids-run-it/",
+        "published_date": "2026-11-24 15:56:13",
+        "category": "interview",
+        "source": "consequenceofsound.net"
+      },
+      {
+        "title": "Watch Olivia Rodrigo cover The White Stripes’ ‘Dead Leaves and the Dirty Ground’ at Third Man Records",
+        "summary": "Watch와 관련된 주요 음악 업계 소식이 전해졌다. Watch Olivia Rodrigo cover The White Stripes’ ‘Dead Leaves a...",
+        "url": "https://www.nme.com/news/music/watch-olivia-rodrigo-cover-white-stripes-dead-leaves-dirty-ground-third-man-3976875",
+        "published_date": "2026-11-24 15:45:25",
+        "category": "interview",
+        "source": "www.nme.com"
+      },
+      {
+        "title": "U2 Plot North American Stadium Tour",
+        "summary": "U2의 라이브 공연 관련 소식이 전해졌다. 콘서트 티켓과 일정 정보가 업데이트되었다.",
+        "url": "https://pitchfork.com/story/u2-plot-north-american-stadium-tour/",
+        "published_date": "2026-11-24 15:44:52",
+        "category": "interview",
+        "source": "pitchfork.com"
+      },
+      {
+        "title": "Tidal Bans AI-Generated Music",
+        "summary": "Tidal와 관련된 주요 음악 업계 소식이 전해졌다. Tidal Bans AI-Generated Music",
+        "url": "https://stereogum.com/2521184/tidal-bans-ai-generated-music/news/",
+        "published_date": "2026-11-24 15:39:29",
+        "category": "interview",
+        "source": "www.stereogum.com"
+      }
+    ],
+    "insight": []
+  },
+  "summary": {
+    "total_count": 50,
+    "by_category": {
+      "interview": 50
+    },
+    "by_source": {
+      "consequenceofsound.net": 12,
+      "www.billboard.com": 10,
+      "www.rollingstone.com": 10,
+      "www.stereogum.com": 9,
+      "pitchfork.com": 3,
+      "www.musicbusinessworldwide.com": 3,
+      "www.nme.com": 3
+    },
+    "members_only_count": 0
+  }
+}
