@@ -1,8 +1,8 @@
 {
   "metadata": {
-    "generated_at": "2026-11-26T09:06:58.718481",
+    "generated_at": "2026-11-27T09:23:09.139149",
     "total_news": 50,
-    "last_updated": "2026-11-26T09:06:58.718490",
+    "last_updated": "2026-11-27T09:23:09.139157",
     "version": "2.0",
     "compatible_with": "NewsSection.tsx"
   },
@@ -11,20 +11,300 @@
     "news": [],
     "interview": [
       {
-        "title": "‘What A Talent’: Belinda Carlisle, UB40, Spandau Ballet & More Remember Andy Taylor",
-        "summary": "‘What와 관련된 주요 음악 업계 소식이 전해졌다. ‘What A Talent’: Belinda Carlisle, UB40, Spandau Ballet & Mo...",
-        "url": "https://www.billboard.com/music/rock/belinda-carlisle-ub40-spandau-ballet-remember-andy-taylor-1236390136/",
-        "published_date": "2026-11-26 08:04:00",
+        "title": "John Farnham’s Family Gives Rare Update on Legendary Singer’s Health",
+        "summary": "John와 관련된 주요 음악 업계 소식이 전해졌다. John Farnham’s Family Gives Rare Update on Legendary Singer’...",
+        "url": "https://www.billboard.com/music/music-news/john-farnham-family-rare-update-legendary-singers-health-1236390271/",
+        "published_date": "2026-11-27 08:43:22",
         "category": "interview",
         "source": "www.billboard.com"
       },
       {
-        "title": "Andy Taylor Was Full of Surprises: Six Deep-Dive Career Moments",
-        "summary": "Andy와 관련된 주요 음악 업계 소식이 전해졌다. Andy Taylor Was Full of Surprises: Six Deep-Dive Career Mome...",
-        "url": "https://www.billboard.com/lists/andy-taylor-six-deep-dive-career-moments/",
-        "published_date": "2026-11-26 06:27:53",
+        "title": "‘True Family’: Nile Rodgers Remembers Duran Duran’s Andy Taylor",
+        "summary": "‘True와 관련된 주요 음악 업계 소식이 전해졌다. ‘True Family’: Nile Rodgers Remembers Duran Duran’s Andy Tay...",
+        "url": "https://www.billboard.com/music/rock/nile-rodgers-remembers-duran-duran-andy-taylor-1236390263/",
+        "published_date": "2026-11-27 08:11:10",
         "category": "interview",
         "source": "www.billboard.com"
+      },
+      {
+        "title": "2027 BRIT Awards Trophy Designed by ‘One of Britain’s Greatest Living Artists’: See Photos",
+        "summary": "2027와 관련된 주요 음악 업계 소식이 전해졌다. 2027 BRIT Awards Trophy Designed by ‘One of Britain’s Greate...",
+        "url": "https://www.billboard.com/music/awards/2027-brit-awards-trophy-designer-1236390153/",
+        "published_date": "2026-11-27 08:00:00",
+        "category": "interview",
+        "source": "www.billboard.com"
+      },
+      {
+        "title": "‘Grand Theft Auto VI’ Soundtrack Drives to No. 1 on ARIA Chart",
+        "summary": "‘Grand Theft가 새로운 싱글을 발표했다. 새 곡은 아티스트의 음악적 진화를 보여주는 작품으로 평가받고 있다.",
+        "url": "https://www.billboard.com/music/chart-beat/grand-theft-auto-vi-soundtrack-no-1-aria-chart-1236390235/",
+        "published_date": "2026-11-27 06:47:44",
+        "category": "interview",
+        "source": "www.billboard.com"
+      },
+      {
+        "title": "Live Nation Adds Venue on Australia’s Gold Coast",
+        "summary": "Live의 라이브 공연 관련 소식이 전해졌다. 콘서트 티켓과 일정 정보가 업데이트되었다.",
+        "url": "https://www.billboard.com/pro/live-nation-adds-venue-australia-gold-coast/",
+        "published_date": "2026-11-27 05:55:55",
+        "category": "interview",
+        "source": "www.billboard.com"
+      },
+      {
+        "title": "Hellfest Reveals Mammoth 2027 Lineup Featuring More than 300 Bands",
+        "summary": "Hellfest가 중요한 음악 관련 발표를 했다. 이번 소식은 팬들의 주목을 받고 있다.",
+        "url": "https://consequence.net/2026/11/hellfest-2027-lineup-featuring-more-than-300-bands/",
+        "published_date": "2026-11-27 05:07:57",
+        "category": "interview",
+        "source": "consequenceofsound.net"
+      },
+      {
+        "title": "Olivia Rodrigo Drops Official Version of Melancholy ‘Miss This Christmas’ on Amazon Music",
+        "summary": "Olivia Rodrigo가 중요한 음악 관련 발표를 했다. 이번 소식은 팬들과 업계 관계자들의 주목을 받고 있다.",
+        "url": "https://www.rollingstone.com/music/music-news/olivia-rodrigo-miss-this-christmas-amazon-music-1235664984/",
+        "published_date": "2026-11-27 05:02:00",
+        "category": "interview",
+        "source": "www.rollingstone.com"
+      },
+      {
+        "title": "Miranda Lambert Heats Up Halftime at Dallas Cowboys’ NFL Thanksgiving Game: Watch",
+        "summary": "Miranda Lambert와 관련된 주요 음악 업계 소식이 전해졌다. Miranda Lambert Heats Up Halftime at Dallas Cowboys’ NFL Tha...",
+        "url": "https://www.billboard.com/music/country/miranda-lambert-thanksgiving-nfl-halftime-show-dallas-1236390212/",
+        "published_date": "2026-11-27 04:58:09",
+        "category": "interview",
+        "source": "www.billboard.com"
+      },
+      {
+        "title": "It’s a Shaolin Thanksgiving! Wu-Tang Clan, Chad Smith Light Up Halftime at Detroit Lions NFL Game",
+        "summary": "It’s와 관련된 주요 음악 업계 소식이 전해졌다. It’s a Shaolin Thanksgiving! Wu-Tang Clan, Chad Smith Light ...",
+        "url": "https://www.billboard.com/lists/wu-tang-clan-thanksgiving-halftime-detroit-lions-nfl-game/",
+        "published_date": "2026-11-27 03:58:26",
+        "category": "interview",
+        "source": "www.billboard.com"
+      },
+      {
+        "title": "NBC Snubs Goo Goo Dolls’ Thanksgiving Day Halftime Show",
+        "summary": "NBC와 관련된 주요 음악 업계 소식이 전해졌다. NBC Snubs Goo Goo Dolls’ Thanksgiving Day Halftime Show",
+        "url": "https://consequence.net/2026/11/goo-goo-dolls-thanksgiving-day-halftime-show-doesnt-air/",
+        "published_date": "2026-11-27 03:21:05",
+        "category": "interview",
+        "source": "consequenceofsound.net"
+      },
+      {
+        "title": "Anuel AA’s ‘RHLM2’ Album Is Finally Here: ‘I Made It With My Heart and Soul’",
+        "summary": "Anuel와 관련된 주요 음악 업계 소식이 전해졌다. Anuel AA’s ‘RHLM2’ Album Is Finally Here: ‘I Made It With My...",
+        "url": "https://www.billboard.com/music/latin/anuel-aa-rhlm2-album-1236389833/",
+        "published_date": "2026-11-27 00:00:00",
+        "category": "interview",
+        "source": "www.billboard.com"
+      },
+      {
+        "title": "Lana Del Rey Says New Albums Are ‘Getting Close’ to Completion: ‘I’m Happy With Them’",
+        "summary": "Lana Del가 새 앨범 발매 소식을 공개했다. 이번 릴리스는 팬들과 음악 업계의 큰 관심을 받고 있다.",
+        "url": "https://www.billboard.com/music/music-news/lana-del-rey-new-albums-stove-spyda-update-1236390186/",
+        "published_date": "2026-11-26 22:14:35",
+        "category": "interview",
+        "source": "www.billboard.com"
+      },
+      {
+        "title": "Goo Goo Dolls’ Halftime Show at the Chiefs vs. Bills Thanksgiving Game: Watch Online for Free",
+        "summary": "Goo와 관련된 주요 음악 업계 소식이 전해졌다. Goo Goo Dolls’ Halftime Show at the Chiefs vs. Bills Thanksg...",
+        "url": "https://www.billboard.com/culture/product-recommendations/goo-goo-dolls-halftime-chiefs-bills-thanksgiving-watch-free-1236389230/",
+        "published_date": "2026-11-26 21:00:00",
+        "category": "interview",
+        "source": "www.billboard.com"
+      },
+      {
+        "title": "Watch Wu-Tang Clan Perform ‘Triumph,’ ‘Bring Da Ruckus’ at NFL Thanksgiving Halftime Show",
+        "summary": "Watch와 관련된 주요 음악 업계 소식이 전해졌다. Watch Wu-Tang Clan Perform ‘Triumph,’ ‘Bring Da Ruckus’ at N...",
+        "url": "https://www.rollingstone.com/music/music-news/wu-tang-clan-nfl-thanksgiving-game-halftime-show-1235664856/",
+        "published_date": "2026-11-26 20:21:52",
+        "category": "interview",
+        "source": "www.rollingstone.com"
+      },
+      {
+        "title": "Watch Wu-Tang Clan Perform the 2026 NFL Thanksgiving Day Halftime Show",
+        "summary": "Watch와 관련된 주요 음악 업계 소식이 전해졌다. Watch Wu-Tang Clan Perform the 2026 NFL Thanksgiving Day Hal...",
+        "url": "https://pitchfork.com/story/watch-wu-tang-clan-perform-the-nfl-thanksgiving-day-halftime-show/",
+        "published_date": "2026-11-26 20:19:29",
+        "category": "interview",
+        "source": "pitchfork.com"
+      },
+      {
+        "title": "Wu-Tang Clan Bring Da Ruckus for NFL Thanksgiving Day Halftime Show",
+        "summary": "Wu-Tang와 관련된 주요 음악 업계 소식이 전해졌다. Wu-Tang Clan Bring Da Ruckus for NFL Thanksgiving Day Halfti...",
+        "url": "https://consequence.net/2026/11/wu-tang-clan-nfl-thanksgiving-show/",
+        "published_date": "2026-11-26 20:14:14",
+        "category": "interview",
+        "source": "consequenceofsound.net"
+      },
+      {
+        "title": "Toronto Musician Michael Eckert Killed In Home Invasion",
+        "summary": "Toronto와 관련된 주요 음악 업계 소식이 전해졌다. Toronto Musician Michael Eckert Killed In Home Invasion",
+        "url": "https://stereogum.com/2522048/toronto-musician-michael-eckert-killed-in-home-invasion/news/",
+        "published_date": "2026-11-26 19:46:48",
+        "category": "interview",
+        "source": "www.stereogum.com"
+      },
+      {
+        "title": "Lana Del Rey Shares Thanksgiving Update On New Albums",
+        "summary": "Lana와 관련된 주요 음악 업계 소식이 전해졌다. Lana Del Rey Shares Thanksgiving Update On New Albums",
+        "url": "https://stereogum.com/2522030/lana-del-rey-shares-thanksgiving-update-on-new-albums/news/",
+        "published_date": "2026-11-26 18:15:24",
+        "category": "interview",
+        "source": "www.stereogum.com"
+      },
+      {
+        "title": "PUP Compose New Music for Sample Pack Benefitting Kids in Toronto",
+        "summary": "PUP와 관련된 주요 음악 업계 소식이 전해졌다. PUP Compose New Music for Sample Pack Benefitting Kids in To...",
+        "url": "https://pitchfork.com/story/pup-compose-new-music-for-sample-pack-benefitting-kids-in-toronto/",
+        "published_date": "2026-11-26 17:57:07",
+        "category": "interview",
+        "source": "pitchfork.com"
+      },
+      {
+        "title": "Snoop Dogg Teams Up With Feid for Thanksgiving Single ‘Gracias x Todo’",
+        "summary": "Snoop Dogg가 새로운 싱글을 발표했다. 새 곡은 아티스트의 음악적 진화를 보여주는 작품으로 평가받고 있다.",
+        "url": "https://www.rollingstone.com/music/music-news/snoop-dogg-feid-gracias-x-todo-single-thanksgiving-1235664907/",
+        "published_date": "2026-11-26 17:40:02",
+        "category": "interview",
+        "source": "www.rollingstone.com"
+      },
+      {
+        "title": "DVTR – “Queen Cong”",
+        "summary": "DVTR와 관련된 주요 음악 업계 소식이 전해졌다. DVTR – “Queen Cong”",
+        "url": "https://stereogum.com/2522018/dvtr-queen-cong/music/",
+        "published_date": "2026-11-26 17:24:22",
+        "category": "interview",
+        "source": "www.stereogum.com"
+      },
+      {
+        "title": "BBC Radio 1’s Big Weekend 2027 set to take place in Brighton",
+        "summary": "BBC와 관련된 주요 음악 업계 소식이 전해졌다. BBC Radio 1’s Big Weekend 2027 set to take place in Brighton",
+        "url": "https://www.nme.com/news/music/bbc-radio-1s-big-weekend-2027-set-to-take-place-in-brighton-3977061",
+        "published_date": "2026-11-26 16:43:19",
+        "category": "interview",
+        "source": "www.nme.com"
+      },
+      {
+        "title": "Substance released at Don Toliver Co-Op live show could be linked to jewellery thefts and robberies, police say",
+        "summary": "Substance의 라이브 공연 관련 소식이 전해졌다. 콘서트 티켓과 일정 정보가 업데이트되었다.",
+        "url": "https://www.nme.com/news/music/substance-at-don-toliver-coop-live-show-could-be-linked-to-jewellery-thefts-police-say-3977049",
+        "published_date": "2026-11-26 16:28:10",
+        "category": "interview",
+        "source": "www.nme.com"
+      },
+      {
+        "title": "Macy Gray Is Releasing Her New Album In A Microdrama",
+        "summary": "Macy와 관련된 주요 음악 업계 소식이 전해졌다. Macy Gray Is Releasing Her New Album In A Microdrama",
+        "url": "https://stereogum.com/2522004/macy-gray-is-releasing-her-new-album-in-a-microdrama/news/",
+        "published_date": "2026-11-26 16:13:09",
+        "category": "interview",
+        "source": "www.stereogum.com"
+      },
+      {
+        "title": "U2 Perform Their Dolly Parton Collaboration At First-Ever Thanksgiving Eve NFL Game",
+        "summary": "U2의 새로운 협업 프로젝트 소식이 공개되었다. 음악 팬들의 기대감이 높아지고 있다.",
+        "url": "https://stereogum.com/2521986/u2-perform-their-dolly-parton-collaboration-at-first-ever-thanksgiving-eve-nfl-game/news/",
+        "published_date": "2026-11-26 14:31:18",
+        "category": "interview",
+        "source": "www.stereogum.com"
+      },
+      {
+        "title": "Watch Queens Of The Stone Age give ‘Perfecth’ songs their live debut and air rarities as they kick off tour in Japan",
+        "summary": "Watch Queens가 새로운 싱글을 발표했다. 새 곡은 아티스트의 음악적 진화를 보여주는 작품으로 평가받고 있다.",
+        "url": "https://www.nme.com/news/music/queens-of-the-stone-age-debut-perfecth-songs-rarities-japan-tour-footage-setlist-3977034",
+        "published_date": "2026-11-26 14:11:38",
+        "category": "interview",
+        "source": "www.nme.com"
+      },
+      {
+        "title": "The NME Magazine November/December 2026 issue with Daine on the cover is now on sale",
+        "summary": "The와 관련된 주요 음악 업계 소식이 전해졌다. The NME Magazine November/December 2026 issue with Daine on ...",
+        "url": "https://www.nme.com/news/music/nme-magazine-november-december-2026-issue-how-to-buy-3976263",
+        "published_date": "2026-11-26 14:00:17",
+        "category": "interview",
+        "source": "www.nme.com"
+      },
+      {
+        "title": "Carly Rae Jepsen’s ‘Run Away With Me’ streams jump almost 1,100 per cent after ‘GTA 6’ sync",
+        "summary": "Carly와 관련된 주요 음악 업계 소식이 전해졌다. Carly Rae Jepsen’s ‘Run Away With Me’ streams jump almost 1,...",
+        "url": "https://www.nme.com/news/gaming-news/carly-rae-jepsen-run-away-with-me-grand-theft-auto-resurgence-3977027",
+        "published_date": "2026-11-26 12:49:25",
+        "category": "interview",
+        "source": "www.nme.com"
+      },
+      {
+        "title": "Mad Cool announces name change and huge site enhancements for 2027",
+        "summary": "Mad가 중요한 음악 관련 발표를 했다. 이번 소식은 팬들의 주목을 받고 있다.",
+        "url": "https://www.nme.com/news/music/mad-cool-announces-name-change-and-huge-site-enhancements-for-2027-3977020",
+        "published_date": "2026-11-26 12:34:57",
+        "category": "interview",
+        "source": "www.nme.com"
+      },
+      {
+        "title": "Westside Cowboy, Gurriers, Lime Garden lead stacked Dot To Dot 2027 line-up",
+        "summary": "Westside와 관련된 주요 음악 업계 소식이 전해졌다. Westside Cowboy, Gurriers, Lime Garden lead stacked Dot To D...",
+        "url": "https://www.nme.com/news/music/westside-cowboy-gurriers-lime-garden-lead-stacked-dot-to-dot-2027-line-up-3977010",
+        "published_date": "2026-11-26 12:00:02",
+        "category": "interview",
+        "source": "www.nme.com"
+      },
+      {
+        "title": "Vevo dscvr artists to watch 2027: AZ Chike, 54 Ultra, Barry B, FreshMula",
+        "summary": "Vevo와 관련된 주요 음악 업계 소식이 전해졌다. Vevo dscvr artists to watch 2027: AZ Chike, 54 Ultra, Barry ...",
+        "url": "https://www.musicbusinessworldwide.com/vevo-dscvr-artists-to-watch-2027-az-chike-54-ultra-barry-b-freshmula/",
+        "published_date": "2026-11-26 11:56:22",
+        "category": "interview",
+        "source": "www.musicbusinessworldwide.com"
+      },
+      {
+        "title": "Matador secures worldwide rights to Belle and Sebastian’s complete catalog, licensing titles from the band and Bella Figura",
+        "summary": "Matador secures와 관련된 주요 음악 업계 소식이 전해졌다. Matador secures worldwide rights to Belle and Sebastian’s co...",
+        "url": "https://www.musicbusinessworldwide.com/matador-secures-worldwide-rights-to-belle-and-sebastians-complete-catalog-licensing-titles-from-the-band-and-bella-figura/",
+        "published_date": "2026-11-26 11:56:09",
+        "category": "interview",
+        "source": "www.musicbusinessworldwide.com"
+      },
+      {
+        "title": "Universal, Warner, and the BPI back charter to tackle barriers keeping people with dementia from accessing music",
+        "summary": "Universal, Warner,가 새 앨범 발매 소식을 공개했다. 이번 릴리스는 팬들과 음악 업계의 큰 관심을 받고 있다.",
+        "url": "https://www.musicbusinessworldwide.com/universal-warner-and-the-bpi-back-charter-to-tackle-barriers-keeping-people-with-dementia-from-accessing-music/",
+        "published_date": "2026-11-26 11:55:27",
+        "category": "interview",
+        "source": "www.musicbusinessworldwide.com"
+      },
+      {
+        "title": "LiveOne is paying its Global Music Rights licensing fees in stock. If they aren’t covered within 90 days, GMR can terminate the license.",
+        "summary": "LiveOne의 라이브 공연 관련 소식이 전해졌다. 콘서트 티켓과 일정 정보가 업데이트되었다.",
+        "url": "https://www.musicbusinessworldwide.com/liveone-is-paying-its-global-music-rights-licensing-fees-in-stock-if-they-arent-covered-within-90-days-gmr-can-terminate-the-license/",
+        "published_date": "2026-11-26 11:55:06",
+        "category": "interview",
+        "source": "www.musicbusinessworldwide.com"
+      },
+      {
+        "title": "ElevenLabs in early talks to raise at $33B valuation – more than six times that of AI music rival Suno (report)",
+        "summary": "ElevenLabs와 관련된 주요 음악 업계 소식이 전해졌다. ElevenLabs in early talks to raise at $33B valuation – more ...",
+        "url": "https://www.musicbusinessworldwide.com/elevenlabs-in-early-talks-to-raise-at-33b-valuation-more-than-six-times-that-of-ai-music-rival-suno-report/",
+        "published_date": "2026-11-26 11:54:45",
+        "category": "interview",
+        "source": "www.musicbusinessworldwide.com"
+      },
+      {
+        "title": "Royal Blood announce huge summer 2027 UK outdoor shows with London Rock N’ Roll Circus headline slot",
+        "summary": "Royal와 관련된 주요 음악 업계 소식이 전해졌다. Royal Blood announce huge summer 2027 UK outdoor shows with ...",
+        "url": "https://www.nme.com/news/music/royal-blood-announce-2027-uk-outdoor-shows-rock-n-roll-circus-headline-slot-tickets-3977004",
+        "published_date": "2026-11-26 10:45:22",
+        "category": "interview",
+        "source": "www.nme.com"
+      },
+      {
+        "title": "Watch U2 roll through hits and pay tribute to Dolly Parton at NFL Thanksgiving Eve Halftime Show",
+        "summary": "Watch와 관련된 주요 음악 업계 소식이 전해졌다. Watch U2 roll through hits and pay tribute to Dolly Parton a...",
+        "url": "https://www.nme.com/news/music/watch-u2-play-hits-pay-tribute-dolly-parton-nfl-thanksgiving-eve-halftime-show-3976999",
+        "published_date": "2026-11-26 09:54:29",
+        "category": "interview",
+        "source": "www.nme.com"
       },
       {
         "title": "U2 Perform Dolly Parton’s Final Recording During NFL Halftime Show",
@@ -43,14 +323,6 @@
         "source": "www.rollingstone.com"
       },
       {
-        "title": "U2 Wind Back the Years With Classics, Dolly Parton Tribute for Thanksgiving Eve NFL Halftime Show",
-        "summary": "U2와 관련된 주요 음악 업계 소식이 전해졌다. U2 Wind Back the Years With Classics, Dolly Parton Tribute f...",
-        "url": "https://www.billboard.com/music/rock/u2-dolly-parton-tribute-thanksgiving-eve-nfl-halftime-show-1236390070/",
-        "published_date": "2026-11-26 03:41:38",
-        "category": "interview",
-        "source": "www.billboard.com"
-      },
-      {
         "title": "U2 Play the Hits, Pay Tribute to Dolly Parton for NFL Thanksgiving Eve Halftime Show",
         "summary": "U2와 관련된 주요 음악 업계 소식이 전해졌다. U2 Play the Hits, Pay Tribute to Dolly Parton for NFL Thanks...",
         "url": "https://consequence.net/2026/11/u2-thanksgiving-eve-nfl-show/",
@@ -67,28 +339,12 @@
         "source": "www.stereogum.com"
       },
       {
-        "title": "Duran Duran’s Biggest Billboard Hits: ‘Rio,’ ‘Hungry Like the Wolf’ & More",
-        "summary": "Duran와 관련된 주요 음악 업계 소식이 전해졌다. Duran Duran’s Biggest Billboard Hits: ‘Rio,’ ‘Hungry Like th...",
-        "url": "https://www.billboard.com/lists/duran-duran-biggest-billboard-hits/",
-        "published_date": "2026-11-25 23:53:32",
-        "category": "interview",
-        "source": "www.billboard.com"
-      },
-      {
         "title": "King Crimson Co-Founder Michael Giles Dies at 84",
         "summary": "King와 관련된 주요 음악 업계 소식이 전해졌다. King Crimson Co-Founder Michael Giles Dies at 84",
         "url": "https://pitchfork.com/story/king-crimson-co-founder-michael-giles-dies-at-84/",
         "published_date": "2026-11-25 23:52:08",
         "category": "interview",
         "source": "pitchfork.com"
-      },
-      {
-        "title": "‘Hunger Games’ Series Returns to No. 1 on Soundtracks Chart After More Than a Decade",
-        "summary": "‘Hunger Games’가 새로운 싱글을 발표했다. 새 곡은 아티스트의 음악적 진화를 보여주는 작품으로 평가받고 있다.",
-        "url": "https://www.billboard.com/music/chart-beat/hunger-games-sunrise-reaping-album-tops-soundtracks-chart-1236390012/",
-        "published_date": "2026-11-25 23:42:43",
-        "category": "interview",
-        "source": "www.billboard.com"
       },
       {
         "title": "Duran Duran pay tribute after death of guitarist Andy Taylor, age 65: “His playing drove the songs that took us around the world”",
@@ -99,14 +355,6 @@
         "source": "www.nme.com"
       },
       {
-        "title": "U2’s ‘Carnaval de Luz’ Debuts at No. 1 on 3 Billboard Album Charts",
-        "summary": "U2’s ‘Carnaval가 새 앨범 발매 소식을 공개했다. 이번 릴리스는 팬들과 음악 업계의 큰 관심을 받고 있다.",
-        "url": "https://www.billboard.com/music/chart-beat/u2-carnaval-de-luz-number-1-billboard-charts-debut-1236389982/",
-        "published_date": "2026-11-25 22:57:07",
-        "category": "interview",
-        "source": "www.billboard.com"
-      },
-      {
         "title": "Duran Duran’s Andy Taylor Dies at 65",
         "summary": "Duran와 관련된 주요 음악 업계 소식이 전해졌다. Duran Duran’s Andy Taylor Dies at 65",
         "url": "https://pitchfork.com/story/duran-durans-andy-taylor-dies-at-65/",
@@ -115,36 +363,12 @@
         "source": "pitchfork.com"
       },
       {
-        "title": "Hold Your Turkeys! Macy’s 100th Thanksgiving Day Parade Has Been Postponed: Here’s the New Date",
-        "summary": "Hold와 관련된 주요 음악 업계 소식이 전해졌다. Hold Your Turkeys! Macy’s 100th Thanksgiving Day Parade Has ...",
-        "url": "https://www.billboard.com/music/music-news/macys-thanksgiving-day-parade-2026-canceled-delay-new-date-1236389923/",
-        "published_date": "2026-11-25 22:05:34",
-        "category": "interview",
-        "source": "www.billboard.com"
-      },
-      {
         "title": "Coachella Sues Walmart Over Unauthorized Festival Merch, Citing ‘Willful and Repeated Acts’",
         "summary": "Coachella와 관련된 주요 음악 업계 소식이 전해졌다. Coachella Sues Walmart Over Unauthorized Festival Merch, Cit...",
         "url": "https://www.rollingstone.com/music/music-news/coachella-walmart-over-trademark-infringement-lawsuit-1235664484/",
         "published_date": "2026-11-25 21:56:29",
         "category": "interview",
         "source": "www.rollingstone.com"
-      },
-      {
-        "title": "Billboard’s Music Industry Events Calendar",
-        "summary": "Billboard’s와 관련된 주요 음악 업계 소식이 전해졌다. Billboard’s Music Industry Events Calendar",
-        "url": "https://www.billboard.com/pro/music-industry-events-calendar-festivals-awards-conferences/",
-        "published_date": "2026-11-25 21:55:00",
-        "category": "interview",
-        "source": "www.billboard.com"
-      },
-      {
-        "title": "Black Friday 2026: Peacock Is More Than 65% Off for 3 Months",
-        "summary": "Black와 관련된 주요 음악 업계 소식이 전해졌다. Black Friday 2026: Peacock Is More Than 65% Off for 3 Months",
-        "url": "https://www.billboard.com/culture/product-recommendations/peacock-2026-black-friday-streaming-deals-1236389460/",
-        "published_date": "2026-11-25 21:52:44",
-        "category": "interview",
-        "source": "www.billboard.com"
       },
       {
         "title": "Duran Duran’s Andy Taylor Dead At 65",
@@ -185,230 +409,6 @@
         "published_date": "2026-11-25 21:03:54",
         "category": "interview",
         "source": "www.rollingstone.com"
-      },
-      {
-        "title": "Bob Seger Mourns ‘Extraordinary’ Silver Bullet Band Bassist Chris Campbell",
-        "summary": "Bob와 관련된 주요 음악 업계 소식이 전해졌다. Bob Seger Mourns ‘Extraordinary’ Silver Bullet Band Bassist ...",
-        "url": "https://www.rollingstone.com/music/music-news/bob-seger-silver-bullet-band-chris-campbell-tribute-1235664442/",
-        "published_date": "2026-11-25 20:49:42",
-        "category": "interview",
-        "source": "www.rollingstone.com"
-      },
-      {
-        "title": "Believe acquires catalog of independent label Tianyue Huayin – its first catalog acquisition in Greater China",
-        "summary": "Believe와 관련된 주요 음악 업계 소식이 전해졌다. Believe acquires catalog of independent label Tianyue Huayin...",
-        "url": "https://www.musicbusinessworldwide.com/believe-acquires-catalog-of-independent-label-tianyue-huayin-its-first-catalog-acquisition-in-greater-china/",
-        "published_date": "2026-11-25 19:29:47",
-        "category": "interview",
-        "source": "www.musicbusinessworldwide.com"
-      },
-      {
-        "title": "Cardi B and Offset See Beverly Hills Mansion Lawsuit Dismissed After Settlement",
-        "summary": "Cardi와 관련된 주요 음악 업계 소식이 전해졌다. Cardi B and Offset See Beverly Hills Mansion Lawsuit Dismiss...",
-        "url": "https://www.rollingstone.com/music/music-news/cardi-b-offset-beverly-hills-mansion-lawsuit-settlement-1235664297/",
-        "published_date": "2026-11-25 19:29:17",
-        "category": "interview",
-        "source": "www.rollingstone.com"
-      },
-      {
-        "title": "Original King Crimson Drummer Michael Giles Dead At 84",
-        "summary": "Original와 관련된 주요 음악 업계 소식이 전해졌다. Original King Crimson Drummer Michael Giles Dead At 84",
-        "url": "https://stereogum.com/2521598/original-king-crimson-drummer-michael-giles-dead-at-84/news/",
-        "published_date": "2026-11-25 19:27:17",
-        "category": "interview",
-        "source": "www.stereogum.com"
-      },
-      {
-        "title": "Rose Chamber Announce Debut Album My Silhouette: Hear “Modern Rot”",
-        "summary": "Rose와 관련된 주요 음악 업계 소식이 전해졌다. Rose Chamber Announce Debut Album My Silhouette: Hear “Moder...",
-        "url": "https://stereogum.com/2521643/rose-chamber-announce-debut-album-my-silhouette-hear-modern-rot/music/",
-        "published_date": "2026-11-25 19:27:08",
-        "category": "interview",
-        "source": "www.stereogum.com"
-      },
-      {
-        "title": "Tom Petty Drummer Steve Ferrone Plays Evanescence’s “Bring Me to Life” as He Hears It for First Time: Watch",
-        "summary": "Tom와 관련된 주요 음악 업계 소식이 전해졌다. Tom Petty Drummer Steve Ferrone Plays Evanescence’s “Bring M...",
-        "url": "https://consequence.net/2026/11/tom-petty-drummer-steve-ferrone-evanescences-bring-me-to-life-drumeo/",
-        "published_date": "2026-11-25 19:25:12",
-        "category": "interview",
-        "source": "consequenceofsound.net"
-      },
-      {
-        "title": "Bradford Cox Reveals Autism Diagnosis",
-        "summary": "Bradford가 중요한 음악 관련 발표를 했다. 이번 소식은 팬들의 주목을 받고 있다.",
-        "url": "https://pitchfork.com/story/bradford-cox-reveals-autism-diagnosis/",
-        "published_date": "2026-11-25 19:17:29",
-        "category": "interview",
-        "source": "pitchfork.com"
-      },
-      {
-        "title": "Michael Giles, King Crimson’s Founding Drummer, Dead at 84",
-        "summary": "Michael와 관련된 주요 음악 업계 소식이 전해졌다. Michael Giles, King Crimson’s Founding Drummer, Dead at 84",
-        "url": "https://consequence.net/2026/11/michael-giles-king-crimson-founding-drummer-dead/",
-        "published_date": "2026-11-25 18:17:12",
-        "category": "interview",
-        "source": "consequenceofsound.net"
-      },
-      {
-        "title": "Stream On This Week: Celebrate Thanksgiving with Raunchy Comedy, Happy Endings, and Magic Mike",
-        "summary": "Stream와 관련된 주요 음악 업계 소식이 전해졌다. Stream On This Week: Celebrate Thanksgiving with Raunchy Com...",
-        "url": "https://consequence.net/2026/11/stream-on-gail-daughtry-the-greatest-dig/",
-        "published_date": "2026-11-25 18:00:58",
-        "category": "interview",
-        "source": "consequenceofsound.net"
-      },
-      {
-        "title": "The Chicks join Jason Isbell’s class action against Suno, as amended complaint adds 16 plaintiffs and targets v6",
-        "summary": "The와 관련된 주요 음악 업계 소식이 전해졌다. The Chicks join Jason Isbell’s class action against Suno, as...",
-        "url": "https://www.musicbusinessworldwide.com/the-chicks-join-jason-isbells-class-action-against-suno-as-amended-complaint-adds-16-plaintiffs-and-targets-v6/",
-        "published_date": "2026-11-25 17:59:34",
-        "category": "interview",
-        "source": "www.musicbusinessworldwide.com"
-      },
-      {
-        "title": "Steven Page on Steven’s Greetings, Holiday Anxiety, and Classic Barenaked Ladies Songs: Podcast",
-        "summary": "Steven와 관련된 주요 음악 업계 소식이 전해졌다. Steven Page on Steven’s Greetings, Holiday Anxiety, and Clas...",
-        "url": "https://consequence.net/2026/11/steven-page-stevens-greetings-barenaked-ladies/",
-        "published_date": "2026-11-25 17:50:44",
-        "category": "interview",
-        "source": "consequenceofsound.net"
-      },
-      {
-        "title": "Anna Meredith – “Mink”",
-        "summary": "Anna와 관련된 주요 음악 업계 소식이 전해졌다. Anna Meredith – “Mink”",
-        "url": "https://stereogum.com/2521558/anna-meredith-mink/music/",
-        "published_date": "2026-11-25 17:48:40",
-        "category": "interview",
-        "source": "www.stereogum.com"
-      },
-      {
-        "title": "Beats Headphones Are Up to 50% Off for Black Friday",
-        "summary": "Beats와 관련된 주요 음악 업계 소식이 전해졌다. Beats Headphones Are Up to 50% Off for Black Friday",
-        "url": "https://consequence.net/2026/11/beats-headphones-black-friday-deals-2026/",
-        "published_date": "2026-11-25 17:47:46",
-        "category": "interview",
-        "source": "consequenceofsound.net"
-      },
-      {
-        "title": "How Riot Games Turned ‘League of Legends’ Into a Music Empire",
-        "summary": "How와 관련된 주요 음악 업계 소식이 전해졌다. How Riot Games Turned ‘League of Legends’ Into a Music Empir...",
-        "url": "https://www.rollingstone.com/music/music-news/how-riot-games-turned-league-of-legends-into-music-empire-1235662969/",
-        "published_date": "2026-11-25 17:46:21",
-        "category": "interview",
-        "source": "www.rollingstone.com"
-      },
-      {
-        "title": "Police Say Unknown Substance at Don Toliver Concert Could Be Linked to Arena Robberies",
-        "summary": "Police의 라이브 공연 관련 소식이 전해졌다. 콘서트 티켓과 일정 정보가 업데이트되었다.",
-        "url": "https://www.rollingstone.com/music/music-news/don-toliver-concert-evacuation-substance-investigation-1235664243/",
-        "published_date": "2026-11-25 17:37:17",
-        "category": "interview",
-        "source": "www.rollingstone.com"
-      },
-      {
-        "title": "Manchester Police Say Don Toliver Concert Gas Incident May Be Linked To Jewelry Thefts",
-        "summary": "Manchester의 라이브 공연 관련 소식이 전해졌다. 콘서트 티켓과 일정 정보가 업데이트되었다.",
-        "url": "https://stereogum.com/2521553/manchester-police-say-don-toliver-concert-gas-incident-may-be-linked-to-jewelry-thefts/news/",
-        "published_date": "2026-11-25 17:01:41",
-        "category": "interview",
-        "source": "www.stereogum.com"
-      },
-      {
-        "title": "‘If the industry is going to be disrupted, I want to be at the forefront of whatever shapes its future.’",
-        "summary": "‘If와 관련된 주요 음악 업계 소식이 전해졌다. ‘If the industry is going to be disrupted, I want to be at t...",
-        "url": "https://www.musicbusinessworldwide.com/if-the-industry-is-going-to-be-disrupted-i-want-to-be-at-the-forefront-of-whatever-shapes-its-future/",
-        "published_date": "2026-11-25 17:00:24",
-        "category": "interview",
-        "source": "www.musicbusinessworldwide.com"
-      },
-      {
-        "title": "Fuerza Regida Announce Central and South American Tour After Selling Out 15 Shows in Mexico",
-        "summary": "Fuerza의 라이브 공연 관련 소식이 전해졌다. 콘서트 티켓과 일정 정보가 업데이트되었다.",
-        "url": "https://consequence.net/2026/11/fuerza-regida-announce-2027-central-south-america/",
-        "published_date": "2026-11-25 16:52:38",
-        "category": "interview",
-        "source": "consequenceofsound.net"
-      },
-      {
-        "title": "Jungle announce run of huge summer 2027 UK shows",
-        "summary": "Jungle와 관련된 주요 음악 업계 소식이 전해졌다. Jungle announce run of huge summer 2027 UK shows",
-        "url": "https://www.nme.com/news/music/jungle-announce-huge-run-of-summer-2027-uk-shows-tickets-3976960",
-        "published_date": "2026-11-25 16:36:54",
-        "category": "interview",
-        "source": "www.nme.com"
-      },
-      {
-        "title": "Vince Staples Covers A Geto Boys Classic In The BBC Live Lounge",
-        "summary": "Vince의 라이브 공연 관련 소식이 전해졌다. 콘서트 티켓과 일정 정보가 업데이트되었다.",
-        "url": "https://stereogum.com/2521547/vince-staples-covers-a-geto-boys-classic-in-the-bbc-live-lounge/news/",
-        "published_date": "2026-11-25 16:34:56",
-        "category": "interview",
-        "source": "www.stereogum.com"
-      },
-      {
-        "title": "Musixmatch launches enhanced Pro for Artists platform, adding fan engagement analytics and lyric merch sales with ‘optional AI licensing coming soon’",
-        "summary": "Musixmatch와 관련된 주요 음악 업계 소식이 전해졌다. Musixmatch launches enhanced Pro for Artists platform, addin...",
-        "url": "https://www.musicbusinessworldwide.com/musixmatch-launches-enhanced-pro-for-artists-platform-adding-fan-engagement-analytics-and-lyric-merch-sales-with-optional-ai-licensing-coming-soon/",
-        "published_date": "2026-11-25 16:22:45",
-        "category": "interview",
-        "source": "www.musicbusinessworldwide.com"
-      },
-      {
-        "title": "Watch Erykah Badu’s Weird, Great Fallon Performance",
-        "summary": "Watch와 관련된 주요 음악 업계 소식이 전해졌다. Watch Erykah Badu’s Weird, Great Fallon Performance",
-        "url": "https://stereogum.com/2521537/watch-erykah-badus-weird-great-fallon-performance/news/",
-        "published_date": "2026-11-25 16:01:28",
-        "category": "interview",
-        "source": "www.stereogum.com"
-      },
-      {
-        "title": "Getdown Services announce ‘The Massive Champion Ship’ curated UK Summer 2027 shows",
-        "summary": "Getdown와 관련된 주요 음악 업계 소식이 전해졌다. Getdown Services announce ‘The Massive Champion Ship’ curate...",
-        "url": "https://www.nme.com/news/music/getdown-services-announce-the-massive-champion-ship-curated-uk-2027-shows-tickets-3976947",
-        "published_date": "2026-11-25 15:57:17",
-        "category": "interview",
-        "source": "www.nme.com"
-      },
-      {
-        "title": "Patti Smith Makes NPR Tiny Desk Concert Debut: Watch",
-        "summary": "Patti의 라이브 공연 관련 소식이 전해졌다. 콘서트 티켓과 일정 정보가 업데이트되었다.",
-        "url": "https://consequence.net/2026/11/patti-smith-npr-tiny-desk-concert-debut/",
-        "published_date": "2026-11-25 15:55:33",
-        "category": "interview",
-        "source": "consequenceofsound.net"
-      },
-      {
-        "title": "‘Our obsession with velocity and algorithms made the industry mistake ubiquity for legacy.’",
-        "summary": "‘Our와 관련된 주요 음악 업계 소식이 전해졌다. ‘Our obsession with velocity and algorithms made the industr...",
-        "url": "https://www.musicbusinessworldwide.com/our-obsession-with-velocity-and-algorithms-made-the-industry-mistake-ubiquity-for-legacy/",
-        "published_date": "2026-11-25 15:51:39",
-        "category": "interview",
-        "source": "www.musicbusinessworldwide.com"
-      },
-      {
-        "title": "Robert Trujillo Says Metallica Plan to “Start Working on New Material”",
-        "summary": "Robert와 관련된 주요 음악 업계 소식이 전해졌다. Robert Trujillo Says Metallica Plan to “Start Working on New...",
-        "url": "https://consequence.net/2026/11/robert-trujillo-metallica-new-material/",
-        "published_date": "2026-11-25 15:47:49",
-        "category": "interview",
-        "source": "consequenceofsound.net"
-      },
-      {
-        "title": "Ninajirachi Shares I Love My Computer Remix Album Feat. Wet Leg, Slayr, Genesis Owusu, More",
-        "summary": "Ninajirachi의 새로운 협업 프로젝트 소식이 공개되었다. 음악 팬들의 기대감이 높아지고 있다.",
-        "url": "https://stereogum.com/2521530/ninajirachi-shares-i-love-my-computer-remix-album-feat-wet-leg-slayr-genesis-owusu-more/music/",
-        "published_date": "2026-11-25 15:35:03",
-        "category": "interview",
-        "source": "www.stereogum.com"
-      },
-      {
-        "title": "Phil Collins Wants to Collaborate with Travis Barker",
-        "summary": "Phil와 관련된 주요 음악 업계 소식이 전해졌다. Phil Collins Wants to Collaborate with Travis Barker",
-        "url": "https://consequence.net/2026/11/travis-barker-phil-collins-collaborate/",
-        "published_date": "2026-11-25 15:21:11",
-        "category": "interview",
-        "source": "consequenceofsound.net"
       }
     ],
     "insight": []
@@ -419,13 +419,13 @@
       "interview": 50
     },
     "by_source": {
-      "consequenceofsound.net": 12,
-      "www.billboard.com": 9,
-      "www.rollingstone.com": 9,
-      "www.stereogum.com": 9,
+      "www.billboard.com": 10,
+      "www.nme.com": 10,
+      "www.rollingstone.com": 8,
+      "www.stereogum.com": 7,
+      "consequenceofsound.net": 6,
       "www.musicbusinessworldwide.com": 5,
-      "pitchfork.com": 3,
-      "www.nme.com": 3
+      "pitchfork.com": 4
     },
     "members_only_count": 0
   }
