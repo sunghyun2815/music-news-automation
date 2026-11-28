@@ -1,0 +1,431 @@
+{
+  "metadata": {
+    "generated_at": "2026-11-28T08:38:49.270074",
+    "total_news": 50,
+    "last_updated": "2026-11-28T08:38:49.270083",
+    "version": "2.0",
+    "compatible_with": "NewsSection.tsx"
+  },
+  "news": {
+    "all_articles": [],
+    "news": [],
+    "interview": [
+      {
+        "title": "“Small group of organised criminals” sought over Don Toliver show evacuation at Manchester’s Co-op Live",
+        "summary": "“Small의 라이브 공연 관련 소식이 전해졌다. 콘서트 티켓과 일정 정보가 업데이트되었다.",
+        "url": "https://www.nme.com/news/music/small-group-organised-criminals-don-toliver-evacuation-manchesters-co-op-live-3977184",
+        "published_date": "2026-11-28 08:36:57",
+        "category": "interview",
+        "source": "www.nme.com"
+      },
+      {
+        "title": "The Killers’ Dave Keuning Says He Survived a Major Stroke: ‘By Some Miracle I Am Fine’",
+        "summary": "The와 관련된 주요 음악 업계 소식이 전해졌다. The Killers’ Dave Keuning Says He Survived a Major Stroke: ‘...",
+        "url": "https://www.billboard.com/music/rock/the-killers-dave-keuning-stroke-recovery-instagram-1236390473/",
+        "published_date": "2026-11-28 06:32:29",
+        "category": "interview",
+        "source": "www.billboard.com"
+      },
+      {
+        "title": "Olivia Rodrigo Shares Second Holiday Song ‘Miss This Christmas’ on Amazon Music",
+        "summary": "Olivia Rodrigo가 새로운 싱글을 발표했다. 새 곡은 아티스트의 음악적 진화를 보여주는 작품으로 평가받고 있다.",
+        "url": "https://www.billboard.com/music/pop/olivia-rodrigo-miss-this-christmas-amazon-music-1236390458/",
+        "published_date": "2026-11-28 00:41:10",
+        "category": "interview",
+        "source": "www.billboard.com"
+      },
+      {
+        "title": "Brandy Returns in ‘Christmas Everyday: Married and Bright’ — Stream Lifetime Holiday Movie Online Free Here",
+        "summary": "Brandy와 관련된 주요 음악 업계 소식이 전해졌다. Brandy Returns in ‘Christmas Everyday: Married and Bright’ —...",
+        "url": "https://www.billboard.com/culture/product-recommendations/watch-brandy-christmas-everyday-married-and-bright-lifetime-online-1236390444/",
+        "published_date": "2026-11-27 23:48:51",
+        "category": "interview",
+        "source": "www.billboard.com"
+      },
+      {
+        "title": "Fuerza Regida Announces ‘Pisteando Con La Regida Vol. 4’ After Partial Legal Victory Against Rancho Humilde",
+        "summary": "Fuerza가 중요한 음악 관련 발표를 했다. 이번 소식은 팬들의 주목을 받고 있다.",
+        "url": "https://www.billboard.com/music/latin/fuerza-regida-pisteando-con-la-regida-vol-4-rancho-humilde-1236390434/",
+        "published_date": "2026-11-27 23:39:37",
+        "category": "interview",
+        "source": "www.billboard.com"
+      },
+      {
+        "title": "Black Friday Deal: Amazon Marks Down AMC+ Subscription to Just $1.99/Month, A 75% Savings",
+        "summary": "Black와 관련된 주요 음악 업계 소식이 전해졌다. Black Friday Deal: Amazon Marks Down AMC+ Subscription to Ju...",
+        "url": "https://www.billboard.com/culture/product-recommendations/amc-plus-2026-streaming-deals-black-friday-online-1236390413/",
+        "published_date": "2026-11-27 22:38:16",
+        "category": "interview",
+        "source": "www.billboard.com"
+      },
+      {
+        "title": "Soul Train Awards 2026: Here’s Where to Watch the Awards Ceremony Online Free",
+        "summary": "Soul와 관련된 주요 음악 업계 소식이 전해졌다. Soul Train Awards 2026: Here’s Where to Watch the Awards Cer...",
+        "url": "https://www.billboard.com/culture/product-recommendations/soul-train-awards-2026-nov-how-to-watch-live-online-free-1236388588/",
+        "published_date": "2026-11-27 22:33:12",
+        "category": "interview",
+        "source": "www.billboard.com"
+      },
+      {
+        "title": "FOX One Black Friday Deal: Here’s How to Save 75% Off a Streaming Subscription",
+        "summary": "FOX와 관련된 주요 음악 업계 소식이 전해졌다. FOX One Black Friday Deal: Here’s How to Save 75% Off a Stre...",
+        "url": "https://www.billboard.com/culture/product-recommendations/fox-one-2026-streaming-deals-black-friday-online-1236390396/",
+        "published_date": "2026-11-27 21:01:26",
+        "category": "interview",
+        "source": "www.billboard.com"
+      },
+      {
+        "title": "Best Black Friday Audio Deals 2026: Save Up to 60% Off Bose, Apple & Beats, Sonos, Sony & More Online",
+        "summary": "Best와 관련된 주요 음악 업계 소식이 전해졌다. Best Black Friday Audio Deals 2026: Save Up to 60% Off Bose,...",
+        "url": "https://www.billboard.com/culture/product-recommendations/best-black-friday-2026-nov-audio-headphones-deals-online-1236390314/",
+        "published_date": "2026-11-27 20:09:20",
+        "category": "interview",
+        "source": "www.billboard.com"
+      },
+      {
+        "title": "Goo Goo Dolls Fans Slam NBC Over Thanksgiving Halftime Show Snub: ‘Badly Handled’",
+        "summary": "Goo와 관련된 주요 음악 업계 소식이 전해졌다. Goo Goo Dolls Fans Slam NBC Over Thanksgiving Halftime Show ...",
+        "url": "https://www.billboard.com/music/music-news/goo-goo-dolls-fans-slam-thanksgiving-halftime-show-snub-1236390401/",
+        "published_date": "2026-11-27 19:59:09",
+        "category": "interview",
+        "source": "www.billboard.com"
+      },
+      {
+        "title": "Watch Goo Goo Dolls’ Complete NFL Halftime Show",
+        "summary": "Watch와 관련된 주요 음악 업계 소식이 전해졌다. Watch Goo Goo Dolls’ Complete NFL Halftime Show",
+        "url": "https://www.rollingstone.com/music/music-news/goo-goo-dolls-complete-nfl-halftime-show-iris-slide-1235665349/",
+        "published_date": "2026-11-27 19:58:36",
+        "category": "interview",
+        "source": "www.rollingstone.com"
+      },
+      {
+        "title": "Listen To Torture Methods’ Bewitching Dark Realities For The Quasi-Angelic",
+        "summary": "Listen와 관련된 주요 음악 업계 소식이 전해졌다. Listen To Torture Methods’ Bewitching Dark Realities For The...",
+        "url": "https://stereogum.com/2522132/listen-to-torture-methods-bewitching-dark-realities-for-the-quasi-angelic/music/",
+        "published_date": "2026-11-27 19:41:37",
+        "category": "interview",
+        "source": "www.stereogum.com"
+      },
+      {
+        "title": "Ticketmaster Launches Black Friday 2026 Sale",
+        "summary": "Ticketmaster와 관련된 주요 음악 업계 소식이 전해졌다. Ticketmaster Launches Black Friday 2026 Sale",
+        "url": "https://consequence.net/2026/11/ticketmaster-black-friday-2026-sale/",
+        "published_date": "2026-11-27 19:39:16",
+        "category": "interview",
+        "source": "consequenceofsound.net"
+      },
+      {
+        "title": "Dating – “Lesbians”",
+        "summary": "Dating와 관련된 주요 음악 업계 소식이 전해졌다. Dating – “Lesbians”",
+        "url": "https://stereogum.com/2522123/dating-lesbians/music/",
+        "published_date": "2026-11-27 18:59:17",
+        "category": "interview",
+        "source": "www.stereogum.com"
+      },
+      {
+        "title": "Amazon Just Dropped One-Cent Deals (No, Really) for Black Friday: Shop Here",
+        "summary": "Amazon와 관련된 주요 음악 업계 소식이 전해졌다. Amazon Just Dropped One-Cent Deals (No, Really) for Black Fr...",
+        "url": "https://www.billboard.com/culture/product-recommendations/amazon-haul-one-cent-deals-black-friday-2026-offer-products-1236390364/",
+        "published_date": "2026-11-27 18:44:46",
+        "category": "interview",
+        "source": "www.billboard.com"
+      },
+      {
+        "title": "Double Virgo – “City Zen”",
+        "summary": "Double와 관련된 주요 음악 업계 소식이 전해졌다. Double Virgo – “City Zen”",
+        "url": "https://stereogum.com/2522115/double-virgo-city-zen/music/",
+        "published_date": "2026-11-27 18:05:25",
+        "category": "interview",
+        "source": "www.stereogum.com"
+      },
+      {
+        "title": "Killers Guitarist Details Recovery From Major Stroke",
+        "summary": "Killers와 관련된 주요 음악 업계 소식이 전해졌다. Killers Guitarist Details Recovery From Major Stroke",
+        "url": "https://stereogum.com/2522105/killers-guitarist-details-recovery-from-major-stroke/news/",
+        "published_date": "2026-11-27 17:24:30",
+        "category": "interview",
+        "source": "www.stereogum.com"
+      },
+      {
+        "title": "Mastodon follow Grammy nomination and ‘GTA 6’ appearance with first UK and European tour in eight years",
+        "summary": "Mastodon의 라이브 공연 관련 소식이 전해졌다. 콘서트 티켓과 일정 정보가 업데이트되었다.",
+        "url": "https://www.nme.com/news/music/mastodon-announce-first-uk-and-european-tour-in-eight-years-buy-tickets-3977154",
+        "published_date": "2026-11-27 17:24:07",
+        "category": "interview",
+        "source": "www.nme.com"
+      },
+      {
+        "title": "Olivia Rodrigo Delivers Another Christmas Song",
+        "summary": "Olivia의 라이브 공연 관련 소식이 전해졌다. 콘서트 티켓과 일정 정보가 업데이트되었다.",
+        "url": "https://pitchfork.com/story/olivia-rodrigo-delivers-another-christmas-song/",
+        "published_date": "2026-11-27 16:47:24",
+        "category": "interview",
+        "source": "pitchfork.com"
+      },
+      {
+        "title": "These Are the Black Friday Deals I Would Actually Buy",
+        "summary": "These와 관련된 주요 음악 업계 소식이 전해졌다. These Are the Black Friday Deals I Would Actually Buy",
+        "url": "https://consequence.net/2026/11/best-black-friday-deals-2026-editors-picks/",
+        "published_date": "2026-11-27 16:44:17",
+        "category": "interview",
+        "source": "consequenceofsound.net"
+      },
+      {
+        "title": "The Killers Dave Keuning Reveals He Suffered ‘Major Stroke’: ‘I Am Alive and Well’",
+        "summary": "The가 중요한 음악 관련 발표를 했다. 이번 소식은 팬들의 주목을 받고 있다.",
+        "url": "https://www.rollingstone.com/music/music-news/the-killers-dave-keuning-major-stroke-recovery-1235665233/",
+        "published_date": "2026-11-27 16:19:42",
+        "category": "interview",
+        "source": "www.rollingstone.com"
+      },
+      {
+        "title": "Heartworms explores “time, escape, limitlessness, self-reflection and rebirth” on “spiritual” new single ‘The Window’",
+        "summary": "Heartworms explores가 새로운 싱글을 발표했다. 새 곡은 아티스트의 음악적 진화를 보여주는 작품으로 평가받고 있다.",
+        "url": "https://www.nme.com/news/music/heartworms-releases-spiritual-new-single-the-window-listen-3977140",
+        "published_date": "2026-11-27 16:18:32",
+        "category": "interview",
+        "source": "www.nme.com"
+      },
+      {
+        "title": "The Killers’ Dave Keuning Survived a “Major Stroke” This Month",
+        "summary": "The와 관련된 주요 음악 업계 소식이 전해졌다. The Killers’ Dave Keuning Survived a “Major Stroke” This Mon...",
+        "url": "https://pitchfork.com/story/the-killers-dave-keuning-survived-a-major-stroke-this-month/",
+        "published_date": "2026-11-27 15:58:32",
+        "category": "interview",
+        "source": "pitchfork.com"
+      },
+      {
+        "title": "The Killers’ Dave Keuning speaks out after surviving a life-threatening stroke",
+        "summary": "The와 관련된 주요 음악 업계 소식이 전해졌다. The Killers’ Dave Keuning speaks out after surviving a life-...",
+        "url": "https://www.nme.com/news/music/the-killers-dave-keuning-speaks-out-after-surviving-a-life-threatening-stroke-3977135",
+        "published_date": "2026-11-27 15:32:53",
+        "category": "interview",
+        "source": "www.nme.com"
+      },
+      {
+        "title": "Former Buzzcocks Drummer Phil Barker Dead at 65",
+        "summary": "Former Buzzcocks와 관련된 주요 음악 업계 소식이 전해졌다. Former Buzzcocks Drummer Phil Barker Dead at 65",
+        "url": "https://www.rollingstone.com/music/music-news/phil-barker-buzzcocks-drummer-obituary-1235665168/",
+        "published_date": "2026-11-27 15:30:13",
+        "category": "interview",
+        "source": "www.rollingstone.com"
+      },
+      {
+        "title": "The Criterion Collection Is 50% Off on Amazon for Black Friday",
+        "summary": "The와 관련된 주요 음악 업계 소식이 전해졌다. The Criterion Collection Is 50% Off on Amazon for Black Frid...",
+        "url": "https://consequence.net/2026/11/criterion-collection-black-friday-amazon-sale/",
+        "published_date": "2026-11-27 15:21:57",
+        "category": "interview",
+        "source": "consequenceofsound.net"
+      },
+      {
+        "title": "Pz’ Recruits Don Toliver for New Song “Subliminals”",
+        "summary": "Pz’의 라이브 공연 관련 소식이 전해졌다. 콘서트 티켓과 일정 정보가 업데이트되었다.",
+        "url": "https://pitchfork.com/story/pz-recruits-don-toliver-for-new-song-subliminals/",
+        "published_date": "2026-11-27 15:08:48",
+        "category": "interview",
+        "source": "pitchfork.com"
+      },
+      {
+        "title": "The Apple Watch Series 12 Is $100 Off for Black Friday",
+        "summary": "The와 관련된 주요 음악 업계 소식이 전해졌다. The Apple Watch Series 12 Is $100 Off for Black Friday",
+        "url": "https://consequence.net/2026/11/apple-watch-series-12-black-friday-amazon-deal/",
+        "published_date": "2026-11-27 15:07:26",
+        "category": "interview",
+        "source": "consequenceofsound.net"
+      },
+      {
+        "title": "Watch ‘Sesame Street’ Pay Homage to Mariah Carey’s ‘All I Want for Christmas Is You’",
+        "summary": "Watch와 관련된 주요 음악 업계 소식이 전해졌다. Watch ‘Sesame Street’ Pay Homage to Mariah Carey’s ‘All I Wa...",
+        "url": "https://www.rollingstone.com/music/music-news/sesame-street-mariah-carey-christmas-song-homage-1235665152/",
+        "published_date": "2026-11-27 14:57:04",
+        "category": "interview",
+        "source": "www.rollingstone.com"
+      },
+      {
+        "title": "My Favorite Pocket E-Readers Are Down to $55 for Black Friday",
+        "summary": "My와 관련된 주요 음악 업계 소식이 전해졌다. My Favorite Pocket E-Readers Are Down to $55 for Black Frida...",
+        "url": "https://consequence.net/2026/11/black-friday-pocket-e-reader-deals-xteink-x3-x4-classic/",
+        "published_date": "2026-11-27 14:56:52",
+        "category": "interview",
+        "source": "consequenceofsound.net"
+      },
+      {
+        "title": "Ginuwine Releases Ridiculous Videogame About Stealing His Masters Back",
+        "summary": "Ginuwine가 새로운 음악을 공개했다. 팬들과 비평가들의 긍정적 반응을 얻고 있다.",
+        "url": "https://stereogum.com/2522078/ginuwine-releases-ridiculous-videogame-about-stealing-his-masters-back/news/",
+        "published_date": "2026-11-27 14:50:04",
+        "category": "interview",
+        "source": "www.stereogum.com"
+      },
+      {
+        "title": "Watch Cage The Elephant’s stripped-back cover of Fontaines D.C. and Rosalía’s ‘Where Is Gone?’",
+        "summary": "Watch Cage가 새 앨범 발매 소식을 공개했다. 이번 릴리스는 팬들과 음악 업계의 큰 관심을 받고 있다.",
+        "url": "https://www.nme.com/news/music/watch-cage-the-elephants-stripped-back-cover-of-fontaines-d-c-and-rosalias-where-is-gone-3977128",
+        "published_date": "2026-11-27 14:49:09",
+        "category": "interview",
+        "source": "www.nme.com"
+      },
+      {
+        "title": "The Killers’ Dave Keuning Reveals He Survived a Life-Threatening Stroke",
+        "summary": "The가 중요한 음악 관련 발표를 했다. 이번 소식은 팬들의 주목을 받고 있다.",
+        "url": "https://consequence.net/2026/11/the-killers-dave-keuning-survived-life-threatening-stroke/",
+        "published_date": "2026-11-27 14:45:50",
+        "category": "interview",
+        "source": "consequenceofsound.net"
+      },
+      {
+        "title": "Watch Justin Timberlake Reluctantly Sing Backstreet Boys on ‘Fallon’: ‘This is Sacrilegious’",
+        "summary": "Watch와 관련된 주요 음악 업계 소식이 전해졌다. Watch Justin Timberlake Reluctantly Sing Backstreet Boys on ...",
+        "url": "https://www.rollingstone.com/music/music-news/justin-timberlake-upcoming-doc-series-interview-fallon-1235665140/",
+        "published_date": "2026-11-27 14:33:39",
+        "category": "interview",
+        "source": "www.rollingstone.com"
+      },
+      {
+        "title": "Skipping GTA 6? Save Up to 59% on Other Top PS5 Games for Black Friday",
+        "summary": "Skipping가 음악 차트에서 주목할 만한 성과를 기록했다. 상업적 성공을 입증하는 결과다.",
+        "url": "https://consequence.net/2026/11/best-black-friday-ps5-game-deals-2026/",
+        "published_date": "2026-11-27 14:29:53",
+        "category": "interview",
+        "source": "consequenceofsound.net"
+      },
+      {
+        "title": "Mad Cool Festival Reveals 2027 Lineup with The Strokes, Tame Impala & Faith No More",
+        "summary": "Mad가 중요한 음악 관련 발표를 했다. 이번 소식은 팬들의 주목을 받고 있다.",
+        "url": "https://consequence.net/2026/11/mad-cool-festival-2027-lineup-the-strokes-tame-impala-faith-no-more/",
+        "published_date": "2026-11-27 14:15:26",
+        "category": "interview",
+        "source": "consequenceofsound.net"
+      },
+      {
+        "title": "Ed Maverick on Making Music, Making Money, and Making it Matter With New Album Sin Agua Es Ruta Yerma",
+        "summary": "Ed와 관련된 주요 음악 업계 소식이 전해졌다. Ed Maverick on Making Music, Making Money, and Making it Mat...",
+        "url": "https://consequence.net/2026/11/ed-maverick-sin-agua-es-ruta-yerma-interview/",
+        "published_date": "2026-11-27 14:14:41",
+        "category": "interview",
+        "source": "consequenceofsound.net"
+      },
+      {
+        "title": "Best Black Friday Bluetooth Speaker Deals: Save on Bose, JBL, and Beats",
+        "summary": "Best와 관련된 주요 음악 업계 소식이 전해졌다. Best Black Friday Bluetooth Speaker Deals: Save on Bose, JBL...",
+        "url": "https://consequence.net/2026/11/best-black-friday-bluetooth-speaker-deals-2026/",
+        "published_date": "2026-11-27 13:44:57",
+        "category": "interview",
+        "source": "consequenceofsound.net"
+      },
+      {
+        "title": "Best Black Friday 2026 iPad Deals Live on Amazon",
+        "summary": "Best의 라이브 공연 관련 소식이 전해졌다. 콘서트 티켓과 일정 정보가 업데이트되었다.",
+        "url": "https://consequence.net/2026/11/best-black-friday-ipad-deals-2026/",
+        "published_date": "2026-11-27 13:35:22",
+        "category": "interview",
+        "source": "consequenceofsound.net"
+      },
+      {
+        "title": "Best Black Friday Kindle Deals",
+        "summary": "Best와 관련된 주요 음악 업계 소식이 전해졌다. Best Black Friday Kindle Deals",
+        "url": "https://consequence.net/2026/11/best-black-friday-kindle-deals-2026/",
+        "published_date": "2026-11-27 13:20:04",
+        "category": "interview",
+        "source": "consequenceofsound.net"
+      },
+      {
+        "title": "Black Friday Streaming Deals: HBO Max, Disney+/Hulu Bundle, Apple TV Starting at $4.99/Month",
+        "summary": "Black와 관련된 주요 음악 업계 소식이 전해졌다. Black Friday Streaming Deals: HBO Max, Disney+/Hulu Bundle, ...",
+        "url": "https://consequence.net/2026/11/best-black-friday-streaming-deals-2026/",
+        "published_date": "2026-11-27 12:49:28",
+        "category": "interview",
+        "source": "consequenceofsound.net"
+      },
+      {
+        "title": "Echo & The Bunnymen and Happy Mondays announce joint 2027 UK ‘greatest hits’ tour",
+        "summary": "Echo의 라이브 공연 관련 소식이 전해졌다. 콘서트 티켓과 일정 정보가 업데이트되었다.",
+        "url": "https://www.nme.com/news/music/echo-the-bunnymen-happy-mondays-announce-joint-2027-uk-greatest-hits-tour-3977113",
+        "published_date": "2026-11-27 12:30:21",
+        "category": "interview",
+        "source": "www.nme.com"
+      },
+      {
+        "title": "Best Black Friday Headphone Deals Still Live: Sony, Bose, and Beats",
+        "summary": "Best의 라이브 공연 관련 소식이 전해졌다. 콘서트 티켓과 일정 정보가 업데이트되었다.",
+        "url": "https://consequence.net/2026/11/best-black-friday-headphone-deals-2026/",
+        "published_date": "2026-11-27 12:25:04",
+        "category": "interview",
+        "source": "consequenceofsound.net"
+      },
+      {
+        "title": "Best Black Friday AirPods Deals Still Live Before Cyber Monday",
+        "summary": "Best의 라이브 공연 관련 소식이 전해졌다. 콘서트 티켓과 일정 정보가 업데이트되었다.",
+        "url": "https://consequence.net/2026/11/best-black-friday-airpods-deals-2026/",
+        "published_date": "2026-11-27 12:20:55",
+        "category": "interview",
+        "source": "consequenceofsound.net"
+      },
+      {
+        "title": "Lana Del Rey shares Thanksgiving update on incoming new albums: “It feels meant to be – it makes me wonder where I would even go after this”",
+        "summary": "Lana와 관련된 주요 음악 업계 소식이 전해졌다. Lana Del Rey shares Thanksgiving update on incoming new albu...",
+        "url": "https://www.nme.com/news/music/lana-del-rey-shares-thanksgiving-update-on-incoming-new-albums-it-feels-meant-to-be-it-makes-me-wonder-where-i-would-even-go-after-this-3977104",
+        "published_date": "2026-11-27 11:58:34",
+        "category": "interview",
+        "source": "www.nme.com"
+      },
+      {
+        "title": "Billy from ‘School Of Rock’ is a country musician now – and Jack Black is on his new EP",
+        "summary": "Billy from가 새 앨범 발매 소식을 공개했다. 이번 릴리스는 팬들과 음악 업계의 큰 관심을 받고 있다.",
+        "url": "https://www.nme.com/news/film/school-of-rock-brian-falduto-jack-black-reunion-gay-country-music-3977105",
+        "published_date": "2026-11-27 11:57:23",
+        "category": "interview",
+        "source": "www.nme.com"
+      },
+      {
+        "title": "Courtney Love pays tribute to Kurt Cobain’s ex-girlfriend and “unsung hero of Nirvana” Tracy Marander as she battles terminal cancer",
+        "summary": "Courtney와 관련된 주요 음악 업계 소식이 전해졌다. Courtney Love pays tribute to Kurt Cobain’s ex-girlfriend an...",
+        "url": "https://www.nme.com/news/music/courtney-love-pays-tribute-to-kurt-cobains-ex-girlfriend-and-unsung-hero-of-nirvana-tracy-marander-as-she-battles-terminal-cancer-3977093",
+        "published_date": "2026-11-27 11:08:12",
+        "category": "interview",
+        "source": "www.nme.com"
+      },
+      {
+        "title": "Mad Cool 2027 line-up announced with The Strokes, The xx, Tame Impala, Faith No More, ENHYPEN and loads more",
+        "summary": "Mad와 관련된 주요 음악 업계 소식이 전해졌다. Mad Cool 2027 line-up announced with The Strokes, The xx, Ta...",
+        "url": "https://www.nme.com/news/music/mad-cool-2027-line-up-announced-the-strokes-the-xx-tame-impala-faith-no-more-enhyphen-more-3977083",
+        "published_date": "2026-11-27 09:57:14",
+        "category": "interview",
+        "source": "www.nme.com"
+      },
+      {
+        "title": "Olivia Rodrigo Drops Official Version of Melancholy ‘Miss This Christmas’ on Amazon Music",
+        "summary": "Olivia Rodrigo가 중요한 음악 관련 발표를 했다. 이번 소식은 팬들과 업계 관계자들의 주목을 받고 있다.",
+        "url": "https://www.rollingstone.com/music/music-news/olivia-rodrigo-miss-this-christmas-amazon-music-1235664984/",
+        "published_date": "2026-11-27 05:02:00",
+        "category": "interview",
+        "source": "www.rollingstone.com"
+      },
+      {
+        "title": "Watch Wu-Tang Clan Perform ‘Triumph,’ ‘Bring Da Ruckus’ at NFL Thanksgiving Halftime Show",
+        "summary": "Watch와 관련된 주요 음악 업계 소식이 전해졌다. Watch Wu-Tang Clan Perform ‘Triumph,’ ‘Bring Da Ruckus’ at N...",
+        "url": "https://www.rollingstone.com/music/music-news/wu-tang-clan-nfl-thanksgiving-game-halftime-show-1235664856/",
+        "published_date": "2026-11-26 20:21:52",
+        "category": "interview",
+        "source": "www.rollingstone.com"
+      }
+    ],
+    "insight": []
+  },
+  "summary": {
+    "total_count": 50,
+    "by_category": {
+      "interview": 50
+    },
+    "by_source": {
+      "consequenceofsound.net": 15,
+      "www.nme.com": 10,
+      "www.billboard.com": 10,
+      "www.rollingstone.com": 7,
+      "www.stereogum.com": 5,
+      "pitchfork.com": 3
+    },
+    "members_only_count": 0
+  }
+}
